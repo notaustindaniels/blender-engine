@@ -1,0 +1,32 @@
+# ── Security: never commit secrets or private/large artifacts (SPEC §7, PRD §4) ──
+# Vaulted add-on artifacts: large, private, redistribution-guarded (PRD guardrail #3)
+vault/
+# SQLite read-index: disposable, rebuilt from JSON manifests (SPEC §4.5)
+*.db
+*.db-journal
+*.db-wal
+# Any session/cookie material (marketplace creds, etc.)
+*session*
+# Env files — secrets (GH_TOKEN, marketplace creds) come from env injection only (SPEC §6.5)
+.env
+.env.*
+!.env.example
+
+# Archon runtime artifacts — never commit (repo-init.md)
+.archon/state/
+.archon/.env
+
+# Progress server noise
+progress/server.log
+progress/.server.pid
+
+# Python / tooling noise
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+node_modules/
+.DS_Store
+
+# Sandbox scratch
+sandbox/scratch/
