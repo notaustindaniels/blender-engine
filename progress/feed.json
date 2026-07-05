@@ -1,0 +1,32 @@
+[
+  {
+    "seq": 1,
+    "ts": "2026-07-05T19:39:25-04:00",
+    "title": "Kickoff — Stage 1 harvest harness underway",
+    "tag": "milestone",
+    "status": "in-progress",
+    "body": "<p><b>Goal (from KICKOFF.md, the acceptance contract):</b> build the Archon-orchestrated pipeline that turns the internet&#39;s free procedural Blender add-ons into a local, hash-verified, capability-tagged corpus — then run only <b>SPEC §9 steps 1–3</b> and <b>STOP</b> at the mandatory decision gate.</p><ul><li><b>Step 1</b> — repo + Archon init (3 workflows, 3 commands, scripts) → <code>archon validate workflows</code> clean.</li><li><b>Step 2</b> — sandbox + <code>probe.py</code> + golden set → 100% correct pass/fail/legacy/quarantine across Blender 3.6 / 4.2 / 4.5.</li><li><b>Step 3</b> — L1 thin slice (official extensions platform) over Terrain + Vegetation → real coverage numbers → <code>reports/gate-decision.md</code>.</li></ul><p><b>Then I hand the go/no-go to you.</b> Steps 4–8 stay untouched. A fresh-context adversarial reviewer (Claude Fable) re-verifies every bar item before I claim done.</p><p><b>Environment probed:</b> archon ✓, uv 0.8.4 ✓, bun 1.3.14 ✓, gh 2.93.0 ✓. Docker client 28.3.2 present; daemon was down — I just launched Docker Desktop and am waiting for it (the golden set needs it).</p>",
+    "code": "",
+    "media": []
+  },
+  {
+    "seq": 2,
+    "ts": "2026-07-05T19:41:43-04:00",
+    "title": "Sandbox base image: SPEC assumption doesn't hold — pivoting to pinned official tarballs",
+    "tag": "info",
+    "status": "info",
+    "body": "<p><b>Reality check (working rule #5):</b> SPEC §1 assumed <code>linuxserver/blender</code> ships \"one tag per Blender version.\" Live Docker Hub query shows it only publishes the <b>current</b> release — every tag is <code>5.1.x</code> / <code>latest</code>. No 3.6 / 4.2 / 4.5.</p><p><b>Plan:</b> build the three-version matrix from <b>official <code>download.blender.org</code> tarballs</b>, each pinned by <b>SHA-256</b>, on a digest-pinned base image. This is <i>more</i> reproducible than a rolling image and gives exact 3.6 / 4.2 / 4.5. I will add a dated divergence note to SPEC §1 when I commit the sandbox, rather than silently diverging.</p><p>Note: this Mac is arm64 and Blender ships Linux as x86-64 only, so probe containers run <code>--platform linux/amd64</code> under emulation. Fine for a ~15-artifact golden set of light headless operations.</p>",
+    "code": "",
+    "media": []
+  },
+  {
+    "seq": 3,
+    "ts": "2026-07-05T19:41:43-04:00",
+    "title": "OPEN QUESTION → need the taxonomy source (blocking for step 3 only)",
+    "tag": "question",
+    "status": "blocked-step3",
+    "body": "<p>SPEC §0 requires <code>taxonomy.yaml</code> (~215 static + 72 animation niches across 12 categories), built from your two source documents. <b>It is not in the repo, and I will not invent it</b> (the PRD&#39;s zero-fabrication rule applies to me too).</p><p>This blocks <b>only step 3</b> (the L1 thin-slice coverage over Terrain + Vegetation). Steps 1 (Archon init) and 2 (sandbox + golden set) do not need it, so I am proceeding on those now while I wait. Asking you how you want to hand over the taxonomy.</p>",
+    "code": "",
+    "media": []
+  }
+]

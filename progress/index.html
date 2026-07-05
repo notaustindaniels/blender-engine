@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blender Vault — Stage 1 Progress</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --border:#30363d;
+    --text:#e6edf3; --muted:#8b949e; --accent:#58a6ff; --green:#3fb950;
+    --yellow:#d29922; --red:#f85149; --purple:#bc8cff; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8fa; --panel:#fff; --panel2:#f0f3f6; --border:#d0d7de;
+      --text:#1f2328; --muted:#636c76; --accent:#0969da; --green:#1a7f37;
+      --yellow:#9a6700; --red:#cf222e; --purple:#8250df; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:linear-gradient(180deg,var(--bg),color-mix(in srgb,var(--bg) 82%,transparent));backdrop-filter:blur(6px);border-bottom:1px solid var(--border);padding:16px 22px}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  h1{font-size:20px;margin:0;letter-spacing:.2px}
+  .sub{color:var(--muted);font-size:13px;margin-top:3px}
+  .stat{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-right:14px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 22%,transparent)}
+  main{padding:26px 0 80px}
+  .entry{background:var(--panel);border:1px solid var(--border);border-radius:12px;margin:0 0 18px;overflow:hidden}
+  .entry-head{display:flex;align-items:center;gap:10px;padding:13px 18px;border-bottom:1px solid var(--border);background:var(--panel2)}
+  .badge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;text-transform:uppercase;letter-spacing:.5px}
+  .b-milestone{background:color-mix(in srgb,var(--green) 20%,transparent);color:var(--green)}
+  .b-evidence{background:color-mix(in srgb,var(--accent) 20%,transparent);color:var(--accent)}
+  .b-info{background:color-mix(in srgb,var(--muted) 20%,transparent);color:var(--muted)}
+  .b-question{background:color-mix(in srgb,var(--yellow) 20%,transparent);color:var(--yellow)}
+  .b-fail{background:color-mix(in srgb,var(--red) 20%,transparent);color:var(--red)}
+  .b-review{background:color-mix(in srgb,var(--purple) 20%,transparent);color:var(--purple)}
+  .entry-title{font-weight:600;font-size:15px;flex:1}
+  .entry-ts{color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .entry-body{padding:16px 18px}
+  .entry-body p{margin:0 0 10px}
+  .entry-body ul{margin:6px 0 10px;padding-left:22px}
+  .entry-body code{font-family:var(--mono);font-size:12.5px;background:var(--panel2);padding:1px 5px;border-radius:5px;border:1px solid var(--border)}
+  .entry-body a{color:var(--accent)}
+  pre{background:#0a0e14;color:#c9d1d9;border:1px solid var(--border);border-radius:8px;padding:12px 14px;overflow-x:auto;font-family:var(--mono);font-size:12.5px;line-height:1.5;margin:10px 0}
+  @media (prefers-color-scheme: light){ pre{background:#0d1117} }
+  .media{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:12px 0 2px}
+  .media figure{margin:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--panel2)}
+  .media img,.media video{width:100%;display:block;background:#000}
+  .media figcaption{font-size:11.5px;color:var(--muted);padding:6px 9px;border-top:1px solid var(--border)}
+  table{border-collapse:collapse;width:100%;margin:10px 0;font-size:13px}
+  th,td{border:1px solid var(--border);padding:6px 9px;text-align:left}
+  th{background:var(--panel2)}
+  .ok{color:var(--green);font-weight:600}.no{color:var(--red);font-weight:600}.warn{color:var(--yellow);font-weight:600}
+  .empty{color:var(--muted);text-align:center;padding:60px 0}
+  footer{color:var(--muted);font-size:12px;text-align:center;padding:20px 0 40px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Blender Vault — Stage 1 (the Harvest Harness)</h1>
+    <div class="sub">Follow-along log · newest first · auto-refreshes every 15s</div>
+    <div style="margin-top:9px">
+      <span class="stat"><span class="dot" id="live"></span><span id="livetxt">live</span></span>
+      <span class="stat" id="count">— entries</span>
+      <span class="stat" id="updated">—</span>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="feed">
+  <div class="empty">Loading progress feed…</div>
+</main>
+<footer>KICKOFF.md is the acceptance contract · scope: SPEC §9 steps 1–3, then STOP at the decision gate</footer>
+
+<script>
+const BADGES = {milestone:'b-milestone',evidence:'b-evidence',info:'b-info',question:'b-question',fail:'b-fail',review:'b-review'};
+function esc(s){return (s==null?'':String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function fmtTs(iso){ try{const d=new Date(iso); return d.toLocaleString(undefined,{month:'short',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'});}catch(e){return iso;} }
+function render(entries){
+  const feed=document.getElementById('feed');
+  if(!entries.length){feed.innerHTML='<div class="empty">No entries yet.</div>';return;}
+  entries.sort((a,b)=>(b.seq||0)-(a.seq||0));
+  feed.innerHTML=entries.map(e=>{
+    const badge=BADGES[e.tag]||'b-info';
+    let media='';
+    if(e.media&&e.media.length){
+      media='<div class="media">'+e.media.map(m=>{
+        const isVid=/\.(mp4|webm|mov)$/i.test(m.src)||m.type==='video';
+        const el=isVid?`<video src="${esc(m.src)}" controls muted loop playsinline></video>`:`<img src="${esc(m.src)}" loading="lazy" alt="${esc(m.caption||'')}">`;
+        return `<figure><a href="${esc(m.src)}" target="_blank">${el}</a>${m.caption?`<figcaption>${esc(m.caption)}</figcaption>`:''}</figure>`;
+      }).join('')+'</div>';
+    }
+    let code='';
+    if(e.code){ code=`<pre>${esc(e.code)}</pre>`; }
+    return `<article class="entry">
+      <div class="entry-head">
+        <span class="badge ${badge}">${esc(e.tag||'info')}</span>
+        <span class="entry-title">${esc(e.title)}</span>
+        <span class="entry-ts">${esc(fmtTs(e.ts))}</span>
+      </div>
+      <div class="entry-body">${e.body||''}${code}${media}</div>
+    </article>`;
+  }).join('');
+  document.getElementById('count').textContent=entries.length+' entries';
+  document.getElementById('updated').textContent='updated '+fmtTs(entries[0].ts);
+}
+async function tick(){
+  try{
+    const r=await fetch('feed.json?_='+Date.now(),{cache:'no-store'});
+    const data=await r.json();
+    render(Array.isArray(data)?data:[]);
+    document.getElementById('live').style.background='var(--green)';
+    document.getElementById('livetxt').textContent='live';
+  }catch(e){
+    document.getElementById('live').style.background='var(--red)';
+    document.getElementById('livetxt').textContent='server offline';
+  }
+}
+tick(); setInterval(tick,15000);
+</script>
+</body>
+</html>
