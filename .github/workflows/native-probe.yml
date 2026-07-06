@@ -1,0 +1,60 @@
+# native-probe — D-002 R13 (owner-approved Option A, 2026-07-06). Runs the Gate on NATIVE amd64
+# GitHub-hosted runners (no arm64 emulation, so large add-ons no longer crash). $0 on a public repo,
+# ephemeral. The vault stays git-ignored and off GitHub — CI RE-ACQUIRES archives fresh from their
+# public source URLs (hash-verified), so no corpus is redistributed. Harvested code runs ONLY inside
+# the --network none sandbox (run_probe.sh flags unchanged). No secrets: enumeration already ran;
+# only public archive downloads happen here.
+name: native-probe
+on:
+  workflow_dispatch:
+    inputs:
+      timeout:
+        description: "per-artifact wall-clock cap (seconds)"
+        default: "150"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest          # native amd64
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Build the three digest+SHA-pinned probe images (native amd64)
+        run: bash sandbox/build_images.sh all
+
+      - name: Re-acquire the full candidate set from public source URLs (hash-verified)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/acquire.py --normalized normalized.jsonl --vault vault --limit 0 --out acquired-native.jsonl
+
+      - name: Verify natively (full L1+L2 matrix, version-aware, prescan-gated)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/verify_matrix.py --artifacts vault --out manifests \
+            --clearances reviews/prescan_clearances.yaml --timeout "${{ github.event.inputs.timeout }}" \
+            --json-summary reports/native_verify_summary.json
+
+      - name: Enrich + index + coverage
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/enrich_thinslice.py || true
+          uv run .archon/scripts/build_index.py --manifests manifests --vault vault --db corpus.db
+          uv run .archon/scripts/coverage.py --db corpus.db --taxonomy inputs/taxonomy.yaml --reports reports
+
+      - name: Upload results (manifests + reports; NOT the vault)
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-probe-results
+          path: |
+            manifests/
+            reports/native_verify_summary.json
+            reports/coverage.json
+            reports/coverage-report.md
+            acquired-native.jsonl
+          retention-days: 14
