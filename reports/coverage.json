@@ -9,7 +9,7 @@
     "full_pass": 5,
     "partial": 3,
     "recipe_verified": 0,
-    "recipe_unverified_claims": 5,
+    "recipe_unverified_claims": 6,
     "coverage_pct": 13.6
   },
   "gate_v2": {
@@ -51,7 +51,7 @@
   "wave1_total": {
     "present": 269,
     "decision_covered": 8,
-    "recipe_unverified_claims": 5
+    "recipe_unverified_claims": 6
   },
   "wave2_total": {
     "present": 59,

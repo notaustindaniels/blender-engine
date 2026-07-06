@@ -7,7 +7,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 - **GATE v2 (R18/D-003 — the governing metric): 5/54 = 9.3%** = (full_pass + recipe_verified) / 54 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
   - excluded as unattainable (paid_only/none, R15): `anemone_generator`, `coral_atoll_generator`, `coral_generator`, `karst_formation`, `kelp_forest_generator`
 - **Tripwire (R19): pass-rate of-all-acquisitions 40.5%** vs 30% floor → OK.
-- _v1 (legacy, all-present denom): 8/59 = 13.6% (5 full-pass + 3 partial + 0 recipe✓; 5 recipe claims not counted)._
+- _v1 (legacy, all-present denom): 8/59 = 13.6% (5 full-pass + 3 partial + 0 recipe✓; 6 recipe claims not counted)._
 - **Acquisition pass-rate (both framings, R16/D-002):** of-probed 15/27 = 55.6%; of-all-acquisitions 15/37 = 40.5% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 4 niche(s) partial-only (see `reports/probe-recipes.md`).
 
@@ -28,7 +28,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 | category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
 |---|---:|---:|---:|---:|---:|---:|
-| Terrain & landscape | 36 | 3 | 2 | 0 | 3 | 14% |
+| Terrain & landscape | 36 | 3 | 2 | 0 | 4 | 14% |
 | Vegetation & organic | 23 | 2 | 1 | 0 | 2 | 13% |
 | Cities & urban | 18 | 0 | 0 | 0 | 0 | 0% |
 | Buildings & architecture | 17 | 0 | 0 | 0 | 0 | 0% |
@@ -50,7 +50,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
 | Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **5** | **3** | **0** | **5** | **3%** |
+| **TOTAL (wave 1)** | **269** | **5** | **3** | **0** | **6** | **3%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 

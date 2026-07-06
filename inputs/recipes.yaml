@@ -1,51 +1,54 @@
-# recipes.yaml — composite coverage registry (SPEC §12.3(2), D-002 R14).
-#
-# A RECIPE covers a niche by COMPOSING vaulted operators and/or built-in Blender features, rather
-# than a single dedicated add-on. This is the SPEC's registry intent (§2.2/§4) made first-class.
-#
-# TIER IS HONEST and load-bearing:
-#   recipe_verified    — a probe recipe ACTUALLY RAN in the sandbox and produced the niche's geometry
-#   recipe_unverified  — a documented composition, NOT yet machine-checked: a CLAIM, labelled as such
-#
-# RULES (enforced in coverage.py + CLAUDE.md):
-#   - Never fabricate a recipe to inflate coverage.
-#   - recipe_unverified NEVER counts toward the PRD §4 decision number — it is a separate reported
-#     tier. Only direct add-on coverage + recipe_verified count toward the gate %.
-#   - Every composition cites REAL vaulted operators (that survived verification) or named built-ins.
-#
-# All entries below are recipe_unverified — no recipe-probe has run yet (that needs the native run,
-# R13, or a recipe-probe mode in probe.py). They are claims awaiting machine-check, shown honestly.
-
 recipes:
-  - niche: snowdrift_generator
-    tier: recipe_unverified
-    composition:
-      - "community__a-n-t-landscape : mesh.landscape_add   # generate base terrain"
-      - "nacioss__real-snow         : <accumulate op>       # wind-directional snow accumulation"
-    note: "Terrain + snow accumulation → drifts. Both operators survived verification; not yet composed under a probe."
-
-  - niche: dune_generator
-    tier: recipe_unverified
-    composition:
-      - "community__a-n-t-landscape : mesh.landscape_add   # noise-preset terrain shaped as dunes"
-    note: "A.N.T. Landscape's noise presets can approximate barchan/longitudinal dunes; claim, not probe-verified."
-
-  - niche: orchard_row_scatter
-    tier: recipe_unverified
-    composition:
-      - "community__scatter-objects : <scatter op>          # row/grid distribution"
-      - "community__sapling-tree-gen : curve.tree_add       # tree instances to scatter"
-    note: "Scatter tree instances in rows → orchard. Both survived verification; composition not yet probe-run."
-
-  - niche: ground_cover
-    tier: recipe_unverified
-    composition:
-      - "community__scatter-objects : <scatter op>          # dense low scatter"
-    note: "Generic object scatter applied to low plant meshes → ground cover; claim."
-
-  - niche: frozen_lake_generator
-    tier: recipe_unverified
-    composition:
-      - "community__a-n-t-landscape : mesh.landscape_add   # flat/low terrain basin"
-      - "builtin : Principled BSDF (ice/glass params)       # ice surface material"
-    note: "Terrain basin + built-in ice material → frozen lake; claim mixing a vaulted op with a core feature."
+- niche: snowdrift_generator
+  tier: recipe_unverified
+  steps:
+  - op: mesh.landscape_add
+    artifact_cid: community__a-n-t-landscape
+    params: {}
+  - op: object.snow_create
+    artifact_cid: nacioss__real-snow
+    params: {}
+  note: "Terrain + wind-directional snow accumulation \u2192 drifts. A.N.T. landscape_add is dialog-gated (may not drive headless)."
+- niche: dune_generator
+  tier: recipe_unverified
+  steps:
+  - op: mesh.landscape_add
+    artifact_cid: community__a-n-t-landscape
+    params: {}
+  note: A.N.T. noise presets approximate dunes. Dialog-gated operator; claim.
+- niche: orchard_row_scatter
+  tier: recipe_unverified
+  steps:
+  - op: curve.tree_add
+    artifact_cid: community__sapling-tree-gen
+    params: {}
+  - op: object.scatter_objects
+    artifact_cid: community__scatter-objects
+    params: {}
+  note: "Scatter tree instances in rows \u2192 orchard. Both operators dialog/context-dependent."
+- niche: ground_cover
+  tier: recipe_unverified
+  steps:
+  - op: object.scatter_objects
+    artifact_cid: community__scatter-objects
+    params: {}
+  note: "Generic object scatter on low plant meshes \u2192 ground cover; claim."
+- niche: frozen_lake_generator
+  tier: recipe_unverified
+  steps:
+  - op: mesh.landscape_add
+    artifact_cid: community__a-n-t-landscape
+    params: {}
+  - builtin: SUBSURF
+  note: "Terrain basin + built-in ice material/subsurf \u2192 frozen lake; claim mixing a vaulted op with a core feature."
+- niche: sediment_deposition
+  tier: recipe_unverified
+  steps:
+  - op: object.create_terrain_operator
+    artifact_cid: petak5__bp
+    params: {}
+  - op: object.erosion_operator
+    artifact_cid: petak5__bp
+    params: {}
+  note: "petak5/bp create_terrain then erosion; eroded material physically deposits as sediment. Both operators full-pass\
+    \ (drive headless) \u2192 candidate for recipe_verified."
