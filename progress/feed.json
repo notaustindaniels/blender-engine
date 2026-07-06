@@ -173,5 +173,15 @@
     "body": "<p><b>R12 — reviewed the 5 prescan-blocked L2 at source.</b> Cleared <b>2</b> (sorcar: opt-in script node, numeric eval, updater urllib — none fire during verification; trailprint3d: exec/import were test-only). Kept <b>3</b> blocked with findings recorded (<code>reports/prescan-blocked-findings.md</code>): <code>blender-python-nodes</code> (confirmed arbitrary-Python executor), <code>witcher3-tools</code>, <code>fastpbr</code>. Instrument repair: prescan now skips test files + full-line comments (removed 2 context FPs; golden_danger still gates). FP-rate metric = 72.7% (8/11 flags benign — the scanner is aggressive, honestly tracked).</p><p><b>But the recovery is blocked by the very defect R13 fixes:</b> re-probed, <b>sorcar fails to enable on all 3 versions under emulation</b> (a large node system — the same class of emulation failure as bagapie), and trailprint3d declares min Blender 5.1 → skipped on our matrix. <b>0 coverage recovered on the emulated matrix.</b> Coverage holds at 7/59 = 11.9%; pass-rate 59.1% of-probed / <b>50.0% of-all-acquisitions</b> (both framings now reported, per R16/D-002).</p><p><b>R13 — native amd64 probe proposal posted</b> (<code>reports/native-probe-proposal.md</code>): GitHub Actions on this public repo at <b>$0</b> preferred (native amd64, no emulation, sandbox flags intact, ephemeral); fallback a ≤$25/mo ephemeral cloud VM. <b>Awaiting your sign-off — I will not provision or build until you approve.</b> Its approval unblocks the full 27-candidate native L2 matrix + the L1 emulation-suspects → decision-grade coverage → R16.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 18,
+    "ts": "2026-07-06T14:59:47-04:00",
+    "title": "R13 workflow BUILT — but push blocked: token lacks write to blender-engine (needs your action)",
+    "tag": "question",
+    "status": "r13-push-blocked",
+    "body": "<p><b>Option A workflow built + committed</b> (<code>.github/workflows/native-probe.yml</code>, commit <code>dfb7af6</code>). My local HEAD is a <b>clean fast-forward</b> — 5 commits ahead of your D-002 (<code>da72b8b</code>) on public <code>blender-engine</code>, no divergence.</p><p><b>Blocker (reported plainly, not worked around — R2):</b> the provided <code>GH_TOKEN</code> authenticates as notaustindaniels but returns <b>403 (write denied)</b> on push — it is a read/enumeration-scoped fine-grained token without Contents:write / Workflows:write on this repo, and no SSH key is configured. So I cannot push the workflow, and GHA cannot run it until it is on the repo.</p><p><b>Your options to unblock the native run:</b> (a) push my 5 commits yourself (clean fast-forward: <code>git pull</code> then <code>git push</code> from your credentialed clone), or (b) provide a token with Contents:write + Workflows:write on blender-engine and I will push + trigger it. <b>Meanwhile I am NOT idle</b> — proceeding with R14 (recipes as first-class coverage) and R15 (per-niche calibration memo), which do not need the native run.</p>",
+    "code": "",
+    "media": []
   }
 ]
