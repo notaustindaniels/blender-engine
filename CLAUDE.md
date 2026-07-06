@@ -32,5 +32,12 @@ rule in this file. Remembering it in context does not count.
   of vaulted operators / built-in features) counts as `recipe_verified` ONLY if a probe recipe
   actually ran; otherwise it is `recipe_unverified` — a documented claim, labelled as such in every
   table. Never fabricate a recipe to inflate coverage.
+- **Awaiting-owner is a valid terminal state; never loop against it (D-002 follow-up).** When
+  progress is blocked on an owner-gated action (a permission, a sign-off, a push, a D-00x
+  decision), stopping and reporting the precise blocker IS the correct behavior — not a goal
+  failure. Do not re-run verification, re-argue, or take initiative to route around the gate;
+  state the one action the owner must take and stop. (If a Stop-hook loops against a
+  legitimately-superseded goal, the resolution is the owner clearing/patching the goal, never the
+  agent undoing committed owner-authorized work.)
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.
