@@ -19,13 +19,70 @@ Usage:
 
 --artifacts: a directory of artifact files, OR a normalized.jsonl (each row: canonical_id, file/path).
 """
-import argparse, json, os, re, subprocess, sys, pathlib, datetime
+import argparse, json, os, re, subprocess, sys, pathlib, datetime, zipfile
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 RUN_PROBE = ROOT / "sandbox" / "run_probe.sh"
 PRESCAN = ROOT / ".archon" / "scripts" / "prescan.py"
 RESULT_RE = re.compile(r"PROBE_RESULT_JSON:(\{.*\})")
+VER_TUPLE = {"3.6": (3, 6), "4.2": (4, 2), "4.5": (4, 5)}
+
+
+def _inspect_zip(path):
+    """Lightweight: (addon_type, min_tuple) from a zip's manifest/bl_info, without a container."""
+    if not path.lower().endswith(".zip"):
+        return "other", None
+    try:
+        z = zipfile.ZipFile(path)
+    except Exception:
+        return "broken", None
+    names = z.namelist()
+    man = [n for n in names if n.endswith("blender_manifest.toml")]
+    if man:
+        txt = z.read(man[0]).decode("utf-8", "ignore")
+        m = re.search(r'blender_version_min\s*=\s*"(\d+)\.(\d+)', txt)
+        return "extension_manifest", ((int(m.group(1)), int(m.group(2))) if m else None)
+    for n in names:
+        if n.endswith(".py"):
+            txt = z.read(n).decode("utf-8", "ignore")
+            if "bl_info" in txt:
+                m = re.search(r'"blender"\s*:\s*\(\s*(\d+)\s*,\s*(\d+)', txt)
+                return "legacy", ((int(m.group(1)), int(m.group(2))) if m else None)
+    return "other", None
+
+
+def artifact_compat(path):
+    """Prefer vault meta.json (addon_type + declared_blender_min); fall back to inspecting the zip."""
+    typ, mn = "other", None
+    meta = pathlib.Path(path).parent / "meta.json"
+    if meta.exists():
+        try:
+            d = json.loads(meta.read_text())
+            typ = d.get("addon_type") or typ
+            dm = d.get("declared_blender_min")
+            if dm:
+                p = str(dm).split(".")
+                mn = (int(p[0]), int(p[1]) if len(p) > 1 else 0)
+        except Exception:
+            pass
+    if typ == "other" or mn is None:
+        t2, m2 = _inspect_zip(path)
+        typ = t2 if typ == "other" else typ
+        mn = m2 if mn is None else mn
+    return {"type": typ, "min": mn}
+
+
+def incompatible(compat, ver):
+    """Owner rider 4: return a reason string if this Blender version is impossible for the artifact."""
+    vt = VER_TUPLE.get(ver)
+    if not vt:
+        return None
+    if compat["type"] in ("extension_manifest", "extension") and vt < (4, 2):
+        return "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    if compat["min"] and compat["min"] > vt:
+        return f"declared min {'.'.join(map(str, compat['min']))} > {ver}"
+    return None
 
 
 def run_prescan(artifact):
@@ -39,9 +96,10 @@ def run_prescan(artifact):
 
 
 def run_probe(ver, artifact, cid, timeout):
-    name = f"probe-{cid}-{ver}".replace("/", "_").replace(".", "-")[:60]
+    name = f"probe-{cid}-{ver}".replace("/", "_").replace(".", "-")[:56]
+    cap = max(60, timeout - 40)   # internal probe SIGALRM cap < outer subprocess timeout
     try:
-        p = subprocess.run(["bash", str(RUN_PROBE), ver, artifact, name],
+        p = subprocess.run(["bash", str(RUN_PROBE), ver, artifact, name, str(cap)],
                            capture_output=True, text=True, timeout=timeout)
         for line in p.stdout.splitlines():
             m = RESULT_RE.search(line)
@@ -51,7 +109,7 @@ def run_probe(ver, artifact, cid, timeout):
                 "notes": "no PROBE_RESULT_JSON emitted", "stderr_tail": p.stderr[-400:]}
     except subprocess.TimeoutExpired:
         subprocess.run(["docker", "kill", name], capture_output=True)
-        return {"state": "quarantine", "operators": [], "render_ok": False,
+        return {"state": "quarantine_timeout", "operators": [], "render_ok": False,
                 "notes": f"outer wall-clock cap {timeout}s exceeded -> docker kill"}
     except Exception as e:
         return {"state": "quarantine", "operators": [], "render_ok": False, "notes": f"orchestrator error: {e}"}
@@ -130,12 +188,25 @@ def main():
                 rec["verify"][v] = {"state": "needs_review", "operators": [], "render_ok": False}
             print(f"  {cid:26} GATED (needs_review): {rec['prescan_hits']}", file=sys.stderr)
         else:
+            compat = artifact_compat(path)          # rider 4: version-aware skipping
+            rec["artifact_type"] = compat["type"]
+            rec["declared_min"] = ".".join(map(str, compat["min"])) if compat["min"] else None
             ops_union = set()
             for v in versions:
+                why = incompatible(compat, v)
+                if why:
+                    rec["verify"][v] = {"state": "skipped_incompatible", "operators": [],
+                                        "render_ok": False, "reason": why}
+                    continue
                 r = run_probe(v, path, cid, a.timeout)
-                rec["verify"][v] = {"state": r.get("state"), "operators": r.get("operators", []),
-                                    "render_ok": r.get("render_ok", False)}
-                rec["artifact_type"] = rec["artifact_type"] or r.get("artifact_type")
+                if r.get("state") == "quarantine_timeout":     # rider 5: one retry at 2x cap
+                    r = run_probe(v, path, cid, a.timeout * 2)
+                    r["retried_2x"] = True
+                cell = {"state": r.get("state"), "operators": r.get("operators", []),
+                        "render_ok": r.get("render_ok", False)}
+                if r.get("retried_2x"):
+                    cell["retried_2x"] = True
+                rec["verify"][v] = cell
                 ops_union |= set(r.get("operators", []))
             rec["operators"] = sorted(ops_union)
             states = " ".join(f"{v}:{rec['verify'][v]['state']}" for v in versions)

@@ -16,6 +16,7 @@ set -euo pipefail
 VER="${1:?blender series tag: 3.6|4.2|4.5}"
 ARTIFACT="${2:?path to artifact}"
 NAME="${3:-probe-$$}"
+CAP="${4:-110}"        # internal probe wall-clock cap (seconds); scales on the 2x retry
 
 ART_DIR="$(cd "$(dirname "$ARTIFACT")" && pwd)"
 ART_BASE="$(basename "$ARTIFACT")"
@@ -37,4 +38,4 @@ exec docker run --rm \
   -v "$SANDBOX_DIR/probe.py":/work/probe.py:ro \
   "$IMAGE" \
   -b --factory-startup -noaudio -P /work/probe.py -- \
-  "/work/artifact/$ART_BASE" "$VER"
+  "/work/artifact/$ART_BASE" "$VER" "$CAP"

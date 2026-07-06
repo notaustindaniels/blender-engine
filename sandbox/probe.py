@@ -41,11 +41,19 @@ def emit_and_exit(code=0, **kw):
 
 
 def _timeout(signum, frame):
-    emit_and_exit(0, state="quarantine", notes="wall-clock cap exceeded (SIGALRM 110s)")
+    # distinct from a crash-quarantine: timeouts are retryable at 2x (owner rider 5)
+    emit_and_exit(0, state="quarantine_timeout", notes="wall-clock cap exceeded (SIGALRM)")
 
 
 signal.signal(signal.SIGALRM, _timeout)
-signal.alarm(110)
+# internal wall-clock cap is argv[2] (seconds) if provided, so the orchestrator's 2x retry
+# (owner rider 5) actually gives the probe more time; default 110s.
+_argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
+try:
+    _CAP = int(_argv[2]) if len(_argv) >= 3 else 110
+except Exception:
+    _CAP = 110
+signal.alarm(max(30, _CAP))
 
 VER = bpy.app.version  # (major, minor, patch) tuple
 
@@ -125,10 +133,50 @@ def is_legacy_declared(info):
 
 
 # ───────────────────────── install + enable ─────────────────────────
+def normalize_archive(path):
+    """GitHub archives wrap everything in a 'repo-branch/' dir. If the add-on is nested >=2 levels
+    deep, repack ONLY the add-on into /tmp/clean_addon.zip so addon_install / extensions see a clean
+    package. Provenance is unaffected — the VAULTED artifact stays the exact original download; this
+    is an ephemeral, in-container transform."""
+    if not path.lower().endswith(".zip"):
+        return path
+    try:
+        z = zipfile.ZipFile(path)
+    except Exception:
+        return path
+    names = z.namelist()
+    mans = sorted([n for n in names if n.endswith("blender_manifest.toml")], key=lambda p: p.count("/"))
+    root = None
+    if mans:
+        root = mans[0].rsplit("/", 1)[0] if "/" in mans[0] else ""
+    else:
+        for n in sorted([n for n in names if n.endswith("__init__.py")], key=lambda p: p.count("/")):
+            try:
+                if b"bl_info" in z.read(n):
+                    root = n.rsplit("/", 1)[0] if "/" in n else ""
+                    break
+            except Exception:
+                pass
+    if root is None or root.count("/") < 1:   # at zip root or single-top-dir -> installer handles it
+        return path
+    pkg = root.rsplit("/", 1)[-1]
+    out = "/tmp/clean_addon.zip"
+    try:
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as zo:
+            prefix = root + "/"
+            for n in names:
+                if n.startswith(prefix) and not n.endswith("/"):
+                    zo.writestr(f"{pkg}/{n[len(prefix):]}", z.read(n))
+        return out
+    except Exception:
+        return path
+
+
 def install_and_enable(path, info):
     """Returns (enabled_module_or_None, err_text)."""
     stderr_buf = io.StringIO()
     kind = info["kind"]
+    path = normalize_archive(path)   # ephemeral repack for GitHub-wrapped archives (provenance intact)
 
     if kind == "broken":
         return None, "artifact is not a valid zip"

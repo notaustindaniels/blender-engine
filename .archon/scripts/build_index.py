@@ -19,7 +19,7 @@ CREATE TABLE addons(canonical_id TEXT PRIMARY KEY, name TEXT, author TEXT, licen
 CREATE TABLE operators(id TEXT PRIMARY KEY, canonical_id TEXT, kind TEXT, op_id TEXT, verbs_json TEXT);
 CREATE TABLE verify(canonical_id TEXT, blender_ver TEXT, state TEXT, render_ok INTEGER,
                     PRIMARY KEY(canonical_id, blender_ver));
-CREATE TABLE coverage(niche_id TEXT, canonical_id TEXT, operator_id TEXT, blender_ver TEXT);
+CREATE TABLE coverage(niche_id TEXT, canonical_id TEXT, operator_id TEXT, blender_ver TEXT, state TEXT);
 CREATE TABLE graveyard(url TEXT, reason TEXT, seen_at TEXT);
 """
 
@@ -56,14 +56,14 @@ def main():
         addons.append((cid, meta.get("name") or man.get("name"), meta.get("author"),
                        meta.get("license"), meta.get("addon_type") or man.get("artifact_type"),
                        1 if meta.get("procedural") else 0))
-        # per-version verify
-        surviving_vers = set()
+        # per-version verify (skipped_incompatible / quarantine_timeout stored as-is)
+        surviving = {}   # ver -> state (pass|partial) — carries the state into coverage (rider 7)
         for ver, vres in sorted((man.get("verify") or {}).items()):
             st = vres.get("state")
             verifies.append((cid, ver, st, 1 if vres.get("render_ok") else 0))
             if st in SURVIVE:
-                surviving_vers.add(ver)
-        # operators + coverage (niche <- passing operator on surviving versions)
+                surviving[ver] = st
+        # operators + coverage (niche <- operator on surviving versions, WITH the state)
         for op in (man.get("operators_enriched") or man.get("operators") or []):
             if isinstance(op, str):
                 op = {"kind": "bpy_op", "id": op, "verbs": [], "niches": []}
@@ -71,13 +71,13 @@ def main():
             ops.append((opid, cid, op.get("kind", "bpy_op"), op.get("id"),
                         json.dumps(op.get("verbs", []))))
             for niche in op.get("niches", []):
-                for ver in sorted(surviving_vers):
-                    covers.append((niche, cid, opid, ver))
+                for ver, st in sorted(surviving.items()):
+                    covers.append((niche, cid, opid, ver, st))
 
     con.executemany("INSERT OR IGNORE INTO addons VALUES(?,?,?,?,?,?)", sorted(set(addons)))
     con.executemany("INSERT OR IGNORE INTO operators VALUES(?,?,?,?,?)", sorted(set(ops)))
     con.executemany("INSERT OR IGNORE INTO verify VALUES(?,?,?,?)", sorted(set(verifies)))
-    con.executemany("INSERT INTO coverage VALUES(?,?,?,?)", sorted(set(covers)))
+    con.executemany("INSERT INTO coverage VALUES(?,?,?,?,?)", sorted(set(covers)))
 
     if os.path.exists(a.graveyard):
         for line in open(a.graveyard):

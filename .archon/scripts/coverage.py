@@ -3,14 +3,18 @@
 # dependencies = ["pyyaml>=6"]
 # ///
 """coverage.py — corpus.db -> coverage matrix (SPEC §4.5, §2.1 Map). DETERMINISTIC; the AI
-`write-coverage` node narrates on TOP of these computed numbers, never replaces them.
+`write-coverage` node narrates on TOP of these numbers, never replaces them.
 
-WAVE ISOLATION (§12.1(4)): PRD §3/§4 targets + the step-3 gate compute on WAVE-1 niches only.
-Denominators are PRESENT niches per the taxonomy (§12.1(5)). Wave-2 gets a separate table.
-Emits reports/coverage-report.md, reports/coverage.json, reports/gaps.md, and
-reports/taxonomy-proposals.md (§12.1(6)).
+WAVE ISOLATION (§12.1(4)): PRD §3/§4 targets + the step-3 gate compute on WAVE-1 niches only;
+denominators are PRESENT niches (§12.1(5)); wave-2 gets a separate table.
+HONEST COMPOSITION (§12.2, owner rider 7): every coverage table splits FULL-PASS vs PARTIAL-only,
+and partial-only niches accumulate a probe-recipe backlog (reports/probe-recipes.md) instead of
+being silently counted the same as passes.
+
+Emits reports/{coverage-report.md, coverage.json, gaps.md, taxonomy-proposals.md, probe-recipes.md}.
 
 Usage: coverage.py [--db corpus.db] [--taxonomy inputs/taxonomy.yaml] [--reports reports]
+                   [--probe-categories terrain,vegetation]
 """
 import argparse, json, sqlite3, pathlib
 import yaml
@@ -20,8 +24,7 @@ SURVIVE = {"pass", "partial"}
 
 def load_taxonomy(path):
     doc = yaml.safe_load(open(path).read())
-    niches = {}   # niche_id -> {cat, cat_name, wave, core}
-    cats = {}     # cat_id -> {name, wave1:[...], wave2:[...], core}
+    niches, cats = {}, {}
     for cat in doc.get("categories", []):
         cid = cat["id"]
         cats[cid] = {"name": cat.get("name", cid), "wave1": [], "wave2": []}
@@ -44,14 +47,18 @@ def main():
     doc, niches, cats = load_taxonomy(a.taxonomy)
     con = sqlite3.connect(a.db)
 
-    covered_by = {}   # niche_id -> set(canonical_id)
-    for niche, cid in con.execute("SELECT DISTINCT niche_id, canonical_id FROM coverage"):
+    covered_by, niche_pass, niche_ops = {}, {}, {}
+    for niche, cid, opid, state in con.execute(
+            "SELECT DISTINCT niche_id, canonical_id, operator_id, state FROM coverage"):
         covered_by.setdefault(niche, set()).add(cid)
+        niche_pass[niche] = niche_pass.get(niche, False) or (state == "pass")
+        niche_ops.setdefault(niche, []).append((cid, opid, state))
 
-    # acquisition pass-rate = addons surviving (pass/partial) on >=1 version / addons verified
+    # pass-rate: surviving / verified, where verified EXCLUDES skipped_incompatible cells (rider 4)
     verified_ids, surviving_ids = set(), set()
-    for cid, ver, state, rok in con.execute("SELECT canonical_id, blender_ver, state, render_ok FROM verify"):
-        verified_ids.add(cid)
+    for cid, state in con.execute("SELECT canonical_id, state FROM verify"):
+        if state != "skipped_incompatible":
+            verified_ids.add(cid)
         if state in SURVIVE:
             surviving_ids.add(cid)
     pass_rate = (len(surviving_ids) / len(verified_ids)) if verified_ids else 0.0
@@ -59,44 +66,44 @@ def main():
     def cat_cov(cat_id, wave):
         present = cats[cat_id][f"wave{wave}"]
         covered = [n for n in present if covered_by.get(n)]
-        return present, covered
+        cpass = [n for n in covered if niche_pass.get(n)]
+        cpart = [n for n in covered if not niche_pass.get(n)]
+        return present, covered, cpass, cpart
 
     probe_cats = [c.strip() for c in a.probe_categories.split(",")]
-    # ---- gate: probe categories, wave-1 only ----
-    gate_present, gate_covered = [], []
+    gate_present, gate_cov, gate_pass, gate_part = [], [], [], []
     for c in probe_cats:
-        p, cv = cat_cov(c, 1)
-        gate_present += p; gate_covered += cv
-    gate_pct = (len(gate_covered) / len(gate_present) * 100) if gate_present else 0.0
+        p, cv, cp, cpa = cat_cov(c, 1)
+        gate_present += p; gate_cov += cv; gate_pass += cp; gate_part += cpa
+    gate_pct = (len(gate_cov) / len(gate_present) * 100) if gate_present else 0.0
 
     reports = pathlib.Path(a.reports); reports.mkdir(exist_ok=True)
 
-    # ---- full wave-1 category table ----
     def table(wave):
-        lines = ["| category | present | covered | % |", "|---|---:|---:|---:|"]
-        tot_p = tot_c = 0
+        lines = ["| category | present | covered | full-pass | partial-only | % |",
+                 "|---|---:|---:|---:|---:|---:|"]
+        tp = tc = tpass = tpart = 0
         for cid in cats:
-            p, cv = cat_cov(cid, wave)
+            p, cv, cp, cpa = cat_cov(cid, wave)
             if not p:
                 continue
-            tot_p += len(p); tot_c += len(cv)
+            tp += len(p); tc += len(cv); tpass += len(cp); tpart += len(cpa)
             pct = (len(cv) / len(p) * 100) if p else 0
-            lines.append(f"| {cats[cid]['name']} | {len(p)} | {len(cv)} | {pct:.0f}% |")
-        pct = (tot_c / tot_p * 100) if tot_p else 0
-        lines.append(f"| **TOTAL (wave {wave})** | **{tot_p}** | **{tot_c}** | **{pct:.0f}%** |")
-        return "\n".join(lines), tot_p, tot_c
+            lines.append(f"| {cats[cid]['name']} | {len(p)} | {len(cv)} | {len(cp)} | {len(cpa)} | {pct:.0f}% |")
+        pct = (tc / tp * 100) if tp else 0
+        lines.append(f"| **TOTAL (wave {wave})** | **{tp}** | **{tc}** | **{tpass}** | **{tpart}** | **{pct:.0f}%** |")
+        return "\n".join(lines), tp, tc, tpass, tpart
 
-    w1_table, w1_p, w1_c = table(1)
-    w2_table, w2_p, w2_c = table(2)
+    w1_table, w1p, w1c, w1pass, w1part = table(1)
+    w2_table, w2p, w2c, w2pass, w2part = table(2)
 
-    # ---- covered-niche detail for the probe categories ----
-    detail = ["| niche | category | covered by |", "|---|---|---|"]
+    detail = ["| niche | category | best | covered by |", "|---|---|---|---|"]
     for c in probe_cats:
         for n in cats[c]["wave1"]:
             if covered_by.get(n):
-                detail.append(f"| `{n}` | {c} | {', '.join(sorted(covered_by[n]))} |")
+                best = "pass" if niche_pass.get(n) else "partial"
+                detail.append(f"| `{n}` | {c} | {best} | {', '.join(sorted(covered_by[n]))} |")
 
-    # ---- gaps (zero-operator wave-1 niches in probe categories) ----
     gaps = [f"# Coverage Gaps — {', '.join(probe_cats)} (wave-1)\n",
             "Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):\n"]
     for c in probe_cats:
@@ -107,40 +114,60 @@ def main():
             gaps.append(f"- `{n}`" + (f"  ({', '.join(al)})" if al else ""))
         gaps.append("")
 
-    # ---- taxonomy proposals: surviving add-ons whose niches were unmapped ----
+    # probe-recipe backlog (§12.2): niches covered ONLY by partial -> need a smoke-run recipe
+    recipes = ["# Probe-Recipe Backlog (SPEC §12.2)\n",
+               "Niches whose only covering operators reached `partial` (registered + rendered, but "
+               "the operator could not be auto-driven to a geometry delta headless — typically a "
+               "dialog/modal generator). Each needs a per-operator probe recipe (params/context to "
+               "make it emit geometry) to upgrade `partial -> pass`. These COUNT toward coverage but "
+               "are tracked here so partials never silently masquerade as full passes.\n"]
+    partial_only = [n for n in covered_by if not niche_pass.get(n)]
+    if not partial_only:
+        recipes.append("_(none — every covered niche has at least one full-pass operator)_")
+    for n in sorted(partial_only):
+        cat = niches.get(n, {}).get("cat", "?")
+        for cid, opid, state in sorted(niche_ops.get(n, [])):
+            if state == "partial":
+                recipes.append(f"- `{n}` ({cat}) ← `{opid}`  — recipe TODO")
+
     all_niche_ids = set(niches)
     proposals = ["# Taxonomy Proposals (§12.1(6))\n",
                  "Harvested add-ons that survived verification but map to NO taxonomy niche — "
                  "candidate wave-3 niches. Owner-approved only; never auto-added.\n"]
-    mapped_addons = {cid for s in covered_by.values() for cid in s}
+    mapped = {cid for s in covered_by.values() for cid in s}
     prop_rows = []
-    for cid in sorted(surviving_ids - mapped_addons):
-        name, tags = con.execute(
-            "SELECT name, addon_type FROM addons WHERE canonical_id=?", (cid,)).fetchone() or (cid, "")
-        prop_rows.append(f"- `{cid}` ({name}) — survived verification, no niche mapped yet")
+    for cid in sorted(surviving_ids - mapped):
+        row = con.execute("SELECT name FROM addons WHERE canonical_id=?", (cid,)).fetchone()
+        prop_rows.append(f"- `{cid}` ({row[0] if row else cid}) — survived, no niche mapped")
     proposals += (prop_rows or ["_(none — every surviving add-on mapped to a niche)_"])
 
     out = {
         "probe_categories": probe_cats,
-        "gate": {"denominator_present_wave1": len(gate_present), "covered": len(gate_covered),
-                 "coverage_pct": round(gate_pct, 1),
-                 "terrain_veg_niches": len(gate_present)},
+        "gate": {"denominator_present_wave1": len(gate_present), "covered": len(gate_cov),
+                 "full_pass": len(gate_pass), "partial_only": len(gate_part),
+                 "coverage_pct": round(gate_pct, 1)},
         "pass_rate": {"verified": len(verified_ids), "surviving": len(surviving_ids),
                       "pct": round(pass_rate * 100, 1)},
-        "wave1_total": {"present": w1_p, "covered": w1_c},
-        "wave2_total": {"present": w2_p, "covered": w2_c},
+        "wave1_total": {"present": w1p, "covered": w1c, "full_pass": w1pass, "partial_only": w1part},
+        "wave2_total": {"present": w2p, "covered": w2c, "full_pass": w2pass, "partial_only": w2part},
         "covered_by": {k: sorted(v) for k, v in covered_by.items()},
+        "probe_recipe_backlog": sorted(partial_only),
     }
     (reports / "coverage.json").write_text(json.dumps(out, indent=2))
 
-    md = [f"# Coverage Report — L1 Thin Slice ({', '.join(probe_cats)})", ""]
-    md.append("Computed deterministically by `coverage.py` from `corpus.db`. Wave-1 drives the "
-              "gate (§12.1(4)); denominators are PRESENT niches (§12.1(5)).\n")
+    md = [f"# Coverage Report — L1+L2 ({', '.join(probe_cats)})", ""]
+    md.append("Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4)); "
+              "denominators are PRESENT niches (§12.1(5)); every table splits full-pass vs partial "
+              "(§12.2).\n")
     md.append("## Gate metrics (PRD §4 wrong-condition)\n")
-    md.append(f"- **Terrain + Vegetation coverage (wave-1): {len(gate_covered)}/{len(gate_present)} "
-              f"= {gate_pct:.1f}%**  — PRD stop-line is <40% (evaluated after L1+L2).")
+    md.append(f"- **Terrain + Vegetation coverage (wave-1): {len(gate_cov)}/{len(gate_present)} = "
+              f"{gate_pct:.1f}%**  ({len(gate_pass)} full-pass + {len(gate_part)} partial-only) — "
+              f"PRD stop-line <40%.")
     md.append(f"- **Acquisition pass-rate: {len(surviving_ids)}/{len(verified_ids)} = "
-              f"{pass_rate*100:.1f}%** (pass/partial on ≥1 version) — PRD stop-line is <30%.\n")
+              f"{pass_rate*100:.1f}%** (pass/partial on ≥1 compatible version; skipped-incompatible "
+              f"cells excluded) — PRD stop-line <30%.")
+    md.append(f"- **Probe-recipe backlog:** {len(partial_only)} niche(s) partial-only "
+              f"(see `reports/probe-recipes.md`).\n")
     md.append("## Covered niches (Terrain + Vegetation, wave-1)\n")
     md.append("\n".join(detail) if len(detail) > 2 else "_(none yet)_")
     md.append("\n## Coverage by category (wave-1)\n")
@@ -150,6 +177,7 @@ def main():
     (reports / "coverage-report.md").write_text("\n".join(md) + "\n")
     (reports / "gaps.md").write_text("\n".join(gaps) + "\n")
     (reports / "taxonomy-proposals.md").write_text("\n".join(proposals) + "\n")
+    (reports / "probe-recipes.md").write_text("\n".join(recipes) + "\n")
 
     con.close()
     print(json.dumps(out))
