@@ -31,6 +31,12 @@ L1 already covered (erosion_sim, terrain_generator). Probe-recipe backlog: 4 par
 3. **Enumeration ≠ verification bottleneck.** The yield spike found tens of thousands of `bl_info`
    hits; the R11 enumerator recorded **27 active T+V candidates + 136 graveyard records** from 160
    repos. But verification is the wall — see the native-probe decision.
+4. **L2 provenance model.** Every vault entry records its source URL + a SHA-256 computed at acquire.
+   **10 of 15** L2 archives are **immutable tag** archives (re-download → identical hash, exactly
+   like L1); **5** are **branch-HEAD** snapshots (repos without a release), so a re-download reflects
+   current HEAD and may differ if the repo advanced — the recorded hash is the honest acquire-time
+   snapshot, and URL + hash together stay re-checkable. (Future hardening: pin branch archives to a
+   commit SHA for full immutability.)
 
 ## Formal PRD §4 reading — and why it is NOT yet decision-grade
 
