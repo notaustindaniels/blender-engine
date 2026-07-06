@@ -1,0 +1,564 @@
+# taxonomy.yaml — niche taxonomy for the Stage-1 corpus (SPEC §4.1 schema, with additive keys)
+# VERSION 2 — strict superset of v1. Every wave-1 entry is unchanged; wave-2 adds the
+# owner's emergent-formation / diegetic-dataviz brainstorm plus ecosystem expansion.
+#
+# Provenance: wave 1 reconstructed 2026-07-05 from the owner's original taxonomy document
+# (paste/OCR corruption flagged inline, never papered over). Wave 2 added 2026-07-05 from
+# the owner's second brainstorm document (swarm/force/craft/erosion/light/architecture/
+# bio-growth/liquid groups + meta-patterns), the engine design conversation, and
+# high-confidence cross-DCC ecosystem knowledge.
+#
+# Conventions (ADDITIVE to SPEC §4.1 — validators MUST tolerate unknown keys):
+#   core omitted             => core: false
+#   wave omitted             => wave: 1   (wave-2 entries carry wave: 2 + origin)
+#   origin                   => user_brainstorm_2 | engine_design | ecosystem_expansion
+#   verbs: []                => pure-utility niche; no physical verb applies
+#   reconstructed: true      => id/alias rebuilt from a damaged fragment (wave 1 only)
+#   declared_count           => count stated in the wave-1 source document (wave 1 only)
+#   unrecovered_count/hints  => wave-1 niches lost to corruption, recorded as counts +
+#                               raw fragments — deliberately NOT placeholder entries
+#
+# ★ EXPLICIT DECISION 2026-07-05 (per SPEC §4.4/§12 freeze rule): the verb enum is
+#   extended by exactly ONE verb — `aggregate` (many small units self-organize into a
+#   target shape). Required by the emergent-formation tier; no other extension. The
+#   builder should append the same dated note to SPEC §4.4.
+#
+# ★ GATE ISOLATION: PRD §3/§4 targets and the step-3 thin-slice gate compute on
+#   wave-1 niches ONLY (wave absent or 1). Wave-2 coverage is reported in a separate
+#   table and never moves the gate. Rationale: the PRD hypothesis was calibrated on the
+#   wave-1 denominator; expansion is added intelligence, not a moving goalpost.
+#
+# Verb enum (v2): generate, scatter, trace, stack, accumulate, branch, fill, deplete,
+#                 reveal, illuminate, simulate, deform, aggregate
+#
+# Coverage denominators = niches PRESENT per wave (see meta). ids are FROZEN once the
+# first coverage run lands; later renames require an alias-preserving migration.
+
+meta:
+  schema: "SPEC-4.1+additive-v2"
+  generated: "2026-07-05"
+  declared_total: 287            # wave-1 source document: 215 static + 72 animation
+  wave1_present: 269
+  wave2_present: 59
+  present_total: 328
+  crossref_dedup_total: 2        # materials-family snow/ice folded into terrain entries
+  unrecovered_total: 16          # wave-1 corruption losses (counts + hints, no placeholders)
+  verb_enum: [generate, scatter, trace, stack, accumulate, branch, fill, deplete, reveal, illuminate, simulate, deform, aggregate]
+
+categories:
+
+  # ───────────────────────────── PART 1 — STATIC GENERATION ─────────────────────────────
+
+  - id: terrain
+    name: "Terrain & landscape"
+    declared_count: 36
+    unrecovered_count: 0
+    niches:
+      - { id: terrain_generator, aliases: ["A.N.T. Landscape class", "True-Terrain class", "heightmap"], verbs: [generate], core: true }
+      - { id: heightmap_stack_tools, aliases: [], verbs: [generate], core: true }
+      - { id: erosion_sim, aliases: ["hydraulic erosion", "thermal erosion"], verbs: [simulate, deplete], core: true }
+      - { id: sediment_deposition, aliases: [], verbs: [accumulate], core: true }
+      - { id: canyon_mesa_generator, aliases: ["mesas", "hoodoos", "badlands"], verbs: [generate], core: true }
+      - { id: karst_formation, aliases: ["sinkholes", "sea stacks"], verbs: [generate, deplete], core: true }
+      - { id: cliff_rockface_generator, aliases: ["strata", "overhangs"], verbs: [generate], core: true }
+      - { id: scree_talus_scatter, aliases: [], verbs: [scatter], core: true }
+      - { id: cave_network_generator, aliases: ["SDF tunnels"], verbs: [generate, branch], core: true }
+      - { id: stalactite_generator, aliases: ["flowstone", "columns"], verbs: [generate, accumulate], core: true }
+      - { id: river_generator, aliases: [], verbs: [trace, branch], core: true }
+      - { id: meander_braid_tools, aliases: ["oxbows", "braided bars"], verbs: [trace, branch], core: true }
+      - { id: waterfall_generator, aliases: ["splash zones", "plunge pools"], verbs: [generate, simulate], core: true }
+      - { id: coastline_generator, aliases: ["archipelagos", "fjords"], verbs: [generate, trace], core: true }
+      - { id: coral_atoll_generator, aliases: [], verbs: [generate], core: true }
+      - { id: dune_generator, aliases: ["barchan", "star", "longitudinal"], verbs: [generate, accumulate], core: true }
+      - { id: sand_sim, aliases: [], verbs: [simulate, accumulate], core: true }
+      - { id: cracked_earth_shader, aliases: ["desiccation polygons"], verbs: [fill, branch], core: true }
+      - { id: heat_haze, aliases: [], verbs: [deform], core: true }
+      - { id: glacier_flow_generator, aliases: ["moraines", "crevasses"], verbs: [generate, trace], core: true }
+      - { id: icicle_generator, aliases: [], verbs: [generate, accumulate], core: true }
+      - { id: snowdrift_generator, aliases: ["wind-directional accumulation"], verbs: [accumulate], core: true }
+      - { id: frozen_lake_generator, aliases: ["trapped bubbles"], verbs: [generate], core: true, reconstructed: true, note: "from fragment 'frozen_la…rapped bubbles)'" }
+      - { id: snow_ice_shader, aliases: ["snow shader (materials-family crossref)"], verbs: [fill], core: true, note: "also referenced by the materials trailing shader family" }
+      - { id: ice_shader, aliases: ["ice shader (materials-family crossref)"], verbs: [fill], core: true, note: "also referenced by the materials trailing shader family" }
+      - { id: snow_accumulation, aliases: [], verbs: [accumulate], core: true }
+      - { id: crack_generator, aliases: [], verbs: [trace, branch], core: true }
+      - { id: crater_field_generator, aliases: ["ejecta", "size-frequency scaling"], verbs: [scatter, generate], core: true }
+      - { id: asteroid_generator, aliases: [], verbs: [generate, scatter], core: true }
+      - { id: alien_biome_generator, aliases: [], verbs: [generate], core: true }
+      - { id: gas_giant_shader, aliases: ["cloud bands", "vortices"], verbs: [fill, illuminate], core: true, reconstructed: true, note: "from orphan fragment 'shader (cloud bands, vortices)'" }
+      - { id: planetary_ring_generator, aliases: [], verbs: [generate], core: true }
+      - { id: lava_field_generator, aliases: ["pahoehoe", "aa", "skylights"], verbs: [generate, fill], core: true }
+      - { id: volcanic_caldera_generator, aliases: ["cinder cones", "fumaroles"], verbs: [generate], core: true }
+      - { id: rice_terrace_generator, aliases: [], verbs: [generate, stack], core: true }
+      - { id: fissure_generator, aliases: [], verbs: [trace, branch], core: true, reconstructed: true, note: "source truncates at 'fissur'" }
+      # ── wave 2 ──
+      - { id: terrain_stamp_library, aliases: ["Gaea-style stamps", "World Machine stamps"], verbs: [generate], core: true, wave: 2, origin: ecosystem_expansion }
+      - { id: flow_map_generator, aliases: ["directional flow maps"], verbs: [trace, fill], core: true, wave: 2, origin: ecosystem_expansion }
+      - { id: road_path_terrain_conform, aliases: ["cut-and-fill", "path projection"], verbs: [trace, deform], core: true, wave: 2, origin: ecosystem_expansion }
+
+  - id: vegetation
+    name: "Vegetation & organic"
+    declared_count: 25
+    unrecovered_count: 2
+    unrecovered_hints:
+      - "gap inside merged token 'bonsai_genera_meadow_scatter' — at least one niche lost between bonsai and meadow scatter"
+      - "gap before fragment 'ain/fan)' following anemone_generator"
+    niches:
+      - { id: tree_generator, aliases: [], verbs: [generate, branch], core: true }
+      - { id: space_colonization_growth, aliases: ["roots", "veins", "lightning"], verbs: [branch, trace], core: true, reconstructed: true, note: "from merged token 'tree_generatorlonization_growth'" }
+      - { id: tree_species_presets, aliases: ["seasonal variants"], verbs: [generate], core: true }
+      - { id: dead_tree_generator, aliases: ["burnt", "lightning-split"], verbs: [generate, branch], core: true }
+      - { id: root_system_generator, aliases: ["buttress", "mangrove stilts"], verbs: [branch], core: true }
+      - { id: bonsai_generator, aliases: [], verbs: [generate, branch], core: true, reconstructed: true, note: "from fragment 'bonsai_genera'" }
+      - { id: grass_meadow_scatter, aliases: ["wheat", "wind-ready blades"], verbs: [scatter], core: true, reconstructed: true, note: "from fragment '_meadow_scatter'" }
+      - { id: flower_generator, aliases: ["phyllotaxis roses", "sunflowers"], verbs: [generate], core: true }
+      - { id: succulent_generator, aliases: ["spiral aloes"], verbs: [generate], core: true }
+      - { id: fern_generator, aliases: ["fiddlehead unroll"], verbs: [generate, reveal], core: true }
+      - { id: vine_growth, aliases: [], verbs: [trace, branch], core: true }
+      - { id: ivy_generator, aliases: [], verbs: [trace, branch], core: true }
+      - { id: climbing_plant_generator, aliases: ["trellises"], verbs: [trace, branch], core: true, reconstructed: true, note: "from merged token 'climbellises)'" }
+      - { id: mushroom_generator, aliases: ["fairy rings", "shelf fungi"], verbs: [generate, scatter], core: true }
+      - { id: moss_lichen_growth, aliases: ["exposure-directional"], verbs: [fill, accumulate], core: true }
+      - { id: ground_cover, aliases: [], verbs: [scatter], core: true }
+      - { id: orchard_row_scatter, aliases: ["vineyards", "hedgerows"], verbs: [scatter], core: true }
+      - { id: kelp_forest_generator, aliases: [], verbs: [generate, scatter], core: true }
+      - { id: anemone_generator, aliases: [], verbs: [generate], core: true }
+      - { id: coral_generator, aliases: ["brain coral", "fan coral"], verbs: [generate, branch], core: true, reconstructed: true, note: "from fragment 'ain/fan)'" }
+      - { id: bioluminescent_flora, aliases: ["tentacle plants", "crystal trees"], verbs: [generate, illuminate], core: true }
+      - { id: organic_cell_shader, aliases: [], verbs: [fill], core: true }
+      - { id: vein_generator, aliases: [], verbs: [branch, trace], core: true }
+      # ── wave 2 ──
+      - { id: biome_scatter_system, aliases: ["Geo-Scatter class", "Gscatter class", "multi-layer ecosystems"], verbs: [scatter], core: true, wave: 2, origin: ecosystem_expansion }
+      - { id: growth_along_spline, aliases: ["vine climbs a plotted curve", "growth constrained to data path"], verbs: [trace, branch], core: true, wave: 2, origin: user_brainstorm_2 }
+
+  - id: cities_urban
+    name: "Cities & urban"
+    declared_count: 20
+    unrecovered_count: 2
+    unrecovered_hints:
+      - "fragment ending '…tor,' between sidewalk_detail and plaza_park_generator"
+      - "trailing fragment 'v…' after neon_signage"
+    niches:
+      - { id: city_builder, aliases: [], verbs: [generate] }
+      - { id: road_network, aliases: [], verbs: [trace, branch] }
+      - { id: medieval_town_layout, aliases: ["plaza-and-church cores"], verbs: [generate] }
+      - { id: lot_subdivision, aliases: ["zoning"], verbs: [generate, branch] }
+      - { id: highway_interchange, aliases: ["cloverleafs"], verbs: [trace, branch] }
+      - { id: bridge_generator, aliases: ["suspension", "arch", "truss"], verbs: [generate, trace], reconstructed: true, note: "orphan parenthetical '(suspension/arch/truss)' can only be a bridge" }
+      - { id: tunnel_generator, aliases: [], verbs: [generate, trace] }
+      - { id: rail_track_generator, aliases: [], verbs: [trace] }
+      - { id: street_furniture_scatter, aliases: ["lamps", "hydrants", "signage"], verbs: [scatter] }
+      - { id: power_line_generator, aliases: ["catenary sag"], verbs: [trace] }
+      - { id: sidewalk_detail, aliases: ["manholes", "tactile paving"], verbs: [generate, scatter] }
+      - { id: plaza_park_generator, aliases: ["fountains"], verbs: [generate] }
+      - { id: slum_shanty_generator, aliases: [], verbs: [generate, stack] }
+      - { id: cyberpunk_stack_generator, aliases: ["holo-ads"], verbs: [generate, stack] }
+      - { id: postapoc_ruin_city, aliases: ["overgrowth", "barricades"], verbs: [generate, deplete] }
+      - { id: traffic_sim, aliases: [], verbs: [simulate] }
+      - { id: crowd_system, aliases: [], verbs: [simulate, scatter] }
+      - { id: neon_signage, aliases: [], verbs: [illuminate, generate] }
+
+  - id: buildings_architecture
+    name: "Buildings & architecture"
+    declared_count: 18
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "possible loss inside merged tokens 'building_g…dow rhythm' or 'castlemoats)'"
+    niches:
+      - { id: building_generator, aliases: ["window rhythm", "fire escapes", "AC units"], verbs: [generate, stack], reconstructed: true, note: "from fragment 'building_g…dow rhythm'" }
+      - { id: roof_generator, aliases: ["hips", "mansards", "thatch"], verbs: [generate] }
+      - { id: interior_autolayout, aliases: ["floor-plan partitioning"], verbs: [generate, branch] }
+      - { id: stair_generator, aliases: ["spiral", "escalators", "curve-following rails"], verbs: [generate, stack] }
+      - { id: castle_generator, aliases: ["moats"], verbs: [generate], reconstructed: true, note: "from merged token 'castlemoats)'" }
+      - { id: gothic_tracery, aliases: ["rose windows", "buttresses"], verbs: [generate] }
+      - { id: column_order_kit, aliases: [], verbs: [generate] }
+      - { id: dome_pagoda_generator, aliases: ["minarets", "stupas"], verbs: [generate] }
+      - { id: pipe_routing, aliases: ["valves", "flanges"], verbs: [trace, branch], note: "source calls this 'the big one'" }
+      - { id: catwalk_generator, aliases: [], verbs: [generate, trace] }
+      - { id: tank_silo_generator, aliases: [], verbs: [generate], reconstructed: true, note: "from merged token 'tank_silo_generating_generator'" }
+      - { id: scaffolding_generator, aliases: [], verbs: [generate, stack], reconstructed: true, note: "second half of the same merged token" }
+      - { id: crane_rig, aliases: [], verbs: [generate, deform] }
+      - { id: space_station_generator, aliases: ["hab rings", "docking"], verbs: [generate] }
+      - { id: greeble_nodes, aliases: [], verbs: [scatter, generate] }
+      - { id: ruin_decay_states, aliases: ["intact-damaged-collapsed"], verbs: [deplete] }
+      - { id: room_generator, aliases: [], verbs: [generate] }
+
+  - id: rooms_interiors
+    name: "Rooms & interiors"
+    declared_count: 13
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "merge 'chandelier_generatorms, sag bundles)' — cable/wire niche reconstructed; one more item may be lost here or inside 'parametric_furniture_asset_pack' if that was originally two entries"
+    niches:
+      - { id: parametric_furniture_asset_pack, aliases: [], verbs: [generate], note: "verbatim; possibly two merged niches in the original" }
+      - { id: kitchen_bath_generator, aliases: ["cabinet runs", "tiling"], verbs: [generate] }
+      - { id: shelf_filler, aliases: ["books", "warehouse stock"], verbs: [fill, stack] }
+      - { id: clutter_scatter, aliases: [], verbs: [scatter] }
+      - { id: curtain_blind_generator, aliases: [], verbs: [generate, deform] }
+      - { id: rug_carpet_generator, aliases: [], verbs: [generate] }
+      - { id: chandelier_generator, aliases: [], verbs: [generate] }
+      - { id: cable_wire_generator, aliases: ["sag bundles"], verbs: [trace], reconstructed: true, note: "from fragment '…ms, sag bundles)'" }
+      - { id: interior_lighting_rig, aliases: [], verbs: [illuminate] }
+      - { id: book_asset_pack, aliases: [], verbs: [generate] }
+      - { id: neon_text, aliases: [], verbs: [illuminate] }
+      - { id: glassware_assets, aliases: [], verbs: [generate] }
+
+  - id: characters_creatures
+    name: "Characters & creatures"
+    declared_count: 8
+    unrecovered_count: 0
+    niches:
+      - { id: parametric_human, aliases: ["MB-Lab class", "HumGen class"], verbs: [generate] }
+      - { id: creature_part_kit, aliases: ["horns", "tusks", "antlers"], verbs: [generate] }
+      - { id: scale_feather_generator, aliases: [], verbs: [scatter, generate] }
+      - { id: tentacle_generator, aliases: [], verbs: [generate, deform], reconstructed: true, note: "from merged token 'tentacle_generatob_kit'" }
+      - { id: wing_limb_kit, aliases: ["membrane wings"], verbs: [generate], reconstructed: true, note: "second half of the same merged token, '(membrane wings)'" }
+      - { id: hair_groom_presets, aliases: ["braids", "beards"], verbs: [generate] }
+      - { id: anatomy_detail_kit, aliases: ["teeth", "claws", "parametric eyes"], verbs: [generate] }
+      - { id: skeleton_kit, aliases: ["skulls", "ribcages"], verbs: [generate] }
+
+  - id: hard_surface_props
+    name: "Hard surface & props"
+    declared_count: 18
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "fragment '…set_pack' inside merge 'instrument_generator (guiset_pack' — an asset-pack niche lost"
+    niches:
+      - { id: sword_generator, aliases: ["blade-guard-grip grammar", "damascus"], verbs: [generate] }
+      - { id: gun_modular_kit, aliases: ["receivers", "attachments", "blasters"], verbs: [generate] }
+      - { id: wheel_tire_generator, aliases: [], verbs: [generate], reconstructed: true, note: "from fragment 'wheel_tire_generatt)'" }
+      - { id: vehicle_body_generator, aliases: ["curve-lofted panels"], verbs: [generate] }
+      - { id: tank_tread_generator, aliases: [], verbs: [generate] }
+      - { id: spaceship_hull_generator, aliases: [], verbs: [generate] }
+      - { id: boat_hull_generator, aliases: ["rigging"], verbs: [generate] }
+      - { id: gear_generator, aliases: [], verbs: [generate] }
+      - { id: chain_generator, aliases: ["anchor-to-jewelry scale"], verbs: [generate, trace] }
+      - { id: fastener_bearing_kit, aliases: ["bearings"], verbs: [generate, scatter], reconstructed: true, note: "from fragment 'fabearings)'" }
+      - { id: container_generator, aliases: ["crates", "barrels", "stenciling"], verbs: [generate, stack] }
+      - { id: bottle_lathe_generator, aliases: ["label placement"], verbs: [generate] }
+      - { id: hinge_lock_kit, aliases: [], verbs: [generate] }
+      - { id: jewelry_generator, aliases: ["bezels", "gem cuts", "filigree"], verbs: [generate] }
+      - { id: instrument_generator, aliases: ["guitars"], verbs: [generate], reconstructed: true, note: "parenthetical rebuilt from merge 'guiset_pack'" }
+      - { id: mechanical_rig, aliases: [], verbs: [deform] }
+      - { id: metal_kits, aliases: ["gear/metal kits"], verbs: [generate], note: "verbatim trailing item" }
+
+  - id: fabric_soft_goods
+    name: "Fabric & soft goods"
+    declared_count: 5
+    unrecovered_count: 0
+    niches:
+      - { id: knit_weave_generator, aliases: ["knits", "chainmail"], verbs: [generate], reconstructed: true, note: "from fragment 'knit_weave_generts, chainmail)'" }
+      - { id: clothing_pattern_3d, aliases: ["pleats", "ruffles"], verbs: [generate, deform] }
+      - { id: stitch_seam_generator, aliases: ["embroidery paths", "data time-series stitching"], verbs: [trace] }
+      - { id: strap_buckle_kit, aliases: ["bags", "shoes", "eyelets"], verbs: [generate] }
+      - { id: cloth_sim, aliases: [], verbs: [simulate, deform] }
+
+  - id: nature_fx
+    name: "Nature elements & FX geometry"
+    declared_count: 20
+    unrecovered_count: 0
+    niches:
+      - { id: rock_scatter, aliases: [], verbs: [scatter], core: true }
+      - { id: pebble_gravel_scatter, aliases: [], verbs: [scatter], core: true }
+      - { id: cloud_system, aliases: [], verbs: [generate, fill], core: true }
+      - { id: skybox_generator, aliases: [], verbs: [generate, illuminate], core: true }
+      - { id: ocean_sim, aliases: ["Gerstner", "FFT"], verbs: [simulate, deform], core: true, reconstructed: true, note: "from fragment 'ocean_(Gerstner/FFT)'" }
+      - { id: ripple_wake_generator, aliases: [], verbs: [trace, deform], core: true }
+      - { id: shoreline_foam, aliases: [], verbs: [trace, fill], core: true, reconstructed: true, note: "from merged fragment 'shoustics' (first half)" }
+      - { id: water_caustics, aliases: ["caustic waveform"], verbs: [illuminate], core: true, reconstructed: true, note: "from merged fragment 'shoustics' (second half, '…ustics')" }
+      - { id: underwater_volumetrics, aliases: [], verbs: [fill, illuminate], core: true }
+      - { id: stylized_flame_geo, aliases: ["NPR fire"], verbs: [generate, deform], core: true }
+      - { id: lightning_generator, aliases: ["Tesla arcs", "lightning as tree diagram"], verbs: [branch, illuminate], core: true }
+      - { id: crystal_growth, aliases: ["frost patterns on glass"], verbs: [generate, accumulate], core: true }
+      - { id: geode_generator, aliases: ["agate banding"], verbs: [generate, fill], core: true }
+      - { id: spiderweb_generator, aliases: ["dew-beaded"], verbs: [generate, trace], core: true }
+      - { id: fence_generator, aliases: ["barbed"], verbs: [generate, trace], core: true, reconstructed: true, note: "from merged token 'fence_gebarbed)'" }
+      - { id: net_generator, aliases: [], verbs: [generate], core: true }
+      - { id: bubble_foam_packing, aliases: [], verbs: [fill, accumulate], core: true }
+      - { id: goo_slime_generator, aliases: ["slime drips"], verbs: [deform, trace], core: true, reconstructed: true, note: "from orphan parenthetical '(slime drips)'" }
+      - { id: storm_sim, aliases: [], verbs: [simulate], core: true }
+      - { id: star_field, aliases: [], verbs: [scatter, illuminate], core: true }
+      # ── wave 2 ──
+      - { id: rock_boulder_generator, aliases: ["procedural individual rocks"], verbs: [generate], core: true, wave: 2, origin: ecosystem_expansion }
+      - { id: fireworks_choreography, aliases: ["bursts timed to data or beats"], verbs: [scatter, illuminate, reveal], core: true, wave: 2, origin: engine_design }
+      - { id: volumetric_beam_plotting, aliases: ["searchlights plot 3D coordinates", "laser intersection"], verbs: [illuminate], core: true, wave: 2, origin: user_brainstorm_2 }
+      - { id: ink_bloom_volumetric, aliases: ["ink dropped in water as distribution cloud"], verbs: [fill, simulate], core: true, wave: 2, origin: user_brainstorm_2 }
+
+  - id: abstract_mograph
+    name: "Abstract, mograph & design"
+    declared_count: 13
+    unrecovered_count: 2
+    unrecovered_hints:
+      - "gap between 'gyr…' (gyroids) and '…he C4D-MoGraph-in-Blender niche)' — the cloner/effector entry was reconstructed from the tail; another item may be lost in between"
+      - "fragment '…floor' inside merge 'parametric_surface_nfloor' — a floor-related niche lost (dance floor? checkerboard?)"
+    niches:
+      - { id: fractal_generator, aliases: ["Mandelbulbs", "IFS", "Menger"], verbs: [generate, branch] }
+      - { id: voronoi_shatter, aliases: ["cellular lattices"], verbs: [branch, generate] }
+      - { id: lattice_loft_kit, aliases: ["diagrids", "gyroids"], verbs: [generate], reconstructed: true, note: "parenthetical rebuilt from fragment 'gyr…'" }
+      - { id: cloner_effector_kit, aliases: ["C4D MoGraph in Blender"], verbs: [scatter, stack], reconstructed: true, note: "from tail fragment '…he C4D-MoGraph-in-Blender niche)'" }
+      - { id: knot_braid_curves, aliases: [], verbs: [trace, generate] }
+      - { id: maze_generator, aliases: [], verbs: [generate, branch] }
+      - { id: pattern_generator, aliases: ["QR", "halftone", "guilloche", "Truchet"], verbs: [generate, fill] }
+      - { id: circuit_generator, aliases: [], verbs: [trace, branch] }
+      - { id: text_animation_nodes, aliases: [], verbs: [reveal, trace] }
+      - { id: parametric_surface_nodes, aliases: [], verbs: [generate, deform], reconstructed: true, note: "from merge 'parametric_surface_nfloor'" }
+      - { id: terminal_ui_generator, aliases: [], verbs: [generate, illuminate] }
+      # ── wave 2 ──
+      - { id: lsystem_grammar, aliases: ["L-systems", "rewriting grammars"], verbs: [branch, generate], wave: 2, origin: ecosystem_expansion }
+      - { id: attractor_curves, aliases: ["Lorenz", "strange attractors"], verbs: [trace, generate], wave: 2, origin: engine_design }
+      - { id: spirograph_harmonograph, aliases: ["math-art curves"], verbs: [trace], wave: 2, origin: engine_design }
+
+  - id: materials_texturing
+    name: "Materials & texturing"
+    declared_count: 25
+    unrecovered_count: 4
+    unrecovered_hints:
+      - "gap between 'wood_shader,' and '…nd, mortar depth)' — brick reconstructed from the tail; more may be lost in between"
+      - "merge 'toon_nencil_system' — toon/NPR and pencil-or-stencil reconstructed as two; a third may be lost"
+      - "trailing family '…od/metal/snow/ice/water shaders' — '…od' member unrecoverable (wood dup? mud? blood?)"
+      - "snow/ice members of the trailing family were folded into terrain's verbatim snow_ice_shader and ice_shader entries (crossref dedup, not loss)"
+    niches:
+      - { id: wood_shader, aliases: [], verbs: [fill] }
+      - { id: brick_shader, aliases: ["bond", "mortar depth"], verbs: [fill], reconstructed: true, note: "from tail fragment '…nd, mortar depth)'" }
+      - { id: tile_grout_shader, aliases: ["herringbone", "terrazzo"], verbs: [fill] }
+      - { id: edge_wear_rust, aliases: ["curvature-driven", "AO-driven"], verbs: [deplete, accumulate] }
+      - { id: marble_stone_shader, aliases: [], verbs: [fill] }
+      - { id: car_paint_shader, aliases: ["flakes", "pearlescence"], verbs: [fill, illuminate] }
+      - { id: leather_skin_shader, aliases: [], verbs: [fill] }
+      - { id: toon_npr_shader, aliases: [], verbs: [fill], reconstructed: true, note: "from merge 'toon_nencil_system' (first half)" }
+      - { id: pencil_stencil_system, aliases: [], verbs: [trace, fill], reconstructed: true, note: "from merge 'toon_nencil_system' (second half, '…encil_system')" }
+      - { id: imperfection_overlays, aliases: ["fingerprints", "scratches"], verbs: [scatter, fill] }
+      - { id: camo_pattern_shader, aliases: ["dazzle"], verbs: [fill] }
+      - { id: glass_material, aliases: [], verbs: [fill] }
+      - { id: lava_shader, aliases: [], verbs: [fill, illuminate] }
+      - { id: hologram_shader, aliases: [], verbs: [illuminate] }
+      - { id: glitch_shader, aliases: [], verbs: [deform, illuminate] }
+      - { id: aurora_sky, aliases: [], verbs: [illuminate] }
+      - { id: planet_shader, aliases: [], verbs: [fill, illuminate] }
+      - { id: metal_shader, aliases: [], verbs: [fill], reconstructed: true, note: "from trailing family '…od/metal/snow/ice/water shaders'" }
+      - { id: water_shader, aliases: [], verbs: [fill], reconstructed: true, note: "from the same trailing family" }
+      # ── wave 2 ──
+      - { id: interior_parallax_shader, aliases: ["fake building interiors", "window rooms"], verbs: [fill, illuminate], wave: 2, origin: ecosystem_expansion }
+      - { id: wet_surface_puddles, aliases: ["rain wetness", "puddle masks"], verbs: [fill], wave: 2, origin: ecosystem_expansion }
+      - { id: fabric_weave_shader, aliases: ["procedural cloth weave"], verbs: [fill], wave: 2, origin: ecosystem_expansion }
+
+  - id: simulation_adjacent
+    name: "Simulation-adjacent"
+    declared_count: 14
+    unrecovered_count: 0
+    niches:
+      - { id: differential_growth, aliases: [], verbs: [generate, branch], core: true, reconstructed: true, note: "from merge 'differential_grction_diffusion' (first half)" }
+      - { id: reaction_diffusion, aliases: ["Turing patterns"], verbs: [fill, simulate], core: true, reconstructed: true, note: "from the same merge (second half)" }
+      - { id: weathering_decay_tools, aliases: ["chips", "peeling paint"], verbs: [deplete, accumulate], core: true }
+      - { id: rule_scatter_intelligence, aliases: ["no-overlap", "face-roads", "social clustering"], verbs: [scatter], core: true }
+      - { id: volume_packing, aliases: ["candy jars"], verbs: [fill, stack], core: true }
+      - { id: brittle_fracture, aliases: ["glass crack patterns"], verbs: [branch, deplete], core: true, reconstructed: true, note: "from fragment '…racture (glass crack patterns)'" }
+      - { id: softbody_sim, aliases: [], verbs: [simulate, deform], core: true }
+      - { id: liquid_in_container, aliases: ["wine poured into glasses"], verbs: [simulate, fill], core: true }
+      - { id: smoke_plume_sim, aliases: [], verbs: [simulate, fill], core: true }
+      - { id: ember_particles, aliases: [], verbs: [scatter, illuminate], core: true }
+      - { id: rain_particles, aliases: [], verbs: [scatter, simulate], core: true }
+      - { id: sawdust_particles, aliases: ["swarf proportional to derivative"], verbs: [scatter, accumulate], core: true }
+      - { id: fish_school_system, aliases: [], verbs: [simulate, scatter], core: true }
+      - { id: bird_flock, aliases: ["boids"], verbs: [simulate, scatter], core: true }
+      # ── wave 2 ──
+      - { id: destruction_choreography, aliases: ["art-directed rigid-body sequencing"], verbs: [simulate, deplete], core: true, wave: 2, origin: ecosystem_expansion }
+
+  # ─────────────────── WAVE-2 CATEGORIES — THE ENGINE'S EMERGENT/DIEGETIC HEART ───────────────────
+
+  - id: emergent_formation
+    name: "Emergent formation (agents/particles self-organize into targets)"
+    niches:
+      - { id: formation_target_morph, aliases: ["particles converge onto sampled geometry", "text/equation morph", "school forms the equation"], verbs: [aggregate, reveal], wave: 2, origin: user_brainstorm_2 }
+      - { id: boids_target_attraction, aliases: ["flock steering blended with target seek"], verbs: [aggregate, simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: agent_target_assignment, aliases: ["nearest/optimal matching of agents to target points"], verbs: [aggregate], wave: 2, origin: engine_design }
+      - { id: formation_reveal_choreography, aliases: ["weight-ramp timing of the moment of legibility", "murmuration resolves into bell curve"], verbs: [reveal, aggregate], wave: 2, origin: user_brainstorm_2 }
+      - { id: formation_dissolve_scatter, aliases: ["shape back to chaos", "wind scatters the equation"], verbs: [scatter, deplete], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_fish_school, aliases: ["banked 3D steering", "undulating swim cycle"], verbs: [simulate, deform], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_bird_murmuration, aliases: ["curl-noise velocity", "high cohesion", "damp-to-reveal"], verbs: [simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_insect_swarm, aliases: ["bees into honeycomb histograms"], verbs: [simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_ant_trail, aliases: ["single-file queue along curve", "the path IS the plot"], verbs: [trace, simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_firefly_blink, aliases: ["drift plus phase-synced emission", "scatter converging to regression"], verbs: [illuminate, simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: locomotion_ground_debris, aliases: ["leaves/paper", "gust-threshold stick-slip", "tumble and settle"], verbs: [simulate, deform], wave: 2, origin: user_brainstorm_2, note: "the owner's key observation: wind does the work; movement differs from flocking" }
+      - { id: locomotion_crowd_human, aliases: ["plaza crowds aerial", "umbrella color fields"], verbs: [simulate], wave: 2, origin: user_brainstorm_2 }
+      - { id: crowd_formation_display, aliases: ["card stunt", "stadium mosaic", "umbrella pie chart"], verbs: [aggregate, reveal], wave: 2, origin: user_brainstorm_2 }
+      - { id: drone_light_show, aliases: ["points of light forming shapes in the sky"], verbs: [aggregate, illuminate], wave: 2, origin: engine_design }
+
+  - id: diegetic_dataviz
+    name: "Diegetic data visualization (charts as in-world objects)"
+    niches:
+      - { id: math_expression_import, aliases: ["LaTeX to curves/mesh", "MathTex", "equation to geometry"], verbs: [generate], wave: 2, origin: engine_design }
+      - { id: chart_rig_bar_diegetic, aliases: ["bars as buildings/containers/silos/stumps", "growth = timelapse construction"], verbs: [stack, reveal], wave: 2, origin: user_brainstorm_2 }
+      - { id: chart_rig_line_diegetic, aliases: ["line as earthquake crack/carved groove/river/vapor trail"], verbs: [trace], wave: 2, origin: user_brainstorm_2 }
+      - { id: chart_rig_pie_diegetic, aliases: ["log cross-section", "sliced sushi roll", "divided farmland aerial"], verbs: [branch, fill], wave: 2, origin: user_brainstorm_2 }
+      - { id: chart_rig_scatter_diegetic, aliases: ["boulders", "city lights at night", "sheep in a field"], verbs: [scatter], wave: 2, origin: user_brainstorm_2 }
+      - { id: chart_rig_sankey_flow, aliases: ["river delta as flow diagram", "lava splitting into weighted branches"], verbs: [branch, fill], wave: 2, origin: user_brainstorm_2 }
+      - { id: chart_rig_area_stacked, aliases: ["oil and water separating into layers"], verbs: [fill, stack], wave: 2, origin: user_brainstorm_2 }
+      - { id: data_landscape_terrain, aliases: ["charts curved into a mountain", "data grid to heightfield"], verbs: [generate, deform], wave: 2, origin: user_brainstorm_2 }
+      - { id: radial_rings_chart, aliases: ["tree rings", "dendrochronology", "petri-dish mold rings"], verbs: [accumulate, reveal], wave: 2, origin: user_brainstorm_2 }
+      - { id: histogram_accumulation, aliases: ["dunes as histogram", "snow on fence posts", "honeycomb bars"], verbs: [accumulate, stack], wave: 2, origin: user_brainstorm_2 }
+      - { id: regression_reveal, aliases: ["point cloud converges to the fit line"], verbs: [aggregate, trace], wave: 2, origin: user_brainstorm_2 }
+      - { id: venn_overlap_media, aliases: ["latte-art venn diagram", "overlapping pools"], verbs: [fill], wave: 2, origin: user_brainstorm_2 }
+      - { id: unit_isotype_chart, aliases: ["counts as instanced everyday objects", "data physicalization"], verbs: [scatter, stack], wave: 2, origin: user_brainstorm_2 }
+      - { id: network_graph_3d, aliases: ["roots as network graph", "domino runs as decision trees", "node-link layout"], verbs: [branch, trace], wave: 2, origin: user_brainstorm_2 }
+      - { id: waveform_physical, aliases: ["fountain jets as equalizer", "piano-roll waveform", "caustic ripple waveform"], verbs: [deform, illuminate], wave: 2, origin: user_brainstorm_2 }
+      - { id: infographic_callout_3d, aliases: ["anchored labels", "leader lines in-scene"], verbs: [reveal, illuminate], wave: 2, origin: engine_design }
+
+  - id: physical_process_media
+    name: "Physical-process rendering (force-of-nature and craft draw the math)"
+    niches:
+      - { id: carve_engrave_toolpath, aliases: ["carpenter carves the line graph", "knife/chisel/router groove along data curve"], verbs: [trace, deplete], wave: 2, origin: user_brainstorm_2, note: "pair with sawdust_particles: emission proportional to |derivative|" }
+      - { id: pour_fill_proportional, aliases: ["wine into glasses as bars", "latte pour", "frosting piping"], verbs: [fill], wave: 2, origin: user_brainstorm_2 }
+      - { id: wind_scatter_reveal, aliases: ["wind blows leaves/sand/snow into an equation, then scatters it"], verbs: [aggregate, scatter], wave: 2, origin: user_brainstorm_2 }
+      - { id: tide_etch_reveal, aliases: ["receding wave reveals a curve etched in wet sand"], verbs: [reveal, trace], wave: 2, origin: user_brainstorm_2 }
+      - { id: brush_ink_stroke, aliases: ["calligrapher's stroke IS the curve", "ink bleed as confidence interval"], verbs: [trace, fill], wave: 2, origin: user_brainstorm_2 }
+      - { id: domino_cascade_logic, aliases: ["probabilistic branching domino runs"], verbs: [branch, simulate], wave: 2, origin: user_brainstorm_2 }
+
+  - id: light_shadow_data
+    name: "Light & shadow as data"
+    niches:
+      - { id: shadow_sweep_plot, aliases: ["sundial shadow traces the arc", "blinds cast bar-chart stripes"], verbs: [trace, illuminate], wave: 2, origin: user_brainstorm_2 }
+      - { id: light_matrix_data, aliases: ["skyline windows light floor-by-floor to encode values", "LED facade"], verbs: [illuminate, reveal], wave: 2, origin: user_brainstorm_2 }
+      - { id: projection_mapping_data, aliases: ["charts projected onto in-scene surfaces"], verbs: [illuminate, fill], wave: 2, origin: engine_design }
+
+  # ──────────────────────────── PART 2 — PROCEDURAL ANIMATION ────────────────────────────
+
+  - id: anim_motion_fundamentals
+    name: "Animation: motion fundamentals"
+    declared_count: 6
+    unrecovered_count: 0
+    niches:
+      - { id: noise_jitter, aliases: ["handheld-style"], verbs: [deform], reconstructed: true, note: "parenthetical truncated at '(ha…'" }
+      - { id: delay_overshoot, aliases: ["auto follow-through"], verbs: [deform] }
+      - { id: spring_damper, aliases: ["Wiggle Bones class"], verbs: [deform, simulate] }
+      - { id: time_offset_effector, aliases: ["ripples through arrays by index/distance"], verbs: [deform, stack] }
+      - { id: sound_drive, aliases: ["audio bands to any property"], verbs: [] }
+      - { id: loop_utilities, aliases: [], verbs: [], reconstructed: true, note: "source truncates at 'loop_utiliti'" }
+
+  - id: anim_character_creature
+    name: "Animation: character & creature"
+    declared_count: 12
+    unrecovered_count: 0
+    niches:
+      - { id: walk_cycle, aliases: ["biped", "quadruped"], verbs: [deform], reconstructed: true, note: "parenthetical truncated at '(bi…'" }
+      - { id: foot_ik_terrain, aliases: ["terrain-adaptive foot planting"], verbs: [deform], reconstructed: true, note: "from fragment '…_terrain'" }
+      - { id: tail_dynamics, aliases: ["chain + wave overlay"], verbs: [deform, simulate] }
+      - { id: wing_flap, aliases: ["flap/glide states"], verbs: [deform] }
+      - { id: breathing_idle, aliases: ["blinks", "weight shift"], verbs: [deform] }
+      - { id: lookat_layered, aliases: ["eyes-head-chest with lag"], verbs: [deform] }
+      - { id: secondary_jiggle, aliases: [], verbs: [deform, simulate] }
+      - { id: snake_locomotion, aliases: [], verbs: [deform, trace], reconstructed: true, note: "from merge 'snake_locomotchooling)' (first half)" }
+      - { id: fish_schooling, aliases: [], verbs: [simulate, scatter], reconstructed: true, note: "from the same merge (second half, '…chooling')" }
+      - { id: crowd_locomotion, aliases: [], verbs: [simulate] }
+      - { id: lipsync, aliases: ["audio to visemes"], verbs: [deform] }
+      - { id: ragdoll_blend, aliases: ["get-up transitions"], verbs: [simulate, deform] }
+
+  - id: anim_mechanical
+    name: "Animation: mechanical"
+    declared_count: 10
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "empty slot ', ,' after door_trigger — one niche lost (elevator? conveyor switch? unknown)"
+    niches:
+      - { id: wheel_autorotate, aliases: ["distance-driven", "steering"], verbs: [deform] }
+      - { id: tread_conveyor, aliases: [], verbs: [deform, trace] }
+      - { id: gear_drivetrain, aliases: ["ratio-linked networks", "pistons", "cranks"], verbs: [deform] }
+      - { id: door_trigger, aliases: [], verbs: [deform] }
+      - { id: clock_gauge, aliases: ["dials", "odometers", "data-driven"], verbs: [reveal] }
+      - { id: turret_tracking, aliases: ["limits + lag"], verbs: [deform] }
+      - { id: vehicle_suspension, aliases: ["body roll", "brake dive"], verbs: [deform, simulate] }
+      - { id: fold_unfold, aliases: ["umbrellas", "transformers", "origami rigs"], verbs: [deform, reveal] }
+      - { id: piston_hydraulics, aliases: [], verbs: [deform], reconstructed: true, note: "source truncates at 'piston_hydrau'" }
+
+  - id: anim_nature_environment
+    name: "Animation: nature & environment"
+    declared_count: 8
+    unrecovered_count: 0
+    niches:
+      - { id: wind_system, aliases: ["trees", "flags", "signs"], verbs: [deform, simulate], reconstructed: true, note: "parenthetical rebuilt from '(on…ags/signs)'" }
+      - { id: boat_buoyancy, aliases: ["pitch/roll on animated water"], verbs: [simulate, deform] }
+      - { id: precipitation, aliases: ["fall + collide + accumulate"], verbs: [accumulate, simulate] }
+      - { id: fire_flicker, aliases: [], verbs: [illuminate, deform] }
+      - { id: day_night_cycle, aliases: ["sun by geolocation/date", "windows lighting"], verbs: [illuminate] }
+      - { id: ambient_life, aliases: ["fireflies", "bees"], verbs: [scatter, simulate], reconstructed: true, note: "from fragment 'ambie…eflies, bees)'" }
+      - { id: plant_growth, aliases: ["vines crawl", "blooms", "branch-by-branch"], verbs: [branch, trace, reveal] }
+      - { id: season_transition, aliases: ["green-autumn-snow"], verbs: [fill, deplete] }
+
+  - id: anim_growth_reveal_build
+    name: "Animation: growth, reveal & build"
+    declared_count: 7
+    unrecovered_count: 0
+    niches:
+      - { id: build_reveal, aliases: ["assemble from bricks/voxels/particles", "reverse", "shipping containers stacked by crane"], verbs: [stack, reveal] }
+      - { id: scan_wipe, aliases: ["axis/point/texture reveals"], verbs: [reveal] }
+      - { id: draw_on, aliases: ["self-drawing lines", "blueprints"], verbs: [trace, reveal], reconstructed: true, note: "parenthetical truncated at '(sel…'" }
+      - { id: dissolve, aliases: ["Thanos", "sand collapse", "burning edges"], verbs: [deplete] }
+      - { id: ink_spread, aliases: ["wet maps"], verbs: [fill, trace] }
+      - { id: crack_propagation, aliases: ["timed shatter", "earthquake crack line graph"], verbs: [branch, trace] }
+      - { id: surface_spread, aliases: ["frost/rust/moss/infection from seed point", "rust following an exponential curve"], verbs: [fill, trace] }
+      # ── wave 2 ──
+      - { id: droplet_path_race, aliases: ["rain droplets slide down function paths on glass"], verbs: [trace], wave: 2, origin: user_brainstorm_2 }
+      - { id: melt_decay_timelapse, aliases: ["candle wax melting as decay function"], verbs: [deplete, deform], wave: 2, origin: user_brainstorm_2 }
+      - { id: data_driven_accumulation, aliases: ["stalactite/rust/snow rates bound to data series"], verbs: [accumulate], wave: 2, origin: user_brainstorm_2 }
+
+  - id: anim_cloth_rope_soft
+    name: "Animation: cloth, rope & soft proxies"
+    declared_count: 5
+    unrecovered_count: 0
+    niches:
+      - { id: fake_cloth, aliases: [], verbs: [deform], reconstructed: true, note: "from merge 'fake_clotway' (first half)" }
+      - { id: rope_sway, aliases: ["catenary", "swinging bridges", "suspension cables as literal catenary math"], verbs: [deform, trace], reconstructed: true, note: "from the same merge (second half, '…way')" }
+      - { id: chain_pendulum, aliases: ["verlet"], verbs: [simulate, deform] }
+      - { id: inflate, aliases: ["balloons"], verbs: [fill, deform] }
+      - { id: jelly_wobble, aliases: [], verbs: [deform] }
+
+  - id: anim_camera_cinematic
+    name: "Animation: camera & cinematic"
+    declared_count: 6
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "leading 'f' in merge 'fpath_flythrough' — a niche starting with f lost (focus/DOF tool likely, but unconfirmed)"
+    niches:
+      - { id: camera_rigs, aliases: ["orbits", "dolly-zooms", "cranes", "drone-down formation reveal"], verbs: [] }
+      - { id: handheld_shake, aliases: ["operator-style presets"], verbs: [] }
+      - { id: auto_framing, aliases: ["rule-of-thirds targeting"], verbs: [] }
+      - { id: path_flythrough, aliases: ["speed + banking", "drone feel"], verbs: [trace], reconstructed: true, note: "from merge 'fpath_flythrough'" }
+      - { id: multicam_sequencer, aliases: [], verbs: [] }
+
+  - id: anim_fx_particles
+    name: "Animation: FX & particles"
+    declared_count: 7
+    unrecovered_count: 1
+    unrecovered_hints:
+      - "fragment '…ash, shockwaves)' inside impact_debris merge — likely splash or muzzle_flash plus shockwaves; one niche lost"
+    niches:
+      - { id: motion_trails, aliases: ["sword slashes", "tire smoke ribbons"], verbs: [trace] }
+      - { id: footprints, aliases: ["contact decals", "snow deformation"], verbs: [trace, accumulate] }
+      - { id: impact_debris, aliases: ["sparks", "casings"], verbs: [scatter, simulate] }
+      - { id: magic_fx, aliases: ["rune sequences", "portals", "beams"], verbs: [illuminate, reveal] }
+      - { id: electric_arcs, aliases: [], verbs: [branch, illuminate] }
+      - { id: bubbles_steam, aliases: [], verbs: [fill, simulate] }
+
+  - id: anim_data_utility
+    name: "Animation: data-driven & utility"
+    declared_count: 7
+    unrecovered_count: 0
+    niches:
+      - { id: data_import, aliases: ["CSV/JSON to bar races", "animated maps"], verbs: [], note: "source calls this 'Diegesis's core' — flagship niche for the engine" }
+      - { id: counter_ticker, aliases: ["scoreboards", "countdowns"], verbs: [reveal] }
+      - { id: hud_fui, aliases: ["radar"], verbs: [illuminate, reveal] }
+      - { id: typewriter, aliases: ["per-character text"], verbs: [reveal, trace], reconstructed: true, note: "from fragment '…ypewriter'" }
+      - { id: beat_sync, aliases: ["cuts on beat detection"], verbs: [] }
+      - { id: sim_bake, aliases: ["sims to loopable keys"], verbs: [] }
+      - { id: retime, aliases: ["slow-mo ramps", "animate-on-2s"], verbs: [] }
+      # ── wave 2 ──
+      - { id: data_to_midi_actuation, aliases: ["piano keys depress as waveform — audible", "sound-native scenes", "audio-visual data alignment"], verbs: [deform, reveal], wave: 2, origin: user_brainstorm_2 }
+
+  - id: anim_stylized_npr
+    name: "Animation: stylized / NPR"
+    declared_count: 4
+    unrecovered_count: 0
+    niches:
+      - { id: boil_lines, aliases: ["hand-drawn wobble"], verbs: [deform] }
+      - { id: smear_frames, aliases: ["auto multiples"], verbs: [deform] }
+      - { id: anime_fx, aliases: ["speed lines", "impact frames"], verbs: [reveal, illuminate] }
+      - { id: stopmotion, aliases: ["quantized transforms"], verbs: [deform] }
