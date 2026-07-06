@@ -1,0 +1,89 @@
+# R15 market-existence audit data (D-002 R15) — 2026-07-06. Per-niche verdict on whether ANY free
+# path (dedicated tool OR plausible free recipe) exists for the 59 Terrain+Veg wave-1 niches.
+# Evidence = cached extensions.blender.org catalog mine + live web research (WebSearch/WebFetch,
+# 2026-07-06). Verdicts are honestly confidence-graded; this is a PROPOSAL for the owner's D-003
+# decision, NOT a coverage claim. No target changes here (recalibration-by-fiat is forbidden, R15).
+#
+# verdict vocabulary:
+#   verified_free  : a free tool ALREADY passed our probe (the 7 covered niches) — decision-grade
+#   free_tool      : a free dedicated add-on exists (evidence), not yet in our vault/probed
+#   free_recipe    : no dedicated free add-on, but a plausible free recipe (built-ins/GN/free packs)
+#   paid_only      : tools exist but only paid (marketplace) — excluded by the PRD free constraint
+#   none           : no known free tool AND no plausible free recipe (structurally hard / no market)
+#
+# attainable (counts toward the proposed "attainable base") = verified_free | free_tool | free_recipe.
+# NOT attainable = paid_only | none.
+
+niches:
+  # ── the 7 already verified (decision-grade) ──
+  - {id: terrain_generator, cat: terrain, verdict: verified_free, confidence: high, evidence: "A.N.T. Landscape (vaulted, probed partial 4.2/4.5)"}
+  - {id: heightmap_stack_tools, cat: terrain, verdict: verified_free, confidence: high, evidence: "SRTM importer + Terrain Mixer (vaulted, probed)"}
+  - {id: erosion_sim, cat: terrain, verdict: verified_free, confidence: high, evidence: "A.N.T. eroder + petak5/bp (vaulted, bp full-pass)"}
+  - {id: snow_accumulation, cat: terrain, verdict: verified_free, confidence: high, evidence: "Real Snow (vaulted, probed pass)"}
+  - {id: tree_generator, cat: vegetation, verdict: verified_free, confidence: high, evidence: "Sapling, Modular Tree, Easy Tree (vaulted)"}
+  - {id: space_colonization_growth, cat: vegetation, verdict: verified_free, confidence: high, evidence: "ls space-colonization-tree-gen (vaulted, pass)"}
+  - {id: ivy_generator, cat: vegetation, verdict: verified_free, confidence: high, evidence: "IvyGen (vaulted, probed partial)"}
+
+  # ── terrain: free tool exists (GitHub / free GN pack / built-in), not yet vaulted ──
+  - {id: cliff_rockface_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github marcueberall/blender.cliffgenerator (free .blend); Terrain Nodes (cyhunter)"}
+  - {id: river_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "free GN river generators (blendereverything, YouTube); polished ones are $10 paid"}
+  - {id: waterfall_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "Blender Studio Waterfall node group (free); Cell Fluids GN solver"}
+  - {id: crack_generator, cat: terrain, verdict: verified_free, confidence: high, evidence: "Cell Fracture (vaulted, probed pass on 4.2/4.5)"}
+  - {id: asteroid_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github Donitz/procedural-asteroid-generator; MarekHlavka space-objects add-on"}
+  - {id: crater_field_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "MarekHlavka Planet-and-space-objects-generator (craters param); AstroField-class GN"}
+
+  # ── terrain: free recipe plausible (built-ins + GN, no dedicated tool) ──
+  - {id: sediment_deposition, cat: terrain, verdict: free_recipe, confidence: low, evidence: "erosion sim byproduct (A.N.T. eroder deposits) + weight-based scatter"}
+  - {id: canyon_mesa_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "A.N.T. Landscape stratified noise + boolean; free cliff GN"}
+  - {id: scree_talus_scatter, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "free rock scatter (weight-painted slope) via geometry nodes + Real Snow-class"}
+  - {id: cave_network_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "metaball/SDF boolean recipe; free-ish Gumroad cave GN exist (mostly paid)"}
+  - {id: stalactite_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "GN instance-on-points cones + noise; no dedicated free tool found"}
+  - {id: dune_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "A.N.T. Landscape wave/dune noise presets"}
+  - {id: sand_sim, cat: terrain, verdict: free_recipe, confidence: low, evidence: "built-in molecular/particle or GN heightfield; no dedicated free granular sim"}
+  - {id: cracked_earth_shader, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "voronoi procedural shader recipe (common free tutorial); built-in nodes"}
+  - {id: glacier_flow_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. terrain + flow-map recipe; no dedicated free tool found"}
+  - {id: icicle_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "GN instance cones downward + noise; no dedicated free tool found"}
+  - {id: snowdrift_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "Real Snow + wind-directional weight (recipe in inputs/recipes.yaml)"}
+  - {id: frozen_lake_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "flat terrain + built-in ice material (recipe in inputs/recipes.yaml)"}
+  - {id: snow_ice_shader, cat: terrain, verdict: free_recipe, confidence: high, evidence: "Real Snow shader + built-in Principled; common free procedural snow"}
+  - {id: ice_shader, cat: terrain, verdict: free_recipe, confidence: high, evidence: "built-in Principled BSDF transmission/roughness; common free ice shader"}
+  - {id: lava_field_generator, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "A.N.T. terrain + emissive voronoi lava shader (common free tutorial)"}
+  - {id: volcanic_caldera_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. terrain + boolean cone recipe; no dedicated free tool found"}
+  - {id: fissure_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "Cell Fracture crack lines + displacement; no dedicated free tool"}
+  - {id: rice_terrace_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "GN stepped-contour recipe on terrain; no dedicated free tool found"}
+  - {id: alien_biome_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. + procedural shaders recompose; subjective niche, no dedicated tool"}
+  - {id: planetary_ring_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "MarekHlavka space-objects generator (ring systems); free BlenderKit Saturn"}
+
+  # ── terrain: genuinely hard / no free path found ──
+  - {id: karst_formation, cat: terrain, verdict: none, confidence: medium, evidence: "searched karst/sinkhole/sea-stack Blender: no free tool, no obvious recipe"}
+  - {id: coral_atoll_generator, cat: terrain, verdict: none, confidence: medium, evidence: "no free atoll generator; coral tools are paid (Superhive)"}
+  - {id: heat_haze, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "compositor/displacement heat-shimmer recipe (common free tutorial)"}
+  - {id: gas_giant_shader, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "MarekHlavka/Verde planet generators do gas giants (free-ish); volumetric band shader recipe"}
+  - {id: meander_braid_tools, cat: terrain, verdict: none, confidence: low, evidence: "no free meander/oxbow tool found; specialized hydrology"}
+  - {id: coastline_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. terrain + sea-level boolean recipe; no dedicated free tool"}
+
+  # ── vegetation: free tool exists ──
+  - {id: fern_generator, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Alex Martinelli free procedural fern GN (80.lv, aeblender.com)"}
+  - {id: grass_meadow_scatter, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free 145 species; Gscatter free plugin; Plant-Library free"}
+  - {id: ground_cover, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free ground-cover collection; Gscatter/Biome-Reader free scatter"}
+  - {id: flower_generator, cat: vegetation, verdict: free_tool, confidence: medium, evidence: "Graswald free wild flowers; free phyllotaxis GN tutorials; Sverchok"}
+  - {id: bonsai_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "Sapling/Modular Tree tuned to bonsai form (recipe); no dedicated free bonsai tool"}
+
+  # ── vegetation: free recipe plausible ──
+  - {id: tree_species_presets, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "Sapling built-in species presets; Modular Tree node graphs"}
+  - {id: dead_tree_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "Sapling with no-leaf + damage recipe; Modular Tree"}
+  - {id: root_system_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "space-colonization (vaulted) inverted downward; ls tree-gen roots mode"}
+  - {id: succulent_generator, cat: vegetation, verdict: free_recipe, confidence: low, evidence: "GN phyllotaxis spiral recipe; Sverchok; no dedicated free succulent tool"}
+  - {id: vine_growth, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "IvyGen (vaulted) + build-modifier grow; growth-along-spline"}
+  - {id: climbing_plant_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "IvyGen on trellis mesh (recipe)"}
+  - {id: mushroom_generator, cat: vegetation, verdict: free_recipe, confidence: low, evidence: "GN cap+stem lathe recipe; no dedicated free mushroom generator found"}
+  - {id: moss_lichen_growth, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "GN scatter on curvature/AO (common free recipe); Graswald mosses"}
+  - {id: orchard_row_scatter, cat: vegetation, verdict: free_recipe, confidence: high, evidence: "scatter-objects (vaulted) rows + trees (recipe in inputs/recipes.yaml)"}
+  - {id: organic_cell_shader, cat: vegetation, verdict: free_recipe, confidence: high, evidence: "built-in Voronoi/Musgrave cellular shader (ubiquitous free recipe)"}
+  - {id: vein_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "space-colonization (vaulted) as veins; Sverchok; differential growth"}
+  - {id: bioluminescent_flora, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "any plant gen + emissive shader recipe (free)"}
+
+  # ── vegetation: paid-only / none (marine flora skew paid) ──
+  - {id: kelp_forest_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "3DT Coral Reef Gen / Procedural Coral include kelp — paid (Superhive/Fab); free = tutorials only"}
+  - {id: coral_generator, cat: vegetation, verdict: paid_only, confidence: high, evidence: "Procedural Coral, 3DT Coral Reef Generator — all paid (Superhive/Fab/Cubebrush)"}
+  - {id: anemone_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "bundled in paid Procedural Coral; no standalone free anemone tool"}
