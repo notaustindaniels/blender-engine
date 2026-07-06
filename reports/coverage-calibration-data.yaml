@@ -25,12 +25,12 @@ niches:
   - {id: ivy_generator, cat: vegetation, verdict: verified_free, confidence: high, evidence: "IvyGen (vaulted, probed partial)"}
 
   # ── terrain: free tool exists (GitHub / free GN pack / built-in), not yet vaulted ──
-  - {id: cliff_rockface_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github marcueberall/blender.cliffgenerator (free .blend); Terrain Nodes (cyhunter)"}
-  - {id: river_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "free GN river generators (blendereverything, YouTube); polished ones are $10 paid"}
-  - {id: waterfall_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "Blender Studio Waterfall node group (free); Cell Fluids GN solver"}
-  - {id: crack_generator, cat: terrain, verdict: verified_free, confidence: high, evidence: "Cell Fracture (vaulted, probed pass on 4.2/4.5)"}
-  - {id: asteroid_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github Donitz/procedural-asteroid-generator; MarekHlavka space-objects add-on"}
-  - {id: crater_field_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "MarekHlavka Planet-and-space-objects-generator (craters param); AstroField-class GN"}
+  - {id: cliff_rockface_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github marcueberall/blender.cliffgenerator (free .blend); Terrain Nodes (cyhunter)", url: "https://github.com/marcueberall/blender.cliffgenerator"}
+  - {id: river_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "CGMatter free procedural river (Gumroad $0); 80.lv realtime-river writeup; polished Realtime River Generator is $10 paid", url: "https://cgmatter.gumroad.com/l/river"}
+  - {id: waterfall_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "Blender Studio Waterfall node group (free); Cell Fluids GN solver", url: "https://studio.blender.org/"}
+  - {id: crack_generator, cat: terrain, verdict: verified_free, confidence: high, evidence: "Cell Fracture (vaulted, probed pass on 4.2/4.5)", url: "https://extensions.blender.org/add-ons/cell-fracture/"}
+  - {id: asteroid_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github Donitzo/procedural-asteroid-generator (open-source); MarekHlavka space-objects add-on", url: "https://github.com/Donitzo/procedural-asteroid-generator"}
+  - {id: crater_field_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github MarekHlavka Planet-and-space-objects-generator (craters param)", url: "https://github.com/MarekHlavka/Planet-and-space-objects-generator"}
 
   # ── terrain: free recipe plausible (built-ins + GN, no dedicated tool) ──
   - {id: sediment_deposition, cat: terrain, verdict: free_recipe, confidence: low, evidence: "erosion sim byproduct (A.N.T. eroder deposits) + weight-based scatter"}
@@ -52,21 +52,21 @@ niches:
   - {id: fissure_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "Cell Fracture crack lines + displacement; no dedicated free tool"}
   - {id: rice_terrace_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "GN stepped-contour recipe on terrain; no dedicated free tool found"}
   - {id: alien_biome_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. + procedural shaders recompose; subjective niche, no dedicated tool"}
-  - {id: planetary_ring_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "MarekHlavka space-objects generator (ring systems); free BlenderKit Saturn"}
+  - {id: planetary_ring_generator, cat: terrain, verdict: free_tool, confidence: medium, evidence: "github MarekHlavka space-objects generator (ring systems); free BlenderKit Saturn (NASA maps)", url: "https://github.com/MarekHlavka/Planet-and-space-objects-generator"}
 
   # ── terrain: genuinely hard / no free path found ──
-  - {id: karst_formation, cat: terrain, verdict: none, confidence: medium, evidence: "searched karst/sinkhole/sea-stack Blender: no free tool, no obvious recipe"}
-  - {id: coral_atoll_generator, cat: terrain, verdict: none, confidence: medium, evidence: "no free atoll generator; coral tools are paid (Superhive)"}
+  - {id: karst_formation, cat: terrain, verdict: none, confidence: medium, evidence: "searched karst/sinkhole/sea-stack Blender addon: no free tool, no obvious recipe; only generic boolean/erosion tutorials", url: "https://www.google.com/search?q=blender+karst+sinkhole+addon"}
+  - {id: coral_atoll_generator, cat: terrain, verdict: none, confidence: medium, evidence: "no free ring-atoll generator found; coral/reef tools are paid (Superhive) or manual", url: "https://superhivemarket.com/products/procedural-coral"}
   - {id: heat_haze, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "compositor/displacement heat-shimmer recipe (common free tutorial)"}
-  - {id: gas_giant_shader, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "MarekHlavka/Verde planet generators do gas giants (free-ish); volumetric band shader recipe"}
-  - {id: meander_braid_tools, cat: terrain, verdict: none, confidence: low, evidence: "no free meander/oxbow tool found; specialized hydrology"}
+  - {id: gas_giant_shader, cat: terrain, verdict: free_recipe, confidence: medium, evidence: "github MarekHlavka/Verde planet generators do gas giants free; volumetric band shader recipe", url: "https://github.com/MarekHlavka/Planet-and-space-objects-generator"}
+  - {id: meander_braid_tools, cat: terrain, verdict: free_recipe, confidence: low, evidence: "R15-addendum re-search: free CGMatter river GN + sine-displaced curve for meanders; the meander-capable Realtime River Generator is PAID ($10); no dedicated free oxbow/braid tool (pirate 'free download' hits are hard-fail, excluded)", url: "https://cgmatter.gumroad.com/l/river"}
   - {id: coastline_generator, cat: terrain, verdict: free_recipe, confidence: low, evidence: "A.N.T. terrain + sea-level boolean recipe; no dedicated free tool"}
 
   # ── vegetation: free tool exists ──
-  - {id: fern_generator, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Alex Martinelli free procedural fern GN (80.lv, aeblender.com)"}
-  - {id: grass_meadow_scatter, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free 145 species; Gscatter free plugin; Plant-Library free"}
-  - {id: ground_cover, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free ground-cover collection; Gscatter/Biome-Reader free scatter"}
-  - {id: flower_generator, cat: vegetation, verdict: free_tool, confidence: medium, evidence: "Graswald free wild flowers; free phyllotaxis GN tutorials; Sverchok"}
+  - {id: fern_generator, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Alex Martinelli free procedural fern GN", url: "https://80.lv/articles/generate-procedural-fern-like-plants-in-blender"}
+  - {id: grass_meadow_scatter, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free 145 species (CG Channel); Gscatter free plugin; BD3D Plant-Library free", url: "https://www.cgchannel.com/2024/04/download-all-of-graswalds-3d-plants-for-free/"}
+  - {id: ground_cover, cat: vegetation, verdict: free_tool, confidence: high, evidence: "Graswald free ground-cover collection; Gscatter/Biome-Reader free scatter", url: "https://www.cgchannel.com/2024/04/download-all-of-graswalds-3d-plants-for-free/"}
+  - {id: flower_generator, cat: vegetation, verdict: free_tool, confidence: medium, evidence: "Graswald free wild flowers; BD3D Plant-Library (170 free); free phyllotaxis GN", url: "https://bd3d.gumroad.com/l/plant-library"}
   - {id: bonsai_generator, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "Sapling/Modular Tree tuned to bonsai form (recipe); no dedicated free bonsai tool"}
 
   # ── vegetation: free recipe plausible ──
@@ -84,6 +84,6 @@ niches:
   - {id: bioluminescent_flora, cat: vegetation, verdict: free_recipe, confidence: medium, evidence: "any plant gen + emissive shader recipe (free)"}
 
   # ── vegetation: paid-only / none (marine flora skew paid) ──
-  - {id: kelp_forest_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "3DT Coral Reef Gen / Procedural Coral include kelp — paid (Superhive/Fab); free = tutorials only"}
-  - {id: coral_generator, cat: vegetation, verdict: paid_only, confidence: high, evidence: "Procedural Coral, 3DT Coral Reef Generator — all paid (Superhive/Fab/Cubebrush)"}
-  - {id: anemone_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "bundled in paid Procedural Coral; no standalone free anemone tool"}
+  - {id: kelp_forest_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "3DT Coral Reef Gen / Procedural Coral include kelp — paid (Superhive/Fab); free = tutorials only", url: "https://superhivemarket.com/products/procedural-coral"}
+  - {id: coral_generator, cat: vegetation, verdict: paid_only, confidence: high, evidence: "Procedural Coral, 3DT Coral Reef Generator — all paid (Superhive/Fab/Cubebrush)", url: "https://cubebrush.co/3d_tudor/products/31xblg/3dt-coral-reef-generator-blender-geometry-node-procedural"}
+  - {id: anemone_generator, cat: vegetation, verdict: paid_only, confidence: medium, evidence: "bundled in paid Procedural Coral (animated anemones); no standalone free anemone tool", url: "https://superhivemarket.com/products/procedural-coral"}
