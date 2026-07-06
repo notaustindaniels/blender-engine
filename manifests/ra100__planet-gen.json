@@ -1,0 +1,55 @@
+{
+  "canonical_id": "ra100__planet-gen",
+  "artifact": "ra100__planet-gen.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "planetgen.apply_to_selected",
+        "planetgen.create_planet",
+        "planetgen.import_textures"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "planetgen.apply_to_selected",
+        "planetgen.create_planet",
+        "planetgen.import_textures"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "planetgen.apply_to_selected",
+    "planetgen.create_planet",
+    "planetgen.import_textures"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-06T21:57:53+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.0",
+  "probed_natively": true,
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "planetgen.create_planet",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "alien_biome_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L2 native: planetgen.create_planet generates planet meshes/materials -> partial on 4.2/4.5; covers the previously-uncovered alien_biome_generator (alias 'alien landscape environments')."
+}

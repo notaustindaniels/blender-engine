@@ -1,11 +1,12 @@
 {
-  "canonical_id": "aachman98__sorcar",
-  "artifact": "aachman98__sorcar.zip",
+  "canonical_id": "rawnsley__texcut",
+  "artifact": "rawnsley__texcut.zip",
   "verify": {
     "3.6": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
     },
     "4.2": {
       "state": "fail",
@@ -19,15 +20,10 @@
     }
   },
   "operators": [],
-  "prescan": "cleared",
+  "prescan": "clean",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T21:56:16+00:00",
-  "prescan_hits": [
-    "urllib",
-    "open-write",
-    "eval(",
-    "exec("
-  ],
-  "declared_min": "2.81",
+  "verified_at": "2026-07-06T21:57:55+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.0",
   "probed_natively": true
 }

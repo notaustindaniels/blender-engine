@@ -21,7 +21,7 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T12:36:06+00:00",
+  "verified_at": "2026-07-06T21:57:19+00:00",
   "prescan_hits": [
     "open-write",
     "base64-decode",
@@ -31,5 +31,6 @@
     "subprocess",
     "eval(",
     "driver-expression"
-  ]
+  ],
+  "probed_natively": true
 }

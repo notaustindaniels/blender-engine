@@ -28,7 +28,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:05:14+00:00",
+  "verified_at": "2026-07-06T21:57:45+00:00",
   "prescan_hits": [],
   "declared_min": "4.2",
   "operators_enriched": [
@@ -45,5 +45,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "imports SRTM DEM tiles as a heightfield terrain mesh."
+  "enrich_note": "imports SRTM DEM tiles as a heightfield terrain mesh.",
+  "probed_natively": true
 }

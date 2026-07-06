@@ -28,7 +28,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:05:09+00:00",
+  "verified_at": "2026-07-06T21:57:41+00:00",
   "prescan_hits": [],
   "declared_min": "4.2",
   "operators_enriched": [
@@ -44,5 +44,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "accumulates a procedural snow layer over target geometry."
+  "enrich_note": "accumulates a procedural snow layer over target geometry.",
+  "probed_natively": true
 }

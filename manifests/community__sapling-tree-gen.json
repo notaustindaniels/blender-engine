@@ -31,7 +31,7 @@
   ],
   "prescan": "cleared",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:04:52+00:00",
+  "verified_at": "2026-07-06T21:57:14+00:00",
   "prescan_hits": [
     "eval("
   ],
@@ -50,5 +50,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "parametric branch-recursion tree generator."
+  "enrich_note": "parametric branch-recursion tree generator.",
+  "probed_natively": true
 }

@@ -31,7 +31,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:04:59+00:00",
+  "verified_at": "2026-07-06T21:57:21+00:00",
   "prescan_hits": [],
   "declared_min": "4.5",
   "operators_enriched": [
@@ -48,5 +48,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "procedural tree generator."
+  "enrich_note": "procedural tree generator.",
+  "probed_natively": true
 }

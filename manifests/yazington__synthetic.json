@@ -1,6 +1,6 @@
 {
-  "canonical_id": "charlesss07__blender-python-nodes",
-  "artifact": "charlesss07__blender-python-nodes.zip",
+  "canonical_id": "yazington__synthetic",
+  "artifact": "yazington__synthetic.zip",
   "verify": {
     "3.6": {
       "state": "needs_review",
@@ -21,12 +21,19 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T21:57:09+00:00",
+  "verified_at": "2026-07-06T21:58:06+00:00",
   "prescan_hits": [
-    "socket",
     "eval(",
+    "open-write",
+    "requests",
+    "subprocess",
+    "socket",
+    "base64-decode",
+    "__import__",
+    "os.system",
     "urllib",
-    "requests"
+    "exec(",
+    "httpx"
   ],
   "probed_natively": true
 }

@@ -21,12 +21,13 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T12:36:07+00:00",
+  "verified_at": "2026-07-06T21:57:21+00:00",
   "prescan_hits": [
     "subprocess",
     "os.system",
     "exec(",
     "ctypes",
     "open-write"
-  ]
+  ],
+  "probed_natively": true
 }

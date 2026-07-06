@@ -21,9 +21,10 @@
   "operators": [],
   "prescan": "cleared",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T12:35:56+00:00",
+  "verified_at": "2026-07-06T21:57:35+00:00",
   "prescan_hits": [
     "subprocess"
   ],
-  "declared_min": "2.81"
+  "declared_min": "2.81",
+  "probed_natively": true
 }

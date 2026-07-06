@@ -1,6 +1,6 @@
 {
-  "canonical_id": "charlesss07__blender-python-nodes",
-  "artifact": "charlesss07__blender-python-nodes.zip",
+  "canonical_id": "openresearchtools__video-toolkit",
+  "artifact": "openresearchtools__video-toolkit.zip",
   "verify": {
     "3.6": {
       "state": "needs_review",
@@ -21,12 +21,13 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T21:57:09+00:00",
+  "verified_at": "2026-07-06T21:57:47+00:00",
   "prescan_hits": [
+    "subprocess",
     "socket",
-    "eval(",
     "urllib",
-    "requests"
+    "requests",
+    "eval("
   ],
   "probed_natively": true
 }

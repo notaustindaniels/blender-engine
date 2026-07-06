@@ -65,6 +65,13 @@ MAP = {
     "lmesaric__bsc-thesis-fer-2020": dict(
         niches=["terrain_generator"], verbs=["generate"], prefer_op=None,
         why="L2: ZagrebGIS — imports GIS data into a terrain mesh (partial headless)."),
+    # ── native run (D-002 R13) surfaced these — all 27 L2 acquired, not just 15 ──
+    "beneking102__bene-proggen-maps": dict(
+        niches=["terrain_generator"], verbs=["generate"], prefer_op="procgen_maps.generate_city",
+        why="L2 native: 'Procedural city, terrain & dungeon generator'; procgen_maps.generate_city produces terrain geometry -> FULL PASS on 4.2/4.5 (upgrades terrain_generator to full-pass)."),
+    "ra100__planet-gen": dict(
+        niches=["alien_biome_generator"], verbs=["generate"], prefer_op="planetgen.create_planet",
+        why="L2 native: planetgen.create_planet generates planet meshes/materials -> partial on 4.2/4.5; covers the previously-uncovered alien_biome_generator (alias 'alien landscape environments')."),
 }
 
 

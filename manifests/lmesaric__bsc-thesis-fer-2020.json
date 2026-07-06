@@ -29,7 +29,7 @@
   ],
   "prescan": "cleared",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T12:36:20+00:00",
+  "verified_at": "2026-07-06T21:57:31+00:00",
   "prescan_hits": [
     "subprocess",
     "requests"
@@ -48,5 +48,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "L2: ZagrebGIS \u2014 imports GIS data into a terrain mesh (partial headless)."
+  "enrich_note": "L2: ZagrebGIS \u2014 imports GIS data into a terrain mesh (partial headless).",
+  "probed_natively": true
 }

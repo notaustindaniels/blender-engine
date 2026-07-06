@@ -27,7 +27,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T12:36:07+00:00",
+  "verified_at": "2026-07-06T21:58:00+00:00",
   "prescan_hits": [
     "open-write"
   ],
@@ -46,5 +46,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "L2: hydraulic erosion (legacy min 2.69 but partial on 4.2/4.5)."
+  "enrich_note": "L2: hydraulic erosion (legacy min 2.69 but partial on 4.2/4.5).",
+  "probed_natively": true
 }

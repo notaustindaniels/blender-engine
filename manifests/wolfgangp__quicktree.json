@@ -21,7 +21,8 @@
   "operators": [],
   "prescan": "clean",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T12:36:30+00:00",
+  "verified_at": "2026-07-06T21:58:04+00:00",
   "prescan_hits": [],
-  "declared_min": "2.78"
+  "declared_min": "2.78",
+  "probed_natively": true
 }

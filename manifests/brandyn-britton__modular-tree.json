@@ -41,9 +41,9 @@
     "mtree.node_function",
     "mtree.quick_generate"
   ],
-  "prescan": "cleared",
+  "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:04:41+00:00",
+  "verified_at": "2026-07-06T21:57:08+00:00",
   "prescan_hits": [
     "socket"
   ],
@@ -62,5 +62,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "node-based procedural tree generator."
+  "enrich_note": "node-based procedural tree generator.",
+  "probed_natively": true
 }

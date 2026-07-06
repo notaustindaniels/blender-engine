@@ -1,0 +1,79 @@
+{
+  "canonical_id": "beneking102__bene-proggen-maps",
+  "artifact": "beneking102__bene-proggen-maps.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.2 > 3.6"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "procgen_maps.export_fbx",
+        "procgen_maps.export_gltf",
+        "procgen_maps.export_json",
+        "procgen_maps.export_svg",
+        "procgen_maps.export_usdz",
+        "procgen_maps.generate_city",
+        "procgen_maps.generate_dungeon",
+        "procgen_maps.generate_terrain",
+        "procgen_maps.render_interior",
+        "procgen_maps.render_showcase"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "procgen_maps.export_fbx",
+        "procgen_maps.export_gltf",
+        "procgen_maps.export_json",
+        "procgen_maps.export_svg",
+        "procgen_maps.export_usdz",
+        "procgen_maps.generate_city",
+        "procgen_maps.generate_dungeon",
+        "procgen_maps.generate_terrain",
+        "procgen_maps.render_interior",
+        "procgen_maps.render_showcase"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "procgen_maps.export_fbx",
+    "procgen_maps.export_gltf",
+    "procgen_maps.export_json",
+    "procgen_maps.export_svg",
+    "procgen_maps.export_usdz",
+    "procgen_maps.generate_city",
+    "procgen_maps.generate_dungeon",
+    "procgen_maps.generate_terrain",
+    "procgen_maps.render_interior",
+    "procgen_maps.render_showcase"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-06T21:56:21+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "open-write"
+  ],
+  "declared_min": "4.2",
+  "probed_natively": true,
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "procgen_maps.generate_city",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "terrain_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L2 native: 'Procedural city, terrain & dungeon generator'; procgen_maps.generate_city produces terrain geometry -> FULL PASS on 4.2/4.5 (upgrades terrain_generator to full-pass)."
+}

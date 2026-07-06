@@ -1,6 +1,6 @@
 {
-  "canonical_id": "charlesss07__blender-python-nodes",
-  "artifact": "charlesss07__blender-python-nodes.zip",
+  "canonical_id": "cradoux__project-r",
+  "artifact": "cradoux__project-r.zip",
   "verify": {
     "3.6": {
       "state": "needs_review",
@@ -21,12 +21,11 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T21:57:09+00:00",
+  "verified_at": "2026-07-06T21:57:18+00:00",
   "prescan_hits": [
-    "socket",
-    "eval(",
-    "urllib",
-    "requests"
+    "subprocess",
+    "open-write",
+    "os.system"
   ],
   "probed_natively": true
 }

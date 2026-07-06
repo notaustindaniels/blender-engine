@@ -41,9 +41,9 @@
     "mesh.eroder",
     "mesh.landscape_add"
   ],
-  "prescan": "cleared",
+  "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:04:44+00:00",
+  "verified_at": "2026-07-06T21:57:09+00:00",
   "prescan_hits": [
     "open-write"
   ],
@@ -64,5 +64,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "mesh.landscape_add generates heightmap terrain; mesh.eroder runs hydraulic/thermal erosion (both verified in manifest)."
+  "enrich_note": "mesh.landscape_add generates heightmap terrain; mesh.eroder runs hydraulic/thermal erosion (both verified in manifest).",
+  "probed_natively": true
 }

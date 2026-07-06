@@ -4,18 +4,19 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Gate metrics (PRD §4 wrong-condition)
 
-- **Terrain + Vegetation coverage (wave-1): 7/59 = 11.9%**  (4 full-pass + 3 partial + 0 recipe-verified) — PRD stop-line <40%. Plus **5 recipe_unverified claim(s)** shown but NOT counted in the decision number (R14).
-- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 13/22 = 59.1%; of-all-acquisitions 13/26 = 50.0% — PRD stop-line <30%.
+- **Terrain + Vegetation coverage (wave-1): 8/59 = 13.6%**  (5 full-pass + 3 partial + 0 recipe-verified) — PRD stop-line <40%. Plus **5 recipe_unverified claim(s)** shown but NOT counted in the decision number (R14).
+- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 15/27 = 55.6%; of-all-acquisitions 15/37 = 40.5% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 4 niche(s) partial-only (see `reports/probe-recipes.md`).
 
 ## Covered niches (Terrain + Vegetation, wave-1)
 
 | niche | category | best | covered by |
 |---|---|---|---|
-| `terrain_generator` | terrain | partial | community__a-n-t-landscape, lmesaric__bsc-thesis-fer-2020, nicolaspriniotakis__srtm-terrain-importer, zets__terrain-mixer |
+| `terrain_generator` | terrain | pass | beneking102__bene-proggen-maps, community__a-n-t-landscape, lmesaric__bsc-thesis-fer-2020, nicolaspriniotakis__srtm-terrain-importer, zets__terrain-mixer |
 | `heightmap_stack_tools` | terrain | partial | nicolaspriniotakis__srtm-terrain-importer, zets__terrain-mixer |
 | `erosion_sim` | terrain | pass | community__a-n-t-landscape, petak5__bp, varkenvarken__erosion |
 | `snow_accumulation` | terrain | pass | nacioss__real-snow |
+| `alien_biome_generator` | terrain | partial | ra100__planet-gen |
 | `tree_generator` | vegetation | pass | brandyn-britton__modular-tree, community__sapling-tree-gen, jacob-johnston__easy-tree, ls__space-colonization-tree-generator |
 | `space_colonization_growth` | vegetation | pass | ls__space-colonization-tree-generator |
 | `ivy_generator` | vegetation | partial | community__ivygen |
@@ -24,7 +25,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 | category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
 |---|---:|---:|---:|---:|---:|---:|
-| Terrain & landscape | 36 | 2 | 2 | 0 | 3 | 11% |
+| Terrain & landscape | 36 | 3 | 2 | 0 | 3 | 14% |
 | Vegetation & organic | 23 | 2 | 1 | 0 | 2 | 13% |
 | Cities & urban | 18 | 0 | 0 | 0 | 0 | 0% |
 | Buildings & architecture | 17 | 0 | 0 | 0 | 0 | 0% |
@@ -46,7 +47,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
 | Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **4** | **3** | **0** | **5** | **3%** |
+| **TOTAL (wave 1)** | **269** | **5** | **3** | **0** | **5** | **3%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 

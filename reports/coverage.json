@@ -5,23 +5,23 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 7,
-    "full_pass": 4,
+    "decision_covered": 8,
+    "full_pass": 5,
     "partial": 3,
     "recipe_verified": 0,
     "recipe_unverified_claims": 5,
-    "coverage_pct": 11.9
+    "coverage_pct": 13.6
   },
   "pass_rate": {
-    "verified_probed": 22,
-    "acquisitions": 26,
-    "surviving": 13,
-    "pct_of_probed": 59.1,
-    "pct_of_all_acquisitions": 50.0
+    "verified_probed": 27,
+    "acquisitions": 37,
+    "surviving": 15,
+    "pct_of_probed": 55.6,
+    "pct_of_all_acquisitions": 40.5
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 7,
+    "decision_covered": 8,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -30,6 +30,9 @@
     "recipe_unverified_claims": 0
   },
   "covered_by": {
+    "alien_biome_generator": [
+      "ra100__planet-gen"
+    ],
     "biome_scatter_system": [
       "community__scatter-objects"
     ],
@@ -52,6 +55,7 @@
       "ls__space-colonization-tree-generator"
     ],
     "terrain_generator": [
+      "beneking102__bene-proggen-maps",
       "community__a-n-t-landscape",
       "lmesaric__bsc-thesis-fer-2020",
       "nicolaspriniotakis__srtm-terrain-importer",
@@ -65,9 +69,9 @@
     ]
   },
   "probe_recipe_backlog": [
+    "alien_biome_generator",
     "biome_scatter_system",
     "heightmap_stack_tools",
-    "ivy_generator",
-    "terrain_generator"
+    "ivy_generator"
   ]
 }

@@ -22,7 +22,7 @@
   "operators": [],
   "prescan": "cleared",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:05:01+00:00",
+  "verified_at": "2026-07-06T21:57:26+00:00",
   "prescan_hits": [
     "subprocess",
     "open-write",
@@ -46,5 +46,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "GN scatter + ivy toolkit; QUARANTINED under emulation so contributes no coverage regardless."
+  "enrich_note": "GN scatter + ivy toolkit; QUARANTINED under emulation so contributes no coverage regardless.",
+  "probed_natively": true
 }

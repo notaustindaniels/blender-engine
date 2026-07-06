@@ -28,7 +28,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T12:05:05+00:00",
+  "verified_at": "2026-07-06T21:57:38+00:00",
   "prescan_hits": [],
   "declared_min": "4.2",
   "operators_enriched": [
@@ -47,5 +47,6 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "space-colonization algorithm -> both a tree generator and the branching-growth niche."
+  "enrich_note": "space-colonization algorithm -> both a tree generator and the branching-growth niche.",
+  "probed_natively": true
 }
