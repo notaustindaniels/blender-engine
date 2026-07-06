@@ -1,0 +1,26 @@
+# Dated prescan allowlist (SPEC §12.2, owner D-001 rider R6). Patterns here are DOWNGRADED from
+# gating to informational — a hit on an allowlisted pattern alone does NOT force needs_review —
+# because they are almost always benign in Blender add-ons AND every artifact still runs in the
+# --network none, read-only, non-root sandbox regardless. The genuinely exec/network-capable
+# patterns (subprocess, os.system, os.popen, eval(, exec(, __import__, urllib, requests, httpx,
+# ctypes, base64-decode) are NEVER allowlisted — the human gate stays exactly as-is for those
+# (enforced in code via prescan.py NEVER_ALLOW). Owner-authored; dated.
+allow:
+  - pattern: socket
+    justification: >
+      'socket' overwhelmingly refers to Blender geometry/shader NODE sockets, not network sockets
+      (sockets.register(), NodeSocketGeometry, socket-change polling). A genuine network socket is
+      inert under --network none anyway.
+    added: "2026-07-06"
+  - pattern: open-write
+    justification: >
+      Add-ons routinely write presets/config/exports via open(...,'w'). The probe root fs is
+      read-only except a tmpfs scratch, so writes cannot persist or escape. SPEC §3.4's "outside
+      temp" qualifier can't be resolved statically, so this pattern alone is not gating.
+    added: "2026-07-06"
+  - pattern: driver-expression
+    justification: >
+      Driver-expression markers appear in most rigging/animation .blend packs and are evaluated by
+      Blender's own restricted driver namespace, inside the sandbox. Not gating on its own; a pack
+      that ALSO trips subprocess/eval/__import__ still gates on those.
+    added: "2026-07-06"

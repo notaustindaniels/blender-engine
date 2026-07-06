@@ -1,20 +1,24 @@
 # /// script
 # requires-python = ">=3.11,<3.12"
+# dependencies = ["pyyaml>=6"]
 # ///
 """prescan.py — static danger scan; GATE PRECONDITION before ANY container run (SPEC §3.4, §7,
-PRD guardrail #1). Greps each artifact's Python for dangerous APIs. ANY hit => status
+PRD guardrail #1). Greps each artifact's Python for dangerous APIs. A GATING hit => status
 `needs_review`; the artifact must NOT enter the sandbox until a human clears it. GN-only .blend
-packs get a driver-expression scan (drivers can execute Python).
+packs get a driver-expression scan.
 
-Deterministic, no AI. Emits a JSON list to stdout: [{artifact, status, hits:[{pattern,sample}]}].
-Exit code 0 always (status is in the payload); the orchestrator decides gating.
+Owner rider 6 (§12.2): a dated allowlist (reviews/prescan-allowlist.yaml) DOWNGRADES
+almost-always-benign patterns (Blender node 'socket', preset open-writes, driver-expression) from
+gating to informational — never the exec/network-capable patterns. Allowlisted hits are still
+recorded. The human gate stays exactly as-is for the dangerous patterns.
 
-Usage: prescan.py <artifact> [<artifact> ...]
+Deterministic, no AI. Emits a JSON list: [{artifact, status, gating:[...], allowlisted:[...]}].
+
+Usage: prescan.py [--allowlist reviews/prescan-allowlist.yaml] <artifact> [<artifact> ...]
 """
-import sys, os, re, json, zipfile
+import sys, os, re, json, zipfile, argparse, pathlib
+import yaml
 
-# Dangerous-API patterns (SPEC §3.4). Conservative: false positives cost a human glance;
-# false negatives are a sandbox-escape exposure, so we err toward flagging.
 PATTERNS = {
     "subprocess": r"\bsubprocess\b",
     "os.system": r"\bos\.system\b",
@@ -29,14 +33,12 @@ PATTERNS = {
     "ctypes": r"\bctypes\b",
     "base64-decode": r"base64\b[\s\S]{0,40}?(b64decode|decodebytes|\.decode)",
     "open-write": r"open\s*\([^)]*,\s*['\"][wax]b?\+?['\"]",
-    "driver-expression": r"driver\.expression|\bFModifier\b",   # .blend GN packs (SPEC §3.4)
+    "driver-expression": r"driver\.expression|\bFModifier\b",
 }
-# Aligned to the SPEC §3.4 enumerated list. `importlib`/`pickle`/`marshal` were dropped as
-# they are not in that list and produced benign false positives; the exec-capable and network
-# APIs that ARE listed remain gating. `open-write` stays conservative (the "outside temp"
-# qualifier can't be resolved statically), so preset-writing add-ons will land in needs_review
-# and get a human glance — the intended §3.4 friction, not a bug.
 COMPILED = {k: re.compile(v) for k, v in PATTERNS.items()}
+# Patterns that may NEVER be allowlisted (exec/network-capable), enforced regardless of the file.
+NEVER_ALLOW = {"subprocess", "os.system", "os.popen", "urllib", "requests", "httpx",
+               "eval(", "exec(", "__import__", "ctypes", "base64-decode"}
 
 
 def scan_text(text):
@@ -49,7 +51,7 @@ def scan_text(text):
     return hits
 
 
-def scan_artifact(path):
+def scan_artifact(path, allow):
     low = path.lower()
     texts = []
     if low.endswith(".py"):
@@ -61,31 +63,42 @@ def scan_artifact(path):
                 if n.endswith(".py") or n.endswith(".toml"):
                     texts.append(z.read(n).decode("utf-8", "ignore"))
         except Exception as e:
-            return {"artifact": path, "status": "error", "hits": [], "error": f"bad zip: {e}"}
+            return {"artifact": path, "status": "error", "gating": [], "allowlisted": [], "error": f"bad zip: {e}"}
     elif low.endswith(".blend"):
-        # GN pack: binary .blend — scan as latin-1 text for driver-expression / dangerous tokens
-        data = open(path, "rb").read().decode("latin-1", "ignore")
-        texts.append(data)
+        texts.append(open(path, "rb").read().decode("latin-1", "ignore"))
     else:
-        return {"artifact": path, "status": "error", "hits": [], "error": "unknown artifact type"}
+        return {"artifact": path, "status": "error", "gating": [], "allowlisted": [], "error": "unknown artifact type"}
 
-    all_hits = []
+    seen, hits = set(), []
     for t in texts:
-        all_hits.extend(scan_text(t))
-    # dedupe by pattern
-    seen, deduped = set(), []
-    for h in all_hits:
-        if h["pattern"] not in seen:
-            seen.add(h["pattern"]); deduped.append(h)
-    status = "needs_review" if deduped else "clean"
-    return {"artifact": path, "status": status, "hits": deduped}
+        for h in scan_text(t):
+            if h["pattern"] not in seen:
+                seen.add(h["pattern"]); hits.append(h)
+    gating = [h for h in hits if h["pattern"] not in allow]
+    allowlisted = [h for h in hits if h["pattern"] in allow]
+    status = "needs_review" if gating else "clean"
+    return {"artifact": path, "status": status,
+            "gating": [h["pattern"] for h in gating],
+            "allowlisted": [h["pattern"] for h in allowlisted],
+            "hits": hits}
+
+
+def load_allow(path):
+    p = pathlib.Path(path)
+    if not p.exists():
+        return set()
+    doc = yaml.safe_load(p.read_text()) or {}
+    allow = {a["pattern"] for a in doc.get("allow", []) if "pattern" in a}
+    return allow - NEVER_ALLOW   # exec/network patterns can never be allowlisted
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("usage: prescan.py <artifact> [<artifact> ...]", file=sys.stderr)
-        sys.exit(2)
-    results = [scan_artifact(p) for p in sys.argv[1:]]
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--allowlist", default="policies/prescan-allowlist.yaml")
+    ap.add_argument("artifacts", nargs="+")
+    a = ap.parse_args()
+    allow = load_allow(a.allowlist)
+    results = [scan_artifact(p, allow) for p in a.artifacts]
     print(json.dumps(results, indent=2))
     flagged = [r["artifact"] for r in results if r["status"] == "needs_review"]
     if flagged:

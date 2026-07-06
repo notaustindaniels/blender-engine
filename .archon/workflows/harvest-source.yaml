@@ -11,7 +11,12 @@ worktree:
 model: sonnet              # only the AI nodes (enrich/report) use it; all glue is deterministic
 
 nodes:
+  - id: serve
+    bash: bash progress/serve.sh          # rider 8: relaunch the follow-along server at run start
+    timeout: 15000
+
   - id: lane
+    depends_on: [serve]
     bash: printf %s $ARGUMENTS
     timeout: 5000
 
@@ -56,15 +61,22 @@ nodes:
     timeout: 120000
     bash: |
       set -euo pipefail
-      mkdir -p manifests
-      mapfile -t FILES < <(find vault -type f \( -name '*.zip' -o -name '*.py' -o -name '*.blend' \) 2>/dev/null | sort)
-      if [ ${#FILES[@]} -eq 0 ]; then echo '[]' > manifests/prescan.json; else
-        uv run .archon/scripts/prescan.py "${FILES[@]}" > manifests/prescan.json
-      fi
-      cat manifests/prescan.json
+      uv run .archon/scripts/prescan_batch.py >/dev/null 2>&1 || true   # rider 6: batched findings
+      python3 -c "import json,os; p='reports/prescan-findings.json'; print(len(json.load(open(p))['still_blocked']) if os.path.exists(p) else 0)"
+
+  - id: prescan-review
+    depends_on: [prescan]
+    when: "$prescan.output > '0'"
+    approval:
+      message: |
+        Prescan flagged one or more artifacts as needs_review (see reports/prescan-findings.md).
+        Inspect the gating patterns, then either add a cited entry to reviews/prescan_clearances.yaml
+        or extend reviews/prescan-allowlist.yaml, and approve. Allowlisted-only artifacts already
+        cleared automatically; the exec/network-capable patterns can never be allowlisted.
 
   - id: verify
-    depends_on: [prescan]
+    depends_on: [prescan, prescan-review]
+    trigger_rule: none_failed_min_one_success
     timeout: 600000
     bash: |
       set -euo pipefail

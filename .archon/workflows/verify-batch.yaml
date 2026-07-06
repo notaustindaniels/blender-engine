@@ -8,7 +8,12 @@ worktree:
 model: sonnet
 
 nodes:
+  - id: serve
+    bash: bash progress/serve.sh          # rider 8: relaunch the follow-along server at run start
+    timeout: 15000
+
   - id: verify
+    depends_on: [serve]
     timeout: 600000
     bash: |
       set -euo pipefail
