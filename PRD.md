@@ -40,6 +40,7 @@ We believe that **capability metadata generated at verification time** will caus
 ## 3. Success Metrics (outcomes, not activity)
 
 - **Coverage:** % of taxonomy niches with ≥1 verification-passing operator. Provisional targets: ≥60% overall; ≥80% for the four engine-core categories (Terrain, Vegetation, Simulation-adjacent, Nature/FX). *(Targets are provisional until the thin slice calibrates them.)*
+  > **Calibration footnote — 2026-07-06 (D-003 R18; this IS the calibration §3 awaited).** The thin slice + native L2 calibrated the coverage metric to **v2**: `(full_pass + recipe_verified) / attainable wave-1 niches`, per-probe-category. Rationale: the corpus consumer is an LLM agent, and only the deterministic tier (full-pass or probe-verified recipe) is capability it can invoke without improvising; `partial`/`recipe_unverified` are runtime landmines. The denominator excludes market-unattainable niches (R15 link-backed audit). The 40% threshold is **unchanged**; the venue moves to after source exhaustion (L5b), per §2 H1. See SPEC §12.4.
 - **Fabrication rate:** 0 — every operator invoked downstream traces to a vaulted artifact with a hash and live-verified provenance.
 - **Resolution speed:** niche→operator lookup by an agent in <1 minute median (vs. today's ~10–30 min manual hunt, builder's estimate).
 - **Freshness:** 100% of corpus entries carry re-verifiable provenance (source URL + content hash), so rot is detectable on demand rather than discovered at render time.

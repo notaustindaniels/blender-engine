@@ -1,0 +1,67 @@
+# niche -> medium map (D-003 R22). Medium = the physical domain the metaphor resolver groups by:
+# ground | water | air | urban | organic | abstract. Terrain+Veg wave-1 niches classified; other
+# niches default to 'abstract' until classified. This feeds the verb×medium grid — the Stage-2
+# consumer metric (niches are substitutable within a medium; verbs are not).
+medium:
+  # Terrain — mostly ground; water/air where the physical domain differs
+  terrain_generator: ground
+  heightmap_stack_tools: ground
+  erosion_sim: ground
+  sediment_deposition: ground
+  canyon_mesa_generator: ground
+  karst_formation: ground
+  cliff_rockface_generator: ground
+  scree_talus_scatter: ground
+  cave_network_generator: ground
+  stalactite_generator: ground
+  river_generator: water
+  meander_braid_tools: water
+  waterfall_generator: water
+  coastline_generator: water
+  coral_atoll_generator: water
+  dune_generator: ground
+  sand_sim: ground
+  cracked_earth_shader: ground
+  heat_haze: air
+  glacier_flow_generator: ground
+  icicle_generator: ground
+  snowdrift_generator: ground
+  frozen_lake_generator: water
+  snow_ice_shader: ground
+  ice_shader: ground
+  snow_accumulation: ground
+  crack_generator: ground
+  crater_field_generator: ground
+  asteroid_generator: air
+  alien_biome_generator: ground
+  gas_giant_shader: air
+  planetary_ring_generator: air
+  lava_field_generator: ground
+  volcanic_caldera_generator: ground
+  rice_terrace_generator: ground
+  fissure_generator: ground
+  # Vegetation — organic; marine flora is water
+  tree_generator: organic
+  space_colonization_growth: organic
+  tree_species_presets: organic
+  dead_tree_generator: organic
+  root_system_generator: organic
+  bonsai_generator: organic
+  grass_meadow_scatter: organic
+  flower_generator: organic
+  succulent_generator: organic
+  fern_generator: organic
+  vine_growth: organic
+  ivy_generator: organic
+  climbing_plant_generator: organic
+  mushroom_generator: organic
+  moss_lichen_growth: organic
+  ground_cover: organic
+  orchard_row_scatter: organic
+  kelp_forest_generator: water
+  anemone_generator: water
+  coral_generator: water
+  bioluminescent_flora: organic
+  organic_cell_shader: organic
+  vein_generator: organic
+  biome_scatter_system: organic

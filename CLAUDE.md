@@ -39,5 +39,13 @@ rule in this file. Remembering it in context does not count.
   state the one action the owner must take and stop. (If a Stop-hook loops against a
   legitimately-superseded goal, the resolution is the owner clearing/patching the goal, never the
   agent undoing committed owner-authorized work.)
+- **No paid acquisition, ever, without an owner D-entry (R23, D-003).** The corpus is free-only.
+  After L5b + the recipe drive, the still-uncovered-attainable niches get a priced-options +
+  recipe-feasibility report → owner decision. Never buy, even a $0-illegitimate ("nulled") source
+  is a hard fail. The 2 `none` niches (karst_formation, coral_atoll_generator) are Stage-2
+  recipe/from-scratch backlog, not purchases.
+- **Decisions are auditable and vetoable (R24, D-003).** DECISIONS.md reasoning may be challenged by
+  any party via a new D-entry; the owner's veto is unconditional and needs no justification. A
+  decision judged by a delegated advisor-agent still carries owner authority until the owner vetoes.
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.

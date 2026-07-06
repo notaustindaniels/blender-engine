@@ -12,6 +12,35 @@
     "recipe_unverified_claims": 5,
     "coverage_pct": 13.6
   },
+  "gate_v2": {
+    "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
+    "numerator": 5,
+    "denominator_attainable": 54,
+    "coverage_pct": 9.3,
+    "threshold": 40.0,
+    "excluded_unattainable": [
+      "anemone_generator",
+      "coral_atoll_generator",
+      "coral_generator",
+      "karst_formation",
+      "kelp_forest_generator"
+    ]
+  },
+  "tripwire": {
+    "pass_rate_of_all_pct": 40.5,
+    "threshold": 30.0,
+    "tripped": false
+  },
+  "verb_medium_grid": {
+    "accumulate|ground": 1,
+    "branch|organic": 5,
+    "deplete|ground": 3,
+    "generate|ground": 6,
+    "generate|organic": 4,
+    "scatter|organic": 1,
+    "simulate|ground": 3,
+    "trace|organic": 2
+  },
   "pass_rate": {
     "verified_probed": 27,
     "acquisitions": 37,

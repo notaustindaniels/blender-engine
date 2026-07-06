@@ -4,7 +4,10 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Gate metrics (PRD §4 wrong-condition)
 
-- **Terrain + Vegetation coverage (wave-1): 8/59 = 13.6%**  (5 full-pass + 3 partial + 0 recipe-verified) — PRD stop-line <40%. Plus **5 recipe_unverified claim(s)** shown but NOT counted in the decision number (R14).
+- **GATE v2 (R18/D-003 — the governing metric): 5/54 = 9.3%** = (full_pass + recipe_verified) / 54 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
+  - excluded as unattainable (paid_only/none, R15): `anemone_generator`, `coral_atoll_generator`, `coral_generator`, `karst_formation`, `kelp_forest_generator`
+- **Tripwire (R19): pass-rate of-all-acquisitions 40.5%** vs 30% floor → OK.
+- _v1 (legacy, all-present denom): 8/59 = 13.6% (5 full-pass + 3 partial + 0 recipe✓; 5 recipe claims not counted)._
 - **Acquisition pass-rate (both framings, R16/D-002):** of-probed 15/27 = 55.6%; of-all-acquisitions 15/37 = 40.5% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 4 niche(s) partial-only (see `reports/probe-recipes.md`).
 
@@ -66,3 +69,17 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: growth, reveal & build | 3 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 1 | 0 | 0 | 0 | 0 | 0% |
 | **TOTAL (wave 2)** | **59** | **0** | **1** | **0** | **0** | **2%** |
+
+## Verb × medium grid (R22 — verified operators; Stage-2 consumer metric)
+
+Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches are substitutable; verbs are not — this is what the metaphor resolver queries.
+
+| verb | ground | water | air | urban | organic | abstract |
+|---|---|---|---|---|---|---|
+| accumulate | 1 | 0 | 0 | 0 | 0 | 0 |
+| branch | 0 | 0 | 0 | 0 | 5 | 0 |
+| deplete | 3 | 0 | 0 | 0 | 0 | 0 |
+| generate | 6 | 0 | 0 | 0 | 4 | 0 |
+| scatter | 0 | 0 | 0 | 0 | 1 | 0 |
+| simulate | 3 | 0 | 0 | 0 | 0 | 0 |
+| trace | 0 | 0 | 0 | 0 | 2 | 0 |
