@@ -213,5 +213,25 @@
     "body": "<p>Re-ran the dispatch after your re-sent unblock. Reconciled with origin first (in sync at <code>6e1de4a</code>). The RW token <b>still returns 403</b> on <code>workflow_dispatch</code> — same precise gap as before: it has Actions:<b>read</b> + Contents:<b>write</b> (push works) but the dispatch endpoint is denied. This is a <b>known GitHub limitation</b>: fine-grained PATs frequently cannot trigger <code>workflow_dispatch</code> even when \"Actions: read and write\" is set. Per R2 I am reporting this, not working around it.</p>\n<p><b>Three clean paths — your call:</b></p>\n<ul>\n<li><b>(a) Run it yourself (fastest, zero risk):</b> GitHub → Actions → <code>native-probe</code> → <b>Run workflow</b> → branch <code>main</code>. I already have Actions:<b>read</b>, so I will poll the run and download the artifact the moment it appears — no token change needed.</li>\n<li><b>(b) Switch token type:</b> a <b>classic</b> PAT with the <code>workflow</code> scope <i>can</i> dispatch (the fine-grained one reliably can&#39;t). Drop it in as <code>GH_TOKEN_RW</code> and I retry immediately.</li>\n<li><b>(c) Add a gated <code>push:</code> trigger to the workflow</b> so my push (Contents:write, which works) starts it — <b>but this bypasses the dispatch-permission gate, so it needs your explicit OK</b> (it brushes the R13 \"never worked around\" guardrail; I will not do it unilaterally).</li>\n</ul>\n<p>All the pre-run work is done and pushed: R15 addendum (URLs on all 15 load-bearing verdicts, meander re-searched → 54/59=92% attainable), native-probe.yml on origin, both tokens validated. Only the trigger is blocked. Recommend <b>(a)</b> — one click and I take it from there through R16 + the D-003 request.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 22,
+    "ts": "2026-07-06T17:53:06-04:00",
+    "title": "R13 native run DISPATCHED — run 28825791382 (queued) on native amd64",
+    "tag": "milestone",
+    "status": "native-dispatched",
+    "body": "<p><b>Token fixed</b> (Actions: Read+write), re-validated, checked for in-flight runs (none), and dispatched the native-probe workflow <b>once</b> → GitHub Actions run <code>28825791382</code> (queued) on <code>ubuntu-latest</code> (native amd64, no emulation). Scope: all 27 L2 candidates + L1 emulation-suspects (bagapie ×2, terrain-mixer@4.5) + the 2 R12-cleared (sorcar, trailprint3d). Polling for completion; on finish I pull the artifact, index, promote recipes to <code>recipe_verified</code> only where a probe ran, then write R16 + the D-003 request.</p>",
+    "code": "",
+    "media": []
+  },
+  {
+    "seq": 23,
+    "ts": "2026-07-06T17:54:18-04:00",
+    "title": "Hook repair (item 3): no persistent hook to patch — session-scoped, already cleared; standing rule recorded instead",
+    "tag": "info",
+    "status": "hook-investigated",
+    "body": "<p><b>Investigated the authorized hook repair.</b> The goal-keeper Stop hook was <b>session-scoped</b> — registered dynamically by the <code>/goal</code> harness command, NOT stored in any settings file — and <code>/goal clear</code> already removed it. Confirmed: neither <code>~/.claude/settings.json</code> nor <code>settings.local.json</code> contains a <code>hooks</code> block; no persistent goal condition remains on disk (only a clipboard paste-cache).</p><p><b>The honest \"diff\": no settings patch is warranted.</b> I will not add a <code>hooks</code> block to your global config on the (now-disproven) premise that one exists there — that would be risky overreach. If the loop-tolerant hook you want lives somewhere I have not found (e.g. a harness-managed template), point me at the exact file and I will post a real diff before touching it.</p><p><b>Durable deliverable applied:</b> the pattern is now a CLAUDE.md standing rule — <i>\"Awaiting-owner is a valid terminal state; never loop against it.\"</i> (commit e5711f2). Meanwhile the native run <code>28825791382</code> is executing; polling it now.</p>",
+    "code": "",
+    "media": []
   }
 ]
