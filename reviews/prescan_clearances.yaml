@@ -52,8 +52,29 @@ cleared:
     rationale: >
       L2. subprocess pip-checks/installs deps for a GIS thesis add-on. Benign dependency mgmt;
       network-blocked in sandbox. Cleared.
-# NOT cleared (remain needs_review, recorded, NOT verified): aachman98__sorcar (urllib/eval/exec),
-# charlesss07__blender-python-nodes (eval/urllib/requests — a code-executor BY DESIGN),
-# dingdio__witcher3-blender-tools (base64/ctypes/__import__/subprocess/eval),
-# emgi96__trailprint3d (subprocess/ctypes/requests/exec/__import__),
-# itscubetime__fastpbr (subprocess/os.system/exec/ctypes). These warrant deeper review than a glance.
+  # ── D-002 R12 batch review of the 5 prescan-blocked L2 artifacts, 2026-07-06 (source-inspected) ──
+  - artifact: aachman98__sorcar.zip
+    flags: ["eval(", "exec(", urllib]
+    rationale: >
+      D-002 R12. eval() is numeric node-value evaluation (helper.py: float(eval(data))/len(eval(data)));
+      exec() is an OPT-IN "ScCustomPythonScript" node (ScCustomPythonScript.py) that is NOT run at
+      install/enable; urllib is the standard CGCookie addon_updater (network-blocked in the sandbox).
+      None fire during sandboxed verification. Cleared to probe.
+      RECORDED FINDING: the ScCustomPythonScript operator executes arbitrary user Python — flag it
+      inadmissible for Stage-2 agent auto-invocation (coverage comes from its geometry nodes, not this).
+  - artifact: emgi96__trailprint3d.zip
+    flags: [subprocess, ctypes, requests]
+    rationale: >
+      D-002 R12. Its exec()/__import__ were TEST-only code (now excluded by the prescan test-path skip);
+      remaining subprocess is a progress-bar child and requests/ctypes are OSM map-tile fetching —
+      network-blocked in the --network none sandbox (fails closed). Cleared. NOTE: declares min Blender
+      5.1.0, so it is skipped_incompatible on the 3.6/4.2/4.5 matrix (recorded, not verified — bears on
+      the PRD's minimum-Blender open question).
+# STILL BLOCKED after R12 review (needs_review, recorded, NOT verified):
+#  - charlesss07__blender-python-nodes: CONFIRMED arbitrary-Python executor by design
+#    (PythonEvalStatementNode: eval(self.arbitrary_code)) — its operators are inadmissible; blocked.
+#  - dingdio__witcher3-blender-tools: Windows game-modding tool (ctypes.windll game-binary reads,
+#    explorer file-browser, plus eval/__import__ not line-by-line vetted); not Terrain/Veg; blocked pending deeper review.
+#  - itscubetime__fastpbr: Windows-centric PBR tool (os.system explorer, exec/subprocess/ctypes not
+#    fully vetted); not Terrain/Veg; blocked pending deeper review.
+#  See reports/prescan-blocked-findings.md.

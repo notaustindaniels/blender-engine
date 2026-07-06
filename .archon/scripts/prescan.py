@@ -41,6 +41,20 @@ NEVER_ALLOW = {"subprocess", "os.system", "os.popen", "urllib", "requests", "htt
                "eval(", "exec(", "__import__", "ctypes", "base64-decode"}
 
 
+def strip_comments(text):
+    """Drop full-line Python comments so a commented-out `# exec(...)` is not a false hit (R12
+    instrument repair). Conservative: only removes lines whose first non-space char is '#', so it
+    never touches '#' inside strings."""
+    return "\n".join(ln for ln in text.splitlines() if not ln.lstrip().startswith("#"))
+
+
+def is_test_path(n):
+    """Test code is not add-on runtime; exclude it from the danger scan (R12)."""
+    nl = n.lower()
+    base = os.path.basename(nl)
+    return "/test/" in nl or "/tests/" in nl or base.startswith("test_") or base.endswith("_test.py")
+
+
 def scan_text(text):
     hits = []
     for name, rx in COMPILED.items():
@@ -55,12 +69,16 @@ def scan_artifact(path, allow):
     low = path.lower()
     texts = []
     if low.endswith(".py"):
-        texts.append(open(path, "r", errors="ignore").read())
+        texts.append(strip_comments(open(path, "r", errors="ignore").read()))
     elif low.endswith(".zip"):
         try:
             z = zipfile.ZipFile(path)
             for n in z.namelist():
-                if n.endswith(".py") or n.endswith(".toml"):
+                if is_test_path(n):
+                    continue
+                if n.endswith(".py"):
+                    texts.append(strip_comments(z.read(n).decode("utf-8", "ignore")))
+                elif n.endswith(".toml"):
                     texts.append(z.read(n).decode("utf-8", "ignore"))
         except Exception as e:
             return {"artifact": path, "status": "error", "gating": [], "allowlisted": [], "error": f"bad zip: {e}"}

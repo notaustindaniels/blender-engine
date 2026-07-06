@@ -5,7 +5,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 ## Gate metrics (PRD §4 wrong-condition)
 
 - **Terrain + Vegetation coverage (wave-1): 7/59 = 11.9%**  (4 full-pass + 3 partial-only) — PRD stop-line <40%.
-- **Acquisition pass-rate: 13/21 = 61.9%** (pass/partial on ≥1 compatible version; skipped-incompatible cells excluded) — PRD stop-line <30%.
+- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 13/22 = 59.1%; of-all-acquisitions 13/26 = 50.0% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 4 niche(s) partial-only (see `reports/probe-recipes.md`).
 
 ## Covered niches (Terrain + Vegetation, wave-1)

@@ -55,13 +55,15 @@ def main():
         niche_ops.setdefault(niche, []).append((cid, opid, state))
 
     # pass-rate: surviving / verified, where verified EXCLUDES skipped_incompatible cells (rider 4)
-    verified_ids, surviving_ids = set(), set()
+    verified_ids, surviving_ids, all_ids = set(), set(), set()
     for cid, state in con.execute("SELECT canonical_id, state FROM verify"):
+        all_ids.add(cid)                                            # every vaulted artifact
         if state not in ("skipped_incompatible", "needs_review"):   # neither ran a probe
             verified_ids.add(cid)
         if state in SURVIVE:
             surviving_ids.add(cid)
     pass_rate = (len(surviving_ids) / len(verified_ids)) if verified_ids else 0.0
+    pass_rate_all = (len(surviving_ids) / len(all_ids)) if all_ids else 0.0   # R16/D-002: of-all
 
     def cat_cov(cat_id, wave):
         present = cats[cat_id][f"wave{wave}"]
@@ -146,8 +148,9 @@ def main():
         "gate": {"denominator_present_wave1": len(gate_present), "covered": len(gate_cov),
                  "full_pass": len(gate_pass), "partial_only": len(gate_part),
                  "coverage_pct": round(gate_pct, 1)},
-        "pass_rate": {"verified": len(verified_ids), "surviving": len(surviving_ids),
-                      "pct": round(pass_rate * 100, 1)},
+        "pass_rate": {"verified_probed": len(verified_ids), "acquisitions": len(all_ids),
+                      "surviving": len(surviving_ids), "pct_of_probed": round(pass_rate * 100, 1),
+                      "pct_of_all_acquisitions": round(pass_rate_all * 100, 1)},
         "wave1_total": {"present": w1p, "covered": w1c, "full_pass": w1pass, "partial_only": w1part},
         "wave2_total": {"present": w2p, "covered": w2c, "full_pass": w2pass, "partial_only": w2part},
         "covered_by": {k: sorted(v) for k, v in covered_by.items()},
@@ -163,9 +166,9 @@ def main():
     md.append(f"- **Terrain + Vegetation coverage (wave-1): {len(gate_cov)}/{len(gate_present)} = "
               f"{gate_pct:.1f}%**  ({len(gate_pass)} full-pass + {len(gate_part)} partial-only) — "
               f"PRD stop-line <40%.")
-    md.append(f"- **Acquisition pass-rate: {len(surviving_ids)}/{len(verified_ids)} = "
-              f"{pass_rate*100:.1f}%** (pass/partial on ≥1 compatible version; skipped-incompatible "
-              f"cells excluded) — PRD stop-line <30%.")
+    md.append(f"- **Acquisition pass-rate (both framings, R16/D-002):** of-probed "
+              f"{len(surviving_ids)}/{len(verified_ids)} = {pass_rate*100:.1f}%; of-all-acquisitions "
+              f"{len(surviving_ids)}/{len(all_ids)} = {pass_rate_all*100:.1f}% — PRD stop-line <30%.")
     md.append(f"- **Probe-recipe backlog:** {len(partial_only)} niche(s) partial-only "
               f"(see `reports/probe-recipes.md`).\n")
     md.append("## Covered niches (Terrain + Vegetation, wave-1)\n")

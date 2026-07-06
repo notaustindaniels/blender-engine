@@ -2,13 +2,11 @@
   "artifacts": 26,
   "flagged": 11,
   "allowlist_downgraded": 4,
-  "cleared": 6,
-  "false_positive_rate_pct": 54.5,
+  "cleared": 8,
+  "false_positive_rate_pct": 72.7,
   "still_blocked": [
-    "aachman98__sorcar.zip",
     "charlesss07__blender-python-nodes.zip",
     "dingdio__witcher3-blender-tools.zip",
-    "emgi96__trailprint3d.zip",
     "itscubetime__fastpbr.zip"
   ]
 }
