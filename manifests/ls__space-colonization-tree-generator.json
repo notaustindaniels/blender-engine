@@ -1,0 +1,49 @@
+{
+  "canonical_id": "ls__space-colonization-tree-generator",
+  "artifact": "add-on-space-colonization-tree-generator-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "spacecolonization_tree.generate_tree"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "spacecolonization_tree.generate_tree"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "spacecolonization_tree.generate_tree"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:29+00:00",
+  "prescan_hits": [],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "spacecolonization_tree.generate_tree",
+      "verbs": [
+        "generate",
+        "branch",
+        "trace"
+      ],
+      "niches": [
+        "tree_generator",
+        "space_colonization_growth"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "space-colonization algorithm -> both a tree generator and the branching-growth niche."
+}

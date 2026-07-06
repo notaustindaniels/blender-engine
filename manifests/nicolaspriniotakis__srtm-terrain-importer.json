@@ -1,0 +1,47 @@
+{
+  "canonical_id": "nicolaspriniotakis__srtm-terrain-importer",
+  "artifact": "add-on-srtm-terrain-importer-v1.0.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "import_mesh.hgt_displacement"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "import_mesh.hgt_displacement"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "import_mesh.hgt_displacement"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:41+00:00",
+  "prescan_hits": [],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "import_mesh.hgt_displacement",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "terrain_generator",
+        "heightmap_stack_tools"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "imports SRTM DEM tiles as a heightfield terrain mesh."
+}

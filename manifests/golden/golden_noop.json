@@ -1,0 +1,33 @@
+{
+  "canonical_id": "golden_noop",
+  "artifact": "golden_noop.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.golden_noop"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.golden_noop"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.golden_noop"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.golden_noop"
+  ],
+  "prescan": "skipped",
+  "artifact_type": "legacy",
+  "verified_at": "2026-07-06T01:26:31+00:00"
+}

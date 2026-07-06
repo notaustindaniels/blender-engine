@@ -41,6 +41,8 @@ Build the pipeline that turns "the internet's free procedural Blender add-ons" i
 
 No network service, no server, no cloud DB. The corpus is files on the builder's disk.
 
+> **Amendment 2026-07-05 (sandbox base image — reality reconciled with §1, per the working rule).** `linuxserver/blender` publishes **only the current Blender release** (verified live on Docker Hub: every tag is `5.1.x` / `latest`, multi-arch amd64+arm64). It therefore cannot supply the 3.6 / 4.2 / 4.5 matrix. The three probe images are instead built from **official `download.blender.org` release tarballs, each pinned by SHA-256**, on a **digest-pinned** base image (`linux/amd64`, run under emulation on this arm64 host). This is strictly more reproducible than a rolling image. See §12.1(1). Owner-endorsed 2026-07-05.
+
 ---
 
 ## 2. Architecture & Patterns
@@ -211,6 +213,8 @@ categories:
 
 `generate, scatter, trace, stack, accumulate, branch, fill, deplete, reveal, illuminate, simulate, deform`. Chart primitives map to verbs downstream; storing verbs now means Stage 2's metaphor mapper is a query, not a rewrite. This enum is frozen for Stage 1; extensions require an explicit decision.
 
+> **Amendment 2026-07-05 (kickoff decision, per the §12 freeze rule):** the enum is extended by exactly **one** verb — **`aggregate`** (many small units self-organize into a target shape; required by the wave-2 emergent-formation tier). Full v2 enum: `generate, scatter, trace, stack, accumulate, branch, fill, deplete, reveal, illuminate, simulate, deform, aggregate`. Additionally, **pure-utility niches may carry `verbs: []`** (no physical verb applies — e.g. `sound_drive`, `sim_bake`, camera utilities). No other extension.
+
 ### 4.5 `corpus.db` (SQLite — the read index, rebuilt from JSON, never hand-edited)
 
 Tables: `addons(canonical_id PK, name, author, license, addon_type, procedural)`; `operators(id, canonical_id FK, kind, op_id, verbs_json)`; `verify(canonical_id FK, blender_ver, state, render_ok)`; `coverage(niche_id, canonical_id FK, operator_id, blender_ver)`; `graveyard(url, reason, seen_at)`. **Decision:** JSON manifests are canonical; `build_index.py` regenerates the DB idempotently, so the DB is disposable and always reproducible.
@@ -353,5 +357,16 @@ Gate after step 3 is mandatory (PRD wrong-condition). Steps 5–7 proceed only i
 3. **Candidate/graveyard ceilings** (defaults 5,000 / 1,000) — tune after Step-5 yield data.
 4. **Fourth Blender version?** If Stage 2 pins a newer/older release, add it via `verify-batch` — schema already supports N versions.
 5. **`enrich` model tier** — `sonnet` assumed; drop to a cheaper tier if README-reading proves shallow enough, or raise if verb/niche tagging is unreliable.
+
+### 12.1 Dated amendments — 2026-07-05 kickoff (reality reconciled with SPEC)
+
+Logged per the working rule: *if reality contradicts the SPEC, update the SPEC with a dated note — never silently diverge.*
+
+1. **Sandbox images (amends §1).** `linuxserver/blender` ships only the current release (all tags `5.1.x`/`latest`), so "one tag per Blender version" cannot yield 3.6/4.2/4.5. The three-version matrix is built from **official `download.blender.org` tarballs pinned by SHA-256** on a **digest-pinned** base image. Strictly more reproducible. Owner-endorsed. (See the §1 note.)
+2. **Verb enum (amends §4.4).** Extended by exactly one verb, **`aggregate`**; `verbs: []` permitted for pure-utility niches. (See the §4.4 note.)
+3. **Taxonomy delivered, not parsed (amends §0).** `inputs/taxonomy.yaml` (v2) is supplied by the owner as a finished file in the §4.1 schema + additive keys. The `parse-taxonomy` step is therefore a **validator** (schema + meta-count checks, tolerant of unknown keys), not a parser. Parse-from-source stays the documented fallback if the file is ever absent.
+4. **Wave isolation (amends §3, §4.1).** Niches carry an additive `wave` key (absent ⇒ 1). **PRD §3/§4 targets and the step-3 gate compute on wave-1 niches ONLY** — denominators from `meta` (`wave1_present=269`; Terrain+Vegetation wave-1 = 36+23 = **59**). Wave-2 (59 niches across 4 new categories: `emergent_formation`, `diegetic_dataviz`, `physical_process_media`, `light_shadow_data`) gets a **separate** coverage table and never moves the gate.
+5. **Corrupted-but-counted niches (amends §4.1).** 16 wave-1 niches were unrecoverable from the owner's source and are recorded as per-category `unrecovered_count` + `unrecovered_hints` — deliberately NOT placeholder entries. Coverage denominators use **present** niches (`meta.present_total=328`). `reconstructed: true` entries are usable now; the owner will confirm them against the pristine original; ids **freeze at the first coverage run**.
+6. **New report artifact (amends §2.3, §6.3).** `coverage-report` also emits `reports/taxonomy-proposals.md` — niches implied by harvested add-on tags that map to no existing niche. Owner-approved proposals become wave 3; nothing is auto-added.
 
 Keep this spec in sync as implementation reveals reality — the code is a lossy projection of it, not the other way around.

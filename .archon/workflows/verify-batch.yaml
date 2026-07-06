@@ -1,0 +1,30 @@
+name: verify-batch
+description: |
+  Gate-only rerun over an EXISTING vault subset (SPEC §6.2) — e.g. after fixing probe.py or
+  adding a 4th Blender version. No enumerate/acquire. verify (3-version Docker matrix) -> index
+  -> coverage -> report. Reads normalized.jsonl for the artifact list.
+worktree:
+  enabled: false           # only writes manifests/DB/reports, touches no tracked source (§6.2)
+model: sonnet
+
+nodes:
+  - id: verify
+    timeout: 600000
+    bash: |
+      set -euo pipefail
+      uv run .archon/scripts/verify_matrix.py --artifacts vault --out manifests --timeout 150
+
+  - id: index
+    depends_on: [verify]
+    script: build_index
+    runtime: uv
+
+  - id: coverage
+    depends_on: [index]
+    script: coverage
+    runtime: uv
+
+  - id: report
+    depends_on: [coverage]
+    context: fresh
+    command: write-coverage

@@ -1,0 +1,31 @@
+{
+  "canonical_id": "ivygen",
+  "artifact": "ivygen.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "curve.ivy_gen"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "curve.ivy_gen"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.ivy_gen"
+  ],
+  "prescan": "skipped",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:26:36+00:00"
+}

@@ -1,0 +1,28 @@
+name: coverage-report
+description: |
+  Read-only (SPEC §6.3): validate the taxonomy, rebuild corpus.db from JSON manifests, compute
+  the coverage matrix + gaps + taxonomy-proposals, and narrate. Run this to answer "where are we
+  vs PRD §3 targets." No harvest, no verify, no vault writes.
+worktree:
+  enabled: false           # read-only reporting — pin live checkout, skip worktree cost (§6.3)
+model: sonnet
+
+nodes:
+  - id: validate-taxonomy
+    script: validate_taxonomy
+    runtime: uv
+
+  - id: index
+    depends_on: [validate-taxonomy]
+    script: build_index
+    runtime: uv
+
+  - id: coverage
+    depends_on: [index]
+    script: coverage
+    runtime: uv
+
+  - id: report
+    depends_on: [coverage]
+    context: fresh
+    command: write-coverage

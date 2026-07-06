@@ -30,3 +30,6 @@ node_modules/
 
 # Sandbox scratch
 sandbox/scratch/
+
+# Playwright MCP runtime logs (browser snapshots from seed-anchor verification) — not deliverables
+.playwright-mcp/

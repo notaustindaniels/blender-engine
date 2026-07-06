@@ -1,0 +1,91 @@
+name: harvest-source
+description: |
+  Single-lane harvest workhorse (SPEC §6.1): enumerate -> normalize -> (L5 $0-checkout approval)
+  -> acquire -> prescan -> verify (3-version Docker matrix via probe.py) -> enrich -> index ->
+  coverage -> report. Run ONCE PER LANE in its own worktree, e.g.
+  `archon workflow run harvest-source --branch harvest/l1 "L1"`. Never combine lanes. Use
+  verify-batch to re-verify an existing vault; coverage-report to just rebuild the matrix.
+interactive: true          # required: the L5 acquire-gate approval must reach the UI (§6.1)
+worktree:
+  enabled: true            # the harvest writes files — force isolation (§6.1, good-practice #9)
+model: sonnet              # only the AI nodes (enrich/report) use it; all glue is deterministic
+
+nodes:
+  - id: lane
+    bash: printf %s $ARGUMENTS
+    timeout: 5000
+
+  - id: enumerate
+    depends_on: [lane]
+    timeout: 300000
+    bash: |
+      set -euo pipefail
+      LANE=$lane.output
+      LANE=${LANE:-L1}
+      case "$LANE" in
+        L1)  uv run .archon/scripts/enumerate/l1_extensions.py --out candidates/L1.jsonl --categories terrain,vegetation ;;
+        L2)  uv run .archon/scripts/enumerate/l2_github.py  --out candidates/L2.jsonl ;;
+        L3)  uv run .archon/scripts/enumerate/l3_forum.py   --out candidates/L3.jsonl ;;
+        L4)  uv run .archon/scripts/enumerate/l4_bnation.py --out candidates/L4.jsonl ;;
+        L5a|L5b) bun run .archon/scripts/l5_discover.ts --lane "$LANE" ;;
+        *) echo "unknown lane: $LANE" >&2; exit 1 ;;
+      esac
+
+  - id: normalize
+    depends_on: [enumerate]
+    script: normalize
+    runtime: uv
+
+  - id: acquire-gate
+    depends_on: [normalize]
+    when: "$lane.output == 'L5a' || $lane.output == 'L5b'"
+    approval:
+      message: |
+        L5 marketplace lane: complete the $0 checkouts in the buyer UI (ToS + CAPTCHA are
+        human-gated — PRD guardrail #2), then approve to sweep durable re-download links.
+        L1-L4 skip this gate automatically.
+
+  - id: acquire
+    depends_on: [normalize, acquire-gate]
+    trigger_rule: none_failed_min_one_success
+    script: acquire
+    runtime: uv
+
+  - id: prescan
+    depends_on: [acquire]
+    timeout: 120000
+    bash: |
+      set -euo pipefail
+      mkdir -p manifests
+      mapfile -t FILES < <(find vault -type f \( -name '*.zip' -o -name '*.py' -o -name '*.blend' \) 2>/dev/null | sort)
+      if [ ${#FILES[@]} -eq 0 ]; then echo '[]' > manifests/prescan.json; else
+        uv run .archon/scripts/prescan.py "${FILES[@]}" > manifests/prescan.json
+      fi
+      cat manifests/prescan.json
+
+  - id: verify
+    depends_on: [prescan]
+    timeout: 600000
+    bash: |
+      set -euo pipefail
+      uv run .archon/scripts/verify_matrix.py --artifacts vault --out manifests --timeout 150
+
+  - id: enrich
+    depends_on: [verify]
+    context: fresh
+    command: enrich-manifest
+
+  - id: index
+    depends_on: [enrich]
+    script: build_index
+    runtime: uv
+
+  - id: coverage
+    depends_on: [index]
+    script: coverage
+    runtime: uv
+
+  - id: report
+    depends_on: [coverage]
+    context: fresh
+    command: write-coverage

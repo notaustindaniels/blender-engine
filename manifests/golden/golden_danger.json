@@ -1,0 +1,25 @@
+{
+  "canonical_id": "golden_danger",
+  "artifact": "golden_danger.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "skipped",
+  "artifact_type": "legacy",
+  "verified_at": "2026-07-06T01:26:15+00:00"
+}

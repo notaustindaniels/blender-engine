@@ -1,0 +1,404 @@
+[
+  {
+    "canonical_id": "brandyn-britton__modular-tree",
+    "artifact": "add-on-modular-tree-v5.5.2-linux-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "mtree.add_leaves",
+          "mtree.apply_branch_node_preset",
+          "mtree.apply_growth_node_preset",
+          "mtree.apply_leaf_preset",
+          "mtree.apply_trunk_node_preset",
+          "mtree.export_pivot_painter",
+          "mtree.generate_leaf",
+          "mtree.node_function",
+          "mtree.quick_generate"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mtree.add_leaves",
+      "mtree.apply_branch_node_preset",
+      "mtree.apply_growth_node_preset",
+      "mtree.apply_leaf_preset",
+      "mtree.apply_trunk_node_preset",
+      "mtree.export_pivot_painter",
+      "mtree.generate_leaf",
+      "mtree.node_function",
+      "mtree.quick_generate"
+    ],
+    "prescan": "cleared",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:41:50+00:00",
+    "prescan_hits": [
+      "socket"
+    ]
+  },
+  {
+    "canonical_id": "community__a-n-t-landscape",
+    "artifact": "add-on-antlandscape-v0.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "mesh.ant_displace",
+          "mesh.ant_landscape_refresh",
+          "mesh.ant_landscape_regenerate",
+          "mesh.ant_slope_map",
+          "mesh.eroder",
+          "mesh.landscape_add"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "mesh.ant_displace",
+          "mesh.ant_landscape_refresh",
+          "mesh.ant_landscape_regenerate",
+          "mesh.ant_slope_map",
+          "mesh.eroder",
+          "mesh.landscape_add"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.ant_displace",
+      "mesh.ant_landscape_refresh",
+      "mesh.ant_landscape_regenerate",
+      "mesh.ant_slope_map",
+      "mesh.eroder",
+      "mesh.landscape_add"
+    ],
+    "prescan": "cleared",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:41:56+00:00",
+    "prescan_hits": [
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "community__ivygen",
+    "artifact": "add-on-ivygen-v0.1.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "curve.ivy_gen"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "curve.ivy_gen"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "curve.ivy_gen"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:02+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "community__sapling-tree-gen",
+    "artifact": "add-on-sapling-tree-gen-v0.3.7.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "curve.tree_add",
+          "sapling.exportdata",
+          "sapling.importdata"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "curve.tree_add",
+      "sapling.exportdata",
+      "sapling.importdata"
+    ],
+    "prescan": "cleared",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:07+00:00",
+    "prescan_hits": [
+      "eval("
+    ]
+  },
+  {
+    "canonical_id": "community__scatter-objects",
+    "artifact": "add-on-scatter-objects-v0.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.scatter"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.scatter"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.scatter"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:12+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "jacob-johnston__easy-tree",
+    "artifact": "add-on-easy-tree-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "object.add_tree_tool",
+          "object.hide_tree_leaves",
+          "object.show_tree_leaves"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.add_tree_tool",
+      "object.hide_tree_leaves",
+      "object.show_tree_leaves"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:18+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "kiara-bagattini__bagapie",
+    "artifact": "add-on-bagapie-v11.0.10.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "cleared",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:24+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "open-write",
+      "socket",
+      "exec("
+    ]
+  },
+  {
+    "canonical_id": "ls__space-colonization-tree-generator",
+    "artifact": "add-on-space-colonization-tree-generator-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "spacecolonization_tree.generate_tree"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "spacecolonization_tree.generate_tree"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "spacecolonization_tree.generate_tree"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:29+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "nacioss__real-snow",
+    "artifact": "add-on-real-snow-v1.3.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "snow.create"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "snow.create"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "snow.create"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:34+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "nicolaspriniotakis__srtm-terrain-importer",
+    "artifact": "add-on-srtm-terrain-importer-v1.0.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "import_mesh.hgt_displacement"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "import_mesh.hgt_displacement"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "import_mesh.hgt_displacement"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:41+00:00",
+    "prescan_hits": []
+  },
+  {
+    "canonical_id": "zets__terrain-mixer",
+    "artifact": "add-on-terrainmixer-v3.1.3.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.add_tm_workspaces",
+          "object.add_tm_world",
+          "object.fix_clipping_distance",
+          "object.replace_with_terrain",
+          "terrainmixer.pack_unpack_resources",
+          "terrainmixer.render_with_baking_settings",
+          "terrainmixer.setup_asset_library",
+          "terrainmixer.toggle_baking_camera"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [
+      "object.add_tm_workspaces",
+      "object.add_tm_world",
+      "object.fix_clipping_distance",
+      "object.replace_with_terrain",
+      "terrainmixer.pack_unpack_resources",
+      "terrainmixer.render_with_baking_settings",
+      "terrainmixer.setup_asset_library",
+      "terrainmixer.toggle_baking_camera"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension",
+    "verified_at": "2026-07-06T01:42:47+00:00",
+    "prescan_hits": []
+  }
+]

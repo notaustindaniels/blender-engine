@@ -1,0 +1,57 @@
+{
+  "probe_categories": [
+    "terrain",
+    "vegetation"
+  ],
+  "gate": {
+    "denominator_present_wave1": 59,
+    "covered": 7,
+    "coverage_pct": 11.9,
+    "terrain_veg_niches": 59
+  },
+  "pass_rate": {
+    "verified": 11,
+    "surviving": 10,
+    "pct": 90.9
+  },
+  "wave1_total": {
+    "present": 269,
+    "covered": 7
+  },
+  "wave2_total": {
+    "present": 59,
+    "covered": 1
+  },
+  "covered_by": {
+    "biome_scatter_system": [
+      "community__scatter-objects"
+    ],
+    "erosion_sim": [
+      "community__a-n-t-landscape"
+    ],
+    "heightmap_stack_tools": [
+      "nicolaspriniotakis__srtm-terrain-importer",
+      "zets__terrain-mixer"
+    ],
+    "ivy_generator": [
+      "community__ivygen"
+    ],
+    "snow_accumulation": [
+      "nacioss__real-snow"
+    ],
+    "space_colonization_growth": [
+      "ls__space-colonization-tree-generator"
+    ],
+    "terrain_generator": [
+      "community__a-n-t-landscape",
+      "nicolaspriniotakis__srtm-terrain-importer",
+      "zets__terrain-mixer"
+    ],
+    "tree_generator": [
+      "brandyn-britton__modular-tree",
+      "community__sapling-tree-gen",
+      "jacob-johnston__easy-tree",
+      "ls__space-colonization-tree-generator"
+    ]
+  }
+}

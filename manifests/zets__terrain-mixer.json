@@ -1,0 +1,59 @@
+{
+  "canonical_id": "zets__terrain-mixer",
+  "artifact": "add-on-terrainmixer-v3.1.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.add_tm_workspaces",
+        "object.add_tm_world",
+        "object.fix_clipping_distance",
+        "object.replace_with_terrain",
+        "terrainmixer.pack_unpack_resources",
+        "terrainmixer.render_with_baking_settings",
+        "terrainmixer.setup_asset_library",
+        "terrainmixer.toggle_baking_camera"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [
+    "object.add_tm_workspaces",
+    "object.add_tm_world",
+    "object.fix_clipping_distance",
+    "object.replace_with_terrain",
+    "terrainmixer.pack_unpack_resources",
+    "terrainmixer.render_with_baking_settings",
+    "terrainmixer.setup_asset_library",
+    "terrainmixer.toggle_baking_camera"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:47+00:00",
+  "prescan_hits": [],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "object.add_tm_workspaces",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "terrain_generator",
+        "heightmap_stack_tools"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "procedural terrain generation by mixing/stacking heightmap layers."
+}

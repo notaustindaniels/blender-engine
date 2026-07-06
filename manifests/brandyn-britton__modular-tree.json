@@ -1,0 +1,63 @@
+{
+  "canonical_id": "brandyn-britton__modular-tree",
+  "artifact": "add-on-modular-tree-v5.5.2-linux-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mtree.add_leaves",
+        "mtree.apply_branch_node_preset",
+        "mtree.apply_growth_node_preset",
+        "mtree.apply_leaf_preset",
+        "mtree.apply_trunk_node_preset",
+        "mtree.export_pivot_painter",
+        "mtree.generate_leaf",
+        "mtree.node_function",
+        "mtree.quick_generate"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mtree.add_leaves",
+    "mtree.apply_branch_node_preset",
+    "mtree.apply_growth_node_preset",
+    "mtree.apply_leaf_preset",
+    "mtree.apply_trunk_node_preset",
+    "mtree.export_pivot_painter",
+    "mtree.generate_leaf",
+    "mtree.node_function",
+    "mtree.quick_generate"
+  ],
+  "prescan": "cleared",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:41:50+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "mtree.add_leaves",
+      "verbs": [
+        "generate",
+        "branch"
+      ],
+      "niches": [
+        "tree_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "node-based procedural tree generator."
+}

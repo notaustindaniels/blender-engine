@@ -1,0 +1,435 @@
+# seed-anchors.yaml — hand-verified starter set (SPEC §0.2).
+#
+# EVERY entry was LIVE-VERIFIED on 2026-07-05 against a source fetched this session
+# (extensions.blender.org /api/v1, GitHub repo/manifest/raw source, or the Blender manual)
+# — never from model memory. This directly enforces the PRD zero-fabrication rule on the
+# builder. The `verified` field on each entry records how.
+#
+# Anchors calibrate the Gate golden set (§8) and seed L2 GitHub star-graph expansion
+# (L2 is build-seq step 5 — OUT of the Stage-1 thin-slice scope).
+#
+# REALITY THAT SHAPES THE GOLDEN SET (all live-confirmed):
+#  - A.N.T. Landscape / Sapling Tree Gen / IvyGen were BUNDLED in Blender 3.6 & 4.1 and
+#    REMOVED in the 4.2 extensions migration. They now exist ONLY as extensions.blender.org
+#    add-ons declaring blender_version_min >= 4.2. Consequence: the extension ZIP is
+#    expected to install on 4.2/4.5 but NOT on 3.6 (no extensions system pre-4.2); on 3.6
+#    the same tool is reachable only as the bundled module.
+#  - Several anchors declare min 4.4/4.5, so their ONLY correct passing version is 4.5.
+#  - ocean / mantaflow / dynamic_paint are CORE Blender features (modifiers / sim systems),
+#    not installable add-ons — recorded for completeness, not used as install targets.
+
+meta:
+  verified_date: "2026-07-05"
+  method: "live fetch: extensions.blender.org /api/v1/extensions/, GitHub API + raw source, Blender manual (docs.blender.org)"
+  spec_ref: "SPEC §0.2"
+
+anchors:
+  # ─────────── on the official extensions platform (L1 — real archive_url + sha256) ───────────
+  - key: antlandscape
+    name: "A.N.T.Landscape"
+    author: "Jimmy Hazevoet"
+    addon_type: extension_manifest      # bundled in 3.6/4.1; now L1 extension (min 4.2)
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-2.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/antlandscape/"
+    archive_url: "https://extensions.blender.org/download/sha256:230571bc14c50952f3af99b70fdb365cf0cee503382975dc38149407a5a4c8c0/add-on-antlandscape-v0.2.0.zip"
+    sha256: "230571bc14c50952f3af99b70fdb365cf0cee503382975dc38149407a5a4c8c0"
+    latest_version: "0.2.0"
+    blender_version_min: "4.2.0"
+    example_operator: "mesh.landscape_add"
+    niche_hint: [terrain_generator]
+    verified: "extensions.blender.org API + manual (bundled through 4.1, removed 4.2)"
+    confidence: high
+    notes: "Category Add Mesh. Bundled 3.6/4.1 then removed in 4.2 migration."
+
+  - key: sapling_tree_gen
+    name: "Sapling Tree Gen"
+    author: "Andrew Hale (TrumanBlending) et al."
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/sapling-tree-gen/"
+    archive_url: "https://extensions.blender.org/download/sha256:27a478262e1c86612a9c3daffe7f4dce2802f5bc2294033462e5adc6d9c0080f/add-on-sapling-tree-gen-v0.3.7.zip"
+    sha256: "27a478262e1c86612a9c3daffe7f4dce2802f5bc2294033462e5adc6d9c0080f"
+    latest_version: "0.3.7"
+    blender_version_min: "4.4.0"
+    example_operator: "curve.tree_add"
+    niche_hint: [tree_generator]
+    verified: "extensions.blender.org API + manual"
+    confidence: high
+    notes: "min 4.4 -> correct passing version is 4.5 only. Bundled 3.6/4.1, removed 4.2."
+
+  - key: ivygen
+    name: "IvyGen"
+    author: "testscreenings, PKHG, TrumanBlending (port of Thomas Luft's IvyGen)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-2.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/ivygen/"
+    archive_url: "https://extensions.blender.org/download/sha256:7e60967a11cabacb9bca0128e65dcfb96cec8794a934bc7dc2e353ae720cff98/add-on-ivygen-v0.1.5.zip"
+    sha256: "7e60967a11cabacb9bca0128e65dcfb96cec8794a934bc7dc2e353ae720cff98"
+    latest_version: "0.1.5"
+    blender_version_min: "4.2.0"
+    example_operator: "curve.ivy_gen"
+    niche_hint: [ivy_generator]
+    verified: "extensions.blender.org API + manual"
+    confidence: high
+    notes: "Bundled 3.6/4.1, removed 4.2."
+
+  - key: tissue
+    name: "Tissue"
+    author: "Alessandro Zomparelli (Community)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-2.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/tissue/"
+    archive_url: "https://extensions.blender.org/download/sha256:e2da80e8dc35fa07bd63cc09c71511a8d2766f00bc1ae93ae1416710049b04ad/add-on-tissue-v0.3.71.zip"
+    sha256: "e2da80e8dc35fa07bd63cc09c71511a8d2766f00bc1ae93ae1416710049b04ad"
+    latest_version: "0.3.71"
+    blender_version_min: "4.2.0"
+    example_operator: "object.tissue_tessellate"
+    niche_hint: [reaction_diffusion, differential_growth]
+    verified: "extensions.blender.org API"
+    confidence: high
+    notes: "Category Mesh. Tessellation + reaction-diffusion tools."
+
+  - key: modular_tree
+    name: "Modular Tree"
+    author: "GoodPie / Brandyn Britton (fork of MaximeHerpin's MTree)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/modular-tree/"
+    archive_url: "https://extensions.blender.org/download/sha256:7ffad885c79f7e1c062ea4a7404bf3f31e0f37b96126735d5876c35c8590c1b4/add-on-modular-tree-v5.5.2-linux-x64.zip"
+    sha256: "7ffad885c79f7e1c062ea4a7404bf3f31e0f37b96126735d5876c35c8590c1b4"
+    latest_version: "5.5.2"
+    blender_version_min: "4.3.1"
+    example_operator: "UNVERIFIED (node-based; 'Generate Tree')"
+    niche_hint: [tree_generator]
+    verified: "extensions.blender.org API + GitHub manifest (GoodPie/modular_tree)"
+    confidence: high
+    notes: "min 4.3.1 -> passing version 4.5 only. linux-x64 build ships a native component (good platform test)."
+
+  - key: bagapie
+    name: "Bagapie"
+    author: "Antoine Bagattini / F12 Studio (dev field: Kiara_Bagattini)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/bagapie/"
+    archive_url: "https://extensions.blender.org/download/sha256:2e55574dcb37ca4a86e1942317906f769e269d382d6a82d0b1330cfb94707c9c/add-on-bagapie-v11.0.10.zip"
+    sha256: "2e55574dcb37ca4a86e1942317906f769e269d382d6a82d0b1330cfb94707c9c"
+    latest_version: "11.0.10"
+    blender_version_min: "4.2.0"
+    example_operator: "UNVERIFIED (GN pie-menu tools: Scatter, Ivy, Array-along-curve)"
+    niche_hint: [biome_scatter_system, ivy_generator]
+    verified: "extensions.blender.org page (browser) + Gumroad mirror"
+    confidence: high
+    notes: "Geometry-nodes toolkit (tags Modeling, Node). 88k+ downloads."
+
+  - key: camera_shakify
+    name: "Camera Shakify"
+    author: "Ian Hubert & Nathan Vegdahl (Eat the Future)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later (code); CC0-1.0 (shake data)"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/camera-shakify/"
+    archive_url: "https://extensions.blender.org/download/sha256:40bb62e0960b301fe8c7b1de11ec959b8ce6c55ce03ed720c5c3b21c0c764e36/add-on-camera-shakify-v0.5.1.zip"
+    sha256: "40bb62e0960b301fe8c7b1de11ec959b8ce6c55ce03ed720c5c3b21c0c764e36"
+    latest_version: "0.5.1"
+    blender_version_min: "4.4.0"
+    example_operator: "object.camera_shake_add"
+    niche_hint: [handheld_shake]
+    verified: "extensions.blender.org API + GitHub manifest (EatTheFuture/camera_shakify)"
+    confidence: high
+    notes: "min 4.4 -> passing version 4.5 only. 143k+ downloads."
+
+  # ─────────── GitHub-hosted (legacy bl_info or manifest; L2 targets, verified here) ───────────
+  - key: sverchok
+    name: "Sverchok"
+    author: "nortikin org (Alexander Nedovizin, Nikita Gorodetskiy, Linus Yng, et al.)"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/nortikin/sverchok"
+    download_url: "https://github.com/nortikin/sverchok/archive/refs/heads/master.zip"
+    latest_version: "1.4.0"
+    blender_version_min: "2.8+"
+    example_operator: "node.sverchok_* (parametric node system)"
+    niche_hint: [parametric_surface_nodes]
+    verified: "github.com/nortikin/sverchok (README, license, releases) — fetched"
+    confidence: high
+    notes: "Large node framework; may stress the 120s probe cap on enable."
+
+  - key: jewelcraft
+    name: "JewelCraft"
+    author: "Mikhail Rachinskiy (mrachinskiy)"
+    addon_type: extension_manifest
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: manifest
+    source_url: "https://github.com/mrachinskiy/jewelcraft"
+    download_url: "https://github.com/mrachinskiy/jewelcraft/releases/download/v2.18.1-blender4.2.0/jewelcraft-2_18_1.zip"
+    latest_version: "2.18.1"
+    blender_version_min: "4.2.0"
+    example_operator: "object.jewelcraft_prongs_add"
+    niche_hint: [jewelry_generator]
+    verified: "GitHub API blender_manifest.toml + releases + operator source — fetched"
+    confidence: high
+    notes: "Distributed via author's own GitHub, not extensions.blender.org."
+
+  - key: bookgen
+    name: "BookGen"
+    author: "Oliver Weissbarth (+ Seojin Sim)"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: readme
+    source_url: "https://github.com/oweissbarth/bookGen"
+    download_url: "https://github.com/oweissbarth/bookGen/releases/download/1.0.7/bookGen_1_0_7.zip"
+    latest_version: "1.0.7"
+    blender_version_min: "4.2.0"
+    example_operator: "bookgen.select_shelf"
+    niche_hint: [book_asset_pack, shelf_filler]
+    verified: "GitHub raw __init__.py bl_info + releases — fetched"
+    confidence: high
+    notes: "Legacy bl_info (no manifest). Procedural book/shelf generator."
+
+  - key: blosm
+    name: "Blosm (formerly blender-osm)"
+    author: "Vladimir Elistratov (vvoovv)"
+    addon_type: python_bl_info
+    lane: github
+    free: true          # free GPL base; a paid 'Pro' exists separately
+    procedural: true
+    license: "GPL"
+    license_source: readme
+    source_url: "https://github.com/vvoovv/blosm"
+    download_url: "https://github.com/vvoovv/blosm/archive/refs/heads/release.zip"
+    latest_version: "2.7.27"
+    blender_version_min: "4.5.0"
+    example_operator: "blosm.import_data"
+    niche_hint: [city_builder, terrain_generator]
+    verified: "GitHub release-branch __init__.py bl_info — fetched"
+    confidence: high
+    notes: "Repo vvoovv/blender-osm redirects to vvoovv/blosm. Free base + paid Pro on Gumroad."
+
+  - key: blendergis
+    name: "BlenderGIS"
+    author: "domlysz"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/domlysz/BlenderGIS"
+    download_url: "https://github.com/domlysz/BlenderGIS/archive/refs/tags/2215.zip"
+    latest_version: "2.2.15"
+    blender_version_min: "2.83.0"
+    example_operator: "importgis.osm_file"
+    niche_hint: [terrain_generator, city_builder]
+    verified: "GitHub raw __init__.py bl_info + releases — fetched"
+    confidence: high
+
+  - key: rigacar
+    name: "Rigacar"
+    author: "David Gayerie (Digicreatures)"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/digicreatures/rigacar"
+    download_url: "https://github.com/digicreatures/rigacar/releases/download/v7.1/rigacar.v7.1.zip"
+    latest_version: "7.1"
+    blender_version_min: "2.83.0"
+    example_operator: "car_rig.OBJECT_OT_armatureCarDeformationRig"
+    niche_hint: [wheel_autorotate, vehicle_suspension]
+    verified: "GitHub raw __init__.py bl_info + releases — fetched"
+    confidence: high
+
+  - key: wiggle_2
+    name: "Wiggle 2"
+    author: "Steve Miller (shteeve3d)"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/shteeve3d/blender-wiggle-2"
+    download_url: "https://github.com/shteeve3d/blender-wiggle-2/releases/download/v2.2.3/wiggle_2.py"
+    latest_version: "2.2.3"
+    blender_version_min: "3.0.0"
+    example_operator: "wiggle.bake"
+    niche_hint: [secondary_jiggle, spring_damper]
+    verified: "GitHub raw wiggle_2.py bl_info + releases — fetched"
+    confidence: high
+    notes: "Canonical original. extensions.blender.org carries only third-party forks (Wiggle 2 RTX by Chamiseul; Wiggle Bones by Hans_Xwh)."
+
+  - key: archipack
+    name: "Archipack (free GitHub edition)"
+    author: "s-leger"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/s-leger/archipack"
+    latest_version: "1.3.8"
+    blender_version_min: "2.78"
+    example_operator: "UNVERIFIED"
+    niche_hint: [building_generator, roof_generator]
+    verified: "github.com/s-leger/archipack — fetched"
+    confidence: medium
+    notes: "DEPRECATED (last release 2018, min 2.78). Likely LEGACY/fail on 3.6+ — a good known-'legacy' calibration anchor. A separate paid Archipack Pro exists."
+
+  - key: crowdmaster
+    name: "CrowdMaster"
+    author: "Peter Noble, John Roper, Jake Dube, Patrick Crawford"
+    addon_type: python_bl_info
+    lane: github
+    free: true
+    procedural: true
+    license: "GPL-3.0"
+    license_source: repo
+    source_url: "https://github.com/johnroper100/CrowdMaster"
+    download_url: "https://github.com/johnroper100/CrowdMaster/archive/refs/heads/master.zip"
+    latest_version: "1.3.2"
+    blender_version_min: "2.78.0"
+    example_operator: "scene.cm_start"
+    niche_hint: [crowd_system, crowd_locomotion]
+    verified: "GitHub raw __init__.py bl_info — fetched"
+    confidence: high
+    notes: "Archived (last release 2017, min 2.78). Likely LEGACY/fail on 3.6+ — calibration anchor."
+
+  # ─────────── Gumroad / marketplace ($0 but not L1-automatable — L5-class acquisition) ───────────
+  - key: buildify
+    name: "Buildify 1.0"
+    author: "Pavel Oliva"
+    addon_type: gn_pack
+    lane: gumroad
+    free: true          # pay-what-you-want, $0 checkout
+    procedural: true
+    license: "not-stated (creator: free incl. commercial)"
+    license_source: manual
+    source_url: "https://paveloliva.gumroad.com/l/buildify"
+    latest_version: "1.0"
+    blender_version_min: "3.2"
+    example_operator: "UNVERIFIED (GN node-group library, .blend)"
+    niche_hint: [building_generator]
+    verified: "paveloliva.gumroad.com/l/buildify page ($0+, og:price 0) — fetched"
+    confidence: high
+    notes: "Geometry-nodes .blend pack. $0 Gumroad checkout = L5-class human-gated acquisition; not on L1."
+
+  - key: botaniq
+    name: "botaniq (tree & grass library) + engon"
+    author: "polygoniq"
+    addon_type: python_bl_info    # engon is the free GPL add-on that drives the assets
+    lane: gumroad
+    free: true          # free 38-asset sample + free GPL engon add-on; full library is paid
+    procedural: false   # asset LIBRARY (scatter is procedural, assets are static) -> flagged
+    license: "engon: GPL-3.0-or-later ; botaniq assets: proprietary polygoniq EULA"
+    license_source: repo
+    source_url: "https://polygoniq.com/software/botaniq/"
+    download_url: "https://github.com/polygoniq/engon/releases"
+    latest_version: "botaniq 7.1.1 / engon 1.9.1"
+    blender_version_min: "4.2.0"
+    example_operator: "engon (module)"
+    niche_hint: [biome_scatter_system]
+    verified: "polygoniq.com + docs.polygoniq.com + GitHub polygoniq/engon manifest — fetched"
+    confidence: high
+    notes: >
+      Full botaniq library is PAID (~$129); a free 38-asset sample is survey-gated. The free,
+      GPL 'engon' add-on provides the procedural scatter. procedural:false on the library per
+      SPEC §0 (asset dump); the scatter tool itself is procedural. NOT 'Geo-Scatter': that is
+      a separate PAID engine by BD3D (only its 'Biome-Reader' is $0).
+
+  # ─────────── core Blender features (NOT installable add-ons — recorded for completeness) ───────────
+  - key: cell_fracture
+    name: "Cell Fracture"
+    author: "Blender (bundled add-on, now extension)"
+    addon_type: extension_manifest
+    lane: L1
+    free: true
+    procedural: true
+    license: "GPL-3.0-or-later"
+    license_source: manifest
+    source_url: "https://extensions.blender.org/add-ons/cell-fracture/"
+    archive_url: "https://extensions.blender.org/download/sha256:878bbd46e0c735da689101aeed9ebe99f18c0d8d0cbd2e9e17ed8cda6b264fb2/add-on-cell-fracture-v0.2.1.zip"
+    sha256: "878bbd46e0c735da689101aeed9ebe99f18c0d8d0cbd2e9e17ed8cda6b264fb2"
+    latest_version: "0.2.1"
+    blender_version_min: "4.2.0"
+    example_operator: "object.add_fracture_cell_objects"
+    niche_hint: [brittle_fracture, voronoi_shatter]
+    verified: "extensions.blender.org API"
+    confidence: high
+    notes: "Was bundled (object_fracture_cell); now an extension (min 4.2)."
+
+  - key: ocean_mantaflow
+    name: "Ocean modifier + Mantaflow fluid sim"
+    author: "Blender core"
+    addon_type: core_feature
+    lane: core
+    free: true
+    procedural: true
+    license: "GPL-2.0-or-later"
+    license_source: assumed
+    source_url: "https://docs.blender.org/manual/en/latest/modeling/modifiers/physics/ocean.html"
+    example_operator: "modifier type 'OCEAN'; Mantaflow fluid domain"
+    niche_hint: [ocean_sim, smoke_plume_sim, liquid_in_container]
+    verified: "recorded from Blender-core knowledge; automated re-verify (group 7) did not complete"
+    confidence: medium
+    notes: "Core modifier/sim, always available in 3.6/4.2/4.5 — no install artifact. Not a golden-set install target."
+
+  - key: dynamic_paint
+    name: "Dynamic Paint"
+    author: "Blender core"
+    addon_type: core_feature
+    lane: core
+    free: true
+    procedural: true
+    license: "GPL-2.0-or-later"
+    license_source: assumed
+    source_url: "https://docs.blender.org/manual/en/latest/physics/dynamic_paint/index.html"
+    example_operator: "modifier type 'DYNAMIC_PAINT'"
+    niche_hint: [surface_spread, ink_spread]
+    verified: "recorded from Blender-core knowledge; automated re-verify (group 7) did not complete"
+    confidence: medium
+    notes: "Core physics feature, always available — no install artifact."
+
+# Bonus L1 finds surfaced during enumeration (verified, useful golden-set/coverage material):
+extras:
+  - { key: scatter_objects, name: "Scatter Objects", lane: L1, min: "4.2.0", sha256: "3fda488f56523b799e3937c802119f1da986391e193cb4d443177e6e132c764b", verified: "L1 API", notes: "free scatter add-on (Object)" }
+  - { key: real_snow, name: "Real Snow", lane: L1, min: "4.2.0", sha256: "2f66ed2d81bfb043fb1eab0274a99ec3bbc271c51c98484ee52fbea0d37d8432", verified: "L1 API", notes: "was bundled; snow accumulation -> terrain/nature" }

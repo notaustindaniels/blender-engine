@@ -1,0 +1,33 @@
+{
+  "canonical_id": "golden_good_cube",
+  "artifact": "golden_good_cube.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "object.golden_make_cube"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.golden_make_cube"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.golden_make_cube"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.golden_make_cube"
+  ],
+  "prescan": "skipped",
+  "artifact_type": "legacy",
+  "verified_at": "2026-07-06T01:26:20+00:00"
+}

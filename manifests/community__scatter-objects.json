@@ -1,0 +1,46 @@
+{
+  "canonical_id": "community__scatter-objects",
+  "artifact": "add-on-scatter-objects-v0.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.scatter"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.scatter"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.scatter"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:12+00:00",
+  "prescan_hits": [],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "object.scatter",
+      "verbs": [
+        "scatter"
+      ],
+      "niches": [
+        "biome_scatter_system"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "generic object scatter -> conservatively the wave-2 biome-scatter niche, NOT force-fit into a specific wave-1 niche."
+}

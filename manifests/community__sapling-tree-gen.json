@@ -1,0 +1,51 @@
+{
+  "canonical_id": "community__sapling-tree-gen",
+  "artifact": "add-on-sapling-tree-gen-v0.3.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "curve.tree_add",
+        "sapling.exportdata",
+        "sapling.importdata"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.tree_add",
+    "sapling.exportdata",
+    "sapling.importdata"
+  ],
+  "prescan": "cleared",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:07+00:00",
+  "prescan_hits": [
+    "eval("
+  ],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "curve.tree_add",
+      "verbs": [
+        "generate",
+        "branch"
+      ],
+      "niches": [
+        "tree_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "parametric branch-recursion tree generator."
+}

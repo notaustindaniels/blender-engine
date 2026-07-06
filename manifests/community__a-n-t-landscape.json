@@ -1,0 +1,66 @@
+{
+  "canonical_id": "community__a-n-t-landscape",
+  "artifact": "add-on-antlandscape-v0.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.ant_displace",
+        "mesh.ant_landscape_refresh",
+        "mesh.ant_landscape_regenerate",
+        "mesh.ant_slope_map",
+        "mesh.eroder",
+        "mesh.landscape_add"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.ant_displace",
+        "mesh.ant_landscape_refresh",
+        "mesh.ant_landscape_regenerate",
+        "mesh.ant_slope_map",
+        "mesh.eroder",
+        "mesh.landscape_add"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.ant_displace",
+    "mesh.ant_landscape_refresh",
+    "mesh.ant_landscape_regenerate",
+    "mesh.ant_slope_map",
+    "mesh.eroder",
+    "mesh.landscape_add"
+  ],
+  "prescan": "cleared",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:41:56+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "mesh.landscape_add",
+      "verbs": [
+        "generate",
+        "simulate",
+        "deplete"
+      ],
+      "niches": [
+        "terrain_generator",
+        "erosion_sim"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "mesh.landscape_add generates heightmap terrain; mesh.eroder runs hydraulic/thermal erosion (both verified in manifest)."
+}

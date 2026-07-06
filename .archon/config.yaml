@@ -1,0 +1,17 @@
+# Archon repo config — COMMITTED to git.
+# Secrets NEVER live here (SPEC §6.5, §7): GH_TOKEN and any marketplace creds come from
+# env injection only. Values in the env: block below expand from ~/.archon/.env at run time.
+assistant: claude
+
+worktree:
+  baseBranch: main
+
+defaults:
+  loadDefaultCommands: true
+  loadDefaultWorkflows: true
+
+# Injected into bash:/script: subprocess env at workflow execution time (after the target-repo
+# .env strip). $GH_TOKEN expands from ~/.archon/.env; it is ONLY used by the L2 GitHub lane
+# (build-seq step 5) and is unused by the L1 thin slice — the Stage-1 scope here.
+env:
+  GH_TOKEN: $GH_TOKEN

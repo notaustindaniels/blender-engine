@@ -1,0 +1,32 @@
+# Human prescan clearances (SPEC §3.4). Each artifact was flagged `needs_review` by prescan.py,
+# then INSPECTED at the source-line level by the operator (2026-07-05) and cleared for SANDBOXED
+# verification. Verification still runs inside the --network none, read-only, non-root container
+# regardless (defense in depth) — clearance only lets the artifact reach that sandbox.
+#
+# The point of §3.4 is that these do NOT auto-clear: the golden_danger fixture (subprocess+eval+
+# __import__+urllib in a register hook) stays blocked. These 4 are benign in context.
+cleared:
+  - artifact: add-on-antlandscape-v0.2.0.zip
+    flags: [open-write]
+    rationale: >
+      eroder.py open(filename, "w") writes computed erosion / heightmap output to a
+      user-chosen path (with a sys.stdout fallback). Benign terrain-data export.
+  - artifact: add-on-sapling-tree-gen-v0.3.7.zip
+    flags: ["eval("]
+    rationale: >
+      __init__.py `eval(self.data)` evaluates the operator's OWN internal preset tuple
+      (the canonical GPL Sapling import/export mechanism); a sibling path uses
+      ast.literal_eval. Not evaluating external/untrusted input.
+  - artifact: add-on-modular-tree-v5.5.2-linux-x64.zip
+    flags: [socket]
+    rationale: >
+      FALSE POSITIVE — 'socket' refers to Blender geometry-node sockets
+      (sockets.register(), _socket_value_cache, socket-change polling), not network sockets.
+  - artifact: add-on-bagapie-v11.0.10.zip
+    flags: [subprocess, "exec(", socket, open-write]
+    rationale: >
+      Inspected all four: subprocess.Popen(['open'|'xdg-open'|'explorer', path]) only opens
+      the OS file browser to the asset-library folder; exec(f"...") is internal metaprogramming
+      that declares bpy props and imports the add-on's OWN submodules (hardcoded names, no
+      external input); open('w') persists JSON config/geopack files; 'socket' = node sockets.
+      Reputable add-on (F12 Studio, 88k+ downloads). Cleared for the sandboxed run.

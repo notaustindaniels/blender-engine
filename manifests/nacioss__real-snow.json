@@ -1,0 +1,46 @@
+{
+  "canonical_id": "nacioss__real-snow",
+  "artifact": "add-on-real-snow-v1.3.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "snow.create"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "snow.create"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "snow.create"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:34+00:00",
+  "prescan_hits": [],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "snow.create",
+      "verbs": [
+        "accumulate"
+      ],
+      "niches": [
+        "snow_accumulation"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "accumulates a procedural snow layer over target geometry."
+}

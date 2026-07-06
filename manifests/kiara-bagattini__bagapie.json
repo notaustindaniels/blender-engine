@@ -1,0 +1,48 @@
+{
+  "canonical_id": "kiara-bagattini__bagapie",
+  "artifact": "add-on-bagapie-v11.0.10.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "cleared",
+  "artifact_type": "extension",
+  "verified_at": "2026-07-06T01:42:24+00:00",
+  "prescan_hits": [
+    "subprocess",
+    "open-write",
+    "socket",
+    "exec("
+  ],
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "kiara-bagattini__bagapie",
+      "verbs": [
+        "scatter",
+        "trace",
+        "branch"
+      ],
+      "niches": [
+        "biome_scatter_system",
+        "ivy_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "GN scatter + ivy toolkit; QUARANTINED under emulation so contributes no coverage regardless."
+}
