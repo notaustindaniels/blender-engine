@@ -24,5 +24,13 @@ rule in this file. Remembering it in context does not count.
 - **L2 enumeration orders, never filters (R11).** Stars/recency may prioritize probe order; they
   never exclude candidates from enumeration — the long tail is the point. Legacy / archived /
   no-signature repos become `graveyard.jsonl` records, never silent skips.
+- **Crossed stop-lines pause scaling until disposed (R17, D-002).** When a PRD §4 stop-line is
+  crossed, harvest scaling (new lanes / steps 6–8) STAYS PAUSED until a DECISIONS.md entry
+  explicitly disposes of it. A crossed stop-line is a contract — never worked around, never
+  recalibrated by fiat after a miss, never resumed on agent initiative.
+- **Recipes are claims until machine-checked (R14, D-002).** A registry recipe (niche → composition
+  of vaulted operators / built-in features) counts as `recipe_verified` ONLY if a probe recipe
+  actually ran; otherwise it is `recipe_unverified` — a documented claim, labelled as such in every
+  table. Never fabricate a recipe to inflate coverage.
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.
