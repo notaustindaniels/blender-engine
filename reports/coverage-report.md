@@ -4,7 +4,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Gate metrics (PRD §4 wrong-condition)
 
-- **Terrain + Vegetation coverage (wave-1): 7/59 = 11.9%**  (4 full-pass + 3 partial-only) — PRD stop-line <40%.
+- **Terrain + Vegetation coverage (wave-1): 7/59 = 11.9%**  (4 full-pass + 3 partial + 0 recipe-verified) — PRD stop-line <40%. Plus **5 recipe_unverified claim(s)** shown but NOT counted in the decision number (R14).
 - **Acquisition pass-rate (both framings, R16/D-002):** of-probed 13/22 = 59.1%; of-all-acquisitions 13/26 = 50.0% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 4 niche(s) partial-only (see `reports/probe-recipes.md`).
 
@@ -22,46 +22,46 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Coverage by category (wave-1)
 
-| category | present | covered | full-pass | partial-only | % |
-|---|---:|---:|---:|---:|---:|
-| Terrain & landscape | 36 | 4 | 2 | 2 | 11% |
-| Vegetation & organic | 23 | 3 | 2 | 1 | 13% |
-| Cities & urban | 18 | 0 | 0 | 0 | 0% |
-| Buildings & architecture | 17 | 0 | 0 | 0 | 0% |
-| Rooms & interiors | 12 | 0 | 0 | 0 | 0% |
-| Characters & creatures | 8 | 0 | 0 | 0 | 0% |
-| Hard surface & props | 17 | 0 | 0 | 0 | 0% |
-| Fabric & soft goods | 5 | 0 | 0 | 0 | 0% |
-| Nature elements & FX geometry | 20 | 0 | 0 | 0 | 0% |
-| Abstract, mograph & design | 11 | 0 | 0 | 0 | 0% |
-| Materials & texturing | 19 | 0 | 0 | 0 | 0% |
-| Simulation-adjacent | 14 | 0 | 0 | 0 | 0% |
-| Animation: motion fundamentals | 6 | 0 | 0 | 0 | 0% |
-| Animation: character & creature | 12 | 0 | 0 | 0 | 0% |
-| Animation: mechanical | 9 | 0 | 0 | 0 | 0% |
-| Animation: nature & environment | 8 | 0 | 0 | 0 | 0% |
-| Animation: growth, reveal & build | 7 | 0 | 0 | 0 | 0% |
-| Animation: cloth, rope & soft proxies | 5 | 0 | 0 | 0 | 0% |
-| Animation: camera & cinematic | 5 | 0 | 0 | 0 | 0% |
-| Animation: FX & particles | 6 | 0 | 0 | 0 | 0% |
-| Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0% |
-| Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **7** | **4** | **3** | **3%** |
+| category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
+|---|---:|---:|---:|---:|---:|---:|
+| Terrain & landscape | 36 | 2 | 2 | 0 | 3 | 11% |
+| Vegetation & organic | 23 | 2 | 1 | 0 | 2 | 13% |
+| Cities & urban | 18 | 0 | 0 | 0 | 0 | 0% |
+| Buildings & architecture | 17 | 0 | 0 | 0 | 0 | 0% |
+| Rooms & interiors | 12 | 0 | 0 | 0 | 0 | 0% |
+| Characters & creatures | 8 | 0 | 0 | 0 | 0 | 0% |
+| Hard surface & props | 17 | 0 | 0 | 0 | 0 | 0% |
+| Fabric & soft goods | 5 | 0 | 0 | 0 | 0 | 0% |
+| Nature elements & FX geometry | 20 | 0 | 0 | 0 | 0 | 0% |
+| Abstract, mograph & design | 11 | 0 | 0 | 0 | 0 | 0% |
+| Materials & texturing | 19 | 0 | 0 | 0 | 0 | 0% |
+| Simulation-adjacent | 14 | 0 | 0 | 0 | 0 | 0% |
+| Animation: motion fundamentals | 6 | 0 | 0 | 0 | 0 | 0% |
+| Animation: character & creature | 12 | 0 | 0 | 0 | 0 | 0% |
+| Animation: mechanical | 9 | 0 | 0 | 0 | 0 | 0% |
+| Animation: nature & environment | 8 | 0 | 0 | 0 | 0 | 0% |
+| Animation: growth, reveal & build | 7 | 0 | 0 | 0 | 0 | 0% |
+| Animation: cloth, rope & soft proxies | 5 | 0 | 0 | 0 | 0 | 0% |
+| Animation: camera & cinematic | 5 | 0 | 0 | 0 | 0 | 0% |
+| Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
+| Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
+| Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
+| **TOTAL (wave 1)** | **269** | **4** | **3** | **0** | **5** | **3%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 
-| category | present | covered | full-pass | partial-only | % |
-|---|---:|---:|---:|---:|---:|
-| Terrain & landscape | 3 | 0 | 0 | 0 | 0% |
-| Vegetation & organic | 2 | 1 | 0 | 1 | 50% |
-| Nature elements & FX geometry | 4 | 0 | 0 | 0 | 0% |
-| Abstract, mograph & design | 3 | 0 | 0 | 0 | 0% |
-| Materials & texturing | 3 | 0 | 0 | 0 | 0% |
-| Simulation-adjacent | 1 | 0 | 0 | 0 | 0% |
-| Emergent formation (agents/particles self-organize into targets) | 14 | 0 | 0 | 0 | 0% |
-| Diegetic data visualization (charts as in-world objects) | 16 | 0 | 0 | 0 | 0% |
-| Physical-process rendering (force-of-nature and craft draw the math) | 6 | 0 | 0 | 0 | 0% |
-| Light & shadow as data | 3 | 0 | 0 | 0 | 0% |
-| Animation: growth, reveal & build | 3 | 0 | 0 | 0 | 0% |
-| Animation: data-driven & utility | 1 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 2)** | **59** | **1** | **0** | **1** | **2%** |
+| category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
+|---|---:|---:|---:|---:|---:|---:|
+| Terrain & landscape | 3 | 0 | 0 | 0 | 0 | 0% |
+| Vegetation & organic | 2 | 0 | 1 | 0 | 0 | 50% |
+| Nature elements & FX geometry | 4 | 0 | 0 | 0 | 0 | 0% |
+| Abstract, mograph & design | 3 | 0 | 0 | 0 | 0 | 0% |
+| Materials & texturing | 3 | 0 | 0 | 0 | 0 | 0% |
+| Simulation-adjacent | 1 | 0 | 0 | 0 | 0 | 0% |
+| Emergent formation (agents/particles self-organize into targets) | 14 | 0 | 0 | 0 | 0 | 0% |
+| Diegetic data visualization (charts as in-world objects) | 16 | 0 | 0 | 0 | 0 | 0% |
+| Physical-process rendering (force-of-nature and craft draw the math) | 6 | 0 | 0 | 0 | 0 | 0% |
+| Light & shadow as data | 3 | 0 | 0 | 0 | 0 | 0% |
+| Animation: growth, reveal & build | 3 | 0 | 0 | 0 | 0 | 0% |
+| Animation: data-driven & utility | 1 | 0 | 0 | 0 | 0 | 0% |
+| **TOTAL (wave 2)** | **59** | **0** | **1** | **0** | **0** | **2%** |

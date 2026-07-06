@@ -45,6 +45,17 @@ def main():
     a = ap.parse_args()
 
     doc, niches, cats = load_taxonomy(a.taxonomy)
+
+    # R14 (D-002): recipe registry — composite coverage. recipe_unverified NEVER counts toward the
+    # gate; only DIRECT add-on coverage + recipe_verified do. verified beats unverified per niche.
+    recipe_tier = {}
+    rpath = pathlib.Path("inputs/recipes.yaml")
+    if rpath.exists():
+        for r in (yaml.safe_load(rpath.read_text()) or {}).get("recipes", []):
+            n, t = r.get("niche"), r.get("tier")
+            if n and t in ("recipe_verified", "recipe_unverified") and recipe_tier.get(n) != "recipe_verified":
+                recipe_tier[n] = t
+
     con = sqlite3.connect(a.db)
 
     covered_by, niche_pass, niche_ops = {}, {}, {}
@@ -67,37 +78,42 @@ def main():
 
     def cat_cov(cat_id, wave):
         present = cats[cat_id][f"wave{wave}"]
-        covered = [n for n in present if covered_by.get(n)]
-        cpass = [n for n in covered if niche_pass.get(n)]
-        cpart = [n for n in covered if not niche_pass.get(n)]
-        return present, covered, cpass, cpart
+        dpass = [n for n in present if covered_by.get(n) and niche_pass.get(n)]
+        dpart = [n for n in present if covered_by.get(n) and not niche_pass.get(n)]
+        # recipes apply ONLY to niches with no direct add-on coverage
+        rver = [n for n in present if not covered_by.get(n) and recipe_tier.get(n) == "recipe_verified"]
+        runver = [n for n in present if not covered_by.get(n) and recipe_tier.get(n) == "recipe_unverified"]
+        return present, dpass, dpart, rver, runver
 
     probe_cats = [c.strip() for c in a.probe_categories.split(",")]
-    gate_present, gate_cov, gate_pass, gate_part = [], [], [], []
+    gate_present, g_dpass, g_dpart, g_rver, g_runver = [], [], [], [], []
     for c in probe_cats:
-        p, cv, cp, cpa = cat_cov(c, 1)
-        gate_present += p; gate_cov += cv; gate_pass += cp; gate_part += cpa
-    gate_pct = (len(gate_cov) / len(gate_present) * 100) if gate_present else 0.0
+        p, dp, da, rv, ru = cat_cov(c, 1)
+        gate_present += p; g_dpass += dp; g_dpart += da; g_rver += rv; g_runver += ru
+    gate_decision = len(g_dpass) + len(g_dpart) + len(g_rver)   # direct + recipe_verified (R14)
+    gate_pct = (gate_decision / len(gate_present) * 100) if gate_present else 0.0
 
     reports = pathlib.Path(a.reports); reports.mkdir(exist_ok=True)
 
     def table(wave):
-        lines = ["| category | present | covered | full-pass | partial-only | % |",
-                 "|---|---:|---:|---:|---:|---:|"]
-        tp = tc = tpass = tpart = 0
+        lines = ["| category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |",
+                 "|---|---:|---:|---:|---:|---:|---:|"]
+        tp = tdp = tda = trv = tru = 0
         for cid in cats:
-            p, cv, cp, cpa = cat_cov(cid, wave)
+            p, dp, da, rv, ru = cat_cov(cid, wave)
             if not p:
                 continue
-            tp += len(p); tc += len(cv); tpass += len(cp); tpart += len(cpa)
-            pct = (len(cv) / len(p) * 100) if p else 0
-            lines.append(f"| {cats[cid]['name']} | {len(p)} | {len(cv)} | {len(cp)} | {len(cpa)} | {pct:.0f}% |")
-        pct = (tc / tp * 100) if tp else 0
-        lines.append(f"| **TOTAL (wave {wave})** | **{tp}** | **{tc}** | **{tpass}** | **{tpart}** | **{pct:.0f}%** |")
-        return "\n".join(lines), tp, tc, tpass, tpart
+            tp += len(p); tdp += len(dp); tda += len(da); trv += len(rv); tru += len(ru)
+            dec = len(dp) + len(da) + len(rv)
+            pct = (dec / len(p) * 100) if p else 0
+            lines.append(f"| {cats[cid]['name']} | {len(p)} | {len(dp)} | {len(da)} | {len(rv)} | {len(ru)} | {pct:.0f}% |")
+        dec = tdp + tda + trv
+        pct = (dec / tp * 100) if tp else 0
+        lines.append(f"| **TOTAL (wave {wave})** | **{tp}** | **{tdp}** | **{tda}** | **{trv}** | **{tru}** | **{pct:.0f}%** |")
+        return "\n".join(lines), tp, dec, tru
 
-    w1_table, w1p, w1c, w1pass, w1part = table(1)
-    w2_table, w2p, w2c, w2pass, w2part = table(2)
+    w1_table, w1p, w1dec, w1runver = table(1)
+    w2_table, w2p, w2dec, w2runver = table(2)
 
     detail = ["| niche | category | best | covered by |", "|---|---|---|---|"]
     for c in probe_cats:
@@ -109,8 +125,8 @@ def main():
     gaps = [f"# Coverage Gaps — {', '.join(probe_cats)} (wave-1)\n",
             "Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):\n"]
     for c in probe_cats:
-        miss = [n for n in cats[c]["wave1"] if not covered_by.get(n)]
-        gaps.append(f"## {cats[c]['name']} — {len(miss)}/{len(cats[c]['wave1'])} uncovered\n")
+        miss = [n for n in cats[c]["wave1"] if not covered_by.get(n) and n not in recipe_tier]
+        gaps.append(f"## {cats[c]['name']} — {len(miss)}/{len(cats[c]['wave1'])} with neither add-on nor recipe\n")
         for n in miss:
             al = niches[n].get("aliases") or []
             gaps.append(f"- `{n}`" + (f"  ({', '.join(al)})" if al else ""))
@@ -145,14 +161,14 @@ def main():
 
     out = {
         "probe_categories": probe_cats,
-        "gate": {"denominator_present_wave1": len(gate_present), "covered": len(gate_cov),
-                 "full_pass": len(gate_pass), "partial_only": len(gate_part),
-                 "coverage_pct": round(gate_pct, 1)},
+        "gate": {"denominator_present_wave1": len(gate_present), "decision_covered": gate_decision,
+                 "full_pass": len(g_dpass), "partial": len(g_dpart), "recipe_verified": len(g_rver),
+                 "recipe_unverified_claims": len(g_runver), "coverage_pct": round(gate_pct, 1)},
         "pass_rate": {"verified_probed": len(verified_ids), "acquisitions": len(all_ids),
                       "surviving": len(surviving_ids), "pct_of_probed": round(pass_rate * 100, 1),
                       "pct_of_all_acquisitions": round(pass_rate_all * 100, 1)},
-        "wave1_total": {"present": w1p, "covered": w1c, "full_pass": w1pass, "partial_only": w1part},
-        "wave2_total": {"present": w2p, "covered": w2c, "full_pass": w2pass, "partial_only": w2part},
+        "wave1_total": {"present": w1p, "decision_covered": w1dec, "recipe_unverified_claims": w1runver},
+        "wave2_total": {"present": w2p, "decision_covered": w2dec, "recipe_unverified_claims": w2runver},
         "covered_by": {k: sorted(v) for k, v in covered_by.items()},
         "probe_recipe_backlog": sorted(partial_only),
     }
@@ -163,9 +179,10 @@ def main():
               "denominators are PRESENT niches (§12.1(5)); every table splits full-pass vs partial "
               "(§12.2).\n")
     md.append("## Gate metrics (PRD §4 wrong-condition)\n")
-    md.append(f"- **Terrain + Vegetation coverage (wave-1): {len(gate_cov)}/{len(gate_present)} = "
-              f"{gate_pct:.1f}%**  ({len(gate_pass)} full-pass + {len(gate_part)} partial-only) — "
-              f"PRD stop-line <40%.")
+    md.append(f"- **Terrain + Vegetation coverage (wave-1): {gate_decision}/{len(gate_present)} = "
+              f"{gate_pct:.1f}%**  ({len(g_dpass)} full-pass + {len(g_dpart)} partial + {len(g_rver)} "
+              f"recipe-verified) — PRD stop-line <40%. Plus **{len(g_runver)} recipe_unverified claim(s)** "
+              f"shown but NOT counted in the decision number (R14).")
     md.append(f"- **Acquisition pass-rate (both framings, R16/D-002):** of-probed "
               f"{len(surviving_ids)}/{len(verified_ids)} = {pass_rate*100:.1f}%; of-all-acquisitions "
               f"{len(surviving_ids)}/{len(all_ids)} = {pass_rate_all*100:.1f}% — PRD stop-line <30%.")

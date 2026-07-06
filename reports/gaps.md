@@ -2,7 +2,7 @@
 
 Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 
-## Terrain & landscape — 32/36 uncovered
+## Terrain & landscape — 29/36 with neither add-on nor recipe
 
 - `sediment_deposition`
 - `canyon_mesa_generator`  (mesas, hoodoos, badlands)
@@ -16,14 +16,11 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `waterfall_generator`  (splash zones, plunge pools)
 - `coastline_generator`  (archipelagos, fjords)
 - `coral_atoll_generator`
-- `dune_generator`  (barchan, star, longitudinal)
 - `sand_sim`
 - `cracked_earth_shader`  (desiccation polygons)
 - `heat_haze`
 - `glacier_flow_generator`  (moraines, crevasses)
 - `icicle_generator`
-- `snowdrift_generator`  (wind-directional accumulation)
-- `frozen_lake_generator`  (trapped bubbles)
 - `snow_ice_shader`  (snow shader (materials-family crossref))
 - `ice_shader`  (ice shader (materials-family crossref))
 - `crack_generator`
@@ -37,7 +34,7 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `rice_terrace_generator`
 - `fissure_generator`
 
-## Vegetation & organic — 20/23 uncovered
+## Vegetation & organic — 18/23 with neither add-on nor recipe
 
 - `tree_species_presets`  (seasonal variants)
 - `dead_tree_generator`  (burnt, lightning-split)
@@ -51,8 +48,6 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `climbing_plant_generator`  (trellises)
 - `mushroom_generator`  (fairy rings, shelf fungi)
 - `moss_lichen_growth`  (exposure-directional)
-- `ground_cover`
-- `orchard_row_scatter`  (vineyards, hedgerows)
 - `kelp_forest_generator`
 - `anemone_generator`
 - `coral_generator`  (brain coral, fan coral)

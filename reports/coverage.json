@@ -5,9 +5,11 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "covered": 7,
+    "decision_covered": 7,
     "full_pass": 4,
-    "partial_only": 3,
+    "partial": 3,
+    "recipe_verified": 0,
+    "recipe_unverified_claims": 5,
     "coverage_pct": 11.9
   },
   "pass_rate": {
@@ -19,15 +21,13 @@
   },
   "wave1_total": {
     "present": 269,
-    "covered": 7,
-    "full_pass": 4,
-    "partial_only": 3
+    "decision_covered": 7,
+    "recipe_unverified_claims": 5
   },
   "wave2_total": {
     "present": 59,
-    "covered": 1,
-    "full_pass": 0,
-    "partial_only": 1
+    "decision_covered": 1,
+    "recipe_unverified_claims": 0
   },
   "covered_by": {
     "biome_scatter_system": [
