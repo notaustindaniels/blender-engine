@@ -3,14 +3,16 @@
   "artifact": "add-on-modular-tree-v5.5.2-linux-x64.zip",
   "verify": {
     "3.6": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
     },
     "4.2": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
     },
     "4.5": {
       "state": "partial",
@@ -40,11 +42,12 @@
     "mtree.quick_generate"
   ],
   "prescan": "cleared",
-  "artifact_type": "extension",
-  "verified_at": "2026-07-06T01:41:50+00:00",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-06T12:04:41+00:00",
   "prescan_hits": [
     "socket"
   ],
+  "declared_min": "4.3",
   "operators_enriched": [
     {
       "kind": "bpy_op",

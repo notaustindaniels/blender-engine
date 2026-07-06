@@ -4,14 +4,16 @@
     "artifact": "add-on-modular-tree-v5.5.2-linux-x64.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "declared min 4.3 > 4.2"
       },
       "4.5": {
         "state": "partial",
@@ -41,20 +43,22 @@
       "mtree.quick_generate"
     ],
     "prescan": "cleared",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:41:50+00:00",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:41+00:00",
     "prescan_hits": [
       "socket"
-    ]
+    ],
+    "declared_min": "4.3"
   },
   {
     "canonical_id": "community__a-n-t-landscape",
     "artifact": "add-on-antlandscape-v0.2.0.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "partial",
@@ -90,20 +94,22 @@
       "mesh.landscape_add"
     ],
     "prescan": "cleared",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:41:56+00:00",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:44+00:00",
     "prescan_hits": [
       "open-write"
-    ]
+    ],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "community__ivygen",
     "artifact": "add-on-ivygen-v0.1.5.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "partial",
@@ -124,23 +130,26 @@
       "curve.ivy_gen"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:02+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:48+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "community__sapling-tree-gen",
     "artifact": "add-on-sapling-tree-gen-v0.3.7.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
       },
       "4.5": {
         "state": "pass",
@@ -158,20 +167,22 @@
       "sapling.importdata"
     ],
     "prescan": "cleared",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:07+00:00",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:52+00:00",
     "prescan_hits": [
       "eval("
-    ]
+    ],
+    "declared_min": "4.4"
   },
   {
     "canonical_id": "community__scatter-objects",
     "artifact": "add-on-scatter-objects-v0.2.0.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "partial",
@@ -192,23 +203,26 @@
       "object.scatter"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:12+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:54+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "jacob-johnston__easy-tree",
     "artifact": "add-on-easy-tree-v1.0.1.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "declared min 4.5 > 4.2"
       },
       "4.5": {
         "state": "pass",
@@ -226,18 +240,20 @@
       "object.show_tree_leaves"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:18+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:04:59+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.5"
   },
   {
     "canonical_id": "kiara-bagattini__bagapie",
     "artifact": "add-on-bagapie-v11.0.10.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "quarantine",
@@ -252,23 +268,25 @@
     },
     "operators": [],
     "prescan": "cleared",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:24+00:00",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:05:01+00:00",
     "prescan_hits": [
       "subprocess",
       "open-write",
       "socket",
       "exec("
-    ]
+    ],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "ls__space-colonization-tree-generator",
     "artifact": "add-on-space-colonization-tree-generator-v1.0.0.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "pass",
@@ -289,18 +307,20 @@
       "spacecolonization_tree.generate_tree"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:29+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:05:05+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "nacioss__real-snow",
     "artifact": "add-on-real-snow-v1.3.2.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "pass",
@@ -321,18 +341,20 @@
       "snow.create"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:34+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:05:09+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "nicolaspriniotakis__srtm-terrain-importer",
     "artifact": "add-on-srtm-terrain-importer-v1.0.5.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "partial",
@@ -353,18 +375,20 @@
       "import_mesh.hgt_displacement"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:41+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:05:14+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   },
   {
     "canonical_id": "zets__terrain-mixer",
     "artifact": "add-on-terrainmixer-v3.1.3.zip",
     "verify": {
       "3.6": {
-        "state": "fail",
+        "state": "skipped_incompatible",
         "operators": [],
-        "render_ok": false
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
       },
       "4.2": {
         "state": "partial",
@@ -397,8 +421,9 @@
       "terrainmixer.toggle_baking_camera"
     ],
     "prescan": "clean",
-    "artifact_type": "extension",
-    "verified_at": "2026-07-06T01:42:47+00:00",
-    "prescan_hits": []
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-06T12:05:19+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
   }
 ]

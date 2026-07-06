@@ -57,7 +57,7 @@ def main():
     # pass-rate: surviving / verified, where verified EXCLUDES skipped_incompatible cells (rider 4)
     verified_ids, surviving_ids = set(), set()
     for cid, state in con.execute("SELECT canonical_id, state FROM verify"):
-        if state != "skipped_incompatible":
+        if state not in ("skipped_incompatible", "needs_review"):   # neither ran a probe
             verified_ids.add(cid)
         if state in SURVIVE:
             surviving_ids.add(cid)

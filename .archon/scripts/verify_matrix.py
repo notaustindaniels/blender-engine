@@ -136,6 +136,8 @@ def load_artifacts(spec):
                 continue
             row = json.loads(line)
             path = row.get("path") or row.get("file")
+            if not path:
+                continue   # skip rows with no local artifact (already-vaulted / deferred)
             cid = row.get("canonical_id") or pathlib.Path(path).stem
             out.append((cid, path))
     else:

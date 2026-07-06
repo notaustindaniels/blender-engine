@@ -3,14 +3,16 @@
   "artifact": "add-on-sapling-tree-gen-v0.3.7.zip",
   "verify": {
     "3.6": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
     },
     "4.2": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
     },
     "4.5": {
       "state": "pass",
@@ -28,11 +30,12 @@
     "sapling.importdata"
   ],
   "prescan": "cleared",
-  "artifact_type": "extension",
-  "verified_at": "2026-07-06T01:42:07+00:00",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-06T12:04:52+00:00",
   "prescan_hits": [
     "eval("
   ],
+  "declared_min": "4.4",
   "operators_enriched": [
     {
       "kind": "bpy_op",

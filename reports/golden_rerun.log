@@ -1,0 +1,30 @@
+  antlandscape               3.6:skipped_incompatible 4.2:partial 4.5:partial
+  cellfracture               3.6:skipped_incompatible 4.2:pass 4.5:pass
+  golden_broken              3.6:fail 4.2:fail 4.5:fail
+  golden_danger              3.6:fail 4.2:fail 4.5:fail
+  golden_good_cube           3.6:pass 4.2:pass 4.5:pass
+  golden_legacy_27x          3.6:legacy 4.2:legacy 4.5:legacy
+  golden_noop                3.6:partial 4.2:partial 4.5:partial
+  ivygen                     3.6:skipped_incompatible 4.2:partial 4.5:partial
+  sapling                    3.6:skipped_incompatible 4.2:skipped_incompatible 4.5:pass
+  tissue                     3.6:skipped_incompatible 4.2:pass 4.5:pass
+{"artifacts": 10, "out": "/Users/austin/blender-library/manifests/golden", "versions": ["3.6", "4.2", "4.5"]}
+GOLDEN-SET ACCEPTANCE  (probe state vs expected)
+artifact                   3.6      4.2      4.5
+golden_good_cube           pass✓    pass✓    pass✓
+golden_noop              partial✓  partial✓  partial✓
+golden_legacy_27x        legacy✓  legacy✓  legacy✓
+golden_broken              fail✓    fail✓    fail✓
+antlandscape             skipped_incompatible✓  partial✓  partial✓
+ivygen                   skipped_incompatible✓  partial✓  partial✓
+tissue                   skipped_incompatible✓    pass✓    pass✓
+cellfracture             skipped_incompatible✓    pass✓    pass✓
+sapling                  skipped_incompatible✓  skipped_incompatible✓    pass✓
+
+PRESCAN GATE:
+  golden_danger          want=needs_review   got=needs_review   ✓
+  golden_good_cube       want=clean          got=clean          ✓
+  golden_noop            want=clean          got=clean          ✓
+
+VERDICT: PASS — all golden states + prescan correct
+wrote reports/golden-set.md

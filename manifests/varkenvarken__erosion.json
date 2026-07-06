@@ -1,0 +1,50 @@
+{
+  "canonical_id": "varkenvarken__erosion",
+  "artifact": "varkenvarken__erosion.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.erode"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.erode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.erode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-06T12:36:07+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.69",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "mesh.erode",
+      "verbs": [
+        "simulate",
+        "deplete"
+      ],
+      "niches": [
+        "erosion_sim"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L2: hydraulic erosion (legacy min 2.69 but partial on 4.2/4.5)."
+}

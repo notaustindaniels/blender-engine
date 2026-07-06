@@ -1,0 +1,18 @@
+{
+  "artifacts": 26,
+  "flagged": 11,
+  "allowlist_downgraded": 4,
+  "cleared": 2,
+  "false_positive_rate_pct": 18.2,
+  "still_blocked": [
+    "aachman98__sorcar.zip",
+    "charlesss07__blender-python-nodes.zip",
+    "dingdio__witcher3-blender-tools.zip",
+    "emgi96__trailprint3d.zip",
+    "grimrukh__soulstruct-blender.zip",
+    "itscubetime__fastpbr.zip",
+    "lmesaric__bsc-thesis-fer-2020.zip",
+    "ln-12__blainder-range-scanner.zip",
+    "ozikazina__hydra.zip"
+  ]
+}

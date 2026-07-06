@@ -55,6 +55,16 @@ MAP = {
     "kiara-bagattini__bagapie": dict(
         niches=["biome_scatter_system", "ivy_generator"], verbs=["scatter", "trace", "branch"],
         prefer_op=None, why="GN scatter + ivy toolkit; QUARANTINED under emulation so contributes no coverage regardless."),
+    # ── L2 (GitHub) survivors, reviewed 2026-07-06 ──
+    "petak5__bp": dict(
+        niches=["erosion_sim"], verbs=["simulate", "deplete"], prefer_op=None,
+        why="L2: bachelor-thesis terrain-erosion plugin; operator drives headless -> full pass (upgrades erosion_sim to full-pass)."),
+    "varkenvarken__erosion": dict(
+        niches=["erosion_sim"], verbs=["simulate", "deplete"], prefer_op=None,
+        why="L2: hydraulic erosion (legacy min 2.69 but partial on 4.2/4.5)."),
+    "lmesaric__bsc-thesis-fer-2020": dict(
+        niches=["terrain_generator"], verbs=["generate"], prefer_op=None,
+        why="L2: ZagrebGIS — imports GIS data into a terrain mesh (partial headless)."),
 }
 
 

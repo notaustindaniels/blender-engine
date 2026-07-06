@@ -10,11 +10,11 @@ Probe images are built from official `download.blender.org` tarballs pinned by S
 | `golden_noop` | `partial`✓ | `partial`✓ | `partial`✓ | enables + registers an operator + renders, but the operator makes no geometry -> no smoke delta. |
 | `golden_legacy_27x` | `legacy`✓ | `legacy`✓ | `legacy`✓ | declares blender (2,7,9); register_module was removed in 2.8+ so it never registers -> legacy. |
 | `golden_broken` | `fail`✓ | `fail`✓ | `fail`✓ | not a valid zip archive -> install cannot even begin. |
-| `antlandscape` | `fail`✓ | `partial`✓ | `partial`✓ | extension (min 4.2): no extension system on 3.6 -> fail; mesh.landscape_add is a dialog-only operator that returns PASS_THROUGH headless -> partial. |
-| `ivygen` | `fail`✓ | `partial`✓ | `partial`✓ | extension (min 4.2); curve.ivy_gen is dialog/context-dependent headless -> partial. |
-| `tissue` | `fail`✓ | `pass`✓ | `pass`✓ | extension (min 4.2); a tessellation operator produces a mesh delta headless -> pass. |
-| `cellfracture` | `fail`✓ | `pass`✓ | `pass`✓ | extension (min 4.2); a fracture operator produces geometry headless -> pass. |
-| `sapling` | `fail`✓ | `fail`✓ | `pass`✓ | extension min 4.4 -> below-minimum on 3.6 AND 4.2 (fail); curve.tree_add drives headless on 4.5 -> pass. This is the version-gating proof. |
+| `antlandscape` | `skipped_incompatible`✓ | `partial`✓ | `partial`✓ | extension (min 4.2): no extension system on 3.6 -> skipped_incompatible (rider 4, not a wasted fail); mesh.landscape_add is dialog-only headless -> partial. |
+| `ivygen` | `skipped_incompatible`✓ | `partial`✓ | `partial`✓ | extension (min 4.2); 3.6 skipped_incompatible; curve.ivy_gen dialog/context-dependent headless -> partial. |
+| `tissue` | `skipped_incompatible`✓ | `pass`✓ | `pass`✓ | extension (min 4.2); 3.6 skipped_incompatible; a tessellation operator produces a mesh delta headless -> pass. |
+| `cellfracture` | `skipped_incompatible`✓ | `pass`✓ | `pass`✓ | extension (min 4.2); 3.6 skipped_incompatible; a fracture operator produces geometry headless -> pass. |
+| `sapling` | `skipped_incompatible`✓ | `skipped_incompatible`✓ | `pass`✓ | extension min 4.4 -> below-minimum on BOTH 3.6 and 4.2 -> skipped_incompatible (rider 4); curve.tree_add drives headless on 4.5 -> pass. The version-gating proof. |
 
 ## Prescan gate (SPEC §3.4)
 

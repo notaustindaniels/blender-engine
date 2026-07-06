@@ -1,6 +1,6 @@
 {
-  "canonical_id": "golden_broken",
-  "artifact": "golden_broken.zip",
+  "canonical_id": "ln-12__blainder-range-scanner",
+  "artifact": "ln-12__blainder-range-scanner.zip",
   "verify": {
     "3.6": {
       "state": "fail",
@@ -19,8 +19,11 @@
     }
   },
   "operators": [],
-  "prescan": "skipped",
-  "artifact_type": "broken",
-  "verified_at": "2026-07-06T12:27:03+00:00",
-  "declared_min": null
+  "prescan": "cleared",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-06T12:35:56+00:00",
+  "prescan_hits": [
+    "subprocess"
+  ],
+  "declared_min": "2.81"
 }

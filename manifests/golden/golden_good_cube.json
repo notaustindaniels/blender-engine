@@ -29,5 +29,6 @@
   ],
   "prescan": "skipped",
   "artifact_type": "legacy",
-  "verified_at": "2026-07-06T01:51:44+00:00"
+  "verified_at": "2026-07-06T12:27:13+00:00",
+  "declared_min": "3.0"
 }

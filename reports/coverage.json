@@ -6,28 +6,35 @@
   "gate": {
     "denominator_present_wave1": 59,
     "covered": 7,
-    "coverage_pct": 11.9,
-    "terrain_veg_niches": 59
+    "full_pass": 4,
+    "partial_only": 3,
+    "coverage_pct": 11.9
   },
   "pass_rate": {
-    "verified": 11,
-    "surviving": 10,
-    "pct": 90.9
+    "verified": 21,
+    "surviving": 13,
+    "pct": 61.9
   },
   "wave1_total": {
     "present": 269,
-    "covered": 7
+    "covered": 7,
+    "full_pass": 4,
+    "partial_only": 3
   },
   "wave2_total": {
     "present": 59,
-    "covered": 1
+    "covered": 1,
+    "full_pass": 0,
+    "partial_only": 1
   },
   "covered_by": {
     "biome_scatter_system": [
       "community__scatter-objects"
     ],
     "erosion_sim": [
-      "community__a-n-t-landscape"
+      "community__a-n-t-landscape",
+      "petak5__bp",
+      "varkenvarken__erosion"
     ],
     "heightmap_stack_tools": [
       "nicolaspriniotakis__srtm-terrain-importer",
@@ -44,6 +51,7 @@
     ],
     "terrain_generator": [
       "community__a-n-t-landscape",
+      "lmesaric__bsc-thesis-fer-2020",
       "nicolaspriniotakis__srtm-terrain-importer",
       "zets__terrain-mixer"
     ],
@@ -53,5 +61,11 @@
       "jacob-johnston__easy-tree",
       "ls__space-colonization-tree-generator"
     ]
-  }
+  },
+  "probe_recipe_backlog": [
+    "biome_scatter_system",
+    "heightmap_stack_tools",
+    "ivy_generator",
+    "terrain_generator"
+  ]
 }

@@ -30,3 +30,30 @@ cleared:
       that declares bpy props and imports the add-on's OWN submodules (hardcoded names, no
       external input); open('w') persists JSON config/geopack files; 'socket' = node sockets.
       Reputable add-on (F12 Studio, 88k+ downloads). Cleared for the sandboxed run.
+
+  # ── L2 (GitHub) batch, reviewed 2026-07-06 — subprocess-only, inspected at source ──
+  - artifact: ozikazina__hydra.zip
+    flags: [subprocess]
+    rationale: >
+      L2. preferences.py runs subprocess pip-install of 'moderngl' (GPU dep) at enable. Benign
+      dependency mgmt; --network none blocks the actual install so it fails closed. Cleared.
+  - artifact: ln-12__blainder-range-scanner.zip
+    flags: [subprocess]
+    rationale: >
+      L2. subprocess.Popen spawns `blender --background --python` for batch landscape generation
+      (LiDAR range-scanner). Only fired by a user operator; contained in the sandbox. Cleared.
+  - artifact: grimrukh__soulstruct-blender.zip
+    flags: [subprocess]
+    rationale: >
+      L2. subprocess pip-installs deps at enable; install_addon.py is a standalone helper not run by
+      addon_enable. Benign dependency mgmt; network-blocked in sandbox. Cleared.
+  - artifact: lmesaric__bsc-thesis-fer-2020.zip
+    flags: [subprocess]
+    rationale: >
+      L2. subprocess pip-checks/installs deps for a GIS thesis add-on. Benign dependency mgmt;
+      network-blocked in sandbox. Cleared.
+# NOT cleared (remain needs_review, recorded, NOT verified): aachman98__sorcar (urllib/eval/exec),
+# charlesss07__blender-python-nodes (eval/urllib/requests — a code-executor BY DESIGN),
+# dingdio__witcher3-blender-tools (base64/ctypes/__import__/subprocess/eval),
+# emgi96__trailprint3d (subprocess/ctypes/requests/exec/__import__),
+# itscubetime__fastpbr (subprocess/os.system/exec/ctypes). These warrant deeper review than a glance.

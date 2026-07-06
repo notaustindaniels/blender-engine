@@ -3,9 +3,10 @@
   "artifact": "add-on-ivygen-v0.1.5.zip",
   "verify": {
     "3.6": {
-      "state": "fail",
+      "state": "skipped_incompatible",
       "operators": [],
-      "render_ok": false
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
     },
     "4.2": {
       "state": "partial",
@@ -26,9 +27,10 @@
     "curve.ivy_gen"
   ],
   "prescan": "clean",
-  "artifact_type": "extension",
-  "verified_at": "2026-07-06T01:42:02+00:00",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-06T12:04:48+00:00",
   "prescan_hits": [],
+  "declared_min": "4.2",
   "operators_enriched": [
     {
       "kind": "bpy_op",

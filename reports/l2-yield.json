@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "code",
+    "label": "manifest extensions (4.2+): blender_manifest.toml",
+    "query": "blender_manifest.toml in:path",
+    "total_count": 1512,
+    "error": null
+  },
+  {
+    "kind": "code",
+    "label": "legacy add-ons: bl_info in Python",
+    "query": "bl_info in:file language:Python",
+    "total_count": 35072,
+    "error": null
+  },
+  {
+    "kind": "code",
+    "label": "legacy add-ons (tight): \"bl_info = {\"",
+    "query": "\"bl_info = {\" in:file language:Python",
+    "total_count": 24640,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "topic:blender-addon",
+    "query": "topic:blender-addon",
+    "total_count": 1812,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "topic:blender-plugin",
+    "query": "topic:blender-plugin",
+    "total_count": 161,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "topic:blender-extension",
+    "query": "topic:blender-extension",
+    "total_count": 47,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "topic:geometry-nodes",
+    "query": "topic:geometry-nodes",
+    "total_count": 57,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "Terrain-scoped: topic:blender-addon terrain",
+    "query": "topic:blender-addon terrain",
+    "total_count": 6,
+    "error": null
+  },
+  {
+    "kind": "repo",
+    "label": "Vegetation-scoped: topic:blender-addon (tree/plant)",
+    "query": "topic:blender-addon tree in:name,description,readme",
+    "total_count": 107,
+    "error": null
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "canonical_id": "dingdio__witcher3-blender-tools",
+  "artifact": "dingdio__witcher3-blender-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-06T12:36:06+00:00",
+  "prescan_hits": [
+    "open-write",
+    "base64-decode",
+    "ctypes",
+    "__import__",
+    "socket",
+    "subprocess",
+    "eval(",
+    "driver-expression"
+  ]
+}

@@ -37,14 +37,18 @@ def main():
     a = ap.parse_args()
 
     rows = [json.loads(l) for l in open(a.normalized) if l.strip()]
-    if a.limit:
-        rows = rows[:a.limit]
+    rows.sort(key=lambda r: r.get("probe_rank", 10 ** 9))   # R11: star-ordered probe priority first
 
-    acquired, skipped = [], []
+    acquired, skipped, n_new = [], [], 0
     for r in rows:
         cid = r["canonical_id"]
         url = r.get("archive_url") or ""
+        ver = str(r.get("version") or "0")
         rec = {"canonical_id": cid, "name": r.get("name"), "lane": r.get("lane")}
+        if (pathlib.Path(a.vault) / cid / ver / "meta.json").exists():
+            rec["status"] = "already_vaulted"; skipped.append(rec); continue   # idempotent re-run
+        if a.limit and n_new >= a.limit:
+            rec["status"] = "deferred_beyond_limit"; skipped.append(rec); continue  # bounded probing (native-probe decision)
         if not url.startswith("https://") or host_of(url) not in ALLOW_HOSTS:
             rec["status"] = "skip"; rec["reason"] = f"url not allowed: {url[:60]}"
             skipped.append(rec); continue
@@ -67,8 +71,9 @@ def main():
             rec["status"] = "hash_mismatch"; rec["reason"] = f"got {sha[:12]} want {declared[:12]}"
             skipped.append(rec); continue  # PROVENANCE FAIL -> reject (never vault a tampered artifact)
 
-        fname = os.path.basename(url.split("?")[0]) or f"{cid}.zip"
-        ver = str(r.get("version") or "0")
+        base = os.path.basename(url.split("?")[0])
+        # GitHub archive basenames (main.zip / <tag>.zip) are ambiguous across repos -> name by id
+        fname = f"{cid}.zip" if (host_of(url) == "github.com" or base in ("", "main.zip", "master.zip", "HEAD.zip")) else base
         dest = pathlib.Path(a.vault) / cid / ver
         dest.mkdir(parents=True, exist_ok=True)
         fpath = dest / fname
@@ -92,6 +97,7 @@ def main():
         (dest / "meta.json").write_text(json.dumps(meta, indent=2))
         rec.update(status="ok", path=str(fpath), sha256=sha, version=ver, bytes=len(buf))
         acquired.append(rec)
+        n_new += 1
 
     with open(a.out, "w") as f:
         for r in acquired:

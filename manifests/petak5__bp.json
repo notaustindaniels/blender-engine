@@ -1,0 +1,58 @@
+{
+  "canonical_id": "petak5__bp",
+  "artifact": "petak5__bp.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "object.animate_object_operator",
+        "object.create_terrain_operator",
+        "object.erosion_operator"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.animate_object_operator",
+        "object.create_terrain_operator",
+        "object.erosion_operator"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.animate_object_operator",
+        "object.create_terrain_operator",
+        "object.erosion_operator"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.animate_object_operator",
+    "object.create_terrain_operator",
+    "object.erosion_operator"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-06T12:36:14+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.93",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "object.animate_object_operator",
+      "verbs": [
+        "simulate",
+        "deplete"
+      ],
+      "niches": [
+        "erosion_sim"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L2: bachelor-thesis terrain-erosion plugin; operator drives headless -> full pass (upgrades erosion_sim to full-pass)."
+}
