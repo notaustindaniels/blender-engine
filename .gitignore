@@ -33,3 +33,6 @@ sandbox/scratch/
 
 # Playwright MCP runtime logs (browser snapshots from seed-anchor verification) — not deliverables
 .playwright-mcp/
+
+# Claude Code machine-local settings (not a deliverable)
+.claude/settings.local.json
