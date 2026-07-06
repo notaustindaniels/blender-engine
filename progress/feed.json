@@ -143,5 +143,15 @@
     "body": "<p>Fresh-context adversarial reviewer (Claude Fable 5, 91 tool calls, incl. an empirical <code>NEVER_ALLOW</code> bypass attempt) independently PASSED items 2–8: coverage math (7/59=11.9%, 13/21=61.9%, idempotent), version-aware/timeout mechanics, the danger gate (5 L2 blocked, un-bypassable), R11 graveyard (136 records), provenance (3 immutable-tag L2 hashes re-downloaded + matched), token hygiene (no leak in history/reports/feed), and scope (steps 6–8 untouched).</p><p><b>It correctly FAILED two commit-hygiene defects</b> (not security/integrity): (1) committed <code>prescan-findings</code> showed a <b>stale</b> FP rate 18.2%/9-blocked — re-running reproduces <b>54.5%/5-blocked</b> (predated the 4 L2 clearances); (2) the D-001 acknowledgment feed entry + <code>prd4-reeval.md</code> provenance note lived only in the uncommitted working tree, so per the durability protocol they didn&#39;t yet \"count\". <b>Both fixed:</b> findings regenerated, SPEC stale path (reviews→policies) corrected, and all of it — including this feed — is being committed now. Re-verification requested.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 15,
+    "ts": "2026-07-06T09:05:26-04:00",
+    "title": "🔒 L2 REVIEW GATE: PASS (cycle 2) — full adversarial review clean at c477ef4",
+    "tag": "review",
+    "status": "l2-review-pass",
+    "body": "<p>Review cycle 2 re-verified the two cycle-1 defects from the <b>committed</b> tree and both now PASS: (1a) <code>reports/prescan-findings.json</code> committed with FP-rate <b>54.5%</b> / 5 still-blocked, reproduces byte-for-byte with zero drift; (1b) <code>progress/feed.json</code> committed with all 14 entries incl. the D-001 acknowledgment (seq 12), and <code>prd4-reeval.md</code> provenance note committed; (nit) SPEC §12.2(3) path corrected to <code>policies/</code>.</p><p>Combined with cycle-1&#39;s independently-reproduced items 2–8 — coverage arithmetic (7/59=11.9%, 13/21=61.9%, idempotent), version-aware/timeout mechanics, the danger gate holding under an empirical <code>NEVER_ALLOW</code> bypass attempt, R11 ordering/graveyard exactness (136 records), 3/3 provenance hash matches, a clean token-hygiene sweep (incl. dangling git objects), and scope discipline — <b>VERDICT: PASS</b>. The L2 phase of Stage 1→2 is durably sound.</p><hr><p><b>Handing the premise decision to the owner (next DECISIONS.md entry). Steps 6–8 remain untouched per R9.</b> Recommendation: <b>approve the native amd64 probe path</b> to mass-verify the L2 long tail (the 11.9% is a bounded-sample lower bound, not decision-grade) and/or recalibrate the provisional 40% target — the premise is not falsified (pass-rate 61.9%).</p>",
+    "code": "",
+    "media": []
   }
 ]
