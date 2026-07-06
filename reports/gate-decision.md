@@ -73,3 +73,21 @@ metric becomes decision-grade.
 SPEC §9 steps 4–8 are **untouched**: no dedup/idempotency hardening beyond what step 3 required
 (idempotency IS demonstrated), no L2 GitHub harvest, no L3/L4 link-routers, no L5 marketplace
 discovery, no full coverage report across all PRD §3 targets. Those begin only if the owner says go.
+
+---
+
+## Owner decision — 2026-07-06: **GO to L2** (recorded per owner rider 1)
+
+The owner reviewed this gate and authorized proceeding to the L2 GitHub lane (SPEC §9 step 5),
+spike-first (SPEC §10). **The PRD §4 <40% coverage line is formally evaluated after L2, on wave-1
+Terrain+Vegetation.** For information, the two framings of the L1-only baseline:
+
+| framing | L1 coverage | note |
+|---|---|---|
+| **Gate metric** — Terrain+Vegetation, wave-1 | **7 / 59 = 11.9%** | the number the <40% line is judged on |
+| Whole-taxonomy, wave-1 (informational) | **7 / 269 = 2.6%** | all 12 static + 10 animation categories |
+
+L2 concludes with an updated coverage report (full-pass vs partial split) and a formal PRD §4
+re-evaluation on the L1+L2 union before any of steps 6–8 begin. Owner riders 4–8 (version-aware
+matrix, timeout-retry state, prescan-throughput allowlist, honest pass/partial split, non-event
+server restarts) are being implemented as part of this phase.

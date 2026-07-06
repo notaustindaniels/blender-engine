@@ -1,0 +1,28 @@
+# CLAUDE.md — standing rules for this repo (Blender Vault, Stage 1 → 2)
+
+## Session start / after any context compaction (D-001 obligation)
+Before acting, **RE-READ**: `KICKOFF.md` (the Stage-1 acceptance contract), `SPEC.md §12`
+(all dated amendments), and `DECISIONS.md` (the append-only owner decision log, D-001…).
+Context is designed to be lost; these files are the memory. A rider counts as *received* only
+when its durable encoding is committed — code, workflow YAML, a dated SPEC §12 amendment, or a
+rule in this file. Remembering it in context does not count.
+
+## Standing rules
+- **Token hygiene (R2).** `GH_TOKEN` lives in `.archon/.env` (git-ignored). Read it from env
+  only — never echo, print, log, or commit it. Validate auth before use; on an auth failure,
+  report it **plainly and stop** — NEVER work around an auth failure silently (fallback is an
+  owner-supplied classic `public_repo` token).
+- **The human prescan gate never loosens (R6).** `policies/prescan-allowlist.yaml` may downgrade
+  benign-in-context patterns (node `socket`, preset `open`-writes, driver-expression), but the
+  exec/network-capable patterns (`subprocess`, `os.system`, `os.popen`, `eval(`, `exec(`,
+  `__import__`, `urllib`, `requests`, `httpx`, `ctypes`, `base64-decode`) can **never** be
+  allowlisted (enforced in `prescan.py` via `NEVER_ALLOW`). Every artifact runs sandboxed
+  (`--network none`, read-only, non-root) regardless of prescan.
+- **Scope discipline (R9).** SPEC §9 steps 5–8 are sequential and gated. L2 ends with the updated
+  coverage report + a formal PRD §4 re-evaluation before anything else starts. Do not begin
+  steps 6–8 without an owner GO (a new DECISIONS.md entry).
+- **L2 enumeration orders, never filters (R11).** Stars/recency may prioritize probe order; they
+  never exclude candidates from enumeration — the long tail is the point. Legacy / archived /
+  no-signature repos become `graveyard.jsonl` records, never silent skips.
+- **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
+  amendment in the same change.
