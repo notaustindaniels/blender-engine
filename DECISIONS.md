@@ -49,3 +49,42 @@ token validation → server restart → yield spike → L2 build.
 
 *(Future decisions append below as D-002, D-003, … — same structure: decision, basis,
 riders with encoding targets, acknowledgment protocol.)*
+
+
+---
+ 
+## D-002 · 2026-07-06 · Post-L2 premise checkpoint: stop-line honored — repair the instrument, then re-evaluate
+ 
+**Decision:** The PRD §4 clause is formally crossed (coverage 11.9% < 40%; pass-rate healthy
+at 61.9% probed / 50.0% of all acquisitions). Harvest scaling therefore stays **paused** —
+no L3/L4/L5. The convened premise decision is: **the coverage instrument is not
+decision-grade; repair it cheaply, then re-run the same evaluation.** Neither kill nor
+greenlight is decidable on a bounded sample with an incomplete numerator.
+ 
+**Basis:** (1) L2 probing was capped at 15 of 27 candidates by amd64-emulation crashes — a
+known instrument defect, not ecosystem signal. (2) Five acquisitions (incl. Sorcar, a
+seed-anchor-class procedural node system) sit prescan-blocked awaiting the R6 review
+machinery that now exists — recoverable coverage at human-review cost. (3) The numerator
+counts only dedicated add-on→niche mappings; the SPEC's registry design always intended
+composite **recipes** as first-class coverage and it is unimplemented — the 40% line was
+calibrated assuming recipes count. (4) L2's new passes added zero new niches (head
+pile-up on already-covered niches), evidence the long tail needs recipes and GN-pack
+sources, not more of the same lane.
+ 
+### Binding riders
+ 
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R12 | **Review the blocked five first** (cheapest coverage recovery): run the R6 batched approval review over the 5 prescan-blocked L2 artifacts. Cleared entries proceed to probing; confirmed-dangerous entries stay quarantined with the finding recorded. Update the prescan-allowlist rules file (dated, justified) for any confirmed false-positive patterns. | one-time via existing R6 workflow + allowlist file update |
+| R13 | **Native amd64 probe path — approved in principle, path needs my sign-off:** post a short proposal (progress feed + one file) within a day. Preference order: GitHub Actions on this public repo at $0; else a single cloud VM with a hard cost cap of $25/mo and teardown after use. On approval by my reply, complete the FULL 27-candidate L2 matrix natively, plus the L1 emulation-suspects (bagapie both versions, terrain-mixer@4.5). Never self-provision. | proposal file + workflow encoding + dated SPEC §12 amendment after approval |
+| R14 | **Recipe coverage becomes first-class** (SPEC §2.2/§4 intent, currently unbuilt): registry recipe entries mapping niche → composition of vaulted operators and/or built-in Blender features, with verification tiers split in every table exactly like R7 — `recipe_verified` (a probe recipe actually ran) vs `recipe_unverified` (documented composition, not yet machine-checked). Never fabricate a recipe to inflate coverage; an unverified recipe is a claim, and tables must say so. | code: coverage path + registry schema; dated SPEC §12 amendment |
+| R15 | **Calibration memo, not a goalpost move:** `reports/coverage-calibration.md` — a per-niche market-existence audit of the 59 (does ANY free tool or plausible recipe exist anywhere, with links/evidence), producing an evidence-based proposal: keep 40%, or redefine the metric (e.g., attainable-niche base, or engine-core weighting). The target does **not** change in this entry; any change is my D-003 call. Recalibration by fiat after a miss is forbidden. | one-time report; proposal consumed by D-003 |
+| R16 | **Formal re-evaluation after R12–R14 complete:** re-run the PRD §4 evaluation on decision-grade data (full native matrix + reviewed blocks + recipes counted per R14 tiers; pass-rate reported both as of-probed and of-all-acquisitions). Output `reports/prd4-reeval-2.md` plus the D-003 decision request with options: greenlight L3–L5 / recalibrate per R15 evidence / convene paid-vs-build. | one-time report + D-003 request |
+| R17 | **Explicit dispositions of the offered options:** option 3 (paid-vs-build) is deferred to D-003, not rejected; option 4 (proceed to L3/L4 now) is rejected — the stop-line is a contract, and scaling resumes only via D-003. | CLAUDE.md standing rule ("crossed stop-lines pause scaling until a DECISIONS.md entry disposes of them") |
+ 
+### Acknowledgment protocol for D-002
+ 
+Same as D-001: one progress-feed entry mapping R12–R17 to committed encodings (or
+one-time actions with evidence links). Sequence after acknowledgment:
+R12 review batch → R13 proposal (await my reply) → R14 build → native re-probe →
+R15 memo → R16 re-eval → D-003 request. Steps 6–8 remain untouched throughout.
