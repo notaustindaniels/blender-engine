@@ -18,12 +18,18 @@ assume permission. No guardrail loosening (D-003 R20).
   NOT by scraping Gumroad pages. GitHub-mirror reroute BEFORE any checkout (SPEC §5.4).
 
 ## L5b — Superhive (formerly Blender Market)
-- **Finding:** ToS page (`superhivemarket.com/policies/terms-of-service`) is **WAF-blocked (HTTP 403)**
-  to automated fetch — **UNREAD by the agent.** Known: membership is free; licenses are per-product and
-  explicitly the buyer's responsibility to understand; operated by Autotroph, Inc.
-- **POSTURE → fully human-gated + FLAG.** The anti-automation clause could not be read; default to the
-  safest posture (human discovery + human $0 checkout). **Owner action needed: a manual ToS read**
-  before any L5b automation of any kind. Runs last (SPEC lane order).
+- **ToS DISCHARGED 2026-07-07 by the owner's advisor** (search retrieval got past the WAF that
+  blocked the agent's direct fetch). Sources: `superhivemarket.com/policies/terms-of-service` and
+  `support.superhivemarket.com/article/42-terms-of-use-site`.
+- **Findings (from retrieved sections):** **No explicit anti-scraping clause** in the retrieved text
+  (unlike Gumroad §14). BUT: membership with *"accurate, current, and complete"* information is required
+  to purchase; purchases are per-product **LICENSES** (GPL / CC-BY / royalty-free vary by product —
+  **capture per item, R26**); **all transactions must run through their checkout**; termination is at
+  their sole discretion.
+- **POSTURE → conservative, identical to Gumroad:** no automated marketplace scraping (the WAF is
+  itself a signal), search-derived product URLs only, **human checkout only**. Runs last (SPEC order).
+- **Honesty caveat:** full ToS text was WAF-blocked to the agent; this posture is set from the
+  advisor-retrieved sections, not a complete verbatim read.
 
 ## A1 — Sketchfab (asset lane, D-004)
 - **Finding:** official **Download API** for 700k+ CC-licensed models. Requires OAuth2 Bearer token;
