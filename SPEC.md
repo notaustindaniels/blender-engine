@@ -414,4 +414,12 @@ Owner decision D-004: ArtStation/Fab/Sketchfab join as **A-lanes** (asset lanes)
 4. **Automation posture per source (R28).** A1 Sketchfab — official Download API, automatable for CC content, `SKETCHFAB_TOKEN` via `.archon/.env` (never chat/YAML). A2 ArtStation / A3 Fab — ToS-check pass posted BEFORE any discovery automation; checkout-shaped steps human-gated like L5. See `policies/marketplace-tos.md`.
 5. **Priority protection (R29).** A1 discovery may run in parallel (cheap, API-based); A2/A3 begin only after the first L5a approval batch ships. Any attention conflict resolves for L5a/L5b (the gate-v2 critical path). The marine-flora recipe experiment (R25 exception) is authorized as soon as suitable CC0/CC-BY specimens land.
 
+### 12.6 Dated amendments — 2026-07-07 (D-005: the walk-away contract; batch-driven autonomy)
+
+Owner decision D-005: involvement converts interrupt-driven → batch-driven. Agent works every authorized lane to exhaustion, queues owner-gated items in `OWNER-QUEUE.md`, surfaces ONE consolidated R34 session. Riders R30–R34.
+
+1. **Pre-authorizations under existing guardrails, zero new permissions (R32).** (a) **A2 ArtStation + A3 Fab** activate after batch #1 ships, EACH gated on its own ToS read — a ToS that forbids the plan **DROPS the lane with a recorded finding, no escalation**. (b) **L5b Superhive** discovery + batch prep proceed under the recorded conservative posture (search-derived URLs, human checkout queued). (c) The **recipe drive** + further **asset-fed recipe experiments** continue for any attainable niche. (d) **taxonomy-proposal** + **re-verification** workflows run on schedule.
+2. **Owner-queue discipline (R30) + walk-away done (R34)** → CLAUDE.md + `OWNER-QUEUE.md` + the `reports/prd4-final.md` report contract. Dispositions (R31): fern approved+executed by owner; **river DENIED** (unconfirmable price = no); marine-flora asset-fed recipe experiment **APPROVED** (CC-BY only; by-nc segregated, out of recipes).
+3. **Attainable set grows with verified paths.** A niche that earns a `full_pass` or `recipe_verified` is attainable BY DEFINITION — coverage v2's denominator = the R15 attainable set ∪ any niche with a verified path. So converting a paid_only/none niche via an asset-fed recipe (R25) both adds it to the numerator and the denominator, honestly.
+
 Keep this spec in sync as implementation reveals reality — the code is a lossy projection of it, not the other way around.

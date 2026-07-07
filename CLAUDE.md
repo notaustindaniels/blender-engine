@@ -53,5 +53,16 @@ rule in this file. Remembering it in context does not count.
   probe, never by assertion. A1 may run in parallel (API); A2/A3 begin only after the first L5a
   approval batch; attention conflicts resolve for L5a/L5b. Never start A-lane acquisition before the
   owner confirms the account and delivers the token (e.g. `SKETCHFAB_TOKEN`).
+- **Batch-driven, not interrupt-driven (R30, D-005).** Never stop for an owner ask while ANY
+  non-blocked authorized work remains. Owner-gated items accumulate in `OWNER-QUEUE.md` (one line:
+  item, why gated, exact action, evidence link). Surface to the owner ONLY when (a) all remaining
+  work is owner-blocked, or (b) the final v2 evaluation is ready. Interim milestones go to the
+  progress feed, never to the owner.
+- **Unconfirmable price is a NO (R31, D-005).** A candidate whose $0 price cannot be machine-confirmed
+  is denied — it may re-enter the queue only with a machine-confirmed $0. Never assume a price through.
+- **The irreducible human floor (R33, D-005).** These never delegate, no autonomy argument overrides:
+  $0 checkouts are the owner's hands (batched); the wallet (paid acquisition, R23) and the final
+  premise-verdict signature are the owner's; credentials are the owner's to mint. Queue them, never
+  self-perform.
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.

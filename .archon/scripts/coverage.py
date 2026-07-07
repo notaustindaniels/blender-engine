@@ -112,6 +112,12 @@ def main():
     # NOT count; a partial op is a runtime landmine an agent can't improvise around). denominator =
     # ATTAINABLE probe-category wave-1 niches (excludes the paid_only/none). threshold unchanged 40%.
     gate_present_ids = set(gate_present)
+    # R32(3)/D-005: a niche with a verified path (full_pass or recipe_verified) is attainable BY
+    # DEFINITION — grow the R15 attainable set with them, so converting a paid_only/none niche via an
+    # asset-fed recipe adds it to BOTH numerator and denominator, honestly.
+    if attainable is not None:
+        verified_path = set(g_dpass) | {n for n in gate_present if recipe_tier.get(n) == "recipe_verified"}
+        attainable = attainable | verified_path
     attain_denom = ([n for n in gate_present if n in attainable] if attainable is not None else gate_present)
     v2_num = [n for n in (g_dpass + g_rver) if (attainable is None or n in attainable)]  # full_pass + recipe_verified, attainable
     v2_pct = (len(v2_num) / len(attain_denom) * 100) if attain_denom else 0.0
