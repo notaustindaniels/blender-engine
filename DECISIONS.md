@@ -199,3 +199,30 @@ batchable by design.
 One feed entry mapping R30–R34 to encodings, then resume: fern probe on receipt → marine
 recipe experiment → batch #1 close-out → A2/A3 ToS reads → L5b → recipe drive → final
 evaluation → the consolidated owner session.
+
+---
+
+## D-006 · 2026-07-07 · The premise signature — contingent on adversarial review of the walk-away run
+
+**Decision:** The owner signs the premise verdict below, **contingent on R35 passing**. The
+walk-away run (D-005) produced the largest gate movement in project history (9.3% → 29.8%,
+11 recipe_verified conversions) without the adversarial review every prior milestone
+received — a gap in D-005's own drafting, closed here before anything is signed on it.
+
+### Binding riders
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R35 | **Adversarial review first (KICKOFF item 7 pattern):** fresh-context reviewer, artifacts only. Must independently: (a) rebuild coverage and reproduce 17/57 = 29.8%; (b) re-probe a random 4 of the 11 recipe_verified entries — each must reproduce its geometry delta in the sandbox; (c) verify marine-trio provenance — CC-BY license + attribution captured, by-nc assets excluded from recipes; (d) **reconcile the 54→57 denominator**: the coverage code moved but SPEC §12's R18 amendment still reads 54/5-unattainable — add the dated amendment recording the marine conversions (or revert if unjustified); (e) verify the A2/A3 drop findings. Per-item PASS/FAIL, max 2 fix cycles. **The R36 signature takes effect only on full PASS.** | one-time review + fixes; dated SPEC §12 amendment for (d) |
+| R36 | **The signature (contingent on R35):** the premise — *the engine is buildable on free tooling* — is **CONFIRMED, not merely unfalsified**: pass-rate 56.2%/42.9% clears the 30% kill-line both ways at full native scale, and the marine-trio conversion is affirmative evidence (three niches the market itself had priced became free, machine-verified capability through composition). The 40% line is **reclassified from kill criterion to execution milestone**, per H1's own wording — sources are not exhausted while human-gated $0 checkouts sit queued and the shader-probe is unbuilt (an instrument gap, not a market gap). **Auto-trigger:** if the no-spend path completes (queue drained, shader-probe built, recipe drive exhausted) with coverage still <40%, the R23 priced-options request fires automatically — no further owner prompt needed to ask the question. | signed block appended to `reports/prd4-final.md` on R35 PASS; dated SPEC §12 note |
+| R37 | **No-spend completion authorized:** (a) build the shader-probe variant (several remaining niches are shaders the Gate currently cannot verify at all); (b) prepare the terrain GN-pack $0 batch to the batch-1 resolution standard — final product URLs, confirmed prices, captured licenses — for one owner checkout session; (c) continue the recipe drive, including the asteroid partial→recipe TODO. All under existing guardrails; nothing new is permitted. | probe code + batch report + recipe registry |
+| R38 | **The two unattainables parked:** `karst_formation` and `coral_atoll_generator` go to the Stage-2 build-from-scratch backlog (adopting prd4-final's recommendation). No purchase is authorized for them. | backlog file + CLAUDE.md note |
+| R39 | **Quality tiers ride into Stage-2:** the handoff contract exposes, per operator and per recipe, a quality field (full generator vs. `quality: minimal` asset-fed composition) alongside the verb×medium grid, so the Stage-2 resolver prefers depth where it exists. Asset-fed coverage answered the premise question; it must never masquerade as generator sophistication downstream. | manifest/recipe schema + handoff doc |
+| R40 | **Wave-3 intake:** `rock_generator_addon` (the unmapped taxonomy candidate from verification bookkeeping) enters the taxonomy-proposal flow; proposals batch into the next consolidated owner session per R30 — never auto-added. | taxonomy-proposals report |
+
+### Acknowledgment protocol for D-006
+
+One feed entry mapping R35–R40, then: R35 review → on PASS, post the signed block and
+proceed R37 → next consolidated owner session = the GN-pack checkout batch + any
+auto-triggered R23 request + wave-3 proposals. The fern `.blend` will be waiting in
+`inputs/dropzone/` — probe it first.
