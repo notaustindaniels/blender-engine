@@ -1,5 +1,10 @@
 [
   {
+    "niche": "orchard_row_scatter",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
     "niche": "snowdrift_generator",
     "state": "recipe_unverified",
     "notes": "steps=['noop', 'noop'] net_delta=False render=True"
@@ -8,11 +13,6 @@
     "niche": "dune_generator",
     "state": "recipe_unverified",
     "notes": "steps=['noop'] net_delta=False render=True"
-  },
-  {
-    "niche": "orchard_row_scatter",
-    "state": "recipe_unverified",
-    "notes": "steps=['delta', 'noop'] net_delta=True render=True"
   },
   {
     "niche": "ground_cover",

@@ -1,6 +1,15 @@
 recipes:
+- niche: orchard_row_scatter
+  tier: recipe_verified
+  steps:
+  - op: curve.tree_add
+    artifact_cid: community__sapling-tree-gen
+    params: {}
+  - builtin: ARRAY
+  note: 'PIVOT: sapling tree_add (non-modal, drives) + built-in ARRAY modifier => rows of trees = orchard. Both non-modal.'
 - niche: snowdrift_generator
   tier: recipe_unverified
+  reason: modal
   steps:
   - op: mesh.landscape_add
     artifact_cid: community__a-n-t-landscape
@@ -8,39 +17,32 @@ recipes:
   - op: object.snow_create
     artifact_cid: nacioss__real-snow
     params: {}
-  note: "Terrain + wind-directional snow accumulation \u2192 drifts. A.N.T. landscape_add is dialog-gated (may not drive headless)."
+  note: A.N.T. landscape_add AND real-snow snow_create are both modal/dialog-gated (noop headless). Parked reason=modal.
 - niche: dune_generator
   tier: recipe_unverified
+  reason: modal
   steps:
   - op: mesh.landscape_add
     artifact_cid: community__a-n-t-landscape
     params: {}
-  note: A.N.T. noise presets approximate dunes. Dialog-gated operator; claim.
-- niche: orchard_row_scatter
-  tier: recipe_unverified
-  steps:
-  - op: curve.tree_add
-    artifact_cid: community__sapling-tree-gen
-    params: {}
-  - op: object.scatter_objects
-    artifact_cid: community__scatter-objects
-    params: {}
-  note: "Scatter tree instances in rows \u2192 orchard. Both operators dialog/context-dependent."
+  note: The honest dune tool (A.N.T. noise presets) is modal (invoke_props_dialog); noop headless. Parked reason=modal.
 - niche: ground_cover
   tier: recipe_unverified
+  reason: modal
   steps:
   - op: object.scatter_objects
     artifact_cid: community__scatter-objects
     params: {}
-  note: "Generic object scatter on low plant meshes \u2192 ground cover; claim."
+  note: scatter_objects is modal/context-dependent (noop headless); no non-modal free scatter vaulted yet. Parked reason=modal.
 - niche: frozen_lake_generator
   tier: recipe_unverified
+  reason: modal
   steps:
   - op: mesh.landscape_add
     artifact_cid: community__a-n-t-landscape
     params: {}
   - builtin: SUBSURF
-  note: "Terrain basin + built-in ice material/subsurf \u2192 frozen lake; claim mixing a vaulted op with a core feature."
+  note: Base terrain step (A.N.T. landscape_add) is modal; SUBSURF alone is not a lake. Parked reason=modal.
 - niche: sediment_deposition
   tier: recipe_unverified
   steps:
@@ -50,5 +52,5 @@ recipes:
   - op: object.erosion_operator
     artifact_cid: petak5__bp
     params: {}
-  note: "petak5/bp create_terrain then erosion; eroded material physically deposits as sediment. Both operators full-pass\
-    \ (drive headless) \u2192 candidate for recipe_verified."
+  note: petak5 create_terrain drives (delta); erosion_operator is modal-noop headless. create_terrain alone makes terrain
+    not sediment, so honest tier stays unverified until erosion drives.

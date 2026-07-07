@@ -47,5 +47,11 @@ rule in this file. Remembering it in context does not count.
 - **Decisions are auditable and vetoable (R24, D-003).** DECISIONS.md reasoning may be challenged by
   any party via a new D-entry; the owner's veto is unconditional and needs no justification. A
   decision judged by a delegated advisor-agent still carries owner authority until the owner vetoes.
+- **A-lanes are off the gate; L5a/L5b have priority (R25/R29, D-004).** Asset lanes (A1 Sketchfab,
+  A2 ArtStation, A3 Fab) serve Stage-2 scene assets — `entry_type: asset_pack`, never counted in gate
+  v2 or the verb×medium grid. Asset-fed recipes reach the gate ONLY as `recipe_verified` via the R21
+  probe, never by assertion. A1 may run in parallel (API); A2/A3 begin only after the first L5a
+  approval batch; attention conflicts resolve for L5a/L5b. Never start A-lane acquisition before the
+  owner confirms the account and delivers the token (e.g. `SKETCHFAB_TOKEN`).
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.

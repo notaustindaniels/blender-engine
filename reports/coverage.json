@@ -5,18 +5,18 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 8,
+    "decision_covered": 9,
     "full_pass": 5,
     "partial": 3,
-    "recipe_verified": 0,
-    "recipe_unverified_claims": 6,
-    "coverage_pct": 13.6
+    "recipe_verified": 1,
+    "recipe_unverified_claims": 5,
+    "coverage_pct": 15.3
   },
   "gate_v2": {
     "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
-    "numerator": 5,
+    "numerator": 6,
     "denominator_attainable": 54,
-    "coverage_pct": 9.3,
+    "coverage_pct": 11.1,
     "threshold": 40.0,
     "excluded_unattainable": [
       "anemone_generator",
@@ -50,8 +50,8 @@
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 8,
-    "recipe_unverified_claims": 6
+    "decision_covered": 9,
+    "recipe_unverified_claims": 5
   },
   "wave2_total": {
     "present": 59,
