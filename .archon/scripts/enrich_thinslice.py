@@ -79,6 +79,9 @@ MAP = {
     "donitzo__procedural-asteroid-generator": dict(
         niches=["asteroid_generator"], verbs=["generate", "scatter"], prefer_op=None,
         why="L5-batch1: .blend asteroid generator; renders geometry but no auto-driven delta -> partial. Covers asteroid_generator."),
+    "tu2463__rock_generator_addon": dict(
+        niches=["rock_boulder_generator"], verbs=["generate"], prefer_op=None,
+        why="L2/R40 wave-3-approved: full-pass rock generator -> rock_boulder_generator (WAVE-2 nature_fx; moves the grid, NOT gate v2 which is wave-1)."),
 }
 
 
@@ -110,7 +113,3 @@ def main():
         sys.exit(1)
     print(json.dumps({"enriched": sum(1 for mp in glob.glob('manifests/*.json')
                                       if json.loads(open(mp).read())['canonical_id'] in MAP)}))
-
-
-if __name__ == "__main__":
-    main()

@@ -4,11 +4,11 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Gate metrics (PRD §4 wrong-condition)
 
-- **GATE v2 (R18/D-003 — the governing metric): 18/57 = 31.6%** = (full_pass + recipe_verified) / 57 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
+- **GATE v2 (R18/D-003 — the governing metric): 21/57 = 36.8%** = (full_pass + recipe_verified) / 57 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
   - excluded as unattainable (paid_only/none, R15): `coral_atoll_generator`, `karst_formation`
-- **Tripwire (R19): pass-rate of-all-acquisitions 44.2%** vs 30% floor → OK.
-- _v1 (legacy, all-present denom): 22/59 = 37.3% (7 full-pass + 4 partial + 11 recipe✓; 5 recipe claims not counted)._
-- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 19/33 = 57.6%; of-all-acquisitions 19/43 = 44.2% — PRD stop-line <30%.
+- **Tripwire (R19): pass-rate of-all-acquisitions 47.8%** vs 30% floor → OK.
+- _v1 (legacy, all-present denom): 25/59 = 42.4% (10 full-pass + 4 partial + 11 recipe✓; 5 recipe claims not counted)._
+- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 22/36 = 61.1%; of-all-acquisitions 22/46 = 47.8% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 5 niche(s) partial-only (see `reports/probe-recipes.md`).
 
 ## Covered niches (Terrain + Vegetation, wave-1)
@@ -19,9 +19,12 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | `heightmap_stack_tools` | terrain | partial | nicolaspriniotakis__srtm-terrain-importer, zets__terrain-mixer |
 | `erosion_sim` | terrain | pass | community__a-n-t-landscape, petak5__bp, varkenvarken__erosion |
 | `cliff_rockface_generator` | terrain | pass | marcueberall__blender-cliffgenerator |
+| `snow_ice_shader` | terrain | pass | bkmat__snow_ice_shader |
+| `ice_shader` | terrain | pass | bkmat__ice_shader |
 | `snow_accumulation` | terrain | pass | nacioss__real-snow |
 | `asteroid_generator` | terrain | partial | donitzo__procedural-asteroid-generator |
 | `alien_biome_generator` | terrain | partial | ra100__planet-gen |
+| `gas_giant_shader` | terrain | pass | bkmat__gas_giant_shader |
 | `tree_generator` | vegetation | pass | brandyn-britton__modular-tree, community__sapling-tree-gen, jacob-johnston__easy-tree, ls__space-colonization-tree-generator |
 | `space_colonization_growth` | vegetation | pass | ls__space-colonization-tree-generator |
 | `fern_generator` | vegetation | pass | sagado__procedural-fern |
@@ -31,7 +34,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 | category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
 |---|---:|---:|---:|---:|---:|---:|
-| Terrain & landscape | 36 | 4 | 3 | 1 | 4 | 22% |
+| Terrain & landscape | 36 | 7 | 3 | 1 | 4 | 31% |
 | Vegetation & organic | 23 | 3 | 1 | 10 | 1 | 61% |
 | Cities & urban | 18 | 0 | 0 | 0 | 0 | 0% |
 | Buildings & architecture | 17 | 0 | 0 | 0 | 0 | 0% |
@@ -53,7 +56,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
 | Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **7** | **4** | **11** | **5** | **8%** |
+| **TOTAL (wave 1)** | **269** | **10** | **4** | **11** | **5** | **9%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 
@@ -77,7 +80,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 Per verified-capability niche (the gate-v2 numerator), HOW it is covered. `full_generator` = real procedural add-on/GN generator; `composed_procedural` = recipe of vaulted operators + built-ins; `asset_fed_minimal` = recipe leaning on an imported static asset (answered the premise, NOT generator sophistication). Stage-2 prefers depth.
 
-- **full_generator** (7): `cliff_rockface_generator`, `erosion_sim`, `fern_generator`, `snow_accumulation`, `space_colonization_growth`, `terrain_generator`, `tree_generator`
+- **full_generator** (10): `cliff_rockface_generator`, `erosion_sim`, `fern_generator`, `gas_giant_shader`, `ice_shader`, `snow_accumulation`, `snow_ice_shader`, `space_colonization_growth`, `terrain_generator`, `tree_generator`
 - **composed_procedural** (1): `orchard_row_scatter`
 - **asset_fed_minimal** (10): `anemone_generator`, `bioluminescent_flora`, `coral_generator`, `flower_generator`, `grass_meadow_scatter`, `kelp_forest_generator`, `moss_lichen_growth`, `mushroom_generator`, `scree_talus_scatter`, `succulent_generator`
 
@@ -90,6 +93,7 @@ Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches ar
 | accumulate | 1 | 0 | 0 | 0 | 0 | 0 |
 | branch | 0 | 0 | 0 | 0 | 5 | 0 |
 | deplete | 3 | 0 | 0 | 0 | 0 | 0 |
+| fill | 2 | 0 | 1 | 0 | 0 | 0 |
 | generate | 7 | 0 | 1 | 0 | 5 | 0 |
 | reveal | 0 | 0 | 0 | 0 | 1 | 0 |
 | scatter | 0 | 0 | 1 | 0 | 1 | 0 |

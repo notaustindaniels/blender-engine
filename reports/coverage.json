@@ -5,18 +5,18 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 22,
-    "full_pass": 7,
+    "decision_covered": 25,
+    "full_pass": 10,
     "partial": 4,
     "recipe_verified": 11,
     "recipe_unverified_claims": 5,
-    "coverage_pct": 37.3
+    "coverage_pct": 42.4
   },
   "gate_v2": {
     "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
-    "numerator": 18,
+    "numerator": 21,
     "denominator_attainable": 57,
-    "coverage_pct": 31.6,
+    "coverage_pct": 36.8,
     "threshold": 40.0,
     "excluded_unattainable": [
       "coral_atoll_generator",
@@ -24,7 +24,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 44.2,
+    "pass_rate_of_all_pct": 47.8,
     "threshold": 30.0,
     "tripped": false
   },
@@ -36,13 +36,16 @@
     "erosion_sim": "full_generator",
     "fern_generator": "full_generator",
     "flower_generator": "asset_fed_minimal",
+    "gas_giant_shader": "full_generator",
     "grass_meadow_scatter": "asset_fed_minimal",
+    "ice_shader": "full_generator",
     "kelp_forest_generator": "asset_fed_minimal",
     "moss_lichen_growth": "asset_fed_minimal",
     "mushroom_generator": "asset_fed_minimal",
     "orchard_row_scatter": "composed_procedural",
     "scree_talus_scatter": "asset_fed_minimal",
     "snow_accumulation": "full_generator",
+    "snow_ice_shader": "full_generator",
     "space_colonization_growth": "full_generator",
     "succulent_generator": "asset_fed_minimal",
     "terrain_generator": "full_generator",
@@ -50,13 +53,15 @@
   },
   "quality_summary": {
     "asset_fed_minimal": 10,
-    "full_generator": 7,
+    "full_generator": 10,
     "composed_procedural": 1
   },
   "verb_medium_grid": {
     "accumulate|ground": 1,
     "branch|organic": 5,
     "deplete|ground": 3,
+    "fill|air": 1,
+    "fill|ground": 2,
     "generate|air": 1,
     "generate|ground": 7,
     "generate|organic": 5,
@@ -67,15 +72,15 @@
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 33,
-    "acquisitions": 43,
-    "surviving": 19,
-    "pct_of_probed": 57.6,
-    "pct_of_all_acquisitions": 44.2
+    "verified_probed": 36,
+    "acquisitions": 46,
+    "surviving": 22,
+    "pct_of_probed": 61.1,
+    "pct_of_all_acquisitions": 47.8
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 22,
+    "decision_covered": 25,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -104,15 +109,24 @@
     "fern_generator": [
       "sagado__procedural-fern"
     ],
+    "gas_giant_shader": [
+      "bkmat__gas_giant_shader"
+    ],
     "heightmap_stack_tools": [
       "nicolaspriniotakis__srtm-terrain-importer",
       "zets__terrain-mixer"
+    ],
+    "ice_shader": [
+      "bkmat__ice_shader"
     ],
     "ivy_generator": [
       "community__ivygen"
     ],
     "snow_accumulation": [
       "nacioss__real-snow"
+    ],
+    "snow_ice_shader": [
+      "bkmat__snow_ice_shader"
     ],
     "space_colonization_growth": [
       "ls__space-colonization-tree-generator"
