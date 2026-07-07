@@ -1,7 +1,7 @@
 # OWNER-QUEUE.md — owner-gated items (D-005 R30) · updated for the D-006 R34 session 2026-07-07
 
 Post-D-006 state: R35 review PASSED, premise **CONFIRMED** (R36), gate v2 9.3% → **31.6%** (all
-machine-verified). See `reports/owner-session-2026-07-07.md` for the full consolidated session.
+machine-verified). See `reports/owner-consolidated-2026-07-07.md` for the full consolidated session.
 One line each: item · why gated · exact action · evidence.
 
 ## Resolved this session (D-006)
@@ -11,7 +11,7 @@ One line each: item · why gated · exact action · evidence.
 
 ## Open — your call (pick a route to 40%, need 5 more niches)
 - [ ] **Route A — free shader niches** · NOT owner-gated (no checkout) · say **"run Route A"** and I acquire+probe
-  5 free_recipe shader niches with the new shader-probe → ~40%, zero spend · `reports/owner-session-2026-07-07.md` §2
+  5 free_recipe shader niches with the new shader-probe → ~40%, zero spend · `reports/owner-consolidated-2026-07-07.md` §2
 - [ ] **Route B — $0 GN-pack checkout batch** · $0 checkouts are your hands (Gumroad §14) · say **"prep the batch"**
   and I produce a resolution-passed $0 batch (dune/canyon/cave/lava/volcanic/glacier GN) for one checkout · §2
 
