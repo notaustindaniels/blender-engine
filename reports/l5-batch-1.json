@@ -1,0 +1,167 @@
+[
+  {
+    "target_niche": "asteroid_generator",
+    "medium": "air",
+    "verbs": [
+      "generate",
+      "scatter"
+    ],
+    "product": "github Donitzo/procedural-asteroid-generator (open-source); ",
+    "url": "https://github.com/Donitzo/procedural-asteroid-generator",
+    "host": "github.com",
+    "mirror_check": "GitHub/GitLab \u2192 reroute to L2/L3 (free, automatable, NO checkout)",
+    "route": "L2/L3-auto",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 19
+  },
+  {
+    "target_niche": "planetary_ring_generator",
+    "medium": "air",
+    "verbs": [
+      "generate"
+    ],
+    "product": "github MarekHlavka space-objects generator (ring systems); f",
+    "url": "https://github.com/MarekHlavka/Planet-and-space-objects-generator",
+    "host": "github.com",
+    "mirror_check": "GitHub/GitLab \u2192 reroute to L2/L3 (free, automatable, NO checkout)",
+    "route": "L2/L3-auto",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 19
+  },
+  {
+    "target_niche": "river_generator",
+    "medium": "water",
+    "verbs": [
+      "trace",
+      "branch"
+    ],
+    "product": "CGMatter free procedural river (Gumroad $0); 80.lv realtime-",
+    "url": "https://cgmatter.gumroad.com/l/river",
+    "host": "cgmatter.gumroad.com",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 19
+  },
+  {
+    "target_niche": "waterfall_generator",
+    "medium": "water",
+    "verbs": [
+      "generate",
+      "simulate"
+    ],
+    "product": "Blender Studio Waterfall node group (free); Cell Fluids GN s",
+    "url": "https://studio.blender.org/",
+    "host": "studio.blender.org",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 19
+  },
+  {
+    "target_niche": "cliff_rockface_generator",
+    "medium": "ground",
+    "verbs": [
+      "generate"
+    ],
+    "product": "github marcueberall/blender.cliffgenerator (free .blend); Te",
+    "url": "https://github.com/marcueberall/blender.cliffgenerator",
+    "host": "github.com",
+    "mirror_check": "GitHub/GitLab \u2192 reroute to L2/L3 (free, automatable, NO checkout)",
+    "route": "L2/L3-auto",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 10
+  },
+  {
+    "target_niche": "crater_field_generator",
+    "medium": "ground",
+    "verbs": [
+      "scatter",
+      "generate"
+    ],
+    "product": "github MarekHlavka Planet-and-space-objects-generator (crate",
+    "url": "https://github.com/MarekHlavka/Planet-and-space-objects-generator",
+    "host": "github.com",
+    "mirror_check": "GitHub/GitLab \u2192 reroute to L2/L3 (free, automatable, NO checkout)",
+    "route": "L2/L3-auto",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 10
+  },
+  {
+    "target_niche": "fern_generator",
+    "medium": "organic",
+    "verbs": [
+      "generate",
+      "reveal"
+    ],
+    "product": "Alex Martinelli free procedural fern GN",
+    "url": "https://80.lv/articles/generate-procedural-fern-like-plants-in-blender",
+    "host": "80.lv",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "high",
+    "score": 10
+  },
+  {
+    "target_niche": "flower_generator",
+    "medium": "organic",
+    "verbs": [
+      "generate"
+    ],
+    "product": "Graswald free wild flowers; BD3D Plant-Library (170 free); f",
+    "url": "https://bd3d.gumroad.com/l/plant-library",
+    "host": "bd3d.gumroad.com",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "medium",
+    "score": 10
+  },
+  {
+    "target_niche": "grass_meadow_scatter",
+    "medium": "organic",
+    "verbs": [
+      "scatter"
+    ],
+    "product": "Graswald free 145 species (CG Channel); Gscatter free plugin",
+    "url": "https://www.cgchannel.com/2024/04/download-all-of-graswalds-3d-plants-for-free/",
+    "host": "www.cgchannel.com",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "high",
+    "score": 10
+  },
+  {
+    "target_niche": "ground_cover",
+    "medium": "organic",
+    "verbs": [
+      "scatter"
+    ],
+    "product": "Graswald free ground-cover collection; Gscatter/Biome-Reader",
+    "url": "https://www.cgchannel.com/2024/04/download-all-of-graswalds-3d-plants-for-free/",
+    "host": "www.cgchannel.com",
+    "mirror_check": "no free repo mirror found \u2192 human $0 acquisition",
+    "route": "L5-human-gated",
+    "price_assertion": "$0 (free tool per R15 audit) \u2014 CONFIRM at source",
+    "license": "confirm at source",
+    "confidence": "high",
+    "score": 10
+  }
+]
