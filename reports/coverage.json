@@ -28,6 +28,31 @@
     "threshold": 30.0,
     "tripped": false
   },
+  "quality_tiers": {
+    "anemone_generator": "asset_fed_minimal",
+    "bioluminescent_flora": "asset_fed_minimal",
+    "cliff_rockface_generator": "full_generator",
+    "coral_generator": "asset_fed_minimal",
+    "erosion_sim": "full_generator",
+    "fern_generator": "full_generator",
+    "flower_generator": "asset_fed_minimal",
+    "grass_meadow_scatter": "asset_fed_minimal",
+    "kelp_forest_generator": "asset_fed_minimal",
+    "moss_lichen_growth": "asset_fed_minimal",
+    "mushroom_generator": "asset_fed_minimal",
+    "orchard_row_scatter": "composed_procedural",
+    "scree_talus_scatter": "asset_fed_minimal",
+    "snow_accumulation": "full_generator",
+    "space_colonization_growth": "full_generator",
+    "succulent_generator": "asset_fed_minimal",
+    "terrain_generator": "full_generator",
+    "tree_generator": "full_generator"
+  },
+  "quality_summary": {
+    "asset_fed_minimal": 10,
+    "full_generator": 7,
+    "composed_procedural": 1
+  },
   "verb_medium_grid": {
     "accumulate|ground": 1,
     "branch|organic": 5,

@@ -73,6 +73,14 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: data-driven & utility | 1 | 0 | 0 | 0 | 0 | 0% |
 | **TOTAL (wave 2)** | **59** | **0** | **1** | **0** | **0** | **2%** |
 
+## Quality tiers (R39/D-006 — handoff contract; depth per verified niche)
+
+Per verified-capability niche (the gate-v2 numerator), HOW it is covered. `full_generator` = real procedural add-on/GN generator; `composed_procedural` = recipe of vaulted operators + built-ins; `asset_fed_minimal` = recipe leaning on an imported static asset (answered the premise, NOT generator sophistication). Stage-2 prefers depth.
+
+- **full_generator** (7): `cliff_rockface_generator`, `erosion_sim`, `fern_generator`, `snow_accumulation`, `space_colonization_growth`, `terrain_generator`, `tree_generator`
+- **composed_procedural** (1): `orchard_row_scatter`
+- **asset_fed_minimal** (10): `anemone_generator`, `bioluminescent_flora`, `coral_generator`, `flower_generator`, `grass_meadow_scatter`, `kelp_forest_generator`, `moss_lichen_growth`, `mushroom_generator`, `scree_talus_scatter`, `succulent_generator`
+
 ## Verb × medium grid (R22 — verified operators; Stage-2 consumer metric)
 
 Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches are substitutable; verbs are not — this is what the metaphor resolver queries.

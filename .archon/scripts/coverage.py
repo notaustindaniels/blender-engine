@@ -49,12 +49,17 @@ def main():
     # R14 (D-002): recipe registry — composite coverage. recipe_unverified NEVER counts toward the
     # gate; only DIRECT add-on coverage + recipe_verified do. verified beats unverified per niche.
     recipe_tier = {}
+    recipe_assetfed = {}   # niche -> True if any recipe step imports a static asset (R39 quality)
     rpath = pathlib.Path("inputs/recipes.yaml")
     if rpath.exists():
         for r in (yaml.safe_load(rpath.read_text()) or {}).get("recipes", []):
             n, t = r.get("niche"), r.get("tier")
             if n and t in ("recipe_verified", "recipe_unverified") and recipe_tier.get(n) != "recipe_verified":
                 recipe_tier[n] = t
+            if n:
+                fed = any(("import_asset" in s or s.get("import_asset") or s.get("asset_cid"))
+                          for s in (r.get("steps") or []) if isinstance(s, dict))
+                recipe_assetfed[n] = recipe_assetfed.get(n, False) or fed
 
     # R18 (D-003): gate metric v2 — denominator = ATTAINABLE niches (R15 link-backed audit), the
     # unattainable (paid_only/none) are excluded so we measure the HARVEST not the market. Loaded
@@ -215,6 +220,22 @@ def main():
                 verb_medium.setdefault((v, med), set()).add(opid)
     verb_medium_counts = {f"{v}|{m}": len(s) for (v, m), s in sorted(verb_medium.items())}
 
+    # ── R39 (D-006): quality tiers into the handoff contract. Per verified-capability niche, expose
+    # HOW it is covered so the Stage-2 resolver prefers depth: full_generator (a real procedural
+    # add-on / GN generator that emits geometry) > composed_procedural (recipe of vaulted operators +
+    # built-ins, no static asset) > asset_fed_minimal (recipe leaning on an imported static asset —
+    # answers the premise question but is NOT generator sophistication; must never masquerade as one).
+    def quality_of(n):
+        if n in set(g_dpass):
+            return "full_generator"
+        if recipe_tier.get(n) == "recipe_verified":
+            return "asset_fed_minimal" if recipe_assetfed.get(n) else "composed_procedural"
+        return None
+    quality_tiers = {n: q for n in sorted(set(v2_num)) if (q := quality_of(n))}
+    quality_summary = {}
+    for q in quality_tiers.values():
+        quality_summary[q] = quality_summary.get(q, 0) + 1
+
     out = {
         "probe_categories": probe_cats,
         "gate": {"denominator_present_wave1": len(gate_present), "decision_covered": gate_decision,
@@ -225,6 +246,8 @@ def main():
                     "coverage_pct": round(v2_pct, 1), "threshold": 40.0,
                     "excluded_unattainable": v2_excluded},
         "tripwire": tripwire,
+        "quality_tiers": quality_tiers,
+        "quality_summary": quality_summary,
         "verb_medium_grid": verb_medium_counts,
         "pass_rate": {"verified_probed": len(verified_ids), "acquisitions": len(all_ids),
                       "surviving": len(surviving_ids), "pct_of_probed": round(pass_rate * 100, 1),
@@ -262,6 +285,15 @@ def main():
     md.append(w1_table)
     md.append("\n## Wave-2 coverage (separate; does NOT move the gate)\n")
     md.append(w2_table)
+    # R39: quality tiers (Stage-2 resolver prefers depth; asset-fed must never read as generator depth)
+    md.append("\n## Quality tiers (R39/D-006 — handoff contract; depth per verified niche)\n")
+    md.append("Per verified-capability niche (the gate-v2 numerator), HOW it is covered. "
+              "`full_generator` = real procedural add-on/GN generator; `composed_procedural` = recipe of "
+              "vaulted operators + built-ins; `asset_fed_minimal` = recipe leaning on an imported static "
+              "asset (answered the premise, NOT generator sophistication). Stage-2 prefers depth.\n")
+    for q in ("full_generator", "composed_procedural", "asset_fed_minimal"):
+        ns = sorted(n for n, qq in quality_tiers.items() if qq == q)
+        md.append(f"- **{q}** ({len(ns)}): " + (", ".join(f"`{n}`" for n in ns) if ns else "_none_"))
     # R22: verb × medium grid (Stage-2 metaphor-resolver entry metric — informational now)
     md.append("\n## Verb × medium grid (R22 — verified operators; Stage-2 consumer metric)\n")
     md.append("Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches are "
