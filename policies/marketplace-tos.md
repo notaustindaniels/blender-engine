@@ -62,3 +62,20 @@ assume permission. No guardrail loosening (D-003 R20).
   NC/ND → acquired but segregated pending an owner call. cc-by attribution recorded per item.
 - **No paid acquisition ever** without an owner D-entry (R23). $0 / PWYW-$0 only, legitimately.
 - **Never nulled/pirated** — a $0 obtained illegitimately is a hard fail (PRD guardrail #3).
+
+## L6 — BlenderKit (D-001 R10 backlog activated under R37 no-spend, 2026-07-07) — **ACTIVATED with constraint**
+- **Finding (ToS read, blenderkit.com/terms-and-conditions-2021):** assets are **CC0** or **Royalty-Free**
+  (per-asset, creator's choice — capture per item, R26). Use in other software IS permitted: *"You can
+  also use the products to create computer games and other computer programs, virtual reality,
+  simulations, web or mobile applications or to create other software."*
+- **BINDING Article-5 constraint (rides into Stage-2):** *"The product must be used in the project in
+  such a format that it cannot be opened or separated by a third party… the software may not contain any
+  functionality that would allow end users to export any 3D model from the software."* Our engine outputs
+  **rendered video** (not exportable 3D) → **compliant**, but Stage-2 must NOT offer 3D-export of scenes
+  containing BlenderKit assets. **Royalty-Free** additionally: incorporation-only, no standalone
+  redistribution. Recorded as a per-asset usage constraint (R26).
+- **Automation:** no anti-bot/bulk-download clause found; official API + add-on exist (legitimate access).
+- **POSTURE → ACTIVATE (not dropped).** HYBRID (owner): node-groups + materials = procedural → standard
+  Gate (materials via the shader-probe, gate-eligible); models = assets → A-lane ledger (never coverage).
+  Blocked on `BLENDERKIT_API_KEY` (env-only, R2). If the key/API later proves to forbid bulk access, drop
+  with a finding. Per-asset license (cc0/royalty-free) + the Article-5 constraint captured on every item.
