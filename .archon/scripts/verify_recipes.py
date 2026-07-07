@@ -31,6 +31,9 @@ def resolve_recipe(r):
         if st.get("builtin"):
             steps.append({"builtin": st["builtin"]})
             continue
+        if st.get("import_asset"):
+            steps.append({"import_asset": st["import_asset"]})   # container path (mounted vault)
+            continue
         cid = st.get("artifact_cid")
         art = find_artifact(cid) if cid else None
         if cid and not art:

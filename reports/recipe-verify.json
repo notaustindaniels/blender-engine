@@ -28,5 +28,20 @@
     "niche": "sediment_deposition",
     "state": "recipe_unverified",
     "notes": "steps=['delta', 'noop'] net_delta=True render=True"
+  },
+  {
+    "niche": "kelp_forest_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "coral_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "anemone_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
   }
 ]

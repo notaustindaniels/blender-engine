@@ -195,14 +195,30 @@ def main():
     baseline = counts()          # factory scene (cube+cam+light)
     no_step_errored = True
     for st in recipe.get("steps", []):
-        if st.get("builtin"):
+        if st.get("import_asset"):
+            # D-004/R25 asset-fed recipe: import a CC-licensed asset (gltf/glb/fbx/obj) as a step
+            ap = st["import_asset"]; before = counts(); ext = os.path.splitext(ap)[1].lower()
+            try:
+                if ext in (".gltf", ".glb"):
+                    bpy.ops.import_scene.gltf(filepath=ap)
+                elif ext == ".fbx":
+                    bpy.ops.import_scene.fbx(filepath=ap)
+                elif ext == ".obj":
+                    try:
+                        bpy.ops.wm.obj_import(filepath=ap)
+                    except Exception:
+                        bpy.ops.import_scene.obj(filepath=ap)
+            except Exception:
+                pass
+            status = "delta" if counts() > before else "noop"
+        elif st.get("builtin"):
             status = "ran" if add_builtin_modifier(st["builtin"]) else "noop"
         else:
             art = st.get("artifact")
             if art and os.path.exists(art):
                 install_enable(art)
             status = drive_op(st["op"], st.get("params"), ov) if st.get("op") else "noop"
-        RESULT["steps_ok"].append({"step": st.get("op") or st.get("builtin"), "status": status})
+        RESULT["steps_ok"].append({"step": st.get("op") or st.get("builtin") or st.get("import_asset"), "status": status})
         if status == "noop":     # a step that never executed breaks the composition
             no_step_errored = False
     net_delta = counts() > baseline

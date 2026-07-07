@@ -1,0 +1,28 @@
+{
+  "canonical_id": "tannenmeise__mushroom_generator",
+  "artifact": "tannenmeise__mushroom_generator.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 3.10 > 3.6"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-07T13:35:19+00:00",
+  "prescan_hits": [],
+  "declared_min": "3.10"
+}

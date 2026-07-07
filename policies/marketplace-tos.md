@@ -39,10 +39,23 @@ assume permission. No guardrail loosening (D-003 R20).
   chat/YAML — R28). Capture `usage_license` + attribution per item (R26). This is a legitimate,
   ToS-blessed automated path — no scraping, no checkout. Awaiting owner-created account + token.
 
-## A2 — ArtStation · A3 — Fab (asset lanes, D-004)
-- **POSTURE → ToS-check pass DEFERRED to activation (R29): A2/A3 begin only after the first L5a
-  approval batch ships.** Their ToS will be read (and posted here) before any discovery automation.
-  Anything checkout-shaped stays human-gated exactly like L5. Fab is A3 (supersedes the earlier "L5c").
+## A2 — ArtStation (asset lane, D-004) — **DROPPED (R32a), 2026-07-07**
+- **Finding (ToS read):** ArtStation ToS states *"Users may only access the Services through the
+  interface provided on the Site"* and prohibits collecting/mining/scraping content; **no official
+  public download API**. Source: artstation.com/tos.
+- **DISPOSITION → DROP the automated A2 lane (R32a: a ToS that forbids the plan drops the lane with a
+  recorded finding, no escalation).** Site-interface-only access + no API forecloses automated CC
+  discovery/download. (A human could still manually download a specific CC asset, but that is not an
+  automatable lane and is not pursued.)
+
+## A3 — Fab (asset lane, D-004) — **DROPPED (automated lane) (R32a), 2026-07-07**
+- **Finding (ToS read):** Fab offers CC + Standard licenses; access is via the **website (human),
+  Fab launcher, or UE/UEFN engine integration**. **No automatable public CC-download API**; the
+  engine-integration path yields **`.uasset`** (engine-locked → graveyard per R26). Source:
+  fab.com/terms-of-service, fab.com/eula.
+- **DISPOSITION → DROP the automated A3 lane (R32a).** No clean automatable CC path; engine-locked
+  formats are useless to us. Human website download of a specific CC asset remains possible but is
+  not an automatable lane. A1 Sketchfab is the one working automatable asset lane.
 
 ## Cross-cutting rules (all lanes)
 - **License is load-bearing (R26):** engine-locked licenses and `.uasset`-only downloads → graveyard.

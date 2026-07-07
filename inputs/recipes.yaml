@@ -54,3 +54,22 @@ recipes:
     params: {}
   note: petak5 create_terrain drives (delta); erosion_operator is modal-noop headless. create_terrain alone makes terrain
     not sediment, so honest tier stays unverified until erosion drives.
+- niche: kelp_forest_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/marine__seaweed-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-004/R25 asset-fed: CC-BY Sea Weed asset (A1 Sketchfab) + built-in ARRAY -> kelp forest. Converts a paid_only niche
+    via the R21 front door.'
+- niche: coral_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/marine__coral-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-004/R25 asset-fed: CC-BY coral asset (A1 Sketchfab) + ARRAY. Converts a paid_only niche via R21.'
+- niche: anemone_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/marine__anemone-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-004/R25 asset-fed: CC-BY anemone asset (A1 Sketchfab) + ARRAY. Converts a paid_only niche via R21.'
