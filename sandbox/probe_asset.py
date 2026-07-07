@@ -35,9 +35,30 @@ signal.alarm(max(30, _CAP))
 
 
 def total_verts():
+    """Count geometry the asset actually yields. Uses DEPSGRAPH-EVALUATED meshes so a
+    geometry-nodes generator (small/empty base mesh, geometry produced by the GN modifier at
+    eval time) is measured by what it emits, not its placeholder base — otherwise a real GN
+    generator with a 0-vert base would falsely read as 'zero geometry'. Falls back to base
+    verts if evaluation is unavailable."""
     n = 0
+    try:
+        deps = bpy.context.evaluated_depsgraph_get()
+    except Exception:
+        deps = None
     for o in bpy.data.objects:
-        if o.type == "MESH" and o.data:
+        if o.type != "MESH":
+            continue
+        counted = False
+        if deps is not None:
+            try:
+                oe = o.evaluated_get(deps)
+                me = oe.to_mesh()
+                if me is not None:
+                    n += len(me.vertices); counted = True
+                    oe.to_mesh_clear()
+            except Exception:
+                pass
+        if not counted and o.data:
             n += len(o.data.vertices)
     return n
 

@@ -1,0 +1,42 @@
+{
+  "canonical_id": "sagado__procedural-fern",
+  "artifact": "sagado__procedural-fern.blend",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "gn_pack",
+  "verified_at": "2026-07-07T14:24:00+00:00",
+  "prescan_hits": ["driver-expression"],
+  "declared_min": "4.3",
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "sagado__procedural-fern",
+      "verbs": [
+        "generate",
+        "reveal"
+      ],
+      "niches": [
+        "fern_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L5a $0 PWYW checkout (owner, Gumroad sagado/l/ozxrlu). GN .blend fern generator: object 'fern' carries 2 geometry-nodes modifiers (distribute_ferns, main_fern) over a curve-based node graph (Curve Root/Segment/Tip, Roll/Smooth Hair Curves, Sample Points, shape_range); depsgraph-evaluated geometry 4 base verts -> 480 (488 total incl. base), workbench render OK -> FULL PASS on 4.5. Declared min 4.3, so 3.6/4.2 skipped_incompatible. New full-pass niche. Prescan clean (only allowlisted driver-expression from FModifier DNA struct names; zero NEVER_ALLOW patterns). Probed sandboxed via probe_asset.py (--network none, read-only, non-root)."
+}

@@ -5,18 +5,18 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 21,
-    "full_pass": 6,
+    "decision_covered": 22,
+    "full_pass": 7,
     "partial": 4,
     "recipe_verified": 11,
     "recipe_unverified_claims": 5,
-    "coverage_pct": 35.6
+    "coverage_pct": 37.3
   },
   "gate_v2": {
     "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
-    "numerator": 17,
+    "numerator": 18,
     "denominator_attainable": 57,
-    "coverage_pct": 29.8,
+    "coverage_pct": 31.6,
     "threshold": 40.0,
     "excluded_unattainable": [
       "coral_atoll_generator",
@@ -24,7 +24,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 42.9,
+    "pass_rate_of_all_pct": 44.2,
     "threshold": 30.0,
     "tripped": false
   },
@@ -34,22 +34,23 @@
     "deplete|ground": 3,
     "generate|air": 1,
     "generate|ground": 7,
-    "generate|organic": 4,
+    "generate|organic": 5,
+    "reveal|organic": 1,
     "scatter|air": 1,
     "scatter|organic": 1,
     "simulate|ground": 3,
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 32,
-    "acquisitions": 42,
-    "surviving": 18,
-    "pct_of_probed": 56.2,
-    "pct_of_all_acquisitions": 42.9
+    "verified_probed": 33,
+    "acquisitions": 43,
+    "surviving": 19,
+    "pct_of_probed": 57.6,
+    "pct_of_all_acquisitions": 44.2
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 21,
+    "decision_covered": 22,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -74,6 +75,9 @@
       "community__a-n-t-landscape",
       "petak5__bp",
       "varkenvarken__erosion"
+    ],
+    "fern_generator": [
+      "sagado__procedural-fern"
     ],
     "heightmap_stack_tools": [
       "nicolaspriniotakis__srtm-terrain-importer",

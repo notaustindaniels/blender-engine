@@ -29,13 +29,12 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `rice_terrace_generator`
 - `fissure_generator`
 
-## Vegetation & organic — 9/23 with neither add-on nor recipe
+## Vegetation & organic — 8/23 with neither add-on nor recipe
 
 - `tree_species_presets`  (seasonal variants)
 - `dead_tree_generator`  (burnt, lightning-split)
 - `root_system_generator`  (buttress, mangrove stilts)
 - `bonsai_generator`
-- `fern_generator`  (fiddlehead unroll)
 - `vine_growth`
 - `climbing_plant_generator`  (trellises)
 - `organic_cell_shader`

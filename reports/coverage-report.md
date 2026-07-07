@@ -4,11 +4,11 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 ## Gate metrics (PRD §4 wrong-condition)
 
-- **GATE v2 (R18/D-003 — the governing metric): 17/57 = 29.8%** = (full_pass + recipe_verified) / 57 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
+- **GATE v2 (R18/D-003 — the governing metric): 18/57 = 31.6%** = (full_pass + recipe_verified) / 57 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
   - excluded as unattainable (paid_only/none, R15): `coral_atoll_generator`, `karst_formation`
-- **Tripwire (R19): pass-rate of-all-acquisitions 42.9%** vs 30% floor → OK.
-- _v1 (legacy, all-present denom): 21/59 = 35.6% (6 full-pass + 4 partial + 11 recipe✓; 5 recipe claims not counted)._
-- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 18/32 = 56.2%; of-all-acquisitions 18/42 = 42.9% — PRD stop-line <30%.
+- **Tripwire (R19): pass-rate of-all-acquisitions 44.2%** vs 30% floor → OK.
+- _v1 (legacy, all-present denom): 22/59 = 37.3% (7 full-pass + 4 partial + 11 recipe✓; 5 recipe claims not counted)._
+- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 19/33 = 57.6%; of-all-acquisitions 19/43 = 44.2% — PRD stop-line <30%.
 - **Probe-recipe backlog:** 5 niche(s) partial-only (see `reports/probe-recipes.md`).
 
 ## Covered niches (Terrain + Vegetation, wave-1)
@@ -24,6 +24,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | `alien_biome_generator` | terrain | partial | ra100__planet-gen |
 | `tree_generator` | vegetation | pass | brandyn-britton__modular-tree, community__sapling-tree-gen, jacob-johnston__easy-tree, ls__space-colonization-tree-generator |
 | `space_colonization_growth` | vegetation | pass | ls__space-colonization-tree-generator |
+| `fern_generator` | vegetation | pass | sagado__procedural-fern |
 | `ivy_generator` | vegetation | partial | community__ivygen |
 
 ## Coverage by category (wave-1)
@@ -31,7 +32,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | category | present | full-pass | partial | recipe✓ | recipe? (claim) | decision % |
 |---|---:|---:|---:|---:|---:|---:|
 | Terrain & landscape | 36 | 4 | 3 | 1 | 4 | 22% |
-| Vegetation & organic | 23 | 2 | 1 | 10 | 1 | 57% |
+| Vegetation & organic | 23 | 3 | 1 | 10 | 1 | 61% |
 | Cities & urban | 18 | 0 | 0 | 0 | 0 | 0% |
 | Buildings & architecture | 17 | 0 | 0 | 0 | 0 | 0% |
 | Rooms & interiors | 12 | 0 | 0 | 0 | 0 | 0% |
@@ -52,7 +53,7 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
 | Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **6** | **4** | **11** | **5** | **8%** |
+| **TOTAL (wave 1)** | **269** | **7** | **4** | **11** | **5** | **8%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 
@@ -81,7 +82,8 @@ Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches ar
 | accumulate | 1 | 0 | 0 | 0 | 0 | 0 |
 | branch | 0 | 0 | 0 | 0 | 5 | 0 |
 | deplete | 3 | 0 | 0 | 0 | 0 | 0 |
-| generate | 7 | 0 | 1 | 0 | 4 | 0 |
+| generate | 7 | 0 | 1 | 0 | 5 | 0 |
+| reveal | 0 | 0 | 0 | 0 | 1 | 0 |
 | scatter | 0 | 0 | 1 | 0 | 1 | 0 |
 | simulate | 3 | 0 | 0 | 0 | 0 | 0 |
 | trace | 0 | 0 | 0 | 0 | 2 | 0 |
