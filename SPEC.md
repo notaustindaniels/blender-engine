@@ -422,8 +422,24 @@ Owner decision D-005: involvement converts interrupt-driven → batch-driven. Ag
 2. **Owner-queue discipline (R30) + walk-away done (R34)** → CLAUDE.md + `OWNER-QUEUE.md` + the `reports/prd4-final.md` report contract. Dispositions (R31): fern approved+executed by owner; **river DENIED** (unconfirmable price = no); marine-flora asset-fed recipe experiment **APPROVED** (CC-BY only; by-nc segregated, out of recipes).
 3. **Attainable set grows with verified paths.** A niche that earns a `full_pass` or `recipe_verified` is attainable BY DEFINITION — coverage v2's denominator = the R15 attainable set ∪ any niche with a verified path. So converting a paid_only/none niche via an asset-fed recipe (R25) both adds it to the numerator and the denominator, honestly.
 
-### 12.7 Dated amendment — 2026-07-07 (D-006 R35d: denominator 54 → 57, marine conversions recorded)
+### 12.7 Dated amendments — 2026-07-07 (D-006 R35(d): marine-trio conversion recorded; amends §12.4(1))
 
-The R18/§12.4(1) starting denominator was **54 attainable** with **5 unattainable** (`karst_formation`, `coral_atoll_generator`, `coral_generator`, `kelp_forest_generator`, `anemone_generator`). During the D-005 walk-away run, the **marine-flora trio** — `kelp_forest_generator`, `coral_generator`, `anemone_generator` — was converted from `paid_only` (unattainable) to **`recipe_verified`** via A1 Sketchfab **CC-BY** assets + built-in ARRAY composition, each machine-checked through the R21 probe (R25 asset-fed-recipe path; `by-nc`/`by-nd` assets excluded from recipes per R26). Per §12.6(3) a verified niche is attainable by definition, so those 3 niches move into the attainable denominator: **54 → 57**, unattainable **5 → 2** (`karst_formation`, `coral_atoll_generator` remain — no free path anywhere, parked to Stage-2 build-from-scratch per R38). Gate-v2 final this run: **17/57 = 29.8%**. This amendment records the reality the coverage code already reflects — logged so the SPEC does not lag the code (never diverge silently).
+`coral_generator`, `kelp_forest_generator`, `anemone_generator` — listed `paid_only`/unattainable in the §12.4(1) R15 audit — earned `recipe_verified` via CC-BY asset-fed recipes (R25/R21; artifacts `marine__{coral,seaweed,anemone}-ccby`, each CC-BY-4.0 commercial with attribution + SHA-256 captured, machine-checked in `reports/recipe-verify.json` and independently re-verified by the D-006 R35 review). Per §12.6(3) the general rule now has its concrete instance: these 3 enter the attainable base. **Gate-v2 denominator 54 → 57**; the §12.4(1) unattainable list shrinks **5 → 2** — only `karst_formation` and `coral_atoll_generator` remain unattainable (Stage-2 build-from-scratch backlog per D-006 R38). Both numerator and denominator grew; current reading **17/57 = 29.8%**.
+
+### 12.8 Dated amendments — 2026-07-07 (D-006 R36: premise CONFIRMED; 40% reclassified; amends §3, §4)
+
+Owner decision D-006 R36, its contingency (R35 adversarial review) satisfied — FULL PASS on all five
+items after two fix cycles (verdict + signature recorded in `reports/prd4-final.md` §D-006 R36). The
+premise — *the engine is buildable on free tooling* — is **CONFIRMED, not merely unfalsified**:
+native-scale pass-rate 56.2% of-probed / 42.9% of-all-acquisitions clears the 30% kill-line both ways;
+the marine-trio conversion is affirmative evidence.
+
+1. **The 40% gate-v2 line is reclassified: kill criterion → execution milestone** (per PRD §2 H1's own
+   wording, "<40% *after exhausting all sources*"). Sources are not exhausted while human-gated $0
+   checkouts sit queued and the shader-probe is unbuilt — an instrument gap, not a market gap. Gate v2
+   baseline at signature = 17/57 = 29.8%. The <30% pass-rate tripwire (R19) remains live at every lane.
+2. **R23 auto-trigger armed.** If the no-spend path completes (OWNER-QUEUE $0 checkouts drained,
+   shader-probe built, recipe drive exhausted) with coverage still <40%, the R23 priced-options request
+   fires automatically into the next consolidated owner session — no further owner prompt needed.
 
 Keep this spec in sync as implementation reveals reality — the code is a lossy projection of it, not the other way around.
