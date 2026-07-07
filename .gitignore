@@ -1,6 +1,11 @@
 # ── Security: never commit secrets or private/large artifacts (SPEC §7, PRD §4) ──
 # Vaulted add-on artifacts: large, private, redistribution-guarded (PRD guardrail #3)
 vault/
+# Harvested asset payloads (A-lane CC assets, D-004/R25): large binaries, attribution
+# tracked in the registry/asset report, not the blobs themselves
+vault_assets/
+# Acquisition dropzone: large binary checkouts (.blend etc.) staged for probing, not deliverables
+inputs/dropzone/
 # SQLite read-index: disposable, rebuilt from JSON manifests (SPEC §4.5)
 *.db
 *.db-journal
