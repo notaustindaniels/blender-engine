@@ -99,3 +99,35 @@ paid rescue — it is not falsified, and the free path is far from exhausted.
 The final v2 **signature** and the D-006 disposition are yours (R33). The queued **$0 checkouts** are
 your hands. Everything the agent could do autonomously is done; see `OWNER-QUEUE.md` for the exact
 one-line actions.
+
+---
+
+## D-006 R36 — THE SIGNATURE (premise CONFIRMED) · 2026-07-07
+
+**Gate satisfied.** The R35 adversarial review (fresh-context `claude-fable-5` reviewer, artifacts
+only, bias-to-FAIL) returned **OVERALL: FULL PASS** on all five items after two fix cycles (within the
+max-2 budget): (a) coverage 17/57 = 29.8% independently rebuilt byte-identical; (b) 4 random
+`recipe_verified` re-probed in the sandbox (flags confirmed live via `docker inspect`); (c) marine-trio
+CC-BY-4.0 provenance + SHA-256 verified, by-nc items segregated and unused; (d) the 54→57 reconciliation
+committed as SPEC §12.7 (`ec2b740`); (e) A2/A3 drops carry dated ToS findings, zero leakage. This
+signature rests only on committed, machine-re-verified artifacts — never on narrative.
+
+**The signature (D-006 R36).** The premise — *the engine is buildable on free tooling* — is
+**CONFIRMED, not merely unfalsified.** Native-scale pass-rate **56.2% of-probed / 42.9%
+of-all-acquisitions** clears the 30% kill-line both ways, and the marine-trio conversion is
+**affirmative evidence**: three niches the market itself had priced (`coral_generator`,
+`kelp_forest_generator`, `anemone_generator`) became free, machine-verified capability through CC-BY
+asset-fed composition.
+
+**The 40% line is reclassified — kill criterion → execution milestone** (per PRD §2 H1's own wording:
+the kill condition is "<40% *after exhausting all sources*"). Sources are **not** exhausted while
+human-gated $0 checkouts sit queued and the shader-probe is unbuilt — that is an **instrument gap, not a
+market gap**. Gate v2 stands at 17/57 = 29.8% as the execution baseline.
+
+**R23 auto-trigger, armed.** If the no-spend path completes — OWNER-QUEUE $0 checkouts drained,
+shader-probe built, recipe drive exhausted — and coverage is **still <40%**, the R23 priced-options
+request fires **automatically**, folded into the next consolidated owner session. No further owner
+prompt is needed to ask that question. If 40% is reached first, no paid question arises.
+
+*Signature basis:* owner decision D-006 (committed `5389987`), condition R35 met (review FULL PASS,
+this section). Proceeding to R37 (no-spend completion) per the D-006 acknowledgment protocol.
