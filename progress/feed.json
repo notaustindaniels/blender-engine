@@ -333,5 +333,15 @@
     "body": "<p><b>R37 drive + consolidated owner session (D-006 R34).</b> Premise CONFIRMED (R36); gate v2 <b>29.8% → 31.6%</b> (18/57).</p><ul><li><b>fern_generator FULL PASS</b> — your $0 PWYW GN-pack, probed sandboxed (488 eval verts, renders). Fixed probe_asset.py to count depsgraph-evaluated geometry so GN generators aren't mis-failed.</li><li><b>Shader-probe built + self-validated</b> (R37a; delta 0.137≥0.02). Unlocks 5 free_recipe shader niches (cracked_earth/gas_giant/ice/organic_cell/snow_ice) the geometry/asset probes read as empty.</li><li><b>R38</b> karst+coral_atoll → Stage-2 backlog (no purchase). <b>R39</b> quality tiers in the handoff contract (7 full_generator / 1 composed / 10 asset_fed_minimal). <b>R40</b> rock_generator_addon → wave-2 rock_boulder_generator proposal (you decide).</li><li><b>Path to 40% = 5 niches.</b> Route A: acquire+probe free shaders (agent-doable, no checkout). Route B: $0 GN-pack owner-checkout batch (targets grounded; resolution pass pending your go — no fabricated URLs). <b>R23 priced-options: armed, NOT fired</b> — two no-spend routes still open.</li></ul><p>Full session: <code>reports/owner-consolidated-2026-07-07.md</code>; queue: <code>OWNER-QUEUE.md</code>. Awaiting owner: pick Route A / Route B / rule on wave-3.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 34,
+    "ts": "2026-07-07T10:58:42-04:00",
+    "title": "D-006 ACKNOWLEDGED (R35–R40) — running the adversarial review of the walk-away run before any signature",
+    "tag": "milestone",
+    "status": "d006-ack-review-running",
+    "body": "<p>D-006 read: the premise signature is <b>contingent on R35</b> (fresh-context adversarial review of the walk-away run — the review every prior milestone got, which D-005 skipped). Acknowledging R35–R40:</p>\n<table><thead><tr><th>rider</th><th>encoding / status</th></tr></thead><tbody>\n<tr><td><b>R35</b> adversarial review first</td><td>running now (artifacts-only, fresh-context); R35d SPEC §12.7 amendment (54→57 denominator) committed <code>2c2cf94</code></td></tr>\n<tr><td><b>R36</b> signature (contingent)</td><td>takes effect automatically ONLY on full R35 PASS; 40% → execution milestone; R23 auto-trigger</td></tr>\n<tr><td><b>R37</b> no-spend completion</td><td>after PASS: shader-probe + GN-pack $0 batch + recipe drive (fern probed first)</td></tr>\n<tr><td><b>R38</b> park 2 unattainables</td><td><code>reports/stage2-backlog.md</code> + CLAUDE.md <code>2c2cf94</code></td></tr>\n<tr><td><b>R39</b> quality tiers → Stage-2</td><td>CLAUDE.md rule <code>2c2cf94</code></td></tr>\n<tr><td><b>R40</b> wave-3 intake</td><td>rock_generator → backlog proposal <code>2c2cf94</code></td></tr>\n</tbody></table>\n<p>Fern <code>.blend</code> received in <code>inputs/dropzone/</code> — held for R37 (probing it now would change the 17/57 the review must reproduce). Running the R35 review; on full PASS I post the signed block and proceed to R37. Max 2 fix cycles.</p>",
+    "code": "",
+    "media": []
   }
 ]
