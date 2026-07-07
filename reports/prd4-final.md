@@ -131,3 +131,33 @@ prompt is needed to ask that question. If 40% is reached first, no paid question
 
 *Signature basis:* owner decision D-006 (committed `5389987`), condition R35 met (review FULL PASS,
 this section). Proceeding to R37 (no-spend completion) per the D-006 acknowledgment protocol.
+
+---
+
+## FINAL STATUS UPDATE — 2026-07-07 (post-L6, single-writer session): 40% CLEARED, no spend
+
+The no-spend path reached the execution milestone. **Gate v2 = 23/57 = 40.4%** (12 full_pass + 11
+recipe_verified), pass-rate **63.2% of-probed / 50.0% of-all**. Progression: 9.3% (D-003) → 29.8%
+(D-005 walk-away) → 31.6% (fern R37) → **40.4%** (L6 BlenderKit shader materials).
+
+**How the last stretch was closed (all no-spend, all machine-verified):**
+- **L6 BlenderKit activated** (D-001 R10, ToS-read-first): permitted with the Article-5 no-export
+  constraint captured (R26); download flow solved (scene_uuid param + BlenderKit User-Agent).
+- **All 5 shader niches converted** via free BlenderKit procedural materials + the R37 shader-probe
+  (pixel-delta ≥ 0.02): `ice_shader` 0.070, `gas_giant_shader` 0.058, `snow_ice_shader` 0.032,
+  `cracked_earth_shader` 0.040, `organic_cell_shader` 0.082. (Earlier quarantines were concurrency
+  starvation under emulation; single-container probes pass — native re-probe would confirm at scale.)
+- Materials classified procedural → Gate (HYBRID, gate-eligible); BlenderKit models remain A-lane.
+
+**Consequences:**
+- **R23 auto-trigger does NOT fire.** Per D-006 R36, the priced-options request fires only if the
+  no-spend path completes with coverage still <40%. It reached 40% with **zero spend** — so no
+  paid-vs-build request is raised. The premise is CONFIRMED (R36) **and** the execution milestone met.
+- **2 niches remain unattainable** (`karst_formation`, `coral_atoll_generator`) — Stage-2
+  build-from-scratch backlog (R38), no purchase.
+- **A-lane / asset-fed coverage is tier-separated** (R39 quality field): 12 `full_pass` (dedicated
+  tools + shader materials) vs 11 `recipe_verified` (asset-fed minimal compositions). The handoff
+  never lets minimal composition masquerade as generator depth.
+
+**Nothing owner-blocking remains for the gate.** The fern was probed (R37, by the prior session). The
+GN-pack $0 marketplace batch is now optional (the gate is met without it) — queued for depth, not need.
