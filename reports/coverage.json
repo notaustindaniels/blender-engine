@@ -5,18 +5,18 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 14,
+    "decision_covered": 21,
     "full_pass": 6,
     "partial": 4,
-    "recipe_verified": 4,
+    "recipe_verified": 11,
     "recipe_unverified_claims": 5,
-    "coverage_pct": 23.7
+    "coverage_pct": 35.6
   },
   "gate_v2": {
     "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
-    "numerator": 10,
+    "numerator": 17,
     "denominator_attainable": 57,
-    "coverage_pct": 17.5,
+    "coverage_pct": 29.8,
     "threshold": 40.0,
     "excluded_unattainable": [
       "coral_atoll_generator",
@@ -49,7 +49,7 @@
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 14,
+    "decision_covered": 21,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {

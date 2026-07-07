@@ -2,11 +2,10 @@
 
 Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 
-## Terrain & landscape — 25/36 with neither add-on nor recipe
+## Terrain & landscape — 24/36 with neither add-on nor recipe
 
 - `canyon_mesa_generator`  (mesas, hoodoos, badlands)
 - `karst_formation`  (sinkholes, sea stacks)
-- `scree_talus_scatter`
 - `cave_network_generator`  (SDF tunnels)
 - `stalactite_generator`  (flowstone, columns)
 - `river_generator`
@@ -30,21 +29,15 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `rice_terrace_generator`
 - `fissure_generator`
 
-## Vegetation & organic — 15/23 with neither add-on nor recipe
+## Vegetation & organic — 9/23 with neither add-on nor recipe
 
 - `tree_species_presets`  (seasonal variants)
 - `dead_tree_generator`  (burnt, lightning-split)
 - `root_system_generator`  (buttress, mangrove stilts)
 - `bonsai_generator`
-- `grass_meadow_scatter`  (wheat, wind-ready blades)
-- `flower_generator`  (phyllotaxis roses, sunflowers)
-- `succulent_generator`  (spiral aloes)
 - `fern_generator`  (fiddlehead unroll)
 - `vine_growth`
 - `climbing_plant_generator`  (trellises)
-- `mushroom_generator`  (fairy rings, shelf fungi)
-- `moss_lichen_growth`  (exposure-directional)
-- `bioluminescent_flora`  (tentacle plants, crystal trees)
 - `organic_cell_shader`
 - `vein_generator`
 

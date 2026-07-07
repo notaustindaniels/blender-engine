@@ -73,3 +73,45 @@ recipes:
   - import_asset: /work/vault/marine__anemone-ccby/1.0/scene.gltf
   - builtin: ARRAY
   note: 'D-004/R25 asset-fed: CC-BY anemone asset (A1 Sketchfab) + ARRAY. Converts a paid_only niche via R21.'
+- niche: grass_meadow_scatter
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__grass_meadow_scatter-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Purple Flower Patch'' (A1 Sketchfab) + ARRAY scatter -> grass_meadow_scatter.'
+- niche: flower_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__flower_generator-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Plants Asset Set'' (A1 Sketchfab) + ARRAY scatter -> flower_generator.'
+- niche: mushroom_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__mushroom_generator-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Stylized mushrooms'' (A1 Sketchfab) + ARRAY scatter -> mushroom_generator.'
+- niche: moss_lichen_growth
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__moss_lichen_growth-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Moss Rock Photoscan'' (A1 Sketchfab) + ARRAY scatter -> moss_lichen_growth.'
+- niche: succulent_generator
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__succulent_generator-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Stylized Succulent Plant'' (A1 Sketchfab) + ARRAY scatter -> succulent_generator.'
+- niche: bioluminescent_flora
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__bioluminescent_flora-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Glowing Mushroom'' (A1 Sketchfab) + ARRAY scatter -> bioluminescent_flora.'
+- niche: scree_talus_scatter
+  tier: recipe_verified
+  steps:
+  - import_asset: /work/vault/asset__scree_talus_scatter-ccby/1.0/scene.gltf
+  - builtin: ARRAY
+  note: 'D-005/R32c asset-fed: CC by ''Rock Stone 11 .::RAWscan::.'' (A1 Sketchfab) + ARRAY scatter -> scree_talus_scatter.'

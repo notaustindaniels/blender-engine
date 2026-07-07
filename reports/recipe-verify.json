@@ -43,5 +43,40 @@
     "niche": "anemone_generator",
     "state": "recipe_verified",
     "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "grass_meadow_scatter",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "flower_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "mushroom_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "moss_lichen_growth",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "succulent_generator",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "bioluminescent_flora",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
+  },
+  {
+    "niche": "scree_talus_scatter",
+    "state": "recipe_verified",
+    "notes": "steps=['delta', 'ran'] net_delta=True render=True"
   }
 ]
