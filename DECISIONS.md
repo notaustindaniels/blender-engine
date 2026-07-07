@@ -172,3 +172,30 @@ an official API for CC-licensed downloads — automatable without browser or che
 Standard: one feed entry mapping R25–R29 to committed encodings. Sequencing folds into
 the D-003 plan: L5 ToS pass → L5a batches (owner) → A1 in parallel → A2/A3 after batch 1
 → L5b → recipe drive (including asset-fed marine trio) → final v2 evaluation.
+
+---
+
+## D-005 · 2026-07-07 · The walk-away contract: batch-driven autonomy replaces interrupt-driven asks
+
+**Decision:** The owner's involvement converts from interrupt-driven to batch-driven. The
+agent works every authorized lane to exhaustion without stopping for owner input, queues
+anything owner-gated, and surfaces exactly one consolidated session at the end. Rationale:
+all identity provisioning is now complete (GH read/write, Actions, Sketchfab, marketplace
+accounts); the remaining interrupt classes are checkouts and final decisions, both
+batchable by design.
+
+### Binding riders
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R30 | **Owner-queue discipline:** never stop for an owner ask while ANY non-blocked authorized work remains. Owner-gated items accumulate in `OWNER-QUEUE.md` (one line each: item, why gated, exact action needed, evidence link). Surface to the owner only when (a) all remaining work is owner-blocked, or (b) the final v2 evaluation is ready — whichever comes first. Interim milestones go to the progress feed, not to the owner. | CLAUDE.md standing rule + `OWNER-QUEUE.md` |
+| R31 | **Immediate dispositions of the three open asks:** fern checkout APPROVED (owner executing at the committed resolved URL); river DENIED under the new default rule — an unconfirmable price is a no; it may re-enter the queue only with a machine-confirmed $0; marine-flora asset-fed recipe experiment APPROVED under existing R21 sandbox + R25–R29 license rules (CC-BY assets only; by-nc stays segregated and out of recipes). | one-time + feed evidence; the price-default rule → CLAUDE.md |
+| R32 | **Pre-authorizations (all under existing guardrails, zero new permissions):** (a) A2 ArtStation and A3 Fab activate after batch #1 ships, each gated on its own ToS read — a ToS that forbids the plan DROPS the lane with a recorded finding, no escalation; (b) L5b Superhive discovery + batch prep proceed under the recorded conservative posture; (c) the recipe drive and further asset-fed recipe experiments continue for any attainable niche; (d) taxonomy-proposal and re-verification workflows run on schedule. | dated SPEC §12 note listing (a)–(d) |
+| R33 | **Non-delegations — the irreducible human floor, stated as contract:** $0 checkouts remain the owner's hands, batched (D-001 guardrail #2 stands; Gumroad §14 makes automated checkout ToS-hostile, and this entry explicitly declines to amend that); the wallet (R23 paid-vs-build) and the final premise verdict signature remain the owner's; credentials remain the owner's to mint. No autonomy argument overrides these. | CLAUDE.md standing rule |
+| R34 | **Definition of walk-away done:** when work exhausts or blocks entirely on the owner, present ONE consolidated session: the drained `OWNER-QUEUE.md` (checkout links, each with confirmed price + license), `reports/prd4-final.md` (final v2 evaluation, full tier splits, both pass-rate framings), and the R23 D-00x decision request with priced options. Nothing else interrupts before that. | report contract + CLAUDE.md |
+
+### Acknowledgment protocol for D-005
+
+One feed entry mapping R30–R34 to encodings, then resume: fern probe on receipt → marine
+recipe experiment → batch #1 close-out → A2/A3 ToS reads → L5b → recipe drive → final
+evaluation → the consolidated owner session.
