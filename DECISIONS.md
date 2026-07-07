@@ -88,3 +88,87 @@ Same as D-001: one progress-feed entry mapping R12–R17 to committed encodings 
 one-time actions with evidence links). Sequence after acknowledgment:
 R12 review batch → R13 proposal (await my reply) → R14 build → native re-probe →
 R15 memo → R16 re-eval → D-003 request. Steps 6–8 remain untouched throughout.
+
+---
+
+## D-003 · 2026-07-06 · Premise verdict on decision-grade data: ruler redefined (stricter), threshold kept, harvest greenlit to exhaustion
+
+**Decision authority note:** judged by the owner's advisor-agent at explicit owner
+delegation ("the agent leveraging the engine will sometimes be you — you should be the
+judge"), on the grounds that the corpus's consumer is an LLM agent and the metric must
+reflect what an agent can deterministically invoke. The owner retains the wallet (R23),
+the commit, and unconditional veto via any subsequent D-entry.
+
+**Decision:** The premise — "the engine is buildable on free tooling" — is **not
+falsified**: native pass-rate 15/27 = 55.6% of-probed / 15/37 = 40.5% of-all-acquisitions,
+well above the 30% line, with the golden set re-passed natively (instrument sound). The
+coverage clause is crossed on decision-grade data (8/59 = 13.6%), so this entry rules on
+the ruler itself — and **tightens it** — while moving the final coverage verdict to where
+PRD §2 H1 always placed it: after source exhaustion.
+
+**Basis:** (1) The corpus consumer is an agent; `partial` operators and unverified recipes
+are runtime landmines an agent cannot improvise around — only the deterministic tier
+(full-pass + recipe_verified) is real capability. (2) The R15 audit (link-backed) shows 5
+of 59 niches unattainable in the free market anywhere; measuring against them measures the
+market, not the harvest. (3) Under the redefined ruler the CURRENT reading is 5/54 =
+**9.3%** — lower than the old 13.6% — recorded here so no one can claim the redefinition
+flattered the project. (4) L2's head pile-up (new passes, zero new niches) plus R15's
+35 recipe-attainable niches say the path to 40% runs through L5 GN packs and recipe
+verification, not more of the same lane. (5) PRD structure: §4's early stop-line (premise
+health while scaling) fired twice, forced instrument repair, and is satisfied in function;
+§2 H1's kill condition ("<40% after exhausting all sources") now governs.
+
+### Binding riders
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R18 | **Gate metric v2:** coverage = (full_pass + recipe_verified) / attainable wave-1 Terrain+Veg niches (54, per the R15 link-backed audit; the 5 unattainable are listed, excluded, and revisited if evidence changes). Threshold **unchanged at 40%**. Current v2 reading 5/54 = 9.3% is recorded in the coverage report as the starting point. | code: `coverage.py`; dated SPEC §12 amendment; dated PRD §3 footnote (this IS the calibration §3 declared provisional targets awaited) |
+| R19 | **Verdict venue + tripwire:** the final 40% (v2) evaluation occurs after L5b completes (source exhaustion per H1). The §4 early stop-line is retired as satisfied-in-function. Pass-rate (of-all-acquisitions) remains a live tripwire at EVERY lane gate: <30% at any lane → pause + owner escalation. | dated SPEC §12 amendment; lane-gate check in coverage/report path |
+| R20 | **GREENLIGHT steps 6–8:** L3 → L4 → L5a → L5b per SPEC order, all guardrails intact — L5 acquisition stays human-gated (ToS read first, approval-node checkout batches, GitHub-mirror rerouting before any checkout, receipts acknowledged as creator-visible). Owner is hereby warned: L5 will require approval batches from them. | existing workflows; no loosening permitted |
+| R21 | **Recipe-probe mode gets built** (the machinery R16 identified): drive newly full-passed generative operators / EXEC_DEFAULT with explicit params inside the same sandbox. Recipes count toward the gate ONLY when probe-verified; verify the 5 seeded during the L3/L4 window; enrich recipe candidates from every new full-pass operator. | code: probe recipe mode + `recipes.yaml` growth; dated SPEC §12 amendment |
+| R22 | **Verb×medium grid report:** coverage outputs gain the engine-consumer metric — verified operators per physical verb × medium (ground/water/air/urban/organic) — informational now, the intended Stage-2 entry gate later. This is what the metaphor resolver actually consumes; niches are substitutable, verbs are not. | code: `coverage.py` new table; dated SPEC §12 amendment |
+| R23 | **Paid-vs-build trigger (owner's wallet, reserved):** after L5b + the recipe drive, produce the still-uncovered-attainable list with per-niche priced paid options and recipe-feasibility notes → owner decision D-00x. The 2 "none" niches (karst, coral_atoll) go to the Stage-2 recipe/from-scratch backlog now. No paid acquisition, ever, without that owner entry. | report template + CLAUDE.md standing rule |
+| R24 | **Delegation accountability:** this entry's reasoning is auditable above; any party (owner, builder, reviewer) may challenge it via a new D-entry. The owner's veto is unconditional and requires no justification. | CLAUDE.md standing rule |
+
+### Acknowledgment protocol for D-003
+
+Same as D-001/D-002: one progress-feed entry mapping R18–R24 to committed encodings, then
+proceed in order: R18/R19/R22 encodings → R21 recipe-probe build → L3 → L4 → (owner
+approval batches) L5a → L5b → recipe drive completion → final v2 evaluation →
+reports/prd4-final.md + the D-00x request per R23.
+
+---
+
+## D-004 · 2026-07-07 · Asset lanes added (Sketchfab, ArtStation, Fab) as a new lane class — off the gate, on the map
+
+**Decision (owner-initiated, advisor-shaped):** ArtStation, Fab.com, and Sketchfab join
+the harvest as a NEW lane class — **A-lanes (asset lanes): A1 Sketchfab, A2 ArtStation,
+A3 Fab** — serving Stage-2 scene-asset needs. They are explicitly **excluded from gate v2
+and the verb×medium grid** (they host assets, not procedural operators), and they must
+not delay L5a/L5b, which remain the gate-v2 critical path. This entry supersedes the
+earlier "Fab needs an L5c note" instruction: Fab is A3.
+
+**Basis:** (1) These marketplaces overwhelmingly host static assets our rubric marks
+`procedural: false`; counting them toward the tool gate would corrupt the metric.
+(2) The engine's Stage-2 scenes need exactly this content (props, scans, creatures), so
+harvesting it is real value on a different ledger. (3) Strategic exception: asset + GN
+composition = legitimate recipe. The three "paid-only" R15 niches are marine flora —
+CC0 kelp/coral models plus procedural scatter/growth compositions may convert them to
+free-recipe-attainable, feeding gate v2 through R21's front door. (4) Sketchfab exposes
+an official API for CC-licensed downloads — automatable without browser or checkout.
+
+### Binding riders
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R25 | **A-lane semantics:** entries carry `entry_type: asset_pack`, `procedural: false` expected and fine; never counted in gate v2 or the grid; a separate asset-inventory report tracks them by scene-asset category. Asset-fed recipes (asset + procedural composition) ARE legitimate gate contributors — but only as `recipe_verified` through the standard R21 probe, never by assertion. | registry schema note; `coverage.py` exclusion + new asset report; dated SPEC §12 amendment |
+| R26 | **License becomes load-bearing:** every A-lane item records `usage_license` (cc0 / cc-by / cc-by-nc / cc-by-nd / standard / engine-locked) and format. Engine-locked licenses and `.uasset`-only downloads are useless to us → graveyard with reason recorded. NC/ND items are acquired but SEGREGATED pending a future owner call on engine-output commerciality (parked question — flagged, not decided here). Attribution requirements (cc-by) are recorded per item so Stage-2 can emit credits. | meta schema extension; dated SPEC §12 amendment |
+| R27 | **Asset probe variant:** import-and-render gate — headless import (gltf/fbx/blend) → non-empty geometry → workbench render thumbnail → license + attribution captured. Pure mesh formats skip the code prescan; `.blend` assets still get the driver/embedded-script scan (blend files can carry Python). | code: probe asset mode; dated SPEC §12 amendment |
+| R28 | **Automation posture per source, ToS first:** A1 Sketchfab — official API, automatable for CC-filtered content, token via `.archon/.env` (`SKETCHFAB_TOKEN`), never in chat or YAML. A2 ArtStation / A3 Fab — ToS-check pass with findings posted BEFORE any discovery automation; anything checkout-shaped stays human-gated exactly like L5. All three accounts use the project identity, owner-created. | dated SPEC §12 notes per source; policies file entries |
+| R29 | **Priority protection:** A1 discovery may run in parallel (cheap, API-based); A2/A3 begin only after the first L5a approval batch ships. Any conflict for attention resolves in favor of L5a/L5b. The marine-flora recipe experiment (R25 exception) is authorized as soon as suitable CC0/CC-BY specimens land. | CLAUDE.md standing rule |
+
+### Acknowledgment protocol for D-004
+
+Standard: one feed entry mapping R25–R29 to committed encodings. Sequencing folds into
+the D-003 plan: L5 ToS pass → L5a batches (owner) → A1 in parallel → A2/A3 after batch 1
+→ L5b → recipe drive (including asset-fed marine trio) → final v2 evaluation.
