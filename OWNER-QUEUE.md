@@ -1,29 +1,26 @@
-# OWNER-QUEUE.md — owner-gated items (D-005 R30) · drained for the R34 session 2026-07-07
+# OWNER-QUEUE.md — owner-gated items (D-005 R30) · updated for the D-006 R34 session 2026-07-07
 
-Everything the agent could do autonomously is done (gate v2 9.3% → **29.8%**, all machine-verified).
-The items below are the irreducible human floor (R33) — surfaced now because the final v2 evaluation
-is ready (R30 trigger b). One line each: item · why gated · exact action · evidence.
+Post-D-006 state: R35 review PASSED, premise **CONFIRMED** (R36), gate v2 9.3% → **31.6%** (all
+machine-verified). See `reports/owner-session-2026-07-07.md` for the full consolidated session.
+One line each: item · why gated · exact action · evidence.
 
-## Checkouts ($0, owner's hands — R33)
-- [ ] **fern_generator** · $0 PWYW, owner-hands (Gumroad §14 forbids automated checkout) · you
-  approved+executed — **drop the downloaded .blend into `inputs/dropzone/`** and I probe it next run ·
-  https://sagado.gumroad.com/l/ozxrlu · `reports/l5-batch-1-resolved.md`
-- [ ] **Terrain-generator GN-packs** (future batch) · $0 marketplace checkouts, owner-hands · when you
-  want the last ~10% of the gate, say so and I'll prepare a resolution-passed $0 batch (dune/river/
-  cave/lava GN generators) for your checkout · `reports/prd4-final.md` route 2
+## Resolved this session (D-006)
+- [x] **Premise verdict signature** · signed CONFIRMED via R36 on R35 full PASS · `reports/prd4-final.md` §D-006 R36
+- [x] **fern_generator checkout** · you executed the $0 PWYW; probed sandboxed → **full_pass** (gate +1) · `manifests/sagado__procedural-fern.json`
+- [x] **D-006 paid-vs-build** · decided: continue FREE path; park the 2 unattainables as Stage-2 (no purchase) · `DECISIONS.md` D-006
 
-## Final decisions (owner's signature — R33/R23)
-- [ ] **Premise verdict signature** · the final v2 evaluation is yours to sign (R33) · read
-  `reports/prd4-final.md` and sign the premise verdict (recommended: NOT falsified) · `reports/prd4-final.md`
-- [ ] **D-006 paid-vs-build** · R23 · decide: (1) authorize the continued FREE recipe-drive (shader-probe
-  + $0 GN-pack checkouts → 40% without spend) [recommended]; (2) park `coral_atoll` + `karst` (the only
-  2 unattainable niches) as Stage-2 build-from-scratch; (3) request priced options (no purchase without
-  this D-entry) · `reports/prd4-final.md` §D-006
+## Open — your call (pick a route to 40%, need 5 more niches)
+- [ ] **Route A — free shader niches** · NOT owner-gated (no checkout) · say **"run Route A"** and I acquire+probe
+  5 free_recipe shader niches with the new shader-probe → ~40%, zero spend · `reports/owner-session-2026-07-07.md` §2
+- [ ] **Route B — $0 GN-pack checkout batch** · $0 checkouts are your hands (Gumroad §14) · say **"prep the batch"**
+  and I produce a resolution-passed $0 batch (dune/canyon/cave/lava/volcanic/glacier GN) for one checkout · §2
+
+## Optional decision (anytime)
+- [ ] **Wave-3 rock mapping (R40)** · `mesh.primitive_rock_add` (PASS) → wave-2 `rock_boulder_generator`? · approve or keep as candidate · `reports/taxonomy-proposals.md`
 
 ## Parked questions (flagged, not decided)
-- [ ] **NC/ND engine-output commerciality** (R26) · by-nc/by-nd assets acquired-but-segregated · owner
-  call on whether engine output is commercial · not needed yet (marine trio used CC-BY, not NC)
+- [ ] **NC/ND engine-output commerciality** (R26) · by-nc/by-nd assets acquired-but-segregated · not needed yet (marine trio used CC-BY)
 - [x] **river_generator** · DENIED (R31, unconfirmable $0); re-enters ONLY with machine-confirmed $0 · resolved
 
-## Agent next-increment (NOT owner-gated — will run on your go, or next session)
-- Shader-probe variant → ~5 shader niches (~38%); a $0 GN-pack batch → 40%. Both agent-doable, no spend.
+## Stage-2 backlog (no purchase, R38)
+- `karst_formation`, `coral_atoll_generator` · no free tool/recipe anywhere · build-from-scratch in Stage 2 · `reports/stage2-backlog.md`
