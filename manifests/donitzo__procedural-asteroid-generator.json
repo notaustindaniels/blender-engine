@@ -1,0 +1,44 @@
+{
+  "canonical_id": "donitzo__procedural-asteroid-generator",
+  "artifact": "donitzo__procedural-asteroid-generator.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-07T13:03:20+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": null,
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "donitzo__procedural-asteroid-generator",
+      "verbs": [
+        "generate",
+        "scatter"
+      ],
+      "niches": [
+        "asteroid_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L5-batch1: .blend asteroid generator; renders geometry but no auto-driven delta -> partial. Covers asteroid_generator."
+}

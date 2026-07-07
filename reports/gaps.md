@@ -2,11 +2,10 @@
 
 Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 
-## Terrain & landscape — 27/36 with neither add-on nor recipe
+## Terrain & landscape — 25/36 with neither add-on nor recipe
 
 - `canyon_mesa_generator`  (mesas, hoodoos, badlands)
 - `karst_formation`  (sinkholes, sea stacks)
-- `cliff_rockface_generator`  (strata, overhangs)
 - `scree_talus_scatter`
 - `cave_network_generator`  (SDF tunnels)
 - `stalactite_generator`  (flowstone, columns)
@@ -24,7 +23,6 @@ Zero-operator niches (targets for L2+ harvest or Stage-2 recipe planning):
 - `ice_shader`  (ice shader (materials-family crossref))
 - `crack_generator`
 - `crater_field_generator`  (ejecta, size-frequency scaling)
-- `asteroid_generator`
 - `gas_giant_shader`  (cloud bands, vortices)
 - `planetary_ring_generator`
 - `lava_field_generator`  (pahoehoe, aa, skylights)

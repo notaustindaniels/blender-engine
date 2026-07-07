@@ -72,6 +72,13 @@ MAP = {
     "ra100__planet-gen": dict(
         niches=["alien_biome_generator"], verbs=["generate"], prefer_op="planetgen.create_planet",
         why="L2 native: planetgen.create_planet generates planet meshes/materials -> partial on 4.2/4.5; covers the previously-uncovered alien_biome_generator (alias 'alien landscape environments')."),
+    # ── L5 batch #1 GitHub reroutes (rows 1,2,5,6), probed as GN-packs / assets ──
+    "marcueberall__blender-cliffgenerator": dict(
+        niches=["cliff_rockface_generator"], verbs=["generate"], prefer_op=None,
+        why="L5-batch1: GN-pack .blend; node group 'Generator' binds to a mesh and produces cliff geometry -> FULL PASS all 3 versions. New full-pass niche."),
+    "donitzo__procedural-asteroid-generator": dict(
+        niches=["asteroid_generator"], verbs=["generate", "scatter"], prefer_op=None,
+        why="L5-batch1: .blend asteroid generator; renders geometry but no auto-driven delta -> partial. Covers asteroid_generator."),
 }
 
 

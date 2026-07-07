@@ -43,10 +43,17 @@ def main():
     if a.existing and os.path.exists(a.existing):
         files.append(a.existing)
     for fp in files:
+        # skip pure L5-pending link files (marketplace links, no canonical_id — routed, not add-ons)
+        if os.path.basename(fp).startswith("L5_pending"):
+            continue
         for line in open(fp):
             line = line.strip()
-            if line:
-                rows.append(json.loads(line))
+            if not line:
+                continue
+            row = json.loads(line)
+            if not row.get("canonical_id"):
+                continue          # link-only / malformed rows are not add-on candidates
+            rows.append(row)
 
     n = len(rows)
     parent = list(range(n))

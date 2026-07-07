@@ -112,6 +112,22 @@ def inspect_artifact(path):
         if pys:
             module = os.path.splitext(pys[0])[0]
             info["text"] = z.read(pys[0]).decode("utf-8", "ignore")[:8000]
+    if module:
+        info.update(kind="legacy", module=module, min=parse_min_version(info["text"]))
+        return info
+    # No add-on signature, but the zip carries .blend file(s) -> it's a GN-pack / asset .blend zip.
+    # Extract the largest .blend and route to the gn_pack path (SPEC §0 addon_type (c)).
+    blends = [n for n in names if n.lower().endswith(".blend")]
+    if blends:
+        biggest = max(blends, key=lambda n: z.getinfo(n).file_size)
+        out = "/tmp/_gnpack_extracted.blend"
+        try:
+            with open(out, "wb") as f:
+                f.write(z.read(biggest))
+            info.update(kind="gn_pack", extracted_blend=out)
+            return info
+        except Exception:
+            pass
     info.update(kind="legacy", module=module, min=parse_min_version(info["text"]))
     return info
 
@@ -360,7 +376,7 @@ def main():
     RESULT["detail"]["artifact"] = os.path.basename(path)
 
     info = inspect_artifact(path)
-    info["_path"] = path
+    info["_path"] = info.get("extracted_blend") or path   # gn_pack-from-zip -> use the extracted .blend
     RESULT["artifact_type"] = info["kind"]
     RESULT["declared_min"] = ".".join(map(str, info["min"])) if info.get("min") else None
 

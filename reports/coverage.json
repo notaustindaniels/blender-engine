@@ -5,18 +5,18 @@
   ],
   "gate": {
     "denominator_present_wave1": 59,
-    "decision_covered": 9,
-    "full_pass": 5,
-    "partial": 3,
+    "decision_covered": 11,
+    "full_pass": 6,
+    "partial": 4,
     "recipe_verified": 1,
     "recipe_unverified_claims": 5,
-    "coverage_pct": 15.3
+    "coverage_pct": 18.6
   },
   "gate_v2": {
     "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
-    "numerator": 6,
+    "numerator": 7,
     "denominator_attainable": 54,
-    "coverage_pct": 11.1,
+    "coverage_pct": 13.0,
     "threshold": 40.0,
     "excluded_unattainable": [
       "anemone_generator",
@@ -27,7 +27,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 40.5,
+    "pass_rate_of_all_pct": 42.5,
     "threshold": 30.0,
     "tripped": false
   },
@@ -35,22 +35,24 @@
     "accumulate|ground": 1,
     "branch|organic": 5,
     "deplete|ground": 3,
-    "generate|ground": 6,
+    "generate|air": 1,
+    "generate|ground": 7,
     "generate|organic": 4,
+    "scatter|air": 1,
     "scatter|organic": 1,
     "simulate|ground": 3,
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 27,
-    "acquisitions": 37,
-    "surviving": 15,
-    "pct_of_probed": 55.6,
-    "pct_of_all_acquisitions": 40.5
+    "verified_probed": 30,
+    "acquisitions": 40,
+    "surviving": 17,
+    "pct_of_probed": 56.7,
+    "pct_of_all_acquisitions": 42.5
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 9,
+    "decision_covered": 11,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -62,8 +64,14 @@
     "alien_biome_generator": [
       "ra100__planet-gen"
     ],
+    "asteroid_generator": [
+      "donitzo__procedural-asteroid-generator"
+    ],
     "biome_scatter_system": [
       "community__scatter-objects"
+    ],
+    "cliff_rockface_generator": [
+      "marcueberall__blender-cliffgenerator"
     ],
     "erosion_sim": [
       "community__a-n-t-landscape",
@@ -99,6 +107,7 @@
   },
   "probe_recipe_backlog": [
     "alien_biome_generator",
+    "asteroid_generator",
     "biome_scatter_system",
     "heightmap_stack_tools",
     "ivy_generator"
