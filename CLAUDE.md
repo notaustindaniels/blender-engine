@@ -64,5 +64,14 @@ rule in this file. Remembering it in context does not count.
   $0 checkouts are the owner's hands (batched); the wallet (paid acquisition, R23) and the final
   premise-verdict signature are the owner's; credentials are the owner's to mint. Queue them, never
   self-perform.
+- **The two unattainables are Stage-2 backlog, never purchases (R38, D-006).** `karst_formation` and
+  `coral_atoll_generator` have no free tool or plausible free recipe (R15 audit) and are the ONLY two
+  niches excluded from the gate-v2 attainable denominator. They go to from-scratch/recipe research in
+  Stage 2 (`reports/stage2-backlog.md`) — no paid acquisition without an explicit owner D-entry (R23).
+  Revisit only if new evidence (a free tool or viable composition) surfaces.
+- **Premise CONFIRMED; 40% is an execution milestone, not a kill-line (R36, D-006).** The R35 review
+  passed; the premise is signed CONFIRMED (SPEC §12.8, `reports/prd4-final.md` §D-006 R36). The 40%
+  gate-v2 line is now an execution milestone. The <30% pass-rate tripwire (R19) stays live at every
+  lane. If the no-spend path completes still <40%, the R23 priced-options request fires automatically.
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.
