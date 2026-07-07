@@ -75,3 +75,9 @@ rule in this file. Remembering it in context does not count.
   lane. If the no-spend path completes still <40%, the R23 priced-options request fires automatically.
 - **Never diverge from the SPEC silently.** If reality contradicts it, add a dated SPEC §12
   amendment in the same change.
+- **Two niches are Stage-2 build-from-scratch, never purchased (R38, D-006).** `karst_formation` and
+  `coral_atoll_generator` have no free path anywhere → `reports/stage2-backlog.md` for Stage-2 node
+  authoring. No paid acquisition for them without an owner D-entry.
+- **Quality tiers ride into Stage-2 (R39, D-006).** The handoff exposes per operator/recipe a quality
+  field (full generator vs `quality: minimal` asset-fed composition) so the Stage-2 resolver prefers
+  depth. Asset-fed coverage answered the premise; it must never masquerade as generator sophistication.
