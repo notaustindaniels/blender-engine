@@ -41,3 +41,4 @@ sandbox/scratch/
 
 # Claude Code machine-local settings (not a deliverable)
 .claude/settings.local.json
+.agent-lock

@@ -443,3 +443,7 @@ the marine-trio conversion is affirmative evidence.
    fires automatically into the next consolidated owner session — no further owner prompt needed.
 
 Keep this spec in sync as implementation reveals reality — the code is a lossy projection of it, not the other way around.
+
+### 12.9 Dated addendum — 2026-07-07 (D-006 SINGLE-WRITER; coordination)
+
+**SINGLE-WRITER:** exactly one session owns the main working tree; sessions write/respect `.agent-lock`; parallel work runs in an archon worktree and merges deliberately. Prevents the parallel-edit collision that silently reverted committed work during D-006. The prior session's R37–R40 work is ACCEPTED as-is (reviewer-confirmed at gate v2 18/57 = 31.6%, nothing inflated).

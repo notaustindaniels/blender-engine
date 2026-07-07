@@ -8,6 +8,12 @@ when its durable encoding is committed — code, workflow YAML, a dated SPEC §1
 rule in this file. Remembering it in context does not count.
 
 ## Standing rules
+- **SINGLE-WRITER — exactly one session owns the main working tree (D-006 addendum, 2026-07-07).**
+  A session writes `.agent-lock` (session id + timestamp) on start and respects an existing FRESH lock
+  (do not write the main tree if another session holds it). Any parallel work runs in an **archon
+  worktree** and merges deliberately — never two agents editing `repo/` at once. Rationale: parallel
+  edits silently reverted committed work (the D-006 collision). If you find a lock you don't own and it
+  is fresh, stop and coordinate.
 - **Token hygiene (R2).** `GH_TOKEN` lives in `.archon/.env` (git-ignored). Read it from env
   only — never echo, print, log, or commit it. Validate auth before use; on an auth failure,
   report it **plainly and stop** — NEVER work around an auth failure silently (fallback is an
