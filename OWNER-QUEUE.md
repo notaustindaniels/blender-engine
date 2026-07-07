@@ -1,26 +1,33 @@
-# OWNER-QUEUE.md — owner-gated items (D-005 R30) · updated for the D-006 R34 session 2026-07-07
+# OWNER-QUEUE.md — consolidated session (D-005 R30 / R34) · 2026-07-07 · gate v2 40% CLEARED
 
-Post-D-006 state: R35 review PASSED, premise **CONFIRMED** (R36), gate v2 9.3% → **31.6%** (all
-machine-verified). See `reports/owner-consolidated-2026-07-07.md` for the full consolidated session.
-One line each: item · why gated · exact action · evidence.
+**Route A executed this session, no spend → gate v2 9.3% → 31.6% (fern) → 40.4% CLEARED.** All
+machine-verified. Almost nothing is owner-blocking now.
 
-## Resolved this session (D-006)
-- [x] **Premise verdict signature** · signed CONFIRMED via R36 on R35 full PASS · `reports/prd4-final.md` §D-006 R36
-- [x] **fern_generator checkout** · you executed the $0 PWYW; probed sandboxed → **full_pass** (gate +1) · `manifests/sagado__procedural-fern.json`
-- [x] **D-006 paid-vs-build** · decided: continue FREE path; park the 2 unattainables as Stage-2 (no purchase) · `DECISIONS.md` D-006
+## Resolved this session
+- [x] **Premise verdict** · CONFIRMED (R36) on R35 full PASS (independent re-review) · `reports/prd4-final.md`
+- [x] **fern_generator** · $0 PWYW checkout (yours), probed sandboxed → **full_pass** · `manifests/sagado__procedural-fern.json`
+- [x] **D-006 paid-vs-build** · continue FREE path; park the 2 unattainables (no purchase) · `DECISIONS.md` D-006
+- [x] **Route A — free shader niches (L6 BlenderKit)** · DONE, no checkout · all 5 shader niches
+  (ice/gas_giant/snow/cracked_earth/organic_cell) full_pass via free BlenderKit procedural materials +
+  the R37 shader-probe → **40.4% CLEARED** · `reports/prd4-final.md` FINAL STATUS
+- [x] **Wave-3 rock mapping (R40)** · APPROVED → `rock_boulder_generator` (wave-2; grid not gate v2), mapped
+- [x] **river_generator** · DENIED (R31, unconfirmable $0)
 
-## Open — your call (pick a route to 40%, need 5 more niches)
-- [ ] **Route A — free shader niches** · NOT owner-gated (no checkout) · say **"run Route A"** and I acquire+probe
-  5 free_recipe shader niches with the new shader-probe → ~40%, zero spend · `reports/owner-consolidated-2026-07-07.md` §2
-- [ ] **Route B — $0 GN-pack checkout batch** · $0 checkouts are your hands (Gumroad §14) · say **"prep the batch"**
-  and I produce a resolution-passed $0 batch (dune/canyon/cave/lava/volcanic/glacier GN) for one checkout · §2
+## Optional — depth beyond 40% (NOT needed; the gate is met)
+- [ ] **Route B — $0 GN-pack checkout batch** · $0 checkouts are your hands (Gumroad §14) · say
+  **"prep the batch"** and I produce a resolution-passed $0 batch (dune/canyon/cave/lava GN) for one
+  checkout session. Run only if you want more than 40%.
 
-## Optional decision (anytime)
-- [ ] **Wave-3 rock mapping (R40)** · `mesh.primitive_rock_add` (PASS) → wave-2 `rock_boulder_generator`? · approve or keep as candidate · `reports/taxonomy-proposals.md`
+## R23 status — NOT fired
+The priced-options / paid-vs-build request does **not** fire: per D-006 R36 it triggers only if the
+no-spend path completes with coverage still <40%. The no-spend path reached **40.4%**, so **no
+purchase is requested**. The 2 unattainable niches (`karst_formation`, `coral_atoll_generator`) stay
+Stage-2 build-from-scratch (R38), not purchases.
 
-## Parked questions (flagged, not decided)
-- [ ] **NC/ND engine-output commerciality** (R26) · by-nc/by-nd assets acquired-but-segregated · not needed yet (marine trio used CC-BY)
-- [x] **river_generator** · DENIED (R31, unconfirmable $0); re-enters ONLY with machine-confirmed $0 · resolved
+## Parked (flagged, not decided)
+- [ ] **NC/ND engine-output commerciality** (R26) · by-nc/by-nd assets segregated · not needed yet
+- **BlenderKit Article-5 constraint** (R26) · Stage-2 must not offer 3D-export of BlenderKit-containing
+  scenes; rendered-video output is compliant · `policies/marketplace-tos.md` L6
 
-## Stage-2 backlog (no purchase, R38)
-- `karst_formation`, `coral_atoll_generator` · no free tool/recipe anywhere · build-from-scratch in Stage 2 · `reports/stage2-backlog.md`
+**The gate is met, no-spend, verified. The corpus is ready for the Stage-2 handoff (R39 quality tiers +
+verb×medium grid). No decision is required of you — unless you want depth beyond 40% (Route B).**
