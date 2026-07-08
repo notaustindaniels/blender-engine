@@ -1,0 +1,2157 @@
+{
+ "total_niches": 328,
+ "total_covered": 23,
+ "pct": 7.0,
+ "categories": {
+  "Terrain & landscape": {
+   "present": 39,
+   "covered": 9,
+   "pct": 23.1,
+   "niches": [
+    {
+     "niche": "terrain_generator",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "heightmap_stack_tools",
+     "wave": 1,
+     "status": "partial",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "erosion_sim",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "sediment_deposition",
+     "wave": 1,
+     "status": "recipe_unverified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "canyon_mesa_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "karst_formation",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "none"
+    },
+    {
+     "niche": "cliff_rockface_generator",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "scree_talus_scatter",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "cave_network_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "stalactite_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "river_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "meander_braid_tools",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "waterfall_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "coastline_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "coral_atoll_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "none"
+    },
+    {
+     "niche": "dune_generator",
+     "wave": 1,
+     "status": "recipe_unverified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "sand_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "cracked_earth_shader",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "heat_haze",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "glacier_flow_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "icicle_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "snowdrift_generator",
+     "wave": 1,
+     "status": "recipe_unverified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "frozen_lake_generator",
+     "wave": 1,
+     "status": "recipe_unverified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "snow_ice_shader",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "ice_shader",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "snow_accumulation",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "crack_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "crater_field_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "asteroid_generator",
+     "wave": 1,
+     "status": "partial",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "alien_biome_generator",
+     "wave": 1,
+     "status": "partial",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "gas_giant_shader",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "planetary_ring_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "lava_field_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "volcanic_caldera_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "rice_terrace_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "fissure_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "terrain_stamp_library",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "flow_map_generator",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "road_path_terrain_conform",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Vegetation & organic": {
+   "present": 25,
+   "covered": 14,
+   "pct": 56.0,
+   "niches": [
+    {
+     "niche": "tree_generator",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "space_colonization_growth",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "tree_species_presets",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "dead_tree_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "root_system_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "bonsai_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "grass_meadow_scatter",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "flower_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "succulent_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "fern_generator",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "vine_growth",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "ivy_generator",
+     "wave": 1,
+     "status": "partial",
+     "attainability": "verified_free"
+    },
+    {
+     "niche": "climbing_plant_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "mushroom_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "moss_lichen_growth",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "ground_cover",
+     "wave": 1,
+     "status": "recipe_unverified",
+     "attainability": "free_tool"
+    },
+    {
+     "niche": "orchard_row_scatter",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "kelp_forest_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "paid_only"
+    },
+    {
+     "niche": "anemone_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "paid_only"
+    },
+    {
+     "niche": "coral_generator",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "paid_only"
+    },
+    {
+     "niche": "bioluminescent_flora",
+     "wave": 1,
+     "status": "recipe_verified",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "organic_cell_shader",
+     "wave": 1,
+     "status": "full_pass",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "vein_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "free_recipe"
+    },
+    {
+     "niche": "biome_scatter_system",
+     "wave": 2,
+     "status": "partial",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "growth_along_spline",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Cities & urban": {
+   "present": 18,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "city_builder",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "road_network",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "medieval_town_layout",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lot_subdivision",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "highway_interchange",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "bridge_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tunnel_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rail_track_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "street_furniture_scatter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "power_line_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "sidewalk_detail",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "plaza_park_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "slum_shanty_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "cyberpunk_stack_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "postapoc_ruin_city",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "traffic_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crowd_system",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "neon_signage",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Buildings & architecture": {
+   "present": 17,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "building_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "roof_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "interior_autolayout",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "stair_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "castle_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "gothic_tracery",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "column_order_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "dome_pagoda_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "pipe_routing",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "catwalk_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tank_silo_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "scaffolding_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crane_rig",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "space_station_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "greeble_nodes",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ruin_decay_states",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "room_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Rooms & interiors": {
+   "present": 12,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "parametric_furniture_asset_pack",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "kitchen_bath_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "shelf_filler",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "clutter_scatter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "curtain_blind_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rug_carpet_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chandelier_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "cable_wire_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "interior_lighting_rig",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "book_asset_pack",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "neon_text",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "glassware_assets",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Characters & creatures": {
+   "present": 8,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "parametric_human",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "creature_part_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "scale_feather_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tentacle_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "wing_limb_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "hair_groom_presets",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "anatomy_detail_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "skeleton_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Hard surface & props": {
+   "present": 17,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "sword_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "gun_modular_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "wheel_tire_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "vehicle_body_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tank_tread_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "spaceship_hull_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "boat_hull_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "gear_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chain_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fastener_bearing_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "container_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "bottle_lathe_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "hinge_lock_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "jewelry_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "instrument_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "mechanical_rig",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "metal_kits",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Fabric & soft goods": {
+   "present": 5,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "knit_weave_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "clothing_pattern_3d",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "stitch_seam_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "strap_buckle_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "cloth_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Nature elements & FX geometry": {
+   "present": 24,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "rock_scatter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "pebble_gravel_scatter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "cloud_system",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "skybox_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ocean_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ripple_wake_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "shoreline_foam",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "water_caustics",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "underwater_volumetrics",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "stylized_flame_geo",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lightning_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crystal_growth",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "geode_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "spiderweb_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fence_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "net_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "bubble_foam_packing",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "goo_slime_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "storm_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "star_field",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rock_boulder_generator",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fireworks_choreography",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "volumetric_beam_plotting",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ink_bloom_volumetric",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Abstract, mograph & design": {
+   "present": 14,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "fractal_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "voronoi_shatter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lattice_loft_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "cloner_effector_kit",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "knot_braid_curves",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "maze_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "pattern_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "circuit_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "text_animation_nodes",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "parametric_surface_nodes",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "terminal_ui_generator",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lsystem_grammar",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "attractor_curves",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "spirograph_harmonograph",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Materials & texturing": {
+   "present": 22,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "wood_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "brick_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tile_grout_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "edge_wear_rust",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "marble_stone_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "car_paint_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "leather_skin_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "toon_npr_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "pencil_stencil_system",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "imperfection_overlays",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "camo_pattern_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "glass_material",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lava_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "hologram_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "glitch_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "aurora_sky",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "planet_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "metal_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "water_shader",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "interior_parallax_shader",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "wet_surface_puddles",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fabric_weave_shader",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Simulation-adjacent": {
+   "present": 15,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "differential_growth",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "reaction_diffusion",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "weathering_decay_tools",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rule_scatter_intelligence",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "volume_packing",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "brittle_fracture",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "softbody_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "liquid_in_container",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "smoke_plume_sim",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ember_particles",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rain_particles",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "sawdust_particles",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fish_school_system",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "bird_flock",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "destruction_choreography",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Emergent formation (agents/particles self-organize into targets)": {
+   "present": 14,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "formation_target_morph",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "boids_target_attraction",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "agent_target_assignment",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "formation_reveal_choreography",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "formation_dissolve_scatter",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_fish_school",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_bird_murmuration",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_insect_swarm",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_ant_trail",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_firefly_blink",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_ground_debris",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "locomotion_crowd_human",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crowd_formation_display",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "drone_light_show",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Diegetic data visualization (charts as in-world objects)": {
+   "present": 16,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "math_expression_import",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_bar_diegetic",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_line_diegetic",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_pie_diegetic",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_scatter_diegetic",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_sankey_flow",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chart_rig_area_stacked",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "data_landscape_terrain",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "radial_rings_chart",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "histogram_accumulation",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "regression_reveal",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "venn_overlap_media",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "unit_isotype_chart",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "network_graph_3d",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "waveform_physical",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "infographic_callout_3d",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Physical-process rendering (force-of-nature and craft draw the math)": {
+   "present": 6,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "carve_engrave_toolpath",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "pour_fill_proportional",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "wind_scatter_reveal",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tide_etch_reveal",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "brush_ink_stroke",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "domino_cascade_logic",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Light & shadow as data": {
+   "present": 3,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "shadow_sweep_plot",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "light_matrix_data",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "projection_mapping_data",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: motion fundamentals": {
+   "present": 6,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "noise_jitter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "delay_overshoot",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "spring_damper",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "time_offset_effector",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "sound_drive",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "loop_utilities",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: character & creature": {
+   "present": 12,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "walk_cycle",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "foot_ik_terrain",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tail_dynamics",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "wing_flap",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "breathing_idle",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lookat_layered",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "secondary_jiggle",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "snake_locomotion",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fish_schooling",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crowd_locomotion",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "lipsync",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ragdoll_blend",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: mechanical": {
+   "present": 9,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "wheel_autorotate",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "tread_conveyor",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "gear_drivetrain",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "door_trigger",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "clock_gauge",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "turret_tracking",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "vehicle_suspension",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fold_unfold",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "piston_hydraulics",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: nature & environment": {
+   "present": 8,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "wind_system",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "boat_buoyancy",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "precipitation",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "fire_flicker",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "day_night_cycle",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ambient_life",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "plant_growth",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "season_transition",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: growth, reveal & build": {
+   "present": 10,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "build_reveal",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "scan_wipe",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "draw_on",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "dissolve",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "ink_spread",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "crack_propagation",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "surface_spread",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "droplet_path_race",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "melt_decay_timelapse",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "data_driven_accumulation",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: cloth, rope & soft proxies": {
+   "present": 5,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "fake_cloth",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "rope_sway",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "chain_pendulum",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "inflate",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "jelly_wobble",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: camera & cinematic": {
+   "present": 5,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "camera_rigs",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "handheld_shake",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "auto_framing",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "path_flythrough",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "multicam_sequencer",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: FX & particles": {
+   "present": 6,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "motion_trails",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "footprints",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "impact_debris",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "magic_fx",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "electric_arcs",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "bubbles_steam",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: data-driven & utility": {
+   "present": 8,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "data_import",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "counter_ticker",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "hud_fui",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "typewriter",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "beat_sync",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "sim_bake",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "retime",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "data_to_midi_actuation",
+     "wave": 2,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  },
+  "Animation: stylized / NPR": {
+   "present": 4,
+   "covered": 0,
+   "pct": 0.0,
+   "niches": [
+    {
+     "niche": "boil_lines",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "smear_frames",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "anime_fx",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    },
+    {
+     "niche": "stopmotion",
+     "wave": 1,
+     "status": "GAP",
+     "attainability": "unclassified"
+    }
+   ]
+  }
+ }
+}
