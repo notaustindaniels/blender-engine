@@ -27,7 +27,9 @@ H = {"Authorization": f"Bearer {TOKEN}", "Accept": "application/vnd.github+json"
      "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "blender-vault-harvester/0.1"}
 
 # Terrain/Vegetation-scoped repo-search queries (recall-biased; precision at enrich+coverage).
-QUERIES = {
+# Curated, high-precision queries for the two probe categories; all OTHER categories are
+# auto-derived from the taxonomy below (D-008 R46: full per-category sweep, all 26 categories).
+_CURATED = {
     "terrain": ["blender terrain generator in:name,description,readme",
                 "blender landscape addon in:name,description,readme",
                 "topic:blender-addon terrain", "blender erosion addon in:name,description,readme",
@@ -39,6 +41,34 @@ QUERIES = {
                    "blender addon grass forest in:name,description,readme",
                    "blender addon flower leaf generator in:name,description"],
 }
+
+
+def _build_queries():
+    """Derive per-category GitHub search queries for ALL 26 taxonomy categories (R46). Each category
+    gets a topic query + keyword queries from its name and its niches' distinctive tokens/aliases.
+    R11: this ORDERS the sweep by category; it excludes nothing — the ceiling caps probe order only."""
+    import yaml as _yaml
+    tax = _yaml.safe_load(open(pathlib.Path(__file__).resolve().parents[3] / "inputs/taxonomy.yaml"))
+    STOP = {"generator", "system", "tools", "tool", "addon", "the", "and", "for", "pro", "gen"}
+    out = {}
+    for c in tax["categories"]:
+        key = re.sub(r"[^a-z0-9]+", "_", c["name"].lower()).strip("_").split("_")[0]
+        if key in _CURATED:
+            out[key] = _CURATED[key]; continue
+        kws = []
+        for n in (c.get("niches") or [])[:6]:
+            for t in re.split(r"[_\s\-]+", n["id"]):
+                if t and t not in STOP and len(t) > 3 and t not in kws:
+                    kws.append(t)
+        catword = re.sub(r"[^a-z ]", "", c["name"].lower()).split(" ")[0]
+        q = [f"topic:blender-addon {catword}"]
+        for kw in kws[:5]:
+            q.append(f"blender {kw} addon in:name,description,readme")
+        out[key] = q
+    return out
+
+
+QUERIES = _build_queries()
 
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
