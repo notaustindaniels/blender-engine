@@ -250,3 +250,45 @@ Stage-2 handoff contract is commissioned, and Stage 1 formally closes on complet
 
 One feed entry mapping R41–R45, then: R41 review → Route B batch prep → owner checkout
 session → probe → `HANDOFF.md` + snapshot → `stage1-final.md` → Stage 1 CLOSED.
+
+---
+
+## D-008 · 2026-07-08 · The mission is the library — full-taxonomy harvest campaign WITH the navigation layer built in
+
+**Decision:** Stage 1's closure is **reinterpreted, not revoked**: what closed was the
+premise test and the factory. The MISSION — the comprehensive library the owner specified
+on day one ("the tip of an iceberg... anything and everything conceivable") — stands at
+**10.0% whole-taxonomy (27/269 wave-1)** and now becomes the explicit campaign. Because a
+library only an expert can navigate is not a library, the campaign includes the
+**LLM-navigation layer** (hybrid-RAG knowledge base + progressive-disclosure cards) as a
+first-class deliverable — and because cards are cheapest to mint at gate time, it ships
+INSIDE the harvest, not after it. R45's "read-only repo" rule is amended: this repo
+remains the harvest workspace until campaign completion; `HANDOFF.md` becomes a versioned
+snapshot contract (tagged per milestone).
+
+### Binding riders — the harvest at width
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R46 | **Campaign scope = the entire taxonomy**, all 26 categories, waves 1+2 (328 niches) plus wave-3 intake — every lane re-run WITHOUT the T+V filter: L1 full-catalog classification+probe (all ~998 platform extensions); L2 full per-category signature/keyword sweep to the enumeration ceiling; L3/L4 continued; L5a/L5b at scale with batched checkouts; L6 BlenderKit full free-tier sweep; Route B executed. R11 governs: stars/recency ORDER probing, never exclude enumeration. | lane configs stripped of T+V filters; dated SPEC §12 amendment |
+| R47 | **Campaign metrics replace the retired proxy:** per-category verified coverage (quality-tiered), the full verb×medium grid, and first-class **gap reports** naming market absences per category. No single %-threshold; the target is DOCUMENTED EXHAUSTION per lane per category. The 30% of-all pass-rate tripwire stays live at every lane gate. | coverage.py per-category tables + reports/gaps/ |
+| R48 | **Scale posture:** native CI probing is the authoritative gate at campaign volume; local emulation is dev-only. Throughput + backlog reported on the progress page. Cost stays $0 on public-repo Actions; if limits bite, PROPOSE alternatives as an owner decision — never self-provision. | workflow batching + feed reporting |
+| R49 | **Owner cadence (walk-away contract governs):** recurring touchpoints are checkout batches (~15–25 resolution-passed rows per session) and batched wave-3 approvals; consolidated sessions only; the one unscheduled escalation is the pass-rate tripwire. | CLAUDE.md standing rule |
+| R50 | **Stage 2 may proceed in parallel** in its own repo against tagged HANDOFF snapshots; single-writer holds per repo; campaign completion = final consolidated report per R47 + a closing D-entry that closes the MISSION, not a proxy. | snapshot tagging convention + CLAUDE.md |
+
+### Binding riders — the navigation layer (how any LLM uses the library)
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R51 | **`corpus_kb.db` on the owner's hybrid-RAG template, adopted as-is** (schema.sql, ragdb.py, chunker.py, embedder.py, ingest.py, retrieve.py, reranker.py from `hybrid-rag-template`): a SECOND derived database, rebuilt deterministically from the same JSON manifests that build `corpus.db` — never hand-edited, always regenerable. Graph vocabulary FIXED via CHECKs: node types `{addon, operator, recipe, asset, niche, verb, medium, category, license}`; edge types `{PROVIDES, COVERS, PERFORMS, IN_MEDIUM, COMPOSES, LICENSED, PART_OF, SUBSTITUTES}`. The graveyard is ingested and labeled `state: graveyard` so dead tools are findable-as-dead. | vendored template + kb_build script; dated SPEC §12 amendment |
+| R52 | **Operator cards are GATE ARTIFACTS + three-tier progressive disclosure:** the enrich step, while it already holds the README, mints a ~120-word card per operator and recipe on a fixed template (what it does · verbs · media · niches · quality tier · license obligation · param signature · one example invocation · Blender versions). Tier 0 = `CORPUS.md` (≤2k tokens, committed, versioned with snapshots — the only always-loaded artifact); Tier 1 = cards (what retrieval returns); Tier 2 = full manifests + doc chunks (fetched on selection). Cards for the existing 58 entries are back-filled once. | enrich prompt + card template; CORPUS.md |
+| R53 | **Retrieval doctrine — RETRIEVAL PROPOSES, THE REGISTRY DISPOSES:** hybrid search (FTS5+vector, RRF, optional rerank per the template) and graph walks only ever ROUTE to canonical ids; final selection MUST resolve through `corpus.db` verification state + license obligation before any invocation, and tool selection terminates in deterministic facet queries (verb × medium × quality ≥ tier × license class × blender version). Embedding model is pinned in `meta` (local/open, $0); `content_hash` gives incremental re-ingest as the harvest grows; a model change = recorded full re-embed. `recipe_unverified` and `graveyard` results are returned labeled and are NEVER resolvable at render time. | retrieve/resolve wrapper + CLAUDE.md standing rule |
+| R54 | **The consumption interface — an MCP server (+CLI twins)** over `corpus_kb.db` + `corpus.db`, exposing: `search_capabilities(nl, filters, near)`, `query_registry(verb, medium, niche, quality_min, license_class, blender_ver)`, `get_card(id)`, `get_usage(id)`, `find_substitutes(id|niche)`, `plan_recipe(niche)`. This becomes the PRIMARY interface any fresh LLM — Stage 2 included — uses; `HANDOFF.md` is amended accordingly. | MCP server + HANDOFF amendment |
+| R55 | **The "down pat" bar is falsifiable (H2 redux):** a golden-query eval set (≥30 natural-language needs → expected operator/niche, growing with the corpus) measured in CI — hit@5 ≥ 90% — plus a fresh-context agent resolution test (NL need → verified, license-checked selection, no human help). Regressions BLOCK snapshot tagging. This is the acceptance test for "any LLM can navigate it." | eval harness + CI gate |
+
+### Acknowledgment protocol for D-008
+
+One feed entry mapping R46–R55, then: vendor the template + build `corpus_kb.db` + back-fill
+cards for the existing 58 (R51/R52 first — the KB must exist before the flood) → strip lane
+filters → L1 full catalog → L2 → L6 → L5 cycles → cards minted at every gate pass → eval
+green before every snapshot tag → consolidated owner sessions per R49.
