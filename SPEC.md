@@ -447,3 +447,26 @@ Keep this spec in sync as implementation reveals reality — the code is a lossy
 ### 12.9 Dated addendum — 2026-07-07 (D-006 SINGLE-WRITER; coordination)
 
 **SINGLE-WRITER:** exactly one session owns the main working tree; sessions write/respect `.agent-lock`; parallel work runs in an archon worktree and merges deliberately. Prevents the parallel-edit collision that silently reverted committed work during D-006. The prior session's R37–R40 work is ACCEPTED as-is (reviewer-confirmed at gate v2 18/57 = 31.6%, nothing inflated).
+
+### 12.10 Dated amendment — 2026-07-08 (D-008: full-taxonomy campaign + navigation layer)
+
+**Mission reinterpreted (R46–R50).** Stage-1 closure was the premise test + factory; the MISSION is the
+comprehensive library. The gate-v2 T+V proxy is RETIRED. Every lane re-runs with the T+V filter
+stripped, across all 26 categories / 328 niches + wave-3 intake. Metrics (R47): per-category
+quality-tiered coverage + full verb×medium grid + first-class gap reports; target = DOCUMENTED
+EXHAUSTION per lane per category, no single-% threshold. The <30%-of-all pass-rate tripwire stays live
+at every lane gate (R48 native CI is authoritative at volume; $0 public Actions; limits → owner
+proposal, never self-provision).
+
+**Navigation layer built FIRST (R51–R55).** A second derived DB `corpus_kb.db` on the vendored
+`tools/hybrid-rag-template/` (adopted as-is: schema.sql, ragdb.py, chunker.py, embedder.py, ingest.py,
+retrieve.py, reranker.py), rebuilt deterministically from the SAME JSON manifests as `corpus.db` — never
+hand-edited. Graph vocabulary FIXED via CHECK constraints: node types `{addon, operator, recipe, asset,
+niche, verb, medium, category, license}`; edge types `{PROVIDES, COVERS, PERFORMS, IN_MEDIUM, COMPOSES,
+LICENSED, PART_OF, SUBSTITUTES}`. Graveyard ingested labeled `state: graveyard` (findable-as-dead).
+Operator cards (R52): ~120-word gate-time artifacts, 3-tier progressive disclosure (Tier-0 `CORPUS.md`
+≤2k tokens always-loaded; Tier-1 cards = retrieval returns; Tier-2 full manifests + doc chunks).
+Retrieval doctrine (R53): RETRIEVAL PROPOSES / REGISTRY DISPOSES. Interface (R54): MCP server + CLI
+twins over both DBs, the PRIMARY interface for any fresh LLM. Acceptance (R55): golden-query eval
+hit@5 ≥ 90% + fresh-agent resolution test, gating every snapshot tag. Embedding model pinned in KB
+`meta` (local/open, $0); `content_hash` gives incremental re-ingest; model change = recorded full re-embed.

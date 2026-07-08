@@ -87,3 +87,18 @@ rule in this file. Remembering it in context does not count.
 - **Quality tiers ride into Stage-2 (R39, D-006).** The handoff exposes per operator/recipe a quality
   field (full generator vs `quality: minimal` asset-fed composition) so the Stage-2 resolver prefers
   depth. Asset-fed coverage answered the premise; it must never masquerade as generator sophistication.
+- **Owner cadence in the campaign (R49, D-008).** Recurring touchpoints are ONLY: checkout batches
+  (~15–25 resolution-passed rows/session) and batched wave-3 approvals, delivered as consolidated
+  sessions. The single unscheduled escalation is the <30%-of-all pass-rate tripwire. Never interrupt
+  for anything else while non-blocked authorized work remains (walk-away contract still governs).
+- **Campaign is the MISSION, not a proxy (R50, D-008).** The full-taxonomy harvest (all 26 categories,
+  328 niches + wave-3) runs until DOCUMENTED EXHAUSTION per lane per category (R47) — no single-%
+  threshold. Stage 2 may proceed in parallel in ITS OWN repo against tagged HANDOFF snapshots;
+  single-writer holds PER REPO. Campaign completion = the final R47 report + a closing D-entry that
+  closes the MISSION. This repo stays the harvest workspace until then (R45's read-only rule amended).
+- **RETRIEVAL PROPOSES, THE REGISTRY DISPOSES (R53, D-008).** `corpus_kb.db` hybrid search + graph
+  walks only ROUTE to canonical ids; the FINAL selection MUST resolve through `corpus.db` verification
+  state + license obligation before any invocation, terminating in a deterministic facet query
+  (verb × medium × quality≥tier × license_class × blender_ver). `recipe_unverified` and `graveyard`
+  results are returned LABELED and are NEVER resolvable at render time. The KB is a second DERIVED db —
+  rebuilt from the same JSON manifests, never hand-edited.
