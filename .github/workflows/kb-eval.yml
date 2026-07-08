@@ -1,0 +1,41 @@
+# kb-eval — the R55 acceptance gate in CI (D-008). Rebuilds corpus_kb.db from committed JSON artifacts
+# (manifests + cards + taxonomy + recipes + graveyard), embeds with the PINNED model (ollama bge-m3),
+# and runs the golden-query eval. hit@5 < 0.90 fails the job → BLOCKS snapshot tagging. $0 (public
+# Actions + local open model, R48). Runs on PRs, pushes to main, and every snapshot-* tag.
+name: kb-eval
+on:
+  push:
+    branches: [main]
+    tags: ["snapshot-*", "kb-*"]
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  golden-eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Install ollama + pull the pinned embed model (bge-m3)
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          nohup ollama serve >/tmp/ollama.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://localhost:11434/api/tags >/dev/null && break; sleep 1; done
+          ollama pull bge-m3
+      - name: Rebuild KB from committed JSON + embed (pinned model)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          RAG_DB=corpus_kb.db uv run .archon/scripts/kb_build.py
+          cd tools/hybrid-rag-template
+          RAG_DB=../../corpus_kb.db RAG_EMBED=ollama RAG_EMBED_MODEL=bge-m3 uv run --with numpy python3 -c \
+            "import ragdb;con=ragdb.connect('../../corpus_kb.db');con.execute(\"INSERT OR REPLACE INTO meta(k,v) VALUES('embed_model','ollama:bge-m3')\");con.commit()"
+          RAG_DB=../../corpus_kb.db RAG_EMBED=ollama RAG_EMBED_MODEL=bge-m3 uv run --with numpy python3 embedder.py run
+      - name: Golden-query eval (hit@5 >= 0.90 or FAIL — R55 gate)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          RAG_DB=corpus_kb.db RAG_EMBED=ollama RAG_EMBED_MODEL=bge-m3 uv run --with numpy .archon/eval/eval_golden.py
