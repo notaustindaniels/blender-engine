@@ -413,5 +413,15 @@
     "body": "<p>D-008 read — two halves. <b>Half 1 (R46–R50): the full-taxonomy campaign</b> — T+V proxy retired, every lane re-run filter-stripped across all 26 categories / 328 niches; metrics = per-category coverage + verb×medium grid + first-class gap reports; target = documented exhaustion per lane per category; 30%-of-all tripwire stays live; native CI at volume; owner cadence = checkout batches + wave-3 approvals only; Stage 2 parallel in its own repo vs tagged snapshots.</p>\n<p><b>Half 2 (R51–R55), BUILT FIRST: the navigation layer.</b> <code>corpus_kb.db</code> on the vendored hybrid-RAG template (adopted as-is; graph vocab fixed via CHECKs) · operator cards minted at gate time (~120 words, 3-tier progressive disclosure; <code>CORPUS.md</code> = ≤2k-token Tier-0) · doctrine RETRIEVAL PROPOSES / REGISTRY DISPOSES (graveyard ingested-as-dead) · MCP server + CLI twins as the primary interface for any fresh LLM · golden-query eval (hit@5 ≥ 90% + fresh-agent resolution) gating every snapshot tag.</p>\n<p><b>Encoded:</b> CLAUDE.md standing rules (R49 cadence, R50 per-repo single-writer, R53 doctrine) + SPEC §12.10. <b>Sequence now:</b> vendor ✓ → build KB + back-fill 58 cards → CORPUS.md → MCP/CLI → golden eval → THEN open the floodgates (cards minted at every gate pass).</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 42,
+    "ts": "2026-07-08T17:30:43-04:00",
+    "title": "🧭 Navigation layer COMPLETE (R51–R55) — corpus_kb.db + cards + MCP/CLI; golden eval hit@5=1.0; fresh-agent test PASSED",
+    "tag": "milestone",
+    "status": "nav-layer-complete",
+    "body": "<p><b>D-008 half two shipped BEFORE the floodgates (as ordered).</b> Any fresh LLM can now navigate the library.</p>\n<ul>\n<li><b>R51 corpus_kb.db</b> on the vendored hybrid-RAG template (schema CHECK-fixed to the graph vocabulary): 605 nodes (328 niches · 26 categories · 25 operators · 16 recipes · 137 graveyard-as-dead), 574 edges, 178 chunks embedded with local ollama bge-m3 ($0). Second derived DB — rebuilt from the same JSON manifests, never hand-edited.</li>\n<li><b>R52 cards</b>: 41 Tier-1 ~120-word progressive-disclosure cards (minter runs at gate time); <b>CORPUS.md</b> Tier-0 (594 tokens).</li>\n<li><b>R53 doctrine</b>: RETRIEVAL PROPOSES / REGISTRY DISPOSES — enforced; recipe_unverified + graveyard returned labeled, never resolvable.</li>\n<li><b>R54 interface</b>: MCP server (blender-vault-corpus) + CLI twin, 6 tools, verified working.</li>\n<li><b>R55 acceptance</b>: golden-query eval <b>hit@5 = 1.0</b> (32 queries, threshold 0.90), wired into CI (kb-eval.yml, pinned bge-m3, blocks snapshot tags). Fresh-context agent resolution test <b>PASSED</b> — resolved 3 real needs end-to-end + correctly refused the karst gap with NO human help, and caught 2 real interface bugs (verb facet + license de-prefix) which are now fixed.</li>\n</ul>\n<p>Tagging snapshot <code>snapshot-nav-v1</code> (eval-gated). <b>Next: open the floodgates (R46)</b> — strip lane filters, L1 full catalog → L2 → L6, minting cards at every gate pass, cadence per R49.</p>",
+    "code": "",
+    "media": []
   }
 ]
