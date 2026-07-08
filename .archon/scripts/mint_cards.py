@@ -41,6 +41,23 @@ LIC_OBLIG = {
 }
 
 
+# candidate-metadata license fallback (CI vault is ephemeral; candidate rows carry license — R26)
+_CAND_LIC = {}
+for _cf in glob.glob("candidates/*.jsonl"):
+    for _line in open(_cf):
+        _line = _line.strip()
+        if not _line:
+            continue
+        try:
+            _d = json.loads(_line)
+        except Exception:
+            continue
+        _cid = _d.get("canonical_id")
+        if _cid and _cid not in _CAND_LIC:
+            _lic = _d.get("license")
+            _CAND_LIC[_cid] = (_lic[0] if isinstance(_lic, list) and _lic else _lic) if _lic else None
+
+
 def meta_for(cid):
     for g in glob.glob(f"vault/{cid}/*/meta.json"):
         return json.loads(open(g).read())
@@ -71,7 +88,7 @@ def card_operator(man, op):
     verbs = op.get("verbs") or []
     media = sorted({MEDIUM.get(n, "?") for n in niches})
     meta = meta_for(cid)
-    lic = meta.get("usage_license") or meta.get("license")
+    lic = meta.get("usage_license") or meta.get("license") or _CAND_LIC.get(cid)
     vers = passing_versions(man) or ["4.5"]
     kind = op.get("kind", "bpy_op")
     opid = op.get("id", cid)

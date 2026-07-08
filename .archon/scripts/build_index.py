@@ -43,6 +43,26 @@ def main():
         m = json.loads(open(mp).read())
         metas[m["canonical_id"]] = m
 
+    # license/name fallback from LOCAL candidate metadata — the CI vault is ephemeral, so wave-ingested
+    # add-ons have no local vault meta; the candidate rows carry license 100% (R26 capture at scale).
+    cand = {}
+    for cf in glob.glob("candidates/*.jsonl"):
+        for line in open(cf):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                d = json.loads(line)
+            except Exception:
+                continue
+            cid = d.get("canonical_id")
+            if cid and cid not in cand:
+                lic = d.get("license")
+                if isinstance(lic, list):
+                    lic = lic[0] if lic else None
+                cand[cid] = {"license": lic, "name": d.get("name"), "author": d.get("author"),
+                             "procedural": d.get("procedural"), "addon_type": d.get("addon_type")}
+
     # verification+capability from manifests
     manifests = {}
     for mp in sorted(glob.glob(os.path.join(a.manifests, "*.json"))):
@@ -53,9 +73,12 @@ def main():
     for cid in sorted(set(metas) | set(manifests)):
         meta = metas.get(cid, {})
         man = manifests.get(cid, {})
-        addons.append((cid, meta.get("name") or man.get("name"), meta.get("author"),
-                       meta.get("license"), meta.get("addon_type") or man.get("artifact_type"),
-                       1 if meta.get("procedural") else 0))
+        cm = cand.get(cid, {})
+        addons.append((cid, meta.get("name") or man.get("name") or cm.get("name"),
+                       meta.get("author") or cm.get("author"),
+                       meta.get("license") or cm.get("license"),      # candidate license fallback (R26)
+                       meta.get("addon_type") or man.get("artifact_type") or cm.get("addon_type"),
+                       1 if (meta.get("procedural") or cm.get("procedural")) else 0))
         # per-version verify (skipped_incompatible / quarantine_timeout stored as-is)
         surviving = {}   # ver -> state (pass|partial) — carries the state into coverage (rider 7)
         for ver, vres in sorted((man.get("verify") or {}).items()):
