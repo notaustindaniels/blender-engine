@@ -423,5 +423,15 @@
     "body": "<p><b>D-008 half two shipped BEFORE the floodgates (as ordered).</b> Any fresh LLM can now navigate the library.</p>\n<ul>\n<li><b>R51 corpus_kb.db</b> on the vendored hybrid-RAG template (schema CHECK-fixed to the graph vocabulary): 605 nodes (328 niches · 26 categories · 25 operators · 16 recipes · 137 graveyard-as-dead), 574 edges, 178 chunks embedded with local ollama bge-m3 ($0). Second derived DB — rebuilt from the same JSON manifests, never hand-edited.</li>\n<li><b>R52 cards</b>: 41 Tier-1 ~120-word progressive-disclosure cards (minter runs at gate time); <b>CORPUS.md</b> Tier-0 (594 tokens).</li>\n<li><b>R53 doctrine</b>: RETRIEVAL PROPOSES / REGISTRY DISPOSES — enforced; recipe_unverified + graveyard returned labeled, never resolvable.</li>\n<li><b>R54 interface</b>: MCP server (blender-vault-corpus) + CLI twin, 6 tools, verified working.</li>\n<li><b>R55 acceptance</b>: golden-query eval <b>hit@5 = 1.0</b> (32 queries, threshold 0.90), wired into CI (kb-eval.yml, pinned bge-m3, blocks snapshot tags). Fresh-context agent resolution test <b>PASSED</b> — resolved 3 real needs end-to-end + correctly refused the karst gap with NO human help, and caught 2 real interface bugs (verb facet + license de-prefix) which are now fixed.</li>\n</ul>\n<p>Tagging snapshot <code>snapshot-nav-v1</code> (eval-gated). <b>Next: open the floodgates (R46)</b> — strip lane filters, L1 full catalog → L2 → L6, minting cards at every gate pass, cadence per R49.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 43,
+    "ts": "2026-07-08T19:04:48-04:00",
+    "title": "🌊 Campaign OPEN (D-008 R46) — Wave 1 dispatched: L1 full catalog (904 add-ons, all 26 cats) in native CI",
+    "tag": "milestone",
+    "status": "wave1-running",
+    "body": "<p><b>The floodgates are open.</b> Supervising sharded native-CI waves to documented exhaustion.</p>\n<ul>\n<li><b>Wave 1 (L1 full catalog)</b>: T+V filter stripped → <b>904 add-ons across all 26 categories</b> (thin slice kept only 2). Running in <code>wave-probe.yml</code> (8 parallel native-amd64 shards, hash-verified re-acquire + prescan + sandbox gate).</li>\n<li><b>Downstream pipeline built + committed</b>: R47 gap-report generator (26 categories, baseline 23/328=7.0%), enrich_scale.py (keyword-heuristic niche mapping at scale, labeled + non-clobbering), L2 sweep expanded to all 26 categories, L6 BlenderKit sweep (773 procedural candidates enumerated).</li>\n<li><b>Guardrails unchanged</b>: prescan NEVER_ALLOW quarantines dangerous add-ons automatically; sandbox --network none; single-writer; secrets env-only.</li>\n</ul>\n<p><b>⚠ Flagged for the Wave 1 gate</b>: the &lt;30%-of-all pass-rate tripwire was calibrated for the targeted T+V harvest; at full-catalog scale (UI/exporter add-ons we never expected to pass a generation probe) the of-all rate drops by construction. If it fires I PAUSE + report for an owner D-entry (per R17, never recalibrate by fiat) with both the naive and procedural-subset rates. Interim progress → feed; owner touchpoints only per R49.</p>",
+    "code": "",
+    "media": []
   }
 ]
