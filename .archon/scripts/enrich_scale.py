@@ -75,7 +75,11 @@ def match_niches(text):
         return [], ""
     top = sorted(hits.items(), key=lambda kv: -kv[1])
     best = top[0][1]
-    keep = [nz for nz, s in top if s >= max(2, best)]   # require phrase-strength or the top token
+    # PRECISION over recall (R14: no fabricated coverage). Require a phrase match (score 3) OR 2+ token
+    # hits — a single common-word token (paint/magic/path/data/cell...) matches incidentally and produces
+    # garbage coverage. Concrete-noun single-token misses (cloth->cloth_sim) are honest UNDER-coverage,
+    # surfaced in the gap reports; lift recall later via a curated distinctive-noun allowlist or AI-enrich.
+    keep = [nz for nz, s in top if s >= max(2, best)]
     matched = next((t for t in TOKEN_NICHE if re.search(rf"\b{re.escape(t)}\b", text) and keep and keep[0] in TOKEN_NICHE[t]), "")
     return keep[:2], matched
 
