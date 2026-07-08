@@ -42,3 +42,6 @@ sandbox/scratch/
 # Claude Code machine-local settings (not a deliverable)
 .claude/settings.local.json
 .agent-lock
+
+# D-008 named deliverable — explicitly tracked (vetted no-secret campaign tracker)
+!NEXT-SESSION.md
