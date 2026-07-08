@@ -1,0 +1,40 @@
+{
+  "canonical_id": "jan-hendrik-m-ller__motion-sounds",
+  "artifact": "add-on-motion-sounds-v0.9.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "vse_event.add_sounds_at_z_crossings",
+        "vse_event.select_sound_folder",
+        "vse_event.use_default_sounds"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "vse_event.add_sounds_at_z_crossings",
+        "vse_event.select_sound_folder",
+        "vse_event.use_default_sounds"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "vse_event.add_sounds_at_z_crossings",
+    "vse_event.select_sound_folder",
+    "vse_event.use_default_sounds"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:14+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

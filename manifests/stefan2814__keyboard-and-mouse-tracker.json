@@ -1,0 +1,36 @@
+{
+  "canonical_id": "stefan2814__keyboard-and-mouse-tracker",
+  "artifact": "add-on-keyboardandmousetracker-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.modal_operator"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.modal_operator"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.modal_operator"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:39+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

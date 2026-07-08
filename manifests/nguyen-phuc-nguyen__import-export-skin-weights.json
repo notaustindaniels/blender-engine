@@ -1,0 +1,39 @@
+{
+  "canonical_id": "nguyen-phuc-nguyen__import-export-skin-weights",
+  "artifact": "add-on-import-export-skin-weights-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.export_skin_weights",
+        "object.import_skin_weights"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.export_skin_weights",
+        "object.import_skin_weights"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.export_skin_weights",
+    "object.import_skin_weights"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:11:49+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

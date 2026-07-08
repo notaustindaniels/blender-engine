@@ -1,0 +1,30 @@
+{
+  "canonical_id": "andrewpeel__home-builder-5",
+  "artifact": "add-on-home-builder-5-v5.1.0-windows-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:58:22+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression",
+    "subprocess"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "canonical_id": "shuimeng__auto-sort-collections",
+  "artifact": "add-on-auto-sort-collections-v1.0.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.delete_all_collections",
+        "object.organize_collections",
+        "organize.add_excluded_collection",
+        "organize.add_excluded_object",
+        "organize.add_parent_collection",
+        "organize.refresh_material_list",
+        "organize.remove_exclusion",
+        "organize.remove_parent_collection"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.delete_all_collections",
+        "object.organize_collections",
+        "organize.add_excluded_collection",
+        "organize.add_excluded_object",
+        "organize.add_parent_collection",
+        "organize.refresh_material_list",
+        "organize.remove_exclusion",
+        "organize.remove_parent_collection"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.delete_all_collections",
+    "object.organize_collections",
+    "organize.add_excluded_collection",
+    "organize.add_excluded_object",
+    "organize.add_parent_collection",
+    "organize.refresh_material_list",
+    "organize.remove_exclusion",
+    "organize.remove_parent_collection"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:17+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

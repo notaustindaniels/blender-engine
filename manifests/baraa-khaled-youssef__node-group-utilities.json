@@ -1,0 +1,42 @@
+{
+  "canonical_id": "baraa-khaled-youssef__node-group-utilities",
+  "artifact": "add-on-node-group-utilities-v2.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "node.add_socketmaker",
+        "node.reset_default_values",
+        "node.set_default_values"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "node.add_socketmaker",
+        "node.reset_default_values",
+        "node.set_default_values"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "node.add_socketmaker",
+    "node.reset_default_values",
+    "node.set_default_values"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:20+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

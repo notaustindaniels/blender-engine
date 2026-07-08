@@ -1,0 +1,28 @@
+{
+  "canonical_id": "guitargeek__bulk-asset-tools",
+  "artifact": "add-on-bulk-asset-tools-v1.8.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:59:42+00:00",
+  "prescan_hits": [
+    "subprocess"
+  ]
+}

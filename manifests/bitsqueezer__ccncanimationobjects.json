@@ -1,0 +1,66 @@
+{
+  "canonical_id": "bitsqueezer__ccncanimationobjects",
+  "artifact": "add-on-ccnc-animation-objects-v1.2.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "ccncanim.add_segment",
+        "ccncanim.change_render_settings",
+        "ccncanim.copy_blank_loc",
+        "ccncanim.copy_cutter_loc",
+        "ccncanim.create_animation",
+        "ccncanim.create_camera_setup",
+        "ccncanim.create_gn_setup",
+        "ccncanim.create_spark_effect",
+        "ccncanim.export_segments_csv",
+        "ccncanim.generate_all",
+        "ccncanim.import_segments_csv",
+        "ccncanim.load_segment",
+        "ccncanim.move_segment_down",
+        "ccncanim.move_segment_up",
+        "ccncanim.remove_segment",
+        "ccncanim.update_segment"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ccncanim.add_segment",
+    "ccncanim.change_render_settings",
+    "ccncanim.copy_blank_loc",
+    "ccncanim.copy_cutter_loc",
+    "ccncanim.create_animation",
+    "ccncanim.create_camera_setup",
+    "ccncanim.create_gn_setup",
+    "ccncanim.create_spark_effect",
+    "ccncanim.export_segments_csv",
+    "ccncanim.generate_all",
+    "ccncanim.import_segments_csv",
+    "ccncanim.load_segment",
+    "ccncanim.move_segment_down",
+    "ccncanim.move_segment_up",
+    "ccncanim.remove_segment",
+    "ccncanim.update_segment"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:49+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.4"
+}

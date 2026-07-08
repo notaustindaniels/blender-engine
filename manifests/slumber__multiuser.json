@@ -1,0 +1,33 @@
+{
+  "canonical_id": "slumber__multiuser",
+  "artifact": "add-on-multi-user-v0.7.4-windows-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:20+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "4.3"
+}

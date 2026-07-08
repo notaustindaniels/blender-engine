@@ -1,0 +1,76 @@
+{
+  "canonical_id": "renderrides__autocam",
+  "artifact": "add-on-autocam-v2.0.6.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "ac.sync_speed_from_keys",
+        "autocam.apply_curve",
+        "autocam.apply_recorded_rot",
+        "autocam.bake_autocam",
+        "autocam.build_camera_rig",
+        "autocam.camera_to_curve",
+        "autocam.clear_all_rigs",
+        "autocam.clear_inherited_timing",
+        "autocam.fly_record",
+        "autocam.inherit_timing",
+        "autocam.revert_curve",
+        "autocam.set_active_camera",
+        "autocam.simplify_timing",
+        "autocam.toggle_dev_edition",
+        "autocam.update_timing_base"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ac.sync_speed_from_keys",
+        "autocam.apply_curve",
+        "autocam.apply_recorded_rot",
+        "autocam.bake_autocam",
+        "autocam.build_camera_rig",
+        "autocam.camera_to_curve",
+        "autocam.clear_all_rigs",
+        "autocam.clear_inherited_timing",
+        "autocam.fly_record",
+        "autocam.inherit_timing",
+        "autocam.revert_curve",
+        "autocam.set_active_camera",
+        "autocam.simplify_timing",
+        "autocam.toggle_dev_edition",
+        "autocam.update_timing_base"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ac.sync_speed_from_keys",
+    "autocam.apply_curve",
+    "autocam.apply_recorded_rot",
+    "autocam.bake_autocam",
+    "autocam.build_camera_rig",
+    "autocam.camera_to_curve",
+    "autocam.clear_all_rigs",
+    "autocam.clear_inherited_timing",
+    "autocam.fly_record",
+    "autocam.inherit_timing",
+    "autocam.revert_curve",
+    "autocam.set_active_camera",
+    "autocam.simplify_timing",
+    "autocam.toggle_dev_edition",
+    "autocam.update_timing_base"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:13+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

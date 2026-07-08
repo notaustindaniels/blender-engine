@@ -1,0 +1,37 @@
+{
+  "canonical_id": "alexander-bicukow__run-scripts-from-folder",
+  "artifact": "add-on-blender-run-scripts-from-folder-v0.0.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "rsff.refresh_scripts_list",
+        "wm.run_script_from_folder"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "rsff.refresh_scripts_list",
+        "wm.run_script_from_folder"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "rsff.refresh_scripts_list",
+    "wm.run_script_from_folder"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:04+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,58 @@
+{
+  "canonical_id": "robert-kezives__visibility-check",
+  "artifact": "add-on-k-tools-visibility-check-v2.5.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.check_visibility",
+        "object.equalize_modifiers_to_render",
+        "object.equalize_modifiers_to_viewport",
+        "object.equalize_to_render",
+        "object.equalize_to_viewport",
+        "object.select_object",
+        "object.toggle_temp_hide",
+        "object.toggle_visibility",
+        "object.unhide_all_temp"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.check_visibility",
+        "object.equalize_modifiers_to_render",
+        "object.equalize_modifiers_to_viewport",
+        "object.equalize_to_render",
+        "object.equalize_to_viewport",
+        "object.select_object",
+        "object.toggle_temp_hide",
+        "object.toggle_visibility",
+        "object.unhide_all_temp"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.check_visibility",
+    "object.equalize_modifiers_to_render",
+    "object.equalize_modifiers_to_viewport",
+    "object.equalize_to_render",
+    "object.equalize_to_viewport",
+    "object.select_object",
+    "object.toggle_temp_hide",
+    "object.toggle_visibility",
+    "object.unhide_all_temp"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:06+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

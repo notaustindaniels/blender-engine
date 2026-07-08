@@ -1,0 +1,82 @@
+{
+  "canonical_id": "akhil-alukkaran__cam-tools",
+  "artifact": "add-on-cam-tools-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "camtools.activate_camera",
+        "camtools.auto_level_verticals",
+        "camtools.clear_batch_selection",
+        "camtools.clear_empty_groups",
+        "camtools.create_new_group",
+        "camtools.delete_cameras",
+        "camtools.duplicate_selected_camera",
+        "camtools.mirror_camera_local_x",
+        "camtools.mirror_camera_local_y",
+        "camtools.move_to_group",
+        "camtools.ungroup_cameras",
+        "camtools.view_slot_delete",
+        "camtools.view_slot_recall",
+        "camtools.view_slot_save",
+        "cr.clear_all_overrides",
+        "cr.clear_camera_override",
+        "view3d.add_camera_from_view_exact"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "camtools.activate_camera",
+        "camtools.auto_level_verticals",
+        "camtools.clear_batch_selection",
+        "camtools.clear_empty_groups",
+        "camtools.create_new_group",
+        "camtools.delete_cameras",
+        "camtools.duplicate_selected_camera",
+        "camtools.mirror_camera_local_x",
+        "camtools.mirror_camera_local_y",
+        "camtools.move_to_group",
+        "camtools.ungroup_cameras",
+        "camtools.view_slot_delete",
+        "camtools.view_slot_recall",
+        "camtools.view_slot_save",
+        "cr.clear_all_overrides",
+        "cr.clear_camera_override",
+        "view3d.add_camera_from_view_exact"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "camtools.activate_camera",
+    "camtools.auto_level_verticals",
+    "camtools.clear_batch_selection",
+    "camtools.clear_empty_groups",
+    "camtools.create_new_group",
+    "camtools.delete_cameras",
+    "camtools.duplicate_selected_camera",
+    "camtools.mirror_camera_local_x",
+    "camtools.mirror_camera_local_y",
+    "camtools.move_to_group",
+    "camtools.ungroup_cameras",
+    "camtools.view_slot_delete",
+    "camtools.view_slot_recall",
+    "camtools.view_slot_save",
+    "cr.clear_all_overrides",
+    "cr.clear_camera_override",
+    "view3d.add_camera_from_view_exact"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:19+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

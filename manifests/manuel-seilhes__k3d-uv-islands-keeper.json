@@ -1,0 +1,46 @@
+{
+  "canonical_id": "manuel-seilhes__k3d-uv-islands-keeper",
+  "artifact": "add-on-k3d-uv-islands-keeper-v1.1.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.uvkeeper_add_slot",
+        "object.uvkeeper_clear_slots",
+        "object.uvkeeper_remove_slot",
+        "object.uvkeeper_restore_selection",
+        "object.uvkeeper_restore_slot"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.uvkeeper_add_slot",
+        "object.uvkeeper_clear_slots",
+        "object.uvkeeper_remove_slot",
+        "object.uvkeeper_restore_selection",
+        "object.uvkeeper_restore_slot"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.uvkeeper_add_slot",
+    "object.uvkeeper_clear_slots",
+    "object.uvkeeper_remove_slot",
+    "object.uvkeeper_restore_selection",
+    "object.uvkeeper_restore_slot"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:33+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

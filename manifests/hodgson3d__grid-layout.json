@@ -1,0 +1,49 @@
+{
+  "canonical_id": "hodgson3d__grid-layout",
+  "artifact": "add-on-grid-layout-v1.5.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "uv.get_texel_density",
+        "uv.select_islands_in_udim",
+        "uv.set_texel_density",
+        "uv.shift_uvs",
+        "uv.stack_uvs",
+        "uv.unstack_uvs"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "uv.get_texel_density",
+        "uv.select_islands_in_udim",
+        "uv.set_texel_density",
+        "uv.shift_uvs",
+        "uv.stack_uvs",
+        "uv.unstack_uvs"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "uv.get_texel_density",
+    "uv.select_islands_in_udim",
+    "uv.set_texel_density",
+    "uv.shift_uvs",
+    "uv.stack_uvs",
+    "uv.unstack_uvs"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:08+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

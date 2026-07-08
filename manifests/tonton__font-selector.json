@@ -1,0 +1,29 @@
+{
+  "canonical_id": "tonton__font-selector",
+  "artifact": "add-on-font-selector-v3.2.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:01:39+00:00",
+  "prescan_hits": [
+    "os.system",
+    "open-write"
+  ]
+}

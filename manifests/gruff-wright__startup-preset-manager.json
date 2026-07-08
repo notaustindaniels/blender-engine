@@ -1,0 +1,43 @@
+{
+  "canonical_id": "gruff-wright__startup-preset-manager",
+  "artifact": "add-on-preset-startup-manager-v2.10.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "preset.check_dependencies",
+        "preset.delete_preset",
+        "preset.dependency_queue",
+        "preset.load_selected_preset",
+        "preset.save_current_preset",
+        "preset.scan_folder"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "preset.check_dependencies",
+    "preset.delete_preset",
+    "preset.dependency_queue",
+    "preset.load_selected_preset",
+    "preset.save_current_preset",
+    "preset.scan_folder"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:04+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

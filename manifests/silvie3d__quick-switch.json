@@ -1,0 +1,63 @@
+{
+  "canonical_id": "silvie3d__quick-switch",
+  "artifact": "add-on-s3d-quickswitch-v2.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "s3d.export_config",
+        "s3d.import_config",
+        "scene.add_editor_group",
+        "scene.add_editor_to_group",
+        "scene.move_editor_down",
+        "scene.move_editor_up",
+        "scene.remove_editor_from_group",
+        "scene.remove_editor_group",
+        "wm.cycle_editors",
+        "wm.switch_editor"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "s3d.export_config",
+        "s3d.import_config",
+        "scene.add_editor_group",
+        "scene.add_editor_to_group",
+        "scene.move_editor_down",
+        "scene.move_editor_up",
+        "scene.remove_editor_from_group",
+        "scene.remove_editor_group",
+        "wm.cycle_editors",
+        "wm.switch_editor"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "s3d.export_config",
+    "s3d.import_config",
+    "scene.add_editor_group",
+    "scene.add_editor_to_group",
+    "scene.move_editor_down",
+    "scene.move_editor_up",
+    "scene.remove_editor_from_group",
+    "scene.remove_editor_group",
+    "wm.cycle_editors",
+    "wm.switch_editor"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:02+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

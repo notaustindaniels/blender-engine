@@ -1,0 +1,37 @@
+{
+  "canonical_id": "blendphys__atomic-blender-cluster",
+  "artifact": "add-on-atomic-blender-cluster-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "atom_cluster.load",
+        "mesh.cluster"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "atom_cluster.load",
+        "mesh.cluster"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "atom_cluster.load",
+    "mesh.cluster"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:18+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

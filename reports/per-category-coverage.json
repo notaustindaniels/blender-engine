@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 23,
- "pct": 7.0,
+ "total_covered": 27,
+ "pct": 8.2,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -907,8 +907,8 @@
   },
   "Nature elements & FX geometry": {
    "present": 24,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 4.2,
    "niches": [
     {
      "niche": "rock_scatter",
@@ -1033,7 +1033,7 @@
     {
      "niche": "rock_boulder_generator",
      "wave": 2,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1058,8 +1058,8 @@
   },
   "Abstract, mograph & design": {
    "present": 14,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 7.1,
    "niches": [
     {
      "niche": "fractal_generator",
@@ -1136,7 +1136,7 @@
     {
      "niche": "attractor_curves",
      "wave": 2,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1634,7 +1634,7 @@
     {
      "niche": "light_matrix_data",
      "wave": 2,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     },
     {
@@ -1989,13 +1989,13 @@
   },
   "Animation: camera & cinematic": {
    "present": 5,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 20.0,
    "niches": [
     {
      "niche": "camera_rigs",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -2075,7 +2075,7 @@
     {
      "niche": "data_import",
      "wave": 1,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     },
     {
@@ -2124,8 +2124,8 @@
   },
   "Animation: stylized / NPR": {
    "present": 4,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 25.0,
    "niches": [
     {
      "niche": "boil_lines",
@@ -2136,7 +2136,7 @@
     {
      "niche": "smear_frames",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

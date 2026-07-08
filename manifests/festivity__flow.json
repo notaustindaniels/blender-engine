@@ -1,0 +1,52 @@
+{
+  "canonical_id": "festivity__flow",
+  "artifact": "add-on-festivity-flow-v1.3.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "festivity_flow.add_sway",
+        "festivity_flow.adjust_offset",
+        "festivity_flow.adjust_roll",
+        "festivity_flow.bake_sway",
+        "festivity_flow.batch_offset",
+        "festivity_flow.flip_roll",
+        "festivity_flow.preset_add",
+        "festivity_flow.preset_remove",
+        "festivity_flow.remove_sway"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "festivity_flow.add_sway",
+    "festivity_flow.adjust_offset",
+    "festivity_flow.adjust_roll",
+    "festivity_flow.bake_sway",
+    "festivity_flow.batch_offset",
+    "festivity_flow.flip_roll",
+    "festivity_flow.preset_add",
+    "festivity_flow.preset_remove",
+    "festivity_flow.remove_sway"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:09+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "open-write"
+  ],
+  "declared_min": "4.4"
+}

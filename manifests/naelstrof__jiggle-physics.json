@@ -1,0 +1,69 @@
+{
+  "canonical_id": "naelstrof__jiggle-physics",
+  "artifact": "add-on-jiggle-physics-v4.5.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "anim.jiggle_clear_keyframes",
+        "armature.add_jigglebone_preset",
+        "armature.jiggle_bake",
+        "armature.jiggle_bone_connected_disable",
+        "armature.jiggle_bone_constraints_disable",
+        "armature.jiggle_copy",
+        "armature.jiggle_select",
+        "scene.jiggle_profile",
+        "scene.jiggle_reset",
+        "scene.jiggle_toggle_profiler",
+        "view3d.jiggle_toggle_pose_overlay",
+        "view3d.jiggle_toggle_simulation_overlay"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "anim.jiggle_clear_keyframes",
+        "armature.add_jigglebone_preset",
+        "armature.jiggle_bake",
+        "armature.jiggle_bone_connected_disable",
+        "armature.jiggle_bone_constraints_disable",
+        "armature.jiggle_copy",
+        "armature.jiggle_select",
+        "scene.jiggle_profile",
+        "scene.jiggle_reset",
+        "scene.jiggle_toggle_profiler",
+        "view3d.jiggle_toggle_pose_overlay",
+        "view3d.jiggle_toggle_simulation_overlay"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "anim.jiggle_clear_keyframes",
+    "armature.add_jigglebone_preset",
+    "armature.jiggle_bake",
+    "armature.jiggle_bone_connected_disable",
+    "armature.jiggle_bone_constraints_disable",
+    "armature.jiggle_copy",
+    "armature.jiggle_select",
+    "scene.jiggle_profile",
+    "scene.jiggle_reset",
+    "scene.jiggle_toggle_profiler",
+    "view3d.jiggle_toggle_pose_overlay",
+    "view3d.jiggle_toggle_simulation_overlay"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:57+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

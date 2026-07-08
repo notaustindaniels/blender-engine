@@ -1,0 +1,51 @@
+{
+  "canonical_id": "ivan-perevala__multiple-camera-render",
+  "artifact": "add-on-multiple-camera-render-v4.4.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "bhqrprt.multiple_camera_render",
+        "object.per_camera_clear",
+        "object.per_camera_dump",
+        "render.multiple_camera_render",
+        "scene.mcr_per_camera_enable",
+        "scene.mcr_per_camera_preset_add"
+      ],
+      "render_ok": true,
+      "retried_2x": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "bhqrprt.multiple_camera_render",
+        "object.per_camera_clear",
+        "object.per_camera_dump",
+        "render.multiple_camera_render",
+        "scene.mcr_per_camera_enable",
+        "scene.mcr_per_camera_preset_add"
+      ],
+      "render_ok": true,
+      "retried_2x": true
+    }
+  },
+  "operators": [
+    "bhqrprt.multiple_camera_render",
+    "object.per_camera_clear",
+    "object.per_camera_dump",
+    "render.multiple_camera_render",
+    "scene.mcr_per_camera_enable",
+    "scene.mcr_per_camera_preset_add"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:51+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

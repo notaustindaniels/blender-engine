@@ -21,7 +21,7 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T21:58:06+00:00",
+  "verified_at": "2026-07-08T23:01:01+00:00",
   "prescan_hits": [
     "eval(",
     "open-write",
@@ -34,6 +34,5 @@
     "urllib",
     "exec(",
     "httpx"
-  ],
-  "probed_natively": true
+  ]
 }

@@ -1,0 +1,39 @@
+{
+  "canonical_id": "joan-charmant__quill-import-export",
+  "artifact": "add-on-quill-v1.6.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_scene.quill",
+        "import_scene.quill"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_scene.quill",
+        "import_scene.quill"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.quill",
+    "import_scene.quill"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:46+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

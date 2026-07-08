@@ -1,0 +1,40 @@
+{
+  "canonical_id": "nidus__skkeeper",
+  "artifact": "add-on-shapekey-keeper-v1.8.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "sk.apply_mods_choice_sk",
+        "sk.apply_mods_sk",
+        "sk.apply_subd_sk"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "sk.apply_mods_choice_sk",
+        "sk.apply_mods_sk",
+        "sk.apply_subd_sk"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "sk.apply_mods_choice_sk",
+    "sk.apply_mods_sk",
+    "sk.apply_subd_sk"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:59+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

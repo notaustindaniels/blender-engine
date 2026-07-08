@@ -1,0 +1,34 @@
+{
+  "canonical_id": "blenderbob__distribute",
+  "artifact": "add-on-distribute-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.distribute_selected"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.distribute_selected"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.distribute_selected"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:30+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

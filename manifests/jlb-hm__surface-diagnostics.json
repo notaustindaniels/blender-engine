@@ -1,0 +1,59 @@
+{
+  "canonical_id": "jlb-hm__surface-diagnostics",
+  "artifact": "add-on-surface-diagnostics-v1.4.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "sna.add_material_override",
+        "sna.copy_section_settings",
+        "sna.create_angle_graph",
+        "sna.create_curvature_graph",
+        "sna.create_geometry_sections",
+        "sna.create_sections_cut_geometry",
+        "sna.delete_material_override",
+        "sna.empty_op_placeholder",
+        "sna.modify_attribute_selection",
+        "sna.remove_all_diagnostics",
+        "sna.remove_graph_object",
+        "sna.toggle_item_visibility",
+        "sna.unhide_all_diagnostic_tools"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "sna.add_material_override",
+    "sna.copy_section_settings",
+    "sna.create_angle_graph",
+    "sna.create_curvature_graph",
+    "sna.create_geometry_sections",
+    "sna.create_sections_cut_geometry",
+    "sna.delete_material_override",
+    "sna.empty_op_placeholder",
+    "sna.modify_attribute_selection",
+    "sna.remove_all_diagnostics",
+    "sna.remove_graph_object",
+    "sna.toggle_item_visibility",
+    "sna.unhide_all_diagnostic_tools"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:11:18+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.5"
+}

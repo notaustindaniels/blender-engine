@@ -1,0 +1,5289 @@
+[
+  {
+    "canonical_id": "1p2d__hdri-rotator",
+    "artifact": "add-on-hdrirotator-v1.1.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "view3d.hdri_rotator"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "view3d.hdri_rotator"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "view3d.hdri_rotator"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:58:55+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "3d-interaction-technologies__govie-tools",
+    "artifact": "add-on-govietools-v1.0.22.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:58:58+00:00",
+    "prescan_hits": [
+      "subprocess"
+    ]
+  },
+  {
+    "canonical_id": "61__theme-dictionary",
+    "artifact": "add-on-theme-dictionary-v0.6.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:58:58+00:00",
+    "prescan_hits": [
+      "socket",
+      "open-write"
+    ],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "a2d4f3s1__camera-shift-sync",
+    "artifact": "add-on-camera-shift-sync-v0.2.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "camera_shift_sync.get_distance_from_click",
+          "camera_shift_sync.reinit_d_plane",
+          "camera_shift_sync.reset_plate_style",
+          "css.reset_panel_category"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "camera_shift_sync.get_distance_from_click",
+          "camera_shift_sync.reinit_d_plane",
+          "camera_shift_sync.reset_plate_style",
+          "css.reset_panel_category"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "camera_shift_sync.get_distance_from_click",
+      "camera_shift_sync.reinit_d_plane",
+      "camera_shift_sync.reset_plate_style",
+      "css.reset_panel_category"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:58:58+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "abstracteurdequinteessence__uv-layers-tools-ult",
+    "artifact": "add-on-uv-layers-tools-ult-v1.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.5 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "mesh.ult_add_uv",
+          "mesh.ult_apply_preset",
+          "mesh.ult_delete_uv",
+          "mesh.ult_delete_uv_advanced",
+          "mesh.ult_move_uv_down",
+          "mesh.ult_move_uv_up",
+          "mesh.ult_rename_uv",
+          "mesh.ult_select_without_uv",
+          "mesh.ult_set_active_uv",
+          "mesh.ult_set_render_uv",
+          "mesh.ult_sync_active_uv",
+          "mesh.ult_sync_render_uv",
+          "object.ult_create_preset",
+          "object.ult_delete_preset",
+          "object.ult_edit_preset",
+          "object.ult_manage_presets"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.ult_add_uv",
+      "mesh.ult_apply_preset",
+      "mesh.ult_delete_uv",
+      "mesh.ult_delete_uv_advanced",
+      "mesh.ult_move_uv_down",
+      "mesh.ult_move_uv_up",
+      "mesh.ult_rename_uv",
+      "mesh.ult_select_without_uv",
+      "mesh.ult_set_active_uv",
+      "mesh.ult_set_render_uv",
+      "mesh.ult_sync_active_uv",
+      "mesh.ult_sync_render_uv",
+      "object.ult_create_preset",
+      "object.ult_delete_preset",
+      "object.ult_edit_preset",
+      "object.ult_manage_presets"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:00+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.5"
+  },
+  {
+    "canonical_id": "acggit-lj__popoti-align-helper",
+    "artifact": "add-on-popoti-align-helper-v1.2.7.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.object_align_by_view",
+          "object.tool_kits_fast_align"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.object_align_by_view",
+          "object.tool_kits_fast_align"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.object_align_by_view",
+      "object.tool_kits_fast_align"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:01+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "aflynneastwood__dji-proxy-switcher",
+    "artifact": "add-on-dji-proxy-switcher-v2.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "sequencer.preview_lrf_list",
+          "sequencer.replace_lrf_mp4",
+          "sequencer.replace_mp4_lrf"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "sequencer.preview_lrf_list",
+          "sequencer.replace_lrf_mp4",
+          "sequencer.replace_mp4_lrf"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "sequencer.preview_lrf_list",
+      "sequencer.replace_lrf_mp4",
+      "sequencer.replace_mp4_lrf"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:03+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "alexander-bicukow__run-scripts-from-folder",
+    "artifact": "add-on-blender-run-scripts-from-folder-v0.0.7.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "rsff.refresh_scripts_list",
+          "wm.run_script_from_folder"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "rsff.refresh_scripts_list",
+          "wm.run_script_from_folder"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "rsff.refresh_scripts_list",
+      "wm.run_script_from_folder"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:04+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "andreesalazar__reactor-framework-for-vulkan",
+    "artifact": "andreesalazar__reactor-framework-for-vulkan.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.2 > 3.6"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "python_bl_info",
+    "verified_at": "2026-07-08T22:59:06+00:00",
+    "prescan_hits": [
+      "socket"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "anton-florey__polyzamboni",
+    "artifact": "add-on-polyzamboni-v1.3.0-macos-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:08+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.1"
+  },
+  {
+    "canonical_id": "artin-r__y-a-h-a",
+    "artifact": "add-on-yaha-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:08+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "atrxi__fk-ik-snapping-tools",
+    "artifact": "add-on-fk-ik-snapping-tools-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "pose.fkik_snap_fk_to_ik_left_arm",
+          "pose.fkik_snap_fk_to_ik_left_leg",
+          "pose.fkik_snap_fk_to_ik_right_arm",
+          "pose.fkik_snap_fk_to_ik_right_leg",
+          "pose.fkik_snap_ik_to_fk_left_arm",
+          "pose.fkik_snap_ik_to_fk_left_leg",
+          "pose.fkik_snap_ik_to_fk_right_arm",
+          "pose.fkik_snap_ik_to_fk_right_leg"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "pose.fkik_snap_fk_to_ik_left_arm",
+          "pose.fkik_snap_fk_to_ik_left_leg",
+          "pose.fkik_snap_fk_to_ik_right_arm",
+          "pose.fkik_snap_fk_to_ik_right_leg",
+          "pose.fkik_snap_ik_to_fk_left_arm",
+          "pose.fkik_snap_ik_to_fk_left_leg",
+          "pose.fkik_snap_ik_to_fk_right_arm",
+          "pose.fkik_snap_ik_to_fk_right_leg"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "pose.fkik_snap_fk_to_ik_left_arm",
+      "pose.fkik_snap_fk_to_ik_left_leg",
+      "pose.fkik_snap_fk_to_ik_right_arm",
+      "pose.fkik_snap_fk_to_ik_right_leg",
+      "pose.fkik_snap_ik_to_fk_left_arm",
+      "pose.fkik_snap_ik_to_fk_left_leg",
+      "pose.fkik_snap_ik_to_fk_right_arm",
+      "pose.fkik_snap_ik_to_fk_right_leg"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:08+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "barrunterio__browser-scroll-resize",
+    "artifact": "add-on-browser-scroll-resize-v1.0.6.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "tbycontext.hlist_thumbnailsizedecrease",
+          "tbycontext.hlist_thumbnailsizeincrease",
+          "tbycontext.shorctuts_persistant",
+          "tbycontext.shorcuts_define_defaults_alt",
+          "tbycontext.shorcuts_define_defaults_ctrl",
+          "tbycontext.thumbnailsizedecrease",
+          "tbycontext.thumbnailsizeincrease",
+          "tbycontext.warning_advance_properties"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "tbycontext.hlist_thumbnailsizedecrease",
+          "tbycontext.hlist_thumbnailsizeincrease",
+          "tbycontext.shorctuts_persistant",
+          "tbycontext.shorcuts_define_defaults_alt",
+          "tbycontext.shorcuts_define_defaults_ctrl",
+          "tbycontext.thumbnailsizedecrease",
+          "tbycontext.thumbnailsizeincrease",
+          "tbycontext.warning_advance_properties"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "tbycontext.hlist_thumbnailsizedecrease",
+      "tbycontext.hlist_thumbnailsizeincrease",
+      "tbycontext.shorctuts_persistant",
+      "tbycontext.shorcuts_define_defaults_alt",
+      "tbycontext.shorcuts_define_defaults_ctrl",
+      "tbycontext.thumbnailsizedecrease",
+      "tbycontext.thumbnailsizeincrease",
+      "tbycontext.warning_advance_properties"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:10+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "beneking102__bene-proggen-maps",
+    "artifact": "beneking102__bene-proggen-maps.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.2 > 3.6"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "procgen_maps.export_fbx",
+          "procgen_maps.export_gltf",
+          "procgen_maps.export_json",
+          "procgen_maps.export_svg",
+          "procgen_maps.export_usdz",
+          "procgen_maps.generate_city",
+          "procgen_maps.generate_dungeon",
+          "procgen_maps.generate_terrain",
+          "procgen_maps.render_interior",
+          "procgen_maps.render_showcase"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "procgen_maps.export_fbx",
+          "procgen_maps.export_gltf",
+          "procgen_maps.export_json",
+          "procgen_maps.export_svg",
+          "procgen_maps.export_usdz",
+          "procgen_maps.generate_city",
+          "procgen_maps.generate_dungeon",
+          "procgen_maps.generate_terrain",
+          "procgen_maps.render_interior",
+          "procgen_maps.render_showcase"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "procgen_maps.export_fbx",
+      "procgen_maps.export_gltf",
+      "procgen_maps.export_json",
+      "procgen_maps.export_svg",
+      "procgen_maps.export_usdz",
+      "procgen_maps.generate_city",
+      "procgen_maps.generate_dungeon",
+      "procgen_maps.generate_terrain",
+      "procgen_maps.render_interior",
+      "procgen_maps.render_showcase"
+    ],
+    "prescan": "clean",
+    "artifact_type": "python_bl_info",
+    "verified_at": "2026-07-08T22:59:12+00:00",
+    "prescan_hits": [
+      "driver-expression",
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "bhimax__texture-file-path-editor",
+    "artifact": "add-on-texture-manager-v2.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "node.cleanup_all",
+          "node.cleanup_selected",
+          "texmgr.clear_usage_search",
+          "texmgr.copy_path",
+          "texmgr.delete_missing",
+          "texmgr.deselect_all",
+          "texmgr.filter_by_status",
+          "texmgr.focus_usage_material",
+          "texmgr.gather",
+          "texmgr.multi_edit_path",
+          "texmgr.open_in_image_editor",
+          "texmgr.open_node",
+          "texmgr.pack_selected",
+          "texmgr.paths_absolute",
+          "texmgr.paths_relative",
+          "texmgr.refresh",
+          "texmgr.relocate",
+          "texmgr.remap_dupes",
+          "texmgr.rename_image",
+          "texmgr.search_usage",
+          "texmgr.select_by_status",
+          "texmgr.select_usage_objects",
+          "texmgr.set_source_filter",
+          "texmgr.toggle_group",
+          "texmgr.toggle_select",
+          "texmgr.toggle_usage_group",
+          "texmgr.toggle_usage_select",
+          "texmgr.unpack"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "node.cleanup_all",
+          "node.cleanup_selected",
+          "texmgr.clear_usage_search",
+          "texmgr.copy_path",
+          "texmgr.delete_missing",
+          "texmgr.deselect_all",
+          "texmgr.filter_by_status",
+          "texmgr.focus_usage_material",
+          "texmgr.gather",
+          "texmgr.multi_edit_path",
+          "texmgr.open_in_image_editor",
+          "texmgr.open_node",
+          "texmgr.pack_selected",
+          "texmgr.paths_absolute",
+          "texmgr.paths_relative",
+          "texmgr.refresh",
+          "texmgr.relocate",
+          "texmgr.remap_dupes",
+          "texmgr.rename_image",
+          "texmgr.search_usage",
+          "texmgr.select_by_status",
+          "texmgr.select_usage_objects",
+          "texmgr.set_source_filter",
+          "texmgr.toggle_group",
+          "texmgr.toggle_select",
+          "texmgr.toggle_usage_group",
+          "texmgr.toggle_usage_select",
+          "texmgr.unpack"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "node.cleanup_all",
+      "node.cleanup_selected",
+      "texmgr.clear_usage_search",
+      "texmgr.copy_path",
+      "texmgr.delete_missing",
+      "texmgr.deselect_all",
+      "texmgr.filter_by_status",
+      "texmgr.focus_usage_material",
+      "texmgr.gather",
+      "texmgr.multi_edit_path",
+      "texmgr.open_in_image_editor",
+      "texmgr.open_node",
+      "texmgr.pack_selected",
+      "texmgr.paths_absolute",
+      "texmgr.paths_relative",
+      "texmgr.refresh",
+      "texmgr.relocate",
+      "texmgr.remap_dupes",
+      "texmgr.rename_image",
+      "texmgr.search_usage",
+      "texmgr.select_by_status",
+      "texmgr.select_usage_objects",
+      "texmgr.set_source_filter",
+      "texmgr.toggle_group",
+      "texmgr.toggle_select",
+      "texmgr.toggle_usage_group",
+      "texmgr.toggle_usage_select",
+      "texmgr.unpack"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:14+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "blenderbob__blueprints",
+    "artifact": "add-on-blueprints-v1.0.3.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:16+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "blendphys__atomic-blender-cluster",
+    "artifact": "add-on-atomic-blender-cluster-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "atom_cluster.load",
+          "mesh.cluster"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "atom_cluster.load",
+          "mesh.cluster"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "atom_cluster.load",
+      "mesh.cluster"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:18+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "brendan-parmer__node-to-python",
+    "artifact": "add-on-node-to-python-v4.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "ntp.add_compositor_node_group_slot",
+          "ntp.add_geometry_node_group_slot",
+          "ntp.add_light_slot",
+          "ntp.add_line_style_slot",
+          "ntp.add_material_slot",
+          "ntp.add_scene_slot",
+          "ntp.add_shader_node_group_slot",
+          "ntp.add_world_slot",
+          "ntp.export",
+          "ntp.remove_compositor_node_group_slot",
+          "ntp.remove_geometry_node_group_slot",
+          "ntp.remove_light_slot",
+          "ntp.remove_line_style_slot",
+          "ntp.remove_material_slot",
+          "ntp.remove_scene_slot",
+          "ntp.remove_shader_node_group_slot",
+          "ntp.remove_world_slot"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "ntp.add_compositor_node_group_slot",
+          "ntp.add_geometry_node_group_slot",
+          "ntp.add_light_slot",
+          "ntp.add_line_style_slot",
+          "ntp.add_material_slot",
+          "ntp.add_scene_slot",
+          "ntp.add_shader_node_group_slot",
+          "ntp.add_world_slot",
+          "ntp.export",
+          "ntp.remove_compositor_node_group_slot",
+          "ntp.remove_geometry_node_group_slot",
+          "ntp.remove_light_slot",
+          "ntp.remove_line_style_slot",
+          "ntp.remove_material_slot",
+          "ntp.remove_scene_slot",
+          "ntp.remove_shader_node_group_slot",
+          "ntp.remove_world_slot"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "ntp.add_compositor_node_group_slot",
+      "ntp.add_geometry_node_group_slot",
+      "ntp.add_light_slot",
+      "ntp.add_line_style_slot",
+      "ntp.add_material_slot",
+      "ntp.add_scene_slot",
+      "ntp.add_shader_node_group_slot",
+      "ntp.add_world_slot",
+      "ntp.export",
+      "ntp.remove_compositor_node_group_slot",
+      "ntp.remove_geometry_node_group_slot",
+      "ntp.remove_light_slot",
+      "ntp.remove_line_style_slot",
+      "ntp.remove_material_slot",
+      "ntp.remove_scene_slot",
+      "ntp.remove_shader_node_group_slot",
+      "ntp.remove_world_slot"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:21+00:00",
+    "prescan_hits": [
+      "open-write",
+      "socket"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "bujus-krachus__web3d-x3d-vrml2-format",
+    "artifact": "add-on-web3d-x3d-vrml2-format-v2.5.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:22+00:00",
+    "prescan_hits": [
+      "open-write",
+      "os.system",
+      "requests",
+      "socket",
+      "urllib"
+    ]
+  },
+  {
+    "canonical_id": "cemilberk__script-manager-pro",
+    "artifact": "add-on-script-manager-pro-v0.0.3.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "script_manager.open_script",
+          "script_manager.open_script_folder",
+          "script_manager.refresh_list",
+          "script_manager.run_script",
+          "script_manager.save_metadata",
+          "script_manager.toggle_edit_mode",
+          "script_manager.toggle_favorite"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "script_manager.open_script",
+      "script_manager.open_script_folder",
+      "script_manager.refresh_list",
+      "script_manager.run_script",
+      "script_manager.save_metadata",
+      "script_manager.toggle_edit_mode",
+      "script_manager.toggle_favorite"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:22+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "chenkin123__toggle-emulate-3-button-mouse",
+    "artifact": "add-on-emu3bm-v1.4.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "wm.toggle_emulate_3bm"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "wm.toggle_emulate_3bm"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "wm.toggle_emulate_3bm"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:23+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "clonephaze__3mf-import-export",
+    "artifact": "add-on-threemf-io-v2.7.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:25+00:00",
+    "prescan_hits": [
+      "urllib",
+      "open-write",
+      "socket",
+      "base64-decode",
+      "subprocess"
+    ]
+  },
+  {
+    "canonical_id": "community__3d-viewport-pie-menus",
+    "artifact": "add-on-viewport-pie-menus-v1.7.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:25+00:00",
+    "prescan_hits": [
+      "open-write",
+      "urllib",
+      "__import__"
+    ]
+  },
+  {
+    "canonical_id": "community__btracer",
+    "artifact": "add-on-btracer-v1.2.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "curve.btgrow",
+          "curve.btwriting",
+          "object.btconvertcurve",
+          "object.btfcnoise",
+          "object.btmeshfollow",
+          "object.btobjectsconnect",
+          "object.btobjecttrace",
+          "object.btreset",
+          "object.colorblender",
+          "object.colorblenderclear",
+          "particles.connect",
+          "particles.particletrace"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "curve.btgrow",
+          "curve.btwriting",
+          "object.btconvertcurve",
+          "object.btfcnoise",
+          "object.btmeshfollow",
+          "object.btobjectsconnect",
+          "object.btobjecttrace",
+          "object.btreset",
+          "object.colorblender",
+          "object.colorblenderclear",
+          "particles.connect",
+          "particles.particletrace"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "curve.btgrow",
+      "curve.btwriting",
+      "object.btconvertcurve",
+      "object.btfcnoise",
+      "object.btmeshfollow",
+      "object.btobjectsconnect",
+      "object.btobjecttrace",
+      "object.btreset",
+      "object.colorblender",
+      "object.colorblenderclear",
+      "particles.connect",
+      "particles.particletrace"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:25+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "community__dynamic-context-menu",
+    "artifact": "add-on-dynamic-context-menu-v1.9.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.set_object_mode",
+          "object.setorigintoselected",
+          "selectedit.edge",
+          "selectedit.edgesfaces",
+          "selectedit.face",
+          "selectedit.vertex",
+          "selectedit.vertsedges",
+          "selectedit.vertsedgesfaces",
+          "selectedit.vertsfaces",
+          "view3d.display_wire_all",
+          "view3d.interactive_mode_grease_pencil",
+          "view3d.interactive_mode_text",
+          "view3d.snap_cursor_selected_to_center",
+          "view3d.snap_cursor_to_edge_intersection"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.set_object_mode",
+          "object.setorigintoselected",
+          "selectedit.edge",
+          "selectedit.edgesfaces",
+          "selectedit.face",
+          "selectedit.vertex",
+          "selectedit.vertsedges",
+          "selectedit.vertsedgesfaces",
+          "selectedit.vertsfaces",
+          "view3d.display_wire_all",
+          "view3d.interactive_mode_grease_pencil",
+          "view3d.interactive_mode_text",
+          "view3d.snap_cursor_selected_to_center",
+          "view3d.snap_cursor_to_edge_intersection"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.set_object_mode",
+      "object.setorigintoselected",
+      "selectedit.edge",
+      "selectedit.edgesfaces",
+      "selectedit.face",
+      "selectedit.vertex",
+      "selectedit.vertsedges",
+      "selectedit.vertsedgesfaces",
+      "selectedit.vertsfaces",
+      "view3d.display_wire_all",
+      "view3d.interactive_mode_grease_pencil",
+      "view3d.interactive_mode_text",
+      "view3d.snap_cursor_selected_to_center",
+      "view3d.snap_cursor_to_edge_intersection"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:28+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "community__geodesic-domes",
+    "artifact": "add-on-geodesic-domes-v0.3.6.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:30+00:00",
+    "prescan_hits": [
+      "eval(",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "community__material-library",
+    "artifact": "add-on-material-library-v0.6.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:30+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "community__paint-palettes",
+    "artifact": "add-on-paint-palettes-v0.9.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "paint.reset_weight_palette",
+          "paint.select_color",
+          "paint.select_weight",
+          "palette.load_gimp_palette",
+          "palette.preset_add",
+          "palette_props.add_color",
+          "palette_props.remove_color",
+          "palette_props.sample_tool_color"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "paint.reset_weight_palette",
+          "paint.select_color",
+          "paint.select_weight",
+          "palette.load_gimp_palette",
+          "palette.preset_add",
+          "palette_props.add_color",
+          "palette_props.remove_color",
+          "palette_props.sample_tool_color"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "paint.reset_weight_palette",
+      "paint.select_color",
+      "paint.select_weight",
+      "palette.load_gimp_palette",
+      "palette.preset_add",
+      "palette_props.add_color",
+      "palette_props.remove_color",
+      "palette_props.sample_tool_color"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:30+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "community__simplify-curves",
+    "artifact": "add-on-simplify-curves-plus-v1.1.3.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "curve.remove_double",
+          "curve.simplify",
+          "graph.simplify"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "curve.remove_double",
+          "curve.simplify",
+          "graph.simplify"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "curve.remove_double",
+      "curve.simplify",
+      "graph.simplify"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:32+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "community__turnaround-camera",
+    "artifact": "add-on-turnaround-camera-v0.3.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "object.rotate_around"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "object.rotate_around"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.rotate_around"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:34+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "cosmosmythos__gp-tween-c",
+    "artifact": "add-on-gp-tween-v2.4.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.3 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "gp.resample_selected_stroke",
+          "gp.set_handle_mode_auto",
+          "gp.set_handle_mode_vector",
+          "gp.set_points_visible",
+          "gpencil.add_tween_modifier",
+          "gpencil.bake_tween",
+          "gpencil.linkmode",
+          "gpencil.linkstrokes",
+          "gpencil.on_off",
+          "gpencil.remove_easing"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "gp.resample_selected_stroke",
+      "gp.set_handle_mode_auto",
+      "gp.set_handle_mode_vector",
+      "gp.set_points_visible",
+      "gpencil.add_tween_modifier",
+      "gpencil.bake_tween",
+      "gpencil.linkmode",
+      "gpencil.linkstrokes",
+      "gpencil.on_off",
+      "gpencil.remove_easing"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:37+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.3"
+  },
+  {
+    "canonical_id": "cxivo__terrain-erosion-simulator",
+    "artifact": "cxivo__terrain-erosion-simulator.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.0 > 3.6"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "python_bl_info",
+    "verified_at": "2026-07-08T22:59:38+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.0"
+  },
+  {
+    "canonical_id": "dan-gry__asset-browser-capture-thumbnail-from-viewport",
+    "artifact": "add-on-capture-thumbnails-from-viewport-v1.0.3.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "asset_browser.capture_viewport_thumbnail"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "asset_browser.capture_viewport_thumbnail"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "asset_browser.capture_viewport_thumbnail"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:41+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "daringcuteseal__beantextures",
+    "artifact": "add-on-beantextures-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "beantextures.auto_import_images",
+          "beantextures.clear_links",
+          "beantextures.connector_add",
+          "beantextures.connector_popup_show",
+          "beantextures.connector_reload_all_group_list",
+          "beantextures.connector_reload_group_list",
+          "beantextures.connector_remove",
+          "beantextures.connector_remove_all",
+          "beantextures.connector_set_target_material",
+          "beantextures.generate_node_tree",
+          "beantextures.icon_select",
+          "beantextures.icon_set",
+          "beantextures.import_image",
+          "beantextures.init_enum_driver",
+          "beantextures.new_config",
+          "beantextures.new_link",
+          "beantextures.new_node_group",
+          "beantextures.remove_all_configs",
+          "beantextures.remove_config",
+          "beantextures.remove_link",
+          "beantextures.show_pie_menu_item",
+          "pose.connector_popup_list_show"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "beantextures.auto_import_images",
+          "beantextures.clear_links",
+          "beantextures.connector_add",
+          "beantextures.connector_popup_show",
+          "beantextures.connector_reload_all_group_list",
+          "beantextures.connector_reload_group_list",
+          "beantextures.connector_remove",
+          "beantextures.connector_remove_all",
+          "beantextures.connector_set_target_material",
+          "beantextures.generate_node_tree",
+          "beantextures.icon_select",
+          "beantextures.icon_set",
+          "beantextures.import_image",
+          "beantextures.init_enum_driver",
+          "beantextures.new_config",
+          "beantextures.new_link",
+          "beantextures.new_node_group",
+          "beantextures.remove_all_configs",
+          "beantextures.remove_config",
+          "beantextures.remove_link",
+          "beantextures.show_pie_menu_item",
+          "pose.connector_popup_list_show"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "beantextures.auto_import_images",
+      "beantextures.clear_links",
+      "beantextures.connector_add",
+      "beantextures.connector_popup_show",
+      "beantextures.connector_reload_all_group_list",
+      "beantextures.connector_reload_group_list",
+      "beantextures.connector_remove",
+      "beantextures.connector_remove_all",
+      "beantextures.connector_set_target_material",
+      "beantextures.generate_node_tree",
+      "beantextures.icon_select",
+      "beantextures.icon_set",
+      "beantextures.import_image",
+      "beantextures.init_enum_driver",
+      "beantextures.new_config",
+      "beantextures.new_link",
+      "beantextures.new_node_group",
+      "beantextures.remove_all_configs",
+      "beantextures.remove_config",
+      "beantextures.remove_link",
+      "beantextures.show_pie_menu_item",
+      "pose.connector_popup_list_show"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:43+00:00",
+    "prescan_hits": [
+      "socket"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "dartmeadow__arc-edge",
+    "artifact": "add-on-arc-edge-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:46+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "deathshot-747__piemenu-everywhere",
+    "artifact": "add-on-piemenu-everywhere-v1.4.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "anidata.link",
+          "bevelsmooth.set",
+          "cloth.modifier",
+          "collection.link",
+          "collision.modifier",
+          "compositornode.editor",
+          "cycles.engine",
+          "dopesheet.mode",
+          "dynamicpaint.modifier",
+          "eeveenext.engine",
+          "fcurve.mode",
+          "fluid.modifier",
+          "forcefield.add",
+          "geonodes.editor",
+          "grid.fill",
+          "location.apply",
+          "mats.link",
+          "modifiers.apply",
+          "mods.copy",
+          "nla.mode",
+          "normals.recalculate",
+          "obdata.link",
+          "remove.doubles",
+          "rigidbody.add",
+          "rigidbodycons.add",
+          "rotation.apply",
+          "scale.apply",
+          "scaleandrotation.apply",
+          "scene.clear",
+          "shadeautosmooth.set",
+          "shadeflat.set",
+          "shadernodes.editor",
+          "shadesmooth.set",
+          "softbody.modifier",
+          "texturenode.editor",
+          "timeline.mode",
+          "transform.reset",
+          "workbench.engine"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "anidata.link",
+          "bevelsmooth.set",
+          "cloth.modifier",
+          "collection.link",
+          "collision.modifier",
+          "compositornode.editor",
+          "cycles.engine",
+          "dopesheet.mode",
+          "dynamicpaint.modifier",
+          "eeveenext.engine",
+          "fcurve.mode",
+          "fluid.modifier",
+          "forcefield.add",
+          "geonodes.editor",
+          "grid.fill",
+          "location.apply",
+          "mats.link",
+          "modifiers.apply",
+          "mods.copy",
+          "nla.mode",
+          "normals.recalculate",
+          "obdata.link",
+          "remove.doubles",
+          "rigidbody.add",
+          "rigidbodycons.add",
+          "rotation.apply",
+          "scale.apply",
+          "scaleandrotation.apply",
+          "scene.clear",
+          "shadeautosmooth.set",
+          "shadeflat.set",
+          "shadernodes.editor",
+          "shadesmooth.set",
+          "softbody.modifier",
+          "texturenode.editor",
+          "timeline.mode",
+          "transform.reset",
+          "workbench.engine"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "anidata.link",
+      "bevelsmooth.set",
+      "cloth.modifier",
+      "collection.link",
+      "collision.modifier",
+      "compositornode.editor",
+      "cycles.engine",
+      "dopesheet.mode",
+      "dynamicpaint.modifier",
+      "eeveenext.engine",
+      "fcurve.mode",
+      "fluid.modifier",
+      "forcefield.add",
+      "geonodes.editor",
+      "grid.fill",
+      "location.apply",
+      "mats.link",
+      "modifiers.apply",
+      "mods.copy",
+      "nla.mode",
+      "normals.recalculate",
+      "obdata.link",
+      "remove.doubles",
+      "rigidbody.add",
+      "rigidbodycons.add",
+      "rotation.apply",
+      "scale.apply",
+      "scaleandrotation.apply",
+      "scene.clear",
+      "shadeautosmooth.set",
+      "shadeflat.set",
+      "shadernodes.editor",
+      "shadesmooth.set",
+      "softbody.modifier",
+      "texturenode.editor",
+      "timeline.mode",
+      "transform.reset",
+      "workbench.engine"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:46+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "dev-patel__splats",
+    "artifact": "add-on-splats-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "render.apply_preview_radius",
+          "render.create_camera_sphere",
+          "render.preview_next_camera",
+          "render.preview_previous_camera",
+          "render.render_all_cameras",
+          "render.toggle_camera_preview"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "render.apply_preview_radius",
+          "render.create_camera_sphere",
+          "render.preview_next_camera",
+          "render.preview_previous_camera",
+          "render.render_all_cameras",
+          "render.toggle_camera_preview"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "render.apply_preview_radius",
+      "render.create_camera_sphere",
+      "render.preview_next_camera",
+      "render.preview_previous_camera",
+      "render.render_all_cameras",
+      "render.toggle_camera_preview"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:48+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "dinesh007__audio-exporter",
+    "artifact": "add-on-audio-exporter-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.5 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "sequencer.export_audio_filebrowser"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "sequencer.export_audio_filebrowser"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:51+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.5"
+  },
+  {
+    "canonical_id": "distinctive-mark__batch-bone-constraints",
+    "artifact": "add-on-batch-bone-constraints-v1.1.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "anim.batch_copy",
+          "anim.batch_delete",
+          "anim.batch_imitate",
+          "anim.batch_new",
+          "anim.remove_copy",
+          "anim.remove_imitate"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "anim.batch_copy",
+          "anim.batch_delete",
+          "anim.batch_imitate",
+          "anim.batch_new",
+          "anim.remove_copy",
+          "anim.remove_imitate"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "anim.batch_copy",
+      "anim.batch_delete",
+      "anim.batch_imitate",
+      "anim.batch_new",
+      "anim.remove_copy",
+      "anim.remove_imitate"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:52+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "dr-sybren__unlooped",
+    "artifact": "add-on-unlooped-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:54+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "dshot92__save-with-versioning",
+    "artifact": "add-on-save-with-versioning-v2.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T22:59:56+00:00",
+    "prescan_hits": [
+      "subprocess"
+    ]
+  },
+  {
+    "canonical_id": "efimpetelin__render-overscan",
+    "artifact": "add-on-render-overscan-v0.1.16.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:56+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "emrgn-arch__structural-topology-optimization",
+    "artifact": "add-on-struct-topo-opt-v0.4.3-windows-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:56+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "eridanus-epsilon__e-topology-smooth",
+    "artifact": "add-on-e-topology-smooth-v2.7.8-windows-arm64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:58+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.1"
+  },
+  {
+    "canonical_id": "felipe-g__the-bendybones-toolkit",
+    "artifact": "add-on-bbone-tools-v1.6.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "convert.bbones",
+          "set.bbonehandle"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "convert.bbones",
+          "set.bbonehandle"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "convert.bbones",
+      "set.bbonehandle"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T22:59:58+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "flakmoppen__multirow",
+    "artifact": "add-on-multirow-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "file.close_text_data",
+          "file.import_text_data",
+          "file.new_txt",
+          "file.select_txt",
+          "object.simple_collect"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "file.close_text_data",
+      "file.import_text_data",
+      "file.new_txt",
+      "file.select_txt",
+      "object.simple_collect"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:01+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "ftw3dforge__ftw-flattening-toolset",
+    "artifact": "add-on-ftw-flattening-toolset-v2.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:02+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "globglob3d__controller-link",
+    "artifact": "add-on-controller-link-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:02+00:00",
+    "prescan_hits": [
+      "socket",
+      "driver-expression"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "guillaume-bissieres__fill-mesh",
+    "artifact": "add-on-fill-mesh-v1.0.8.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "fillmesh.detect_hole",
+          "fillmesh.fill_mesh",
+          "fillmesh.fill_mesh_select",
+          "fillmesh.fill_shape",
+          "fillmesh.fill_shape_select",
+          "fillmesh.repair_notches",
+          "fillmesh.simple_quad_fill",
+          "fillmesh.snap_vertex"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "fillmesh.detect_hole",
+          "fillmesh.fill_mesh",
+          "fillmesh.fill_mesh_select",
+          "fillmesh.fill_shape",
+          "fillmesh.fill_shape_select",
+          "fillmesh.repair_notches",
+          "fillmesh.simple_quad_fill",
+          "fillmesh.snap_vertex"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "fillmesh.detect_hole",
+      "fillmesh.fill_mesh",
+      "fillmesh.fill_mesh_select",
+      "fillmesh.fill_shape",
+      "fillmesh.fill_shape_select",
+      "fillmesh.repair_notches",
+      "fillmesh.simple_quad_fill",
+      "fillmesh.snap_vertex"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:04+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "hans-xwh__wiggle-bones",
+    "artifact": "add-on-wiggle-bones-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.5 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "wiggle.bake",
+          "wiggle.cleanup",
+          "wiggle.copy",
+          "wiggle.rebuild",
+          "wiggle.reset",
+          "wiggle.select"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "wiggle.bake",
+      "wiggle.cleanup",
+      "wiggle.copy",
+      "wiggle.rebuild",
+      "wiggle.reset",
+      "wiggle.select"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:06+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.5"
+  },
+  {
+    "canonical_id": "hisanimations__global-copy-nodes",
+    "artifact": "add-on-global-copy-nodes-v1.0.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "global_copy_nodes.temp_path_setter",
+          "node.global_clipboard_copy",
+          "node.global_clipboard_paste"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "global_copy_nodes.temp_path_setter",
+          "node.global_clipboard_copy",
+          "node.global_clipboard_paste"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "global_copy_nodes.temp_path_setter",
+      "node.global_clipboard_copy",
+      "node.global_clipboard_paste"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:07+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "ibotpl__attribute-baker",
+    "artifact": "add-on-attribute-baker-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:09+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "ilumetric__color-randomizer",
+    "artifact": "add-on-color-randomizer-v1.3.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "cr.del_prefix",
+          "cr.set_color"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "cr.del_prefix",
+          "cr.set_color"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "cr.del_prefix",
+      "cr.set_color"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:09+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "itscubetime__fastpbr",
+    "artifact": "itscubetime__fastpbr.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:00:12+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "os.system",
+      "exec(",
+      "ctypes",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "jacob-beatty__custom-grid-scales",
+    "artifact": "add-on-custom-grid-scales-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "view3d.add_custom_grid_scale",
+          "view3d.grid_scale_cycle",
+          "view3d.remove_grid_scale"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "view3d.add_custom_grid_scale",
+          "view3d.grid_scale_cycle",
+          "view3d.remove_grid_scale"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "view3d.add_custom_grid_scale",
+      "view3d.grid_scale_cycle",
+      "view3d.remove_grid_scale"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:12+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "jan-hendrik-m-ller__motion-sounds",
+    "artifact": "add-on-motion-sounds-v0.9.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "vse_event.add_sounds_at_z_crossings",
+          "vse_event.select_sound_folder",
+          "vse_event.use_default_sounds"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "vse_event.add_sounds_at_z_crossings",
+          "vse_event.select_sound_folder",
+          "vse_event.use_default_sounds"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "vse_event.add_sounds_at_z_crossings",
+      "vse_event.select_sound_folder",
+      "vse_event.use_default_sounds"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:14+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "jens-ne__build-map-importer",
+    "artifact": "add-on-io-import-build-map-v1.4.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "import_build.map"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "import_build.map"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "import_build.map"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:15+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "jonny-b__sierpinski-triangle",
+    "artifact": "add-on-sierpinski-triangle-v1.0.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "mesh.add_sierpinski_pyramid",
+          "object.sierpinski_triangle"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "mesh.add_sierpinski_pyramid",
+          "object.sierpinski_triangle"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.add_sierpinski_pyramid",
+      "object.sierpinski_triangle"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:17+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "jr3dful__texops",
+    "artifact": "add-on-texops-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "texops.arcsm_generate",
+          "texops.arcsm_load_image",
+          "texops.arcsm_preview_input",
+          "texops.bitpack_load_image",
+          "texops.bitpack_pack",
+          "texops.bitpack_preview",
+          "texops.channel_load_image",
+          "texops.channel_pack",
+          "texops.channel_preview",
+          "texops.clear_channel",
+          "texops.crop",
+          "texops.dilation_generate",
+          "texops.dilation_load_image",
+          "texops.dilation_preview_mask",
+          "texops.dilation_show_input",
+          "texops.flip_h",
+          "texops.flip_v",
+          "texops.get_image_size",
+          "texops.imagetools_redo",
+          "texops.imagetools_undo",
+          "texops.invert_channel",
+          "texops.invert_rgb",
+          "texops.invert_rgba",
+          "texops.make_grayscale",
+          "texops.mapconv_convert",
+          "texops.mapconv_load_ao",
+          "texops.mapconv_load_height",
+          "texops.mapconv_load_normal",
+          "texops.mapconv_preview",
+          "texops.mirror",
+          "texops.msdf_generate",
+          "texops.offset",
+          "texops.pbr_correct",
+          "texops.pbr_load_albedo",
+          "texops.pbr_load_packed",
+          "texops.pbr_preview",
+          "texops.pbr_validate",
+          "texops.rasterizer_generate",
+          "texops.resize",
+          "texops.resolution_load_image",
+          "texops.resolution_pack",
+          "texops.resolution_preview",
+          "texops.rgba_refresh",
+          "texops.rgba_reset",
+          "texops.rgba_toggle_channel",
+          "texops.rgba_toggle_transparency",
+          "texops.rotate",
+          "texops.scale",
+          "texops.sdf_generate",
+          "texops.sdf_load_image",
+          "texops.sdf_preset",
+          "texops.sdf_preview_edge",
+          "texops.sdf_preview_threshold",
+          "texops.sdf_show_input",
+          "texops.seamless_generate",
+          "texops.seamless_load_image",
+          "texops.seamless_preview",
+          "texops.seamless_preview_tile",
+          "texops.unpacker_load_image",
+          "texops.unpacker_show_image"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "texops.arcsm_generate",
+          "texops.arcsm_load_image",
+          "texops.arcsm_preview_input",
+          "texops.bitpack_load_image",
+          "texops.bitpack_pack",
+          "texops.bitpack_preview",
+          "texops.channel_load_image",
+          "texops.channel_pack",
+          "texops.channel_preview",
+          "texops.clear_channel",
+          "texops.crop",
+          "texops.dilation_generate",
+          "texops.dilation_load_image",
+          "texops.dilation_preview_mask",
+          "texops.dilation_show_input",
+          "texops.flip_h",
+          "texops.flip_v",
+          "texops.get_image_size",
+          "texops.imagetools_redo",
+          "texops.imagetools_undo",
+          "texops.invert_channel",
+          "texops.invert_rgb",
+          "texops.invert_rgba",
+          "texops.make_grayscale",
+          "texops.mapconv_convert",
+          "texops.mapconv_load_ao",
+          "texops.mapconv_load_height",
+          "texops.mapconv_load_normal",
+          "texops.mapconv_preview",
+          "texops.mirror",
+          "texops.msdf_generate",
+          "texops.offset",
+          "texops.pbr_correct",
+          "texops.pbr_load_albedo",
+          "texops.pbr_load_packed",
+          "texops.pbr_preview",
+          "texops.pbr_validate",
+          "texops.rasterizer_generate",
+          "texops.resize",
+          "texops.resolution_load_image",
+          "texops.resolution_pack",
+          "texops.resolution_preview",
+          "texops.rgba_refresh",
+          "texops.rgba_reset",
+          "texops.rgba_toggle_channel",
+          "texops.rgba_toggle_transparency",
+          "texops.rotate",
+          "texops.scale",
+          "texops.sdf_generate",
+          "texops.sdf_load_image",
+          "texops.sdf_preset",
+          "texops.sdf_preview_edge",
+          "texops.sdf_preview_threshold",
+          "texops.sdf_show_input",
+          "texops.seamless_generate",
+          "texops.seamless_load_image",
+          "texops.seamless_preview",
+          "texops.seamless_preview_tile",
+          "texops.unpacker_load_image",
+          "texops.unpacker_show_image"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "texops.arcsm_generate",
+      "texops.arcsm_load_image",
+      "texops.arcsm_preview_input",
+      "texops.bitpack_load_image",
+      "texops.bitpack_pack",
+      "texops.bitpack_preview",
+      "texops.channel_load_image",
+      "texops.channel_pack",
+      "texops.channel_preview",
+      "texops.clear_channel",
+      "texops.crop",
+      "texops.dilation_generate",
+      "texops.dilation_load_image",
+      "texops.dilation_preview_mask",
+      "texops.dilation_show_input",
+      "texops.flip_h",
+      "texops.flip_v",
+      "texops.get_image_size",
+      "texops.imagetools_redo",
+      "texops.imagetools_undo",
+      "texops.invert_channel",
+      "texops.invert_rgb",
+      "texops.invert_rgba",
+      "texops.make_grayscale",
+      "texops.mapconv_convert",
+      "texops.mapconv_load_ao",
+      "texops.mapconv_load_height",
+      "texops.mapconv_load_normal",
+      "texops.mapconv_preview",
+      "texops.mirror",
+      "texops.msdf_generate",
+      "texops.offset",
+      "texops.pbr_correct",
+      "texops.pbr_load_albedo",
+      "texops.pbr_load_packed",
+      "texops.pbr_preview",
+      "texops.pbr_validate",
+      "texops.rasterizer_generate",
+      "texops.resize",
+      "texops.resolution_load_image",
+      "texops.resolution_pack",
+      "texops.resolution_preview",
+      "texops.rgba_refresh",
+      "texops.rgba_reset",
+      "texops.rgba_toggle_channel",
+      "texops.rgba_toggle_transparency",
+      "texops.rotate",
+      "texops.scale",
+      "texops.sdf_generate",
+      "texops.sdf_load_image",
+      "texops.sdf_preset",
+      "texops.sdf_preview_edge",
+      "texops.sdf_preview_threshold",
+      "texops.sdf_show_input",
+      "texops.seamless_generate",
+      "texops.seamless_load_image",
+      "texops.seamless_preview",
+      "texops.seamless_preview_tile",
+      "texops.unpacker_load_image",
+      "texops.unpacker_show_image"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:19+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "justonil__quick-j-connect-vertex-path",
+    "artifact": "add-on-quickj-v1.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "mesh.quick_connect"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "mesh.quick_connect"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.quick_connect"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:22+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "k-naoki__pinsolver",
+    "artifact": "add-on-pin-solver-v1.1.3-linux-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "view3d.pinsolver_add_pin",
+          "view3d.pinsolver_add_target",
+          "view3d.pinsolver_auto_raycast",
+          "view3d.pinsolver_auto_raycast_single",
+          "view3d.pinsolver_bake_animation",
+          "view3d.pinsolver_clear_pins",
+          "view3d.pinsolver_edit_pins",
+          "view3d.pinsolver_pick_2d",
+          "view3d.pinsolver_pick_3d",
+          "view3d.pinsolver_remove_pin",
+          "view3d.pinsolver_remove_target",
+          "view3d.pinsolver_send_to_layout",
+          "view3d.pinsolver_set_reference_frame",
+          "view3d.pinsolver_set_solve_target",
+          "view3d.pinsolver_solve",
+          "view3d.pinsolver_sync_clip",
+          "view3d.pinsolver_sync_trackers",
+          "view3d.pinsolver_toggle_pin_mode",
+          "view3d.pinsolver_toggle_show_pins",
+          "view3d.pinsolver_tweak"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "view3d.pinsolver_add_pin",
+          "view3d.pinsolver_add_target",
+          "view3d.pinsolver_auto_raycast",
+          "view3d.pinsolver_auto_raycast_single",
+          "view3d.pinsolver_bake_animation",
+          "view3d.pinsolver_clear_pins",
+          "view3d.pinsolver_edit_pins",
+          "view3d.pinsolver_pick_2d",
+          "view3d.pinsolver_pick_3d",
+          "view3d.pinsolver_remove_pin",
+          "view3d.pinsolver_remove_target",
+          "view3d.pinsolver_send_to_layout",
+          "view3d.pinsolver_set_reference_frame",
+          "view3d.pinsolver_set_solve_target",
+          "view3d.pinsolver_solve",
+          "view3d.pinsolver_sync_clip",
+          "view3d.pinsolver_sync_trackers",
+          "view3d.pinsolver_toggle_pin_mode",
+          "view3d.pinsolver_toggle_show_pins",
+          "view3d.pinsolver_tweak"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "view3d.pinsolver_add_pin",
+      "view3d.pinsolver_add_target",
+      "view3d.pinsolver_auto_raycast",
+      "view3d.pinsolver_auto_raycast_single",
+      "view3d.pinsolver_bake_animation",
+      "view3d.pinsolver_clear_pins",
+      "view3d.pinsolver_edit_pins",
+      "view3d.pinsolver_pick_2d",
+      "view3d.pinsolver_pick_3d",
+      "view3d.pinsolver_remove_pin",
+      "view3d.pinsolver_remove_target",
+      "view3d.pinsolver_send_to_layout",
+      "view3d.pinsolver_set_reference_frame",
+      "view3d.pinsolver_set_solve_target",
+      "view3d.pinsolver_solve",
+      "view3d.pinsolver_sync_clip",
+      "view3d.pinsolver_sync_trackers",
+      "view3d.pinsolver_toggle_pin_mode",
+      "view3d.pinsolver_toggle_show_pins",
+      "view3d.pinsolver_tweak"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:24+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "kenken__camera-viewer",
+    "artifact": "add-on-camera-viewer-v1.1.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "camera_viewer.add_hotkey",
+          "screen.modify_camera_viewer",
+          "screen.navigation_camera_viewer",
+          "screen.rest_camera_viewer",
+          "screen.set_camera_viewer_space",
+          "screen.toggle_camera_viewer"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "camera_viewer.add_hotkey",
+      "screen.modify_camera_viewer",
+      "screen.navigation_camera_viewer",
+      "screen.rest_camera_viewer",
+      "screen.set_camera_viewer_space",
+      "screen.toggle_camera_viewer"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:28+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "kiara-bagattini__bagapie",
+    "artifact": "add-on-bagapie-v11.0.10.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "cleared",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:29+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "open-write",
+      "socket",
+      "exec("
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "kvendy__animated-texture-brush",
+    "artifact": "add-on-animated-brush-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "paint.animated_brush_modal"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "paint.animated_brush_modal"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:33+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "leafybush7__shape-key-amp-vertex-groups-utilities-enhanced",
+    "artifact": "add-on-shape-key-utilities-enhanced-v1.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.5 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.add_shape_key_with_value",
+          "object.add_shape_key_with_value_edit_safe",
+          "object.apply_all_shape_keys_confirm",
+          "object.blend_factor_options",
+          "object.blend_from_locked_add",
+          "object.blend_from_locked_remove",
+          "object.blend_from_locked_shape_key",
+          "object.combine_shape_keys",
+          "object.copy_selected_shape_key",
+          "object.copy_selected_shape_key_edit_safe",
+          "object.copy_selected_shape_key_ui",
+          "object.delete_all_shape_keys_confirm",
+          "object.delete_all_unlocked_shape_keys_confirm",
+          "object.delete_all_vertex_groups_confirm",
+          "object.delete_unlocked_shape_keys",
+          "object.delete_unlocked_vertex_groups_confirm",
+          "object.disable_all_unlocked_shape_keys",
+          "object.enable_all_shape_keys",
+          "object.invert_shape_key_locks",
+          "object.invert_vertex_group_locks",
+          "object.lock_all_shape_keys",
+          "object.lock_all_vertex_groups",
+          "object.move_locked_shape_keys",
+          "object.move_locked_shape_keys_down",
+          "object.move_locked_shape_keys_down_edit_safe",
+          "object.move_locked_shape_keys_edit_safe",
+          "object.move_locked_shape_keys_to_bottom",
+          "object.move_locked_shape_keys_to_bottom_edit_safe",
+          "object.move_locked_shape_keys_to_top",
+          "object.move_locked_shape_keys_to_top_edit_safe",
+          "object.move_locked_shape_keys_up",
+          "object.move_locked_shape_keys_up_edit_safe",
+          "object.move_locked_vertex_groups_down",
+          "object.move_locked_vertex_groups_to_bottom",
+          "object.move_locked_vertex_groups_to_top",
+          "object.move_locked_vertex_groups_up",
+          "object.move_shape_key_down_edit_safe",
+          "object.move_shape_key_to_bottom",
+          "object.move_shape_key_to_bottom_edit_safe",
+          "object.move_shape_key_to_top",
+          "object.move_shape_key_to_top_edit_safe",
+          "object.move_shape_key_up_edit_safe",
+          "object.new_shape_from_mix",
+          "object.new_shape_from_mix_edit_safe",
+          "object.remove_blend_from_locked_shape_key",
+          "object.remove_shape_key_edit_safe",
+          "object.rename_locked_to_l",
+          "object.rename_locked_to_r",
+          "object.rename_suffix_settings",
+          "object.rename_vertex_groups_to_l",
+          "object.rename_vertex_groups_to_r",
+          "object.rename_vg_suffix_settings",
+          "object.reset_to_basis",
+          "object.reset_to_basis_shape_key",
+          "object.separate_shape_key_symmetrical",
+          "object.swap_locked_rl",
+          "object.toggle_shape_key_group_lock",
+          "object.toggle_shape_key_value",
+          "object.transfer_shape_key_edit_safe",
+          "object.transfer_shape_key_ui"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.add_shape_key_with_value",
+      "object.add_shape_key_with_value_edit_safe",
+      "object.apply_all_shape_keys_confirm",
+      "object.blend_factor_options",
+      "object.blend_from_locked_add",
+      "object.blend_from_locked_remove",
+      "object.blend_from_locked_shape_key",
+      "object.combine_shape_keys",
+      "object.copy_selected_shape_key",
+      "object.copy_selected_shape_key_edit_safe",
+      "object.copy_selected_shape_key_ui",
+      "object.delete_all_shape_keys_confirm",
+      "object.delete_all_unlocked_shape_keys_confirm",
+      "object.delete_all_vertex_groups_confirm",
+      "object.delete_unlocked_shape_keys",
+      "object.delete_unlocked_vertex_groups_confirm",
+      "object.disable_all_unlocked_shape_keys",
+      "object.enable_all_shape_keys",
+      "object.invert_shape_key_locks",
+      "object.invert_vertex_group_locks",
+      "object.lock_all_shape_keys",
+      "object.lock_all_vertex_groups",
+      "object.move_locked_shape_keys",
+      "object.move_locked_shape_keys_down",
+      "object.move_locked_shape_keys_down_edit_safe",
+      "object.move_locked_shape_keys_edit_safe",
+      "object.move_locked_shape_keys_to_bottom",
+      "object.move_locked_shape_keys_to_bottom_edit_safe",
+      "object.move_locked_shape_keys_to_top",
+      "object.move_locked_shape_keys_to_top_edit_safe",
+      "object.move_locked_shape_keys_up",
+      "object.move_locked_shape_keys_up_edit_safe",
+      "object.move_locked_vertex_groups_down",
+      "object.move_locked_vertex_groups_to_bottom",
+      "object.move_locked_vertex_groups_to_top",
+      "object.move_locked_vertex_groups_up",
+      "object.move_shape_key_down_edit_safe",
+      "object.move_shape_key_to_bottom",
+      "object.move_shape_key_to_bottom_edit_safe",
+      "object.move_shape_key_to_top",
+      "object.move_shape_key_to_top_edit_safe",
+      "object.move_shape_key_up_edit_safe",
+      "object.new_shape_from_mix",
+      "object.new_shape_from_mix_edit_safe",
+      "object.remove_blend_from_locked_shape_key",
+      "object.remove_shape_key_edit_safe",
+      "object.rename_locked_to_l",
+      "object.rename_locked_to_r",
+      "object.rename_suffix_settings",
+      "object.rename_vertex_groups_to_l",
+      "object.rename_vertex_groups_to_r",
+      "object.rename_vg_suffix_settings",
+      "object.reset_to_basis",
+      "object.reset_to_basis_shape_key",
+      "object.separate_shape_key_symmetrical",
+      "object.swap_locked_rl",
+      "object.toggle_shape_key_group_lock",
+      "object.toggle_shape_key_value",
+      "object.transfer_shape_key_edit_safe",
+      "object.transfer_shape_key_ui"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:34+00:00",
+    "prescan_hits": [
+      "driver-expression"
+    ],
+    "declared_min": "4.5"
+  },
+  {
+    "canonical_id": "lije-morgan__better-bend",
+    "artifact": "add-on-better-bend-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "object.better_bend",
+          "object.better_bend_bake"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "object.better_bend",
+          "object.better_bend_bake"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.better_bend",
+      "object.better_bend_bake"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:35+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "longlivethecube__cad2cube-dxf-importer",
+    "artifact": "add-on-cad2cube-v1.5.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "import_scene.cad2cube_dxf"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "import_scene.cad2cube_dxf"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "import_scene.cad2cube_dxf"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:37+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "lumpengnom__wireframe-color-tools",
+    "artifact": "add-on-wireframe-color-tools-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "wirecolormaterial.button",
+          "wirecolorrandom.button",
+          "wirecolorrandomrange.button",
+          "wirecolorset.button",
+          "wirecolorstart.button"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "wirecolormaterial.button",
+          "wirecolorrandom.button",
+          "wirecolorrandomrange.button",
+          "wirecolorset.button",
+          "wirecolorstart.button"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "wirecolormaterial.button",
+      "wirecolorrandom.button",
+      "wirecolorrandomrange.button",
+      "wirecolorset.button",
+      "wirecolorstart.button"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:39+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "malik-nomi__hifi-architecture-builder-v4-5-8",
+    "artifact": "add-on-hifi-builder-v4.5.8.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "hifi.anim_step1_rig",
+          "hifi.anim_step2_clipdict",
+          "hifi.anim_step3_ytyp",
+          "hifi.apply_transform_to_selected",
+          "hifi.cleanup_orphans",
+          "hifi.clear_previews",
+          "hifi.copy_transform",
+          "hifi.game_export",
+          "hifi.generate",
+          "hifi.join_cleanup",
+          "hifi.load_selected_params"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "hifi.anim_step1_rig",
+          "hifi.anim_step2_clipdict",
+          "hifi.anim_step3_ytyp",
+          "hifi.apply_transform_to_selected",
+          "hifi.cleanup_orphans",
+          "hifi.clear_previews",
+          "hifi.copy_transform",
+          "hifi.game_export",
+          "hifi.generate",
+          "hifi.join_cleanup",
+          "hifi.load_selected_params"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "hifi.anim_step1_rig",
+      "hifi.anim_step2_clipdict",
+      "hifi.anim_step3_ytyp",
+      "hifi.apply_transform_to_selected",
+      "hifi.cleanup_orphans",
+      "hifi.clear_previews",
+      "hifi.copy_transform",
+      "hifi.game_export",
+      "hifi.generate",
+      "hifi.join_cleanup",
+      "hifi.load_selected_params"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:41+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "marcueberall__blender-cliffgenerator",
+    "artifact": "marcueberall__blender-cliffgenerator.zip",
+    "verify": {
+      "3.6": {
+        "state": "pass",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "gn_pack",
+    "verified_at": "2026-07-08T23:00:43+00:00",
+    "prescan_hits": [],
+    "declared_min": null
+  },
+  {
+    "canonical_id": "maro3d__vertex-group-assistant",
+    "artifact": "add-on-vertex-group-assistant-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.confirm_delete_unused_bones",
+          "object.delete_unused_vertex_groups",
+          "object.transfer_vertex_groups_from_active"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.confirm_delete_unused_bones",
+          "object.delete_unused_vertex_groups",
+          "object.transfer_vertex_groups_from_active"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.confirm_delete_unused_bones",
+      "object.delete_unused_vertex_groups",
+      "object.transfer_vertex_groups_from_active"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:46+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "mathieu-einig__gamiflow",
+    "artifact": "add-on-gamiflow-v1.9.10.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:00:48+00:00",
+    "prescan_hits": [
+      "subprocess"
+    ]
+  },
+  {
+    "canonical_id": "maylog__batch-texture-converter",
+    "artifact": "add-on-batch-texture-converter-v1.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:48+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "mdlt7z__secondary-language",
+    "artifact": "add-on-secondary-language-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:48+00:00",
+    "prescan_hits": [],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "michael-lamertz__ddslideshow",
+    "artifact": "add-on-ddslideshow-v0.0.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "ddslideshow.add_transforms",
+          "ddslideshow.align_images",
+          "ddslideshow.align_images_bottom",
+          "ddslideshow.align_images_center",
+          "ddslideshow.align_images_left",
+          "ddslideshow.align_images_right",
+          "ddslideshow.align_images_top",
+          "ddslideshow.audio_fade_in_out",
+          "ddslideshow.crossfade",
+          "ddslideshow.load_images",
+          "ddslideshow.overlap_images",
+          "ddslideshow.pan_ccw",
+          "ddslideshow.pan_cw",
+          "ddslideshow.pan_end_0",
+          "ddslideshow.pan_end_e",
+          "ddslideshow.pan_end_n",
+          "ddslideshow.pan_end_ne",
+          "ddslideshow.pan_end_nw",
+          "ddslideshow.pan_end_s",
+          "ddslideshow.pan_end_se",
+          "ddslideshow.pan_end_sw",
+          "ddslideshow.pan_end_w",
+          "ddslideshow.pan_random",
+          "ddslideshow.pan_start_0",
+          "ddslideshow.pan_start_e",
+          "ddslideshow.pan_start_n",
+          "ddslideshow.pan_start_ne",
+          "ddslideshow.pan_start_nw",
+          "ddslideshow.pan_start_s",
+          "ddslideshow.pan_start_se",
+          "ddslideshow.pan_start_sw",
+          "ddslideshow.pan_start_w",
+          "ddslideshow.pan_transforms",
+          "ddslideshow.run_workflow",
+          "ddslideshow.slideshow_fade_in_out",
+          "ddslideshow.switch_zooms",
+          "ddslideshow.zoom_transforms"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "ddslideshow.add_transforms",
+          "ddslideshow.align_images",
+          "ddslideshow.align_images_bottom",
+          "ddslideshow.align_images_center",
+          "ddslideshow.align_images_left",
+          "ddslideshow.align_images_right",
+          "ddslideshow.align_images_top",
+          "ddslideshow.audio_fade_in_out",
+          "ddslideshow.crossfade",
+          "ddslideshow.load_images",
+          "ddslideshow.overlap_images",
+          "ddslideshow.pan_ccw",
+          "ddslideshow.pan_cw",
+          "ddslideshow.pan_end_0",
+          "ddslideshow.pan_end_e",
+          "ddslideshow.pan_end_n",
+          "ddslideshow.pan_end_ne",
+          "ddslideshow.pan_end_nw",
+          "ddslideshow.pan_end_s",
+          "ddslideshow.pan_end_se",
+          "ddslideshow.pan_end_sw",
+          "ddslideshow.pan_end_w",
+          "ddslideshow.pan_random",
+          "ddslideshow.pan_start_0",
+          "ddslideshow.pan_start_e",
+          "ddslideshow.pan_start_n",
+          "ddslideshow.pan_start_ne",
+          "ddslideshow.pan_start_nw",
+          "ddslideshow.pan_start_s",
+          "ddslideshow.pan_start_se",
+          "ddslideshow.pan_start_sw",
+          "ddslideshow.pan_start_w",
+          "ddslideshow.pan_transforms",
+          "ddslideshow.run_workflow",
+          "ddslideshow.slideshow_fade_in_out",
+          "ddslideshow.switch_zooms",
+          "ddslideshow.zoom_transforms"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "ddslideshow.add_transforms",
+      "ddslideshow.align_images",
+      "ddslideshow.align_images_bottom",
+      "ddslideshow.align_images_center",
+      "ddslideshow.align_images_left",
+      "ddslideshow.align_images_right",
+      "ddslideshow.align_images_top",
+      "ddslideshow.audio_fade_in_out",
+      "ddslideshow.crossfade",
+      "ddslideshow.load_images",
+      "ddslideshow.overlap_images",
+      "ddslideshow.pan_ccw",
+      "ddslideshow.pan_cw",
+      "ddslideshow.pan_end_0",
+      "ddslideshow.pan_end_e",
+      "ddslideshow.pan_end_n",
+      "ddslideshow.pan_end_ne",
+      "ddslideshow.pan_end_nw",
+      "ddslideshow.pan_end_s",
+      "ddslideshow.pan_end_se",
+      "ddslideshow.pan_end_sw",
+      "ddslideshow.pan_end_w",
+      "ddslideshow.pan_random",
+      "ddslideshow.pan_start_0",
+      "ddslideshow.pan_start_e",
+      "ddslideshow.pan_start_n",
+      "ddslideshow.pan_start_ne",
+      "ddslideshow.pan_start_nw",
+      "ddslideshow.pan_start_s",
+      "ddslideshow.pan_start_se",
+      "ddslideshow.pan_start_sw",
+      "ddslideshow.pan_start_w",
+      "ddslideshow.pan_transforms",
+      "ddslideshow.run_workflow",
+      "ddslideshow.slideshow_fade_in_out",
+      "ddslideshow.switch_zooms",
+      "ddslideshow.zoom_transforms"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:48+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "mingwitty__simple-camera-match",
+    "artifact": "add-on-simple-camera-match-v1.1.2-windows-arm64-windows-x64-macos-arm64-macos-x64-linux-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "cmp.draw_line",
+          "cmp.match_camera"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "cmp.draw_line",
+          "cmp.match_camera"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "cmp.draw_line",
+      "cmp.match_camera"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:50+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "mnnxp__cadbase-library",
+    "artifact": "add-on-cadbase-library-v0.3.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:00:52+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "requests",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "mr-bir__tool-hub",
+    "artifact": "add-on-toolhub-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:52+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "multlabs__synchronize-workspaces",
+    "artifact": "add-on-synchronize-workspaces-v1.14.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:56+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "naelstrof__jiggle-physics",
+    "artifact": "add-on-jiggle-physics-v4.5.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "anim.jiggle_clear_keyframes",
+          "armature.add_jigglebone_preset",
+          "armature.jiggle_bake",
+          "armature.jiggle_bone_connected_disable",
+          "armature.jiggle_bone_constraints_disable",
+          "armature.jiggle_copy",
+          "armature.jiggle_select",
+          "scene.jiggle_profile",
+          "scene.jiggle_reset",
+          "scene.jiggle_toggle_profiler",
+          "view3d.jiggle_toggle_pose_overlay",
+          "view3d.jiggle_toggle_simulation_overlay"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "anim.jiggle_clear_keyframes",
+          "armature.add_jigglebone_preset",
+          "armature.jiggle_bake",
+          "armature.jiggle_bone_connected_disable",
+          "armature.jiggle_bone_constraints_disable",
+          "armature.jiggle_copy",
+          "armature.jiggle_select",
+          "scene.jiggle_profile",
+          "scene.jiggle_reset",
+          "scene.jiggle_toggle_profiler",
+          "view3d.jiggle_toggle_pose_overlay",
+          "view3d.jiggle_toggle_simulation_overlay"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "anim.jiggle_clear_keyframes",
+      "armature.add_jigglebone_preset",
+      "armature.jiggle_bake",
+      "armature.jiggle_bone_connected_disable",
+      "armature.jiggle_bone_constraints_disable",
+      "armature.jiggle_copy",
+      "armature.jiggle_select",
+      "scene.jiggle_profile",
+      "scene.jiggle_reset",
+      "scene.jiggle_toggle_profiler",
+      "view3d.jiggle_toggle_pose_overlay",
+      "view3d.jiggle_toggle_simulation_overlay"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:00:57+00:00",
+    "prescan_hits": [
+      "socket"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "nerk__rigflex",
+    "artifact": "add-on-rigflex-v4.2.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "armature.sbsim_copy",
+          "armature.sbsim_freeze",
+          "armature.sbsim_revert",
+          "armature.sbsim_unbake",
+          "armature.sbsim_unfreeze",
+          "armature.sbsim_update",
+          "armature.sbsimulate"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "armature.sbsim_copy",
+          "armature.sbsim_freeze",
+          "armature.sbsim_revert",
+          "armature.sbsim_unbake",
+          "armature.sbsim_unfreeze",
+          "armature.sbsim_update",
+          "armature.sbsimulate"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "armature.sbsim_copy",
+      "armature.sbsim_freeze",
+      "armature.sbsim_revert",
+      "armature.sbsim_unbake",
+      "armature.sbsim_unfreeze",
+      "armature.sbsim_update",
+      "armature.sbsimulate"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:00+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "nicolaspriniotakis__srtm-terrain-importer",
+    "artifact": "add-on-srtm-terrain-importer-v1.0.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "import_mesh.hgt_displacement"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "import_mesh.hgt_displacement"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "import_mesh.hgt_displacement"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:02+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "nino-filiu__ambientcg-material-importer",
+    "artifact": "add-on-ambientcg-material-importer-v1.4.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:04+00:00",
+    "prescan_hits": [
+      "urllib"
+    ]
+  },
+  {
+    "canonical_id": "nutti__magic-uv",
+    "artifact": "add-on-magic-uv-v6.7.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.muv_copy_paste_uv_object_copy_uv",
+          "object.muv_copy_paste_uv_object_paste_uv",
+          "uv.muv_align_uv_axis",
+          "uv.muv_align_uv_circle",
+          "uv.muv_align_uv_cursor",
+          "uv.muv_align_uv_snap_set_edge_target_to_edge_center",
+          "uv.muv_align_uv_snap_set_point_target_to_cursor",
+          "uv.muv_align_uv_snap_set_point_target_to_vertex_group",
+          "uv.muv_align_uv_snap_to_edge",
+          "uv.muv_align_uv_snap_to_point",
+          "uv.muv_align_uv_straighten",
+          "uv.muv_clip_uv",
+          "uv.muv_copy_paste_uv_copy_uv",
+          "uv.muv_copy_paste_uv_paste_uv",
+          "uv.muv_copy_paste_uv_selseq_copy_uv",
+          "uv.muv_copy_paste_uv_selseq_paste_uv",
+          "uv.muv_copy_paste_uv_uvedit_copy_uv",
+          "uv.muv_copy_paste_uv_uvedit_copy_uv_island",
+          "uv.muv_copy_paste_uv_uvedit_paste_uv",
+          "uv.muv_copy_paste_uv_uvedit_paste_uv_island",
+          "uv.muv_flip_rotate_uv",
+          "uv.muv_mirror_uv",
+          "uv.muv_move_uv",
+          "uv.muv_pack_uv",
+          "uv.muv_preserve_uv_aspect",
+          "uv.muv_select_uv_select_flipped",
+          "uv.muv_select_uv_select_overlapped",
+          "uv.muv_select_uv_zoom_selected_uv",
+          "uv.muv_smooth_uv",
+          "uv.muv_texture_lock_intr",
+          "uv.muv_texture_lock_lock",
+          "uv.muv_texture_lock_unlock",
+          "uv.muv_texture_projection",
+          "uv.muv_texture_projection_project",
+          "uv.muv_texture_wrap_refer",
+          "uv.muv_texture_wrap_set",
+          "uv.muv_transfer_uv_copy_uv",
+          "uv.muv_transfer_uv_paste_uv",
+          "uv.muv_unwrap_constraint",
+          "uv.muv_uv_bounding_box",
+          "uv.muv_uv_inspection_paint_uv_island",
+          "uv.muv_uv_inspection_render",
+          "uv.muv_uv_inspection_update",
+          "uv.muv_uv_sculpt",
+          "uv.muv_uvw_best_planer_map",
+          "uv.muv_uvw_box_map",
+          "uv.muv_world_scale_uv_apply_manual",
+          "uv.muv_world_scale_uv_apply_proportional_to_mesh",
+          "uv.muv_world_scale_uv_apply_scaling_density",
+          "uv.muv_world_scale_uv_measure"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.muv_copy_paste_uv_object_copy_uv",
+          "object.muv_copy_paste_uv_object_paste_uv",
+          "uv.muv_align_uv_axis",
+          "uv.muv_align_uv_circle",
+          "uv.muv_align_uv_cursor",
+          "uv.muv_align_uv_snap_set_edge_target_to_edge_center",
+          "uv.muv_align_uv_snap_set_point_target_to_cursor",
+          "uv.muv_align_uv_snap_set_point_target_to_vertex_group",
+          "uv.muv_align_uv_snap_to_edge",
+          "uv.muv_align_uv_snap_to_point",
+          "uv.muv_align_uv_straighten",
+          "uv.muv_clip_uv",
+          "uv.muv_copy_paste_uv_copy_uv",
+          "uv.muv_copy_paste_uv_paste_uv",
+          "uv.muv_copy_paste_uv_selseq_copy_uv",
+          "uv.muv_copy_paste_uv_selseq_paste_uv",
+          "uv.muv_copy_paste_uv_uvedit_copy_uv",
+          "uv.muv_copy_paste_uv_uvedit_copy_uv_island",
+          "uv.muv_copy_paste_uv_uvedit_paste_uv",
+          "uv.muv_copy_paste_uv_uvedit_paste_uv_island",
+          "uv.muv_flip_rotate_uv",
+          "uv.muv_mirror_uv",
+          "uv.muv_move_uv",
+          "uv.muv_pack_uv",
+          "uv.muv_preserve_uv_aspect",
+          "uv.muv_select_uv_select_flipped",
+          "uv.muv_select_uv_select_overlapped",
+          "uv.muv_select_uv_zoom_selected_uv",
+          "uv.muv_smooth_uv",
+          "uv.muv_texture_lock_intr",
+          "uv.muv_texture_lock_lock",
+          "uv.muv_texture_lock_unlock",
+          "uv.muv_texture_projection",
+          "uv.muv_texture_projection_project",
+          "uv.muv_texture_wrap_refer",
+          "uv.muv_texture_wrap_set",
+          "uv.muv_transfer_uv_copy_uv",
+          "uv.muv_transfer_uv_paste_uv",
+          "uv.muv_unwrap_constraint",
+          "uv.muv_uv_bounding_box",
+          "uv.muv_uv_inspection_paint_uv_island",
+          "uv.muv_uv_inspection_render",
+          "uv.muv_uv_inspection_update",
+          "uv.muv_uv_sculpt",
+          "uv.muv_uvw_best_planer_map",
+          "uv.muv_uvw_box_map",
+          "uv.muv_world_scale_uv_apply_manual",
+          "uv.muv_world_scale_uv_apply_proportional_to_mesh",
+          "uv.muv_world_scale_uv_apply_scaling_density",
+          "uv.muv_world_scale_uv_measure"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.muv_copy_paste_uv_object_copy_uv",
+      "object.muv_copy_paste_uv_object_paste_uv",
+      "uv.muv_align_uv_axis",
+      "uv.muv_align_uv_circle",
+      "uv.muv_align_uv_cursor",
+      "uv.muv_align_uv_snap_set_edge_target_to_edge_center",
+      "uv.muv_align_uv_snap_set_point_target_to_cursor",
+      "uv.muv_align_uv_snap_set_point_target_to_vertex_group",
+      "uv.muv_align_uv_snap_to_edge",
+      "uv.muv_align_uv_snap_to_point",
+      "uv.muv_align_uv_straighten",
+      "uv.muv_clip_uv",
+      "uv.muv_copy_paste_uv_copy_uv",
+      "uv.muv_copy_paste_uv_paste_uv",
+      "uv.muv_copy_paste_uv_selseq_copy_uv",
+      "uv.muv_copy_paste_uv_selseq_paste_uv",
+      "uv.muv_copy_paste_uv_uvedit_copy_uv",
+      "uv.muv_copy_paste_uv_uvedit_copy_uv_island",
+      "uv.muv_copy_paste_uv_uvedit_paste_uv",
+      "uv.muv_copy_paste_uv_uvedit_paste_uv_island",
+      "uv.muv_flip_rotate_uv",
+      "uv.muv_mirror_uv",
+      "uv.muv_move_uv",
+      "uv.muv_pack_uv",
+      "uv.muv_preserve_uv_aspect",
+      "uv.muv_select_uv_select_flipped",
+      "uv.muv_select_uv_select_overlapped",
+      "uv.muv_select_uv_zoom_selected_uv",
+      "uv.muv_smooth_uv",
+      "uv.muv_texture_lock_intr",
+      "uv.muv_texture_lock_lock",
+      "uv.muv_texture_lock_unlock",
+      "uv.muv_texture_projection",
+      "uv.muv_texture_projection_project",
+      "uv.muv_texture_wrap_refer",
+      "uv.muv_texture_wrap_set",
+      "uv.muv_transfer_uv_copy_uv",
+      "uv.muv_transfer_uv_paste_uv",
+      "uv.muv_unwrap_constraint",
+      "uv.muv_uv_bounding_box",
+      "uv.muv_uv_inspection_paint_uv_island",
+      "uv.muv_uv_inspection_render",
+      "uv.muv_uv_inspection_update",
+      "uv.muv_uv_sculpt",
+      "uv.muv_uvw_best_planer_map",
+      "uv.muv_uvw_box_map",
+      "uv.muv_world_scale_uv_apply_manual",
+      "uv.muv_world_scale_uv_apply_proportional_to_mesh",
+      "uv.muv_world_scale_uv_apply_scaling_density",
+      "uv.muv_world_scale_uv_measure"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:04+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "orange-turbine__apply-modifier-with-shape-keys",
+    "artifact": "add-on-apply-modifiers-with-shape-keys-v1.0.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.3 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.apply_modifiers_with_shape_keys"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.apply_modifiers_with_shape_keys"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:07+00:00",
+    "prescan_hits": [
+      "driver-expression"
+    ],
+    "declared_min": "4.3"
+  },
+  {
+    "canonical_id": "patochun__midi-to-visuals",
+    "artifact": "add-on-m2v-v1.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.0 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:08+00:00",
+    "prescan_hits": [
+      "driver-expression",
+      "open-write"
+    ],
+    "declared_min": "5.0"
+  },
+  {
+    "canonical_id": "phindev__ac-tools",
+    "artifact": "add-on-ac-tools-v0.1.6.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:08+00:00",
+    "prescan_hits": [
+      "open-write",
+      "subprocess"
+    ]
+  },
+  {
+    "canonical_id": "polyfjord__simple-audio-visualizer",
+    "artifact": "add-on-simple-audio-visualizer-v1.2.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.simple_audio_visualizer",
+          "object.visualize_selected_objects"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.simple_audio_visualizer",
+          "object.visualize_selected_objects"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.simple_audio_visualizer",
+      "object.visualize_selected_objects"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:08+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "prince-eagle__retro-console-lite",
+    "artifact": "add-on-retro-console-lite-v1.0.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "gbc.convert",
+          "gbc.reset"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "gbc.convert",
+      "gbc.reset"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:10+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "quint-vrolijk__export-curve-to-json",
+    "artifact": "add-on-export-curve-to-json-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "export_curve.json",
+          "import_curve.json"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "export_curve.json",
+          "import_curve.json"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "export_curve.json",
+      "import_curve.json"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:11+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "renderrides__autocam",
+    "artifact": "add-on-autocam-v2.0.6.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "ac.sync_speed_from_keys",
+          "autocam.apply_curve",
+          "autocam.apply_recorded_rot",
+          "autocam.bake_autocam",
+          "autocam.build_camera_rig",
+          "autocam.camera_to_curve",
+          "autocam.clear_all_rigs",
+          "autocam.clear_inherited_timing",
+          "autocam.fly_record",
+          "autocam.inherit_timing",
+          "autocam.revert_curve",
+          "autocam.set_active_camera",
+          "autocam.simplify_timing",
+          "autocam.toggle_dev_edition",
+          "autocam.update_timing_base"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "ac.sync_speed_from_keys",
+          "autocam.apply_curve",
+          "autocam.apply_recorded_rot",
+          "autocam.bake_autocam",
+          "autocam.build_camera_rig",
+          "autocam.camera_to_curve",
+          "autocam.clear_all_rigs",
+          "autocam.clear_inherited_timing",
+          "autocam.fly_record",
+          "autocam.inherit_timing",
+          "autocam.revert_curve",
+          "autocam.set_active_camera",
+          "autocam.simplify_timing",
+          "autocam.toggle_dev_edition",
+          "autocam.update_timing_base"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "ac.sync_speed_from_keys",
+      "autocam.apply_curve",
+      "autocam.apply_recorded_rot",
+      "autocam.bake_autocam",
+      "autocam.build_camera_rig",
+      "autocam.camera_to_curve",
+      "autocam.clear_all_rigs",
+      "autocam.clear_inherited_timing",
+      "autocam.fly_record",
+      "autocam.inherit_timing",
+      "autocam.revert_curve",
+      "autocam.set_active_camera",
+      "autocam.simplify_timing",
+      "autocam.toggle_dev_edition",
+      "autocam.update_timing_base"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:13+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "robert-kezives__k-tools-sync-lock-viewport",
+    "artifact": "add-on-k-tools-view-sync-v2.8.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "quarantine",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:15+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "romainguimbal__surface-psycho",
+    "artifact": "add-on-surfacepsycho-v0.9.7-windows-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:18+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "5.1"
+  },
+  {
+    "canonical_id": "salaivv__modifier-stack-manager",
+    "artifact": "add-on-modifer-stack-manager-v1.4.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "object.msm_modifier_apply",
+          "object.msm_modifier_apply_all",
+          "object.msm_modifier_collapse_all",
+          "object.msm_modifier_copy",
+          "object.msm_modifier_expand_selected_only",
+          "object.msm_modifier_move",
+          "object.msm_modifier_remove"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "object.msm_modifier_apply",
+          "object.msm_modifier_apply_all",
+          "object.msm_modifier_collapse_all",
+          "object.msm_modifier_copy",
+          "object.msm_modifier_expand_selected_only",
+          "object.msm_modifier_move",
+          "object.msm_modifier_remove"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "object.msm_modifier_apply",
+      "object.msm_modifier_apply_all",
+      "object.msm_modifier_collapse_all",
+      "object.msm_modifier_copy",
+      "object.msm_modifier_expand_selected_only",
+      "object.msm_modifier_move",
+      "object.msm_modifier_remove"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:18+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "saviski__novaskin-export",
+    "artifact": "add-on-novaskin-export-v1.3.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:21+00:00",
+    "prescan_hits": [
+      "subprocess",
+      "socket",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "sergeymetelskiy__copy-to-autograph",
+    "artifact": "add-on-copy-to-autograph-v0.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "export.autograph_clipboard"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "export.autograph_clipboard"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "export.autograph_clipboard"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:21+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "shinmera__rectangle-tools",
+    "artifact": "add-on-shirakumo-rectangle-tools-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:23+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "shuimeng__outliner-model-preview",
+    "artifact": "add-on-outliner-preview-v1.1.7.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "outliner.hover_preview",
+          "outliner.preview_exclude_remove",
+          "outliner.preview_exclude_settings",
+          "outliner.toggle_preview"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "outliner.hover_preview",
+          "outliner.preview_exclude_remove",
+          "outliner.preview_exclude_settings",
+          "outliner.toggle_preview"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "outliner.hover_preview",
+      "outliner.preview_exclude_remove",
+      "outliner.preview_exclude_settings",
+      "outliner.toggle_preview"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:24+00:00",
+    "prescan_hits": [
+      "socket"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "simonthommes__border-buddy",
+    "artifact": "add-on-border-buddy-v0.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "scene.border_add",
+          "scene.border_remove",
+          "scene.border_store"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "scene.border_add",
+          "scene.border_remove",
+          "scene.border_store"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "scene.border_add",
+      "scene.border_remove",
+      "scene.border_store"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:26+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "softyoda__animation-transform-offset",
+    "artifact": "add-on-animation-transform-offset-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.3 > 4.2"
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "anim_offset.grab",
+          "anim_offset.rotate",
+          "anim_offset.scale"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "anim_offset.grab",
+      "anim_offset.rotate",
+      "anim_offset.scale"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:28+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.3"
+  },
+  {
+    "canonical_id": "stevewarner__img2mat-pro",
+    "artifact": "add-on-img2mat-pro-v2.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "img2mat.clear_swatches",
+          "img2mat.copy_pantone_results",
+          "img2mat.create_callouts",
+          "img2mat.generate_materials",
+          "img2mat.import_acb_folder",
+          "img2mat.import_acb_library",
+          "img2mat.lock_add",
+          "img2mat.lock_remove",
+          "img2mat.match_pantone_palette",
+          "img2mat.match_pantone_sample",
+          "img2mat.rebuild_library_manifest",
+          "img2mat.toggle_library_enabled",
+          "img2mat.use_active_image"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "img2mat.clear_swatches",
+          "img2mat.copy_pantone_results",
+          "img2mat.create_callouts",
+          "img2mat.generate_materials",
+          "img2mat.import_acb_folder",
+          "img2mat.import_acb_library",
+          "img2mat.lock_add",
+          "img2mat.lock_remove",
+          "img2mat.match_pantone_palette",
+          "img2mat.match_pantone_sample",
+          "img2mat.rebuild_library_manifest",
+          "img2mat.toggle_library_enabled",
+          "img2mat.use_active_image"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "img2mat.clear_swatches",
+      "img2mat.copy_pantone_results",
+      "img2mat.create_callouts",
+      "img2mat.generate_materials",
+      "img2mat.import_acb_folder",
+      "img2mat.import_acb_library",
+      "img2mat.lock_add",
+      "img2mat.lock_remove",
+      "img2mat.match_pantone_palette",
+      "img2mat.match_pantone_sample",
+      "img2mat.rebuild_library_manifest",
+      "img2mat.toggle_library_enabled",
+      "img2mat.use_active_image"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:29+00:00",
+    "prescan_hits": [
+      "open-write",
+      "driver-expression"
+    ],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "summonangelus__arkit-blendshape-helper",
+    "artifact": "add-on-arkit-blendshape-tools-v0.7.5.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "ak.add_arkit_shapes",
+          "ak.add_single_arkit_shape",
+          "ak.autosort_shapes",
+          "ak.create_drivers",
+          "ak.delete_all_shapes",
+          "ak.delete_single_shape",
+          "ak.global_zero",
+          "ak.groups_toggle",
+          "ak.mirror_blendshape",
+          "ak.remove_drivers",
+          "ak.select_all_meshes",
+          "ak.select_basis",
+          "ak.select_shape_key",
+          "ak.target_add_selected",
+          "ak.target_remove"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "ak.add_arkit_shapes",
+          "ak.add_single_arkit_shape",
+          "ak.autosort_shapes",
+          "ak.create_drivers",
+          "ak.delete_all_shapes",
+          "ak.delete_single_shape",
+          "ak.global_zero",
+          "ak.groups_toggle",
+          "ak.mirror_blendshape",
+          "ak.remove_drivers",
+          "ak.select_all_meshes",
+          "ak.select_basis",
+          "ak.select_shape_key",
+          "ak.target_add_selected",
+          "ak.target_remove"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "ak.add_arkit_shapes",
+      "ak.add_single_arkit_shape",
+      "ak.autosort_shapes",
+      "ak.create_drivers",
+      "ak.delete_all_shapes",
+      "ak.delete_single_shape",
+      "ak.global_zero",
+      "ak.groups_toggle",
+      "ak.mirror_blendshape",
+      "ak.remove_drivers",
+      "ak.select_all_meshes",
+      "ak.select_basis",
+      "ak.select_shape_key",
+      "ak.target_add_selected",
+      "ak.target_remove"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:31+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "tayou__bone-and-vertex-group-merge",
+    "artifact": "add-on-org-tayou-bone-vertex-group-merge-v1.4.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "armature.merge"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "armature.merge"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "armature.merge"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:34+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "thane5__tiny-backup",
+    "artifact": "add-on-tiny-backup-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:36+00:00",
+    "prescan_hits": [
+      "eval("
+    ]
+  },
+  {
+    "canonical_id": "thomas-berger__marching-cube",
+    "artifact": "add-on-marchingcube-v0.3.0-macos-arm64.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:36+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "tlabaltoh__realistic-terrain",
+    "artifact": "tlabaltoh__realistic-terrain.zip",
+    "verify": {
+      "3.6": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "python_bl_info",
+    "verified_at": "2026-07-08T23:01:37+00:00",
+    "prescan_hits": [],
+    "declared_min": "3.4"
+  },
+  {
+    "canonical_id": "tonton__font-selector",
+    "artifact": "add-on-font-selector-v3.2.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:39+00:00",
+    "prescan_hits": [
+      "os.system",
+      "open-write"
+    ]
+  },
+  {
+    "canonical_id": "tu2463__rock_generator_addon",
+    "artifact": "tu2463__rock_generator_addon.zip",
+    "verify": {
+      "3.6": {
+        "state": "pass",
+        "operators": [
+          "mesh.primitive_rock_add"
+        ],
+        "render_ok": true
+      },
+      "4.2": {
+        "state": "pass",
+        "operators": [
+          "mesh.primitive_rock_add"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "pass",
+        "operators": [
+          "mesh.primitive_rock_add"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.primitive_rock_add"
+    ],
+    "prescan": "clean",
+    "artifact_type": "python_bl_info",
+    "verified_at": "2026-07-08T23:01:39+00:00",
+    "prescan_hits": [],
+    "declared_min": "3.0"
+  },
+  {
+    "canonical_id": "usrname0__bl-fast-start-mp4-mov",
+    "artifact": "add-on-bl-faststart-v1.9.4.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 4.4 > 4.2"
+      },
+      "4.5": {
+        "state": "fail",
+        "operators": [],
+        "render_ok": true
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:42+00:00",
+    "prescan_hits": [
+      "open-write"
+    ],
+    "declared_min": "4.4"
+  },
+  {
+    "canonical_id": "viktor-kom__set-smooth-group",
+    "artifact": "add-on-set-smooth-group-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "mesh.set_smooth_group"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "mesh.set_smooth_group"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "mesh.set_smooth_group"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:43+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "wans7-gumroad-com__view-selected",
+    "artifact": "add-on-view-selected-v1.0.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "view3d.view_from_selected_face"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "view3d.view_from_selected_face"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "view3d.view_from_selected_face"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:45+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "willy-work__motion-style",
+    "artifact": "add-on-blender-speed-curve-v1.0.2.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "graph.set_interpolation"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "graph.set_interpolation"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "graph.set_interpolation"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:47+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "y-t-law__vmdesk",
+    "artifact": "add-on-vmd-v5.1.1.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.2"
+      },
+      "4.5": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "declared min 5.1 > 4.5"
+      }
+    },
+    "operators": [],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:48+00:00",
+    "prescan_hits": [
+      "driver-expression",
+      "socket",
+      "open-write"
+    ],
+    "declared_min": "5.1"
+  },
+  {
+    "canonical_id": "yliang__yl-meshcheckhud",
+    "artifact": "add-on-yl-meshcheckhud-v1.1.0.zip",
+    "verify": {
+      "3.6": {
+        "state": "skipped_incompatible",
+        "operators": [],
+        "render_ok": false,
+        "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+      },
+      "4.2": {
+        "state": "partial",
+        "operators": [
+          "yl_omnihud.preview_meshcheck",
+          "yl_omnihud.refresh_meshcheck_results",
+          "yl_omnihud.sort_meshcheck_results",
+          "yl_omnihud.toggle_all_check_visibility"
+        ],
+        "render_ok": true
+      },
+      "4.5": {
+        "state": "partial",
+        "operators": [
+          "yl_omnihud.preview_meshcheck",
+          "yl_omnihud.refresh_meshcheck_results",
+          "yl_omnihud.sort_meshcheck_results",
+          "yl_omnihud.toggle_all_check_visibility"
+        ],
+        "render_ok": true
+      }
+    },
+    "operators": [
+      "yl_omnihud.preview_meshcheck",
+      "yl_omnihud.refresh_meshcheck_results",
+      "yl_omnihud.sort_meshcheck_results",
+      "yl_omnihud.toggle_all_check_visibility"
+    ],
+    "prescan": "clean",
+    "artifact_type": "extension_manifest",
+    "verified_at": "2026-07-08T23:01:49+00:00",
+    "prescan_hits": [],
+    "declared_min": "4.2"
+  },
+  {
+    "canonical_id": "zelijah__majik-blender-edu",
+    "artifact": "add-on-majik-blender-edu-teacher-v1.1.4-windows-x64.zip",
+    "verify": {
+      "3.6": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.2": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      },
+      "4.5": {
+        "state": "needs_review",
+        "operators": [],
+        "render_ok": false
+      }
+    },
+    "operators": [],
+    "prescan": "needs_review",
+    "artifact_type": null,
+    "verified_at": "2026-07-08T23:01:50+00:00",
+    "prescan_hits": [
+      "base64-decode",
+      "open-write"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "canonical_id": "mets__pose-shape-keys",
+  "artifact": "add-on-pose-shape-keys-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:00:30+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "eval(",
+    "exec("
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "canonical_id": "likkez__merge-nla-strips",
+  "artifact": "add-on-nlatools-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "nla_tools.nla_merge_strips",
+        "nla_tools.nla_rename_strip"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "nla_tools.nla_merge_strips",
+        "nla_tools.nla_rename_strip"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "nla_tools.nla_merge_strips",
+    "nla_tools.nla_rename_strip"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:38+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

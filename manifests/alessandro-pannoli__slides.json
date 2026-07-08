@@ -1,0 +1,82 @@
+{
+  "canonical_id": "alessandro-pannoli__slides",
+  "artifact": "add-on-slides-pro-v1.6.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "scene.add_slide",
+        "scene.clear_annotations",
+        "scene.goto_slide",
+        "scene.hard_skip_slide",
+        "scene.next_slide",
+        "scene.paste_current_frame",
+        "scene.prev_slide",
+        "scene.remove_slide",
+        "scene.slides_toggle_rendered_view",
+        "scene.slides_toggle_viewport_overlays",
+        "scene.start_slides_presentation",
+        "scene.stop_slides_presentation",
+        "slide.add_checkpoint",
+        "slide.add_note_line",
+        "slide.remove_checkpoint",
+        "slide.remove_note_line",
+        "wm.new_projection_window"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "scene.add_slide",
+        "scene.clear_annotations",
+        "scene.goto_slide",
+        "scene.hard_skip_slide",
+        "scene.next_slide",
+        "scene.paste_current_frame",
+        "scene.prev_slide",
+        "scene.remove_slide",
+        "scene.slides_toggle_rendered_view",
+        "scene.slides_toggle_viewport_overlays",
+        "scene.start_slides_presentation",
+        "scene.stop_slides_presentation",
+        "slide.add_checkpoint",
+        "slide.add_note_line",
+        "slide.remove_checkpoint",
+        "slide.remove_note_line",
+        "wm.new_projection_window"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "scene.add_slide",
+    "scene.clear_annotations",
+    "scene.goto_slide",
+    "scene.hard_skip_slide",
+    "scene.next_slide",
+    "scene.paste_current_frame",
+    "scene.prev_slide",
+    "scene.remove_slide",
+    "scene.slides_toggle_rendered_view",
+    "scene.slides_toggle_viewport_overlays",
+    "scene.start_slides_presentation",
+    "scene.stop_slides_presentation",
+    "slide.add_checkpoint",
+    "slide.add_note_line",
+    "slide.remove_checkpoint",
+    "slide.remove_note_line",
+    "wm.new_projection_window"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:16+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

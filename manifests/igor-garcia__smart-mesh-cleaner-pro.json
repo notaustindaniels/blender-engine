@@ -1,0 +1,40 @@
+{
+  "canonical_id": "igor-garcia__smart-mesh-cleaner-pro",
+  "artifact": "add-on-smart-mesh-cleaner-pro-v3.5.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.smart_cleaner_empty",
+        "mesh.smart_cleaner_exec",
+        "mesh.smart_cleaner_restore"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.smart_cleaner_empty",
+        "mesh.smart_cleaner_exec",
+        "mesh.smart_cleaner_restore"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.smart_cleaner_empty",
+    "mesh.smart_cleaner_exec",
+    "mesh.smart_cleaner_restore"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:33+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

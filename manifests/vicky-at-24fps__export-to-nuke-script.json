@@ -1,0 +1,53 @@
+{
+  "canonical_id": "vicky-at-24fps__export-to-nuke-script",
+  "artifact": "add-on-nuke-camera-exporter-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export.nuke_transform_fixed"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export.nuke_transform_fixed"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export.nuke_transform_fixed"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:05+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "export.nuke_transform_fixed",
+      "verbs": [
+        "generate",
+        "illuminate",
+        "reveal"
+      ],
+      "niches": [
+        "data_import",
+        "light_matrix_data"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'import' in name/tagline -> ['data_import', 'light_matrix_data'] (Animation: data-driven & utility)."
+}

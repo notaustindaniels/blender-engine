@@ -1,0 +1,30 @@
+{
+  "canonical_id": "aafke-gros__microscopy-nodes",
+  "artifact": "add-on-microscopynodes-v3.0.1-windows-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:58:32+00:00",
+  "prescan_hits": [
+    "socket",
+    "driver-expression",
+    "urllib"
+  ]
+}

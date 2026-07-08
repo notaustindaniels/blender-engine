@@ -1,0 +1,47 @@
+{
+  "canonical_id": "cemilberk__script-manager-pro",
+  "artifact": "add-on-script-manager-pro-v0.0.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "script_manager.open_script",
+        "script_manager.open_script_folder",
+        "script_manager.refresh_list",
+        "script_manager.run_script",
+        "script_manager.save_metadata",
+        "script_manager.toggle_edit_mode",
+        "script_manager.toggle_favorite"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "script_manager.open_script",
+    "script_manager.open_script_folder",
+    "script_manager.refresh_list",
+    "script_manager.run_script",
+    "script_manager.save_metadata",
+    "script_manager.toggle_edit_mode",
+    "script_manager.toggle_favorite"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:22+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.4"
+}

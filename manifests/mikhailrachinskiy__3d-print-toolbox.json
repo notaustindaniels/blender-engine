@@ -1,0 +1,93 @@
+{
+  "canonical_id": "mikhailrachinskiy__3d-print-toolbox",
+  "artifact": "add-on-print3d-toolbox-v1.3.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "export_scene.print3d_export",
+        "mesh.print3d_bisect",
+        "mesh.print3d_check_all",
+        "mesh.print3d_check_degenerate",
+        "mesh.print3d_check_intersect",
+        "mesh.print3d_check_nonplanar",
+        "mesh.print3d_check_overhang",
+        "mesh.print3d_check_sharp",
+        "mesh.print3d_check_shells",
+        "mesh.print3d_check_solid",
+        "mesh.print3d_check_thick",
+        "mesh.print3d_clean_non_manifold",
+        "mesh.print3d_hollow",
+        "mesh.print3d_info_area",
+        "mesh.print3d_info_volume",
+        "mesh.print3d_scale_to_bounds",
+        "mesh.print3d_scale_to_volume",
+        "mesh.print3d_select_report",
+        "object.print3d_align_xy",
+        "wm.print3d_report_clear"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "export_scene.print3d_export",
+        "mesh.print3d_bisect",
+        "mesh.print3d_check_all",
+        "mesh.print3d_check_degenerate",
+        "mesh.print3d_check_intersect",
+        "mesh.print3d_check_nonplanar",
+        "mesh.print3d_check_overhang",
+        "mesh.print3d_check_sharp",
+        "mesh.print3d_check_shells",
+        "mesh.print3d_check_solid",
+        "mesh.print3d_check_thick",
+        "mesh.print3d_clean_non_manifold",
+        "mesh.print3d_hollow",
+        "mesh.print3d_info_area",
+        "mesh.print3d_info_volume",
+        "mesh.print3d_scale_to_bounds",
+        "mesh.print3d_scale_to_volume",
+        "mesh.print3d_select_report",
+        "object.print3d_align_xy",
+        "wm.print3d_report_clear"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.print3d_export",
+    "mesh.print3d_bisect",
+    "mesh.print3d_check_all",
+    "mesh.print3d_check_degenerate",
+    "mesh.print3d_check_intersect",
+    "mesh.print3d_check_nonplanar",
+    "mesh.print3d_check_overhang",
+    "mesh.print3d_check_sharp",
+    "mesh.print3d_check_shells",
+    "mesh.print3d_check_solid",
+    "mesh.print3d_check_thick",
+    "mesh.print3d_clean_non_manifold",
+    "mesh.print3d_hollow",
+    "mesh.print3d_info_area",
+    "mesh.print3d_info_volume",
+    "mesh.print3d_scale_to_bounds",
+    "mesh.print3d_scale_to_volume",
+    "mesh.print3d_select_report",
+    "object.print3d_align_xy",
+    "wm.print3d_report_clear"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:17+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

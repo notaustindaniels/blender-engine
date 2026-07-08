@@ -1,0 +1,39 @@
+{
+  "canonical_id": "community__modifier-tools",
+  "artifact": "add-on-modifier-tools-v0.2.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.apply_all_modifiers",
+        "object.delete_all_modifiers",
+        "object.toggle_apply_modifiers_view",
+        "wm.toggle_all_show_expanded"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.apply_all_modifiers",
+    "object.delete_all_modifiers",
+    "object.toggle_apply_modifiers_view",
+    "wm.toggle_all_show_expanded"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:11+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.3"
+}

@@ -1,0 +1,34 @@
+{
+  "canonical_id": "scorpion81__edit-operator-source",
+  "artifact": "add-on-edit-operator-source-v1.2.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "text.edit_operator"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "text.edit_operator"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "text.edit_operator"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:13+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

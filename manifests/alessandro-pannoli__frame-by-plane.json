@@ -1,0 +1,34 @@
+{
+  "canonical_id": "alessandro-pannoli__frame-by-plane",
+  "artifact": "add-on-frame-by-plane-v6.1.1-windows-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:58:35+00:00",
+  "prescan_hits": [
+    "socket",
+    "requests",
+    "open-write",
+    "driver-expression",
+    "subprocess",
+    "urllib",
+    "ctypes"
+  ]
+}

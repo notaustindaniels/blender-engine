@@ -1,0 +1,33 @@
+{
+  "canonical_id": "bobbe__pcb-3d-importer",
+  "artifact": "add-on-pcb3d-importer-v2.17.5-windows-x64-windows-arm64-linux-x64-macos-x64-macos-arm64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:58:54+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write",
+    "urllib",
+    "os.system",
+    "os.popen",
+    "requests"
+  ]
+}

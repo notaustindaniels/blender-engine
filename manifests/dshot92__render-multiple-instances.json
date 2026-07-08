@@ -1,0 +1,29 @@
+{
+  "canonical_id": "dshot92__render-multiple-instances",
+  "artifact": "add-on-render-multiple-instances-v3.2.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:59:46+00:00",
+  "prescan_hits": [
+    "subprocess",
+    "open-write"
+  ]
+}

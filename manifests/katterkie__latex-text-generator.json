@@ -1,0 +1,49 @@
+{
+  "canonical_id": "katterkie__latex-text-generator",
+  "artifact": "add-on-latex-text-generator-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "text.cancel_and_return",
+        "text.edit_text",
+        "text.save_and_return",
+        "wm.add_text",
+        "wm.load_font",
+        "wm.reset_param"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "text.cancel_and_return",
+        "text.edit_text",
+        "text.save_and_return",
+        "wm.add_text",
+        "wm.load_font",
+        "wm.reset_param"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "text.cancel_and_return",
+    "text.edit_text",
+    "text.save_and_return",
+    "wm.add_text",
+    "wm.load_font",
+    "wm.reset_param"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:23+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

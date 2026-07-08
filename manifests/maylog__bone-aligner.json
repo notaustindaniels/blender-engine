@@ -1,0 +1,52 @@
+{
+  "canonical_id": "maylog__bone-aligner",
+  "artifact": "add-on-bone-aligner-v1.1.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "bonealigner.align_active_to_selected",
+        "bonealigner.align_active_to_selected_pose",
+        "bonealigner.align_selected_to_active",
+        "bonealigner.align_selected_to_active_pose",
+        "bonealigner.clear_constraints",
+        "bonealigner.rename_active_to_selected",
+        "bonealigner.rename_selected_to_active"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "bonealigner.align_active_to_selected",
+        "bonealigner.align_active_to_selected_pose",
+        "bonealigner.align_selected_to_active",
+        "bonealigner.align_selected_to_active_pose",
+        "bonealigner.clear_constraints",
+        "bonealigner.rename_active_to_selected",
+        "bonealigner.rename_selected_to_active"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "bonealigner.align_active_to_selected",
+    "bonealigner.align_active_to_selected_pose",
+    "bonealigner.align_selected_to_active",
+    "bonealigner.align_selected_to_active_pose",
+    "bonealigner.clear_constraints",
+    "bonealigner.rename_active_to_selected",
+    "bonealigner.rename_selected_to_active"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:48+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

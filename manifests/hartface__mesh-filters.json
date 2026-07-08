@@ -1,0 +1,43 @@
+{
+  "canonical_id": "hartface__mesh-filters",
+  "artifact": "add-on-mesh-filters-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "meshfilter.auto_filter",
+        "meshfilter.filter",
+        "meshfilter.invert",
+        "meshfilter.mirror"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "meshfilter.auto_filter",
+        "meshfilter.filter",
+        "meshfilter.invert",
+        "meshfilter.mirror"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "meshfilter.auto_filter",
+    "meshfilter.filter",
+    "meshfilter.invert",
+    "meshfilter.mirror"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:40+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

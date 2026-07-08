@@ -1,0 +1,61 @@
+{
+  "canonical_id": "longiy__cameraide",
+  "artifact": "add-on-cameraide-settings-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "camera.render_all_normal",
+        "camera.render_all_viewport",
+        "camera.render_selected_normal",
+        "camera.render_selected_viewport",
+        "camera.render_snapshot_normal",
+        "camera.render_snapshot_viewport",
+        "camera.resolution_preset_apply",
+        "camera.swap_resolution",
+        "camera.toggle_custom_settings",
+        "camera.toggle_frame_range_sync",
+        "cameraide.add_camera",
+        "cameraide.remove_camera",
+        "cameraide.select_camera",
+        "cameraide.switch_to_percamera_mode",
+        "cameraide.switch_to_timeline_mode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "camera.render_all_normal",
+    "camera.render_all_viewport",
+    "camera.render_selected_normal",
+    "camera.render_selected_viewport",
+    "camera.render_snapshot_normal",
+    "camera.render_snapshot_viewport",
+    "camera.resolution_preset_apply",
+    "camera.swap_resolution",
+    "camera.toggle_custom_settings",
+    "camera.toggle_frame_range_sync",
+    "cameraide.add_camera",
+    "cameraide.remove_camera",
+    "cameraide.select_camera",
+    "cameraide.switch_to_percamera_mode",
+    "cameraide.switch_to_timeline_mode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:14+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.3"
+}

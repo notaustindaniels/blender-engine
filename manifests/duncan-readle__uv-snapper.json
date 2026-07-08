@@ -1,0 +1,37 @@
+{
+  "canonical_id": "duncan-readle__uv-snapper",
+  "artifact": "add-on-uv-snapper-v1.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "uv.createexampleatlas",
+        "uv.snaptoatlas"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "uv.createexampleatlas",
+        "uv.snaptoatlas"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "uv.createexampleatlas",
+    "uv.snaptoatlas"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:29+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

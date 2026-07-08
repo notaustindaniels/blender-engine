@@ -1,0 +1,39 @@
+{
+  "canonical_id": "saintbaron__directx-x-format-x",
+  "artifact": "add-on-io-directx-x-v1.3.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_scene.directx_x",
+        "import_scene.directx_x"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_scene.directx_x",
+        "import_scene.directx_x"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.directx_x",
+    "import_scene.directx_x"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:15:10+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

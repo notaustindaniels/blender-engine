@@ -1,0 +1,69 @@
+{
+  "canonical_id": "codeideal__rendernames",
+  "artifact": "add-on-rendernames-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "rendernames.apply_to_render",
+        "rendernames.clear_template",
+        "rendernames.copy_preview",
+        "rendernames.copy_variable",
+        "rendernames.delete_preset",
+        "rendernames.export_preset",
+        "rendernames.import_preset",
+        "rendernames.insert_variable",
+        "rendernames.load_preset",
+        "rendernames.refresh_presets",
+        "rendernames.reset_template",
+        "rendernames.save_preset"
+      ],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "rendernames.apply_to_render",
+        "rendernames.clear_template",
+        "rendernames.copy_preview",
+        "rendernames.copy_variable",
+        "rendernames.delete_preset",
+        "rendernames.export_preset",
+        "rendernames.import_preset",
+        "rendernames.insert_variable",
+        "rendernames.load_preset",
+        "rendernames.refresh_presets",
+        "rendernames.reset_template",
+        "rendernames.save_preset"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "rendernames.apply_to_render",
+    "rendernames.clear_template",
+    "rendernames.copy_preview",
+    "rendernames.copy_variable",
+    "rendernames.delete_preset",
+    "rendernames.export_preset",
+    "rendernames.import_preset",
+    "rendernames.insert_variable",
+    "rendernames.load_preset",
+    "rendernames.refresh_presets",
+    "rendernames.reset_template",
+    "rendernames.save_preset"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:30+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

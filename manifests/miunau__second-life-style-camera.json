@@ -1,0 +1,34 @@
+{
+  "canonical_id": "miunau__second-life-style-camera",
+  "artifact": "add-on-miunau-slcamera-v1.0.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "view3d.sl_camera_modal"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "view3d.sl_camera_modal"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "view3d.sl_camera_modal"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:46+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

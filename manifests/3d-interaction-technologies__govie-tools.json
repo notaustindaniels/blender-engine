@@ -1,0 +1,28 @@
+{
+  "canonical_id": "3d-interaction-technologies__govie-tools",
+  "artifact": "add-on-govietools-v1.0.22.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:58:58+00:00",
+  "prescan_hits": [
+    "subprocess"
+  ]
+}

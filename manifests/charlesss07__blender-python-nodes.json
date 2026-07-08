@@ -21,12 +21,11 @@
   "operators": [],
   "prescan": "needs_review",
   "artifact_type": null,
-  "verified_at": "2026-07-06T21:57:09+00:00",
+  "verified_at": "2026-07-08T22:58:52+00:00",
   "prescan_hits": [
     "socket",
     "eval(",
     "urllib",
     "requests"
-  ],
-  "probed_natively": true
+  ]
 }

@@ -2,4 +2,580 @@
 
 Harvested add-ons that survived verification but map to NO taxonomy niche — candidate wave-3 niches. Owner-approved only; never auto-added.
 
-- `tu2463__rock_generator_addon` (rock_generator_addon) — survived, no niche mapped
+- `1p2d__advanced-align-view` (Advanced Align View) — survived, no niche mapped
+- `1p2d__copy-relative-transform` (Copy Relative Transform) — survived, no niche mapped
+- `1p2d__enhanced-top-bar` (Enhanced Top Bar) — survived, no niche mapped
+- `1p2d__favorite-objects` (Favorite Objects) — survived, no niche mapped
+- `1p2d__focal-length-tweaker` (Focal Length Tweaker) — survived, no niche mapped
+- `1p2d__hdri-rotator` (HDRI Rotator) — survived, no niche mapped
+- `1p2d__marker-shortcuts` (Marker Shortcuts) — survived, no niche mapped
+- `1p2d__select-mode-keymaps` (Select Mode Keymaps) — survived, no niche mapped
+- `1p2d__shading` (Shading +) — survived, no niche mapped
+- `1p2d__time-stretch-sync` (Time Stretch Sync) — survived, no niche mapped
+- `3d-shvyrev__lutaya-viewport-camera` (Lutaya Viewport Camera) — survived, no niche mapped
+- `3d-shvyrev__lutiy-timeline` (Lutiy Timeline) — survived, no niche mapped
+- `3ddinosaur__theme-tamer` (Theme Tamer) — survived, no niche mapped
+- `3demfx__mesh2rig` (Mesh2Rig) — survived, no niche mapped
+- `61__cryptomatte-id-color` (CryptoMatte ID Color) — survived, no niche mapped
+- `6cto__copy-pivot-from-active` (Copy Pivot From Active) — survived, no niche mapped
+- `777-tanks__gzm-3d-model-format` (GZM 3D model format) — survived, no niche mapped
+- `__unity-style-walk-navigation` (Unity Style Walk Navigation) — survived, no niche mapped
+- `a-a-andrusenko__randomize-noise-offset` (Randomize Noise Offset) — survived, no niche mapped
+- `a-a-andrusenko__sculpt-stroke-replay` (Sculpt Stroke Replay) — survived, no niche mapped
+- `a2d4f3s1__camera-shift-sync` (Camera Shift Sync) — survived, no niche mapped
+- `a2d4f3s1__compositor-file-output-replacer` (Compositor File Output Replacer) — survived, no niche mapped
+- `a2d4f3s1__driver-copy-io` (Driver Copy IO) — survived, no niche mapped
+- `a2d4f3s1__script-launcher` (Script Launcher) — survived, no niche mapped
+- `abchouhan__ac-replay-importer` (AC Replay Importer) — survived, no niche mapped
+- `abhi-01__frame-flow-beta` (Frame Flow Beta) — survived, no niche mapped
+- `abstracteurdequinteessence__uv-layers-tools-ult` (UV Layers Tools (ULT)) — survived, no niche mapped
+- `acggit-lj__bbrush` (Bbrush) — survived, no niche mapped
+- `acggit-lj__hdr-rotation` (Hdr Rotation) — survived, no niche mapped
+- `acggit-lj__lattice-helper` (Lattice Helper) — survived, no niche mapped
+- `acggit-lj__light-helper` (Light Helper) — survived, no niche mapped
+- `acggit-lj__materialhelper` (MaterialHelper) — survived, no niche mapped
+- `acggit-lj__popoti-align-helper` (POPOTI Align Helper) — survived, no niche mapped
+- `acggit-lj__printing-helper` (Printing Helper) — survived, no niche mapped
+- `acggit-lj__simple-deform-helper` (Simple Deform Helper) — survived, no niche mapped
+- `adamdominec__snap-bisect` (Snap Bisect) — survived, no niche mapped
+- `aflynneastwood__dji-proxy-switcher` (DJI Proxy Switcher) — survived, no niche mapped
+- `ailex__selects-all-uv-islands-on-one-udim` (Selects all UV islands on one UDIM) — survived, no niche mapped
+- `aisun-tang__procedural-tiles` (Procedural Tiles) — survived, no niche mapped
+- `akhil-alukkaran__asset-library-tools` (Asset Library Tools) — survived, no niche mapped
+- `akhil-alukkaran__cam-tools` (Cam Tools) — survived, no niche mapped
+- `alessandro-pannoli__slides` (Slides) — survived, no niche mapped
+- `alexander-bicukow__individual-camera-properties` (Individual Camera Properties) — survived, no niche mapped
+- `alexander-bicukow__run-scripts-from-folder` (Run Scripts From Folder) — survived, no niche mapped
+- `alexander-bulatov__reforge` (Reforge) — survived, no niche mapped
+- `alicoskun__set-vertex-distance` (Set Vertex Distance) — survived, no niche mapped
+- `alx-11__omnioutset` (OmniOutset) — survived, no niche mapped
+- `andersmmg__color-grid-texture-generator` (Color Grid Texture Generator) — survived, no niche mapped
+- `andrey-pestryakov__batch-asset-placer` (Batch Asset Placer) — survived, no niche mapped
+- `andycuccaro__easeit` (Easeit) — survived, no niche mapped
+- `antlandscape` (None) — survived, no niche mapped
+- `argellika__toggle-orbit-method-turntable-trackball` (Toggle Orbit Method (Turntable / Trackball)) — survived, no niche mapped
+- `arman-jangmiri__topology-doctor` (Topology Doctor) — survived, no niche mapped
+- `arturo-cervantes__pbsu-3d-studio-3ds` (PBSU 3D Studio (.3ds)) — survived, no niche mapped
+- `artyom-pankratov__geo-bake-batch` (Geo Bake Batch) — survived, no niche mapped
+- `aryan02420__bombsquad-tools` (BombSquad Tools) — survived, no niche mapped
+- `astralis__face-angle-analyzer` (Face Angle Analyzer) — survived, no niche mapped
+- `astrorenales__magicavoxel-vox-format` (MagicaVoxel VOX format) — survived, no niche mapped
+- `athina-syntychaki__two-point-perspective` (Two-Point Perspective) — survived, no niche mapped
+- `atrxi__fk-ik-snapping-tools` (FK/IK Snapping Tools) — survived, no niche mapped
+- `atrxi__smart-selection-propagation` (Smart Selection Propagation) — survived, no niche mapped
+- `baraa-khaled-youssef__node-group-utilities` (Node Group Utilities) — survived, no niche mapped
+- `baraa-khaled-youssef__world-apply` (World Apply) — survived, no niche mapped
+- `barrunterio__browser-scroll-resize` (Browser Scroll Resize) — survived, no niche mapped
+- `basharatleogill__maze-generator-pro` (Maze Generator Pro) — survived, no niche mapped
+- `beast-of-burden__sco-buttobjects` (SCO ButtObjects) — survived, no niche mapped
+- `beast-of-burden__sco-edgewise` (SCO EdgeWise) — survived, no niche mapped
+- `belaid-ziane__measure-and-scale` (Measure and Scale) — survived, no niche mapped
+- `benedikt-schaber__import-svg-cuts-directory` (Import SVG Cuts Directory) — survived, no niche mapped
+- `benjamin-sauder__edgeflow` (EdgeFlow) — survived, no niche mapped
+- `bergamote__grease-pencil-nudge-frames` (Grease Pencil Nudge Frames) — survived, no niche mapped
+- `berun__snapline` (Snapline) — survived, no niche mapped
+- `berun__symtrz` (SymTrz) — survived, no niche mapped
+- `bhimax__depotkit` (DepotKit) — survived, no niche mapped
+- `bhimax__pbr-lookdev` (PBR Lookdev) — survived, no niche mapped
+- `bhimax__texture-file-path-editor` (Texture File Path Editor) — survived, no niche mapped
+- `bitbyte__mesh-align-plus` (Mesh Align Plus) — survived, no niche mapped
+- `bitsqueezer__ccncanimationobjects` (CCNCAnimationObjects) — survived, no niche mapped
+- `blenderbob__distribute` (Distribute) — survived, no niche mapped
+- `blenderbob__fire-ray` (Fire Ray) — survived, no niche mapped
+- `blenderbob__motion-path-creator` (Motion Path Creator) — survived, no niche mapped
+- `blenderbob__overscan-render` (Overscan Render) — survived, no niche mapped
+- `blenderbob__save-selection` (Save Selection) — survived, no niche mapped
+- `blenderbob__shapekey-copy` (ShapeKey Copy) — survived, no niche mapped
+- `blendphys__atomic-blender-cluster` (Atomic Blender Cluster) — survived, no niche mapped
+- `blendphys__atomic-blender-pdb-xyz` (Atomic Blender PDB/XYZ) — survived, no niche mapped
+- `bloody-albatross__import-pixel-art` (Import Pixel Art) — survived, no niche mapped
+- `bogatyr4ik__bh-smart-sym` (BH Smart Sym) — survived, no niche mapped
+- `bolt-factory__boltfactory` (BoltFactory) — survived, no niche mapped
+- `brendan-parmer__node-to-python` (Node To Python) — survived, no niche mapped
+- `brian-marshall__sprocket-tools` (Sprocket Tools) — survived, no niche mapped
+- `brrainz__multi-adjust` (Multi Adjust) — survived, no niche mapped
+- `brrainz__nurbs2mesh` (NURBS2Mesh) — survived, no niche mapped
+- `brrainz__replace-with-copy` (Replace With Copy) — survived, no niche mapped
+- `bsinga__add-std-paper-format` (Add Std Paper-Format) — survived, no niche mapped
+- `budijozz__matcolex` (MatColeX) — survived, no niche mapped
+- `byebyelan__import-psd-as-mesh-planes` (Import .PSD as Mesh Planes) — survived, no niche mapped
+- `c4205m__nla-batch-editor` (NLA Batch Editor) — survived, no niche mapped
+- `cadtamas__hdri-lightbrush` (HDRI LightBrush) — survived, no niche mapped
+- `carles-v__filter-channels` (Filter_Channels) — survived, no niche mapped
+- `cellfracture` (None) — survived, no niche mapped
+- `cemilberk__script-manager-pro` (Script Manager Pro) — survived, no niche mapped
+- `chalouek-rgbit__bake-info` (Bake Info) — survived, no niche mapped
+- `chamiseul__wiggle-2-rtx-edition` (Wiggle 2: RTX Edition) — survived, no niche mapped
+- `chenkin123__toggle-emulate-3-button-mouse` (Toggle Emulate 3 Button Mouse) — survived, no niche mapped
+- `chokavr__3d-cursor-plus` (3D Cursor Plus) — survived, no niche mapped
+- `chsh2__import-paint-brushes` (Import Paint Brushes) — survived, no niche mapped
+- `chyiz__bake-instance-animation` (Bake Instance Animation (烘焙几何节点实例动画)) — survived, no niche mapped
+- `ciyorie__shape-key-mirror-plus` (Shape Key Mirror Plus) — survived, no niche mapped
+- `claz-arts__smart-transform` (Smart Transform) — survived, no niche mapped
+- `clo1to5__planar-sculpting` (Planar Sculpting) — survived, no niche mapped
+- `clonephaze__auto-paint-boundaries` (Auto Paint Boundaries) — survived, no niche mapped
+- `clonephaze__nfc-card-and-keychain-generator` (NFC Card and Keychain Generator) — survived, no niche mapped
+- `clonephaze__quick-asset-manager` (Quick Asset Manager) — survived, no niche mapped
+- `cloud-guy__dynamic-head-property-manager` (Dynamic Head Property Manager) — survived, no niche mapped
+- `codeideal__rendernames` (RenderNames) — survived, no niche mapped
+- `community__3d-navigation` (3D Navigation) — survived, no niche mapped
+- `community__align-tools` (Align Tools) — survived, no niche mapped
+- `community__archimesh` (Archimesh) — survived, no niche mapped
+- `community__auto-mirror` (Auto Mirror) — survived, no niche mapped
+- `community__bsurfaces-gpl-edition` (Bsurfaces GPL Edition) — survived, no niche mapped
+- `community__btracer` (BTracer) — survived, no niche mapped
+- `community__carver` (Carver) — survived, no niche mapped
+- `community__cell-fracture` (Cell Fracture) — survived, no niche mapped
+- `community__copy-attributes-menu` (Copy Attributes Menu) — survived, no niche mapped
+- `community__corrective-shape-keys` (Corrective Shape Keys) — survived, no niche mapped
+- `community__curve-tools` (Curve Tools) — survived, no niche mapped
+- `community__discombobulator` (Discombobulator) — survived, no niche mapped
+- `community__dynamic-context-menu` (Dynamic Context Menu) — survived, no niche mapped
+- `community__edit-mesh-tools` (Edit Mesh Tools) — survived, no niche mapped
+- `community__export-camera-animation` (Export Camera Animation) — survived, no niche mapped
+- `community__extra-curve-objects` (Extra Curve Objects) — survived, no niche mapped
+- `community__f2` (F2) — survived, no niche mapped
+- `community__import-autocad-dxf-format-dxf` (Import AutoCAD DXF Format (.dxf)) — survived, no niche mapped
+- `community__import-brushset` (Import BrushSet) — survived, no niche mapped
+- `community__import-palettes` (Import Palettes) — survived, no niche mapped
+- `community__is-key-free` (Is key Free) — survived, no niche mapped
+- `community__looptools` (LoopTools) — survived, no niche mapped
+- `community__material-utilities` (Material Utilities) — survived, no niche mapped
+- `community__math-vis-console` (Math Vis (Console)) — survived, no niche mapped
+- `community__modifier-tools` (Modifier Tools) — survived, no niche mapped
+- `community__newtek-mdd-format` (NewTek MDD format) — survived, no niche mapped
+- `community__node-presets` (Node Presets) — survived, no niche mapped
+- `community__nuke-animation-format-chan` (Nuke Animation Format (.chan)) — survived, no niche mapped
+- `community__paint-palettes` (Paint Palettes) — survived, no niche mapped
+- `community__refine-tracking-solution` (Refine tracking solution) — survived, no niche mapped
+- `community__simplify-curves` (Simplify Curves+) — survived, no niche mapped
+- `community__skinify-rig` (Skinify Rig) — survived, no niche mapped
+- `community__stl-format-legacy` (STL format (legacy)) — survived, no niche mapped
+- `community__stored-views` (Stored Views) — survived, no niche mapped
+- `community__tinycad-mesh-tools` (tinyCAD Mesh tools) — survived, no niche mapped
+- `community__tri-lighting` (Tri-lighting) — survived, no niche mapped
+- `community__turnaround-camera` (Turnaround Camera) — survived, no niche mapped
+- `community__ui-animation-render` (UI Animation Render) — survived, no niche mapped
+- `corentinbileau__gizmo-resizer` (Gizmo Resizer) — survived, no niche mapped
+- `cornerback24__nla-midi-copier` (NLA Midi Copier) — survived, no niche mapped
+- `cosmin-planchon__substance-textures-importer` (Substance Textures Importer) — survived, no niche mapped
+- `cosmom-dias__time-theme-switcher` (Time Theme Switcher) — survived, no niche mapped
+- `cosmosmythos__gp-tween-c` (GP Tween (c)) — survived, no niche mapped
+- `costa__passpartout-slider` (Passpartout Slider) — survived, no niche mapped
+- `cristiano-tosoni__viewport-navigation-display` (Viewport Navigation Display) — survived, no niche mapped
+- `crwde__three-js-objectloader` (three.js ObjectLoader) — survived, no niche mapped
+- `cyber-king__pixelsync-porter` (PixelSync Porter) — survived, no niche mapped
+- `d3w3__local-view-by-collection` (Local View by collection) — survived, no niche mapped
+- `dadscastle__grease-pencil-to-curves` (Grease Pencil to Curves) — survived, no niche mapped
+- `dakashi__gs-model-helper` (GS Model Helper) — survived, no niche mapped
+- `dan-gry__asset-browser-capture-thumbnail-from-viewport` (Asset Browser: Capture Thumbnail from Viewport) — survived, no niche mapped
+- `dan-gry__nd-primitives` (ND Primitives) — survived, no niche mapped
+- `dan-oak__doblux-button-to-execute-geometry-node-group` (DOBLUX Button to execute Geometry Node Group) — survived, no niche mapped
+- `danielbystedt__visibility-handler` (Visibility handler) — survived, no niche mapped
+- `danyal-sarfraz__true-roboanimator` (True RoboAnimator) — survived, no niche mapped
+- `daringcuteseal__beantextures` (Beantextures) — survived, no niche mapped
+- `darknation__skin-mesh-to-bone` (Skin Mesh To Bone) — survived, no niche mapped
+- `darkstarrd__glare-node-controller` (Glare Node Controller) — survived, no niche mapped
+- `darkstarrd__shaping-recorder` (Shaping Recorder) — survived, no niche mapped
+- `darkstarrd__tetrominode` (Tetrominode) — survived, no niche mapped
+- `darsh__vray-arena-setup` (Vray Arena Setup) — survived, no niche mapped
+- `david-boudreau__edgeflowdraw` (EdgeFlowDraw) — survived, no niche mapped
+- `david-orrick__soleshapper` (SoleShapper) — survived, no niche mapped
+- `david494__auto-track-weights` (Auto Track Weights) — survived, no niche mapped
+- `david494__copy-paste-nodes` (Copy/Paste Nodes) — survived, no niche mapped
+- `deathshot-747__piemenu-everywhere` (PieMenu Everywhere) — survived, no niche mapped
+- `debolt__clean-game-asset-exporter` (Clean Game Asset Exporter) — survived, no niche mapped
+- `decentraland-foundation__decentraland-tools` (Decentraland Tools) — survived, no niche mapped
+- `deepak756__origin-move-like-maya-press-d` (Origin_move_like_maya (Press D)) — survived, no niche mapped
+- `deepak756__three-d-cursor-snap` (Three d Cursor Snap) — survived, no niche mapped
+- `degarashi__modern-primitive` (Modern Primitive) — survived, no niche mapped
+- `dev-patel__splats` (Splats) — survived, no niche mapped
+- `devilmaycry__import-mixamo-root-motion` (Import Mixamo - Root Motion) — survived, no niche mapped
+- `diego-montufar-perez__monty-batch-exporter` (Monty Batch Exporter) — survived, no niche mapped
+- `digital-art-freedom__gather-resources` (Gather Resources) — survived, no niche mapped
+- `digital-art-freedom__spine-io` (Spine IO) — survived, no niche mapped
+- `dimona-patrick-243__vectart-animation` (Vectart Animation) — survived, no niche mapped
+- `dinesh007__audio-exporter` (Audio Exporter) — survived, no niche mapped
+- `dinesh007__b-palettes` (B Palettes) — survived, no niche mapped
+- `dinesh007__strip-array` (Strip Array) — survived, no niche mapped
+- `distinctive-mark__batch-bone-constraints` (Batch Bone Constraints) — survived, no niche mapped
+- `don1138__qle-quick-lighting-environment` (QLE (Quick Lighting Environment)) — survived, no niche mapped
+- `dprice__auto-dark-mode` (Auto Dark Mode) — survived, no niche mapped
+- `dr-sybren__action-to-scene-range` (Action to Scene Range) — survived, no niche mapped
+- `dr-sybren__flatterer` (Flatterer) — survived, no niche mapped
+- `dr-sybren__you-are-autosave` (You Are Autosave) — survived, no niche mapped
+- `dragondreams__drag-en-gine-import-export` (Drag[en]gine Import/Export) — survived, no niche mapped
+- `dshot92__mesh-analysis-overlay` (Mesh Analysis Overlay) — survived, no niche mapped
+- `duncan-readle__anim-curve-sorter` (Anim Curve Sorter) — survived, no niche mapped
+- `duncan-readle__uv-snapper` (UV Snapper) — survived, no niche mapped
+- `dupoxy__3d-cursors-briefcase` (3D Cursors Briefcase) — survived, no niche mapped
+- `dynamic-sky__dynamic-sky` (Dynamic Sky) — survived, no niche mapped
+- `eat-the-future__camera-shakify` (Camera Shakify) — survived, no niche mapped
+- `eduardito-3d__dynamic-list-manager` (Dynamic List Manager) — survived, no niche mapped
+- `elfnorcat__maze-any-mesh` (Maze any Mesh) — survived, no niche mapped
+- `endertainer007__additional-batch-rename` (Additional Batch Rename) — survived, no niche mapped
+- `endertainer007__ik-fk-snapping-tool` (IK-FK Snapping Tool) — survived, no niche mapped
+- `endorh__keyboard-layout-emulation` (Keyboard Layout Emulation) — survived, no niche mapped
+- `eqkoss__lumos` (Lumos) — survived, no niche mapped
+- `eric-banker__select-by-index` (Select By Index) — survived, no niche mapped
+- `eric-mwangi__oebs-icon-viewer` (OEBS Icon Viewer) — survived, no niche mapped
+- `f1dg3t__eevee-projectors` (Eevee Projectors) — survived, no niche mapped
+- `f1dg3t__lodgen` (LODGen) — survived, no niche mapped
+- `fardreamerlabs__hue` (HUE) — survived, no niche mapped
+- `fdaubine__align-2-custom` (Align 2 Custom) — survived, no niche mapped
+- `felipe-g__the-bendybones-toolkit` (the bendybones toolkit) — survived, no niche mapped
+- `festivity__flow` (Flow) — survived, no niche mapped
+- `ffuthoni__comparable` (Comparable) — survived, no niche mapped
+- `filipe-rocha-lopes__cortecloud-export` (CorteCloud Export) — survived, no niche mapped
+- `fisch-tu__123-select` (123 Select) — survived, no niche mapped
+- `fisch-tu__poly-copy-paste` (Poly Copy Paste) — survived, no niche mapped
+- `flakmoppen__multirow` (Multirow) — survived, no niche mapped
+- `flement__vertex-animation-texture-addon-vat` (Vertex Animation Texture Addon (VAT)) — survived, no niche mapped
+- `fran-dominguez-leiva-2__generadormapspbr` (GeneradorMapsPbr) — survived, no niche mapped
+- `francesco-bellini__scene-workspaces` (Scene Workspaces) — survived, no niche mapped
+- `frankfirsching__node-annotator` (Node Annotator) — survived, no niche mapped
+- `fwdotcom__dynamic-color-palette` (Dynamic Color Palette) — survived, no niche mapped
+- `geedoubleu__auto-sync-object-data-names` (Auto Sync Object Data Names) — survived, no niche mapped
+- `giambattista-caltabiano__new-object-from-selected-geometry` (New Object From Selected Geometry) — survived, no niche mapped
+- `gihan-maddumage__texture-pipeline-studio` (Texture Pipeline Studio) — survived, no niche mapped
+- `golden_good_cube` (None) — survived, no niche mapped
+- `golden_noop` (None) — survived, no niche mapped
+- `gonnetz__forts-map-importer` (Forts Map Importer) — survived, no niche mapped
+- `gregzaal__manage-file-paths` (Manage File Paths) — survived, no niche mapped
+- `gregzaal__matalogue` (Matalogue) — survived, no niche mapped
+- `griperis__improved-node-search` (Improved Node Search) — survived, no niche mapped
+- `gruff-wright__startup-preset-manager` (Startup Preset Manager) — survived, no niche mapped
+- `guillaume-bissieres__bas-relief` (Bas Relief) — survived, no niche mapped
+- `guillaume-bissieres__fill-mesh` (Fill Mesh) — survived, no niche mapped
+- `guillaume-bissieres__float-curve-css` (Float Curve CSS) — survived, no niche mapped
+- `hades-su__quick-resolution-setup` (Quick Resolution Setup) — survived, no niche mapped
+- `hakan-erunsal__metahumantomanny` (MetahumanToManny) — survived, no niche mapped
+- `hannah-pascal-no-l__mesh-attribute-utils` (Mesh Attribute Utils) — survived, no niche mapped
+- `hans-xwh__a3da-parser` (A3DA Parser) — survived, no niche mapped
+- `hans-xwh__wiggle-bones` (Wiggle Bones) — survived, no niche mapped
+- `hartface__aiming-helper` (Aiming Helper) — survived, no niche mapped
+- `hartface__clothdrop-reborn` (ClothDrop Reborn) — survived, no niche mapped
+- `hartface__mesh-filters` (Mesh Filters) — survived, no niche mapped
+- `hattiffnat__auto-wrinkle-map` (Auto Wrinkle Map) — survived, no niche mapped
+- `hattiffnat__separate-by-collision` (Separate by Collision) — survived, no niche mapped
+- `hisanimations__global-copy-nodes` (Global Copy Nodes) — survived, no niche mapped
+- `hisanimations__keyframe-visibility` (Keyframe Visibility) — survived, no niche mapped
+- `hisanimations__rigi-all` (Rigi-All) — survived, no niche mapped
+- `hissatsuclaw__gp-select` (Gp Select) — survived, no niche mapped
+- `hodgson3d__grid-layout` (Grid Layout) — survived, no niche mapped
+- `howardt__inset-straight-skeleton` (Inset Straight Skeleton) — survived, no niche mapped
+- `hugemenace__nd` (ND) — survived, no niche mapped
+- `hydrocallis__aligning-horizontally-mini` (Aligning Horizontally Mini) — survived, no niche mapped
+- `hydrocallis__circular-stacker` (Circular Stacker) — survived, no niche mapped
+- `hydrocallis__keyframe-tools` (Keyframe Tools) — survived, no niche mapped
+- `iceddog__bezier-curve-editor` (Bezier Curve Editor) — survived, no niche mapped
+- `igor-garcia__smart-mesh-cleaner-pro` (Smart Mesh Cleaner Pro) — survived, no niche mapped
+- `ihor-spasivskyi__skin-weights-copypaster` (Skin Weights Copypaster) — survived, no niche mapped
+- `iliaverpa__navigation-puck-addon` (Navigation Puck Addon) — survived, no niche mapped
+- `ilumetric__color-randomizer` (Color Randomizer) — survived, no niche mapped
+- `imare32__fractal-family` (Fractal Family) — survived, no niche mapped
+- `impatient0__end-to-end-render-pipeline` (End-to-End Render Pipeline) — survived, no niche mapped
+- `internet-addict__vmc-link` (VMC Link) — survived, no niche mapped
+- `ishara-sandeepa__viewtools` (ViewTools) — survived, no niche mapped
+- `iurii-tiuzhin__altview` (AltView) — survived, no niche mapped
+- `ivan-perevala__multiple-camera-render` (Multiple Camera Render) — survived, no niche mapped
+- `ivanvostrikov__texel-density-checker` (Texel Density Checker) — survived, no niche mapped
+- `ivygen` (None) — survived, no niche mapped
+- `iz-mdverz__randomize-bones-pose` (Randomize_Bones_Pose) — survived, no niche mapped
+- `jackal__dissolve-2-edge-vertices` (Dissolve 2-Edge Vertices) — survived, no niche mapped
+- `jackson-sutherland__omulete` (omUlete) — survived, no niche mapped
+- `jacob-beatty__custom-grid-scales` (Custom Grid Scales) — survived, no niche mapped
+- `jan-hendrik-m-ller__motion-sounds` (Motion Sounds) — survived, no niche mapped
+- `jan-holinka__dimensions-and-lines` (Dimensions and Lines) — survived, no niche mapped
+- `javl__embroidery-importer` (Embroidery Importer) — survived, no niche mapped
+- `jean-yves-grosbeau__to-square` (To Square) — survived, no niche mapped
+- `jefftml__add-positive-cube` (Add Positive Cube) — survived, no niche mapped
+- `jens-ne__build-map-importer` (BUILD Map Importer) — survived, no niche mapped
+- `jlb-hm__surface-diagnostics` (Surface Diagnostics) — survived, no niche mapped
+- `joan-charmant__quill-import-export` (Quill Import/Export) — survived, no niche mapped
+- `johnnyquist__align-distribute-grease-pencil-strokes` (Align-Distribute Grease Pencil Strokes) — survived, no niche mapped
+- `johnnyquist__stroke-material-display` (Stroke Material Display) — survived, no niche mapped
+- `jonny-b__sierpinski-triangle` (Sierpinski Triangle) — survived, no niche mapped
+- `jonny-b__wfc-3d-generator` (WFC 3D Generator) — survived, no niche mapped
+- `jordan-moss__nodot-names` (NoDot Names) — survived, no niche mapped
+- `jos-mar-n__sciblend` (SciBlend) — survived, no niche mapped
+- `jr3dful__camfree` (CamFree) — survived, no niche mapped
+- `jr3dful__texops` (TexOps) — survived, no niche mapped
+- `jr3dful__uv-maps` (UV Maps+) — survived, no niche mapped
+- `justinas-dudenas__object-reporter` (Object Reporter) — survived, no niche mapped
+- `justonil__quick-catalogs-asset-browser` (Quick Catalogs ( Asset Browser )) — survived, no niche mapped
+- `justonil__quick-j-connect-vertex-path` (Quick J ( Connect Vertex Path )) — survived, no niche mapped
+- `k-naoki__analysis-toolkit` (Analysis Toolkit) — survived, no niche mapped
+- `k-naoki__blink-bg` (Blink BG) — survived, no niche mapped
+- `k-naoki__clip-tools` (Clip Tools) — survived, no niche mapped
+- `k-naoki__merge-selected-cameras` (Merge Selected Cameras) — survived, no niche mapped
+- `k-naoki__pcamsolver` (PCamSolver) — survived, no niche mapped
+- `k-naoki__physical-motion-blur` (Physical Motion Blur) — survived, no niche mapped
+- `k-naoki__pinsolver` (PinSolver) — survived, no niche mapped
+- `k-naoki__scene-duration-display` (Scene Duration Display) — survived, no niche mapped
+- `k-naoki__stmap-exporter` (STMap Exporter) — survived, no niche mapped
+- `katterkie__latex-text-generator` (LaTeX Text Generator) — survived, no niche mapped
+- `kenken__camera-viewer` (Camera Viewer) — survived, no niche mapped
+- `kewlsheet__loopkut` (Loopkut) — survived, no niche mapped
+- `kewlsheet__modifier-manager` (Modifier Manager) — survived, no niche mapped
+- `kewlsheet__target-weld` (Target Weld) — survived, no niche mapped
+- `kgd__speedzone` (SPEEDZONE) — survived, no niche mapped
+- `kk__fast-language-switch` (Fast Language Switch) — survived, no niche mapped
+- `kmnunley__simple-gcode-importer` (Simple Gcode Importer) — survived, no niche mapped
+- `krazygfx__nodeexporter` (NodeExporter) — survived, no niche mapped
+- `kusaanko__bve-import-export` (BVE Import/Export) — survived, no niche mapped
+- `kvendy__animated-texture-brush` (Animated Texture Brush) — survived, no niche mapped
+- `lauloque__reset-custom-properties` (Reset Custom Properties) — survived, no niche mapped
+- `laxhexlux__trimmer` (Trimmer) — survived, no niche mapped
+- `leafybush7__shape-key-amp-vertex-groups-utilities-enhanced` (Shape Key &amp; Vertex Groups Utilities Enhanced) — survived, no niche mapped
+- `leeroy-majors__maze-generator` (Maze Generator) — survived, no niche mapped
+- `leonardo-pike-excell__data-block-utilities` (Data-Block Utilities) — survived, no niche mapped
+- `les-f-es-sp-ciales__export-adobe-after-effects-jsx` (Export: Adobe After Effects (.jsx)) — survived, no niche mapped
+- `liam-courtney__objsequence` (OBJSequence) — survived, no niche mapped
+- `lije-morgan__better-bend` (Better Bend) — survived, no niche mapped
+- `likkez__merge-nla-strips` (Merge NLA Strips) — survived, no niche mapped
+- `ln-12__blainder-range-scanner` (blainder-range-scanner) — survived, no niche mapped
+- `lokimckay__remove-static-fcurves` (Remove Static FCurves) — survived, no niche mapped
+- `longiy__cameraide` (Cameraide) — survived, no niche mapped
+- `longlivethecube__cad2cube-dxf-importer` (CAD2Cube — DXF Importer) — survived, no niche mapped
+- `longlivethecube__img2cube` (img2cube) — survived, no niche mapped
+- `luigipacheco__fabnodes` (Fabnodes) — survived, no niche mapped
+- `lumpengnom__wireframe-color-tools` (Wireframe Color Tools) — survived, no niche mapped
+- `lunarkitten__easy-clouds` (Easy Clouds) — survived, no niche mapped
+- `mabaci__batchforge-batch-export-tool` (BatchForge: Batch Export Tool) — survived, no niche mapped
+- `mahdi-shalchian__batch-render-cameras` (Batch Render Cameras) — survived, no niche mapped
+- `malik-nomi__hifi-architecture-builder-v4-5-8` (HiFi Architecture Builder v4.5.8) — survived, no niche mapped
+- `mamenr__sculpt-pose-sync` (Sculpt Pose Sync) — survived, no niche mapped
+- `manuel-seilhes__k3d-uv-islands-keeper` (K3D UV Islands Keeper) — survived, no niche mapped
+- `manuelluellau__headsup-warnings` (HeadsUp Warnings) — survived, no niche mapped
+- `marcus997__smartscene-toolkit` (SmartScene Toolkit) — survived, no niche mapped
+- `maro3d__quick-export` (Quick Export) — survived, no niche mapped
+- `maro3d__shapekeyswapper` (ShapeKeySwapper) — survived, no niche mapped
+- `maro3d__vertex-group-assistant` (Vertex Group Assistant) — survived, no niche mapped
+- `mars__slot-link` (Slot Link) — survived, no niche mapped
+- `mart-n-torres-valverde__symple-symmetry-groups` (Symple (symmetry groups)) — survived, no niche mapped
+- `martin-lorentzon__pattern-collections` (Pattern Collections) — survived, no niche mapped
+- `mast26__liveryhelper` (LiveryHelper) — survived, no niche mapped
+- `matej-zeman02__delete-line-shortcut` (Delete Line Shortcut) — survived, no niche mapped
+- `matiasmartin__quick-character-selector` (Quick Character Selector) — survived, no niche mapped
+- `matsm-studio__unreal-viewport-navigation-wasd` (Unreal Viewport Navigation - WASD) — survived, no niche mapped
+- `mattia-fiorini__360-photolab` (360 PhotoLab) — survived, no niche mapped
+- `maylog__batch-material-helper` (Batch Material Helper) — survived, no niche mapped
+- `maylog__bone-aligner` (Bone Aligner) — survived, no niche mapped
+- `maylog__fakebones` (FakeBones) — survived, no niche mapped
+- `maylog__mat-helper` (MAT Helper) — survived, no niche mapped
+- `maylog__uv-flatten-tool` (UV_Flatten_Tool) — survived, no niche mapped
+- `mcd1992__auto-tracking` (Auto-tracking) — survived, no niche mapped
+- `memm__simply-loopy` (Simply Loopy) — survived, no niche mapped
+- `mets__easyweight` (EasyWeight) — survived, no niche mapped
+- `mets__geonode-shape-keys` (GeoNode Shape Keys) — survived, no niche mapped
+- `mets__lattice-magic` (Lattice Magic) — survived, no niche mapped
+- `michael-lamertz__ddslideshow` (DDSlideshow) — survived, no niche mapped
+- `mignotgeorges__flexytrack` (FlexyTrack) — survived, no niche mapped
+- `mikhailrachinskiy__3d-print-toolbox` (3D Print Toolbox) — survived, no niche mapped
+- `mikhailrachinskiy__booltron` (Booltron) — survived, no niche mapped
+- `mikhailrachinskiy__commotion` (Commotion) — survived, no niche mapped
+- `mingwitty__simple-camera-match` (Simple Camera Match) — survived, no niche mapped
+- `mio__mio3-flex` (Mio3 Flex) — survived, no niche mapped
+- `miunau__second-life-style-camera` (Second Life-style camera) — survived, no niche mapped
+- `mlico__easy-arrangement` (Easy Arrangement) — survived, no niche mapped
+- `mmd__mmd-tools` (MMD Tools) — survived, no niche mapped
+- `mochi-lin__selected-bones-to-vertex-group` (Selected_Bones_To_Vertex_Group) — survived, no niche mapped
+- `molei-vfx__masktovertexcolorpro` (MaskToVertexColorPro) — survived, no niche mapped
+- `mononym__pohlke` (Pohlke) — survived, no niche mapped
+- `mont29__copy-render-settings` (Copy Render Settings) — survived, no niche mapped
+- `moonraider__texture-mixer` (Texture Mixer) — survived, no niche mapped
+- `mr-nobody3d__cad-dimensions` (Cad_Dimensions) — survived, no niche mapped
+- `mrclock__add-on-profiler` (Add-on Profiler) — survived, no niche mapped
+- `muhuk__meshstats` (Meshstats) — survived, no niche mapped
+- `multlabs__quick-groups-instances` (Quick Groups (Instances)) — survived, no niche mapped
+- `mustard__mustard-simplify` (Mustard Simplify) — survived, no niche mapped
+- `mustard__mustardui` (MustardUI) — survived, no niche mapped
+- `naelstrof__jiggle-physics` (Jiggle Physics) — survived, no niche mapped
+- `nandur__ns-toolkit-mesh-cleanup-pro` (NS Toolkit - Mesh Cleanup Pro) — survived, no niche mapped
+- `nanomanpro__theme-property-finder` (Theme Property Finder) — survived, no niche mapped
+- `natsune-mochizuki__drag-and-drop-support` (Drag and Drop Support) — survived, no niche mapped
+- `nerk__add-airfoil` (Add Airfoil) — survived, no niche mapped
+- `nerk__fishsim` (FishSim) — survived, no niche mapped
+- `nerk__rigflex` (RigFlex) — survived, no niche mapped
+- `nguyen-phuc-nguyen__import-export-skin-weights` (Import Export Skin Weights) — survived, no niche mapped
+- `nickberckley__bake-shape-keys` (Bake Shape Keys) — survived, no niche mapped
+- `nickberckley__bool-tool` (Bool Tool) — survived, no niche mapped
+- `nickberckley__face-set-operators` (Face Set Operators) — survived, no niche mapped
+- `nickberckley__keymesh` (Keymesh) — survived, no niche mapped
+- `nidus__skkeeper` (SKkeeper) — survived, no niche mapped
+- `niels-couvreur__softviz-pro` (SoftViz Pro) — survived, no niche mapped
+- `niewinny__blockout` (Blockout) — survived, no niche mapped
+- `niewinny__lost-selection` (Lost Selection) — survived, no niche mapped
+- `nifs__bone-eyedropper` (Bone Eyedropper) — survived, no niche mapped
+- `nixkuroi__unity-rig` (Unity Rig) — survived, no niche mapped
+- `nrgsille__autodesk-3d-studio-3ds` (Autodesk 3D Studio (.3ds)) — survived, no niche mapped
+- `nrgsille__import-autodesk-max-max` (Import Autodesk MAX (.max)) — survived, no niche mapped
+- `nrgsille__scene-mvr-mvr-and-gdtf-gdtf` (Scene MVR (.mvr) and GDTF (.gdtf)) — survived, no niche mapped
+- `nukkio__render-from-terminal` (Render from Terminal) — survived, no niche mapped
+- `nukxon__nukxon-vr-exporter` (Nukxon VR Exporter) — survived, no niche mapped
+- `nutti__magic-uv` (Magic UV) — survived, no niche mapped
+- `nutti__mqo-metasequoia-format-file-importer-exporter` (MQO (Metasequoia) Format File Importer/Exporter) — survived, no niche mapped
+- `nutti__screencast-keys` (Screencast Keys) — survived, no niche mapped
+- `nxstynate__stack` (Stack) — survived, no niche mapped
+- `o-oo-gote510__math-controller` (Math Controller) — survived, no niche mapped
+- `orange-turbine__apply-modifier-with-shape-keys` (Apply modifier with shape keys) — survived, no niche mapped
+- `orange-turbine__orient-and-origin-to-selected` (Orient and Origin to Selected) — survived, no niche mapped
+- `ou-chiang__armature-pie` (Armature Pie) — survived, no niche mapped
+- `ou-chiang__format-rename` (Format Rename) — survived, no niche mapped
+- `ou-chiang__frame-focus` (Frame Focus) — survived, no niche mapped
+- `ou-chiang__pybtnbox` (PyBtnBox) — survived, no niche mapped
+- `overtools__owm-import` (OWM Import) — survived, no niche mapped
+- `pablovazquez__auto-switch-theme` (Auto Switch Theme) — survived, no niche mapped
+- `padraig-o-cinneide__batch-render-actions` (Batch Render Actions) — survived, no niche mapped
+- `papercraft-games__folded-paper-engine` (Folded Paper Engine) — survived, no niche mapped
+- `parik__dragonff` (DragonFF) — survived, no niche mapped
+- `patiga__teeworlds-and-ddnet-map-import` (Teeworlds and DDNet Map import) — survived, no niche mapped
+- `patrick-tiefenbacher__exact-radius` (Exact Radius) — survived, no niche mapped
+- `pavel-karoukin__lay-flat` (Lay Flat) — survived, no niche mapped
+- `pfalkingham__shape-fitter` (Shape Fitter) — survived, no niche mapped
+- `phindev__time-tracker` (Time Tracker) — survived, no niche mapped
+- `pioverfour__highlighter` (Highlighter) — survived, no niche mapped
+- `pioverfour__sun-position` (Sun Position) — survived, no niche mapped
+- `pixldg__sculpting-extra-meshes-curve` (Sculpting Extra Meshes + Curve) — survived, no niche mapped
+- `pluglug__on-screen-numpad` (On-Screen Numpad) — survived, no niche mapped
+- `polyfjord__simple-audio-visualizer` (Simple Audio Visualizer) — survived, no niche mapped
+- `polyfjord__simple-bounce-curve` (Simple Bounce Curve) — survived, no niche mapped
+- `pongbuster__grease-pencil-quicktools-v3` (Grease Pencil QuickTools_v3) — survived, no niche mapped
+- `prince-eagle__mesh-planes-pro` (Mesh Planes Pro) — survived, no niche mapped
+- `prince-eagle__retro-console-lite` (Retro Console Lite) — survived, no niche mapped
+- `propgon__propgon-uv-trim` (PropGon UV Trim) — survived, no niche mapped
+- `protowlf__proto-game-asset-tools` (PROTO Game Asset Tools) — survived, no niche mapped
+- `qiu-feng__sync-material-viewport-color` (Sync Material Viewport Color) — survived, no niche mapped
+- `qiumu__quickmenu` (QuickMenu) — survived, no niche mapped
+- `qsowosp__timeline-audio-visualizer` (Timeline Audio Visualizer) — survived, no niche mapped
+- `quackarooni__toggle-socket-visibility` (Toggle Socket Visibility) — survived, no niche mapped
+- `quint-vrolijk__export-curve-to-json` (Export Curve To Json) — survived, no niche mapped
+- `quint-vrolijk__image-packer` (Image Packer) — survived, no niche mapped
+- `quinzy__pivot-tools` (Pivot Tools) — survived, no niche mapped
+- `quinzy__silhouettetoole` (SilhouetteToole) — survived, no niche mapped
+- `r4v3n__backup-modifiers` (Backup Modifiers) — survived, no niche mapped
+- `r4v3n__mirror-image` (Mirror Image) — survived, no niche mapped
+- `r4v3n__smart-box-select` (Smart Box Select) — survived, no niche mapped
+- `rafaelpasquay__isometric-scene-setup` (Isometric Scene Setup) — survived, no niche mapped
+- `rainma22__explode` (expLODe) — survived, no niche mapped
+- `raja-muda__batch-import-images-to-brushes` (Batch Import Images to Brushes) — survived, no niche mapped
+- `renanmsv__jsbsim-viewer` (JSBSim Viewer) — survived, no niche mapped
+- `renderrides__autocam` (AutoCam) — survived, no niche mapped
+- `rikokenz__nla-empty-track-cleanup-rknz` (NLA Empty Track Cleanup RKNZ) — survived, no niche mapped
+- `rikokenz__quickpath-rknz` (QuickPath RKNZ) — survived, no niche mapped
+- `robbiek__extrude-along-path` (Extrude Along Path) — survived, no niche mapped
+- `robbiek__separate-loose-plus` (Separate Loose Plus) — survived, no niche mapped
+- `robert-kezives__k-tools-mode-highlight` (K-Tools: Mode Highlight) — survived, no niche mapped
+- `robert-kezives__k-tools-texture-map-loader` (K-Tools: Texture Map Loader) — survived, no niche mapped
+- `robert-kezives__visibility-check` (Visibility Check) — survived, no niche mapped
+- `robin-hohni__vdm-brush-baker` (VDM Brush Baker) — survived, no niche mapped
+- `robwu__rmb-sort-view-layers-alphabetically-in-outliner-scenes` (RMB Sort View Layers Alphabetically in Outliner-Scenes) — survived, no niche mapped
+- `roland-vyens__industrial-aov-connector` (Industrial AOV Connector) — survived, no niche mapped
+- `roland-vyens__industrial-light-aov-splitter` (Industrial Light AOV Splitter) — survived, no niche mapped
+- `runerback__vnf-export-extension` (VNF Export Extension) — survived, no niche mapped
+- `ruuubick__import-png-palette` (Import PNG Palette) — survived, no niche mapped
+- `saintbaron__bugsnax-cache-importer-exporter` (Bugsnax Cache Importer/Exporter) — survived, no niche mapped
+- `saintbaron__directx-x-format-x` (DirectX X Format (.x)) — survived, no niche mapped
+- `salaivv__modifier-stack-manager` (Modifier Stack Manager) — survived, no niche mapped
+- `samrog94__armature-to-mesh` (Armature to Mesh) — survived, no niche mapped
+- `sapling` (None) — survived, no niche mapped
+- `scaryplasmon__cake-particles` (Cake_Particles) — survived, no niche mapped
+- `schemann__flat-uv-mapper` (Flat UV Mapper) — survived, no niche mapped
+- `scorpion81__edit-operator-source` (Edit Operator Source) — survived, no niche mapped
+- `seaway__sculpt-mask-facesets-tools` (Sculpt Mask FaceSets Tools) — survived, no niche mapped
+- `sergey-kabanov__keychain-builder` (Keychain Builder) — survived, no niche mapped
+- `sergey-tyapkin__zen-uv-checker` (Zen UV Checker) — survived, no niche mapped
+- `sergeymetelskiy__copy-to-autograph` (Copy to Autograph) — survived, no niche mapped
+- `seth-adam-trowbridge__perfectly-normal` (Perfectly Normal) — survived, no niche mapped
+- `shawn-shipley__vertex-overlap` (Vertex Overlap) — survived, no niche mapped
+- `shengmingu__damped-track-chain` (Damped Track Chain) — survived, no niche mapped
+- `shinmera__shirakumo-sf3-io` (Shirakumo SF3 IO) — survived, no niche mapped
+- `shiva__image-to-mat` (Image to Mat) — survived, no niche mapped
+- `shuimeng__auto-sort-collections` (Auto Sort Collections) — survived, no niche mapped
+- `shuimeng__custom-output-path` (Custom Output Path) — survived, no niche mapped
+- `shuimeng__grid-dimensions` (Grid Dimensions/网格标注) — survived, no niche mapped
+- `shuimeng__outliner-model-preview` (Outliner Model Preview) — survived, no niche mapped
+- `shynez__background-timesheet` (Background Timesheet) — survived, no niche mapped
+- `siemen-lens__autotrack` (AutoTrack) — survived, no niche mapped
+- `sietseb__gp-tool-wheel` (GP Tool Wheel) — survived, no niche mapped
+- `silky-renders__timelapse` (Timelapse) — survived, no niche mapped
+- `silvie3d__quick-switch` (Quick Switch) — survived, no niche mapped
+- `simonthommes__border-buddy` (Border Buddy) — survived, no niche mapped
+- `sinewave__mesh-repair-tools` (Mesh Repair Tools) — survived, no niche mapped
+- `skarmuse__boardtyper-3d` (Boardtyper 3D) — survived, no niche mapped
+- `smagnusson__light-painter` (Light Painter) — survived, no niche mapped
+- `softyoda__animation-transform-offset` (Animation Transform Offset) — survived, no niche mapped
+- `spec-arte__easymesh-batch-exporter` (EasyMesh Batch Exporter) — survived, no niche mapped
+- `spectralvectors__right-mouse-navigation` (Right Mouse Navigation) — survived, no niche mapped
+- `stefan-jeske__sequence-loader` (Sequence Loader) — survived, no niche mapped
+- `stefan2814__keyboard-and-mouse-tracker` (Keyboard and mouse tracker) — survived, no niche mapped
+- `stellarc__all-objects-into-assets` (All Objects into Assets) — survived, no niche mapped
+- `steve-paws__paws-bakery` (PAWS: Bakery) — survived, no niche mapped
+- `stevewarner__img2mat-pro` (img2mat_pro) — survived, no niche mapped
+- `suchaaver__armature-deform-with-linked-groups` (Armature Deform with Linked Groups) — survived, no niche mapped
+- `sudip-soni__game-asset-optimizer` (Game Asset Optimizer) — survived, no niche mapped
+- `summonangelus__arkit-blendshape-helper` (ARKit Blendshape Helper) — survived, no niche mapped
+- `tams-3d__t3d-gn-presets` (T3D GN Presets) — survived, no niche mapped
+- `tayou__bone-and-vertex-group-merge` (Bone and Vertex Group Merge) — survived, no niche mapped
+- `tfmstyle__curve-generator` (Curve Generator) — survived, no niche mapped
+- `tfmstyle__graph-generator` (Graph Generator) — survived, no niche mapped
+- `tfmstyle__light-generator` (Light Generator) — survived, no niche mapped
+- `tfmstyle__orbiter` (Orbiter) — survived, no niche mapped
+- `tfmstyle__ramp-generator` (Ramp Generator) — survived, no niche mapped
+- `tfmstyle__spline-generator` (Spline Generator) — survived, no niche mapped
+- `the-visual-geek__node-editor-pro` (Node Editor Pro) — survived, no niche mapped
+- `timhendriks93__servo-animation` (Servo Animation) — survived, no niche mapped
+- `timothee-yeramian__rmkit` (rmKit) — survived, no niche mapped
+- `tissue` (None) — survived, no niche mapped
+- `tobiaskummer__dynamic-render-border` (Dynamic Render Border) — survived, no niche mapped
+- `tom-heeley__r3f-jsx-tsx-exporter` (R3F JSX/TSX Exporter) — survived, no niche mapped
+- `tomascj__normalize-and-resize-curve-handles` (Normalize and Resize Curve Handles) — survived, no niche mapped
+- `tonis__grease-mesh` (Grease Mesh) — survived, no niche mapped
+- `tonton__auto-reload` (Auto Reload) — survived, no niche mapped
+- `tonton__render-preset` (Render Preset) — survived, no niche mapped
+- `trisnox__trajectory-anim` (Trajectory Anim) — survived, no niche mapped
+- `trukas__edit-instanced-collection` (Edit Instanced Collection) — survived, no niche mapped
+- `trukas__link-parents` (Link Parents) — survived, no niche mapped
+- `trukas__reset-workspace` (Reset Workspace) — survived, no niche mapped
+- `trukas__view-layer-plus` (View Layer Plus) — survived, no niche mapped
+- `tyler-tofu__beyond-channel-packer` (Beyond Channel Packer) — survived, no niche mapped
+- `tyler-tofu__mixamo-rig` (Mixamo Rig) — survived, no niche mapped
+- `tyo79__modal-lattice-resolution` (Modal Lattice Resolution) — survived, no niche mapped
+- `ugulay__hardflow` (Hardflow) — survived, no niche mapped
+- `usrname0__bl-easy-crop` (BL Easy Crop) — survived, no niche mapped
+- `valentin-komkov__collection-switcher` (Collection Switcher) — survived, no niche mapped
+- `victor-09__node-editor-switcher` (Node Editor Switcher) — survived, no niche mapped
+- `victor-calixto__section-toolbox` (Section Toolbox) — survived, no niche mapped
+- `viktor-kamp__unit-to-pixel-converter` (Unit to pixel converter) — survived, no niche mapped
+- `viktor-kom__set-smooth-group` (Set Smooth Group) — survived, no niche mapped
+- `vinay-chikkam__duplication-tool` (Duplication Tool) — survived, no niche mapped
+- `vuyghu2020__partybots-converter` (Partybots converter) — survived, no niche mapped
+- `w-cloud__node-attribute-list` (Node Attribute List(节点属性列表)) — survived, no niche mapped
+- `w-cloud__node-note` (Node Note/节点随记) — survived, no niche mapped
+- `walles__find-bad-tracks` (Find Bad Tracks) — survived, no niche mapped
+- `wans7-gumroad-com__view-selected` (View Selected) — survived, no niche mapped
+- `waynedixon__bone-widget` (Bone Widget) — survived, no niche mapped
+- `wiffzackius__cut-sym` (Cut Sym) — survived, no niche mapped
+- `wiffzackius__magic-wand` (Magic Wand) — survived, no niche mapped
+- `wiffzackius__rig-ue5-exporter` (Rig UE5 Exporter) — survived, no niche mapped
+- `willy-work__motion-style` (Motion Style) — survived, no niche mapped
+- `xbodya13__keyframe-selected` (Keyframe selected) — survived, no niche mapped
+- `xury46__bone-math` (Bone Math) — survived, no niche mapped
+- `xury46__copy-object-name-to-data` (Copy Object Name to Data) — survived, no niche mapped
+- `yaroslav-yushk__viewport-stabilizer` (Viewport stabilizer) — survived, no niche mapped
+- `yasser-idris__transform-tools-core` (Transform Tools Core) — survived, no niche mapped
+- `yliang__fst-forgepolish` (FST ForgePolish) — survived, no niche mapped
+- `yliang__yl-meshcheckhud` (YL MeshCheckHUD) — survived, no niche mapped
+- `yliang__yl-vertexcolforge` (YL VertexColForge) — survived, no niche mapped
+- `yukimituki__projectionnode-from-camera` (ProjectionNode from Camera) — survived, no niche mapped
+- `zakmen150__driverhelper` (DriverHelper) — survived, no niche mapped
+- `zanqdo__pataz-auto-hide-overlays` (Pataz Auto Hide Overlays) — survived, no niche mapped
+- `zanqdo__pataz-notes` (Pataz Notes) — survived, no niche mapped
+- `zanqdo__pataz-thumbnail-toolz` (Pataz Thumbnail Toolz) — survived, no niche mapped
+- `zaphod__nurbs-poly-fillet-tool` (NURBS/Poly Fillet Tool) — survived, no niche mapped
+- `zeptofine__node-quick-maths` (Node Quick Maths) — survived, no niche mapped
+- `zets__camera2view` (Camera2View) — survived, no niche mapped
+- `zhengyang237__screenwriter` (Screenwriter) — survived, no niche mapped
+- `zinkenite__maya-pivot` (Maya Pivot) — survived, no niche mapped
+- `zuda77__curve-fitting` (Curve Fitting) — survived, no niche mapped

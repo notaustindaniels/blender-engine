@@ -1,0 +1,63 @@
+{
+  "canonical_id": "niewinny__blockout",
+  "artifact": "add-on-blockout-v1.5.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "edit_mesh.bout_set_active_tool",
+        "object.bout_align_custom_plane",
+        "object.bout_apply_modifiers",
+        "object.bout_block_mesh_tool",
+        "object.bout_block_obj_tool",
+        "object.bout_block_popup",
+        "object.bout_clean_cutter",
+        "object.bout_mod_bevel",
+        "object.bout_mod_bevel_pinned",
+        "object.bout_mod_boolean",
+        "object.bout_mod_boolean_carve",
+        "object.bout_mod_boolean_slice",
+        "object.bout_obj_set_custom_plane",
+        "object.bout_set_custom_plane",
+        "object.bout_unveil",
+        "object.bout_veil"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "edit_mesh.bout_set_active_tool",
+    "object.bout_align_custom_plane",
+    "object.bout_apply_modifiers",
+    "object.bout_block_mesh_tool",
+    "object.bout_block_obj_tool",
+    "object.bout_block_popup",
+    "object.bout_clean_cutter",
+    "object.bout_mod_bevel",
+    "object.bout_mod_bevel_pinned",
+    "object.bout_mod_boolean",
+    "object.bout_mod_boolean_carve",
+    "object.bout_mod_boolean_slice",
+    "object.bout_obj_set_custom_plane",
+    "object.bout_set_custom_plane",
+    "object.bout_unveil",
+    "object.bout_veil"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:27+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

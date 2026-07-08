@@ -1,0 +1,43 @@
+{
+  "canonical_id": "a2d4f3s1__camera-shift-sync",
+  "artifact": "add-on-camera-shift-sync-v0.2.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "camera_shift_sync.get_distance_from_click",
+        "camera_shift_sync.reinit_d_plane",
+        "camera_shift_sync.reset_plate_style",
+        "css.reset_panel_category"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "camera_shift_sync.get_distance_from_click",
+        "camera_shift_sync.reinit_d_plane",
+        "camera_shift_sync.reset_plate_style",
+        "css.reset_panel_category"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "camera_shift_sync.get_distance_from_click",
+    "camera_shift_sync.reinit_d_plane",
+    "camera_shift_sync.reset_plate_style",
+    "css.reset_panel_category"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:58+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

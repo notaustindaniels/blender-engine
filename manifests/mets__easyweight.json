@@ -1,0 +1,64 @@
+{
+  "canonical_id": "mets__easyweight",
+  "artifact": "add-on-easyweight-v1.0.9.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.calculate_weight_islands",
+        "object.delete_empty_deform_vgroups",
+        "object.delete_unselected_deform_vgroups",
+        "object.delete_unused_vgroups",
+        "object.focus_deform_vgroups",
+        "object.focus_smallest_weight_island",
+        "object.force_apply_mirror_modifier",
+        "object.remove_island_data",
+        "object.set_expected_island_count",
+        "object.symmetrize_vertex_weights"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.calculate_weight_islands",
+        "object.delete_empty_deform_vgroups",
+        "object.delete_unselected_deform_vgroups",
+        "object.delete_unused_vgroups",
+        "object.focus_deform_vgroups",
+        "object.focus_smallest_weight_island",
+        "object.force_apply_mirror_modifier",
+        "object.remove_island_data",
+        "object.set_expected_island_count",
+        "object.symmetrize_vertex_weights"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.calculate_weight_islands",
+    "object.delete_empty_deform_vgroups",
+    "object.delete_unselected_deform_vgroups",
+    "object.delete_unused_vgroups",
+    "object.focus_deform_vgroups",
+    "object.focus_smallest_weight_island",
+    "object.force_apply_mirror_modifier",
+    "object.remove_island_data",
+    "object.set_expected_island_count",
+    "object.symmetrize_vertex_weights"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:15+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

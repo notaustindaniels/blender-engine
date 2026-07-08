@@ -1,0 +1,55 @@
+{
+  "canonical_id": "1p2d__marker-shortcuts",
+  "artifact": "add-on-marker-shortcuts-v0.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "marker_shortcuts.assign_shortcut",
+        "marker_shortcuts.auto_number_setup",
+        "marker_shortcuts.delete_all_shortcuts",
+        "marker_shortcuts.jump_by_shortcut",
+        "marker_shortcuts.names_to_shortcuts",
+        "marker_shortcuts.remove_prefixes",
+        "marker_shortcuts.remove_shortcut",
+        "marker_shortcuts.set_shortcut"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "marker_shortcuts.assign_shortcut",
+        "marker_shortcuts.auto_number_setup",
+        "marker_shortcuts.delete_all_shortcuts",
+        "marker_shortcuts.jump_by_shortcut",
+        "marker_shortcuts.names_to_shortcuts",
+        "marker_shortcuts.remove_prefixes",
+        "marker_shortcuts.remove_shortcut",
+        "marker_shortcuts.set_shortcut"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "marker_shortcuts.assign_shortcut",
+    "marker_shortcuts.auto_number_setup",
+    "marker_shortcuts.delete_all_shortcuts",
+    "marker_shortcuts.jump_by_shortcut",
+    "marker_shortcuts.names_to_shortcuts",
+    "marker_shortcuts.remove_prefixes",
+    "marker_shortcuts.remove_shortcut",
+    "marker_shortcuts.set_shortcut"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:09+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

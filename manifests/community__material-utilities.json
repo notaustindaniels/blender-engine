@@ -1,0 +1,73 @@
+{
+  "canonical_id": "community__material-utilities",
+  "artifact": "add-on-material-utilities-v2.2.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "material.materialutilities_join_objects",
+        "material.materialutilities_merge_base_names",
+        "material.materialutilities_slot_move",
+        "view3d.materialutilities_assign_material_edit",
+        "view3d.materialutilities_assign_material_object",
+        "view3d.materialutilities_auto_smooth_angle",
+        "view3d.materialutilities_change_material_link",
+        "view3d.materialutilities_clean_material_slots",
+        "view3d.materialutilities_copy_material_to_others",
+        "view3d.materialutilities_fake_user_set",
+        "view3d.materialutilities_remove_all_material_slots",
+        "view3d.materialutilities_remove_material_slot",
+        "view3d.materialutilities_replace_material",
+        "view3d.materialutilities_select_by_material_name"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "material.materialutilities_join_objects",
+        "material.materialutilities_merge_base_names",
+        "material.materialutilities_slot_move",
+        "view3d.materialutilities_assign_material_edit",
+        "view3d.materialutilities_assign_material_object",
+        "view3d.materialutilities_auto_smooth_angle",
+        "view3d.materialutilities_change_material_link",
+        "view3d.materialutilities_clean_material_slots",
+        "view3d.materialutilities_copy_material_to_others",
+        "view3d.materialutilities_fake_user_set",
+        "view3d.materialutilities_remove_all_material_slots",
+        "view3d.materialutilities_remove_material_slot",
+        "view3d.materialutilities_replace_material",
+        "view3d.materialutilities_select_by_material_name"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "material.materialutilities_join_objects",
+    "material.materialutilities_merge_base_names",
+    "material.materialutilities_slot_move",
+    "view3d.materialutilities_assign_material_edit",
+    "view3d.materialutilities_assign_material_object",
+    "view3d.materialutilities_auto_smooth_angle",
+    "view3d.materialutilities_change_material_link",
+    "view3d.materialutilities_clean_material_slots",
+    "view3d.materialutilities_copy_material_to_others",
+    "view3d.materialutilities_fake_user_set",
+    "view3d.materialutilities_remove_all_material_slots",
+    "view3d.materialutilities_remove_material_slot",
+    "view3d.materialutilities_replace_material",
+    "view3d.materialutilities_select_by_material_name"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:51+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,50 @@
+{
+  "canonical_id": "zets__camera2view",
+  "artifact": "add-on-marko-camera2view-v1.5.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "view3d.camera2view_apply_resolution",
+        "view3d.camera2view_create_camera",
+        "view3d.camera2view_keyframe_camera",
+        "view3d.camera2view_keyframe_property",
+        "view3d.camera2view_next_camera",
+        "view3d.camera2view_next_keyframe",
+        "view3d.camera2view_open_support",
+        "view3d.camera2view_open_video_tutorials",
+        "view3d.camera2view_prev_camera",
+        "view3d.camera2view_prev_keyframe"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [
+    "view3d.camera2view_apply_resolution",
+    "view3d.camera2view_create_camera",
+    "view3d.camera2view_keyframe_camera",
+    "view3d.camera2view_keyframe_property",
+    "view3d.camera2view_next_camera",
+    "view3d.camera2view_next_keyframe",
+    "view3d.camera2view_open_support",
+    "view3d.camera2view_open_video_tutorials",
+    "view3d.camera2view_prev_camera",
+    "view3d.camera2view_prev_keyframe"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:37+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

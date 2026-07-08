@@ -24,7 +24,7 @@
   "operators": [],
   "prescan": "cleared",
   "artifact_type": "extension_manifest",
-  "verified_at": "2026-07-06T21:57:20+00:00",
+  "verified_at": "2026-07-08T22:59:22+00:00",
   "prescan_hits": [
     "subprocess",
     "socket",
@@ -32,6 +32,5 @@
     "requests",
     "open-write"
   ],
-  "declared_min": "5.1",
-  "probed_natively": true
+  "declared_min": "5.1"
 }

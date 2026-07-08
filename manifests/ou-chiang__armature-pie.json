@@ -1,0 +1,69 @@
+{
+  "canonical_id": "ou-chiang__armature-pie",
+  "artifact": "add-on-armature-pie-v1.1.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "armature.collection_hide_all",
+        "armature_picker.armature_select",
+        "armature_picker.dialog_panel",
+        "armature_picker.filter_preset_add",
+        "armature_picker.filter_settings",
+        "solo_pie.call_solo_pie",
+        "solo_pie.collection_show_title_only",
+        "solo_pie.collection_solo",
+        "solo_pie.collection_unsolo_all",
+        "solo_pie.pie_display_options",
+        "solo_pie.preset_load",
+        "solo_pie.preset_save"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "armature.collection_hide_all",
+        "armature_picker.armature_select",
+        "armature_picker.dialog_panel",
+        "armature_picker.filter_preset_add",
+        "armature_picker.filter_settings",
+        "solo_pie.call_solo_pie",
+        "solo_pie.collection_show_title_only",
+        "solo_pie.collection_solo",
+        "solo_pie.collection_unsolo_all",
+        "solo_pie.pie_display_options",
+        "solo_pie.preset_load",
+        "solo_pie.preset_save"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "armature.collection_hide_all",
+    "armature_picker.armature_select",
+    "armature_picker.dialog_panel",
+    "armature_picker.filter_preset_add",
+    "armature_picker.filter_settings",
+    "solo_pie.call_solo_pie",
+    "solo_pie.collection_show_title_only",
+    "solo_pie.collection_solo",
+    "solo_pie.collection_unsolo_all",
+    "solo_pie.pie_display_options",
+    "solo_pie.preset_load",
+    "solo_pie.preset_save"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:30+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

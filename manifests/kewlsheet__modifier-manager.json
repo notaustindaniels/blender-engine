@@ -1,0 +1,58 @@
+{
+  "canonical_id": "kewlsheet__modifier-manager",
+  "artifact": "add-on-modifier-manager-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "ak.apply_modifiers",
+        "ak.apply_modifiers_by_name",
+        "ak.apply_modifiers_by_type",
+        "ak.remove_modifiers",
+        "ak.remove_modifiers_by_name",
+        "ak.remove_modifiers_by_type",
+        "ak.select_objects_by_modifier_type",
+        "object.copy_modifiers",
+        "object.toggle_modifiers_visibility"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ak.apply_modifiers",
+        "ak.apply_modifiers_by_name",
+        "ak.apply_modifiers_by_type",
+        "ak.remove_modifiers",
+        "ak.remove_modifiers_by_name",
+        "ak.remove_modifiers_by_type",
+        "ak.select_objects_by_modifier_type",
+        "object.copy_modifiers",
+        "object.toggle_modifiers_visibility"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ak.apply_modifiers",
+    "ak.apply_modifiers_by_name",
+    "ak.apply_modifiers_by_type",
+    "ak.remove_modifiers",
+    "ak.remove_modifiers_by_name",
+    "ak.remove_modifiers_by_type",
+    "ak.select_objects_by_modifier_type",
+    "object.copy_modifiers",
+    "object.toggle_modifiers_visibility"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

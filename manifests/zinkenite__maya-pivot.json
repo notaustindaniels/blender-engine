@@ -1,0 +1,34 @@
+{
+  "canonical_id": "zinkenite__maya-pivot",
+  "artifact": "add-on-maya-pivot-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.maya_pivot_placement"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.maya_pivot_placement"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.maya_pivot_placement"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:04+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

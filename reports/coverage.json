@@ -24,7 +24,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 50.0,
+    "pass_rate_of_all_pct": 64.4,
     "threshold": 30.0,
     "tripped": false
   },
@@ -61,34 +61,39 @@
   "verb_medium_grid": {
     "accumulate|ground": 1,
     "branch|organic": 5,
+    "deform|abstract": 1,
     "deplete|ground": 3,
     "fill|air": 1,
     "fill|ground": 3,
     "fill|organic": 1,
+    "generate|abstract": 11,
     "generate|air": 1,
     "generate|ground": 7,
     "generate|organic": 5,
+    "illuminate|abstract": 1,
+    "reveal|abstract": 1,
     "reveal|organic": 1,
     "scatter|air": 1,
     "scatter|organic": 1,
     "simulate|ground": 3,
+    "trace|abstract": 1,
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 38,
-    "acquisitions": 48,
-    "surviving": 24,
-    "pct_of_probed": 63.2,
-    "pct_of_all_acquisitions": 50.0
+    "verified_probed": 708,
+    "acquisitions": 951,
+    "surviving": 612,
+    "pct_of_probed": 86.4,
+    "pct_of_all_acquisitions": 64.4
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 27,
+    "decision_covered": 30,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
     "present": 59,
-    "decision_covered": 1,
+    "decision_covered": 4,
     "recipe_unverified_claims": 0
   },
   "covered_by": {
@@ -98,14 +103,30 @@
     "asteroid_generator": [
       "donitzo__procedural-asteroid-generator"
     ],
+    "attractor_curves": [
+      "7bitretro__strange-attractors"
+    ],
     "biome_scatter_system": [
       "community__scatter-objects"
+    ],
+    "camera_rigs": [
+      "michaelschieber__camerafly",
+      "waynedixon__add-camera-rigs"
     ],
     "cliff_rockface_generator": [
       "marcueberall__blender-cliffgenerator"
     ],
     "cracked_earth_shader": [
       "bkmat__cracked_earth_shader"
+    ],
+    "data_import": [
+      "community__export-pointcache-format-pc2",
+      "jan-hendrik-m-ller__csv-importer",
+      "k-naoki__tracker-to-nuke",
+      "kiran-kumawat__robotics-animation-bone-coordinate-exporter",
+      "sharpened__attrio-csv",
+      "smonbrogg__spreadsheet-import",
+      "vicky-at-24fps__export-to-nuke-script"
     ],
     "erosion_sim": [
       "community__a-n-t-landscape",
@@ -128,8 +149,17 @@
     "ivy_generator": [
       "community__ivygen"
     ],
+    "light_matrix_data": [
+      "vicky-at-24fps__export-to-nuke-script"
+    ],
     "organic_cell_shader": [
       "bkmat__organic_cell_shader"
+    ],
+    "rock_boulder_generator": [
+      "tu2463__rock_generator_addon"
+    ],
+    "smear_frames": [
+      "jean-basset__smear"
     ],
     "snow_accumulation": [
       "nacioss__real-snow"
@@ -158,7 +188,9 @@
     "alien_biome_generator",
     "asteroid_generator",
     "biome_scatter_system",
+    "data_import",
     "heightmap_stack_tools",
-    "ivy_generator"
+    "ivy_generator",
+    "light_matrix_data"
   ]
 }

@@ -1,0 +1,96 @@
+{
+  "canonical_id": "tyler-tofu__mixamo-rig",
+  "artifact": "add-on-mixamo-rig-v1.2.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mr.apply_shape",
+        "mr.bake_anim",
+        "mr.edit_custom_shape",
+        "mr.export_gltf",
+        "mr.fix_fk_foot_setup",
+        "mr.import_anim_to_rig",
+        "mr.make_rig",
+        "mr.reconnect_rig",
+        "mr.update",
+        "mr.zero_out",
+        "pose.mr_arm_fk_to_ik_",
+        "pose.mr_arm_ik_to_fk_",
+        "pose.mr_bake_arm_fk_to_ik",
+        "pose.mr_bake_arm_ik_to_fk",
+        "pose.mr_bake_leg_fk_to_ik",
+        "pose.mr_bake_leg_ik_to_fk",
+        "pose.mr_leg_fk_to_ik_",
+        "pose.mr_leg_ik_to_fk_",
+        "pose.mr_switch_snap",
+        "pose.mr_switch_snap_anim",
+        "pose.mr_switch_snap_no_key"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mr.apply_shape",
+        "mr.bake_anim",
+        "mr.edit_custom_shape",
+        "mr.export_gltf",
+        "mr.fix_fk_foot_setup",
+        "mr.import_anim_to_rig",
+        "mr.make_rig",
+        "mr.reconnect_rig",
+        "mr.update",
+        "mr.zero_out",
+        "pose.mr_arm_fk_to_ik_",
+        "pose.mr_arm_ik_to_fk_",
+        "pose.mr_bake_arm_fk_to_ik",
+        "pose.mr_bake_arm_ik_to_fk",
+        "pose.mr_bake_leg_fk_to_ik",
+        "pose.mr_bake_leg_ik_to_fk",
+        "pose.mr_leg_fk_to_ik_",
+        "pose.mr_leg_ik_to_fk_",
+        "pose.mr_switch_snap",
+        "pose.mr_switch_snap_anim",
+        "pose.mr_switch_snap_no_key"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mr.apply_shape",
+    "mr.bake_anim",
+    "mr.edit_custom_shape",
+    "mr.export_gltf",
+    "mr.fix_fk_foot_setup",
+    "mr.import_anim_to_rig",
+    "mr.make_rig",
+    "mr.reconnect_rig",
+    "mr.update",
+    "mr.zero_out",
+    "pose.mr_arm_fk_to_ik_",
+    "pose.mr_arm_ik_to_fk_",
+    "pose.mr_bake_arm_fk_to_ik",
+    "pose.mr_bake_arm_ik_to_fk",
+    "pose.mr_bake_leg_fk_to_ik",
+    "pose.mr_bake_leg_ik_to_fk",
+    "pose.mr_leg_fk_to_ik_",
+    "pose.mr_leg_ik_to_fk_",
+    "pose.mr_switch_snap",
+    "pose.mr_switch_snap_anim",
+    "pose.mr_switch_snap_no_key"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:23+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

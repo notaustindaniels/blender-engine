@@ -1,0 +1,62 @@
+{
+  "canonical_id": "overtools__owm-import",
+  "artifact": "add-on-io-scene-owm-v3.3.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "import_material.overtools2_material",
+        "import_mesh.overtools2_animmclip",
+        "import_mesh.overtools2_entity",
+        "import_mesh.overtools2_map",
+        "import_mesh.overtools2_mapwiz",
+        "import_mesh.overtools2_model",
+        "import_mesh.overtools2_skin",
+        "owm3.build_tex_db",
+        "owm3.change_modellook",
+        "owm3.delete_unused_empties",
+        "owm3.disable_ao",
+        "owm3.enable_ao",
+        "owm3.fix_tex",
+        "owm3.load_library",
+        "owm3.save_library"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "import_material.overtools2_material",
+    "import_mesh.overtools2_animmclip",
+    "import_mesh.overtools2_entity",
+    "import_mesh.overtools2_map",
+    "import_mesh.overtools2_mapwiz",
+    "import_mesh.overtools2_model",
+    "import_mesh.overtools2_skin",
+    "owm3.build_tex_db",
+    "owm3.change_modellook",
+    "owm3.delete_unused_empties",
+    "owm3.disable_ao",
+    "owm3.enable_ao",
+    "owm3.fix_tex",
+    "owm3.load_library",
+    "owm3.save_library"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:44+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

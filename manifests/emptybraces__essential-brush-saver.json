@@ -1,0 +1,29 @@
+{
+  "canonical_id": "emptybraces__essential-brush-saver",
+  "artifact": "add-on-essential-brush-saver-v1.1.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:13:58+00:00",
+  "prescan_hits": [
+    "open-write",
+    "subprocess"
+  ]
+}

@@ -29,10 +29,24 @@ def token():
     return os.environ.get("GH_TOKEN_RW", "")
 
 
+class _StripAuthOnRedirect(urllib.request.HTTPRedirectHandler):
+    """GitHub artifact downloads 302 to signed Azure blob URLs that REJECT the GitHub token.
+    Strip Authorization when the redirect crosses hosts (R2: token only to api.github.com)."""
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        nr = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if nr is not None:
+            nr.headers.pop("Authorization", None)
+            nr.headers = {k: v for k, v in nr.headers.items() if k.lower() != "authorization"}
+        return nr
+
+
+_OPENER = urllib.request.build_opener(_StripAuthOnRedirect)
+
+
 def api(url, tok, raw=False):
     req = urllib.request.Request(url, headers={"Authorization": f"token {tok}",
                                                "Accept": "application/vnd.github+json"})
-    r = urllib.request.urlopen(req, timeout=60)
+    r = (_OPENER.open(req, timeout=120) if raw else urllib.request.urlopen(req, timeout=60))
     return r.read() if raw else json.load(r)
 
 
@@ -72,7 +86,9 @@ def main():
         merged, nart = download_merge(a.run, token())
         report["merged_manifests"] = merged
         report["artifacts"] = nart
-    # ingest chain
+    # ingest chain — re-apply the operator-reviewed map FIRST (CI re-probe writes fresh un-enriched
+    # manifests that overwrite the reviewed enrichments on merge), THEN the heuristic pass fills the rest.
+    run(["uv", "run", ".archon/scripts/enrich_thinslice.py"])
     run(["uv", "run", ".archon/scripts/enrich_scale.py"])
     run(["uv", "run", ".archon/scripts/mint_cards.py"])
     run(["uv", "run", ".archon/scripts/build_index.py", "--db", "corpus.db"])

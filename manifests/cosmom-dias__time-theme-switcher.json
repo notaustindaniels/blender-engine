@@ -1,0 +1,40 @@
+{
+  "canonical_id": "cosmom-dias__time-theme-switcher",
+  "artifact": "add-on-time-theme-switcher-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "wm.tts_apply_now",
+        "wm.tts_set_theme_dark",
+        "wm.tts_set_theme_light"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "wm.tts_apply_now",
+        "wm.tts_set_theme_dark",
+        "wm.tts_set_theme_light"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "wm.tts_apply_now",
+    "wm.tts_set_theme_dark",
+    "wm.tts_set_theme_light"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:35+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

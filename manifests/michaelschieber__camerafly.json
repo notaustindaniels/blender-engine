@@ -1,0 +1,48 @@
+{
+  "canonical_id": "michaelschieber__camerafly",
+  "artifact": "add-on-camerafly-v2.1.4-windows-x64-windows-arm64-macos-arm64-macos-x64-linux-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "pose.move_rotate_bone_local_pivot"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "pose.move_rotate_bone_local_pivot"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "pose.move_rotate_bone_local_pivot"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:50+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "pose.move_rotate_bone_local_pivot",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "camera_rigs"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'camera' in name/tagline -> ['camera_rigs'] (Animation: camera & cinematic)."
+}

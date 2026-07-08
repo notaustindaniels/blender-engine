@@ -1,0 +1,67 @@
+{
+  "canonical_id": "danyal-sarfraz__true-roboanimator",
+  "artifact": "add-on-true-roboanimator-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "true_roboanimator.attach_drivers",
+        "true_roboanimator.autocorrect_bake",
+        "true_roboanimator.autocorrect_linear",
+        "true_roboanimator.autocorrect_sease",
+        "true_roboanimator.bake_wheels",
+        "true_roboanimator.build_cache",
+        "true_roboanimator.clear",
+        "true_roboanimator.export_csv",
+        "true_roboanimator.export_keyframes",
+        "true_roboanimator.revert_autocorrect",
+        "true_roboanimator.validate_motion"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "true_roboanimator.attach_drivers",
+        "true_roboanimator.autocorrect_bake",
+        "true_roboanimator.autocorrect_linear",
+        "true_roboanimator.autocorrect_sease",
+        "true_roboanimator.bake_wheels",
+        "true_roboanimator.build_cache",
+        "true_roboanimator.clear",
+        "true_roboanimator.export_csv",
+        "true_roboanimator.export_keyframes",
+        "true_roboanimator.revert_autocorrect",
+        "true_roboanimator.validate_motion"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "true_roboanimator.attach_drivers",
+    "true_roboanimator.autocorrect_bake",
+    "true_roboanimator.autocorrect_linear",
+    "true_roboanimator.autocorrect_sease",
+    "true_roboanimator.bake_wheels",
+    "true_roboanimator.build_cache",
+    "true_roboanimator.clear",
+    "true_roboanimator.export_csv",
+    "true_roboanimator.export_keyframes",
+    "true_roboanimator.revert_autocorrect",
+    "true_roboanimator.validate_motion"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:37+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

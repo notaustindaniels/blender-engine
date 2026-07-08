@@ -1,0 +1,78 @@
+{
+  "canonical_id": "endorh__keyboard-layout-emulation",
+  "artifact": "add-on-keyboard-layout-emulation-v1.0.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "wm.kle_add_custom_layout",
+        "wm.kle_addon_info",
+        "wm.kle_apply_layout_emulation",
+        "wm.kle_capture_key_for_mapping",
+        "wm.kle_debug_toggle_expanded_subkey",
+        "wm.kle_export_addon_preferences",
+        "wm.kle_export_layout_json",
+        "wm.kle_import_addon_preferences",
+        "wm.kle_import_layout_json",
+        "wm.kle_layout_locked_info",
+        "wm.kle_layout_unlocked_info",
+        "wm.kle_non_editable_key",
+        "wm.kle_remove_custom_layout",
+        "wm.kle_rename_custom_layout",
+        "wm.kle_revert_layout_emulation"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "wm.kle_add_custom_layout",
+        "wm.kle_addon_info",
+        "wm.kle_apply_layout_emulation",
+        "wm.kle_capture_key_for_mapping",
+        "wm.kle_debug_toggle_expanded_subkey",
+        "wm.kle_export_addon_preferences",
+        "wm.kle_export_layout_json",
+        "wm.kle_import_addon_preferences",
+        "wm.kle_import_layout_json",
+        "wm.kle_layout_locked_info",
+        "wm.kle_layout_unlocked_info",
+        "wm.kle_non_editable_key",
+        "wm.kle_remove_custom_layout",
+        "wm.kle_rename_custom_layout",
+        "wm.kle_revert_layout_emulation"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "wm.kle_add_custom_layout",
+    "wm.kle_addon_info",
+    "wm.kle_apply_layout_emulation",
+    "wm.kle_capture_key_for_mapping",
+    "wm.kle_debug_toggle_expanded_subkey",
+    "wm.kle_export_addon_preferences",
+    "wm.kle_export_layout_json",
+    "wm.kle_import_addon_preferences",
+    "wm.kle_import_layout_json",
+    "wm.kle_layout_locked_info",
+    "wm.kle_layout_unlocked_info",
+    "wm.kle_non_editable_key",
+    "wm.kle_remove_custom_layout",
+    "wm.kle_rename_custom_layout",
+    "wm.kle_revert_layout_emulation"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:30+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,43 @@
+{
+  "canonical_id": "yliang__yl-meshcheckhud",
+  "artifact": "add-on-yl-meshcheckhud-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "yl_omnihud.preview_meshcheck",
+        "yl_omnihud.refresh_meshcheck_results",
+        "yl_omnihud.sort_meshcheck_results",
+        "yl_omnihud.toggle_all_check_visibility"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "yl_omnihud.preview_meshcheck",
+        "yl_omnihud.refresh_meshcheck_results",
+        "yl_omnihud.sort_meshcheck_results",
+        "yl_omnihud.toggle_all_check_visibility"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "yl_omnihud.preview_meshcheck",
+    "yl_omnihud.refresh_meshcheck_results",
+    "yl_omnihud.sort_meshcheck_results",
+    "yl_omnihud.toggle_all_check_visibility"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:49+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

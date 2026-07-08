@@ -1,0 +1,43 @@
+{
+  "canonical_id": "rainma22__explode",
+  "artifact": "add-on-explode-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "export_scene.explode_add_item",
+        "export_scene.explode_fbx",
+        "export_scene.explode_remove_item",
+        "export_scene.explode_unity_fbx"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_scene.explode_add_item",
+        "export_scene.explode_fbx",
+        "export_scene.explode_remove_item",
+        "export_scene.explode_unity_fbx"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.explode_add_item",
+    "export_scene.explode_fbx",
+    "export_scene.explode_remove_item",
+    "export_scene.explode_unity_fbx"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:02+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

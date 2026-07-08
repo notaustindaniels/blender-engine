@@ -1,0 +1,64 @@
+{
+  "canonical_id": "fwdotcom__dynamic-color-palette",
+  "artifact": "add-on-dynamic-color-palette-v2.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "dcp.add_emission_strip",
+        "dcp.assign_multicol",
+        "dcp.assign_singlecol",
+        "dcp.cleanup_unused_slots",
+        "dcp.confirm_regenerate",
+        "dcp.generate_palette",
+        "dcp.open_config",
+        "dcp.pick_from_image_editor",
+        "dcp.remove_emission_strip",
+        "dcp.reset_defaults",
+        "dcp.stop_pick_from_image_editor"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "dcp.add_emission_strip",
+        "dcp.assign_multicol",
+        "dcp.assign_singlecol",
+        "dcp.cleanup_unused_slots",
+        "dcp.confirm_regenerate",
+        "dcp.generate_palette",
+        "dcp.open_config",
+        "dcp.pick_from_image_editor",
+        "dcp.remove_emission_strip",
+        "dcp.reset_defaults",
+        "dcp.stop_pick_from_image_editor"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "dcp.add_emission_strip",
+    "dcp.assign_multicol",
+    "dcp.assign_singlecol",
+    "dcp.cleanup_unused_slots",
+    "dcp.confirm_regenerate",
+    "dcp.generate_palette",
+    "dcp.open_config",
+    "dcp.pick_from_image_editor",
+    "dcp.remove_emission_strip",
+    "dcp.reset_defaults",
+    "dcp.stop_pick_from_image_editor"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:38+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

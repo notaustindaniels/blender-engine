@@ -1,0 +1,26 @@
+{
+  "canonical_id": "golden_legacy_27x",
+  "artifact": "golden_legacy_27x.zip",
+  "verify": {
+    "3.6": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "skipped",
+  "artifact_type": "legacy",
+  "verified_at": "2026-07-06T20:49:57+00:00",
+  "declared_min": "2.7"
+}

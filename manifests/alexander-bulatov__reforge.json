@@ -1,0 +1,61 @@
+{
+  "canonical_id": "alexander-bulatov__reforge",
+  "artifact": "add-on-reforge-v0.5.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "reforge.clear_all",
+        "reforge.clear_selected",
+        "reforge.clear_visible",
+        "reforge.export_all_prototypes",
+        "reforge.export_selected_prototype",
+        "reforge.generate",
+        "reforge.set_all",
+        "reforge.set_selected",
+        "reforge.set_visible"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "reforge.clear_all",
+        "reforge.clear_selected",
+        "reforge.clear_visible",
+        "reforge.export_all_prototypes",
+        "reforge.export_selected_prototype",
+        "reforge.generate",
+        "reforge.set_all",
+        "reforge.set_selected",
+        "reforge.set_visible"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "reforge.clear_all",
+    "reforge.clear_selected",
+    "reforge.clear_visible",
+    "reforge.export_all_prototypes",
+    "reforge.export_selected_prototype",
+    "reforge.generate",
+    "reforge.set_all",
+    "reforge.set_selected",
+    "reforge.set_visible"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:20+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

@@ -3,28 +3,27 @@
   "artifact": "ln-12__blainder-range-scanner.zip",
   "verify": {
     "3.6": {
-      "state": "fail",
+      "state": "partial",
       "operators": [],
-      "render_ok": false
+      "render_ok": true
     },
     "4.2": {
-      "state": "fail",
+      "state": "partial",
       "operators": [],
-      "render_ok": false
+      "render_ok": true
     },
     "4.5": {
-      "state": "fail",
+      "state": "partial",
       "operators": [],
-      "render_ok": false
+      "render_ok": true
     }
   },
   "operators": [],
   "prescan": "cleared",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T21:57:35+00:00",
+  "verified_at": "2026-07-08T22:59:54+00:00",
   "prescan_hits": [
     "subprocess"
   ],
-  "declared_min": "2.81",
-  "probed_natively": true
+  "declared_min": "2.81"
 }

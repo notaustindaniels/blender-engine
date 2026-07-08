@@ -1,0 +1,52 @@
+{
+  "canonical_id": "siemen-lens__autotrack",
+  "artifact": "add-on-siemen-lens-blender-autotrack-v4.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "autotrack.aboutclose",
+        "autotrack.aboutopen",
+        "autotrack.cleargreasepencil",
+        "autotrack.generatesurface",
+        "autotrack.quickresolve",
+        "autotrack.runtracking",
+        "autotrack.testmarkers"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "autotrack.aboutclose",
+        "autotrack.aboutopen",
+        "autotrack.cleargreasepencil",
+        "autotrack.generatesurface",
+        "autotrack.quickresolve",
+        "autotrack.runtracking",
+        "autotrack.testmarkers"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "autotrack.aboutclose",
+    "autotrack.aboutopen",
+    "autotrack.cleargreasepencil",
+    "autotrack.generatesurface",
+    "autotrack.quickresolve",
+    "autotrack.runtracking",
+    "autotrack.testmarkers"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:19+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

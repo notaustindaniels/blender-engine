@@ -1,0 +1,38 @@
+{
+  "canonical_id": "hattiffnat__auto-wrinkle-map",
+  "artifact": "add-on-auto-wrinkle-map-v0.0.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "wrmap.add_wrinkle_map",
+        "wrmap.remove_wrinkle_map"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "wrmap.add_wrinkle_map",
+    "wrmap.remove_wrinkle_map"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:30+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "socket"
+  ],
+  "declared_min": "4.4"
+}

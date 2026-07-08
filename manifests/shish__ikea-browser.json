@@ -1,0 +1,29 @@
+{
+  "canonical_id": "shish__ikea-browser",
+  "artifact": "add-on-ikea-browser-v0.4.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:12:12+00:00",
+  "prescan_hits": [
+    "urllib",
+    "open-write"
+  ]
+}

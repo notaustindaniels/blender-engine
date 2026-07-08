@@ -1,0 +1,37 @@
+{
+  "canonical_id": "jean-yves-grosbeau__to-square",
+  "artifact": "add-on-to-square-v2.2.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.square",
+        "mesh.square_preset_add"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.square",
+        "mesh.square_preset_add"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.square",
+    "mesh.square_preset_add"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:16+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -12,10 +12,19 @@ retrieval-proposes/registry-disposes, R11 (order-not-exclude).
 | wave | scope | candidates | status |
 |---|---|---|---|
 | 0 | thin slice (T+V, 11 cats) | 57 acquired | DONE — gate-v2 40.4%, nav layer tagged |
-| **1** | **L1 full catalog (all 26 cats)** | **904** | **DISPATCHING → wave-probe.yml (8 shards)** |
-| 2 | L2 full per-category signature sweep | 29 + ceiling | queued |
-| 3 | L6 BlenderKit full free-tier sweep | tbd | queued |
-| 4 | Route B + L5 pending resolution | 84 pending | queued (human-gated checkouts → OWNER-QUEUE) |
+| **1** | **L1 full catalog (all 26 cats)** | **904** | **DONE — 612 working (137 pass + 475 partial), tripwire clear (64.4% of-all); 159 prescan-flagged (R6); 36 niche-mapped; whole-tax 7.0%→8.2%, 6 cats** |
+| 2 | L2 full per-category signature sweep (26 cats) | 29 + ceiling | queued (l2_github.py ready) |
+| 3 | L6 BlenderKit full free-tier sweep | 773 enum | queued (candidates/L6.jsonl ready; needs bk download+probe wave) |
+| 4 | Route B + L5 pending resolution | 84 pending | queued (human-gated → OWNER-QUEUE) |
+
+**Wave 1 notes:** enrich recall is CONSERVATIVE (36/612 working add-ons niche-mapped) — most catalog
+add-ons are UI/utility/exporter tools, correctly unmatched, BUT some real generators miss (Archimesh→
+building_generator, ClothDrop→cloth) because taxonomy niche aliases don't cover common add-on vocabulary
+(room/window/wall/cloth). NEXT: a synonym map (`inputs/enrich-synonyms.yaml`, doesn't touch the owner's
+taxonomy) to lift recall, then re-run enrich (deterministic, cheap). 159 prescan needs_review/quarantine
+accumulate for a human-review batch (R6). Fixed this wave: reviewed-enrich clobbering (CI re-probe
+overwrote enrichments → wave_ingest now re-runs enrich_thinslice first); R26 license backfill from
+candidate metadata (ephemeral CI vault).
 
 ## Method (survives session death)
 Waves run in CI (`wave-probe.yml`, 8 shards of ~119 each, `normalized_full.jsonl`). Each shard:

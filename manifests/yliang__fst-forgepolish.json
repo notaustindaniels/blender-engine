@@ -1,0 +1,49 @@
+{
+  "canonical_id": "yliang__fst-forgepolish",
+  "artifact": "add-on-fst-forgepolish-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.create_facesets_from_edges",
+        "mesh.fst_forgepolish_groups",
+        "mesh.fst_forgepolish_smooth_brush",
+        "mesh.fst_select_edges_for_facesets",
+        "mesh.fst_toggle_faceset_sculpt_preview",
+        "mesh.select_faceset_boundaries"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.create_facesets_from_edges",
+        "mesh.fst_forgepolish_groups",
+        "mesh.fst_forgepolish_smooth_brush",
+        "mesh.fst_select_edges_for_facesets",
+        "mesh.fst_toggle_faceset_sculpt_preview",
+        "mesh.select_faceset_boundaries"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.create_facesets_from_edges",
+    "mesh.fst_forgepolish_groups",
+    "mesh.fst_forgepolish_smooth_brush",
+    "mesh.fst_select_edges_for_facesets",
+    "mesh.fst_toggle_faceset_sculpt_preview",
+    "mesh.select_faceset_boundaries"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:22+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,55 @@
+{
+  "canonical_id": "barrunterio__browser-scroll-resize",
+  "artifact": "add-on-browser-scroll-resize-v1.0.6.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "tbycontext.hlist_thumbnailsizedecrease",
+        "tbycontext.hlist_thumbnailsizeincrease",
+        "tbycontext.shorctuts_persistant",
+        "tbycontext.shorcuts_define_defaults_alt",
+        "tbycontext.shorcuts_define_defaults_ctrl",
+        "tbycontext.thumbnailsizedecrease",
+        "tbycontext.thumbnailsizeincrease",
+        "tbycontext.warning_advance_properties"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "tbycontext.hlist_thumbnailsizedecrease",
+        "tbycontext.hlist_thumbnailsizeincrease",
+        "tbycontext.shorctuts_persistant",
+        "tbycontext.shorcuts_define_defaults_alt",
+        "tbycontext.shorcuts_define_defaults_ctrl",
+        "tbycontext.thumbnailsizedecrease",
+        "tbycontext.thumbnailsizeincrease",
+        "tbycontext.warning_advance_properties"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "tbycontext.hlist_thumbnailsizedecrease",
+    "tbycontext.hlist_thumbnailsizeincrease",
+    "tbycontext.shorctuts_persistant",
+    "tbycontext.shorcuts_define_defaults_alt",
+    "tbycontext.shorcuts_define_defaults_ctrl",
+    "tbycontext.thumbnailsizedecrease",
+    "tbycontext.thumbnailsizeincrease",
+    "tbycontext.warning_advance_properties"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:10+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

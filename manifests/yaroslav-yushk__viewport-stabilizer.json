@@ -1,0 +1,46 @@
+{
+  "canonical_id": "yaroslav-yushk__viewport-stabilizer",
+  "artifact": "add-on-viewport-stabilizer-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "view3d.apply_selection",
+        "view3d.create_object_center",
+        "view3d.create_vertices_center",
+        "view3d.save_hotkey",
+        "view3d.stabilize_toggle"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "view3d.apply_selection",
+        "view3d.create_object_center",
+        "view3d.create_vertices_center",
+        "view3d.save_hotkey",
+        "view3d.stabilize_toggle"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "view3d.apply_selection",
+    "view3d.create_object_center",
+    "view3d.create_vertices_center",
+    "view3d.save_hotkey",
+    "view3d.stabilize_toggle"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:07+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

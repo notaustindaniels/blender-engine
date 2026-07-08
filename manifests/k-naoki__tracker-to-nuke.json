@@ -1,0 +1,63 @@
+{
+  "canonical_id": "k-naoki__tracker-to-nuke",
+  "artifact": "add-on-tracker2nuke-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "clip.nuke_copy_distortion",
+        "clip.nuke_export_all",
+        "clip.nuke_export_pattern_corners",
+        "clip.nuke_export_plane_track",
+        "clip.nuke_export_selected",
+        "clip.nuke_paste_distortion"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "clip.nuke_copy_distortion",
+        "clip.nuke_export_all",
+        "clip.nuke_export_pattern_corners",
+        "clip.nuke_export_plane_track",
+        "clip.nuke_export_selected",
+        "clip.nuke_paste_distortion"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "clip.nuke_copy_distortion",
+    "clip.nuke_export_all",
+    "clip.nuke_export_pattern_corners",
+    "clip.nuke_export_plane_track",
+    "clip.nuke_export_selected",
+    "clip.nuke_paste_distortion"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:54+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "clip.nuke_copy_distortion",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "data_import"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'import' in name/tagline -> ['data_import'] (Animation: data-driven & utility)."
+}

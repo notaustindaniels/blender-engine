@@ -1,0 +1,54 @@
+{
+  "canonical_id": "smonbrogg__spreadsheet-import",
+  "artifact": "add-on-spreadsheet-import-v0.4.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "import.spreadsheet",
+        "import.spreadsheet_field_add",
+        "import.spreadsheet_field_remove"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "import.spreadsheet",
+        "import.spreadsheet_field_add",
+        "import.spreadsheet_field_remove"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "import.spreadsheet",
+    "import.spreadsheet_field_add",
+    "import.spreadsheet_field_remove"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:15:18+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "import.spreadsheet",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "data_import"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'import' in name/tagline -> ['data_import'] (Animation: data-driven & utility)."
+}

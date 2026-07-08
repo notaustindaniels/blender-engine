@@ -1,0 +1,73 @@
+{
+  "canonical_id": "dakashi__gs-model-helper",
+  "artifact": "add-on-goldsrc-model-helper-v2.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.assign_textures_to_materials",
+        "object.check_vertex_overlaps",
+        "object.deselect_all_overlaps",
+        "object.remove_unused_vertex_groups",
+        "object.rename_materials_bmp",
+        "object.rename_prefix",
+        "object.select_all_overlaps",
+        "object.select_overlap_vertices",
+        "object.set_interp_closest",
+        "object.set_interp_linear",
+        "object.swap_inputs",
+        "object.swap_limbs",
+        "object.swap_rl_vertex_groups",
+        "object.vertex_weight_quickfix"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.assign_textures_to_materials",
+        "object.check_vertex_overlaps",
+        "object.deselect_all_overlaps",
+        "object.remove_unused_vertex_groups",
+        "object.rename_materials_bmp",
+        "object.rename_prefix",
+        "object.select_all_overlaps",
+        "object.select_overlap_vertices",
+        "object.set_interp_closest",
+        "object.set_interp_linear",
+        "object.swap_inputs",
+        "object.swap_limbs",
+        "object.swap_rl_vertex_groups",
+        "object.vertex_weight_quickfix"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.assign_textures_to_materials",
+    "object.check_vertex_overlaps",
+    "object.deselect_all_overlaps",
+    "object.remove_unused_vertex_groups",
+    "object.rename_materials_bmp",
+    "object.rename_prefix",
+    "object.select_all_overlaps",
+    "object.select_overlap_vertices",
+    "object.set_interp_closest",
+    "object.set_interp_linear",
+    "object.swap_inputs",
+    "object.swap_limbs",
+    "object.swap_rl_vertex_groups",
+    "object.vertex_weight_quickfix"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:45+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

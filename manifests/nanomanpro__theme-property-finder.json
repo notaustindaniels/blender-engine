@@ -1,0 +1,46 @@
+{
+  "canonical_id": "nanomanpro__theme-property-finder",
+  "artifact": "add-on-theme-property-finder-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "wm.theme_prop_finder_clear",
+        "wm.theme_prop_finder_deselect",
+        "wm.theme_prop_finder_search",
+        "wm.theme_prop_finder_select",
+        "wm.theme_prop_finder_sync"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "wm.theme_prop_finder_clear",
+        "wm.theme_prop_finder_deselect",
+        "wm.theme_prop_finder_search",
+        "wm.theme_prop_finder_select",
+        "wm.theme_prop_finder_sync"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "wm.theme_prop_finder_clear",
+    "wm.theme_prop_finder_deselect",
+    "wm.theme_prop_finder_search",
+    "wm.theme_prop_finder_select",
+    "wm.theme_prop_finder_sync"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:11:47+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

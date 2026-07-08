@@ -37,7 +37,7 @@
   ],
   "prescan": "clean",
   "artifact_type": "python_bl_info",
-  "verified_at": "2026-07-06T21:57:49+00:00",
+  "verified_at": "2026-07-08T23:00:17+00:00",
   "prescan_hits": [],
   "declared_min": "2.93",
   "operators_enriched": [
@@ -54,6 +54,5 @@
     }
   ],
   "enriched_by": "operator-reviewed (explicit thin-slice map)",
-  "enrich_note": "L2: bachelor-thesis terrain-erosion plugin; operator drives headless -> full pass (upgrades erosion_sim to full-pass).",
-  "probed_natively": true
+  "enrich_note": "L2: bachelor-thesis terrain-erosion plugin; operator drives headless -> full pass (upgrades erosion_sim to full-pass)."
 }

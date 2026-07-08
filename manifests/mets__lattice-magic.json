@@ -1,0 +1,78 @@
+{
+  "canonical_id": "mets__lattice-magic",
+  "artifact": "add-on-latticemagic-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "lattice.add_selected_objects",
+        "lattice.add_slot",
+        "lattice.create_tweak_lattice",
+        "lattice.delete_lattice_from_slot",
+        "lattice.delete_tweak_lattice",
+        "lattice.duplicate_tweak_setup",
+        "lattice.generate_lattice_for_slot",
+        "lattice.move_slot",
+        "lattice.remove_object",
+        "lattice.remove_selected_objects",
+        "lattice.remove_slot",
+        "lattice.reset_points",
+        "lattice.shape_keys_keyframe_all",
+        "lattice.shape_keys_zero_all",
+        "lattice.smear_add_shape"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "lattice.add_selected_objects",
+        "lattice.add_slot",
+        "lattice.create_tweak_lattice",
+        "lattice.delete_lattice_from_slot",
+        "lattice.delete_tweak_lattice",
+        "lattice.duplicate_tweak_setup",
+        "lattice.generate_lattice_for_slot",
+        "lattice.move_slot",
+        "lattice.remove_object",
+        "lattice.remove_selected_objects",
+        "lattice.remove_slot",
+        "lattice.reset_points",
+        "lattice.shape_keys_keyframe_all",
+        "lattice.shape_keys_zero_all",
+        "lattice.smear_add_shape"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "lattice.add_selected_objects",
+    "lattice.add_slot",
+    "lattice.create_tweak_lattice",
+    "lattice.delete_lattice_from_slot",
+    "lattice.delete_tweak_lattice",
+    "lattice.duplicate_tweak_setup",
+    "lattice.generate_lattice_for_slot",
+    "lattice.move_slot",
+    "lattice.remove_object",
+    "lattice.remove_selected_objects",
+    "lattice.remove_slot",
+    "lattice.reset_points",
+    "lattice.shape_keys_keyframe_all",
+    "lattice.shape_keys_zero_all",
+    "lattice.smear_add_shape"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:41+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,55 @@
+{
+  "canonical_id": "sinewave__mesh-repair-tools",
+  "artifact": "add-on-mesh-repair-tools-v4.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.fix_mesh_global",
+        "object.flatten_local",
+        "object.local_face_normal",
+        "object.mrts_sinewave",
+        "object.reduce_local",
+        "object.refind_local",
+        "object.remesh_local_v2",
+        "object.smooth_local_v2"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.fix_mesh_global",
+        "object.flatten_local",
+        "object.local_face_normal",
+        "object.mrts_sinewave",
+        "object.reduce_local",
+        "object.refind_local",
+        "object.remesh_local_v2",
+        "object.smooth_local_v2"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.fix_mesh_global",
+    "object.flatten_local",
+    "object.local_face_normal",
+    "object.mrts_sinewave",
+    "object.reduce_local",
+    "object.refind_local",
+    "object.remesh_local_v2",
+    "object.smooth_local_v2"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:14+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

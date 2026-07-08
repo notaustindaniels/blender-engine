@@ -1,0 +1,30 @@
+{
+  "canonical_id": "thornydre__path-maker",
+  "artifact": "add-on-blender-path-maker-v1.4.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:08:11+00:00",
+  "prescan_hits": [
+    "subprocess",
+    "eval(",
+    "open-write"
+  ]
+}

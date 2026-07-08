@@ -1,0 +1,70 @@
+{
+  "canonical_id": "acggit-lj__materialhelper",
+  "artifact": "add-on-materialhelper-v1.4.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mathp.add_material",
+        "mathp.align_dependence",
+        "mathp.apply_asset",
+        "mathp.clear_unused_material",
+        "mathp.delete_asset",
+        "mathp.duplicate_asset",
+        "mathp.edit_material_asset",
+        "mathp.from_asset_picker_material",
+        "mathp.material_assign_by_item",
+        "mathp.material_assign_by_modal",
+        "mathp.material_clear",
+        "mathp.material_drag",
+        "mathp.material_picker",
+        "mathp.move_dependence",
+        "mathp.refresh_asset_preview",
+        "mathp.rename_asset",
+        "mathp.replace_mat",
+        "mathp.select_material_obj"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mathp.add_material",
+    "mathp.align_dependence",
+    "mathp.apply_asset",
+    "mathp.clear_unused_material",
+    "mathp.delete_asset",
+    "mathp.duplicate_asset",
+    "mathp.edit_material_asset",
+    "mathp.from_asset_picker_material",
+    "mathp.material_assign_by_item",
+    "mathp.material_assign_by_modal",
+    "mathp.material_clear",
+    "mathp.material_drag",
+    "mathp.material_picker",
+    "mathp.move_dependence",
+    "mathp.refresh_asset_preview",
+    "mathp.rename_asset",
+    "mathp.replace_mat",
+    "mathp.select_material_obj"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:14+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.5"
+}

@@ -1,0 +1,28 @@
+{
+  "canonical_id": "snakyboopface__connect-image-alpha",
+  "artifact": "add-on-img-alpha-to-bsdf-v1.0.6.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:04+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

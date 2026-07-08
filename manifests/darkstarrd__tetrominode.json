@@ -1,0 +1,85 @@
+{
+  "canonical_id": "darkstarrd__tetrominode",
+  "artifact": "add-on-tetrominode-v0.4.6.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "bltetris.apply_looks",
+        "bltetris.bake_replay",
+        "bltetris.capture_keybind",
+        "bltetris.cleanup",
+        "bltetris.clear_keybind",
+        "bltetris.export_replay_json",
+        "bltetris.import_replay_json",
+        "bltetris.pause",
+        "bltetris.play",
+        "bltetris.record_clear",
+        "bltetris.record_start",
+        "bltetris.record_stop",
+        "bltetris.reset_keybinds",
+        "bltetris.restart",
+        "bltetris.setup_assets",
+        "bltetris.setup_geometry_nodes",
+        "bltetris.step"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "bltetris.apply_looks",
+        "bltetris.bake_replay",
+        "bltetris.capture_keybind",
+        "bltetris.cleanup",
+        "bltetris.clear_keybind",
+        "bltetris.export_replay_json",
+        "bltetris.import_replay_json",
+        "bltetris.pause",
+        "bltetris.play",
+        "bltetris.record_clear",
+        "bltetris.record_start",
+        "bltetris.record_stop",
+        "bltetris.reset_keybinds",
+        "bltetris.restart",
+        "bltetris.setup_assets",
+        "bltetris.setup_geometry_nodes",
+        "bltetris.step"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "bltetris.apply_looks",
+    "bltetris.bake_replay",
+    "bltetris.capture_keybind",
+    "bltetris.cleanup",
+    "bltetris.clear_keybind",
+    "bltetris.export_replay_json",
+    "bltetris.import_replay_json",
+    "bltetris.pause",
+    "bltetris.play",
+    "bltetris.record_clear",
+    "bltetris.record_start",
+    "bltetris.record_stop",
+    "bltetris.reset_keybinds",
+    "bltetris.restart",
+    "bltetris.setup_assets",
+    "bltetris.setup_geometry_nodes",
+    "bltetris.step"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:49+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

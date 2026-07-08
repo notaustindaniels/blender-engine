@@ -1,0 +1,61 @@
+{
+  "canonical_id": "pixldg__sculpting-extra-meshes-curve",
+  "artifact": "add-on-sculpting-extra-meshes-curve-v1.3.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "sculpt.add_boolean_modifier",
+        "sculpt.add_curve",
+        "sculpt.add_mesh_object",
+        "sculpt.add_mirror",
+        "sculpt.add_multires",
+        "sculpt.apply_mirror",
+        "sculpt.back_to_sculpt",
+        "sculpt.clone_object",
+        "sculpt.finish_curve",
+        "sculpt.join_meshes"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "sculpt.add_boolean_modifier",
+        "sculpt.add_curve",
+        "sculpt.add_mesh_object",
+        "sculpt.add_mirror",
+        "sculpt.add_multires",
+        "sculpt.apply_mirror",
+        "sculpt.back_to_sculpt",
+        "sculpt.clone_object",
+        "sculpt.finish_curve",
+        "sculpt.join_meshes"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "sculpt.add_boolean_modifier",
+    "sculpt.add_curve",
+    "sculpt.add_mesh_object",
+    "sculpt.add_mirror",
+    "sculpt.add_multires",
+    "sculpt.apply_mirror",
+    "sculpt.back_to_sculpt",
+    "sculpt.clone_object",
+    "sculpt.finish_curve",
+    "sculpt.join_meshes"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:59+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

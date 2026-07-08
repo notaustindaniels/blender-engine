@@ -1,0 +1,40 @@
+{
+  "canonical_id": "arturo-cervantes__pbsu-3d-studio-3ds",
+  "artifact": "add-on-pbsu-addon-3ds-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_scene.max3ds",
+        "import_scene.max3ds"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_scene.max3ds",
+        "import_scene.max3ds"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.max3ds",
+    "import_scene.max3ds"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:23+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

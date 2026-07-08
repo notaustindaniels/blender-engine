@@ -1,0 +1,46 @@
+{
+  "canonical_id": "gregzaal__matalogue",
+  "artifact": "add-on-matalogue-v1.5.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "matalogue.goto_comp",
+        "matalogue.goto_geo",
+        "matalogue.goto_group",
+        "matalogue.goto_light",
+        "matalogue.goto_mat"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "matalogue.goto_comp",
+        "matalogue.goto_geo",
+        "matalogue.goto_group",
+        "matalogue.goto_light",
+        "matalogue.goto_mat"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "matalogue.goto_comp",
+    "matalogue.goto_geo",
+    "matalogue.goto_group",
+    "matalogue.goto_light",
+    "matalogue.goto_mat"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:36+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

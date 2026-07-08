@@ -1,0 +1,35 @@
+{
+  "canonical_id": "seth-adam-trowbridge__perfectly-normal",
+  "artifact": "add-on-perfectly-normal-v0.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "perfectly_normal.install",
+        "perfectly_normal.scan"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "perfectly_normal.install",
+    "perfectly_normal.scan"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:08:04+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

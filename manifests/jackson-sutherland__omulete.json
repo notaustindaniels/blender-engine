@@ -1,0 +1,37 @@
+{
+  "canonical_id": "jackson-sutherland__omulete",
+  "artifact": "add-on-omulete-v0.98.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_egg.some_data",
+        "omulete.add_quick_property"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_egg.some_data",
+    "omulete.add_quick_property"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:01+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.5"
+}

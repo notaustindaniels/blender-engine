@@ -1,0 +1,31 @@
+{
+  "canonical_id": "globglob3d__controller-link",
+  "artifact": "add-on-controller-link-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:02+00:00",
+  "prescan_hits": [
+    "socket",
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

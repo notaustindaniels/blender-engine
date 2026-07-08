@@ -1,0 +1,42 @@
+{
+  "canonical_id": "hisanimations__global-copy-nodes",
+  "artifact": "add-on-global-copy-nodes-v1.0.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "global_copy_nodes.temp_path_setter",
+        "node.global_clipboard_copy",
+        "node.global_clipboard_paste"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "global_copy_nodes.temp_path_setter",
+        "node.global_clipboard_copy",
+        "node.global_clipboard_paste"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "global_copy_nodes.temp_path_setter",
+    "node.global_clipboard_copy",
+    "node.global_clipboard_paste"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:07+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

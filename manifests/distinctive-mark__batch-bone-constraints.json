@@ -1,0 +1,49 @@
+{
+  "canonical_id": "distinctive-mark__batch-bone-constraints",
+  "artifact": "add-on-batch-bone-constraints-v1.1.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "anim.batch_copy",
+        "anim.batch_delete",
+        "anim.batch_imitate",
+        "anim.batch_new",
+        "anim.remove_copy",
+        "anim.remove_imitate"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "anim.batch_copy",
+        "anim.batch_delete",
+        "anim.batch_imitate",
+        "anim.batch_new",
+        "anim.remove_copy",
+        "anim.remove_imitate"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "anim.batch_copy",
+    "anim.batch_delete",
+    "anim.batch_imitate",
+    "anim.batch_new",
+    "anim.remove_copy",
+    "anim.remove_imitate"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:52+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,93 @@
+{
+  "canonical_id": "community__archimesh",
+  "artifact": "add-on-archimesh-v1.2.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "archimesh.runopenglbutton",
+        "io_export.kitchen_inventory",
+        "io_export.roomdata",
+        "io_import.roomdata",
+        "mesh.archimesh_books",
+        "mesh.archimesh_column",
+        "mesh.archimesh_door",
+        "mesh.archimesh_japan",
+        "mesh.archimesh_kitchen",
+        "mesh.archimesh_light",
+        "mesh.archimesh_roller",
+        "mesh.archimesh_roof",
+        "mesh.archimesh_room",
+        "mesh.archimesh_shelves",
+        "mesh.archimesh_stairs",
+        "mesh.archimesh_venetian",
+        "mesh.archimesh_window",
+        "mesh.archimesh_winpanel",
+        "object.archimesh_cut_holes",
+        "object.archimesh_pencil_room"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "archimesh.runopenglbutton",
+        "io_export.kitchen_inventory",
+        "io_export.roomdata",
+        "io_import.roomdata",
+        "mesh.archimesh_books",
+        "mesh.archimesh_column",
+        "mesh.archimesh_door",
+        "mesh.archimesh_japan",
+        "mesh.archimesh_kitchen",
+        "mesh.archimesh_light",
+        "mesh.archimesh_roller",
+        "mesh.archimesh_roof",
+        "mesh.archimesh_room",
+        "mesh.archimesh_shelves",
+        "mesh.archimesh_stairs",
+        "mesh.archimesh_venetian",
+        "mesh.archimesh_window",
+        "mesh.archimesh_winpanel",
+        "object.archimesh_cut_holes",
+        "object.archimesh_pencil_room"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "archimesh.runopenglbutton",
+    "io_export.kitchen_inventory",
+    "io_export.roomdata",
+    "io_import.roomdata",
+    "mesh.archimesh_books",
+    "mesh.archimesh_column",
+    "mesh.archimesh_door",
+    "mesh.archimesh_japan",
+    "mesh.archimesh_kitchen",
+    "mesh.archimesh_light",
+    "mesh.archimesh_roller",
+    "mesh.archimesh_roof",
+    "mesh.archimesh_room",
+    "mesh.archimesh_shelves",
+    "mesh.archimesh_stairs",
+    "mesh.archimesh_venetian",
+    "mesh.archimesh_window",
+    "mesh.archimesh_winpanel",
+    "object.archimesh_cut_holes",
+    "object.archimesh_pencil_room"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:03+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

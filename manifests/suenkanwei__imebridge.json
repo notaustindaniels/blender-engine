@@ -1,0 +1,28 @@
+{
+  "canonical_id": "suenkanwei__imebridge",
+  "artifact": "add-on-imebridge-v0.3.0-windows-x64-macos-arm64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:01:07+00:00",
+  "prescan_hits": [
+    "ctypes"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "canonical_id": "shuimeng__quick-studio-light",
+  "artifact": "add-on-quick-studio-light-v1.1.9.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:08:06+00:00",
+  "prescan_hits": [
+    "socket",
+    "__import__"
+  ]
+}

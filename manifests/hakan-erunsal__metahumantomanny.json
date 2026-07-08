@@ -1,0 +1,64 @@
+{
+  "canonical_id": "hakan-erunsal__metahumantomanny",
+  "artifact": "add-on-metahumantomanny-v1.3.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.bind_to_manny",
+        "object.cleanup_all_vertex_groups",
+        "object.cleanup_bone_weights",
+        "object.cleanup_unused_vertex_groups",
+        "object.fix_finger_bulges",
+        "object.fix_seams",
+        "object.fix_toes",
+        "object.fix_twist_bone_names",
+        "object.generate_ik_bones",
+        "object.in_place_conversion",
+        "object.setup_lod_hierarchy"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.bind_to_manny",
+        "object.cleanup_all_vertex_groups",
+        "object.cleanup_bone_weights",
+        "object.cleanup_unused_vertex_groups",
+        "object.fix_finger_bulges",
+        "object.fix_seams",
+        "object.fix_toes",
+        "object.fix_twist_bone_names",
+        "object.generate_ik_bones",
+        "object.in_place_conversion",
+        "object.setup_lod_hierarchy"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.bind_to_manny",
+    "object.cleanup_all_vertex_groups",
+    "object.cleanup_bone_weights",
+    "object.cleanup_unused_vertex_groups",
+    "object.fix_finger_bulges",
+    "object.fix_seams",
+    "object.fix_toes",
+    "object.fix_twist_bone_names",
+    "object.generate_ik_bones",
+    "object.in_place_conversion",
+    "object.setup_lod_hierarchy"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:11+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

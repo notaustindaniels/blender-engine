@@ -1,0 +1,28 @@
+{
+  "canonical_id": "wiffzackius__compressed-glb-importer",
+  "artifact": "add-on-model-decompressor-v0.0.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:01:06+00:00",
+  "prescan_hits": [
+    "base64-decode"
+  ]
+}

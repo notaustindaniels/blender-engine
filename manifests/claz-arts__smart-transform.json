@@ -1,0 +1,49 @@
+{
+  "canonical_id": "claz-arts__smart-transform",
+  "artifact": "add-on-smart-transform-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "sot.apply_transforms",
+        "sot.invert_selection",
+        "sot.select_by_location",
+        "sot.select_by_rotation",
+        "sot.select_by_scale",
+        "sot.select_by_size"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "sot.apply_transforms",
+        "sot.invert_selection",
+        "sot.select_by_location",
+        "sot.select_by_rotation",
+        "sot.select_by_scale",
+        "sot.select_by_size"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "sot.apply_transforms",
+    "sot.invert_selection",
+    "sot.select_by_location",
+    "sot.select_by_rotation",
+    "sot.select_by_scale",
+    "sot.select_by_size"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

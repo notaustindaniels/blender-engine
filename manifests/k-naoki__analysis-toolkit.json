@@ -1,0 +1,87 @@
+{
+  "canonical_id": "k-naoki__analysis-toolkit",
+  "artifact": "add-on-analysis-toolkit-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "scene_analysis.add_sensor",
+        "scene_analysis.calculate_range_speed",
+        "scene_analysis.calculate_texel_density",
+        "scene_analysis.copy_value",
+        "scene_analysis.correct_sun_active",
+        "scene_analysis.distance_to_target",
+        "scene_analysis.ev_step_value",
+        "scene_analysis.horizon_create_empty",
+        "scene_analysis.horizon_distance",
+        "scene_analysis.measure_all",
+        "scene_analysis.parallax_create_empty",
+        "scene_analysis.parallax_distance",
+        "scene_analysis.parallax_find_extremes",
+        "scene_analysis.parallax_set_frame_a",
+        "scene_analysis.parallax_set_frame_b",
+        "scene_analysis.save_results_csv",
+        "scene_analysis.speedo_set_frame_a",
+        "scene_analysis.speedo_set_frame_b"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "scene_analysis.add_sensor",
+        "scene_analysis.calculate_range_speed",
+        "scene_analysis.calculate_texel_density",
+        "scene_analysis.copy_value",
+        "scene_analysis.correct_sun_active",
+        "scene_analysis.distance_to_target",
+        "scene_analysis.ev_step_value",
+        "scene_analysis.horizon_create_empty",
+        "scene_analysis.horizon_distance",
+        "scene_analysis.measure_all",
+        "scene_analysis.parallax_create_empty",
+        "scene_analysis.parallax_distance",
+        "scene_analysis.parallax_find_extremes",
+        "scene_analysis.parallax_set_frame_a",
+        "scene_analysis.parallax_set_frame_b",
+        "scene_analysis.save_results_csv",
+        "scene_analysis.speedo_set_frame_a",
+        "scene_analysis.speedo_set_frame_b"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "scene_analysis.add_sensor",
+    "scene_analysis.calculate_range_speed",
+    "scene_analysis.calculate_texel_density",
+    "scene_analysis.copy_value",
+    "scene_analysis.correct_sun_active",
+    "scene_analysis.distance_to_target",
+    "scene_analysis.ev_step_value",
+    "scene_analysis.horizon_create_empty",
+    "scene_analysis.horizon_distance",
+    "scene_analysis.measure_all",
+    "scene_analysis.parallax_create_empty",
+    "scene_analysis.parallax_distance",
+    "scene_analysis.parallax_find_extremes",
+    "scene_analysis.parallax_set_frame_a",
+    "scene_analysis.parallax_set_frame_b",
+    "scene_analysis.save_results_csv",
+    "scene_analysis.speedo_set_frame_a",
+    "scene_analysis.speedo_set_frame_b"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:11:20+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

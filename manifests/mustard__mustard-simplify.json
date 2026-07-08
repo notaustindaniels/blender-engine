@@ -1,0 +1,77 @@
+{
+  "canonical_id": "mustard__mustard-simplify",
+  "artifact": "add-on-mustardsimplify-v2026.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "mustard_simplify.add_exception_selected",
+        "mustard_simplify.add_proxy",
+        "mustard_simplify.add_simplify_preset",
+        "mustard_simplify.apply_frustum_culling",
+        "mustard_simplify.complexity_analyzer_switch_workbench",
+        "mustard_simplify.complexity_analyzer_toggle",
+        "mustard_simplify.data_removal",
+        "mustard_simplify.data_removal_select",
+        "mustard_simplify.fast_normals",
+        "mustard_simplify.live_frustum_culling",
+        "mustard_simplify.menu_blender_simplify_settings",
+        "mustard_simplify.menu_modifiers_select",
+        "mustard_simplify.menu_objects_select",
+        "mustard_simplify.menu_shape_keys_settings",
+        "mustard_simplify.refresh_modifiers",
+        "mustard_simplify.refresh_objects",
+        "mustard_simplify.remove_exception",
+        "mustard_simplify.reset_settings",
+        "mustard_simplify.restore_frustum_culling",
+        "mustard_simplify.scene",
+        "mustard_simplify.toggle_live_frustum_culling",
+        "mustard_simplify.update_execution_time"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mustard_simplify.add_exception_selected",
+    "mustard_simplify.add_proxy",
+    "mustard_simplify.add_simplify_preset",
+    "mustard_simplify.apply_frustum_culling",
+    "mustard_simplify.complexity_analyzer_switch_workbench",
+    "mustard_simplify.complexity_analyzer_toggle",
+    "mustard_simplify.data_removal",
+    "mustard_simplify.data_removal_select",
+    "mustard_simplify.fast_normals",
+    "mustard_simplify.live_frustum_culling",
+    "mustard_simplify.menu_blender_simplify_settings",
+    "mustard_simplify.menu_modifiers_select",
+    "mustard_simplify.menu_objects_select",
+    "mustard_simplify.menu_shape_keys_settings",
+    "mustard_simplify.refresh_modifiers",
+    "mustard_simplify.refresh_objects",
+    "mustard_simplify.remove_exception",
+    "mustard_simplify.reset_settings",
+    "mustard_simplify.restore_frustum_culling",
+    "mustard_simplify.scene",
+    "mustard_simplify.toggle_live_frustum_culling",
+    "mustard_simplify.update_execution_time"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:56+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.3"
+}

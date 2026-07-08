@@ -1,0 +1,41 @@
+{
+  "canonical_id": "blenderbob__shapekey-copy",
+  "artifact": "add-on-copyshapekeys-v3.4.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.copy_armature_anim",
+        "object.shapekey_animation_transfer",
+        "object.shapekey_transfer",
+        "object.shapekey_zero",
+        "object.vertexgroup_transfer"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.copy_armature_anim",
+    "object.shapekey_animation_transfer",
+    "object.shapekey_transfer",
+    "object.shapekey_zero",
+    "object.vertexgroup_transfer"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:13:26+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

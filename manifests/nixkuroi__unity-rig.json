@@ -1,0 +1,51 @@
+{
+  "canonical_id": "nixkuroi__unity-rig",
+  "artifact": "add-on-unity-rig-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "unity_rig.convert_rigify",
+        "unity_rig.create_metarig",
+        "unity_rig.export_fbx",
+        "unity_rig.generate_rig",
+        "unity_rig.snap_fk_to_ik",
+        "unity_rig.snap_ik_to_fk"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "unity_rig.convert_rigify",
+        "unity_rig.create_metarig",
+        "unity_rig.export_fbx",
+        "unity_rig.generate_rig",
+        "unity_rig.snap_fk_to_ik",
+        "unity_rig.snap_ik_to_fk"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "unity_rig.convert_rigify",
+    "unity_rig.create_metarig",
+    "unity_rig.export_fbx",
+    "unity_rig.generate_rig",
+    "unity_rig.snap_fk_to_ik",
+    "unity_rig.snap_ik_to_fk"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:01+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,40 @@
+{
+  "canonical_id": "__unity-style-walk-navigation",
+  "artifact": "add-on-unity-style-walk-navigation-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "uw.reset_params",
+        "view3d.unity_walk",
+        "view3d.unity_walk_trackpad"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "uw.reset_params",
+        "view3d.unity_walk",
+        "view3d.unity_walk_trackpad"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "uw.reset_params",
+    "view3d.unity_walk",
+    "view3d.unity_walk_trackpad"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:30+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

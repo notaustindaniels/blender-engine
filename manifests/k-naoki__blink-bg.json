@@ -1,0 +1,40 @@
+{
+  "canonical_id": "k-naoki__blink-bg",
+  "artifact": "add-on-blink-bg-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "view3d.blink_bg",
+        "view3d.blink_bg_set_resolution",
+        "view3d.blink_bg_swap_opacity"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "view3d.blink_bg",
+        "view3d.blink_bg_set_resolution",
+        "view3d.blink_bg_swap_opacity"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "view3d.blink_bg",
+    "view3d.blink_bg_set_resolution",
+    "view3d.blink_bg_swap_opacity"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:52+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

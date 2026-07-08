@@ -1,0 +1,26 @@
+{
+  "canonical_id": "golden_broken",
+  "artifact": "golden_broken.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "skipped",
+  "artifact_type": "broken",
+  "verified_at": "2026-07-06T20:49:41+00:00",
+  "declared_min": null
+}

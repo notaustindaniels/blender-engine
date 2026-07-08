@@ -1,4 +1,25 @@
 {
+ "operator/7bitretro__strange-attractors::curve.act_attractor_add": {
+  "cid": "7bitretro__strange-attractors",
+  "operator_id": "curve.act_attractor_add",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "trace"
+  ],
+  "niches": [
+   "attractor_curves"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "SPDX:GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/beneking102__bene-proggen-maps::procgen_maps.generate_city": {
   "cid": "beneking102__bene-proggen-maps",
   "operator_id": "procgen_maps.generate_city",
@@ -157,6 +178,26 @@
    "4.5"
   ]
  },
+ "operator/community__export-pointcache-format-pc2::export_shape.pc2": {
+  "cid": "community__export-pointcache-format-pc2",
+  "operator_id": "export_shape.pc2",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/community__ivygen::curve.ivy_gen": {
   "cid": "community__ivygen",
   "operator_id": "curve.ivy_gen",
@@ -260,6 +301,66 @@
    "4.5"
   ]
  },
+ "operator/jan-hendrik-m-ller__csv-importer::csv.reload_data": {
+  "cid": "jan-hendrik-m-ller__csv-importer",
+  "operator_id": "csv.reload_data",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/jean-basset__smear::scene.bake_deltas_and_trajectories": {
+  "cid": "jean-basset__smear",
+  "operator_id": "scene.bake_deltas_and_trajectories",
+  "kind": "bpy_op",
+  "verbs": [
+   "deform"
+  ],
+  "niches": [
+   "smear_frames"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/k-naoki__tracker-to-nuke::clip.nuke_copy_distortion": {
+  "cid": "k-naoki__tracker-to-nuke",
+  "operator_id": "clip.nuke_copy_distortion",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/kiara-bagattini__bagapie::kiara-bagattini__bagapie": {
   "cid": "kiara-bagattini__bagapie",
   "operator_id": "kiara-bagattini__bagapie",
@@ -279,6 +380,26 @@
   "quality": "partial",
   "license": "GPL-3.0-or-later",
   "versions": [
+   "4.5"
+  ]
+ },
+ "operator/kiran-kumawat__robotics-animation-bone-coordinate-exporter::robotics.export_coords": {
+  "cid": "kiran-kumawat__robotics-animation-bone-coordinate-exporter",
+  "operator_id": "robotics.export_coords",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
    "4.5"
   ]
  },
@@ -343,6 +464,26 @@
   "license": "GPL-3.0",
   "versions": [
    "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/michaelschieber__camerafly::pose.move_rotate_bone_local_pivot": {
+  "cid": "michaelschieber__camerafly",
+  "operator_id": "pose.move_rotate_bone_local_pivot",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "camera_rigs"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
    "4.2",
    "4.5"
   ]
@@ -450,6 +591,45 @@
    "4.5"
   ]
  },
+ "operator/sharpened__attrio-csv::attrio.add_csv_import_object": {
+  "cid": "sharpened__attrio-csv",
+  "operator_id": "attrio.add_csv_import_object",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/smonbrogg__spreadsheet-import::import.spreadsheet": {
+  "cid": "smonbrogg__spreadsheet-import",
+  "operator_id": "import.spreadsheet",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "data_import"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/tu2463__rock_generator_addon::mesh.primitive_rock_add": {
   "cid": "tu2463__rock_generator_addon",
   "operator_id": "mesh.primitive_rock_add",
@@ -487,6 +667,49 @@
   ],
   "quality": "partial",
   "license": "assumed",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/vicky-at-24fps__export-to-nuke-script::export.nuke_transform_fixed": {
+  "cid": "vicky-at-24fps__export-to-nuke-script",
+  "operator_id": "export.nuke_transform_fixed",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "illuminate",
+   "reveal"
+  ],
+  "niches": [
+   "data_import",
+   "light_matrix_data"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/waynedixon__add-camera-rigs::add_camera_rigs.add_marker_bind": {
+  "cid": "waynedixon__add-camera-rigs",
+  "operator_id": "add_camera_rigs.add_marker_bind",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "camera_rigs"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "SPDX:GPL-3.0-or-later",
   "versions": [
    "4.2",
    "4.5"

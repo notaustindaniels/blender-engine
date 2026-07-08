@@ -1,0 +1,28 @@
+{
+  "canonical_id": "marek-zaj-c__animation-auto-offset",
+  "artifact": "add-on-anim-auto-offset-v1.3.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:11:33+00:00",
+  "prescan_hits": [
+    "eval("
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "canonical_id": "community__extra-curve-objects",
+  "artifact": "add-on-extra-curve-objectes-v0.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "curve.add_braid",
+        "curve.bevelcurve",
+        "curve.celtic_links",
+        "curve.curlycurve",
+        "curve.curveaceous_galore",
+        "curve.simple",
+        "curve.smooth_x_times",
+        "curve.spirals",
+        "curve.tapercurve",
+        "curve.torus_knot_plus",
+        "object.add_bounce_spline",
+        "object.add_catenary_curve",
+        "object.add_spirofit_spline",
+        "object.add_surface_cone",
+        "object.add_surface_plane",
+        "object.add_surface_star",
+        "object.add_surface_wedge"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "curve.add_braid",
+        "curve.bevelcurve",
+        "curve.celtic_links",
+        "curve.curlycurve",
+        "curve.curveaceous_galore",
+        "curve.simple",
+        "curve.smooth_x_times",
+        "curve.spirals",
+        "curve.tapercurve",
+        "curve.torus_knot_plus",
+        "object.add_bounce_spline",
+        "object.add_catenary_curve",
+        "object.add_spirofit_spline",
+        "object.add_surface_cone",
+        "object.add_surface_plane",
+        "object.add_surface_star",
+        "object.add_surface_wedge"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.add_braid",
+    "curve.bevelcurve",
+    "curve.celtic_links",
+    "curve.curlycurve",
+    "curve.curveaceous_galore",
+    "curve.simple",
+    "curve.smooth_x_times",
+    "curve.spirals",
+    "curve.tapercurve",
+    "curve.torus_knot_plus",
+    "object.add_bounce_spline",
+    "object.add_catenary_curve",
+    "object.add_spirofit_spline",
+    "object.add_surface_cone",
+    "object.add_surface_plane",
+    "object.add_surface_star",
+    "object.add_surface_wedge"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:44+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

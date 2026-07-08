@@ -1,0 +1,91 @@
+{
+  "canonical_id": "david-orrick__soleshapper",
+  "artifact": "add-on-soleshapper-v2.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "soledesigner.apply_noise",
+        "soledesigner.apply_scale",
+        "soledesigner.clear_intensity",
+        "soledesigner.delete_preset",
+        "soledesigner.export_obj",
+        "soledesigner.export_stl",
+        "soledesigner.load_custom",
+        "soledesigner.load_default",
+        "soledesigner.load_preset",
+        "soledesigner.randomize_all",
+        "soledesigner.randomize_seed",
+        "soledesigner.reset_mesh",
+        "soledesigner.reset_noise",
+        "soledesigner.reset_noisescale",
+        "soledesigner.reset_offset",
+        "soledesigner.reset_parameters",
+        "soledesigner.reset_rotate",
+        "soledesigner.reset_zone",
+        "soledesigner.save_preset",
+        "soledesigner.show_intensity"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "soledesigner.apply_noise",
+        "soledesigner.apply_scale",
+        "soledesigner.clear_intensity",
+        "soledesigner.delete_preset",
+        "soledesigner.export_obj",
+        "soledesigner.export_stl",
+        "soledesigner.load_custom",
+        "soledesigner.load_default",
+        "soledesigner.load_preset",
+        "soledesigner.randomize_all",
+        "soledesigner.randomize_seed",
+        "soledesigner.reset_mesh",
+        "soledesigner.reset_noise",
+        "soledesigner.reset_noisescale",
+        "soledesigner.reset_offset",
+        "soledesigner.reset_parameters",
+        "soledesigner.reset_rotate",
+        "soledesigner.reset_zone",
+        "soledesigner.save_preset",
+        "soledesigner.show_intensity"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "soledesigner.apply_noise",
+    "soledesigner.apply_scale",
+    "soledesigner.clear_intensity",
+    "soledesigner.delete_preset",
+    "soledesigner.export_obj",
+    "soledesigner.export_stl",
+    "soledesigner.load_custom",
+    "soledesigner.load_default",
+    "soledesigner.load_preset",
+    "soledesigner.randomize_all",
+    "soledesigner.randomize_seed",
+    "soledesigner.reset_mesh",
+    "soledesigner.reset_noise",
+    "soledesigner.reset_noisescale",
+    "soledesigner.reset_offset",
+    "soledesigner.reset_parameters",
+    "soledesigner.reset_rotate",
+    "soledesigner.reset_zone",
+    "soledesigner.save_preset",
+    "soledesigner.show_intensity"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:12+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

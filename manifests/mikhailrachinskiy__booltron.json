@@ -1,0 +1,57 @@
+{
+  "canonical_id": "mikhailrachinskiy__booltron",
+  "artifact": "add-on-booltron-v3.3.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.booltron_destructive_difference",
+        "object.booltron_destructive_intersect",
+        "object.booltron_destructive_slice",
+        "object.booltron_destructive_union",
+        "object.booltron_instance_copy",
+        "object.booltron_modifier_bake",
+        "object.booltron_modifier_bake_del",
+        "object.booltron_nondestructive_difference",
+        "object.booltron_nondestructive_intersect",
+        "object.booltron_nondestructive_union",
+        "object.booltron_secondary_del",
+        "object.booltron_secondary_select"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.booltron_destructive_difference",
+    "object.booltron_destructive_intersect",
+    "object.booltron_destructive_slice",
+    "object.booltron_destructive_union",
+    "object.booltron_instance_copy",
+    "object.booltron_modifier_bake",
+    "object.booltron_modifier_bake_del",
+    "object.booltron_nondestructive_difference",
+    "object.booltron_nondestructive_intersect",
+    "object.booltron_nondestructive_union",
+    "object.booltron_secondary_del",
+    "object.booltron_secondary_select"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:45+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.5"
+}

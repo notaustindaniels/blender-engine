@@ -1,6 +1,6 @@
 # Gap report — Abstract, mograph & design (D-008 R47)
 
-Coverage: **0/14 = 0.0%** (full_pass + recipe_verified). 14 gaps.
+Coverage: **1/14 = 7.1%** (full_pass + recipe_verified). 13 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
@@ -16,7 +16,7 @@ Coverage: **0/14 = 0.0%** (full_pass + recipe_verified). 14 gaps.
 | parametric_surface_nodes | 1 | GAP | unclassified |
 | terminal_ui_generator | 1 | GAP | unclassified |
 | lsystem_grammar | 2 | GAP | unclassified |
-| attractor_curves | 2 | GAP | unclassified |
+| attractor_curves | 2 | full_pass | unclassified |
 | spirograph_harmonograph | 2 | GAP | unclassified |
 
-**Gaps (14):** what the free ecosystem lacks here — `fractal_generator`(unclassified), `voronoi_shatter`(unclassified), `lattice_loft_kit`(unclassified), `cloner_effector_kit`(unclassified), `knot_braid_curves`(unclassified), `maze_generator`(unclassified), `pattern_generator`(unclassified), `circuit_generator`(unclassified), `text_animation_nodes`(unclassified), `parametric_surface_nodes`(unclassified), `terminal_ui_generator`(unclassified), `lsystem_grammar`(unclassified), `attractor_curves`(unclassified), `spirograph_harmonograph`(unclassified)
+**Gaps (13):** what the free ecosystem lacks here — `fractal_generator`(unclassified), `voronoi_shatter`(unclassified), `lattice_loft_kit`(unclassified), `cloner_effector_kit`(unclassified), `knot_braid_curves`(unclassified), `maze_generator`(unclassified), `pattern_generator`(unclassified), `circuit_generator`(unclassified), `text_animation_nodes`(unclassified), `parametric_surface_nodes`(unclassified), `terminal_ui_generator`(unclassified), `lsystem_grammar`(unclassified), `spirograph_harmonograph`(unclassified)

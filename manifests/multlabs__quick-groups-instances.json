@@ -1,0 +1,55 @@
+{
+  "canonical_id": "multlabs__quick-groups-instances",
+  "artifact": "add-on-quick-groups-v1.0.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.add_collection_to_library",
+        "object.add_to_library_instance",
+        "object.edit_library_instance",
+        "object.edit_library_instance_skip_testing",
+        "object.library_instance",
+        "object.library_instance_ungroup",
+        "object.make_single_user_library_instance",
+        "object.remove_from_library_instance"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.add_collection_to_library",
+        "object.add_to_library_instance",
+        "object.edit_library_instance",
+        "object.edit_library_instance_skip_testing",
+        "object.library_instance",
+        "object.library_instance_ungroup",
+        "object.make_single_user_library_instance",
+        "object.remove_from_library_instance"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.add_collection_to_library",
+    "object.add_to_library_instance",
+    "object.edit_library_instance",
+    "object.edit_library_instance_skip_testing",
+    "object.library_instance",
+    "object.library_instance_ungroup",
+    "object.make_single_user_library_instance",
+    "object.remove_from_library_instance"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:46+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

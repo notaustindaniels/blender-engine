@@ -1,0 +1,32 @@
+{
+  "canonical_id": "gilberto-r__export-curve-as-svg",
+  "artifact": "add-on-export-curve-as-svg-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.0 > 4.2"
+    },
+    "4.5": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.0 > 4.5"
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:53+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "5.0"
+}

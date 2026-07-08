@@ -1,0 +1,76 @@
+{
+  "canonical_id": "trukas__view-layer-plus",
+  "artifact": "add-on-use-for-rendering-plus-v1.2.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "ufrp.all_passes",
+        "ufrp.batch",
+        "ufrp.copy_layer_props",
+        "ufrp.copy_to_selected",
+        "ufrp.move_layer",
+        "ufrp.only_active",
+        "ufrp.only_selected",
+        "ufrp.paste_layer_props",
+        "ufrp.reload_passes",
+        "ufrp.sort_layers",
+        "ufrp.switch_render_layer",
+        "ufrp.switch_view_layer",
+        "ufrp.toggle",
+        "ufrp.view_layer_add",
+        "ufrp.view_layer_remove"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ufrp.all_passes",
+        "ufrp.batch",
+        "ufrp.copy_layer_props",
+        "ufrp.copy_to_selected",
+        "ufrp.move_layer",
+        "ufrp.only_active",
+        "ufrp.only_selected",
+        "ufrp.paste_layer_props",
+        "ufrp.reload_passes",
+        "ufrp.sort_layers",
+        "ufrp.switch_render_layer",
+        "ufrp.switch_view_layer",
+        "ufrp.toggle",
+        "ufrp.view_layer_add",
+        "ufrp.view_layer_remove"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ufrp.all_passes",
+    "ufrp.batch",
+    "ufrp.copy_layer_props",
+    "ufrp.copy_to_selected",
+    "ufrp.move_layer",
+    "ufrp.only_active",
+    "ufrp.only_selected",
+    "ufrp.paste_layer_props",
+    "ufrp.reload_passes",
+    "ufrp.sort_layers",
+    "ufrp.switch_render_layer",
+    "ufrp.switch_view_layer",
+    "ufrp.toggle",
+    "ufrp.view_layer_add",
+    "ufrp.view_layer_remove"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:13+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

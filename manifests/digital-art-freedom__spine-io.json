@@ -1,0 +1,42 @@
+{
+  "canonical_id": "digital-art-freedom__spine-io",
+  "artifact": "add-on-spine-io-v0.0.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "spine_io.export_spine_json",
+        "spine_io.export_spine_json_quick",
+        "spine_io.refresh_blend_modes"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "spine_io.export_spine_json",
+        "spine_io.export_spine_json_quick",
+        "spine_io.refresh_blend_modes"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "spine_io.export_spine_json",
+    "spine_io.export_spine_json_quick",
+    "spine_io.refresh_blend_modes"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:15+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

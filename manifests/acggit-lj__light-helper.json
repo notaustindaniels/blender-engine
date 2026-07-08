@@ -1,0 +1,58 @@
+{
+  "canonical_id": "acggit-lj__light-helper",
+  "artifact": "add-on-lighthepler-v0.4.6.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "llp.add_light_linking",
+        "llp.clear_light_linking",
+        "llp.instances_data",
+        "llp.link_selected_objs",
+        "llp.question",
+        "llp.remove_light_linking",
+        "llp.select_item",
+        "llp.switch_filter_show",
+        "llp.toggle_light_linking"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "llp.add_light_linking",
+        "llp.clear_light_linking",
+        "llp.instances_data",
+        "llp.link_selected_objs",
+        "llp.question",
+        "llp.remove_light_linking",
+        "llp.select_item",
+        "llp.switch_filter_show",
+        "llp.toggle_light_linking"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "llp.add_light_linking",
+    "llp.clear_light_linking",
+    "llp.instances_data",
+    "llp.link_selected_objs",
+    "llp.question",
+    "llp.remove_light_linking",
+    "llp.select_item",
+    "llp.switch_filter_show",
+    "llp.toggle_light_linking"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:32+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

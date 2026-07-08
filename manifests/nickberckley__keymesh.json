@@ -1,0 +1,62 @@
+{
+  "canonical_id": "nickberckley__keymesh",
+  "artifact": "add-on-keymesh-v2.3.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "anim.bake_to_keymesh",
+        "object.keyframe_object_data",
+        "object.keymesh_block_active_set",
+        "object.keymesh_block_extract",
+        "object.keymesh_block_keyframe",
+        "object.keymesh_block_move",
+        "object.keymesh_block_remove",
+        "object.keymesh_convert",
+        "object.keymesh_join",
+        "object.keymesh_purge",
+        "object.keymesh_thumbnails_generate",
+        "object.keymesh_thumbnails_offer",
+        "object.keymesh_thumbnails_refresh",
+        "scene.keymesh_handler_initialize",
+        "timeline.keymesh_frame_jump"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "anim.bake_to_keymesh",
+    "object.keyframe_object_data",
+    "object.keymesh_block_active_set",
+    "object.keymesh_block_extract",
+    "object.keymesh_block_keyframe",
+    "object.keymesh_block_move",
+    "object.keymesh_block_remove",
+    "object.keymesh_convert",
+    "object.keymesh_join",
+    "object.keymesh_purge",
+    "object.keymesh_thumbnails_generate",
+    "object.keymesh_thumbnails_offer",
+    "object.keymesh_thumbnails_refresh",
+    "scene.keymesh_handler_initialize",
+    "timeline.keymesh_frame_jump"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:49+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

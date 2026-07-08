@@ -1,0 +1,55 @@
+{
+  "canonical_id": "community__bsurfaces-gpl-edition",
+  "artifact": "add-on-bsurfaces-gpl-edition-v1.8.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "curve.surfsk_edit_curve",
+        "curve.surfsk_first_points",
+        "curve.surfsk_reorder_splines",
+        "gpencil.surfsk_add_annotation",
+        "gpencil.surfsk_add_strokes",
+        "gpencil.surfsk_annotations_to_curves",
+        "gpencil.surfsk_edit_strokes",
+        "gpencil.surfsk_strokes_to_curves",
+        "mesh.surfsk_add_modifiers",
+        "mesh.surfsk_add_surface",
+        "mesh.surfsk_edit_surface",
+        "mesh.surfsk_init"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.surfsk_edit_curve",
+    "curve.surfsk_first_points",
+    "curve.surfsk_reorder_splines",
+    "gpencil.surfsk_add_annotation",
+    "gpencil.surfsk_add_strokes",
+    "gpencil.surfsk_annotations_to_curves",
+    "gpencil.surfsk_edit_strokes",
+    "gpencil.surfsk_strokes_to_curves",
+    "mesh.surfsk_add_modifiers",
+    "mesh.surfsk_add_surface",
+    "mesh.surfsk_edit_surface",
+    "mesh.surfsk_init"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:26+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.3"
+}

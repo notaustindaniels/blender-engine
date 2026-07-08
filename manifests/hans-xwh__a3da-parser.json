@@ -1,0 +1,72 @@
+{
+  "canonical_id": "hans-xwh__a3da-parser",
+  "artifact": "add-on-a3da-parser-v1.0.21.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "a3da.dsc_import",
+        "a3da.pvfield_import",
+        "a3da_edit.convert_armature",
+        "a3da_edit.convert_cam",
+        "a3da_edit.convert_model",
+        "a3da_edit.create_cam",
+        "a3da_edit.create_space",
+        "a3da_export.cam",
+        "a3da_export.hrc",
+        "a3da_export.obj",
+        "a3da_utils.bind_armatures",
+        "a3da_utils.combine_morph",
+        "a3da_utils.dof_nodes",
+        "a3da_utils.empties_to_bones",
+        "a3da_utils.empties_to_bones_legacy",
+        "a3da_utils.fix_mats",
+        "a3da_utils.mmdfy_camera",
+        "a3da_utils.visibility_edit",
+        "import_scene.a3da"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "a3da.dsc_import",
+    "a3da.pvfield_import",
+    "a3da_edit.convert_armature",
+    "a3da_edit.convert_cam",
+    "a3da_edit.convert_model",
+    "a3da_edit.create_cam",
+    "a3da_edit.create_space",
+    "a3da_export.cam",
+    "a3da_export.hrc",
+    "a3da_export.obj",
+    "a3da_utils.bind_armatures",
+    "a3da_utils.combine_morph",
+    "a3da_utils.dof_nodes",
+    "a3da_utils.empties_to_bones",
+    "a3da_utils.empties_to_bones_legacy",
+    "a3da_utils.fix_mats",
+    "a3da_utils.mmdfy_camera",
+    "a3da_utils.visibility_edit",
+    "import_scene.a3da"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:55+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "socket"
+  ],
+  "declared_min": "4.5"
+}

@@ -1,0 +1,36 @@
+{
+  "canonical_id": "zeptofine__node-quick-maths",
+  "artifact": "add-on-node-quick-maths-v1.2.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "node.compose_qm_nodes"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "node.compose_qm_nodes"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "node.compose_qm_nodes"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:08:27+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

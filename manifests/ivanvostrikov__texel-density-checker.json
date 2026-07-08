@@ -1,0 +1,62 @@
+{
+  "canonical_id": "ivanvostrikov__texel-density-checker",
+  "artifact": "add-on-texel-density-checker-v2026.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.texel_density_apply_defaults_to_props",
+        "object.texel_density_calculated_to_select",
+        "object.texel_density_calculated_to_set",
+        "object.texel_density_check",
+        "object.texel_density_copy",
+        "object.texel_density_material_assign",
+        "object.texel_density_material_clear",
+        "object.texel_density_material_restore",
+        "object.texel_density_open_url",
+        "object.texel_density_preset_set",
+        "object.texel_density_reset_preferences",
+        "object.texel_density_select_by_td_uv",
+        "object.texel_density_set",
+        "object.texel_density_show_addon_prefs",
+        "object.texel_density_vc_bake",
+        "object.texel_density_vc_clear"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.texel_density_apply_defaults_to_props",
+    "object.texel_density_calculated_to_select",
+    "object.texel_density_calculated_to_set",
+    "object.texel_density_check",
+    "object.texel_density_copy",
+    "object.texel_density_material_assign",
+    "object.texel_density_material_clear",
+    "object.texel_density_material_restore",
+    "object.texel_density_open_url",
+    "object.texel_density_preset_set",
+    "object.texel_density_reset_preferences",
+    "object.texel_density_select_by_td_uv",
+    "object.texel_density_set",
+    "object.texel_density_show_addon_prefs",
+    "object.texel_density_vc_bake",
+    "object.texel_density_vc_clear"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:20+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

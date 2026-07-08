@@ -1,0 +1,37 @@
+{
+  "canonical_id": "mingwitty__simple-camera-match",
+  "artifact": "add-on-simple-camera-match-v1.1.2-windows-arm64-windows-x64-macos-arm64-macos-x64-linux-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "cmp.draw_line",
+        "cmp.match_camera"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "cmp.draw_line",
+        "cmp.match_camera"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "cmp.draw_line",
+    "cmp.match_camera"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:50+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

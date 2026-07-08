@@ -1,0 +1,42 @@
+{
+  "canonical_id": "pioverfour__per-camera-resolution",
+  "artifact": "add-on-per-camera-resolution-v2.3.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "quarantine_timeout",
+      "operators": [
+        "camera.resolution_preset_add",
+        "render.animated_resolution",
+        "render.bake_render_border"
+      ],
+      "render_ok": false,
+      "retried_2x": true
+    },
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [
+        "camera.resolution_preset_add",
+        "render.animated_resolution",
+        "render.bake_render_border"
+      ],
+      "render_ok": false,
+      "retried_2x": true
+    }
+  },
+  "operators": [
+    "camera.resolution_preset_add",
+    "render.animated_resolution",
+    "render.bake_render_border"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:59+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

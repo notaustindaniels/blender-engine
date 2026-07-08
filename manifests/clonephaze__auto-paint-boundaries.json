@@ -1,0 +1,55 @@
+{
+  "canonical_id": "clonephaze__auto-paint-boundaries",
+  "artifact": "add-on-auto-paint-boundaries-v1.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "paint_limit.auto_select",
+        "paint_limit.clear",
+        "paint_limit.mask_load",
+        "paint_limit.mask_overwrite",
+        "paint_limit.mask_remove",
+        "paint_limit.mask_save",
+        "paint_limit.toggle",
+        "paint_limit.toggle_pin"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "paint_limit.auto_select",
+        "paint_limit.clear",
+        "paint_limit.mask_load",
+        "paint_limit.mask_overwrite",
+        "paint_limit.mask_remove",
+        "paint_limit.mask_save",
+        "paint_limit.toggle",
+        "paint_limit.toggle_pin"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "paint_limit.auto_select",
+    "paint_limit.clear",
+    "paint_limit.mask_load",
+    "paint_limit.mask_overwrite",
+    "paint_limit.mask_remove",
+    "paint_limit.mask_save",
+    "paint_limit.toggle",
+    "paint_limit.toggle_pin"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:41+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

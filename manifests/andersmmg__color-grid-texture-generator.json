@@ -1,0 +1,43 @@
+{
+  "canonical_id": "andersmmg__color-grid-texture-generator",
+  "artifact": "add-on-color-grid-texture-gen-v0.1.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "texture.add_color",
+        "texture.generate_texture",
+        "texture.remove_color",
+        "texture.update_palette_from_coolors"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "texture.add_color",
+        "texture.generate_texture",
+        "texture.remove_color",
+        "texture.update_palette_from_coolors"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "texture.add_color",
+    "texture.generate_texture",
+    "texture.remove_color",
+    "texture.update_palette_from_coolors"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:17+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

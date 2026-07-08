@@ -1,0 +1,61 @@
+{
+  "canonical_id": "trisnox__trajectory-anim",
+  "artifact": "add-on-trajectory-anim-v1.3.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "trajectanim.animate_position",
+        "trajectanim.animate_rotation",
+        "trajectanim.annotation_add_blank_keyframe",
+        "trajectanim.annotation_to_curve",
+        "trajectanim.clear_all_strokes",
+        "trajectanim.clear_excess_strokes",
+        "trajectanim.curve_to_annotation",
+        "trajectanim.curve_to_gpencil",
+        "trajectanim.gpencil_init",
+        "trajectanim.gpencil_to_annotation",
+        "trajectanim.gpencil_to_curve",
+        "trajectanim.intersect_stroke",
+        "trajectanim.target_add",
+        "trajectanim.target_remove",
+        "trajectanim.target_replace"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "trajectanim.animate_position",
+    "trajectanim.animate_rotation",
+    "trajectanim.annotation_add_blank_keyframe",
+    "trajectanim.annotation_to_curve",
+    "trajectanim.clear_all_strokes",
+    "trajectanim.clear_excess_strokes",
+    "trajectanim.curve_to_annotation",
+    "trajectanim.curve_to_gpencil",
+    "trajectanim.gpencil_init",
+    "trajectanim.gpencil_to_annotation",
+    "trajectanim.gpencil_to_curve",
+    "trajectanim.intersect_stroke",
+    "trajectanim.target_add",
+    "trajectanim.target_remove",
+    "trajectanim.target_replace"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:01+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.3"
+}

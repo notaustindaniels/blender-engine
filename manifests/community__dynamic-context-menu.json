@@ -1,0 +1,73 @@
+{
+  "canonical_id": "community__dynamic-context-menu",
+  "artifact": "add-on-dynamic-context-menu-v1.9.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.set_object_mode",
+        "object.setorigintoselected",
+        "selectedit.edge",
+        "selectedit.edgesfaces",
+        "selectedit.face",
+        "selectedit.vertex",
+        "selectedit.vertsedges",
+        "selectedit.vertsedgesfaces",
+        "selectedit.vertsfaces",
+        "view3d.display_wire_all",
+        "view3d.interactive_mode_grease_pencil",
+        "view3d.interactive_mode_text",
+        "view3d.snap_cursor_selected_to_center",
+        "view3d.snap_cursor_to_edge_intersection"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.set_object_mode",
+        "object.setorigintoselected",
+        "selectedit.edge",
+        "selectedit.edgesfaces",
+        "selectedit.face",
+        "selectedit.vertex",
+        "selectedit.vertsedges",
+        "selectedit.vertsedgesfaces",
+        "selectedit.vertsfaces",
+        "view3d.display_wire_all",
+        "view3d.interactive_mode_grease_pencil",
+        "view3d.interactive_mode_text",
+        "view3d.snap_cursor_selected_to_center",
+        "view3d.snap_cursor_to_edge_intersection"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.set_object_mode",
+    "object.setorigintoselected",
+    "selectedit.edge",
+    "selectedit.edgesfaces",
+    "selectedit.face",
+    "selectedit.vertex",
+    "selectedit.vertsedges",
+    "selectedit.vertsedgesfaces",
+    "selectedit.vertsfaces",
+    "view3d.display_wire_all",
+    "view3d.interactive_mode_grease_pencil",
+    "view3d.interactive_mode_text",
+    "view3d.snap_cursor_selected_to_center",
+    "view3d.snap_cursor_to_edge_intersection"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

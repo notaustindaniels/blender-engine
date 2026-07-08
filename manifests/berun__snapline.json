@@ -1,0 +1,64 @@
+{
+  "canonical_id": "berun__snapline",
+  "artifact": "add-on-snapline-v2.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "snap_align.add_pin",
+        "snap_align.clear_average",
+        "snap_align.clear_pins",
+        "snap_align.deactivate",
+        "snap_align.edit_points",
+        "snap_align.refresh_points",
+        "snap_align.remove_pin",
+        "snap_align.set_target",
+        "snap_align.show_help",
+        "snap_align.start_aligning",
+        "snap_align.toggle_pin"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "snap_align.add_pin",
+        "snap_align.clear_average",
+        "snap_align.clear_pins",
+        "snap_align.deactivate",
+        "snap_align.edit_points",
+        "snap_align.refresh_points",
+        "snap_align.remove_pin",
+        "snap_align.set_target",
+        "snap_align.show_help",
+        "snap_align.start_aligning",
+        "snap_align.toggle_pin"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "snap_align.add_pin",
+    "snap_align.clear_average",
+    "snap_align.clear_pins",
+    "snap_align.deactivate",
+    "snap_align.edit_points",
+    "snap_align.refresh_points",
+    "snap_align.remove_pin",
+    "snap_align.set_target",
+    "snap_align.show_help",
+    "snap_align.start_aligning",
+    "snap_align.toggle_pin"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:30+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

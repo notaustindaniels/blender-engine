@@ -1,0 +1,66 @@
+{
+  "canonical_id": "iceddog__bezier-curve-editor",
+  "artifact": "add-on-bezier-curve-editor-v1.0.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "tlfc.apply_curve",
+        "tlfc.edit_preset_at_index",
+        "tlfc.editor_zoom",
+        "tlfc.mirror_curve",
+        "tlfc.mouse_edit_curve",
+        "tlfc.open_preset_file",
+        "tlfc.read_curve",
+        "tlfc.reset_curve",
+        "tlfc.save_preset",
+        "tlfc.set_interpolation",
+        "tlfc.toggle_editor_mode"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "tlfc.apply_curve",
+        "tlfc.edit_preset_at_index",
+        "tlfc.editor_zoom",
+        "tlfc.mirror_curve",
+        "tlfc.mouse_edit_curve",
+        "tlfc.open_preset_file",
+        "tlfc.read_curve",
+        "tlfc.reset_curve",
+        "tlfc.save_preset",
+        "tlfc.set_interpolation",
+        "tlfc.toggle_editor_mode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "tlfc.apply_curve",
+    "tlfc.edit_preset_at_index",
+    "tlfc.editor_zoom",
+    "tlfc.mirror_curve",
+    "tlfc.mouse_edit_curve",
+    "tlfc.open_preset_file",
+    "tlfc.read_curve",
+    "tlfc.reset_curve",
+    "tlfc.save_preset",
+    "tlfc.set_interpolation",
+    "tlfc.toggle_editor_mode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:23+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

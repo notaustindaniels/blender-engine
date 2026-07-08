@@ -1,0 +1,42 @@
+{
+  "canonical_id": "wiffzackius__rig-ue5-exporter",
+  "artifact": "add-on-blender2ue-rig-exporter-v0.0.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "uerig.convert_rig",
+        "uerig.export_fbx",
+        "uerig.validate_rig"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "uerig.convert_rig",
+        "uerig.export_fbx",
+        "uerig.validate_rig"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "uerig.convert_rig",
+    "uerig.export_fbx",
+    "uerig.validate_rig"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:15:39+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

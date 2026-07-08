@@ -1,0 +1,99 @@
+{
+  "canonical_id": "daringcuteseal__beantextures",
+  "artifact": "add-on-beantextures-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "beantextures.auto_import_images",
+        "beantextures.clear_links",
+        "beantextures.connector_add",
+        "beantextures.connector_popup_show",
+        "beantextures.connector_reload_all_group_list",
+        "beantextures.connector_reload_group_list",
+        "beantextures.connector_remove",
+        "beantextures.connector_remove_all",
+        "beantextures.connector_set_target_material",
+        "beantextures.generate_node_tree",
+        "beantextures.icon_select",
+        "beantextures.icon_set",
+        "beantextures.import_image",
+        "beantextures.init_enum_driver",
+        "beantextures.new_config",
+        "beantextures.new_link",
+        "beantextures.new_node_group",
+        "beantextures.remove_all_configs",
+        "beantextures.remove_config",
+        "beantextures.remove_link",
+        "beantextures.show_pie_menu_item",
+        "pose.connector_popup_list_show"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "beantextures.auto_import_images",
+        "beantextures.clear_links",
+        "beantextures.connector_add",
+        "beantextures.connector_popup_show",
+        "beantextures.connector_reload_all_group_list",
+        "beantextures.connector_reload_group_list",
+        "beantextures.connector_remove",
+        "beantextures.connector_remove_all",
+        "beantextures.connector_set_target_material",
+        "beantextures.generate_node_tree",
+        "beantextures.icon_select",
+        "beantextures.icon_set",
+        "beantextures.import_image",
+        "beantextures.init_enum_driver",
+        "beantextures.new_config",
+        "beantextures.new_link",
+        "beantextures.new_node_group",
+        "beantextures.remove_all_configs",
+        "beantextures.remove_config",
+        "beantextures.remove_link",
+        "beantextures.show_pie_menu_item",
+        "pose.connector_popup_list_show"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "beantextures.auto_import_images",
+    "beantextures.clear_links",
+    "beantextures.connector_add",
+    "beantextures.connector_popup_show",
+    "beantextures.connector_reload_all_group_list",
+    "beantextures.connector_reload_group_list",
+    "beantextures.connector_remove",
+    "beantextures.connector_remove_all",
+    "beantextures.connector_set_target_material",
+    "beantextures.generate_node_tree",
+    "beantextures.icon_select",
+    "beantextures.icon_set",
+    "beantextures.import_image",
+    "beantextures.init_enum_driver",
+    "beantextures.new_config",
+    "beantextures.new_link",
+    "beantextures.new_node_group",
+    "beantextures.remove_all_configs",
+    "beantextures.remove_config",
+    "beantextures.remove_link",
+    "beantextures.show_pie_menu_item",
+    "pose.connector_popup_list_show"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:43+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

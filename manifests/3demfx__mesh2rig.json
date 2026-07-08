@@ -1,0 +1,61 @@
+{
+  "canonical_id": "3demfx__mesh2rig",
+  "artifact": "add-on-mesh2rig-v2.5.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "armature.merge_selected_bones_tool",
+        "object.add_bone_constraints",
+        "object.add_surface_deform_tool",
+        "object.bake_rig_action_tool",
+        "object.batch_process_rigs",
+        "object.clear_selected_animation",
+        "object.create_mesh_rig",
+        "object.finalize_deform_tool",
+        "object.merge_batch_armatures",
+        "object.parent_mesh_to_rig_tool"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "armature.merge_selected_bones_tool",
+        "object.add_bone_constraints",
+        "object.add_surface_deform_tool",
+        "object.bake_rig_action_tool",
+        "object.batch_process_rigs",
+        "object.clear_selected_animation",
+        "object.create_mesh_rig",
+        "object.finalize_deform_tool",
+        "object.merge_batch_armatures",
+        "object.parent_mesh_to_rig_tool"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "armature.merge_selected_bones_tool",
+    "object.add_bone_constraints",
+    "object.add_surface_deform_tool",
+    "object.bake_rig_action_tool",
+    "object.batch_process_rigs",
+    "object.clear_selected_animation",
+    "object.create_mesh_rig",
+    "object.finalize_deform_tool",
+    "object.merge_batch_armatures",
+    "object.parent_mesh_to_rig_tool"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

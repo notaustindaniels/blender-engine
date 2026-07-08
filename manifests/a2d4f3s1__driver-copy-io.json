@@ -1,0 +1,49 @@
+{
+  "canonical_id": "a2d4f3s1__driver-copy-io",
+  "artifact": "add-on-driver-copy-io-v2.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "drivercopy.copy_to_clipboard",
+        "drivercopy.export_to_file",
+        "drivercopy.import_from_file",
+        "drivercopy.paste_from_clipboard",
+        "drivercopy.show_clipboard"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "drivercopy.copy_to_clipboard",
+        "drivercopy.export_to_file",
+        "drivercopy.import_from_file",
+        "drivercopy.paste_from_clipboard",
+        "drivercopy.show_clipboard"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "drivercopy.copy_to_clipboard",
+    "drivercopy.export_to_file",
+    "drivercopy.import_from_file",
+    "drivercopy.paste_from_clipboard",
+    "drivercopy.show_clipboard"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:39+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

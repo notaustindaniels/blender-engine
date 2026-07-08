@@ -1,0 +1,52 @@
+{
+  "canonical_id": "timhendriks93__servo-animation",
+  "artifact": "add-on-servo-animation-v2.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_anim.servo_animation_arduino",
+        "export_anim.servo_animation_binary",
+        "export_anim.servo_animation_json",
+        "servo_animation.calibrate",
+        "servo_animation.start_live_mode",
+        "servo_animation.stop_live_mode"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_anim.servo_animation_arduino",
+        "export_anim.servo_animation_binary",
+        "export_anim.servo_animation_json",
+        "servo_animation.calibrate",
+        "servo_animation.start_live_mode",
+        "servo_animation.stop_live_mode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_anim.servo_animation_arduino",
+    "export_anim.servo_animation_binary",
+    "export_anim.servo_animation_json",
+    "servo_animation.calibrate",
+    "servo_animation.start_live_mode",
+    "servo_animation.stop_live_mode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:59+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

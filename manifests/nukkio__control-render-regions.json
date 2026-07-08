@@ -1,0 +1,29 @@
+{
+  "canonical_id": "nukkio__control-render-regions",
+  "artifact": "add-on-control-render-regions-v1.0.12-linux-x64.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:00:12+00:00",
+  "prescan_hits": [
+    "subprocess",
+    "open-write"
+  ]
+}

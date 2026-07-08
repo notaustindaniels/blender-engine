@@ -1,0 +1,28 @@
+{
+  "canonical_id": "d31__vertex-color-selector",
+  "artifact": "add-on-vcs-v1.0.9.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T22:59:16+00:00",
+  "prescan_hits": [
+    "eval("
+  ]
+}

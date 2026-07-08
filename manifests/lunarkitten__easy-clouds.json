@@ -1,0 +1,40 @@
+{
+  "canonical_id": "lunarkitten__easy-clouds",
+  "artifact": "add-on-easy-clouds-v2.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "easyclouds.create_cloud",
+        "easyclouds.create_layer",
+        "easyclouds.create_sphere"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "easyclouds.create_cloud",
+        "easyclouds.create_layer",
+        "easyclouds.create_sphere"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "easyclouds.create_cloud",
+    "easyclouds.create_layer",
+    "easyclouds.create_sphere"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:42+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

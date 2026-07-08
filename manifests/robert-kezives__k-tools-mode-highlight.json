@@ -1,0 +1,48 @@
+{
+  "canonical_id": "robert-kezives__k-tools-mode-highlight",
+  "artifact": "add-on-k-tools-mode-highlight-v1.1.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "preferences.cycle_palette",
+        "preferences.load_preset",
+        "preferences.reset_header_colors",
+        "preferences.save_preset",
+        "view3d.toggle_header_color_mode"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "preferences.cycle_palette",
+        "preferences.load_preset",
+        "preferences.reset_header_colors",
+        "preferences.save_preset",
+        "view3d.toggle_header_color_mode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "preferences.cycle_palette",
+    "preferences.load_preset",
+    "preferences.reset_header_colors",
+    "preferences.save_preset",
+    "view3d.toggle_header_color_mode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:15:06+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

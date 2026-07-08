@@ -1,0 +1,51 @@
+{
+  "canonical_id": "saintbaron__bugsnax-cache-importer-exporter",
+  "artifact": "add-on-io-bugsnax-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "export_scene.bugsnax_xcache",
+        "export_scene.daecache",
+        "export_scene.objcache",
+        "import_scene.bugsnax_xcache",
+        "import_scene.daecache",
+        "import_scene.objcache"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "export_scene.bugsnax_xcache",
+        "export_scene.daecache",
+        "export_scene.objcache",
+        "import_scene.bugsnax_xcache",
+        "import_scene.daecache",
+        "import_scene.objcache"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.bugsnax_xcache",
+    "export_scene.daecache",
+    "export_scene.objcache",
+    "import_scene.bugsnax_xcache",
+    "import_scene.daecache",
+    "import_scene.objcache"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:30+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

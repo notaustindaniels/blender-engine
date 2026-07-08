@@ -1,0 +1,49 @@
+{
+  "canonical_id": "c4205m__nla-batch-editor",
+  "artifact": "add-on-nla-batch-editor-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "anim.batch_pushdown",
+        "anim.dub_track_data",
+        "anim.edit_strip_data",
+        "anim.edit_track_data",
+        "anim.modify_selection",
+        "anim.transfer_selection"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "anim.batch_pushdown",
+        "anim.dub_track_data",
+        "anim.edit_strip_data",
+        "anim.edit_track_data",
+        "anim.modify_selection",
+        "anim.transfer_selection"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "anim.batch_pushdown",
+    "anim.dub_track_data",
+    "anim.edit_strip_data",
+    "anim.edit_track_data",
+    "anim.modify_selection",
+    "anim.transfer_selection"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:57+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

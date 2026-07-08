@@ -1,0 +1,82 @@
+{
+  "canonical_id": "cadtamas__hdri-lightbrush",
+  "artifact": "add-on-hdri-lightbrush-v1.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "hdri_studio.add_light",
+        "hdri_studio.clear_canvas",
+        "hdri_studio.continuous_paint_disable",
+        "hdri_studio.continuous_paint_enable",
+        "hdri_studio.continuous_paint_modal",
+        "hdri_studio.create_canvas",
+        "hdri_studio.create_canvas_and_paint",
+        "hdri_studio.load_canvas",
+        "hdri_studio.paint_brush_stroke",
+        "hdri_studio.quick_save_canvas",
+        "hdri_studio.remove_world_background",
+        "hdri_studio.save_canvas",
+        "hdri_studio.set_world_background",
+        "hdri_studio.sphere_add",
+        "hdri_studio.sphere_paint_setup",
+        "hdri_studio.sphere_remove",
+        "hdri_studio.update_world_background"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "hdri_studio.add_light",
+        "hdri_studio.clear_canvas",
+        "hdri_studio.continuous_paint_disable",
+        "hdri_studio.continuous_paint_enable",
+        "hdri_studio.continuous_paint_modal",
+        "hdri_studio.create_canvas",
+        "hdri_studio.create_canvas_and_paint",
+        "hdri_studio.load_canvas",
+        "hdri_studio.paint_brush_stroke",
+        "hdri_studio.quick_save_canvas",
+        "hdri_studio.remove_world_background",
+        "hdri_studio.save_canvas",
+        "hdri_studio.set_world_background",
+        "hdri_studio.sphere_add",
+        "hdri_studio.sphere_paint_setup",
+        "hdri_studio.sphere_remove",
+        "hdri_studio.update_world_background"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "hdri_studio.add_light",
+    "hdri_studio.clear_canvas",
+    "hdri_studio.continuous_paint_disable",
+    "hdri_studio.continuous_paint_enable",
+    "hdri_studio.continuous_paint_modal",
+    "hdri_studio.create_canvas",
+    "hdri_studio.create_canvas_and_paint",
+    "hdri_studio.load_canvas",
+    "hdri_studio.paint_brush_stroke",
+    "hdri_studio.quick_save_canvas",
+    "hdri_studio.remove_world_background",
+    "hdri_studio.save_canvas",
+    "hdri_studio.set_world_background",
+    "hdri_studio.sphere_add",
+    "hdri_studio.sphere_paint_setup",
+    "hdri_studio.sphere_remove",
+    "hdri_studio.update_world_background"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:56+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

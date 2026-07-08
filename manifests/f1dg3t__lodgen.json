@@ -1,0 +1,37 @@
+{
+  "canonical_id": "f1dg3t__lodgen",
+  "artifact": "add-on-lod-gen-v0.0.5.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "lodgen.add_selected",
+        "lodgen.generate_lods",
+        "lodgen.remove_selected"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "lodgen.add_selected",
+    "lodgen.generate_lods",
+    "lodgen.remove_selected"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:32+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

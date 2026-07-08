@@ -1,0 +1,46 @@
+{
+  "canonical_id": "yasser-idris__transform-tools-core",
+  "artifact": "add-on-transform-tools-core-yiws-v0.9.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ttc_yiws_op.auto_add_circle",
+        "ttc_yiws_op.circle_updater",
+        "ttc_yiws_op.modal_snapping_reporter",
+        "ttc_yiws_op.move_snap_cursor",
+        "ttc_yiws_op.swap_cursors",
+        "ttc_yiws_op.toggle_transform_orientation",
+        "ttc_yiws_op.transformation_ops",
+        "ttc_yiws_op.wrapper_move_snap_cursor"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ttc_yiws_op.auto_add_circle",
+    "ttc_yiws_op.circle_updater",
+    "ttc_yiws_op.modal_snapping_reporter",
+    "ttc_yiws_op.move_snap_cursor",
+    "ttc_yiws_op.swap_cursors",
+    "ttc_yiws_op.toggle_transform_orientation",
+    "ttc_yiws_op.transformation_ops",
+    "ttc_yiws_op.wrapper_move_snap_cursor"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:14:37+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

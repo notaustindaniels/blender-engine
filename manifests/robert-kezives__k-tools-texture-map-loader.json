@@ -1,0 +1,88 @@
+{
+  "canonical_id": "robert-kezives__k-tools-texture-map-loader",
+  "artifact": "add-on-k-tools-texture-map-loader-v1.5.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "tml.add_asset_group_base",
+        "tml.add_bsdf_node",
+        "tml.add_mapping_node",
+        "tml.add_maps_loader_node",
+        "tml.apply_batch_settings",
+        "tml.clean_image_nodes",
+        "tml.connect_groups",
+        "tml.convert_images",
+        "tml.convert_principled",
+        "tml.get_batch_settings",
+        "tml.keyword_list_add",
+        "tml.keyword_list_remove",
+        "tml.keyword_list_restore",
+        "tml.load_texture_set",
+        "tml.one_click_setup",
+        "tml.register_shortcut",
+        "tml.reset_group_inputs",
+        "tml.toggle_asset_library",
+        "tml.update_node_group"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "tml.add_asset_group_base",
+        "tml.add_bsdf_node",
+        "tml.add_mapping_node",
+        "tml.add_maps_loader_node",
+        "tml.apply_batch_settings",
+        "tml.clean_image_nodes",
+        "tml.connect_groups",
+        "tml.convert_images",
+        "tml.convert_principled",
+        "tml.get_batch_settings",
+        "tml.keyword_list_add",
+        "tml.keyword_list_remove",
+        "tml.keyword_list_restore",
+        "tml.load_texture_set",
+        "tml.one_click_setup",
+        "tml.register_shortcut",
+        "tml.reset_group_inputs",
+        "tml.toggle_asset_library",
+        "tml.update_node_group"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "tml.add_asset_group_base",
+    "tml.add_bsdf_node",
+    "tml.add_mapping_node",
+    "tml.add_maps_loader_node",
+    "tml.apply_batch_settings",
+    "tml.clean_image_nodes",
+    "tml.connect_groups",
+    "tml.convert_images",
+    "tml.convert_principled",
+    "tml.get_batch_settings",
+    "tml.keyword_list_add",
+    "tml.keyword_list_remove",
+    "tml.keyword_list_restore",
+    "tml.load_texture_set",
+    "tml.one_click_setup",
+    "tml.register_shortcut",
+    "tml.reset_group_inputs",
+    "tml.toggle_asset_library",
+    "tml.update_node_group"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:07:58+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

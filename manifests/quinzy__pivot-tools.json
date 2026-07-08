@@ -1,0 +1,45 @@
+{
+  "canonical_id": "quinzy__pivot-tools",
+  "artifact": "add-on-pivottools-v1.48.13.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.bbox_click_pivot",
+        "object.pick_geom_pivot_auto",
+        "object.pivot_to_bottom_center",
+        "object.ptools_add_saved_pivot",
+        "object.ptools_load_pivot_from_slot",
+        "object.ptools_remove_saved_pivot",
+        "object.ptools_save_pivot_to_slot"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.bbox_click_pivot",
+    "object.pick_geom_pivot_auto",
+    "object.pivot_to_bottom_center",
+    "object.ptools_add_saved_pivot",
+    "object.ptools_load_pivot_from_slot",
+    "object.ptools_remove_saved_pivot",
+    "object.ptools_save_pivot_to_slot"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:12:01+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

@@ -1,0 +1,75 @@
+{
+  "canonical_id": "akhil-alukkaran__asset-library-tools",
+  "artifact": "add-on-asset-library-tools-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "alt.open_library_folder",
+        "assetcatalogue.backup_active",
+        "assetcatalogue.backup_now",
+        "assetcatalogue.clear_backups",
+        "assetcatalogue.restore_last",
+        "atf.browse_tags_popup",
+        "atf.build_library_index",
+        "atf.clear_pinned_tags",
+        "atf.clear_tag_filter",
+        "atf.filter_by_tag_direct",
+        "atf.pin_current_tag",
+        "atf.unpin_current_tag",
+        "atf_type.all_types",
+        "atf_type.set_asset_type"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "alt.open_library_folder",
+        "assetcatalogue.backup_active",
+        "assetcatalogue.backup_now",
+        "assetcatalogue.clear_backups",
+        "assetcatalogue.restore_last",
+        "atf.browse_tags_popup",
+        "atf.build_library_index",
+        "atf.clear_pinned_tags",
+        "atf.clear_tag_filter",
+        "atf.filter_by_tag_direct",
+        "atf.pin_current_tag",
+        "atf.unpin_current_tag",
+        "atf_type.all_types",
+        "atf_type.set_asset_type"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "alt.open_library_folder",
+    "assetcatalogue.backup_active",
+    "assetcatalogue.backup_now",
+    "assetcatalogue.clear_backups",
+    "assetcatalogue.restore_last",
+    "atf.browse_tags_popup",
+    "atf.build_library_index",
+    "atf.clear_pinned_tags",
+    "atf.clear_tag_filter",
+    "atf.filter_by_tag_direct",
+    "atf.pin_current_tag",
+    "atf.unpin_current_tag",
+    "atf_type.all_types",
+    "atf_type.set_asset_type"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:39+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

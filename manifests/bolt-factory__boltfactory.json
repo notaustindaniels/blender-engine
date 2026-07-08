@@ -1,0 +1,34 @@
+{
+  "canonical_id": "bolt-factory__boltfactory",
+  "artifact": "add-on-boltfactory-v0.7.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "mesh.bolt_add"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "mesh.bolt_add"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.bolt_add"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:58:46+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

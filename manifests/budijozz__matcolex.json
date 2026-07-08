@@ -1,0 +1,57 @@
+{
+  "canonical_id": "budijozz__matcolex",
+  "artifact": "add-on-matcolex-v1.7.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "material.collector_duplicate_material",
+        "material.collector_select_material",
+        "material_collector.add_collection",
+        "material_collector.add_material",
+        "material_collector.apply_material",
+        "material_collector.remove_collection",
+        "material_collector.remove_material",
+        "mc.open_url"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "material.collector_duplicate_material",
+        "material.collector_select_material",
+        "material_collector.add_collection",
+        "material_collector.add_material",
+        "material_collector.apply_material",
+        "material_collector.remove_collection",
+        "material_collector.remove_material",
+        "mc.open_url"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "material.collector_duplicate_material",
+    "material.collector_select_material",
+    "material_collector.add_collection",
+    "material_collector.add_material",
+    "material_collector.apply_material",
+    "material_collector.remove_collection",
+    "material_collector.remove_material",
+    "mc.open_url"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:20+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

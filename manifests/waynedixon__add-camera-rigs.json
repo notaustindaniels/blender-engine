@@ -1,0 +1,71 @@
+{
+  "canonical_id": "waynedixon__add-camera-rigs",
+  "artifact": "add-on-add-camera-rigs-v1.8.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "add_camera_rigs.add_marker_bind",
+        "add_camera_rigs.remove_dolly_zoom",
+        "add_camera_rigs.set_dof_bone",
+        "add_camera_rigs.set_dolly_zoom",
+        "add_camera_rigs.set_scene_camera",
+        "add_camera_rigs.shift_to_pivot",
+        "add_camera_rigs.swap_lens",
+        "object.build_camera_rig"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "add_camera_rigs.add_marker_bind",
+        "add_camera_rigs.remove_dolly_zoom",
+        "add_camera_rigs.set_dof_bone",
+        "add_camera_rigs.set_dolly_zoom",
+        "add_camera_rigs.set_scene_camera",
+        "add_camera_rigs.shift_to_pivot",
+        "add_camera_rigs.swap_lens",
+        "object.build_camera_rig"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "add_camera_rigs.add_marker_bind",
+    "add_camera_rigs.remove_dolly_zoom",
+    "add_camera_rigs.set_dof_bone",
+    "add_camera_rigs.set_dolly_zoom",
+    "add_camera_rigs.set_scene_camera",
+    "add_camera_rigs.shift_to_pivot",
+    "add_camera_rigs.swap_lens",
+    "object.build_camera_rig"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:08:21+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "add_camera_rigs.add_marker_bind",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "camera_rigs"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'camera' in name/tagline -> ['camera_rigs'] (Animation: camera & cinematic)."
+}

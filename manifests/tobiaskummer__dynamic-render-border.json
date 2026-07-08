@@ -1,0 +1,52 @@
+{
+  "canonical_id": "tobiaskummer__dynamic-render-border",
+  "artifact": "add-on-dynamic-render-border-v1.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "drb.add_collection_to_list",
+        "drb.add_object_to_list",
+        "drb.clear_collection_list",
+        "drb.clear_object_list",
+        "drb.remove_collection_from_list",
+        "drb.remove_object_from_list",
+        "render.update_dynamic_border_manual"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "drb.add_collection_to_list",
+        "drb.add_object_to_list",
+        "drb.clear_collection_list",
+        "drb.clear_object_list",
+        "drb.remove_collection_from_list",
+        "drb.remove_object_from_list",
+        "render.update_dynamic_border_manual"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "drb.add_collection_to_list",
+    "drb.add_object_to_list",
+    "drb.clear_collection_list",
+    "drb.clear_object_list",
+    "drb.remove_collection_from_list",
+    "drb.remove_object_from_list",
+    "render.update_dynamic_border_manual"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:08:11+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,37 @@
+{
+  "canonical_id": "softyoda__animation-transform-offset",
+  "artifact": "add-on-animation-transform-offset-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "anim_offset.grab",
+        "anim_offset.rotate",
+        "anim_offset.scale"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "anim_offset.grab",
+    "anim_offset.rotate",
+    "anim_offset.scale"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.3"
+}

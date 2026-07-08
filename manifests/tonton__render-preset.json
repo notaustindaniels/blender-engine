@@ -1,0 +1,54 @@
+{
+  "canonical_id": "tonton__render-preset",
+  "artifact": "add-on-render-preset-v1.3.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "rndrp.apply_preset",
+        "rndrp.apply_preset_json",
+        "rndrp.apply_preset_name",
+        "rndrp.create_preset",
+        "rndrp.modify_preset",
+        "rndrp.reload_presets",
+        "rndrp.remove_preset"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "rndrp.apply_preset",
+        "rndrp.apply_preset_json",
+        "rndrp.apply_preset_name",
+        "rndrp.create_preset",
+        "rndrp.modify_preset",
+        "rndrp.reload_presets",
+        "rndrp.remove_preset"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "rndrp.apply_preset",
+    "rndrp.apply_preset_json",
+    "rndrp.apply_preset_name",
+    "rndrp.create_preset",
+    "rndrp.modify_preset",
+    "rndrp.reload_presets",
+    "rndrp.remove_preset"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:08:13+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

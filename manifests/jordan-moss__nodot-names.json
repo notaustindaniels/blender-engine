@@ -1,0 +1,71 @@
+{
+  "canonical_id": "jordan-moss__nodot-names",
+  "artifact": "add-on-nodot-names-v2.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "nct.apply_affixes",
+        "nct.batch_rename_apply",
+        "nct.batch_rename_preview",
+        "nct.duplicate_replace",
+        "nct.editor_export_profile",
+        "nct.editor_import_profile",
+        "nct.editor_load_active_preset",
+        "nct.editor_save_profile",
+        "nct.fix_all_violations",
+        "nct.fix_selected_violation",
+        "nct.hierarchy_rename",
+        "nct.preset_delete",
+        "nct.preset_import",
+        "nct.preset_save",
+        "nct.switch_scene_to_preset",
+        "nct.validator_deselect_all",
+        "nct.validator_export_report",
+        "nct.validator_run",
+        "nct.validator_select_all"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "nct.apply_affixes",
+    "nct.batch_rename_apply",
+    "nct.batch_rename_preview",
+    "nct.duplicate_replace",
+    "nct.editor_export_profile",
+    "nct.editor_import_profile",
+    "nct.editor_load_active_preset",
+    "nct.editor_save_profile",
+    "nct.fix_all_violations",
+    "nct.fix_selected_violation",
+    "nct.hierarchy_rename",
+    "nct.preset_delete",
+    "nct.preset_import",
+    "nct.preset_save",
+    "nct.switch_scene_to_preset",
+    "nct.validator_deselect_all",
+    "nct.validator_export_report",
+    "nct.validator_run",
+    "nct.validator_select_all"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:11:19+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.5"
+}

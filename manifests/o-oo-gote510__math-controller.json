@@ -1,0 +1,45 @@
+{
+  "canonical_id": "o-oo-gote510__math-controller",
+  "artifact": "add-on-o-oo-math-controller-v0.4.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "o_oo.expand_formula_group",
+        "o_oo.formula_add",
+        "o_oo.formula_editor",
+        "o_oo.formula_remove_strict"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "o_oo.expand_formula_group",
+        "o_oo.formula_add",
+        "o_oo.formula_editor",
+        "o_oo.formula_remove_strict"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "o_oo.expand_formula_group",
+    "o_oo.formula_add",
+    "o_oo.formula_editor",
+    "o_oo.formula_remove_strict"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:12+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

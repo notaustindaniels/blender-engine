@@ -6,10 +6,10 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 
 - **GATE v2 (R18/D-003 — the governing metric): 23/57 = 40.4%** = (full_pass + recipe_verified) / 57 ATTAINABLE Terrain+Veg wave-1 niches. Threshold **40%** (final verdict after L5b, R19). `partial` and `recipe_unverified` do NOT count in v2.
   - excluded as unattainable (paid_only/none, R15): `coral_atoll_generator`, `karst_formation`
-- **Tripwire (R19): pass-rate of-all-acquisitions 50.0%** vs 30% floor → OK.
+- **Tripwire (R19): pass-rate of-all-acquisitions 64.4%** vs 30% floor → OK.
 - _v1 (legacy, all-present denom): 27/59 = 45.8% (12 full-pass + 4 partial + 11 recipe✓; 5 recipe claims not counted)._
-- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 24/38 = 63.2%; of-all-acquisitions 24/48 = 50.0% — PRD stop-line <30%.
-- **Probe-recipe backlog:** 5 niche(s) partial-only (see `reports/probe-recipes.md`).
+- **Acquisition pass-rate (both framings, R16/D-002):** of-probed 612/708 = 86.4%; of-all-acquisitions 612/951 = 64.4% — PRD stop-line <30%.
+- **Probe-recipe backlog:** 7 niche(s) partial-only (see `reports/probe-recipes.md`).
 
 ## Covered niches (Terrain + Vegetation, wave-1)
 
@@ -54,11 +54,11 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 | Animation: nature & environment | 8 | 0 | 0 | 0 | 0 | 0% |
 | Animation: growth, reveal & build | 7 | 0 | 0 | 0 | 0 | 0% |
 | Animation: cloth, rope & soft proxies | 5 | 0 | 0 | 0 | 0 | 0% |
-| Animation: camera & cinematic | 5 | 0 | 0 | 0 | 0 | 0% |
+| Animation: camera & cinematic | 5 | 1 | 0 | 0 | 0 | 20% |
 | Animation: FX & particles | 6 | 0 | 0 | 0 | 0 | 0% |
-| Animation: data-driven & utility | 7 | 0 | 0 | 0 | 0 | 0% |
-| Animation: stylized / NPR | 4 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 1)** | **269** | **12** | **4** | **11** | **5** | **10%** |
+| Animation: data-driven & utility | 7 | 0 | 1 | 0 | 0 | 14% |
+| Animation: stylized / NPR | 4 | 1 | 0 | 0 | 0 | 25% |
+| **TOTAL (wave 1)** | **269** | **14** | **5** | **11** | **5** | **11%** |
 
 ## Wave-2 coverage (separate; does NOT move the gate)
 
@@ -66,17 +66,17 @@ Deterministic (`coverage.py` over `corpus.db`). Wave-1 drives the gate (§12.1(4
 |---|---:|---:|---:|---:|---:|---:|
 | Terrain & landscape | 3 | 0 | 0 | 0 | 0 | 0% |
 | Vegetation & organic | 2 | 0 | 1 | 0 | 0 | 50% |
-| Nature elements & FX geometry | 4 | 0 | 0 | 0 | 0 | 0% |
-| Abstract, mograph & design | 3 | 0 | 0 | 0 | 0 | 0% |
+| Nature elements & FX geometry | 4 | 1 | 0 | 0 | 0 | 25% |
+| Abstract, mograph & design | 3 | 1 | 0 | 0 | 0 | 33% |
 | Materials & texturing | 3 | 0 | 0 | 0 | 0 | 0% |
 | Simulation-adjacent | 1 | 0 | 0 | 0 | 0 | 0% |
 | Emergent formation (agents/particles self-organize into targets) | 14 | 0 | 0 | 0 | 0 | 0% |
 | Diegetic data visualization (charts as in-world objects) | 16 | 0 | 0 | 0 | 0 | 0% |
 | Physical-process rendering (force-of-nature and craft draw the math) | 6 | 0 | 0 | 0 | 0 | 0% |
-| Light & shadow as data | 3 | 0 | 0 | 0 | 0 | 0% |
+| Light & shadow as data | 3 | 0 | 1 | 0 | 0 | 33% |
 | Animation: growth, reveal & build | 3 | 0 | 0 | 0 | 0 | 0% |
 | Animation: data-driven & utility | 1 | 0 | 0 | 0 | 0 | 0% |
-| **TOTAL (wave 2)** | **59** | **0** | **1** | **0** | **0** | **2%** |
+| **TOTAL (wave 2)** | **59** | **2** | **2** | **0** | **0** | **7%** |
 
 ## Quality tiers (R39/D-006 — handoff contract; depth per verified niche)
 
@@ -94,10 +94,12 @@ Count of VERIFIED (pass/partial) operators by physical verb × medium. Niches ar
 |---|---|---|---|---|---|---|
 | accumulate | 1 | 0 | 0 | 0 | 0 | 0 |
 | branch | 0 | 0 | 0 | 0 | 5 | 0 |
+| deform | 0 | 0 | 0 | 0 | 0 | 1 |
 | deplete | 3 | 0 | 0 | 0 | 0 | 0 |
 | fill | 3 | 0 | 1 | 0 | 1 | 0 |
-| generate | 7 | 0 | 1 | 0 | 5 | 0 |
-| reveal | 0 | 0 | 0 | 0 | 1 | 0 |
+| generate | 7 | 0 | 1 | 0 | 5 | 11 |
+| illuminate | 0 | 0 | 0 | 0 | 0 | 1 |
+| reveal | 0 | 0 | 0 | 0 | 1 | 1 |
 | scatter | 0 | 0 | 1 | 0 | 1 | 0 |
 | simulate | 3 | 0 | 0 | 0 | 0 | 0 |
-| trace | 0 | 0 | 0 | 0 | 2 | 0 |
+| trace | 0 | 0 | 0 | 0 | 2 | 1 |

@@ -1,0 +1,85 @@
+{
+  "canonical_id": "brendan-parmer__node-to-python",
+  "artifact": "add-on-node-to-python-v4.1.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "ntp.add_compositor_node_group_slot",
+        "ntp.add_geometry_node_group_slot",
+        "ntp.add_light_slot",
+        "ntp.add_line_style_slot",
+        "ntp.add_material_slot",
+        "ntp.add_scene_slot",
+        "ntp.add_shader_node_group_slot",
+        "ntp.add_world_slot",
+        "ntp.export",
+        "ntp.remove_compositor_node_group_slot",
+        "ntp.remove_geometry_node_group_slot",
+        "ntp.remove_light_slot",
+        "ntp.remove_line_style_slot",
+        "ntp.remove_material_slot",
+        "ntp.remove_scene_slot",
+        "ntp.remove_shader_node_group_slot",
+        "ntp.remove_world_slot"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ntp.add_compositor_node_group_slot",
+        "ntp.add_geometry_node_group_slot",
+        "ntp.add_light_slot",
+        "ntp.add_line_style_slot",
+        "ntp.add_material_slot",
+        "ntp.add_scene_slot",
+        "ntp.add_shader_node_group_slot",
+        "ntp.add_world_slot",
+        "ntp.export",
+        "ntp.remove_compositor_node_group_slot",
+        "ntp.remove_geometry_node_group_slot",
+        "ntp.remove_light_slot",
+        "ntp.remove_line_style_slot",
+        "ntp.remove_material_slot",
+        "ntp.remove_scene_slot",
+        "ntp.remove_shader_node_group_slot",
+        "ntp.remove_world_slot"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ntp.add_compositor_node_group_slot",
+    "ntp.add_geometry_node_group_slot",
+    "ntp.add_light_slot",
+    "ntp.add_line_style_slot",
+    "ntp.add_material_slot",
+    "ntp.add_scene_slot",
+    "ntp.add_shader_node_group_slot",
+    "ntp.add_world_slot",
+    "ntp.export",
+    "ntp.remove_compositor_node_group_slot",
+    "ntp.remove_geometry_node_group_slot",
+    "ntp.remove_light_slot",
+    "ntp.remove_line_style_slot",
+    "ntp.remove_material_slot",
+    "ntp.remove_scene_slot",
+    "ntp.remove_shader_node_group_slot",
+    "ntp.remove_world_slot"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:21+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,55 @@
+{
+  "canonical_id": "atrxi__fk-ik-snapping-tools",
+  "artifact": "add-on-fk-ik-snapping-tools-v1.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "pose.fkik_snap_fk_to_ik_left_arm",
+        "pose.fkik_snap_fk_to_ik_left_leg",
+        "pose.fkik_snap_fk_to_ik_right_arm",
+        "pose.fkik_snap_fk_to_ik_right_leg",
+        "pose.fkik_snap_ik_to_fk_left_arm",
+        "pose.fkik_snap_ik_to_fk_left_leg",
+        "pose.fkik_snap_ik_to_fk_right_arm",
+        "pose.fkik_snap_ik_to_fk_right_leg"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "pose.fkik_snap_fk_to_ik_left_arm",
+        "pose.fkik_snap_fk_to_ik_left_leg",
+        "pose.fkik_snap_fk_to_ik_right_arm",
+        "pose.fkik_snap_fk_to_ik_right_leg",
+        "pose.fkik_snap_ik_to_fk_left_arm",
+        "pose.fkik_snap_ik_to_fk_left_leg",
+        "pose.fkik_snap_ik_to_fk_right_arm",
+        "pose.fkik_snap_ik_to_fk_right_leg"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "pose.fkik_snap_fk_to_ik_left_arm",
+    "pose.fkik_snap_fk_to_ik_left_leg",
+    "pose.fkik_snap_fk_to_ik_right_arm",
+    "pose.fkik_snap_fk_to_ik_right_leg",
+    "pose.fkik_snap_ik_to_fk_left_arm",
+    "pose.fkik_snap_ik_to_fk_left_leg",
+    "pose.fkik_snap_ik_to_fk_right_arm",
+    "pose.fkik_snap_ik_to_fk_right_leg"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:08+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

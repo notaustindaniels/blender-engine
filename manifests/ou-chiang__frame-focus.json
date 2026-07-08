@@ -1,0 +1,67 @@
+{
+  "canonical_id": "ou-chiang__frame-focus",
+  "artifact": "add-on-frame-focus-v2.0.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "frame_color.color_enabled",
+        "frame_color.color_panel",
+        "frame_color.color_set_default",
+        "frame_color.palette",
+        "frame_color.palette_reset",
+        "frame_color.set_color",
+        "frame_focus.frame_batch_shrink",
+        "frame_focus.frame_batch_use_custom_color",
+        "frame_focus.frame_focus",
+        "frame_focus.frame_walk",
+        "frame_focus.reorder",
+        "frame_focus.select_all"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "frame_color.color_enabled",
+        "frame_color.color_panel",
+        "frame_color.color_set_default",
+        "frame_color.palette",
+        "frame_color.palette_reset",
+        "frame_color.set_color",
+        "frame_focus.frame_batch_shrink",
+        "frame_focus.frame_batch_use_custom_color",
+        "frame_focus.frame_focus",
+        "frame_focus.frame_walk",
+        "frame_focus.reorder",
+        "frame_focus.select_all"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "frame_color.color_enabled",
+    "frame_color.color_panel",
+    "frame_color.color_set_default",
+    "frame_color.palette",
+    "frame_color.palette_reset",
+    "frame_color.set_color",
+    "frame_focus.frame_batch_shrink",
+    "frame_focus.frame_batch_use_custom_color",
+    "frame_focus.frame_focus",
+    "frame_focus.frame_walk",
+    "frame_focus.reorder",
+    "frame_focus.select_all"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:14+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

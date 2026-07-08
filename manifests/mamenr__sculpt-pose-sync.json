@@ -1,0 +1,61 @@
+{
+  "canonical_id": "mamenr__sculpt-pose-sync",
+  "artifact": "add-on-sculpt-pose-sync-v34.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "sculpt.auto_setup_static",
+        "sculpt.cleanup_pair",
+        "sculpt.delete_backup",
+        "sculpt.recover_window",
+        "sculpt.restore_backup",
+        "sculpt.select_pair",
+        "sculpt.subdivide_pair",
+        "sculpt.sync_to_pose",
+        "sculpt.toggle_backup_vis",
+        "sculpt.unbind_pair"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "sculpt.auto_setup_static",
+        "sculpt.cleanup_pair",
+        "sculpt.delete_backup",
+        "sculpt.recover_window",
+        "sculpt.restore_backup",
+        "sculpt.select_pair",
+        "sculpt.subdivide_pair",
+        "sculpt.sync_to_pose",
+        "sculpt.toggle_backup_vis",
+        "sculpt.unbind_pair"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "sculpt.auto_setup_static",
+    "sculpt.cleanup_pair",
+    "sculpt.delete_backup",
+    "sculpt.recover_window",
+    "sculpt.restore_backup",
+    "sculpt.select_pair",
+    "sculpt.subdivide_pair",
+    "sculpt.sync_to_pose",
+    "sculpt.toggle_backup_vis",
+    "sculpt.unbind_pair"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:44+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

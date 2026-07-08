@@ -1,0 +1,61 @@
+{
+  "canonical_id": "endertainer007__ik-fk-snapping-tool",
+  "artifact": "add-on-ik-fk-snapping-tool-v3.0.3.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "opr.arml_fkik",
+        "opr.arml_ikfk",
+        "opr.armr_fkik",
+        "opr.armr_ikfk",
+        "opr.legl_fkik",
+        "opr.legl_ikfk",
+        "opr.legr_fkik",
+        "opr.legr_ikfk",
+        "opr.open_preset_directory",
+        "opr.presetadd"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "opr.arml_fkik",
+        "opr.arml_ikfk",
+        "opr.armr_fkik",
+        "opr.armr_ikfk",
+        "opr.legl_fkik",
+        "opr.legl_ikfk",
+        "opr.legr_fkik",
+        "opr.legr_ikfk",
+        "opr.open_preset_directory",
+        "opr.presetadd"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "opr.arml_fkik",
+    "opr.arml_ikfk",
+    "opr.armr_fkik",
+    "opr.armr_ikfk",
+    "opr.legl_fkik",
+    "opr.legl_ikfk",
+    "opr.legr_fkik",
+    "opr.legr_ikfk",
+    "opr.open_preset_directory",
+    "opr.presetadd"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:33+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

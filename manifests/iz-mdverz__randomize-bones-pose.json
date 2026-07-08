@@ -1,0 +1,37 @@
+{
+  "canonical_id": "iz-mdverz__randomize-bones-pose",
+  "artifact": "add-on-randomize-bones-pose-v2.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.randomize_bones",
+        "object.randomize_bones_timeline"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.randomize_bones",
+        "object.randomize_bones_timeline"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.randomize_bones",
+    "object.randomize_bones_timeline"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:36+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

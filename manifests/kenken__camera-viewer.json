@@ -1,0 +1,43 @@
+{
+  "canonical_id": "kenken__camera-viewer",
+  "artifact": "add-on-camera-viewer-v1.1.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "camera_viewer.add_hotkey",
+        "screen.modify_camera_viewer",
+        "screen.navigation_camera_viewer",
+        "screen.rest_camera_viewer",
+        "screen.set_camera_viewer_space",
+        "screen.toggle_camera_viewer"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "camera_viewer.add_hotkey",
+    "screen.modify_camera_viewer",
+    "screen.navigation_camera_viewer",
+    "screen.rest_camera_viewer",
+    "screen.set_camera_viewer_space",
+    "screen.toggle_camera_viewer"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:28+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.4"
+}

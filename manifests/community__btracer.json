@@ -1,0 +1,67 @@
+{
+  "canonical_id": "community__btracer",
+  "artifact": "add-on-btracer-v1.2.4.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "curve.btgrow",
+        "curve.btwriting",
+        "object.btconvertcurve",
+        "object.btfcnoise",
+        "object.btmeshfollow",
+        "object.btobjectsconnect",
+        "object.btobjecttrace",
+        "object.btreset",
+        "object.colorblender",
+        "object.colorblenderclear",
+        "particles.connect",
+        "particles.particletrace"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "curve.btgrow",
+        "curve.btwriting",
+        "object.btconvertcurve",
+        "object.btfcnoise",
+        "object.btmeshfollow",
+        "object.btobjectsconnect",
+        "object.btobjecttrace",
+        "object.btreset",
+        "object.colorblender",
+        "object.colorblenderclear",
+        "particles.connect",
+        "particles.particletrace"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.btgrow",
+    "curve.btwriting",
+    "object.btconvertcurve",
+    "object.btfcnoise",
+    "object.btmeshfollow",
+    "object.btobjectsconnect",
+    "object.btobjecttrace",
+    "object.btreset",
+    "object.colorblender",
+    "object.colorblenderclear",
+    "particles.connect",
+    "particles.particletrace"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T22:59:25+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

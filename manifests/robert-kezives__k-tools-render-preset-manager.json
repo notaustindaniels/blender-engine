@@ -1,0 +1,30 @@
+{
+  "canonical_id": "robert-kezives__k-tools-render-preset-manager",
+  "artifact": "add-on-k-tools-render-preset-manager-v1.3.1.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:00:57+00:00",
+  "prescan_hits": [
+    "open-write",
+    "eval(",
+    "socket"
+  ]
+}

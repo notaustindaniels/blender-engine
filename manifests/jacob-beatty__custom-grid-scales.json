@@ -1,0 +1,40 @@
+{
+  "canonical_id": "jacob-beatty__custom-grid-scales",
+  "artifact": "add-on-custom-grid-scales-v1.1.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "view3d.add_custom_grid_scale",
+        "view3d.grid_scale_cycle",
+        "view3d.remove_grid_scale"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "view3d.add_custom_grid_scale",
+        "view3d.grid_scale_cycle",
+        "view3d.remove_grid_scale"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "view3d.add_custom_grid_scale",
+    "view3d.grid_scale_cycle",
+    "view3d.remove_grid_scale"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:12+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

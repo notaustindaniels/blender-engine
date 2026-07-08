@@ -1,0 +1,73 @@
+{
+  "canonical_id": "stevewarner__img2mat-pro",
+  "artifact": "add-on-img2mat-pro-v2.0.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "img2mat.clear_swatches",
+        "img2mat.copy_pantone_results",
+        "img2mat.create_callouts",
+        "img2mat.generate_materials",
+        "img2mat.import_acb_folder",
+        "img2mat.import_acb_library",
+        "img2mat.lock_add",
+        "img2mat.lock_remove",
+        "img2mat.match_pantone_palette",
+        "img2mat.match_pantone_sample",
+        "img2mat.rebuild_library_manifest",
+        "img2mat.toggle_library_enabled",
+        "img2mat.use_active_image"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "img2mat.clear_swatches",
+        "img2mat.copy_pantone_results",
+        "img2mat.create_callouts",
+        "img2mat.generate_materials",
+        "img2mat.import_acb_folder",
+        "img2mat.import_acb_library",
+        "img2mat.lock_add",
+        "img2mat.lock_remove",
+        "img2mat.match_pantone_palette",
+        "img2mat.match_pantone_sample",
+        "img2mat.rebuild_library_manifest",
+        "img2mat.toggle_library_enabled",
+        "img2mat.use_active_image"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "img2mat.clear_swatches",
+    "img2mat.copy_pantone_results",
+    "img2mat.create_callouts",
+    "img2mat.generate_materials",
+    "img2mat.import_acb_folder",
+    "img2mat.import_acb_library",
+    "img2mat.lock_add",
+    "img2mat.lock_remove",
+    "img2mat.match_pantone_palette",
+    "img2mat.match_pantone_sample",
+    "img2mat.rebuild_library_manifest",
+    "img2mat.toggle_library_enabled",
+    "img2mat.use_active_image"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:01:29+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

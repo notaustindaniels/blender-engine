@@ -1,0 +1,67 @@
+{
+  "canonical_id": "quint-vrolijk__image-packer",
+  "artifact": "add-on-image-packer-v1.0.7.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "opr.add_from_files",
+        "opr.add_to_packing_list",
+        "opr.clear_packing_list",
+        "opr.image_packer_add_all_imgs",
+        "opr.image_packer_apply_preferences",
+        "opr.image_packer_generate",
+        "opr.image_packer_make_testshapes",
+        "opr.image_packer_move_item",
+        "opr.image_packer_preview",
+        "opr.image_packer_remove",
+        "opr.image_packer_remove_other_imgs",
+        "opr.remove_from_packing_list"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "opr.add_from_files",
+        "opr.add_to_packing_list",
+        "opr.clear_packing_list",
+        "opr.image_packer_add_all_imgs",
+        "opr.image_packer_apply_preferences",
+        "opr.image_packer_generate",
+        "opr.image_packer_make_testshapes",
+        "opr.image_packer_move_item",
+        "opr.image_packer_preview",
+        "opr.image_packer_remove",
+        "opr.image_packer_remove_other_imgs",
+        "opr.remove_from_packing_list"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "opr.add_from_files",
+    "opr.add_to_packing_list",
+    "opr.clear_packing_list",
+    "opr.image_packer_add_all_imgs",
+    "opr.image_packer_apply_preferences",
+    "opr.image_packer_generate",
+    "opr.image_packer_make_testshapes",
+    "opr.image_packer_move_item",
+    "opr.image_packer_preview",
+    "opr.image_packer_remove",
+    "opr.image_packer_remove_other_imgs",
+    "opr.remove_from_packing_list"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:15+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,40 @@
+{
+  "canonical_id": "maro3d__vertex-group-assistant",
+  "artifact": "add-on-vertex-group-assistant-v1.0.2.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.confirm_delete_unused_bones",
+        "object.delete_unused_vertex_groups",
+        "object.transfer_vertex_groups_from_active"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.confirm_delete_unused_bones",
+        "object.delete_unused_vertex_groups",
+        "object.transfer_vertex_groups_from_active"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.confirm_delete_unused_bones",
+    "object.delete_unused_vertex_groups",
+    "object.transfer_vertex_groups_from_active"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:46+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_id": "ucupumar__ucupaint",
+  "artifact": "add-on-ucupaint-v2.4.8.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-08T23:14:32+00:00",
+  "prescan_hits": [
+    "socket",
+    "subprocess",
+    "requests"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "canonical_id": "niewinny__lost-selection",
+  "artifact": "add-on-lostselection-v0.2.0.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.select_connected_bevel",
+        "mesh.select_connected_crease",
+        "mesh.select_connected_length",
+        "mesh.select_connected_seam",
+        "mesh.select_connected_sharp",
+        "object.select_similar_color",
+        "object.select_similar_display_type",
+        "object.select_similar_material",
+        "object.select_similar_modifiers",
+        "object.select_similar_rotation"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.select_connected_bevel",
+        "mesh.select_connected_crease",
+        "mesh.select_connected_length",
+        "mesh.select_connected_seam",
+        "mesh.select_connected_sharp",
+        "object.select_similar_color",
+        "object.select_similar_display_type",
+        "object.select_similar_material",
+        "object.select_similar_modifiers",
+        "object.select_similar_rotation"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.select_connected_bevel",
+    "mesh.select_connected_crease",
+    "mesh.select_connected_length",
+    "mesh.select_connected_seam",
+    "mesh.select_connected_sharp",
+    "object.select_similar_color",
+    "object.select_similar_display_type",
+    "object.select_similar_material",
+    "object.select_similar_modifiers",
+    "object.select_similar_rotation"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-08T23:00:49+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}
