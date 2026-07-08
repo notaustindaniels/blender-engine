@@ -109,24 +109,30 @@ def query_registry(verb=None, medium=None, niche=None, quality_min=None,
             continue
         if blender_ver and r["blender_ver"] != blender_ver:
             continue
-        verbs = json.loads(r["verbs_json"]) if r["verbs_json"] else []
+        # coverage.operator_id is '{cid}:{opid}'; the card key is 'operator/{cid}::{opid}' — de-prefix
+        cid = r["canonical_id"]
+        raw_op = r["operator_id"] or ""
+        opid = raw_op[len(cid) + 1:] if raw_op.startswith(cid + ":") else raw_op
+        ckey = f"operator/{cid}::{opid}"
+        cprops = idx.get(ckey, {})
+        # verbs: prefer the card index (from operators_enriched) — corpus.db verbs_json under-joins
+        verbs = cprops.get("verbs") or (json.loads(r["verbs_json"]) if r["verbs_json"] else [])
         if verb and verb not in verbs:
             continue
-        ckey = f"operator/{r['canonical_id']}::{r['operator_id']}"
-        cprops = idx.get(ckey, {})
         quality = cprops.get("quality") or ("full_generator" if r["state"] == "pass" else "partial")
         if QUALITY_RANK.get(quality, 0) < qmin:
             continue
-        lic = r["license"] or cprops.get("license")
+        # license: registry addons.license first, but empty-string is "missing" -> fall back to card meta
+        lic = (r["license"] or "").strip() or cprops.get("license")
         lc = _lic_class(lic)
         if license_class and lc != license_class:
             continue
-        dk = (r["niche_id"], r["canonical_id"], r["operator_id"])
+        dk = (r["niche_id"], cid, opid)
         if dk in dedup:
             dedup[dk]["blender_vers"] = sorted(set(dedup[dk]["blender_vers"] + [r["blender_ver"]]))
             continue
-        dedup[dk] = {"niche": r["niche_id"], "id": ckey, "canonical_id": r["canonical_id"],
-                     "operator": r["operator_id"], "verbs": verbs, "blender_vers": [r["blender_ver"]],
+        dedup[dk] = {"niche": r["niche_id"], "id": ckey, "canonical_id": cid,
+                     "operator": opid, "verbs": verbs, "blender_vers": [r["blender_ver"]],
                      "state": r["state"], "quality": quality, "license_class": lc,
                      "license_obligation": _lic_oblig(lc), "resolvable": True}
     out = list(dedup.values())
