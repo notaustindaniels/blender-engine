@@ -1,0 +1,426 @@
+{
+  "stage": 1,
+  "status": "CLOSED",
+  "frozen": "2026-07-08",
+  "gate_v2": {
+    "metric": "(full_pass + recipe_verified) / attainable wave-1 T+V",
+    "numerator": 23,
+    "denominator_attainable": 57,
+    "coverage_pct": 40.4,
+    "threshold": 40.0,
+    "excluded_unattainable": [
+      "coral_atoll_generator",
+      "karst_formation"
+    ]
+  },
+  "pass_rate": {
+    "verified_probed": 38,
+    "acquisitions": 48,
+    "surviving": 24,
+    "pct_of_probed": 63.2,
+    "pct_of_all_acquisitions": 50.0
+  },
+  "manifests": 48,
+  "vault_entries": 57,
+  "entries": [
+    {
+      "canonical_id": "aachman98__sorcar",
+      "sha256": "44114016752b502db93212b728e459ec1ab68efe5e0d9633f2b951a26cec4be9",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "andreesalazar__reactor-framework-for-vulkan",
+      "sha256": "a34b9fd762e2508832cbf6bf178276b35cb557c0d45217a6f02d6c8b16e20bbf",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "asset__bioluminescent_flora-ccby",
+      "sha256": "bdd4dad42392ba3c4b8f08978834474abf6a4cd06007d75ae6690e1533ce28fc",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__flower_generator-ccby",
+      "sha256": "742386dddd339da9edd3cd2c8c29c59efdd702fcabaa5bd1c344488042468521",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__grass_meadow_scatter-ccby",
+      "sha256": "0d6dfa93bb0e94be59c2a289d985733902d57323d7b0f4b973d334753888f0fe",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__moss_lichen_growth-ccby",
+      "sha256": "e1fac9dd6bc5cd4ca4ea29f0629c3b14d43f34dd947a6bdc70c26d47f5cd8cc5",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__mushroom_generator-ccby",
+      "sha256": "f216dcaf6888b9b555266fb0507c26026c6f60ea63219aa66adf119a58d0ded2",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__scree_talus_scatter-ccby",
+      "sha256": "525ea049658280232c4743b7a3364ee3329d7c0c49797d3d96be9b0b67a47c76",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "asset__succulent_generator-ccby",
+      "sha256": "d6495bc380952130ca78428e653f1ebf5b3346da735357307a39e5646586cc26",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "beneking102__bene-proggen-maps",
+      "sha256": "2ee2707ddb2617d52d7a6b69449eef1ee156b45028d34a4720624eab504e5d8d",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "bkmat__cracked_earth_shader",
+      "sha256": "f6760f7d1f0d409556ac6493cb12d2dcb483a06454ea1049cf2619f76bbc44e8",
+      "license": "royalty_free",
+      "entry_type": "material",
+      "lane": "L6"
+    },
+    {
+      "canonical_id": "bkmat__gas_giant_shader",
+      "sha256": "edfca0ccc9c580ce158c66111bf50f86e22d8aaa82145e86bfea004f4b0ae25b",
+      "license": "royalty_free",
+      "entry_type": "material",
+      "lane": "L6"
+    },
+    {
+      "canonical_id": "bkmat__ice_shader",
+      "sha256": "1682ca5567100ea24a7265ba902d072a25bbaf1dfba4c2fbfb5d61bdc49c359f",
+      "license": "royalty_free",
+      "entry_type": "material",
+      "lane": "L6"
+    },
+    {
+      "canonical_id": "bkmat__organic_cell_shader",
+      "sha256": "6d8d23ac0e481b4586aa05a9891e49899302fc00c67216ab895a9e3b03cbff26",
+      "license": "royalty_free",
+      "entry_type": "material",
+      "lane": "L6"
+    },
+    {
+      "canonical_id": "bkmat__snow_ice_shader",
+      "sha256": "9f8eef21052b5ad2650debad678a0d3cf5bc1b3b4a161979e7a57db38b595ea8",
+      "license": "royalty_free",
+      "entry_type": "material",
+      "lane": "L6"
+    },
+    {
+      "canonical_id": "brandyn-britton__modular-tree",
+      "sha256": "7ffad885c79f7e1c062ea4a7404bf3f31e0f37b96126735d5876c35c8590c1b4",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "charlesss07__blender-python-nodes",
+      "sha256": "011e4fbb57d8e227d552c9b455e637b79ade176b99e809dd65206f554cf8c3c5",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "community__a-n-t-landscape",
+      "sha256": "230571bc14c50952f3af99b70fdb365cf0cee503382975dc38149407a5a4c8c0",
+      "license": "GPL-2.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "community__ivygen",
+      "sha256": "7e60967a11cabacb9bca0128e65dcfb96cec8794a934bc7dc2e353ae720cff98",
+      "license": "GPL-2.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "community__sapling-tree-gen",
+      "sha256": "27a478262e1c86612a9c3daffe7f4dce2802f5bc2294033462e5adc6d9c0080f",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "community__scatter-objects",
+      "sha256": "3fda488f56523b799e3937c802119f1da986391e193cb4d443177e6e132c764b",
+      "license": "GPL-2.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "cradoux__project-r",
+      "sha256": "5a292407d171648aae39bd647e50b7186542fcb824ead983e7efb85437a6d2c1",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "cxivo__terrain-erosion-simulator",
+      "sha256": "889638ce983cecea292d86ffc88af28c37b3447c1e0853cbcb302d37b668aac4",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "dimateos__upc-miri-tfm-erosion",
+      "sha256": "81454c88a5e0bd1c9e211a182e1e7cbc3985869c925545088e9adb378e83bf2e",
+      "license": "MIT",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "dingdio__witcher3-blender-tools",
+      "sha256": "ec713803e513fc51dd204d043bd39530dbf8500d0336c7db8a8d5da2777a149f",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "donitzo__procedural-asteroid-generator",
+      "sha256": "556ee2c2dbf1f16efcdba2a840cdc17ebbd97da143b47aafdc7eeb6a6686785c",
+      "license": "MIT",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "emgi96__trailprint3d",
+      "sha256": "5e36753c79a9714bc3cb7a0e66dccc2ca472529014117c9cc32abf545bc68480",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "grimrukh__soulstruct-blender",
+      "sha256": "eeecf47d5335414462cea237c554a9261652e4e8a4f70e98ebbb275fcb2442fe",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "itscubetime__fastpbr",
+      "sha256": "28e52c0d92fe43c526f1fc4491990f1017af7dcfd5a183510be6a3d82207918a",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "jacob-johnston__easy-tree",
+      "sha256": "9ba32029650173c303037155c629dd85953699dbd8e62bd5e71da6927c84a4ff",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "jzubielik__blender-scatter-addon",
+      "sha256": "7f33c9463604d3f1b812b8e529972225edfb4880093b4ca4c23468f604c36894",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "kalwalt__terragen-utils",
+      "sha256": "4a7bc8014ace82a7454ef5e88d58936c8aa57cab1849bb9612dfc4fd527482c9",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "kiara-bagattini__bagapie",
+      "sha256": "2e55574dcb37ca4a86e1942317906f769e269d382d6a82d0b1330cfb94707c9c",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "lmesaric__bsc-thesis-fer-2020",
+      "sha256": "2520e052a87445859f89bd1435ef1a1f2137f19a8d8dc9801e09c4f209b6c547",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "ln-12__blainder-range-scanner",
+      "sha256": "c32c1d221169201091d07a536e6d8cd77e61b81dd0b54a57ae851cacd1649e51",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "ls__space-colonization-tree-generator",
+      "sha256": "4b3ed3c3d2ff48e8bd3eec520098e42d24937f4167ed3fd9210a870369a9ef83",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "marcueberall__blender-cliffgenerator",
+      "sha256": "38d6e21d9dc6caef952e11a983dbdc850fbf4c7b19060a0d4bd8797ba5190c14",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "marekhlavka__planet-and-space-objects-generator",
+      "sha256": "9cc714165fdcecbb2e3f9565dd98daecb39b51875ec2254511682e27bca82bbd",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "marine__anemone-ccby",
+      "sha256": "201e496ace1006db1cb2af3bf29b6e44deee6798dead9d13ccd0276641aa7831",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "marine__coral-ccby",
+      "sha256": "f853995a09f91a23a7eef11c08e69c766243b1552c5d9f890f816268b6e3f8f6",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "marine__seaweed-ccby",
+      "sha256": "6e9d3acbd6df5f09fcb5115a23ff53f6463d9ab8ce89968c3dd970d6a5db6c4b",
+      "license": "by",
+      "entry_type": "asset_pack",
+      "lane": "A1"
+    },
+    {
+      "canonical_id": "nacioss__real-snow",
+      "sha256": "2f66ed2d81bfb043fb1eab0274a99ec3bbc271c51c98484ee52fbea0d37d8432",
+      "license": "GPL-2.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "nerk987__txa-ant",
+      "sha256": "f41d2ecc84848592a7171e9765a84f925e38026de3a5e83818ebc5c2c9aba022",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "nicolaspriniotakis__srtm-terrain-importer",
+      "sha256": "72299885ab8bb5623bd3643e4b918cf2e29c56fe6010ead0f55e61796498f454",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "openresearchtools__video-toolkit",
+      "sha256": "c8a8cf7a2df8ee5b73b2f3a590946b016eade08acc818ea8466fe2a29e38d288",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "ozikazina__hydra",
+      "sha256": "96e76bc8d7da7edbd256fe25b91f5fec99cc5d326023c2b4ceceddb50efa4116",
+      "license": "MIT",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "petak5__bp",
+      "sha256": "b61bf52980843ceed67c2b7f0514365b3f90ec49f7cb6e99c43971cac2b5d675",
+      "license": "MIT",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "ra100__planet-gen",
+      "sha256": "c18867f5dfedb356b2b5b169298e414b92dd52cf25f02792c1b6c1825f1693d5",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "rawnsley__texcut",
+      "sha256": "3ebe1b0d0f6fe24408275816cf2c096e3b6a6b733be1adc6b098ead8803aa65a",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "shifty81__atlasworkspace-novaforge",
+      "sha256": "2880e54fd5e14245ce1498bf91415f905ae4a1b069edb4f50f9bd35ddc8a7286",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "tannenmeise__mushroom_generator",
+      "sha256": "96bf4d8b11d2c51062721cd2d82e120aa70a316135e1b143ae2d1ee495a1f50d",
+      "license": "MIT",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "tlabaltoh__realistic-terrain",
+      "sha256": "1165635f9722826f3607cb20d87aad70317ecdc6d3cabbed4e7893942d93bd8c",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "tu2463__rock_generator_addon",
+      "sha256": "d502fe23e93f2096c95c757fb72c371f06fdfad2ad9770cf17956bb1254e1fdf",
+      "license": "NOASSERTION",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "varkenvarken__erosion",
+      "sha256": "11e9fb903a71e7d668361889add555a05c53f5a951bb207ec685dfce65645be4",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "wolfgangp__quicktree",
+      "sha256": "e5dae37a519866bc8cef150efac930a911d04b190c8706e14bc591a70848cccf",
+      "license": "assumed",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "yazington__synthetic",
+      "sha256": "62718bc9494dc8a8008647d2e1c5632e5dc75e5f5e52505b485785c5c9cc58ab",
+      "license": "GPL-3.0",
+      "entry_type": null,
+      "lane": null
+    },
+    {
+      "canonical_id": "zets__terrain-mixer",
+      "sha256": "802d22cc5d7dbce0221d3399bc23b8f96799ba5c66421d7261016bd64d5800ac",
+      "license": "GPL-3.0-or-later",
+      "entry_type": null,
+      "lane": null
+    }
+  ]
+}
