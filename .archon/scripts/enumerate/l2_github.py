@@ -52,9 +52,11 @@ def _build_queries():
     STOP = {"generator", "system", "tools", "tool", "addon", "the", "and", "for", "pro", "gen"}
     out = {}
     for c in tax["categories"]:
-        key = re.sub(r"[^a-z0-9]+", "_", c["name"].lower()).strip("_").split("_")[0]
-        if key in _CURATED:
-            out[key] = _CURATED[key]; continue
+        full = re.sub(r"[^a-z0-9]+", "_", c["name"].lower()).strip("_")
+        first = full.split("_")[0]
+        if first in _CURATED:
+            out[first] = _CURATED[first]; continue
+        key = full                                    # unique per category (no first-word collisions)
         kws = []
         for n in (c.get("niches") or [])[:6]:
             for t in re.split(r"[_\s\-]+", n["id"]):
