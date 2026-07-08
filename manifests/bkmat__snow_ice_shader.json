@@ -7,7 +7,8 @@
       "state": "pass",
       "operators": [],
       "render_ok": true,
-      "shader_delta": 0.032
+      "shader_delta": 0.032,
+      "probe_note": "single-container pass (concurrency-isolated)"
     }
   },
   "operators_enriched": [
@@ -24,5 +25,6 @@
     }
   ],
   "enriched_by": "shader-probe (L6 material, D-006 R37)",
-  "enrich_note": "BlenderKit procedural material shader-probed delta=0.032 (>=0.02 pass) -> covers snow_ice_shader."
+  "enrich_note": "BlenderKit procedural material shader-probed delta=0.032 (>=0.02 pass) -> covers snow_ice_shader.",
+  "probe_history": "large-material quarantine (delta 0.000) then small procedural material pass 0.032 single-container"
 }
