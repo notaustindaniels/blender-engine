@@ -433,5 +433,15 @@
     "body": "<p><b>The floodgates are open.</b> Supervising sharded native-CI waves to documented exhaustion.</p>\n<ul>\n<li><b>Wave 1 (L1 full catalog)</b>: T+V filter stripped → <b>904 add-ons across all 26 categories</b> (thin slice kept only 2). Running in <code>wave-probe.yml</code> (8 parallel native-amd64 shards, hash-verified re-acquire + prescan + sandbox gate).</li>\n<li><b>Downstream pipeline built + committed</b>: R47 gap-report generator (26 categories, baseline 23/328=7.0%), enrich_scale.py (keyword-heuristic niche mapping at scale, labeled + non-clobbering), L2 sweep expanded to all 26 categories, L6 BlenderKit sweep (773 procedural candidates enumerated).</li>\n<li><b>Guardrails unchanged</b>: prescan NEVER_ALLOW quarantines dangerous add-ons automatically; sandbox --network none; single-writer; secrets env-only.</li>\n</ul>\n<p><b>⚠ Flagged for the Wave 1 gate</b>: the &lt;30%-of-all pass-rate tripwire was calibrated for the targeted T+V harvest; at full-catalog scale (UI/exporter add-ons we never expected to pass a generation probe) the of-all rate drops by construction. If it fires I PAUSE + report for an owner D-entry (per R17, never recalibrate by fiat) with both the naive and procedural-subset rates. Interim progress → feed; owner touchpoints only per R49.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 44,
+    "ts": "2026-07-08T19:55:34-04:00",
+    "title": "✅ Wave 1 INGESTED — L1 full catalog (904) probed in native CI; tripwire clear; Wave 2 (L2) enumerating",
+    "tag": "milestone",
+    "status": "wave1-done-wave2-running",
+    "body": "<p><b>Wave 1 complete, end-to-end supervised.</b> 8-shard native-amd64 CI probe of the full L1 catalog (904 add-ons, all 26 categories).</p>\n<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>\n<tr><td>Working (pass+partial)</td><td class=\"ok\">612 / 904 (137 pass + 475 partial)</td></tr>\n<tr><td>Pass-rate tripwire (R19)</td><td class=\"ok\">CLEAR — 64.4% of-all, 86.4% of-probed</td></tr>\n<tr><td>Prescan human gate (R6)</td><td>159 needs_review/quarantine (dangerous patterns held, never run)</td></tr>\n<tr><td>Niche-mapped (honest)</td><td>36 (high-precision); whole-taxonomy 7.0%→8.2%, 6 categories</td></tr>\n<tr><td>KB / golden eval</td><td class=\"ok\">1519 nodes (1088 add-ons); hit@5 = 1.0</td></tr>\n</tbody></table>\n<p><b>Honesty held:</b> tested aggressive single-token enrich (36→409) but it was ~90% false positives (magic-wand→magic_fx) — reverted to strict precision. Most catalog add-ons are UI/utility tools, correctly unmatched; concrete-noun misses (cloth→cloth_sim) are honest under-coverage in the gap reports, never inflated (R14). Recall lift (curated allowlist / AI-enrich) is documented future work.</p>\n<p><b>Fixes this wave:</b> reviewed-enrich clobbering (CI re-probe overwrote maps → wave_ingest re-runs enrich_thinslice first); R26 license backfill from candidate metadata (ephemeral CI vault); artifact-download redirect-auth strip. <b>Wave 2 (L2, all 26 categories) enumerating now.</b> Per-category gap reports live in reports/gaps/.</p>",
+    "code": "",
+    "media": []
   }
 ]
