@@ -226,3 +226,27 @@ One feed entry mapping R35–R40, then: R35 review → on PASS, post the signed 
 proceed R37 → next consolidated owner session = the GN-pack checkout batch + any
 auto-triggered R23 request + wave-3 proposals. The fern `.blend` will be waiting in
 `inputs/dropzone/` — probe it first.
+
+---
+
+## D-007 · 2026-07-07 · Stage-1 close-out: 40% verified-then-declared, depth batch, handoff contract, stage transition
+
+**Decision:** Gate v2 at 23/57 = 40.4% (zero spend) is accepted as the execution-milestone
+reading, **contingent on R41** — the 31.6%→40.4% delta postdates the last adversarial
+review and gets one before "done" is declared. Route B is authorized for depth, the
+Stage-2 handoff contract is commissioned, and Stage 1 formally closes on completion.
+
+### Binding riders
+
+| # | Rider | Durable encoding target(s) |
+|---|---|---|
+| R41 | **Delta review (fresh-context, scoped to post-R35 work):** reproduce 23/57 = 40.4%; re-probe 2 of the 5 BlenderKit shader conversions AND confirm each is a genuinely procedural node material (not an image-texture pack wearing the label); verify every concurrency-starvation re-pass has its single-container state individually recorded; verify L6 per-asset license capture (CC0 vs RF flagged per item). One fix cycle. Declaring Stage 1 done is blocked on PASS. | one-time review + feed evidence |
+| R42 | **Route B authorized — depth, not number:** prepare the $0 GN-pack batch to the batch-1 resolution standard (final URLs, confirmed $0, captured licenses), cap ~15 rows, ranked by (i) upgrading `asset_fed_minimal` niches to `full_generator` and (ii) filling empty verb×medium cells (water/air/urban; aggregate/fill/reveal). One owner checkout session; flagged prices default to deny. | batch report per existing standard |
+| R43 | **The Stage-2 handoff contract — `HANDOFF.md`:** the consumption interface for the engine: registry + manifest schemas, quality tiers (resolver MUST prefer depth), verb×medium grid, recipes registry, re-verification API — and the **license obligations every Stage-2 render inherits**: CC-BY assets require visible attribution (video credits/description); BlenderKit assets are rendered-video-only — **no 3D-export of scenes containing them**; Royalty-Free means incorporation-only, no standalone redistribution. A registry snapshot is committed and the 90-day re-verification schedule is armed. | `HANDOFF.md` + snapshot + scheduled workflow |
+| R44 | **Stage 1 closes** on R41 PASS + Route B probed: post the final consolidated report, including — once, informational — whole-taxonomy coverage (wave-1 + wave-2 + grid) for Stage-2 planning. The gate was always a T+V proxy; Stage 2 plans against the whole map. | `reports/stage1-final.md` |
+| R45 | **Stage 2 opens by its own PRD + SPEC** (the create-prd / create-spec discipline that opened Stage 1), authored fresh against `HANDOFF.md`; thin slice = the fish-form-an-equation vertical from the original engine plan. This repo becomes a consumed, read-only dependency (registry + vault) — not a workspace. Owner and advisor convene on the Stage-2 PRD as the next act. | new PRD/SPEC artifacts (Stage-2 repo) |
+
+### Acknowledgment protocol for D-007
+
+One feed entry mapping R41–R45, then: R41 review → Route B batch prep → owner checkout
+session → probe → `HANDOFF.md` + snapshot → `stage1-final.md` → Stage 1 CLOSED.
