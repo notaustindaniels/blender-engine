@@ -1,0 +1,45 @@
+# reverify-90d — 90-day freshness re-verification (D-007 R43/R44). Re-acquires every vault entry from
+# its source URL, re-hashes (detects rot/tampering vs the recorded SHA-256), re-probes natively (amd64,
+# no emulation), and uploads a drift report. Provenance integrity = the PRD zero-fabrication guarantee.
+# Scheduled quarterly; also manually dispatchable. $0 (public repo, native runner).
+name: reverify-90d
+on:
+  schedule:
+    - cron: "0 6 1 */3 *"     # 06:00 on day 1 of every 3rd month (~90 days)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  reverify:
+    runs-on: ubuntu-latest          # native amd64 — authoritative Gate
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Build the three digest+SHA-pinned probe images
+        run: bash sandbox/build_images.sh all
+      - name: Re-acquire from source URLs + re-hash (rot/tamper detection)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/acquire.py --normalized normalized.jsonl --vault vault --limit 0 --out reacquired.jsonl
+          # acquire.py already hard-fails on a hash mismatch vs the API-declared sha256; a source whose
+          # bytes drifted or 404s is recorded in the skip list -> the drift report below.
+      - name: Re-probe natively + rebuild + coverage
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/verify_matrix.py --artifacts vault --out manifests \
+            --clearances reviews/prescan_clearances.yaml --timeout 150 --json-summary reports/reverify-summary.json
+          uv run .archon/scripts/build_index.py --db corpus.db
+          uv run .archon/scripts/coverage.py --db corpus.db --taxonomy inputs/taxonomy.yaml --reports reports
+      - name: Upload drift + coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: reverify-90d-report
+          path: |
+            reports/reverify-summary.json
+            reports/coverage.json
+            reacquired.jsonl
+          retention-days: 30
