@@ -1,0 +1,68 @@
+# wave-probe — D-008 R46/R48 full-taxonomy harvest, SHARDED native gate. Splits normalized_full.jsonl
+# into N parallel shards (matrix), each re-acquires its slice from public source URLs (hash-verified),
+# prescans, and gates in the --network none sandbox on native amd64. Each shard uploads its manifests +
+# probe summary as an artifact; the supervisor session merges them. $0 public Actions. Guardrails
+# unchanged: prescan NEVER_ALLOW holds, sandbox flags unchanged, no secrets (public downloads only).
+name: wave-probe
+on:
+  workflow_dispatch:
+    inputs:
+      normalized:
+        description: "candidate list to shard + probe"
+        default: "normalized_full.jsonl"
+      timeout:
+        description: "per-artifact wall-clock cap (seconds)"
+        default: "150"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Cache Blender tarballs (shared across shards, keyed by pinned SHAs)
+        uses: actions/cache@v4
+        with:
+          path: sandbox/.tarball-cache
+          key: blender-tarballs-v1
+      - name: Build the three digest+SHA-pinned probe images (native amd64)
+        run: bash sandbox/build_images.sh all
+      - name: Slice this shard (row_index % 8 == shard) — R11 order preserved, nothing excluded
+        run: |
+          python3 - "${{ matrix.shard }}" <<'PY'
+          import sys, json
+          shard = int(sys.argv[1]); N = 8
+          rows = [l for l in open("${{ github.event.inputs.normalized }}") if l.strip()]
+          keep = [l for i, l in enumerate(rows) if i % N == shard]
+          open("shard.jsonl", "w").writelines(keep)
+          print(f"shard {shard}/{N}: {len(keep)} candidates")
+          PY
+      - name: Re-acquire this shard from public source URLs (hash-verified)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/acquire.py --normalized shard.jsonl --vault vault --limit 0 --out acquired-shard.jsonl
+      - name: Prescan + verify natively (version-aware, prescan-gated, --network none sandbox)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/verify_matrix.py --artifacts vault --out manifests \
+            --clearances reviews/prescan_clearances.yaml --timeout "${{ github.event.inputs.timeout }}" \
+            --json-summary "reports/wave-shard-${{ matrix.shard }}.json" || true
+      - name: Upload shard manifests + summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wave-manifests-shard-${{ matrix.shard }}
+          path: |
+            manifests/
+            reports/wave-shard-${{ matrix.shard }}.json
+            acquired-shard.jsonl
+          retention-days: 14
