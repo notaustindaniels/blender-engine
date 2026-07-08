@@ -31,5 +31,19 @@
   "artifact_type": "python_bl_info",
   "verified_at": "2026-07-07T13:35:21+00:00",
   "prescan_hits": [],
-  "declared_min": "3.0"
+  "declared_min": "3.0",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "mesh.primitive_rock_add",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "rock_boulder_generator"
+      ]
+    }
+  ],
+  "enriched_by": "operator-reviewed (explicit thin-slice map)",
+  "enrich_note": "L2/R40 wave-3-approved: full-pass rock generator -> rock_boulder_generator (WAVE-2 nature_fx; moves the grid, NOT gate v2 which is wave-1)."
 }

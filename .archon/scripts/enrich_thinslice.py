@@ -113,3 +113,7 @@ def main():
         sys.exit(1)
     print(json.dumps({"enriched": sum(1 for mp in glob.glob('manifests/*.json')
                                       if json.loads(open(mp).read())['canonical_id'] in MAP)}))
+
+
+if __name__ == "__main__":
+    main()

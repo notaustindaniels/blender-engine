@@ -15,12 +15,13 @@ CREATE TABLE IF NOT EXISTS meta (
 );
 
 -- ---------------------------------------------------------------- graph ----
--- `type` is free-form here. To enforce a domain vocabulary, add a CHECK, e.g.:
---   CHECK (type IN ('person','project','document','concept'))
+-- Domain vocabulary FIXED per D-008 R51 (Blender Vault corpus_kb). The template ships
+-- `type` free-form; this vendored copy pins the ontology via CHECK constraints.
 CREATE TABLE IF NOT EXISTS nodes (
   id      INTEGER PRIMARY KEY,
-  key     TEXT NOT NULL UNIQUE,           -- e.g. 'doc/design_notes', 'concept/rrf'
-  type    TEXT NOT NULL,
+  key     TEXT NOT NULL UNIQUE,           -- e.g. 'operator/mesh.landscape_add', 'niche/terrain_generator'
+  type    TEXT NOT NULL
+    CHECK (type IN ('addon','operator','recipe','asset','niche','verb','medium','category','license')),
   label   TEXT NOT NULL,
   summary TEXT DEFAULT '',
   props   TEXT DEFAULT '{}',              -- JSON
@@ -32,7 +33,8 @@ CREATE TABLE IF NOT EXISTS edges (
   id       INTEGER PRIMARY KEY,
   src_id   INTEGER NOT NULL REFERENCES nodes(id) ON DELETE CASCADE,
   dst_id   INTEGER NOT NULL REFERENCES nodes(id) ON DELETE CASCADE,
-  type     TEXT NOT NULL,                 -- e.g. 'PART_OF','REFERENCES','AUTHORED_BY'
+  type     TEXT NOT NULL                  -- D-008 R51 fixed edge vocabulary
+    CHECK (type IN ('PROVIDES','COVERS','PERFORMS','IN_MEDIUM','COMPOSES','LICENSED','PART_OF','SUBSTITUTES')),
   props    TEXT DEFAULT '{}',
   UNIQUE (src_id, dst_id, type)
 );

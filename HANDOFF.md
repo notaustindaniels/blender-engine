@@ -13,7 +13,15 @@ re-derivable from committed artifacts.
 - **Whole-taxonomy coverage:** see `reports/stage1-final.md` (the gate was always a T+V proxy; Stage-2
   plans against the whole map).
 
-## 2. The read interface (consume these, do not re-run the harness)
+## 2. The PRIMARY interface — the MCP server (D-008 R54)
+Any fresh LLM (Stage 2 included) navigates the corpus through the **`blender-vault-corpus` MCP server**
+(`.archon/mcp/corpus_mcp.py`) or its CLI twin (`.archon/scripts/corpus_cli.py`), loading **`CORPUS.md`**
+(Tier-0, ≤2k tokens) first. Six tools enact RETRIEVAL PROPOSES / REGISTRY DISPOSES (R53):
+`search_capabilities` · `query_registry` · `get_card` · `get_usage` · `find_substitutes` · `plan_recipe`.
+Rebuild the two derived DBs from JSON manifests: `uv run .archon/scripts/kb_build.py` +
+`embedder.py run` (KB), `build_index.py` (registry). The raw artifacts below are the layer beneath it.
+
+## 2b. The read interface (underlying artifacts)
 | artifact | schema | what Stage-2 does with it |
 |---|---|---|
 | `corpus.db` (SQLite) | tables `addons, operators, verify, coverage(niche,cid,op,ver,state), graveyard` | **rebuilt, never hand-edited** — `build_index.py` regenerates it from JSON. Query for niche→operator resolution. |

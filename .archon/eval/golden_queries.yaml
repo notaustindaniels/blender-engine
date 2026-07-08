@@ -1,0 +1,71 @@
+# Golden-query eval set (D-008 R55). Natural-language need -> expected canonical target (substring
+# match against the top-k card keys/labels). hit@5 >= 90% gates every snapshot tag. Grows with the
+# corpus. Each `expect` is a niche id or operator id the corpus genuinely serves (a hit means the
+# right card surfaced in the top 5). Needs the corpus CANNOT serve belong in gap reports, not here.
+version: 1
+threshold_hit_at_5: 0.90
+queries:
+  - q: "make hills and mountains terrain"
+    expect: [terrain_generator, landscape_add]
+  - q: "generate a heightmap landscape"
+    expect: [terrain_generator, landscape_add]
+  - q: "erode a landscape with water and rain"
+    expect: [erosion_sim, erode, landscape_add]
+  - q: "hydraulic erosion simulation on a mesh"
+    expect: [erosion_sim, erode]
+  - q: "scatter grass across a field"
+    expect: [grass_meadow_scatter, scatter]
+  - q: "cover the ground with low plants"
+    expect: [ground_cover, grass_meadow_scatter, scatter]
+  - q: "generate a procedural tree"
+    expect: [tree_generator, tree_add, tree]
+  - q: "grow a tree with branches"
+    expect: [tree_generator, tree_add, space_colonization_growth]
+  - q: "grow ivy over a surface"
+    expect: [ivy_generator, ivy_gen]
+  - q: "a field of flowers"
+    expect: [flower_generator]
+  - q: "cluster of mushrooms on the ground"
+    expect: [mushroom_generator]
+  - q: "moss growing on rocks"
+    expect: [moss_lichen_growth]
+  - q: "succulent plants"
+    expect: [succulent_generator]
+  - q: "glowing bioluminescent plants"
+    expect: [bioluminescent_flora]
+  - q: "loose rocks and scree on a slope"
+    expect: [scree_talus_scatter]
+  - q: "rows of trees in an orchard"
+    expect: [orchard_row_scatter]
+  - q: "underwater kelp forest"
+    expect: [kelp_forest_generator]
+  - q: "coral colony on a reef"
+    expect: [coral_generator]
+  - q: "sea anemone"
+    expect: [anemone_generator]
+  - q: "frozen ice material shader"
+    expect: [ice_shader]
+  - q: "snow and ice surface material"
+    expect: [snow_ice_shader, ice_shader]
+  - q: "cracked dry earth material"
+    expect: [cracked_earth_shader]
+  - q: "gas giant planet surface like jupiter"
+    expect: [gas_giant_shader]
+  - q: "cellular organic voronoi material"
+    expect: [organic_cell_shader]
+  - q: "a cliff or rock face"
+    expect: [cliff_rockface_generator]
+  - q: "an asteroid or space rock"
+    expect: [asteroid_generator]
+  - q: "an alien planet landscape"
+    expect: [alien_biome_generator, planet]
+  - q: "import SRTM real-world terrain elevation"
+    expect: [terrain_generator, srtm, hgt]
+  - q: "add snow accumulation on objects"
+    expect: [snow_accumulation]
+  - q: "a fern plant"
+    expect: [fern_generator]
+  - q: "scatter objects across a biome"
+    expect: [biome_scatter_system, scatter]
+  - q: "a rock or boulder"
+    expect: [rock_boulder_generator, rock]

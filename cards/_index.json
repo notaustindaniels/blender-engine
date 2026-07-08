@@ -1,0 +1,705 @@
+{
+ "operator/beneking102__bene-proggen-maps::procgen_maps.generate_city": {
+  "cid": "beneking102__bene-proggen-maps",
+  "operator_id": "procgen_maps.generate_city",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "terrain_generator"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "assumed",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/bkmat__cracked_earth_shader::bkmat__cracked_earth_shader:material": {
+  "cid": "bkmat__cracked_earth_shader",
+  "operator_id": "bkmat__cracked_earth_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "cracked_earth_shader"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__gas_giant_shader::bkmat__gas_giant_shader:material": {
+  "cid": "bkmat__gas_giant_shader",
+  "operator_id": "bkmat__gas_giant_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "gas_giant_shader"
+  ],
+  "media": [
+   "air"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__ice_shader::bkmat__ice_shader:material": {
+  "cid": "bkmat__ice_shader",
+  "operator_id": "bkmat__ice_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "ice_shader"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__organic_cell_shader::bkmat__organic_cell_shader:material": {
+  "cid": "bkmat__organic_cell_shader",
+  "operator_id": "bkmat__organic_cell_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "organic_cell_shader"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__snow_ice_shader::bkmat__snow_ice_shader:material": {
+  "cid": "bkmat__snow_ice_shader",
+  "operator_id": "bkmat__snow_ice_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "snow_ice_shader"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/brandyn-britton__modular-tree::mtree.add_leaves": {
+  "cid": "brandyn-britton__modular-tree",
+  "operator_id": "mtree.add_leaves",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "branch"
+  ],
+  "niches": [
+   "tree_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "partial",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/community__a-n-t-landscape::mesh.landscape_add": {
+  "cid": "community__a-n-t-landscape",
+  "operator_id": "mesh.landscape_add",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "simulate",
+   "deplete"
+  ],
+  "niches": [
+   "terrain_generator",
+   "erosion_sim"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/community__ivygen::curve.ivy_gen": {
+  "cid": "community__ivygen",
+  "operator_id": "curve.ivy_gen",
+  "kind": "bpy_op",
+  "verbs": [
+   "trace",
+   "branch"
+  ],
+  "niches": [
+   "ivy_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "partial",
+  "license": "GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/community__sapling-tree-gen::curve.tree_add": {
+  "cid": "community__sapling-tree-gen",
+  "operator_id": "curve.tree_add",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "branch"
+  ],
+  "niches": [
+   "tree_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/community__scatter-objects::object.scatter": {
+  "cid": "community__scatter-objects",
+  "operator_id": "object.scatter",
+  "kind": "bpy_op",
+  "verbs": [
+   "scatter"
+  ],
+  "niches": [
+   "biome_scatter_system"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "partial",
+  "license": "GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/donitzo__procedural-asteroid-generator::donitzo__procedural-asteroid-generator": {
+  "cid": "donitzo__procedural-asteroid-generator",
+  "operator_id": "donitzo__procedural-asteroid-generator",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "scatter"
+  ],
+  "niches": [
+   "asteroid_generator"
+  ],
+  "media": [
+   "air"
+  ],
+  "quality": "partial",
+  "license": "MIT",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/jacob-johnston__easy-tree::object.add_tree_tool": {
+  "cid": "jacob-johnston__easy-tree",
+  "operator_id": "object.add_tree_tool",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "branch"
+  ],
+  "niches": [
+   "tree_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/kiara-bagattini__bagapie::kiara-bagattini__bagapie": {
+  "cid": "kiara-bagattini__bagapie",
+  "operator_id": "kiara-bagattini__bagapie",
+  "kind": "bpy_op",
+  "verbs": [
+   "scatter",
+   "trace",
+   "branch"
+  ],
+  "niches": [
+   "biome_scatter_system",
+   "ivy_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "partial",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/lmesaric__bsc-thesis-fer-2020::view3d.zagreb_gis_install_dependencies": {
+  "cid": "lmesaric__bsc-thesis-fer-2020",
+  "operator_id": "view3d.zagreb_gis_install_dependencies",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "terrain_generator"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "GPL-3.0",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/ls__space-colonization-tree-generator::spacecolonization_tree.generate_tree": {
+  "cid": "ls__space-colonization-tree-generator",
+  "operator_id": "spacecolonization_tree.generate_tree",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate",
+   "branch",
+   "trace"
+  ],
+  "niches": [
+   "tree_generator",
+   "space_colonization_growth"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/marcueberall__blender-cliffgenerator::marcueberall__blender-cliffgenerator": {
+  "cid": "marcueberall__blender-cliffgenerator",
+  "operator_id": "marcueberall__blender-cliffgenerator",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "cliff_rockface_generator"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "GPL-3.0",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/nacioss__real-snow::snow.create": {
+  "cid": "nacioss__real-snow",
+  "operator_id": "snow.create",
+  "kind": "bpy_op",
+  "verbs": [
+   "accumulate"
+  ],
+  "niches": [
+   "snow_accumulation"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "GPL-2.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/nicolaspriniotakis__srtm-terrain-importer::import_mesh.hgt_displacement": {
+  "cid": "nicolaspriniotakis__srtm-terrain-importer",
+  "operator_id": "import_mesh.hgt_displacement",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "terrain_generator",
+   "heightmap_stack_tools"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/petak5__bp::object.animate_object_operator": {
+  "cid": "petak5__bp",
+  "operator_id": "object.animate_object_operator",
+  "kind": "bpy_op",
+  "verbs": [
+   "simulate",
+   "deplete"
+  ],
+  "niches": [
+   "erosion_sim"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "full_generator",
+  "license": "MIT",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/ra100__planet-gen::planetgen.create_planet": {
+  "cid": "ra100__planet-gen",
+  "operator_id": "planetgen.create_planet",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "alien_biome_generator"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "assumed",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/sagado__procedural-fern::sagado__procedural-fern": {
+  "cid": "sagado__procedural-fern",
+  "operator_id": "sagado__procedural-fern",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate",
+   "reveal"
+  ],
+  "niches": [
+   "fern_generator"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/tu2463__rock_generator_addon::mesh.primitive_rock_add": {
+  "cid": "tu2463__rock_generator_addon",
+  "operator_id": "mesh.primitive_rock_add",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "rock_boulder_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "NOASSERTION",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/varkenvarken__erosion::mesh.erode": {
+  "cid": "varkenvarken__erosion",
+  "operator_id": "mesh.erode",
+  "kind": "bpy_op",
+  "verbs": [
+   "simulate",
+   "deplete"
+  ],
+  "niches": [
+   "erosion_sim"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "assumed",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/zets__terrain-mixer::object.add_tm_workspaces": {
+  "cid": "zets__terrain-mixer",
+  "operator_id": "object.add_tm_workspaces",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "terrain_generator",
+   "heightmap_stack_tools"
+  ],
+  "media": [
+   "ground"
+  ],
+  "quality": "partial",
+  "license": "GPL-3.0-or-later",
+  "versions": [
+   "4.2"
+  ]
+ },
+ "recipe/orchard_row_scatter": {
+  "niche": "orchard_row_scatter",
+  "tier": "recipe_verified",
+  "quality": "composed",
+  "medium": "organic",
+  "steps": [
+   "community__sapling-tree-gen::curve.tree_add",
+   "builtin:ARRAY"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/snowdrift_generator": {
+  "niche": "snowdrift_generator",
+  "tier": "recipe_unverified",
+  "quality": "composed",
+  "medium": "ground",
+  "steps": [
+   "community__a-n-t-landscape::mesh.landscape_add",
+   "nacioss__real-snow::object.snow_create"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/dune_generator": {
+  "niche": "dune_generator",
+  "tier": "recipe_unverified",
+  "quality": "composed",
+  "medium": "ground",
+  "steps": [
+   "community__a-n-t-landscape::mesh.landscape_add"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/ground_cover": {
+  "niche": "ground_cover",
+  "tier": "recipe_unverified",
+  "quality": "composed",
+  "medium": "organic",
+  "steps": [
+   "community__scatter-objects::object.scatter_objects"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/frozen_lake_generator": {
+  "niche": "frozen_lake_generator",
+  "tier": "recipe_unverified",
+  "quality": "composed",
+  "medium": "water",
+  "steps": [
+   "community__a-n-t-landscape::mesh.landscape_add",
+   "builtin:SUBSURF"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/sediment_deposition": {
+  "niche": "sediment_deposition",
+  "tier": "recipe_unverified",
+  "quality": "composed",
+  "medium": "ground",
+  "steps": [
+   "petak5__bp::object.create_terrain_operator",
+   "petak5__bp::object.erosion_operator"
+  ],
+  "license": null,
+  "recipe": true
+ },
+ "recipe/kelp_forest_generator": {
+  "niche": "kelp_forest_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "water",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/coral_generator": {
+  "niche": "coral_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "water",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/anemone_generator": {
+  "niche": "anemone_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "water",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/grass_meadow_scatter": {
+  "niche": "grass_meadow_scatter",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/flower_generator": {
+  "niche": "flower_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/mushroom_generator": {
+  "niche": "mushroom_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/moss_lichen_growth": {
+  "niche": "moss_lichen_growth",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/succulent_generator": {
+  "niche": "succulent_generator",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/bioluminescent_flora": {
+  "niche": "bioluminescent_flora",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "organic",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ },
+ "recipe/scree_talus_scatter": {
+  "niche": "scree_talus_scatter",
+  "tier": "recipe_verified",
+  "quality": "asset_fed_minimal",
+  "medium": "ground",
+  "steps": [
+   "import_asset(vault)",
+   "builtin:ARRAY"
+  ],
+  "license": "by",
+  "recipe": true
+ }
+}
