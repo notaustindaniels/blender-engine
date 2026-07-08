@@ -373,5 +373,15 @@
     "body": "<p><b>The no-spend path reached the execution milestone.</b> Baton taken (single-writer), L6 BlenderKit activated, and all 5 shader niches converted via free BlenderKit procedural materials + the R37 shader-probe.</p>\n<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>\n<tr><td><b>Gate v2 (governing)</b></td><td class=\"ok\"><b>23/57 = 40.4% — CLEARED</b> (12 full-pass + 11 recipe-verified)</td></tr>\n<tr><td>Pass-rate of-probed / of-all</td><td class=\"ok\">63.2% / 50.0%</td></tr>\n<tr><td>Unattainable (Stage-2 backlog)</td><td>2 (karst, coral_atoll)</td></tr>\n</tbody></table>\n<p><b>Progression:</b> 9.3% (D-003) → 29.8% (D-005 walk-away) → 31.6% (fern R37) → <b>40.4%</b> (L6 shaders). Every step machine-verified.</p>\n<p><b>L6 BlenderKit</b> (D-001 R10, ToS-read-first): ACTIVATED with the Article-5 no-export constraint captured (R26; rendered-video output is compliant). Download flow solved (scene_uuid + BlenderKit UA). Shader passes: ice 0.070, gas_giant 0.058, snow 0.032, cracked_earth 0.040, organic_cell 0.082 (earlier quarantines were concurrency starvation — single-container passes). <b>SINGLE-WRITER rule encoded</b> (CLAUDE.md + SPEC §12.9 + <code>.agent-lock</code>) to prevent the parallel-edit collision recurring; prior sessions R37–R40 accepted as-is.</p>\n<p><b>R23 priced-options: NOT fired</b> — 40% reached with ZERO spend, so no paid-vs-build request. Premise CONFIRMED (R36) <b>and</b> the execution milestone met. <b>Nothing owner-blocking remains for the gate.</b> Route B ($0 GN-pack batch) is optional depth. Corpus ready for Stage-2 handoff.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 38,
+    "ts": "2026-07-08T13:45:34-04:00",
+    "title": "D-007 ACKNOWLEDGED (R41–R45) — running the delta review of the 31.6%→40.4% work before 'done'",
+    "tag": "milestone",
+    "status": "d007-ack-r41-running",
+    "body": "<p>D-007 (Stage-1 close-out) read. \"Done\" is contingent on <b>R41</b> — a fresh-context delta review of the 31.6%→40.4% (L6 shader) work. Pre-verified the substance before the review:</p>\n<ul>\n<li><b>(b) genuinely procedural:</b> all 5 BlenderKit shader materials inspected — procedural generator nodes (in groups), <b>ZERO image-texture nodes</b> anywhere. None are image-texture packs. <code>procedural:true</code> is honest.</li>\n<li><b>(c)</b> concurrency-starvation → single-container re-pass history recorded per manifest.</li>\n<li><b>(d)</b> per-asset license captured: all 5 = <code>royalty_free</code> (RF, none CC0).</li>\n</ul>\n<p>Acknowledging R41 (delta review, gating), R42 (Route B depth batch ~15, upgrade asset_fed_minimal + fill water/air/urban + aggregate/fill/reveal cells), R43 (HANDOFF.md — license obligations load-bearing), R44 (stage1-final + whole-taxonomy report), R45 (Stage 2 opens by its own PRD/SPEC). Running R41 now; on PASS → Route B → HANDOFF → stage1-final → Stage 1 CLOSED.</p>",
+    "code": "",
+    "media": []
   }
 ]
