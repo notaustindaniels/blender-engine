@@ -19,7 +19,7 @@ Actions secret. Continuing the local grind only produces honest-but-degraded qua
 CI secret** (deploy the owner-provided key via GitHub's encrypted-secret API, R2-compliant) → **HTTP 403:
 the RW token has `Actions: write` but NOT `Secrets: write`.** So L6-at-scale is a TESTED credential wall:
 owner adds `BLENDERKIT_API_KEY` as a repo secret (then I dispatch `l6-wave`) OR grants the token
-`Secrets: write` (then I do it all). Route B thin (D-007). Guardrails unchanged. TESTED-R2-wall terminal:
+`Secrets: write` (then I do it all). Route B thin (D-007). Guardrails unchanged. TESTED-R2-wall terminal (R46 requires 'gated in NATIVE CI' — local emulation is non-compliant AND degraded; native CI = l6-wave = owner-gated secret, HTTP 403):
 automatable work done to the environment's limit; the efficient full-sweep awaits the owner's CI-secret
 action (OWNER-QUEUE, top item).
 
