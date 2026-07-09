@@ -7,11 +7,16 @@ PROBED + INGESTED + tagged; L5-pending RESOLVED (`reports/l5-resolution.md`); **
 `snapshot-wave2`, `snapshot-l6-local`). L6 ran via a robust per-material-timeout probe (batched probe
 hangs on bad renders; single-material + 135s outer timeout is reliable, ~3 genuine passes/turn). Honesty
 held: ~5 false name-matches removed (R14 — GN gate verifies geometry, name-match verifies niche fit). The
-targeted-search vein is now DRYING (recent batches return "none"/false — locally-reachable niches
-substantially covered). **Remaining L6 = the exhaustive 773-candidate sweep** (redundant coverage +
-emulation-timeout materials aurora/planet/lava + niches with no free asset) → the `l6-wave.yml` CI wave,
-gated on ONE owner action: add `BLENDERKIT_API_KEY` as a repo Actions secret. Route B thin (D-007).
-Guardrails unchanged. Valid terminal state:
+targeted-search vein DRIED. **The exhaustive full-sweep is now EXECUTING** via `l6_full_sweep.py`
+(resumable: acquire→prescan→gate→manifest→index per candidate, in promise order) — **19/773 gated so
+far**, but the DATA is decisive: local arm64-emulation-of-amd64 degrades **~95% of gates to
+quarantine/timeout/noresult (only 1 pass in 19)** because the score-ordered top BlenderKit materials are
+heavy photoscans/high-res PBR that CRASH the emulated Blender probe. These same candidates pass in native
+CI. So: **L6 coverage is maximized locally (niche-targeting → 15.9%); the full-sweep with MEANINGFUL gate
+states requires native CI** (`l6-wave.yml`), gated on ONE owner action: add `BLENDERKIT_API_KEY` as a repo
+Actions secret. Continuing the local grind only produces honest-but-degraded quarantine_timeout manifests
+(~95 turns for 754 candidates) that misrepresent capability vs. CI. Route B thin (D-007). Guardrails
+unchanged. Evidence-backed R2 wall — terminal state:
 automatable work done to the environment's limit; the efficient full-sweep awaits the owner's CI-secret
 action (OWNER-QUEUE, top item).
 
