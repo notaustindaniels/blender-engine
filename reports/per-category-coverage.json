@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 36,
- "pct": 11.0,
+ "total_covered": 37,
+ "pct": 11.3,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -1149,8 +1149,8 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 6,
-   "pct": 27.3,
+   "covered": 7,
+   "pct": 31.8,
    "niches": [
     {
      "niche": "wood_shader",
@@ -1221,7 +1221,7 @@
     {
      "niche": "glass_material",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

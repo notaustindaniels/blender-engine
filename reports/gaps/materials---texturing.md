@@ -1,6 +1,6 @@
 # Gap report — Materials & texturing (D-008 R47)
 
-Coverage: **6/22 = 27.3%** (full_pass + recipe_verified). 16 gaps.
+Coverage: **7/22 = 31.8%** (full_pass + recipe_verified). 15 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
@@ -15,7 +15,7 @@ Coverage: **6/22 = 27.3%** (full_pass + recipe_verified). 16 gaps.
 | pencil_stencil_system | 1 | GAP | unclassified |
 | imperfection_overlays | 1 | GAP | unclassified |
 | camo_pattern_shader | 1 | full_pass | unclassified |
-| glass_material | 1 | GAP | unclassified |
+| glass_material | 1 | full_pass | unclassified |
 | lava_shader | 1 | GAP | unclassified |
 | hologram_shader | 1 | GAP | unclassified |
 | glitch_shader | 1 | GAP | unclassified |
@@ -27,4 +27,4 @@ Coverage: **6/22 = 27.3%** (full_pass + recipe_verified). 16 gaps.
 | wet_surface_puddles | 2 | GAP | unclassified |
 | fabric_weave_shader | 2 | GAP | unclassified |
 
-**Gaps (16):** what the free ecosystem lacks here — `brick_shader`(unclassified), `tile_grout_shader`(unclassified), `car_paint_shader`(unclassified), `toon_npr_shader`(unclassified), `pencil_stencil_system`(unclassified), `imperfection_overlays`(unclassified), `glass_material`(unclassified), `lava_shader`(unclassified), `hologram_shader`(unclassified), `glitch_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `metal_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)
+**Gaps (15):** what the free ecosystem lacks here — `brick_shader`(unclassified), `tile_grout_shader`(unclassified), `car_paint_shader`(unclassified), `toon_npr_shader`(unclassified), `pencil_stencil_system`(unclassified), `imperfection_overlays`(unclassified), `lava_shader`(unclassified), `hologram_shader`(unclassified), `glitch_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `metal_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)
