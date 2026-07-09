@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 27,
- "pct": 8.2,
+ "total_covered": 30,
+ "pct": 9.1,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -706,8 +706,8 @@
   },
   "Characters & creatures": {
    "present": 8,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 12.5,
    "niches": [
     {
      "niche": "parametric_human",
@@ -742,7 +742,7 @@
     {
      "niche": "hair_groom_presets",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -870,8 +870,8 @@
   },
   "Fabric & soft goods": {
    "present": 5,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 20.0,
    "niches": [
     {
      "niche": "knit_weave_generator",
@@ -900,7 +900,7 @@
     {
      "niche": "cloth_sim",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     }
    ]
@@ -1952,13 +1952,13 @@
   },
   "Animation: cloth, rope & soft proxies": {
    "present": 5,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 20.0,
    "niches": [
     {
      "niche": "fake_cloth",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

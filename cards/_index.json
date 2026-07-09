@@ -41,6 +41,25 @@
    "4.5"
   ]
  },
+ "operator/aniraiden__hairreconstruction::hair_recon.add_guide_curve": {
+  "cid": "aniraiden__hairreconstruction",
+  "operator_id": "hair_recon.add_guide_curve",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "hair_groom_presets"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/beneking102__bene-proggen-maps::procgen_maps.generate_city": {
   "cid": "beneking102__bene-proggen-maps",
   "operator_id": "procgen_maps.generate_city",
@@ -301,6 +320,25 @@
    "4.5"
   ]
  },
+ "operator/dadscastle__grease-pencil-to-curves::object.gpto_add_simplify_modifier": {
+  "cid": "dadscastle__grease-pencil-to-curves",
+  "operator_id": "object.gpto_add_simplify_modifier",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "hair_groom_presets"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/donitzo__procedural-asteroid-generator::donitzo__procedural-asteroid-generator": {
   "cid": "donitzo__procedural-asteroid-generator",
   "operator_id": "donitzo__procedural-asteroid-generator",
@@ -319,6 +357,47 @@
   "license": "MIT",
   "versions": [
    "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/greg-aster__blender-generate-hair-as-mesh-add-on::mesh_hair.add_guide": {
+  "cid": "greg-aster__blender-generate-hair-as-mesh-add-on",
+  "operator_id": "mesh_hair.add_guide",
+  "kind": "bpy_op",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "hair_groom_presets"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/hartface__clothdrop-reborn::clothdrop.adjust_value": {
+  "cid": "hartface__clothdrop-reborn",
+  "operator_id": "clothdrop.adjust_value",
+  "kind": "bpy_op",
+  "verbs": [
+   "deform",
+   "simulate"
+  ],
+  "niches": [
+   "cloth_sim",
+   "fake_cloth"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "SPDX:GPL-3.0-or-later",
+  "versions": [
    "4.2",
    "4.5"
   ]

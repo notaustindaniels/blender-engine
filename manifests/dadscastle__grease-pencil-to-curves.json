@@ -37,5 +37,19 @@
   "artifact_type": "extension_manifest",
   "verified_at": "2026-07-08T22:59:09+00:00",
   "prescan_hits": [],
-  "declared_min": "4.3"
+  "declared_min": "4.3",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "object.gpto_add_simplify_modifier",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "hair_groom_presets"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'hair' in name/tagline -> ['hair_groom_presets'] (Characters & creatures)."
 }

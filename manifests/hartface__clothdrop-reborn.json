@@ -42,5 +42,21 @@
   "artifact_type": "extension_manifest",
   "verified_at": "2026-07-08T22:59:42+00:00",
   "prescan_hits": [],
-  "declared_min": "4.2"
+  "declared_min": "4.2",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "clothdrop.adjust_value",
+      "verbs": [
+        "deform",
+        "simulate"
+      ],
+      "niches": [
+        "cloth_sim",
+        "fake_cloth"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'cloth' in name/tagline -> ['cloth_sim', 'fake_cloth'] (Fabric & soft goods)."
 }

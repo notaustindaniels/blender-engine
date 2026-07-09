@@ -43,6 +43,13 @@ for c in TAX["categories"]:
                 TOKEN_NICHE.setdefault(al, set()).add(nid)
 
 
+# curated distinctive object-noun -> niches (safe as single-token match); built by build step
+DISTINCTIVE = {}
+_dp = pathlib.Path("inputs/enrich-distinctive.json")
+if _dp.exists():
+    DISTINCTIVE = {k: v for k, v in json.loads(_dp.read_text()).items()}
+
+
 def candidate_text():
     txt = {}
     for cf in glob.glob(str(ROOT / "candidates/*.jsonl")):
@@ -62,6 +69,7 @@ def candidate_text():
 
 def match_niches(text):
     hits = {}
+    distinctive_hit = set()          # niches reached via a curated distinctive object-noun (safe single-token)
     for phrase, niches in PHRASE_NICHE.items():
         if phrase in text:
             for nz in niches:
@@ -70,16 +78,19 @@ def match_niches(text):
         if re.search(rf"\b{re.escape(tok)}\b", text):
             for nz in niches:
                 hits[nz] = hits.get(nz, 0) + 1
-    # best niches by score; keep clear winners only
+    for tok, niches in DISTINCTIVE.items():
+        if re.search(rf"\b{re.escape(tok)}\b", text):
+            for nz in niches:
+                hits[nz] = hits.get(nz, 0) + 2          # distinctive noun: worth 2 on its own
+                distinctive_hit.add(nz)
     if not hits:
         return [], ""
     top = sorted(hits.items(), key=lambda kv: -kv[1])
     best = top[0][1]
-    # PRECISION over recall (R14: no fabricated coverage). Require a phrase match (score 3) OR 2+ token
-    # hits — a single common-word token (paint/magic/path/data/cell...) matches incidentally and produces
-    # garbage coverage. Concrete-noun single-token misses (cloth->cloth_sim) are honest UNDER-coverage,
-    # surfaced in the gap reports; lift recall later via a curated distinctive-noun allowlist or AI-enrich.
-    keep = [nz for nz, s in top if s >= max(2, best)]
+    # PRECISION over recall (R14). A common-word single token (paint/magic/path...) matches incidentally
+    # -> require phrase (3) or 2+ hits. BUT a curated distinctive object-noun (cloth/gear/canyon/coral...)
+    # is specific enough to trust on ONE match. Keep: (2+/phrase winners) ∪ (distinctive single-token).
+    keep = [nz for nz, s in top if s >= max(2, best) or nz in distinctive_hit]
     matched = next((t for t in TOKEN_NICHE if re.search(rf"\b{re.escape(t)}\b", text) and keep and keep[0] in TOKEN_NICHE[t]), "")
     return keep[:2], matched
 
@@ -103,6 +114,10 @@ def main():
         text = ctext.get(cid, "")
         niches, matched = match_niches(text)
         if not niches:
+            if man.get("enriched_by") == "keyword-heuristic":   # clear a now-stale heuristic match (idempotent)
+                for k in ("operators_enriched", "enriched_by", "enrich_note"):
+                    man.pop(k, None)
+                pathlib.Path(mp).write_text(json.dumps(man, indent=2))
             nomatch += 1; continue
         verbs = sorted({v for nz in niches for v in NICHE_VERBS[nz]})
         ops = man.get("operators") or []

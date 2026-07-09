@@ -67,5 +67,19 @@
   "artifact_type": "python_bl_info",
   "verified_at": "2026-07-09T00:59:12+00:00",
   "prescan_hits": [],
-  "declared_min": "4.5"
+  "declared_min": "4.5",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "hair_recon.add_guide_curve",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "hair_groom_presets"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'hair' in name/tagline -> ['hair_groom_presets'] (Characters & creatures)."
 }

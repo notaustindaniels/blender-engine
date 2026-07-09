@@ -1,0 +1,173 @@
+{
+ "canyon": [
+  "canyon_mesa_generator"
+ ],
+ "cliff": [
+  "cliff_rockface_generator"
+ ],
+ "scree": [
+  "scree_talus_scatter"
+ ],
+ "cave": [
+  "cave_network_generator"
+ ],
+ "stalactite": [
+  "stalactite_generator"
+ ],
+ "river": [
+  "chart_rig_sankey_flow",
+  "river_generator"
+ ],
+ "waterfall": [
+  "waterfall_generator"
+ ],
+ "coral": [
+  "coral_atoll_generator",
+  "coral_generator"
+ ],
+ "dune": [
+  "dune_generator"
+ ],
+ "glacier": [
+  "glacier_flow_generator"
+ ],
+ "icicle": [
+  "icicle_generator"
+ ],
+ "snowdrift": [
+  "snowdrift_generator"
+ ],
+ "crater": [
+  "crater_field_generator"
+ ],
+ "asteroid": [
+  "asteroid_generator"
+ ],
+ "lava": [
+  "chart_rig_sankey_flow",
+  "lava_field_generator",
+  "lava_shader"
+ ],
+ "fissure": [
+  "fissure_generator"
+ ],
+ "bonsai": [
+  "bonsai_generator"
+ ],
+ "grass": [
+  "grass_meadow_scatter"
+ ],
+ "flower": [
+  "flower_generator"
+ ],
+ "succulent": [
+  "succulent_generator"
+ ],
+ "fern": [
+  "fern_generator"
+ ],
+ "vine": [
+  "growth_along_spline",
+  "vine_growth"
+ ],
+ "ivy": [
+  "ivy_generator"
+ ],
+ "mushroom": [
+  "mushroom_generator"
+ ],
+ "shelf": [
+  "mushroom_generator",
+  "shelf_filler"
+ ],
+ "moss": [
+  "moss_lichen_growth"
+ ],
+ "orchard": [
+  "orchard_row_scatter"
+ ],
+ "kelp": [
+  "kelp_forest_generator"
+ ],
+ "anemone": [
+  "anemone_generator"
+ ],
+ "tentacle": [
+  "bioluminescent_flora",
+  "tentacle_generator"
+ ],
+ "tunnel": [
+  "tunnel_generator"
+ ],
+ "crowd": [
+  "crowd_formation_display",
+  "crowd_locomotion",
+  "crowd_system",
+  "locomotion_crowd_human"
+ ],
+ "castle": [
+  "castle_generator"
+ ],
+ "gothic": [
+  "gothic_tracery"
+ ],
+ "scaffolding": [
+  "scaffolding_generator"
+ ],
+ "crane": [
+  "build_reveal",
+  "crane_rig"
+ ],
+ "greeble": [
+  "greeble_nodes"
+ ],
+ "curtain": [
+  "curtain_blind_generator"
+ ],
+ "rug": [
+  "rug_carpet_generator"
+ ],
+ "carpet": [
+  "rug_carpet_generator"
+ ],
+ "chandelier": [
+  "chandelier_generator"
+ ],
+ "feather": [
+  "scale_feather_generator"
+ ],
+ "wing": [
+  "wing_flap",
+  "wing_limb_kit"
+ ],
+ "hair": [
+  "hair_groom_presets"
+ ],
+ "sword": [
+  "motion_trails",
+  "sword_generator"
+ ],
+ "jewelry": [
+  "chain_generator",
+  "jewelry_generator"
+ ],
+ "knit": [
+  "knit_weave_generator"
+ ],
+ "weave": [
+  "fabric_weave_shader",
+  "knit_weave_generator"
+ ],
+ "stitch": [
+  "stitch_seam_generator"
+ ],
+ "cloth": [
+  "cloth_sim",
+  "fabric_weave_shader",
+  "fake_cloth"
+ ],
+ "fence": [
+  "fence_generator",
+  "histogram_accumulation"
+ ]
+}

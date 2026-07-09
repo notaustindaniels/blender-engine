@@ -45,5 +45,19 @@
   "artifact_type": "python_bl_info",
   "verified_at": "2026-07-09T00:59:31+00:00",
   "prescan_hits": [],
-  "declared_min": "4.4"
+  "declared_min": "4.4",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "mesh_hair.add_guide",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "hair_groom_presets"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'hair' in name/tagline -> ['hair_groom_presets'] (Characters & creatures)."
 }
