@@ -1,14 +1,17 @@
 # NEXT-SESSION.md — full-taxonomy harvest campaign (D-008 R46–R55)
 
 **One-paragraph status (2026-07-09):** Navigation layer + Waves 1 (L1, 904) + 2 (L2, 412, all 26 cats)
-PROBED + INGESTED + tagged (`snapshot-nav-v1`, `snapshot-wave2`); L5-pending RESOLVED (`reports/
-l5-resolution.md` — mostly paid non-procedural excluded, free generators rerouted+probed → several
-NEVER_ALLOW-quarantined by R6, checkout batch documented); L6 materials at 7/22 locally. **Whole-taxonomy
-11.3% (37/328), 10 categories**, both tripwires clear, golden eval **hit@5 = 1.0**. **L1/L2/L5 automatable
-lanes are documented-exhausted.** The one remaining big lever — the full L6 sweep (600 materials + 173
-node-groups) — is **built and ready-to-fire** (`l6-wave.yml`, registered) but gated on ONE owner action:
-add `BLENDERKIT_API_KEY` as a repo Actions secret (local grind is impractical here — background tasks get
-killed, foreground does ~2/10min). Route B thin (D-007). Guardrails unchanged. Valid terminal state:
+PROBED + INGESTED + tagged; L5-pending RESOLVED (`reports/l5-resolution.md`); **L6 EXECUTED locally** —
+21 materials (shader-probe) + 6 node-groups (GN-gate), opening 13 categories → **whole-taxonomy 15.9%
+(52/328), 13 categories**, both tripwires clear, golden eval **hit@5 = 1.0** (tags `snapshot-nav-v1`,
+`snapshot-wave2`, `snapshot-l6-local`). L6 ran via a robust per-material-timeout probe (batched probe
+hangs on bad renders; single-material + 135s outer timeout is reliable, ~3 genuine passes/turn). Honesty
+held: ~5 false name-matches removed (R14 — GN gate verifies geometry, name-match verifies niche fit). The
+targeted-search vein is now DRYING (recent batches return "none"/false — locally-reachable niches
+substantially covered). **Remaining L6 = the exhaustive 773-candidate sweep** (redundant coverage +
+emulation-timeout materials aurora/planet/lava + niches with no free asset) → the `l6-wave.yml` CI wave,
+gated on ONE owner action: add `BLENDERKIT_API_KEY` as a repo Actions secret. Route B thin (D-007).
+Guardrails unchanged. Valid terminal state:
 automatable work done to the environment's limit; the efficient full-sweep awaits the owner's CI-secret
 action (OWNER-QUEUE, top item).
 
