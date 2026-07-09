@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__222f4856-803e-40c2-8e56-29b0e32125a4",
+  "name": "Brick Wall 08",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__7e7e3c14-b35b-48bf-9911-b793dcd4787a",
+  "name": "Brick Pavement",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

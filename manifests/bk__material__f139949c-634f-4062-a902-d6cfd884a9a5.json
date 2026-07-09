@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__f139949c-634f-4062-a902-d6cfd884a9a5",
+  "name": "Clay Block Wall",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}
