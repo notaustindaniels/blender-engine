@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bkmat__glitch_shader",
+  "name": "glitch_shader",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.15669
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "material",
+      "id": "bkmat__glitch_shader:material",
+      "verbs": [
+        "fill"
+      ],
+      "niches": [
+        "glitch_shader"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "shader-probe (L6 material, D-006 R37)",
+  "enrich_note": "BlenderKit procedural material shader-probed delta=0.157 (>=0.02 pass) -> covers glitch_shader."
+}

@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 42,
- "pct": 12.8,
+ "total_covered": 46,
+ "pct": 14.0,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -870,13 +870,13 @@
   },
   "Fabric & soft goods": {
    "present": 5,
-   "covered": 1,
-   "pct": 20.0,
+   "covered": 2,
+   "pct": 40.0,
    "niches": [
     {
      "niche": "knit_weave_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -907,8 +907,8 @@
   },
   "Nature elements & FX geometry": {
    "present": 24,
-   "covered": 1,
-   "pct": 4.2,
+   "covered": 2,
+   "pct": 8.3,
    "niches": [
     {
      "niche": "rock_scatter",
@@ -931,7 +931,7 @@
     {
      "niche": "skybox_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1149,8 +1149,8 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 12,
-   "pct": 54.5,
+   "covered": 14,
+   "pct": 63.6,
    "niches": [
     {
      "niche": "wood_shader",
@@ -1209,7 +1209,7 @@
     {
      "niche": "imperfection_overlays",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1239,7 +1239,7 @@
     {
      "niche": "glitch_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

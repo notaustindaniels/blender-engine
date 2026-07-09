@@ -1,19 +1,19 @@
 # Per-category coverage + gap summary (D-008 R47) — all 26 categories
 
-**Whole-taxonomy coverage: 42/328 = 12.8%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
+**Whole-taxonomy coverage: 46/328 = 14.0%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
 
 | category | covered | present | % | gaps |
 |---|---|---|---|---|
+| Materials & texturing | 14 | 22 | 63.6% | 8 |
 | Vegetation & organic | 14 | 25 | 56.0% | 11 |
-| Materials & texturing | 12 | 22 | 54.5% | 10 |
+| Fabric & soft goods | 2 | 5 | 40.0% | 3 |
 | Animation: stylized / NPR | 1 | 4 | 25.0% | 3 |
 | Terrain & landscape | 9 | 39 | 23.1% | 30 |
-| Fabric & soft goods | 1 | 5 | 20.0% | 4 |
 | Animation: cloth, rope & soft proxies | 1 | 5 | 20.0% | 4 |
 | Animation: camera & cinematic | 1 | 5 | 20.0% | 4 |
 | Characters & creatures | 1 | 8 | 12.5% | 7 |
+| Nature elements & FX geometry | 2 | 24 | 8.3% | 22 |
 | Abstract, mograph & design | 1 | 14 | 7.1% | 13 |
-| Nature elements & FX geometry | 1 | 24 | 4.2% | 23 |
 | Cities & urban | 0 | 18 | 0.0% | 18 |
 | Buildings & architecture | 0 | 17 | 0.0% | 17 |
 | Rooms & interiors | 0 | 12 | 0.0% | 12 |
