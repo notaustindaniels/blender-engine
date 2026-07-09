@@ -1,12 +1,13 @@
 # NEXT-SESSION.md — full-taxonomy harvest campaign (D-008 R46–R55)
 
-**One-paragraph status (2026-07-08):** The navigation layer is complete and tagged (`snapshot-nav-v1`,
-golden eval hit@5=1.0). The full-taxonomy harvest is now RUNNING as sharded CI waves. Wave 1 (L1 full
-catalog — 904 extensions across all 26 categories, stripped of the T+V thin-slice filter) is being
-dispatched to `wave-probe.yml` (8 parallel native-amd64 shards). The supervisor session dispatches →
-polls → ingests manifests → mints cards → rebuilds the KB → dispatches the next wave. Guardrails
-unchanged: prescan NEVER_ALLOW holds, sandbox `--network none`, single-writer, secrets never printed,
-retrieval-proposes/registry-disposes, R11 (order-not-exclude).
+**One-paragraph status (2026-07-09):** Navigation layer complete + tagged (`snapshot-nav-v1`). Waves 1
+(L1 full catalog, 904) and 2 (L2 full sweep, 412 new across 26 categories) are PROBED + INGESTED in
+native CI and tagged (`snapshot-wave2`): whole-taxonomy coverage **7.0% → 9.1%, 9 categories** (full_pass
++ recipe_verified), pass-rate tripwire clear both waves (64.4%/52.9% of-all), golden eval **hit@5 = 1.0**.
+An L6 BlenderKit material batch (uncovered Materials-category niches) is probing locally now. Remaining
+automatable: finish L6 (materials + node-groups), L5-pending resolution pass (→ OWNER-QUEUE checkout
+batch). Owner-gated: BlenderKit key in CI for the full 773 L6 sweep; L5/Route B checkouts; prescan
+clearances. Guardrails unchanged throughout.
 
 ## Wave chain (supervisor state)
 | wave | scope | candidates | status |
