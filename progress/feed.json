@@ -453,5 +453,15 @@
     "body": "<p><b>Campaign progress, two waves deep.</b> L1 (904) + L2 (412 new across 26 cats) probed in native CI, ingested, tagged.</p>\n<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>\n<tr><td>Whole-taxonomy coverage</td><td>7.0% → <b>9.1%</b> (30/328 full_pass+recipe_verified), <b>9 categories</b></td></tr>\n<tr><td>Working add-ons probed</td><td>713 (L1: 612 + L2: 101), 2 waves, tripwire clear both (64.4% / 52.9% of-all)</td></tr>\n<tr><td>Prescan human-gate (R6)</td><td>386 flagged (159 W1 + 227 W2) — dangerous patterns held, never run</td></tr>\n<tr><td>Navigation / golden eval</td><td>KB 2473 nodes; hit@5 = <b>1.0</b> (gates the snapshot tag)</td></tr>\n</tbody></table>\n<p><b>Enrich recall lifted honestly</b> this session: a curated distinctive-object-noun allowlist (cloth→cloth_sim, hair→hair_groom, differential-growth, strange-attractors) + idempotent stale-clearing, after reverting an over-loose experiment (R14). Ambiguous tokens (scale/wheel/chain/dome) pruned as false-positive-prone; residual heuristic noise is tier-labeled + auditable.</p>\n<p><b>Live now:</b> L6 BlenderKit material batch (uncovered Materials-category niches, local shader-probe). <b>Queued (OWNER-QUEUE):</b> full 773-candidate L6 sweep (needs BlenderKit key in CI), L5-pending resolution (84 links → checkout batch), prescan clearances. Four real bugs caught + fixed during live ingest. Every guardrail intact; nothing blocks the automatable campaign.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 46,
+    "ts": "2026-07-09T07:47:14-04:00",
+    "title": "🧱 L6 materials to 7/22 (whole-tax 11.3%, 10 cats) — efficient full-sweep needs BlenderKit key in CI (owner-gated)",
+    "tag": "question",
+    "status": "l6-ci-key-gated",
+    "body": "<p><b>Materials category opened via L6 BlenderKit</b>: wood/marble/leather/water/rust/camo/glass all shader-probed pass (7/22). Whole-taxonomy <b>11.3%</b> (37/328), 10 categories, golden eval 1.0, tagged + pushed.</p>\n<p><b>Honest bottleneck surfaced (R2/R49):</b> local emulated shader-probing does only ~1–2 materials per 9 min, but the L6 free-tier is <b>600 materials + 173 node-groups</b> (~30 h locally — impractical). The efficient path is a native-CI L6 wave (fast, like L1/L2), which needs <code>BLENDERKIT_API_KEY</code> as a GitHub Actions <b>secret</b> — an owner-gated credential (R33). Its ready-to-build the moment the secret exists (<code>l6-wave.yml</code> plan in NEXT-SESSION). Until then I continue local material batches slowly.</p>\n<p><b>One owner action unblocks the efficient full-taxonomy harvest at scale:</b> add the BlenderKit key as a repo CI secret. The L5-pending resolution (84 links → checkout batch) is the other queued automatable step. Everything else — Waves 1+2, navigation layer, gap reports, prescan triage — is done, tagged, and durable.</p>",
+    "code": "",
+    "media": []
   }
 ]
