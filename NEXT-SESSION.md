@@ -1,13 +1,16 @@
 # NEXT-SESSION.md — full-taxonomy harvest campaign (D-008 R46–R55)
 
-**One-paragraph status (2026-07-09):** Navigation layer complete + tagged (`snapshot-nav-v1`). Waves 1
-(L1 full catalog, 904) and 2 (L2 full sweep, 412 new across 26 categories) are PROBED + INGESTED in
-native CI and tagged (`snapshot-wave2`): whole-taxonomy coverage **7.0% → 9.1%, 9 categories** (full_pass
-+ recipe_verified), pass-rate tripwire clear both waves (64.4%/52.9% of-all), golden eval **hit@5 = 1.0**.
-An L6 BlenderKit material batch (uncovered Materials-category niches) is probing locally now. Remaining
-automatable: finish L6 (materials + node-groups), L5-pending resolution pass (→ OWNER-QUEUE checkout
-batch). Owner-gated: BlenderKit key in CI for the full 773 L6 sweep; L5/Route B checkouts; prescan
-clearances. Guardrails unchanged throughout.
+**One-paragraph status (2026-07-09):** Navigation layer + Waves 1 (L1, 904) + 2 (L2, 412, all 26 cats)
+PROBED + INGESTED + tagged (`snapshot-nav-v1`, `snapshot-wave2`); L5-pending RESOLVED (`reports/
+l5-resolution.md` — mostly paid non-procedural excluded, free generators rerouted+probed → several
+NEVER_ALLOW-quarantined by R6, checkout batch documented); L6 materials at 7/22 locally. **Whole-taxonomy
+11.3% (37/328), 10 categories**, both tripwires clear, golden eval **hit@5 = 1.0**. **L1/L2/L5 automatable
+lanes are documented-exhausted.** The one remaining big lever — the full L6 sweep (600 materials + 173
+node-groups) — is **built and ready-to-fire** (`l6-wave.yml`, registered) but gated on ONE owner action:
+add `BLENDERKIT_API_KEY` as a repo Actions secret (local grind is impractical here — background tasks get
+killed, foreground does ~2/10min). Route B thin (D-007). Guardrails unchanged. Valid terminal state:
+automatable work done to the environment's limit; the efficient full-sweep awaits the owner's CI-secret
+action (OWNER-QUEUE, top item).
 
 ## ⚑ EFFICIENT-PATH BOTTLENECK (surface to owner): the full L6 sweep needs the BlenderKit key in CI
 Local emulated shader-probing does **~1–2 materials per 9 min** — the L6 free-tier is **600 materials +

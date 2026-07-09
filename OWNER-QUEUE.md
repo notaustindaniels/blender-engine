@@ -4,11 +4,15 @@ The full-taxonomy harvest runs in native-CI waves (L1 ✓, L2 ✓, L6 in progres
 irreducible human floor (R33) or an owner-gated credential/decision. Automatable work continues without
 these; surfaced per R49 (batched, consolidated). Nothing here blocks the automatable campaign.
 
-## Owner-gated credential (blocks the FULL L6 sweep only)
-- [ ] **BlenderKit key in CI for the 773-candidate L6 sweep** · the full sweep needs `BLENDERKIT_API_KEY`
-  as a GitHub Actions secret (a wave probing 600 materials + 173 node-groups); the key is yours to place
-  (R33). Local batches proceed now with the local key (no CI secret) — a representative material batch is
-  running. Say the word to add the CI secret for the full sweep, or I continue in local batches.
+## ⚡ ONE ACTION unblocks the full-taxonomy sweep at scale (owner-gated credential, R33)
+- [ ] **Add `BLENDERKIT_API_KEY` as a repo Actions secret**, then dispatch **`l6-wave`**. The full
+  773-candidate L6 sweep (600 materials + 173 node-groups) is **built and ready-to-fire** as a sharded
+  native-CI wave (`.github/workflows/l6-wave.yml` — registered). Exact steps: GitHub → repo **Settings →
+  Secrets and variables → Actions → New repository secret** → name `BLENDERKIT_API_KEY`, value = your
+  BlenderKit key → then **Actions → l6-wave → Run workflow**. This turns the ~30h local grind (background
+  tasks keep getting killed here; foreground does ~2 materials/10min) into a fast parallel wave like
+  L1/L2. I ingest the artifacts, mint cards, rebuild the KB, and re-run the eval on completion. Until
+  then, 7 material niches are covered locally (Materials 7/22) as a representative sample.
 
 ## $0 checkout batches (your hands — R33, Gumroad §14 no-automation)
 - [ ] **L5 pending resolution** · `candidates/L5_pending.jsonl` holds **84** marketplace links (Gumroad/
