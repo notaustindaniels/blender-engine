@@ -1,0 +1,51 @@
+# l6-wave — D-008 R46 L6 BlenderKit full free-tier sweep, SHARDED native gate. Downloads each candidate
+# via the BlenderKit API (scene_uuid+UA), prescans, and gates in the sandbox: materials via the shader-
+# probe, node-groups via the geometry-node gate. Needs BLENDERKIT_API_KEY as a repo SECRET (owner-gated,
+# R33) — the ONE action that turns the ~30h local grind into a fast parallel wave. $0 public Actions.
+# Guardrails unchanged: prescan NEVER_ALLOW holds, sandbox --network none, secret never printed (R2).
+name: l6-wave
+on:
+  workflow_dispatch:
+    inputs:
+      timeout:
+        description: "per-artifact wall-clock cap (seconds)"
+        default: "150"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Cache Blender tarballs
+        uses: actions/cache@v4
+        with:
+          path: sandbox/.tarball-cache
+          key: blender-tarballs-v1
+      - name: Build the probe images (native amd64)
+        run: bash sandbox/build_images.sh all
+      - name: Acquire (BlenderKit) + prescan + probe this shard
+        env:
+          BLENDERKIT_API_KEY: ${{ secrets.BLENDERKIT_API_KEY }}   # owner-set secret; never printed
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          if [ -z "$BLENDERKIT_API_KEY" ]; then
+            echo "::error::BLENDERKIT_API_KEY secret not set — owner must add it (OWNER-QUEUE)"; exit 1
+          fi
+          uv run .archon/scripts/l6_acquire_probe.py --shard ${{ matrix.shard }} --shards 8 --timeout "${{ github.event.inputs.timeout }}"
+      - name: Upload shard manifests
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: l6-manifests-shard-${{ matrix.shard }}
+          path: manifests/
+          retention-days: 14
