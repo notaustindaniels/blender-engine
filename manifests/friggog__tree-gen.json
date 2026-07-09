@@ -1,0 +1,29 @@
+{
+  "canonical_id": "friggog__tree-gen",
+  "artifact": "friggog__tree-gen.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:14+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": null
+}

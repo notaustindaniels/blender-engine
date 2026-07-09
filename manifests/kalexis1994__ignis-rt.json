@@ -1,0 +1,30 @@
+{
+  "canonical_id": "kalexis1994__ignis-rt",
+  "artifact": "kalexis1994__ignis-rt.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:06+00:00",
+  "prescan_hits": [
+    "ctypes",
+    "open-write",
+    "socket"
+  ]
+}

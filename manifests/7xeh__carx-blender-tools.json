@@ -1,0 +1,32 @@
+{
+  "canonical_id": "7xeh__carx-blender-tools",
+  "artifact": "7xeh__carx-blender-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.0 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.0 > 4.2"
+    },
+    "4.5": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.0 > 4.5"
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:39+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "5.0"
+}

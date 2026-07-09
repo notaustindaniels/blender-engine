@@ -1,0 +1,30 @@
+{
+  "canonical_id": "chrishayesmu__blender-spritesheet-renderer",
+  "artifact": "chrishayesmu__blender-spritesheet-renderer.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T01:00:05+00:00",
+  "prescan_hits": [
+    "open-write",
+    "subprocess",
+    "ctypes"
+  ]
+}

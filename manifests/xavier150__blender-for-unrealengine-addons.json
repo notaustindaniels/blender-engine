@@ -1,0 +1,33 @@
+{
+  "canonical_id": "xavier150__blender-for-unrealengine-addons",
+  "artifact": "xavier150__blender-for-unrealengine-addons.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T01:00:52+00:00",
+  "prescan_hits": [
+    "subprocess",
+    "os.system",
+    "open-write",
+    "driver-expression",
+    "socket",
+    "__import__"
+  ]
+}

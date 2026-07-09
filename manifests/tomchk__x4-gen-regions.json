@@ -1,0 +1,53 @@
+{
+  "canonical_id": "tomchk__x4-gen-regions",
+  "artifact": "tomchk__x4-gen-regions.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "view3d.blender_to_anixml",
+        "view3d.gen_ani",
+        "view3d.gen_orbits",
+        "view3d.gen_orbits_in_cluster",
+        "view3d.gen_regions"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "view3d.blender_to_anixml",
+        "view3d.gen_ani",
+        "view3d.gen_orbits",
+        "view3d.gen_orbits_in_cluster",
+        "view3d.gen_regions"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "view3d.blender_to_anixml",
+        "view3d.gen_ani",
+        "view3d.gen_orbits",
+        "view3d.gen_orbits_in_cluster",
+        "view3d.gen_regions"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "view3d.blender_to_anixml",
+    "view3d.gen_ani",
+    "view3d.gen_orbits",
+    "view3d.gen_orbits_in_cluster",
+    "view3d.gen_regions"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:05+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.80"
+}

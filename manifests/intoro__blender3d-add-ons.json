@@ -1,0 +1,30 @@
+{
+  "canonical_id": "intoro__blender3d-add-ons",
+  "artifact": "intoro__blender3d-add-ons.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:29+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "2.7"
+}

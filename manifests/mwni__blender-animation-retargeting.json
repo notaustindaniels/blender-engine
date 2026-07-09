@@ -1,0 +1,94 @@
+{
+  "canonical_id": "mwni__blender-animation-retargeting",
+  "artifact": "mwni__blender-animation-retargeting.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "alignment.apply",
+        "alignment.cancel",
+        "alignment.edit",
+        "alignment.reset",
+        "alignment.use_empty_pose",
+        "baking.bake",
+        "baking.batch_import",
+        "drivers.disable",
+        "drivers.enable",
+        "drivers.rebuild",
+        "mappings.apply",
+        "mappings.clear",
+        "mappings.edit",
+        "mappings.guess",
+        "mappings.guess_apply",
+        "mappings.guess_cancel",
+        "mappings.list_action",
+        "mappings.use_invalid_source_anyway",
+        "savefile.load",
+        "savefile.save"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "alignment.apply",
+        "alignment.cancel",
+        "alignment.edit",
+        "alignment.reset",
+        "alignment.use_empty_pose",
+        "baking.bake",
+        "baking.batch_import",
+        "drivers.disable",
+        "drivers.enable",
+        "drivers.rebuild",
+        "mappings.apply",
+        "mappings.clear",
+        "mappings.edit",
+        "mappings.guess",
+        "mappings.guess_apply",
+        "mappings.guess_cancel",
+        "mappings.list_action",
+        "mappings.use_invalid_source_anyway",
+        "savefile.load",
+        "savefile.save"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "alignment.apply",
+    "alignment.cancel",
+    "alignment.edit",
+    "alignment.reset",
+    "alignment.use_empty_pose",
+    "baking.bake",
+    "baking.batch_import",
+    "drivers.disable",
+    "drivers.enable",
+    "drivers.rebuild",
+    "mappings.apply",
+    "mappings.clear",
+    "mappings.edit",
+    "mappings.guess",
+    "mappings.guess_apply",
+    "mappings.guess_cancel",
+    "mappings.list_action",
+    "mappings.use_invalid_source_anyway",
+    "savefile.load",
+    "savefile.save"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T01:00:05+00:00",
+  "prescan_hits": [
+    "driver-expression",
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

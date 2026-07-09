@@ -1,0 +1,48 @@
+{
+  "canonical_id": "daikiad__blender-lucid-renderer",
+  "artifact": "daikiad__blender-lucid-renderer.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "lucid_render.clear_path_curves",
+        "lucid_render.create_path_curves",
+        "lucid_render.deselect_all_paths",
+        "lucid_render.highlight_path",
+        "lucid_render.pixel_inspector",
+        "lucid_render.select_all_paths",
+        "lucid_render.toggle_path_selection"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "lucid_render.clear_path_curves",
+    "lucid_render.create_path_curves",
+    "lucid_render.deselect_all_paths",
+    "lucid_render.highlight_path",
+    "lucid_render.pixel_inspector",
+    "lucid_render.select_all_paths",
+    "lucid_render.toggle_path_selection"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:13+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.5"
+}

@@ -1,0 +1,43 @@
+{
+  "canonical_id": "maximsokal__blender-to-spine-2d-mesh-export-addon",
+  "artifact": "maximsokal__blender-to-spine-2d-mesh-export-addon.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "b2s.uninstall_addon",
+        "object.save_uv_as_json",
+        "object.spine2d_multi_export",
+        "object.spine2d_refresh_info",
+        "spine2d.reset_settings"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "b2s.uninstall_addon",
+    "object.save_uv_as_json",
+    "object.spine2d_multi_export",
+    "object.spine2d_refresh_info",
+    "spine2d.reset_settings"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T01:00:27+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.4"
+}

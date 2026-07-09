@@ -1,0 +1,76 @@
+{
+  "canonical_id": "patazanimation__pataz-anim-toolz",
+  "artifact": "patazanimation__pataz-anim-toolz.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "pose.pataz_sel_set_addon_enable",
+        "pose.pataz_selection_set_assign",
+        "pose.pataz_selection_set_copy",
+        "pose.pataz_selection_set_new",
+        "pose.pataz_selection_set_remove",
+        "pose.pataz_selection_set_select",
+        "pose.pataz_selection_set_unassign",
+        "pose.pataz_selection_sets_header_panel",
+        "scene.pataz_anim_settingz_header_panel",
+        "scene.pataz_paste_timeline_options",
+        "scene.pataz_rel_xform_copy",
+        "scene.pataz_rel_xform_paste",
+        "scene.pataz_rel_xform_paste_anim",
+        "scene.pataz_world_matrix_copy",
+        "scene.pataz_world_matrix_paste"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "pose.pataz_sel_set_addon_enable",
+        "pose.pataz_selection_set_assign",
+        "pose.pataz_selection_set_copy",
+        "pose.pataz_selection_set_new",
+        "pose.pataz_selection_set_remove",
+        "pose.pataz_selection_set_select",
+        "pose.pataz_selection_set_unassign",
+        "pose.pataz_selection_sets_header_panel",
+        "scene.pataz_anim_settingz_header_panel",
+        "scene.pataz_paste_timeline_options",
+        "scene.pataz_rel_xform_copy",
+        "scene.pataz_rel_xform_paste",
+        "scene.pataz_rel_xform_paste_anim",
+        "scene.pataz_world_matrix_copy",
+        "scene.pataz_world_matrix_paste"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "pose.pataz_sel_set_addon_enable",
+    "pose.pataz_selection_set_assign",
+    "pose.pataz_selection_set_copy",
+    "pose.pataz_selection_set_new",
+    "pose.pataz_selection_set_remove",
+    "pose.pataz_selection_set_select",
+    "pose.pataz_selection_set_unassign",
+    "pose.pataz_selection_sets_header_panel",
+    "scene.pataz_anim_settingz_header_panel",
+    "scene.pataz_paste_timeline_options",
+    "scene.pataz_rel_xform_copy",
+    "scene.pataz_rel_xform_paste",
+    "scene.pataz_rel_xform_paste_anim",
+    "scene.pataz_world_matrix_copy",
+    "scene.pataz_world_matrix_paste"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T01:00:35+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

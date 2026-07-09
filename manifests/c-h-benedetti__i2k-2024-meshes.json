@@ -1,0 +1,52 @@
+{
+  "canonical_id": "c-h-benedetti__i2k-2024-meshes",
+  "artifact": "c-h-benedetti__i2k-2024-meshes.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.close_cut",
+        "object.nuclei_curvature",
+        "object.random_color",
+        "object.select_by_volume",
+        "object.split_connected_components",
+        "object.spots_as_empties",
+        "object.spots_ownership"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.close_cut",
+        "object.nuclei_curvature",
+        "object.random_color",
+        "object.select_by_volume",
+        "object.split_connected_components",
+        "object.spots_as_empties",
+        "object.spots_ownership"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.close_cut",
+    "object.nuclei_curvature",
+    "object.random_color",
+    "object.select_by_volume",
+    "object.split_connected_components",
+    "object.spots_as_empties",
+    "object.spots_ownership"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:54+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.0"
+}

@@ -1,0 +1,29 @@
+{
+  "canonical_id": "guzznova__escalerillas-pro",
+  "artifact": "guzznova__escalerillas-pro.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:09+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

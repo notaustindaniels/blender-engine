@@ -1,0 +1,33 @@
+{
+  "canonical_id": "blendercn-org__ezblender-boilerplate",
+  "artifact": "blendercn-org__ezblender-boilerplate.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "ezblender.runtests"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "ezblender.runtests"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ezblender.runtests"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:15+00:00",
+  "prescan_hits": [],
+  "declared_min": null
+}

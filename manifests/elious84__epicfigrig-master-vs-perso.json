@@ -1,0 +1,69 @@
+{
+  "canonical_id": "elious84__epicfigrig-master-vs-perso",
+  "artifact": "elious84__epicfigrig-master-vs-perso.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "auto.rig",
+        "pivot.left",
+        "pivot.right",
+        "reset.pivot",
+        "rig.reset",
+        "snap.masterbone",
+        "snap_head.add",
+        "snap_left.add",
+        "snap_right.add"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "auto.rig",
+        "pivot.left",
+        "pivot.right",
+        "reset.pivot",
+        "rig.reset",
+        "snap.masterbone",
+        "snap_head.add",
+        "snap_left.add",
+        "snap_right.add"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "auto.rig",
+        "pivot.left",
+        "pivot.right",
+        "reset.pivot",
+        "rig.reset",
+        "snap.masterbone",
+        "snap_head.add",
+        "snap_left.add",
+        "snap_right.add"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "auto.rig",
+    "pivot.left",
+    "pivot.right",
+    "reset.pivot",
+    "rig.reset",
+    "snap.masterbone",
+    "snap_head.add",
+    "snap_left.add",
+    "snap_right.add"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:09+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "2.83"
+}

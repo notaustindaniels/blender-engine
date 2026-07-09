@@ -1,0 +1,42 @@
+{
+  "canonical_id": "marchmare__retromancer",
+  "artifact": "marchmare__retromancer.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "scene.retromancer_apply_resolution",
+        "scene.retromancer_disable_anti_aliasing",
+        "scene.retromancer_make_camera_isometric"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "scene.retromancer_apply_resolution",
+        "scene.retromancer_disable_anti_aliasing",
+        "scene.retromancer_make_camera_isometric"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "scene.retromancer_apply_resolution",
+    "scene.retromancer_disable_anti_aliasing",
+    "scene.retromancer_make_camera_isometric"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:59:21+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_id": "spicybung__bleeds",
+  "artifact": "spicybung__bleeds.zip",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:37+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "2.90"
+}

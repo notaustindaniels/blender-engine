@@ -1,0 +1,39 @@
+{
+  "canonical_id": "benjaminsauder__simplelattice",
+  "artifact": "benjaminsauder__simplelattice.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.op_lattice_apply",
+        "object.op_lattice_create",
+        "object.op_lattice_remove"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.op_lattice_apply",
+        "object.op_lattice_create",
+        "object.op_lattice_remove"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [
+    "object.op_lattice_apply",
+    "object.op_lattice_create",
+    "object.op_lattice_remove"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:08+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.93"
+}

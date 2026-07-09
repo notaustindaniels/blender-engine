@@ -1,0 +1,49 @@
+{
+  "canonical_id": "mio3io__mio3-shrink-tools",
+  "artifact": "mio3io__mio3-shrink-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mesh.mio3_align_to_bone",
+        "mesh.mio3_auto_shrink",
+        "mesh.mio3_shrink_joint",
+        "mesh.mio3_shrink_snap",
+        "mesh.mio3srt_deselect_used",
+        "mesh.mio3srt_shape_reset"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh.mio3_align_to_bone",
+        "mesh.mio3_auto_shrink",
+        "mesh.mio3_shrink_joint",
+        "mesh.mio3_shrink_snap",
+        "mesh.mio3srt_deselect_used",
+        "mesh.mio3srt_shape_reset"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh.mio3_align_to_bone",
+    "mesh.mio3_auto_shrink",
+    "mesh.mio3_shrink_joint",
+    "mesh.mio3_shrink_snap",
+    "mesh.mio3srt_deselect_used",
+    "mesh.mio3srt_shape_reset"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T01:09:22+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

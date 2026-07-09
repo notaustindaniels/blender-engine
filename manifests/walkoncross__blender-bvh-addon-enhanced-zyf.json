@@ -1,0 +1,41 @@
+{
+  "canonical_id": "walkoncross__blender-bvh-addon-enhanced-zyf",
+  "artifact": "walkoncross__blender-bvh-addon-enhanced-zyf.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "export_anim.bvh_enhanced",
+        "import_anim.bvh_enhanced"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_anim.bvh_enhanced",
+        "import_anim.bvh_enhanced"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_anim.bvh_enhanced",
+        "import_anim.bvh_enhanced"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_anim.bvh_enhanced",
+    "import_anim.bvh_enhanced"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:41+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.81"
+}

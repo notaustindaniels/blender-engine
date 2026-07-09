@@ -1,0 +1,103 @@
+{
+  "canonical_id": "mistajuliax__jmesh-tools",
+  "artifact": "mistajuliax__jmesh-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.apply_bool",
+        "object.bevel",
+        "object.bool_diff",
+        "object.bool_intersect",
+        "object.bool_slice",
+        "object.bool_target",
+        "object.bool_union",
+        "object.fc_array_mode_op",
+        "object.fc_circle_array_mode_op",
+        "object.fc_primitve_mode_op",
+        "object.mirror",
+        "object.sym",
+        "object.unbevel",
+        "object.union_selected_op",
+        "view3d.curve_convert",
+        "view3d.dissolve_edges",
+        "view3d.origin_active",
+        "view3d.snap_active"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.apply_bool",
+        "object.bevel",
+        "object.bool_diff",
+        "object.bool_intersect",
+        "object.bool_slice",
+        "object.bool_target",
+        "object.bool_union",
+        "object.fc_array_mode_op",
+        "object.fc_circle_array_mode_op",
+        "object.fc_primitve_mode_op",
+        "object.mirror",
+        "object.sym",
+        "object.unbevel",
+        "object.union_selected_op",
+        "view3d.curve_convert",
+        "view3d.dissolve_edges",
+        "view3d.origin_active",
+        "view3d.snap_active"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.apply_bool",
+        "object.bevel",
+        "object.bool_diff",
+        "object.bool_intersect",
+        "object.bool_slice",
+        "object.bool_target",
+        "object.bool_union",
+        "object.fc_array_mode_op",
+        "object.fc_circle_array_mode_op",
+        "object.fc_primitve_mode_op",
+        "object.mirror",
+        "object.sym",
+        "object.unbevel",
+        "object.union_selected_op",
+        "view3d.curve_convert",
+        "view3d.dissolve_edges",
+        "view3d.origin_active",
+        "view3d.snap_active"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.apply_bool",
+    "object.bevel",
+    "object.bool_diff",
+    "object.bool_intersect",
+    "object.bool_slice",
+    "object.bool_target",
+    "object.bool_union",
+    "object.fc_array_mode_op",
+    "object.fc_circle_array_mode_op",
+    "object.fc_primitve_mode_op",
+    "object.mirror",
+    "object.sym",
+    "object.unbevel",
+    "object.union_selected_op",
+    "view3d.curve_convert",
+    "view3d.dissolve_edges",
+    "view3d.origin_active",
+    "view3d.snap_active"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:02+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

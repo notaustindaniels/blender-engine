@@ -1,0 +1,35 @@
+{
+  "canonical_id": "0x779__conveyor",
+  "artifact": "0x779__conveyor.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.conveyor"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.conveyor"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.conveyor"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.conveyor"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:08+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

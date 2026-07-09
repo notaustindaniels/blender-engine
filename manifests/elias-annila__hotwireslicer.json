@@ -1,0 +1,77 @@
+{
+  "canonical_id": "elias-annila__hotwireslicer",
+  "artifact": "elias-annila__hotwireslicer.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "hotwire.add_keyframe",
+        "hotwire.clear_gcode",
+        "hotwire.cut_edge_loop",
+        "hotwire.cut_points",
+        "hotwire.cut_single_face",
+        "hotwire.fatten_mesh",
+        "hotwire.insert_gcode",
+        "hotwire.keyframes_to_gcode",
+        "hotwire.move_toolhead",
+        "hotwire.orient_a_rotation",
+        "hotwire.view_gcode"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "hotwire.add_keyframe",
+        "hotwire.clear_gcode",
+        "hotwire.cut_edge_loop",
+        "hotwire.cut_points",
+        "hotwire.cut_single_face",
+        "hotwire.fatten_mesh",
+        "hotwire.insert_gcode",
+        "hotwire.keyframes_to_gcode",
+        "hotwire.move_toolhead",
+        "hotwire.orient_a_rotation",
+        "hotwire.view_gcode"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "hotwire.add_keyframe",
+        "hotwire.clear_gcode",
+        "hotwire.cut_edge_loop",
+        "hotwire.cut_points",
+        "hotwire.cut_single_face",
+        "hotwire.fatten_mesh",
+        "hotwire.insert_gcode",
+        "hotwire.keyframes_to_gcode",
+        "hotwire.move_toolhead",
+        "hotwire.orient_a_rotation",
+        "hotwire.view_gcode"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "hotwire.add_keyframe",
+    "hotwire.clear_gcode",
+    "hotwire.cut_edge_loop",
+    "hotwire.cut_points",
+    "hotwire.cut_single_face",
+    "hotwire.fatten_mesh",
+    "hotwire.insert_gcode",
+    "hotwire.keyframes_to_gcode",
+    "hotwire.move_toolhead",
+    "hotwire.orient_a_rotation",
+    "hotwire.view_gcode"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:10+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "3.2"
+}

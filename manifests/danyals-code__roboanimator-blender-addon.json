@@ -1,0 +1,70 @@
+{
+  "canonical_id": "danyals-code__roboanimator-blender-addon",
+  "artifact": "danyals-code__roboanimator-blender-addon.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "segway.attach_drivers",
+        "segway.autocorrect_bake",
+        "segway.autocorrect_linear",
+        "segway.autocorrect_sease",
+        "segway.bake_wheels",
+        "segway.build_cache",
+        "segway.clear",
+        "segway.export_csv",
+        "segway.export_keyframes",
+        "segway.import_csv",
+        "segway.revert_autocorrect",
+        "segway.validate_motion"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "segway.attach_drivers",
+        "segway.autocorrect_bake",
+        "segway.autocorrect_linear",
+        "segway.autocorrect_sease",
+        "segway.bake_wheels",
+        "segway.build_cache",
+        "segway.clear",
+        "segway.export_csv",
+        "segway.export_keyframes",
+        "segway.import_csv",
+        "segway.revert_autocorrect",
+        "segway.validate_motion"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "segway.attach_drivers",
+    "segway.autocorrect_bake",
+    "segway.autocorrect_linear",
+    "segway.autocorrect_sease",
+    "segway.bake_wheels",
+    "segway.build_cache",
+    "segway.clear",
+    "segway.export_csv",
+    "segway.export_keyframes",
+    "segway.import_csv",
+    "segway.revert_autocorrect",
+    "segway.validate_motion"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:58:49+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

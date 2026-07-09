@@ -1,0 +1,29 @@
+{
+  "canonical_id": "shifty81__test123",
+  "artifact": "shifty81__test123.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:39+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "3.5"
+}

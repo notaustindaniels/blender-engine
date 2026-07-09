@@ -1,0 +1,35 @@
+{
+  "canonical_id": "philipp-seifried__blender-massive-boolean",
+  "artifact": "philipp-seifried__blender-massive-boolean.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "object.massive_boolean"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.massive_boolean"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.massive_boolean"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.massive_boolean"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:50+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

@@ -1,0 +1,66 @@
+{
+  "canonical_id": "usamasq__autosolve",
+  "artifact": "usamasq__autosolve.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "autosolve.clear_annotations",
+        "autosolve.contribute_data",
+        "autosolve.detect_inside_annotation",
+        "autosolve.detect_outside_annotation",
+        "autosolve.export_training_data",
+        "autosolve.import_training_data",
+        "autosolve.reset_training_data",
+        "autosolve.run_solve",
+        "autosolve.setup_scene",
+        "autosolve.smooth_tracks",
+        "autosolve.view_training_stats"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "autosolve.clear_annotations",
+        "autosolve.contribute_data",
+        "autosolve.detect_inside_annotation",
+        "autosolve.detect_outside_annotation",
+        "autosolve.export_training_data",
+        "autosolve.import_training_data",
+        "autosolve.reset_training_data",
+        "autosolve.run_solve",
+        "autosolve.setup_scene",
+        "autosolve.smooth_tracks",
+        "autosolve.view_training_stats"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "autosolve.clear_annotations",
+    "autosolve.contribute_data",
+    "autosolve.detect_inside_annotation",
+    "autosolve.detect_outside_annotation",
+    "autosolve.export_training_data",
+    "autosolve.import_training_data",
+    "autosolve.reset_training_data",
+    "autosolve.run_solve",
+    "autosolve.setup_scene",
+    "autosolve.smooth_tracks",
+    "autosolve.view_training_stats"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T01:00:48+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

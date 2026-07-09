@@ -1,0 +1,34 @@
+{
+  "canonical_id": "ametist3d__blender-dungeonbuilder",
+  "artifact": "ametist3d__blender-dungeonbuilder.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "dungeon.generate_level"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "dungeon.generate_level"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "dungeon.generate_level"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:43+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.0"
+}

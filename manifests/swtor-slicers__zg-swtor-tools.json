@@ -1,0 +1,30 @@
+{
+  "canonical_id": "swtor-slicers__zg-swtor-tools",
+  "artifact": "swtor-slicers__zg-swtor-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:28+00:00",
+  "prescan_hits": [
+    "open-write",
+    "driver-expression"
+  ],
+  "declared_min": "3.6"
+}

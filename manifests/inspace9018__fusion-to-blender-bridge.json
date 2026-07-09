@@ -1,0 +1,35 @@
+{
+  "canonical_id": "inspace9018__fusion-to-blender-bridge",
+  "artifact": "inspace9018__fusion-to-blender-bridge.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T01:09:12+00:00",
+  "prescan_hits": [
+    "base64-decode",
+    "ctypes",
+    "requests",
+    "__import__",
+    "urllib",
+    "socket",
+    "subprocess",
+    "open-write"
+  ]
+}

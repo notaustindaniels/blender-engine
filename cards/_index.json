@@ -20,6 +20,27 @@
    "4.5"
   ]
  },
+ "operator/aclysma__rafx::aclysma__rafx": {
+  "cid": "aclysma__rafx",
+  "operator_id": "aclysma__rafx",
+  "kind": "bpy_op",
+  "verbs": [
+   "accumulate"
+  ],
+  "niches": [
+   "data_driven_accumulation"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:Apache-2.0",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/beneking102__bene-proggen-maps::procgen_maps.generate_city": {
   "cid": "beneking102__bene-proggen-maps",
   "operator_id": "procgen_maps.generate_city",
@@ -259,6 +280,27 @@
    "4.5"
   ]
  },
+ "operator/cornerback24__blender-nla-midi-copier::nla_midi_copier.add_action_to_instrument": {
+  "cid": "cornerback24__blender-nla-midi-copier",
+  "operator_id": "nla_midi_copier.add_action_to_instrument",
+  "kind": "bpy_op",
+  "verbs": [
+   "deform",
+   "reveal"
+  ],
+  "niches": [
+   "data_to_midi_actuation"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": "SPDX:GPL-3.0",
+  "versions": [
+   "4.2",
+   "4.5"
+  ]
+ },
  "operator/donitzo__procedural-asteroid-generator::donitzo__procedural-asteroid-generator": {
   "cid": "donitzo__procedural-asteroid-generator",
   "operator_id": "donitzo__procedural-asteroid-generator",
@@ -275,6 +317,28 @@
   ],
   "quality": "partial",
   "license": "MIT",
+  "versions": [
+   "3.6",
+   "4.2",
+   "4.5"
+  ]
+ },
+ "operator/inca__blender-differential-growth::object.diff_growth_step": {
+  "cid": "inca__blender-differential-growth",
+  "operator_id": "object.diff_growth_step",
+  "kind": "bpy_op",
+  "verbs": [
+   "branch",
+   "generate"
+  ],
+  "niches": [
+   "differential_growth"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
   "versions": [
    "3.6",
    "4.2",

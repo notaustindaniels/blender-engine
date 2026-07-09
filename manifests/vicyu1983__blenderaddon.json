@@ -1,0 +1,67 @@
+{
+  "canonical_id": "vicyu1983__blenderaddon",
+  "artifact": "vicyu1983__blenderaddon.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "vic.bones_clear_key",
+        "vic.spring_bone",
+        "vic.vic_procedural_bridge",
+        "vic.vic_procedural_lantern",
+        "vic.vic_procedural_lantern_connect",
+        "vic.vic_procedural_lantern_manager",
+        "vic.vic_procedural_lantern_proxy",
+        "vic.vic_procedural_stair",
+        "vic.vic_procedural_stair_update"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "vic.bones_clear_key",
+        "vic.spring_bone",
+        "vic.vic_procedural_bridge",
+        "vic.vic_procedural_lantern",
+        "vic.vic_procedural_lantern_connect",
+        "vic.vic_procedural_lantern_manager",
+        "vic.vic_procedural_lantern_proxy",
+        "vic.vic_procedural_stair",
+        "vic.vic_procedural_stair_update"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "vic.bones_clear_key",
+        "vic.spring_bone",
+        "vic.vic_procedural_bridge",
+        "vic.vic_procedural_lantern",
+        "vic.vic_procedural_lantern_connect",
+        "vic.vic_procedural_lantern_manager",
+        "vic.vic_procedural_lantern_proxy",
+        "vic.vic_procedural_stair",
+        "vic.vic_procedural_stair_update"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "vic.bones_clear_key",
+    "vic.spring_bone",
+    "vic.vic_procedural_bridge",
+    "vic.vic_procedural_lantern",
+    "vic.vic_procedural_lantern_connect",
+    "vic.vic_procedural_lantern_manager",
+    "vic.vic_procedural_lantern_proxy",
+    "vic.vic_procedural_stair",
+    "vic.vic_procedural_stair_update"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:44+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

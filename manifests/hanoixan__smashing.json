@@ -1,0 +1,35 @@
+{
+  "canonical_id": "hanoixan__smashing",
+  "artifact": "hanoixan__smashing.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.exec_smashing"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.exec_smashing"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.exec_smashing"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.exec_smashing"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:24+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.91"
+}

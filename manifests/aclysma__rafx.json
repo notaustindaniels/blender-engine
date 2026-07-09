@@ -1,0 +1,44 @@
+{
+  "canonical_id": "aclysma__rafx",
+  "artifact": "aclysma__rafx.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:00+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "2.80",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "aclysma__rafx",
+      "verbs": [
+        "accumulate"
+      ],
+      "niches": [
+        "data_driven_accumulation"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'data' in name/tagline -> ['data_driven_accumulation'] (Animation: growth, reveal & build)."
+}

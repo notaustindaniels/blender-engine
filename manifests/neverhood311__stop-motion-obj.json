@@ -1,0 +1,61 @@
+{
+  "canonical_id": "neverhood311__stop-motion-obj",
+  "artifact": "neverhood311__stop-motion-obj.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "ms.bake_sequence",
+        "ms.batch_shade_flat",
+        "ms.batch_shade_smooth",
+        "ms.convert_to_mesh_sequence",
+        "ms.deep_delete_sequence",
+        "ms.duplicate_mesh_frame",
+        "ms.import_sequence",
+        "ms.merge_duplicate_materials",
+        "ms.reload_mesh_sequence",
+        "ms.render_animation"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "ms.bake_sequence",
+        "ms.batch_shade_flat",
+        "ms.batch_shade_smooth",
+        "ms.convert_to_mesh_sequence",
+        "ms.deep_delete_sequence",
+        "ms.duplicate_mesh_frame",
+        "ms.import_sequence",
+        "ms.merge_duplicate_materials",
+        "ms.reload_mesh_sequence",
+        "ms.render_animation"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "ms.bake_sequence",
+    "ms.batch_shade_flat",
+    "ms.batch_shade_smooth",
+    "ms.convert_to_mesh_sequence",
+    "ms.deep_delete_sequence",
+    "ms.duplicate_mesh_frame",
+    "ms.import_sequence",
+    "ms.merge_duplicate_materials",
+    "ms.reload_mesh_sequence",
+    "ms.render_animation"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:47+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.0"
+}

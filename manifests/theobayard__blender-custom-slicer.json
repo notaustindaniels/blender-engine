@@ -1,0 +1,46 @@
+{
+  "canonical_id": "theobayard__blender-custom-slicer",
+  "artifact": "theobayard__blender-custom-slicer.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "slicer.clear_preview",
+        "slicer.export_gcode",
+        "slicer.generate_path"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "slicer.clear_preview",
+        "slicer.export_gcode",
+        "slicer.generate_path"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "slicer.clear_preview",
+        "slicer.export_gcode",
+        "slicer.generate_path"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "slicer.clear_preview",
+    "slicer.export_gcode",
+    "slicer.generate_path"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:45+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket"
+  ],
+  "declared_min": "3.6"
+}

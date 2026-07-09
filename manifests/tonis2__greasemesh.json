@@ -1,0 +1,61 @@
+{
+  "canonical_id": "tonis2__greasemesh",
+  "artifact": "tonis2__greasemesh.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "gptools.add_gpencil",
+        "gptools.apply_all_modifiers",
+        "gptools.bool_cut",
+        "gptools.gn_mirror_mesh",
+        "gptools.gn_path_mesh",
+        "gptools.gn_solid_mesh",
+        "gptools.lattice_wrap",
+        "gptools.reload_addon",
+        "gptools.screw_mesh",
+        "gptools.square_screw_mesh"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "gptools.add_gpencil",
+        "gptools.apply_all_modifiers",
+        "gptools.bool_cut",
+        "gptools.gn_mirror_mesh",
+        "gptools.gn_path_mesh",
+        "gptools.gn_solid_mesh",
+        "gptools.lattice_wrap",
+        "gptools.reload_addon",
+        "gptools.screw_mesh",
+        "gptools.square_screw_mesh"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "gptools.add_gpencil",
+    "gptools.apply_all_modifiers",
+    "gptools.bool_cut",
+    "gptools.gn_mirror_mesh",
+    "gptools.gn_path_mesh",
+    "gptools.gn_solid_mesh",
+    "gptools.lattice_wrap",
+    "gptools.reload_addon",
+    "gptools.screw_mesh",
+    "gptools.square_screw_mesh"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:59:34+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.2"
+}

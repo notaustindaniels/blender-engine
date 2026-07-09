@@ -1,0 +1,37 @@
+{
+  "canonical_id": "anoop-jadhav-ui__voronoisolidblenderaddon",
+  "artifact": "anoop-jadhav-ui__voronoisolidblenderaddon.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.3 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.export_voronoi_active_stl",
+        "object.generate_voronoi_solid_cells"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.export_voronoi_active_stl",
+    "object.generate_voronoi_solid_cells"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:48+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.3"
+}

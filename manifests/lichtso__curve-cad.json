@@ -1,0 +1,105 @@
+{
+  "canonical_id": "lichtso__curve-cad",
+  "artifact": "lichtso__curve-cad.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "curve.add_toolpath_discretize_curve",
+        "curve.add_toolpath_dogbone",
+        "curve.add_toolpath_drill_macro",
+        "curve.add_toolpath_offset_curve",
+        "curve.add_toolpath_rect_macro",
+        "curve.add_toolpath_slice_mesh",
+        "curve.add_toolpath_truncate",
+        "curve.bezier_cad_array",
+        "curve.bezier_cad_boolean",
+        "curve.bezier_cad_circle",
+        "curve.bezier_cad_fillet",
+        "curve.bezier_cad_handle_projection",
+        "curve.bezier_cad_intersection",
+        "curve.bezier_cad_length",
+        "curve.bezier_cad_merge_ends",
+        "curve.bezier_cad_subdivide",
+        "export_gcode_format.gcode",
+        "export_svg_format.svg"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "curve.add_toolpath_discretize_curve",
+        "curve.add_toolpath_dogbone",
+        "curve.add_toolpath_drill_macro",
+        "curve.add_toolpath_offset_curve",
+        "curve.add_toolpath_rect_macro",
+        "curve.add_toolpath_slice_mesh",
+        "curve.add_toolpath_truncate",
+        "curve.bezier_cad_array",
+        "curve.bezier_cad_boolean",
+        "curve.bezier_cad_circle",
+        "curve.bezier_cad_fillet",
+        "curve.bezier_cad_handle_projection",
+        "curve.bezier_cad_intersection",
+        "curve.bezier_cad_length",
+        "curve.bezier_cad_merge_ends",
+        "curve.bezier_cad_subdivide",
+        "export_gcode_format.gcode",
+        "export_svg_format.svg"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "curve.add_toolpath_discretize_curve",
+        "curve.add_toolpath_dogbone",
+        "curve.add_toolpath_drill_macro",
+        "curve.add_toolpath_offset_curve",
+        "curve.add_toolpath_rect_macro",
+        "curve.add_toolpath_slice_mesh",
+        "curve.add_toolpath_truncate",
+        "curve.bezier_cad_array",
+        "curve.bezier_cad_boolean",
+        "curve.bezier_cad_circle",
+        "curve.bezier_cad_fillet",
+        "curve.bezier_cad_handle_projection",
+        "curve.bezier_cad_intersection",
+        "curve.bezier_cad_length",
+        "curve.bezier_cad_merge_ends",
+        "curve.bezier_cad_subdivide",
+        "export_gcode_format.gcode",
+        "export_svg_format.svg"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "curve.add_toolpath_discretize_curve",
+    "curve.add_toolpath_dogbone",
+    "curve.add_toolpath_drill_macro",
+    "curve.add_toolpath_offset_curve",
+    "curve.add_toolpath_rect_macro",
+    "curve.add_toolpath_slice_mesh",
+    "curve.add_toolpath_truncate",
+    "curve.bezier_cad_array",
+    "curve.bezier_cad_boolean",
+    "curve.bezier_cad_circle",
+    "curve.bezier_cad_fillet",
+    "curve.bezier_cad_handle_projection",
+    "curve.bezier_cad_intersection",
+    "curve.bezier_cad_length",
+    "curve.bezier_cad_merge_ends",
+    "curve.bezier_cad_subdivide",
+    "export_gcode_format.gcode",
+    "export_svg_format.svg"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:24+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": null
+}

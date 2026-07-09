@@ -1,0 +1,30 @@
+{
+  "canonical_id": "swtor-slicers__granny2-plug-in-blender-2-8x",
+  "artifact": "swtor-slicers__granny2-plug-in-blender-2-8x.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:38+00:00",
+  "prescan_hits": [
+    "open-write",
+    "requests",
+    "socket"
+  ]
+}

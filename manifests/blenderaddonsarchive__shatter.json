@@ -1,0 +1,36 @@
+{
+  "canonical_id": "blenderaddonsarchive__shatter",
+  "artifact": "blenderaddonsarchive__shatter.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:58:58+00:00",
+  "prescan_hits": [
+    "requests",
+    "urllib",
+    "open-write",
+    "eval(",
+    "os.system",
+    "socket",
+    "__import__",
+    "base64-decode",
+    "subprocess"
+  ]
+}

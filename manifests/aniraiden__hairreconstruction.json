@@ -1,0 +1,71 @@
+{
+  "canonical_id": "aniraiden__hairreconstruction",
+  "artifact": "aniraiden__hairreconstruction.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "hair_recon.add_guide_curve",
+        "hair_recon.apply_offset",
+        "hair_recon.build_sdf",
+        "hair_recon.clear_seeds",
+        "hair_recon.create_guide_collection",
+        "hair_recon.draw_strand",
+        "hair_recon.extract_guide_curves",
+        "hair_recon.generate_curves",
+        "hair_recon.generate_mesh",
+        "hair_recon.place_seed",
+        "hair_recon.relax_tubes",
+        "hair_recon.resample_strands",
+        "hair_recon.reset_all",
+        "hair_recon.reset_offset",
+        "hair_recon.run_tracking",
+        "hair_recon.set_scalp_from_selection",
+        "hair_recon.show_sdf_points",
+        "hair_recon.smooth_strands",
+        "hair_recon.snap_roots_to_scalp",
+        "hair_recon.snap_tubes_to_surface"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "hair_recon.add_guide_curve",
+    "hair_recon.apply_offset",
+    "hair_recon.build_sdf",
+    "hair_recon.clear_seeds",
+    "hair_recon.create_guide_collection",
+    "hair_recon.draw_strand",
+    "hair_recon.extract_guide_curves",
+    "hair_recon.generate_curves",
+    "hair_recon.generate_mesh",
+    "hair_recon.place_seed",
+    "hair_recon.relax_tubes",
+    "hair_recon.resample_strands",
+    "hair_recon.reset_all",
+    "hair_recon.reset_offset",
+    "hair_recon.run_tracking",
+    "hair_recon.set_scalp_from_selection",
+    "hair_recon.show_sdf_points",
+    "hair_recon.smooth_strands",
+    "hair_recon.snap_roots_to_scalp",
+    "hair_recon.snap_tubes_to_surface"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:12+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.5"
+}

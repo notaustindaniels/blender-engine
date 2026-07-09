@@ -1,0 +1,41 @@
+{
+  "canonical_id": "mugenrei__mugenrei-bpy-neck-seam-addon",
+  "artifact": "mugenrei__mugenrei-bpy-neck-seam-addon.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.5 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "neckseam.part1_seam_bake",
+        "neckseam.part2_apply_seam",
+        "neckseam.part3_finalize",
+        "neckseam.squash_udims"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "neckseam.part1_seam_bake",
+    "neckseam.part2_apply_seam",
+    "neckseam.part3_finalize",
+    "neckseam.squash_udims"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:24+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.5"
+}

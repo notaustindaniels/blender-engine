@@ -1,0 +1,82 @@
+{
+  "canonical_id": "steffenbk__bk-reforger-blender-addons",
+  "artifact": "steffenbk__bk-reforger-blender-addons.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.2 > 3.6"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "arprofile.add_bones_from_armature",
+        "arprofile.add_selected_bones",
+        "arprofile.add_track",
+        "arprofile.clear_parent",
+        "arprofile.export_profile",
+        "arprofile.import_profile",
+        "arprofile.load_preset",
+        "arprofile.remove_track",
+        "arprofile.rename_bone",
+        "arprofile.select_parent",
+        "arprofile.set_global_char_move",
+        "arprofile.set_global_char_static",
+        "arprofile.set_global_generic",
+        "arprofile.set_global_vehicle",
+        "arprofile.set_global_vehicle_parts",
+        "arprofile.set_global_weapon"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "arprofile.add_bones_from_armature",
+        "arprofile.add_selected_bones",
+        "arprofile.add_track",
+        "arprofile.clear_parent",
+        "arprofile.export_profile",
+        "arprofile.import_profile",
+        "arprofile.load_preset",
+        "arprofile.remove_track",
+        "arprofile.rename_bone",
+        "arprofile.select_parent",
+        "arprofile.set_global_char_move",
+        "arprofile.set_global_char_static",
+        "arprofile.set_global_generic",
+        "arprofile.set_global_vehicle",
+        "arprofile.set_global_vehicle_parts",
+        "arprofile.set_global_weapon"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "arprofile.add_bones_from_armature",
+    "arprofile.add_selected_bones",
+    "arprofile.add_track",
+    "arprofile.clear_parent",
+    "arprofile.export_profile",
+    "arprofile.import_profile",
+    "arprofile.load_preset",
+    "arprofile.remove_track",
+    "arprofile.rename_bone",
+    "arprofile.select_parent",
+    "arprofile.set_global_char_move",
+    "arprofile.set_global_char_static",
+    "arprofile.set_global_generic",
+    "arprofile.set_global_vehicle",
+    "arprofile.set_global_vehicle_parts",
+    "arprofile.set_global_weapon"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:00+00:00",
+  "prescan_hits": [
+    "socket",
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

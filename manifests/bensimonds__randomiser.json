@@ -1,0 +1,42 @@
+{
+  "canonical_id": "bensimonds__randomiser",
+  "artifact": "bensimonds__randomiser.zip",
+  "verify": {
+    "3.6": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.randomise_copy_seed",
+        "object.randomise_data",
+        "object.randomise_spread_seeds",
+        "object.randomise_text"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.randomise_copy_seed",
+        "object.randomise_data",
+        "object.randomise_spread_seeds",
+        "object.randomise_text"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.randomise_copy_seed",
+    "object.randomise_data",
+    "object.randomise_spread_seeds",
+    "object.randomise_text"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:55+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.7"
+}

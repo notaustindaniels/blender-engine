@@ -1,0 +1,30 @@
+{
+  "canonical_id": "blenderdefender__bonewidget",
+  "artifact": "blenderdefender__bonewidget.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:59:11+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

@@ -1,0 +1,97 @@
+{
+  "canonical_id": "neoxush__blender-blockoutkit",
+  "artifact": "neoxush__blender-blockoutkit.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "pcg.add_layer",
+        "pcg.clear_history",
+        "pcg.create_default_spline",
+        "pcg.delete_preset",
+        "pcg.duplicate_layer",
+        "pcg.generate",
+        "pcg.load_preset",
+        "pcg.move_layer",
+        "pcg.randomize_seed",
+        "pcg.remove_layer",
+        "pcg.reset_parameters",
+        "pcg.restore_history",
+        "pcg.save_preset",
+        "pcg.snapshot",
+        "pcg.toggle_all_layers",
+        "pcg.toggle_preview"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "pcg.add_layer",
+        "pcg.clear_history",
+        "pcg.create_default_spline",
+        "pcg.delete_preset",
+        "pcg.duplicate_layer",
+        "pcg.generate",
+        "pcg.load_preset",
+        "pcg.move_layer",
+        "pcg.randomize_seed",
+        "pcg.remove_layer",
+        "pcg.reset_parameters",
+        "pcg.restore_history",
+        "pcg.save_preset",
+        "pcg.snapshot",
+        "pcg.toggle_all_layers",
+        "pcg.toggle_preview"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "pcg.add_layer",
+        "pcg.clear_history",
+        "pcg.create_default_spline",
+        "pcg.delete_preset",
+        "pcg.duplicate_layer",
+        "pcg.generate",
+        "pcg.load_preset",
+        "pcg.move_layer",
+        "pcg.randomize_seed",
+        "pcg.remove_layer",
+        "pcg.reset_parameters",
+        "pcg.restore_history",
+        "pcg.save_preset",
+        "pcg.snapshot",
+        "pcg.toggle_all_layers",
+        "pcg.toggle_preview"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "pcg.add_layer",
+    "pcg.clear_history",
+    "pcg.create_default_spline",
+    "pcg.delete_preset",
+    "pcg.duplicate_layer",
+    "pcg.generate",
+    "pcg.load_preset",
+    "pcg.move_layer",
+    "pcg.randomize_seed",
+    "pcg.remove_layer",
+    "pcg.reset_parameters",
+    "pcg.restore_history",
+    "pcg.save_preset",
+    "pcg.snapshot",
+    "pcg.toggle_all_layers",
+    "pcg.toggle_preview"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:29+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "3.6"
+}

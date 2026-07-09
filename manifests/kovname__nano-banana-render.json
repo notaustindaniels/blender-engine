@@ -1,0 +1,32 @@
+{
+  "canonical_id": "kovname__nano-banana-render",
+  "artifact": "kovname__nano-banana-render.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:41+00:00",
+  "prescan_hits": [
+    "urllib",
+    "base64-decode",
+    "requests",
+    "open-write",
+    "socket"
+  ]
+}

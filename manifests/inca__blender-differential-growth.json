@@ -1,0 +1,50 @@
+{
+  "canonical_id": "inca__blender-differential-growth",
+  "artifact": "inca__blender-differential-growth.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.diff_growth_step"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.diff_growth_step"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.diff_growth_step"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.diff_growth_step"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:17+00:00",
+  "prescan_hits": [],
+  "declared_min": null,
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "object.diff_growth_step",
+      "verbs": [
+        "branch",
+        "generate"
+      ],
+      "niches": [
+        "differential_growth"
+      ]
+    }
+  ],
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'growth' in name/tagline -> ['differential_growth'] (Simulation-adjacent)."
+}

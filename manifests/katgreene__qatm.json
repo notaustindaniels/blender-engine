@@ -1,0 +1,27 @@
+{
+  "canonical_id": "katgreene__qatm",
+  "artifact": "katgreene__qatm.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:02+00:00",
+  "prescan_hits": [],
+  "declared_min": "3.6"
+}

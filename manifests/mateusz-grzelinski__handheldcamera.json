@@ -1,0 +1,29 @@
+{
+  "canonical_id": "mateusz-grzelinski__handheldcamera",
+  "artifact": "mateusz-grzelinski__handheldcamera.zip",
+  "verify": {
+    "3.6": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "legacy",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:12+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "2.79"
+}

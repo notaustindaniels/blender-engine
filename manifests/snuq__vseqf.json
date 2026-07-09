@@ -1,0 +1,30 @@
+{
+  "canonical_id": "snuq__vseqf",
+  "artifact": "snuq__vseqf.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.1 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.1 > 4.2"
+    },
+    "4.5": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 5.1 > 4.5"
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:15+00:00",
+  "prescan_hits": [],
+  "declared_min": "5.1"
+}

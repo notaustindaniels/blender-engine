@@ -1,0 +1,45 @@
+{
+  "canonical_id": "psycrow101__blender-3d-rw-anm-plugin",
+  "artifact": "psycrow101__blender-3d-rw-anm-plugin.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "export_scene.renderware_anm",
+        "export_scene.renderware_ska",
+        "import_scene.renderware_anm"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "export_scene.renderware_anm",
+        "export_scene.renderware_ska",
+        "import_scene.renderware_anm"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "export_scene.renderware_anm",
+        "export_scene.renderware_ska",
+        "import_scene.renderware_anm"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "export_scene.renderware_anm",
+    "export_scene.renderware_ska",
+    "import_scene.renderware_anm"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:53+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.81"
+}

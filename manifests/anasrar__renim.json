@@ -1,0 +1,59 @@
+{
+  "canonical_id": "anasrar__renim",
+  "artifact": "anasrar__renim.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.1 > 3.6"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "renim.add_additional_bone_to_bake",
+        "renim.bake_action",
+        "renim.connect_selected_bone_nodes",
+        "renim.create_bone_node_from_selected_bones",
+        "renim.load_preset",
+        "renim.remove_additional_bone_to_bake",
+        "renim.save_preset",
+        "renim.toggle_bind"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "renim.add_additional_bone_to_bake",
+        "renim.bake_action",
+        "renim.connect_selected_bone_nodes",
+        "renim.create_bone_node_from_selected_bones",
+        "renim.load_preset",
+        "renim.remove_additional_bone_to_bake",
+        "renim.save_preset",
+        "renim.toggle_bind"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "renim.add_additional_bone_to_bake",
+    "renim.bake_action",
+    "renim.connect_selected_bone_nodes",
+    "renim.create_bone_node_from_selected_bones",
+    "renim.load_preset",
+    "renim.remove_additional_bone_to_bake",
+    "renim.save_preset",
+    "renim.toggle_bind"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:56+00:00",
+  "prescan_hits": [
+    "open-write",
+    "socket",
+    "driver-expression"
+  ],
+  "declared_min": "4.1"
+}

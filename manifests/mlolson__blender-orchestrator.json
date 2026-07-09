@@ -1,0 +1,33 @@
+{
+  "canonical_id": "mlolson__blender-orchestrator",
+  "artifact": "mlolson__blender-orchestrator.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:24+00:00",
+  "prescan_hits": [
+    "socket",
+    "urllib",
+    "base64-decode",
+    "requests",
+    "httpx",
+    "open-write"
+  ]
+}

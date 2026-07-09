@@ -1,0 +1,55 @@
+{
+  "canonical_id": "enziop__mixamo-converter",
+  "artifact": "enziop__mixamo-converter.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "mixamo.apply_restoffset",
+        "mixamo.convertbatch",
+        "mixamo.convertsingle",
+        "mixamo.convertsingle_stepwise",
+        "mixamo.remove_namespace",
+        "mixamo.unreal_bones"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "mixamo.apply_restoffset",
+        "mixamo.convertbatch",
+        "mixamo.convertsingle",
+        "mixamo.convertsingle_stepwise",
+        "mixamo.remove_namespace",
+        "mixamo.unreal_bones"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mixamo.apply_restoffset",
+        "mixamo.convertbatch",
+        "mixamo.convertsingle",
+        "mixamo.convertsingle_stepwise",
+        "mixamo.remove_namespace",
+        "mixamo.unreal_bones"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mixamo.apply_restoffset",
+    "mixamo.convertbatch",
+    "mixamo.convertsingle",
+    "mixamo.convertsingle_stepwise",
+    "mixamo.remove_namespace",
+    "mixamo.unreal_bones"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:53+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

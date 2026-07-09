@@ -1,0 +1,47 @@
+{
+  "canonical_id": "vvoovv__bcga",
+  "artifact": "vvoovv__bcga.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.apply_pro_script",
+        "object.bake_pro_model",
+        "object.first_edge_ymin",
+        "object.footprint_set"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.apply_pro_script",
+        "object.bake_pro_model",
+        "object.first_edge_ymin",
+        "object.footprint_set"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.apply_pro_script",
+        "object.bake_pro_model",
+        "object.first_edge_ymin",
+        "object.footprint_set"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.apply_pro_script",
+    "object.bake_pro_model",
+    "object.first_edge_ymin",
+    "object.footprint_set"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:49+00:00",
+  "prescan_hits": [],
+  "declared_min": "2.80"
+}

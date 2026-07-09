@@ -1,0 +1,90 @@
+{
+  "canonical_id": "nicktiny__tiny-2d-sequence-tools",
+  "artifact": "nicktiny__tiny-2d-sequence-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "object.refresh_copy_rot_items",
+        "object.remove_object_from_list",
+        "object.rotate_to_strip_camera",
+        "sequencer.add_camera_from_view",
+        "sequencer.batch_render",
+        "sequencer.check_viewport_sync_errors",
+        "sequencer.fix_viewport_sync_errors",
+        "sequencer.full_render_legacy",
+        "sequencer.preview_render",
+        "sequencer.refresh_viewport_camera",
+        "sequencer.renmae_strips",
+        "sequencer.setup_render",
+        "tiny.check_file_status",
+        "view3d.add_line_art_obj",
+        "view3d.add_scene_strip",
+        "view3d.check_line_art_obj",
+        "view3d.refresh_line_art_obj",
+        "view3d.remove_line_art_obj",
+        "view3d.update_line_art_cam",
+        "view3d.update_similar_strip_line_art"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.refresh_copy_rot_items",
+        "object.remove_object_from_list",
+        "object.rotate_to_strip_camera",
+        "sequencer.add_camera_from_view",
+        "sequencer.batch_render",
+        "sequencer.check_viewport_sync_errors",
+        "sequencer.fix_viewport_sync_errors",
+        "sequencer.full_render_legacy",
+        "sequencer.preview_render",
+        "sequencer.refresh_viewport_camera",
+        "sequencer.renmae_strips",
+        "sequencer.setup_render",
+        "tiny.check_file_status",
+        "view3d.add_line_art_obj",
+        "view3d.add_scene_strip",
+        "view3d.check_line_art_obj",
+        "view3d.refresh_line_art_obj",
+        "view3d.remove_line_art_obj",
+        "view3d.update_line_art_cam",
+        "view3d.update_similar_strip_line_art"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [
+    "object.refresh_copy_rot_items",
+    "object.remove_object_from_list",
+    "object.rotate_to_strip_camera",
+    "sequencer.add_camera_from_view",
+    "sequencer.batch_render",
+    "sequencer.check_viewport_sync_errors",
+    "sequencer.fix_viewport_sync_errors",
+    "sequencer.full_render_legacy",
+    "sequencer.preview_render",
+    "sequencer.refresh_viewport_camera",
+    "sequencer.renmae_strips",
+    "sequencer.setup_render",
+    "tiny.check_file_status",
+    "view3d.add_line_art_obj",
+    "view3d.add_scene_strip",
+    "view3d.check_line_art_obj",
+    "view3d.refresh_line_art_obj",
+    "view3d.remove_line_art_obj",
+    "view3d.update_line_art_cam",
+    "view3d.update_similar_strip_line_art"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:27+00:00",
+  "prescan_hits": [],
+  "declared_min": "3.3"
+}

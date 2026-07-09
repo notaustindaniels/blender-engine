@@ -1,0 +1,36 @@
+{
+  "canonical_id": "aigodlike__blenderaistudio",
+  "artifact": "aigodlike__blenderaistudio.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:56+00:00",
+  "prescan_hits": [
+    "ctypes",
+    "urllib",
+    "socket",
+    "requests",
+    "os.system",
+    "base64-decode",
+    "__import__",
+    "subprocess",
+    "open-write"
+  ]
+}

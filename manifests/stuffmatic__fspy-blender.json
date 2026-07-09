@@ -1,0 +1,37 @@
+{
+  "canonical_id": "stuffmatic__fspy-blender",
+  "artifact": "stuffmatic__fspy-blender.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "fspy_blender.import_project"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "fspy_blender.import_project"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "fspy_blender.import_project"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "fspy_blender.import_project"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:40+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.80"
+}

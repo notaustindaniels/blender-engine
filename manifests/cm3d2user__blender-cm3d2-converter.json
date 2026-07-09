@@ -1,0 +1,32 @@
+{
+  "canonical_id": "cm3d2user__blender-cm3d2-converter",
+  "artifact": "cm3d2user__blender-cm3d2-converter.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:20+00:00",
+  "prescan_hits": [
+    "eval(",
+    "exec(",
+    "open-write",
+    "subprocess",
+    "urllib"
+  ]
+}

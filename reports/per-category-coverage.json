@@ -1294,7 +1294,7 @@
     {
      "niche": "differential_growth",
      "wave": 1,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     },
     {
@@ -1945,7 +1945,7 @@
     {
      "niche": "data_driven_accumulation",
      "wave": 2,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     }
    ]
@@ -2117,7 +2117,7 @@
     {
      "niche": "data_to_midi_actuation",
      "wave": 2,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     }
    ]

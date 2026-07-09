@@ -1,0 +1,31 @@
+{
+  "canonical_id": "michael-gh1__addons-and-tools-for-blender-mihoyo-shaders",
+  "artifact": "michael-gh1__addons-and-tools-for-blender-mihoyo-shaders.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:15+00:00",
+  "prescan_hits": [
+    "urllib",
+    "open-write",
+    "driver-expression",
+    "socket"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "canonical_id": "isathar__blender-ue4-vectorfieldeditor",
+  "artifact": "isathar__blender-ue4-vectorfieldeditor.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "object.calc_curvewindforce",
+        "object.calc_vectorfieldvelocities",
+        "object.edit_curvewindforce",
+        "object.export_vectorfieldfile",
+        "object.import_vectorfieldfile",
+        "object.preset_vfcreate",
+        "object.preset_vfcreate_fluid",
+        "object.vf_invertvelocities",
+        "object.vf_normalizevelocities",
+        "vftools.create_vectorfield",
+        "view3d.toggle_vectorfieldvelocities"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "object.calc_curvewindforce",
+        "object.calc_vectorfieldvelocities",
+        "object.edit_curvewindforce",
+        "object.export_vectorfieldfile",
+        "object.import_vectorfieldfile",
+        "object.preset_vfcreate",
+        "object.preset_vfcreate_fluid",
+        "object.vf_invertvelocities",
+        "object.vf_normalizevelocities",
+        "vftools.create_vectorfield",
+        "view3d.toggle_vectorfieldvelocities"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "object.calc_curvewindforce",
+        "object.calc_vectorfieldvelocities",
+        "object.edit_curvewindforce",
+        "object.export_vectorfieldfile",
+        "object.import_vectorfieldfile",
+        "object.preset_vfcreate",
+        "object.preset_vfcreate_fluid",
+        "object.vf_invertvelocities",
+        "object.vf_normalizevelocities",
+        "vftools.create_vectorfield",
+        "view3d.toggle_vectorfieldvelocities"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.calc_curvewindforce",
+    "object.calc_vectorfieldvelocities",
+    "object.edit_curvewindforce",
+    "object.export_vectorfieldfile",
+    "object.import_vectorfieldfile",
+    "object.preset_vfcreate",
+    "object.preset_vfcreate_fluid",
+    "object.vf_invertvelocities",
+    "object.vf_normalizevelocities",
+    "vftools.create_vectorfield",
+    "view3d.toggle_vectorfieldvelocities"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:18+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "2.80"
+}

@@ -1,0 +1,32 @@
+{
+  "canonical_id": "raracannot__image-editor-tools",
+  "artifact": "raracannot__image-editor-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T01:09:31+00:00",
+  "prescan_hits": [
+    "open-write",
+    "exec(",
+    "__import__",
+    "subprocess",
+    "ctypes"
+  ]
+}

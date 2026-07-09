@@ -1,0 +1,30 @@
+{
+  "canonical_id": "brolegion__procedural-multi-rig-animation-blender-addon",
+  "artifact": "brolegion__procedural-multi-rig-animation-blender-addon.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:00+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.0"
+}

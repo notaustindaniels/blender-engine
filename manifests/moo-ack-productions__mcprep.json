@@ -1,0 +1,32 @@
+{
+  "canonical_id": "moo-ack-productions__mcprep",
+  "artifact": "moo-ack-productions__mcprep.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:11+00:00",
+  "prescan_hits": [
+    "urllib",
+    "open-write",
+    "subprocess",
+    "socket",
+    "requests"
+  ]
+}

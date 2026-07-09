@@ -1,0 +1,78 @@
+{
+  "canonical_id": "kurono73__clip-tools",
+  "artifact": "kurono73__clip-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "clip.3d_markers_to_empty",
+        "clip.auto_interpolate_track_gap_with_islands",
+        "clip.create_image_plane_from_clip",
+        "clip.delete_active_movieclip",
+        "clip.duplicate_active_movieclip",
+        "clip.marker_offset_get_source",
+        "clip.orientation_plus_origin_from_cursor",
+        "clip.orientation_plus_set_contact_plane",
+        "clip.set_start_frame_from_filename",
+        "clip.setup_camera_solver",
+        "clip.setup_object_solver",
+        "clip.track_bridge_disable_range",
+        "clip.track_bridge_set_disable_range_end",
+        "clip.track_bridge_set_disable_range_start",
+        "object.setup_projection_shader"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "clip.3d_markers_to_empty",
+        "clip.auto_interpolate_track_gap_with_islands",
+        "clip.create_image_plane_from_clip",
+        "clip.delete_active_movieclip",
+        "clip.duplicate_active_movieclip",
+        "clip.marker_offset_get_source",
+        "clip.orientation_plus_origin_from_cursor",
+        "clip.orientation_plus_set_contact_plane",
+        "clip.set_start_frame_from_filename",
+        "clip.setup_camera_solver",
+        "clip.setup_object_solver",
+        "clip.track_bridge_disable_range",
+        "clip.track_bridge_set_disable_range_end",
+        "clip.track_bridge_set_disable_range_start",
+        "object.setup_projection_shader"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "clip.3d_markers_to_empty",
+    "clip.auto_interpolate_track_gap_with_islands",
+    "clip.create_image_plane_from_clip",
+    "clip.delete_active_movieclip",
+    "clip.duplicate_active_movieclip",
+    "clip.marker_offset_get_source",
+    "clip.orientation_plus_origin_from_cursor",
+    "clip.orientation_plus_set_contact_plane",
+    "clip.set_start_frame_from_filename",
+    "clip.setup_camera_solver",
+    "clip.setup_object_solver",
+    "clip.track_bridge_disable_range",
+    "clip.track_bridge_set_disable_range_end",
+    "clip.track_bridge_set_disable_range_start",
+    "object.setup_projection_shader"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:59:19+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.2"
+}

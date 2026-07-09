@@ -1,0 +1,73 @@
+{
+  "canonical_id": "captn-hook__path-tracer",
+  "artifact": "captn-hook__path-tracer.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "build.tracers",
+        "convert.backface",
+        "convert.bw",
+        "convert.shadow",
+        "cursor.location",
+        "import.obj",
+        "names.label",
+        "spawn.dt",
+        "spawn.new",
+        "spawn.save"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "build.tracers",
+        "convert.backface",
+        "convert.bw",
+        "convert.shadow",
+        "cursor.location",
+        "import.obj",
+        "names.label",
+        "spawn.dt",
+        "spawn.new",
+        "spawn.save"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "build.tracers",
+        "convert.backface",
+        "convert.bw",
+        "convert.shadow",
+        "cursor.location",
+        "import.obj",
+        "names.label",
+        "spawn.dt",
+        "spawn.new",
+        "spawn.save"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "build.tracers",
+    "convert.backface",
+    "convert.bw",
+    "convert.shadow",
+    "cursor.location",
+    "import.obj",
+    "names.label",
+    "spawn.dt",
+    "spawn.new",
+    "spawn.save"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:09:00+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "3.5"
+}

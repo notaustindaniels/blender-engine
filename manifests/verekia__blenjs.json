@@ -1,0 +1,30 @@
+{
+  "canonical_id": "verekia__blenjs",
+  "artifact": "verekia__blenjs.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.1 > 3.6"
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:40+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.1"
+}

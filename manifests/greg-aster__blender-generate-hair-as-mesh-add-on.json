@@ -1,0 +1,49 @@
+{
+  "canonical_id": "greg-aster__blender-generate-hair-as-mesh-add-on",
+  "artifact": "greg-aster__blender-generate-hair-as-mesh-add-on.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 3.6"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "mesh_hair.add_guide",
+        "mesh_hair.clear_guides",
+        "mesh_hair.create_guide_from_selection",
+        "mesh_hair.create_textures",
+        "mesh_hair.delete_preview",
+        "mesh_hair.finalize",
+        "mesh_hair.generate",
+        "mesh_hair.remove_guide",
+        "mesh_hair.select_guide_objects"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "mesh_hair.add_guide",
+    "mesh_hair.clear_guides",
+    "mesh_hair.create_guide_from_selection",
+    "mesh_hair.create_textures",
+    "mesh_hair.delete_preview",
+    "mesh_hair.finalize",
+    "mesh_hair.generate",
+    "mesh_hair.remove_guide",
+    "mesh_hair.select_guide_objects"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:31+00:00",
+  "prescan_hits": [],
+  "declared_min": "4.4"
+}

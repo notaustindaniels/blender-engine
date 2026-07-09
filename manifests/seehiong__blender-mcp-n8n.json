@@ -1,0 +1,31 @@
+{
+  "canonical_id": "seehiong__blender-mcp-n8n",
+  "artifact": "seehiong__blender-mcp-n8n.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T00:59:34+00:00",
+  "prescan_hits": [
+    "requests",
+    "socket",
+    "open-write",
+    "httpx"
+  ]
+}

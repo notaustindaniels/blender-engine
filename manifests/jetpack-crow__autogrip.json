@@ -1,0 +1,77 @@
+{
+  "canonical_id": "jetpack-crow__autogrip",
+  "artifact": "jetpack-crow__autogrip.zip",
+  "verify": {
+    "3.6": {
+      "state": "partial",
+      "operators": [
+        "object.autogrip_discussion_link",
+        "object.autogrip_guess_rig",
+        "object.autogrip_quickpose",
+        "object.autogrip_reset_l",
+        "object.autogrip_reset_r",
+        "object.autogrip_setup",
+        "object.autogrip_setup_left",
+        "object.autogrip_setup_right",
+        "object.autogrip_target_l",
+        "object.autogrip_target_r",
+        "object.kofi_link"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "partial",
+      "operators": [
+        "object.autogrip_discussion_link",
+        "object.autogrip_guess_rig",
+        "object.autogrip_quickpose",
+        "object.autogrip_reset_l",
+        "object.autogrip_reset_r",
+        "object.autogrip_setup",
+        "object.autogrip_setup_left",
+        "object.autogrip_setup_right",
+        "object.autogrip_target_l",
+        "object.autogrip_target_r",
+        "object.kofi_link"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.autogrip_discussion_link",
+        "object.autogrip_guess_rig",
+        "object.autogrip_quickpose",
+        "object.autogrip_reset_l",
+        "object.autogrip_reset_r",
+        "object.autogrip_setup",
+        "object.autogrip_setup_left",
+        "object.autogrip_setup_right",
+        "object.autogrip_target_l",
+        "object.autogrip_target_r",
+        "object.kofi_link"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.autogrip_discussion_link",
+    "object.autogrip_guess_rig",
+    "object.autogrip_quickpose",
+    "object.autogrip_reset_l",
+    "object.autogrip_reset_r",
+    "object.autogrip_setup",
+    "object.autogrip_setup_left",
+    "object.autogrip_setup_right",
+    "object.autogrip_target_l",
+    "object.autogrip_target_r",
+    "object.kofi_link"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:59:50+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "3.4"
+}

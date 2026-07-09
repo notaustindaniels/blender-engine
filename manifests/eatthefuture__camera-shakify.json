@@ -1,0 +1,43 @@
+{
+  "canonical_id": "eatthefuture__camera-shakify",
+  "artifact": "eatthefuture__camera-shakify.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "manifest extension needs Blender 4.2+ (no extension system on 3.6)"
+    },
+    "4.2": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.4 > 4.2"
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "object.camera_shake_add",
+        "object.camera_shake_move",
+        "object.camera_shake_remove",
+        "object.camera_shakes_fix_global",
+        "wm.camera_shakify_prep_file_for_farm"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "object.camera_shake_add",
+    "object.camera_shake_move",
+    "object.camera_shake_remove",
+    "object.camera_shakes_fix_global",
+    "wm.camera_shakify_prep_file_for_farm"
+  ],
+  "prescan": "clean",
+  "artifact_type": "extension_manifest",
+  "verified_at": "2026-07-09T00:58:55+00:00",
+  "prescan_hits": [
+    "driver-expression"
+  ],
+  "declared_min": "4.4"
+}

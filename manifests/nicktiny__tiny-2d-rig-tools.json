@@ -1,0 +1,91 @@
+{
+  "canonical_id": "nicktiny__tiny-2d-rig-tools",
+  "artifact": "nicktiny__tiny-2d-rig-tools.zip",
+  "verify": {
+    "3.6": {
+      "state": "pass",
+      "operators": [
+        "tiny2drig.add_action_const_to_bone",
+        "tiny2drig.add_custom_prop",
+        "tiny2drig.bone_nudge_backward",
+        "tiny2drig.bone_nudge_forward",
+        "tiny2drig.create_2d_armature",
+        "tiny2drig.enable_all_gp_mod_const_all",
+        "tiny2drig.enable_gp_mod_const",
+        "tiny2drig.enable_offset_action",
+        "tiny2drig.gp_add_time_offset_with_driver",
+        "tiny2drig.gp_constraint_armature",
+        "tiny2drig.gp_rig_via_lattice",
+        "tiny2drig.gp_vertex_by_layer",
+        "tiny2drig.initialize_rig",
+        "tiny2drig.load_action",
+        "tiny2drig.set_turnaround"
+      ],
+      "render_ok": true
+    },
+    "4.2": {
+      "state": "pass",
+      "operators": [
+        "tiny2drig.add_action_const_to_bone",
+        "tiny2drig.add_custom_prop",
+        "tiny2drig.bone_nudge_backward",
+        "tiny2drig.bone_nudge_forward",
+        "tiny2drig.create_2d_armature",
+        "tiny2drig.enable_all_gp_mod_const_all",
+        "tiny2drig.enable_gp_mod_const",
+        "tiny2drig.enable_offset_action",
+        "tiny2drig.gp_add_time_offset_with_driver",
+        "tiny2drig.gp_constraint_armature",
+        "tiny2drig.gp_rig_via_lattice",
+        "tiny2drig.gp_vertex_by_layer",
+        "tiny2drig.initialize_rig",
+        "tiny2drig.load_action",
+        "tiny2drig.set_turnaround"
+      ],
+      "render_ok": true
+    },
+    "4.5": {
+      "state": "pass",
+      "operators": [
+        "tiny2drig.add_action_const_to_bone",
+        "tiny2drig.add_custom_prop",
+        "tiny2drig.bone_nudge_backward",
+        "tiny2drig.bone_nudge_forward",
+        "tiny2drig.create_2d_armature",
+        "tiny2drig.enable_all_gp_mod_const_all",
+        "tiny2drig.enable_gp_mod_const",
+        "tiny2drig.enable_offset_action",
+        "tiny2drig.gp_add_time_offset_with_driver",
+        "tiny2drig.gp_constraint_armature",
+        "tiny2drig.gp_rig_via_lattice",
+        "tiny2drig.gp_vertex_by_layer",
+        "tiny2drig.initialize_rig",
+        "tiny2drig.load_action",
+        "tiny2drig.set_turnaround"
+      ],
+      "render_ok": true
+    }
+  },
+  "operators": [
+    "tiny2drig.add_action_const_to_bone",
+    "tiny2drig.add_custom_prop",
+    "tiny2drig.bone_nudge_backward",
+    "tiny2drig.bone_nudge_forward",
+    "tiny2drig.create_2d_armature",
+    "tiny2drig.enable_all_gp_mod_const_all",
+    "tiny2drig.enable_gp_mod_const",
+    "tiny2drig.enable_offset_action",
+    "tiny2drig.gp_add_time_offset_with_driver",
+    "tiny2drig.gp_constraint_armature",
+    "tiny2drig.gp_rig_via_lattice",
+    "tiny2drig.gp_vertex_by_layer",
+    "tiny2drig.initialize_rig",
+    "tiny2drig.load_action",
+    "tiny2drig.set_turnaround"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:32+00:00",
+  "prescan_hits": [],
+  "declared_min": "3.3"
+}

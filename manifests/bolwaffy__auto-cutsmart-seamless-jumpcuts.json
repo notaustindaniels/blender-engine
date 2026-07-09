@@ -1,0 +1,76 @@
+{
+  "canonical_id": "bolwaffy__auto-cutsmart-seamless-jumpcuts",
+  "artifact": "bolwaffy__auto-cutsmart-seamless-jumpcuts.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.2 > 3.6"
+    },
+    "4.2": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "retried_2x": true
+    },
+    "4.5": {
+      "state": "partial",
+      "operators": [
+        "auto_cutsmart.confirm_report",
+        "auto_cutsmart.copy_url",
+        "auto_cutsmart.open_url",
+        "auto_cutsmart.report_error",
+        "auto_cutsmart.self_report_error",
+        "auto_cutsmart.show_submission_links",
+        "auto_cutsmart.submit_report_no",
+        "camera.clear_split_results",
+        "camera.reprint_logs",
+        "camera.reset_learning_data",
+        "camera.split_animation_on_jumps",
+        "object.add_decimate_block",
+        "object.move_decimate_block",
+        "object.remove_decimate_block",
+        "render.csv_export",
+        "render.csv_import",
+        "render.frame_list_add",
+        "render.frame_list_remove",
+        "render.full_animation_with_keyframes",
+        "render.keyframes_only",
+        "render.refresh_from_markers"
+      ],
+      "render_ok": true,
+      "retried_2x": true
+    }
+  },
+  "operators": [
+    "auto_cutsmart.confirm_report",
+    "auto_cutsmart.copy_url",
+    "auto_cutsmart.open_url",
+    "auto_cutsmart.report_error",
+    "auto_cutsmart.self_report_error",
+    "auto_cutsmart.show_submission_links",
+    "auto_cutsmart.submit_report_no",
+    "camera.clear_split_results",
+    "camera.reprint_logs",
+    "camera.reset_learning_data",
+    "camera.split_animation_on_jumps",
+    "object.add_decimate_block",
+    "object.move_decimate_block",
+    "object.remove_decimate_block",
+    "render.csv_export",
+    "render.csv_import",
+    "render.frame_list_add",
+    "render.frame_list_remove",
+    "render.full_animation_with_keyframes",
+    "render.keyframes_only",
+    "render.refresh_from_markers"
+  ],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T00:58:58+00:00",
+  "prescan_hits": [
+    "open-write"
+  ],
+  "declared_min": "4.2"
+}

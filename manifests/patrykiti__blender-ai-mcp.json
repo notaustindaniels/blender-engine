@@ -1,0 +1,37 @@
+{
+  "canonical_id": "patrykiti__blender-ai-mcp",
+  "artifact": "patrykiti__blender-ai-mcp.zip",
+  "verify": {
+    "3.6": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "needs_review",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "needs_review",
+  "artifact_type": null,
+  "verified_at": "2026-07-09T01:09:30+00:00",
+  "prescan_hits": [
+    "socket",
+    "base64-decode",
+    "subprocess",
+    "urllib",
+    "requests",
+    "__import__",
+    "eval(",
+    "exec(",
+    "httpx",
+    "open-write"
+  ]
+}

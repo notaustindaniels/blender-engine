@@ -1,0 +1,30 @@
+{
+  "canonical_id": "blekknajt__gridflender",
+  "artifact": "blekknajt__gridflender.zip",
+  "verify": {
+    "3.6": {
+      "state": "skipped_incompatible",
+      "operators": [],
+      "render_ok": false,
+      "reason": "declared min 4.0 > 3.6"
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "clean",
+  "artifact_type": "python_bl_info",
+  "verified_at": "2026-07-09T01:00:04+00:00",
+  "prescan_hits": [
+    "socket"
+  ],
+  "declared_min": "4.0"
+}
