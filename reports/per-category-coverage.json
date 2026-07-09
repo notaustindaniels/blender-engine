@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 40,
- "pct": 12.2,
+ "total_covered": 42,
+ "pct": 12.8,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -1149,8 +1149,8 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 10,
-   "pct": 45.5,
+   "covered": 12,
+   "pct": 54.5,
    "niches": [
     {
      "niche": "wood_shader",
@@ -1167,7 +1167,7 @@
     {
      "niche": "tile_grout_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1197,7 +1197,7 @@
     {
      "niche": "toon_npr_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

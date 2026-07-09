@@ -1,17 +1,17 @@
 # Gap report — Materials & texturing (D-008 R47)
 
-Coverage: **10/22 = 45.5%** (full_pass + recipe_verified). 12 gaps.
+Coverage: **12/22 = 54.5%** (full_pass + recipe_verified). 10 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
 | wood_shader | 1 | full_pass | unclassified |
 | brick_shader | 1 | GAP | unclassified |
-| tile_grout_shader | 1 | GAP | unclassified |
+| tile_grout_shader | 1 | full_pass | unclassified |
 | edge_wear_rust | 1 | full_pass | unclassified |
 | marble_stone_shader | 1 | full_pass | unclassified |
 | car_paint_shader | 1 | full_pass | unclassified |
 | leather_skin_shader | 1 | full_pass | unclassified |
-| toon_npr_shader | 1 | GAP | unclassified |
+| toon_npr_shader | 1 | full_pass | unclassified |
 | pencil_stencil_system | 1 | GAP | unclassified |
 | imperfection_overlays | 1 | GAP | unclassified |
 | camo_pattern_shader | 1 | full_pass | unclassified |
@@ -27,4 +27,4 @@ Coverage: **10/22 = 45.5%** (full_pass + recipe_verified). 12 gaps.
 | wet_surface_puddles | 2 | GAP | unclassified |
 | fabric_weave_shader | 2 | GAP | unclassified |
 
-**Gaps (12):** what the free ecosystem lacks here — `brick_shader`(unclassified), `tile_grout_shader`(unclassified), `toon_npr_shader`(unclassified), `pencil_stencil_system`(unclassified), `imperfection_overlays`(unclassified), `lava_shader`(unclassified), `glitch_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)
+**Gaps (10):** what the free ecosystem lacks here — `brick_shader`(unclassified), `pencil_stencil_system`(unclassified), `imperfection_overlays`(unclassified), `lava_shader`(unclassified), `glitch_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)

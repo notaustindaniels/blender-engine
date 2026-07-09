@@ -1,11 +1,11 @@
 # Per-category coverage + gap summary (D-008 R47) — all 26 categories
 
-**Whole-taxonomy coverage: 40/328 = 12.2%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
+**Whole-taxonomy coverage: 42/328 = 12.8%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
 
 | category | covered | present | % | gaps |
 |---|---|---|---|---|
 | Vegetation & organic | 14 | 25 | 56.0% | 11 |
-| Materials & texturing | 10 | 22 | 45.5% | 12 |
+| Materials & texturing | 12 | 22 | 54.5% | 10 |
 | Animation: stylized / NPR | 1 | 4 | 25.0% | 3 |
 | Terrain & landscape | 9 | 39 | 23.1% | 30 |
 | Fabric & soft goods | 1 | 5 | 20.0% | 4 |
