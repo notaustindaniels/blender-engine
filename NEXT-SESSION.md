@@ -9,6 +9,14 @@ automatable: finish L6 (materials + node-groups), L5-pending resolution pass (�
 batch). Owner-gated: BlenderKit key in CI for the full 773 L6 sweep; L5/Route B checkouts; prescan
 clearances. Guardrails unchanged throughout.
 
+## ⚑ EFFICIENT-PATH BOTTLENECK (surface to owner): the full L6 sweep needs the BlenderKit key in CI
+Local emulated shader-probing does **~1–2 materials per 9 min** — the L6 free-tier is **600 materials +
+173 node-groups**, so a local sweep is ~30 h (impractical). The efficient path is a **native-CI L6 wave**
+(fast, like L1/L2) which needs `BLENDERKIT_API_KEY` as a GitHub Actions **secret** — an owner-gated
+credential (R33). READY-TO-BUILD once the secret exists: an `l6-wave.yml` sharding `candidates/L6.jsonl`,
+each shard running a bk-aware acquire (scene_uuid+UA) → shader-probe (materials) / gate (node-groups) →
+manifests artifact, then `wave_ingest`. Until then, local material batches continue slowly (7 done).
+
 ## Wave chain (supervisor state)
 | wave | scope | candidates | status |
 |---|---|---|---|
