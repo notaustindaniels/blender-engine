@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__e3b54069-5b6b-4ce5-a98d-84eb50dc6b5e",
+  "name": "Asphalt 04",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

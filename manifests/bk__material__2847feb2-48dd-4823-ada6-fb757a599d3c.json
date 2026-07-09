@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2847feb2-48dd-4823-ada6-fb757a599d3c",
+  "name": "Painted stratched wood",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

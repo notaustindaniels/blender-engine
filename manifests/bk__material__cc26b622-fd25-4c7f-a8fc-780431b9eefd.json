@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__cc26b622-fd25-4c7f-a8fc-780431b9eefd",
+  "name": "Decoratiive Tiles 10",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}
