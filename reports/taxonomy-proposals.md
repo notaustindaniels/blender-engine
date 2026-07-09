@@ -59,7 +59,6 @@ Harvested add-ons that survived verification but map to NO taxonomy niche — ca
 - `andersmmg__color-grid-texture-generator` (Color Grid Texture Generator) — survived, no niche mapped
 - `andrey-pestryakov__batch-asset-placer` (Batch Asset Placer) — survived, no niche mapped
 - `andycuccaro__easeit` (Easeit) — survived, no niche mapped
-- `aniraiden__hairreconstruction` (HairReconstruction) — survived, no niche mapped
 - `anoop-jadhav-ui__voronoisolidblenderaddon` (VoronoiSolidBlenderAddon) — survived, no niche mapped
 - `antlandscape` (None) — survived, no niche mapped
 - `aresdevo__animaide` (animaide) — survived, no niche mapped
@@ -188,7 +187,6 @@ Harvested add-ons that survived verification but map to NO taxonomy niche — ca
 - `crwde__three-js-objectloader` (three.js ObjectLoader) — survived, no niche mapped
 - `cyber-king__pixelsync-porter` (PixelSync Porter) — survived, no niche mapped
 - `d3w3__local-view-by-collection` (Local View by collection) — survived, no niche mapped
-- `dadscastle__grease-pencil-to-curves` (Grease Pencil to Curves) — survived, no niche mapped
 - `daikiad__blender-lucid-renderer` (blender-lucid-renderer) — survived, no niche mapped
 - `dakashi__gs-model-helper` (GS Model Helper) — survived, no niche mapped
 - `dan-gry__asset-browser-capture-thumbnail-from-viewport` (Asset Browser: Capture Thumbnail from Viewport) — survived, no niche mapped
@@ -277,7 +275,6 @@ Harvested add-ons that survived verification but map to NO taxonomy niche — ca
 - `golden_good_cube` (None) — survived, no niche mapped
 - `golden_noop` (None) — survived, no niche mapped
 - `gonnetz__forts-map-importer` (Forts Map Importer) — survived, no niche mapped
-- `greg-aster__blender-generate-hair-as-mesh-add-on` (Blender-Generate-Hair-as-Mesh-add-on) — survived, no niche mapped
 - `gregzaal__manage-file-paths` (Manage File Paths) — survived, no niche mapped
 - `gregzaal__matalogue` (Matalogue) — survived, no niche mapped
 - `griperis__improved-node-search` (Improved Node Search) — survived, no niche mapped
@@ -292,7 +289,6 @@ Harvested add-ons that survived verification but map to NO taxonomy niche — ca
 - `hans-xwh__a3da-parser` (A3DA Parser) — survived, no niche mapped
 - `hans-xwh__wiggle-bones` (Wiggle Bones) — survived, no niche mapped
 - `hartface__aiming-helper` (Aiming Helper) — survived, no niche mapped
-- `hartface__clothdrop-reborn` (ClothDrop Reborn) — survived, no niche mapped
 - `hartface__mesh-filters` (Mesh Filters) — survived, no niche mapped
 - `hattiffnat__auto-wrinkle-map` (Auto Wrinkle Map) — survived, no niche mapped
 - `hattiffnat__separate-by-collision` (Separate by Collision) — survived, no niche mapped

@@ -24,7 +24,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 52.9,
+    "pass_rate_of_all_pct": 53.1,
     "threshold": 30.0,
     "tripped": false
   },
@@ -63,12 +63,13 @@
     "accumulate|ground": 1,
     "branch|abstract": 1,
     "branch|organic": 5,
-    "deform|abstract": 2,
+    "deform|abstract": 3,
     "deplete|ground": 3,
+    "fill|abstract": 7,
     "fill|air": 1,
     "fill|ground": 3,
     "fill|organic": 1,
-    "generate|abstract": 12,
+    "generate|abstract": 15,
     "generate|air": 1,
     "generate|ground": 7,
     "generate|organic": 5,
@@ -77,20 +78,21 @@
     "reveal|organic": 1,
     "scatter|air": 1,
     "scatter|organic": 1,
+    "simulate|abstract": 1,
     "simulate|ground": 3,
     "trace|abstract": 1,
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 868,
-    "acquisitions": 1347,
-    "surviving": 713,
-    "pct_of_probed": 82.1,
-    "pct_of_all_acquisitions": 52.9
+    "verified_probed": 876,
+    "acquisitions": 1356,
+    "surviving": 720,
+    "pct_of_probed": 82.2,
+    "pct_of_all_acquisitions": 53.1
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 31,
+    "decision_covered": 41,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -115,8 +117,14 @@
       "michaelschieber__camerafly",
       "waynedixon__add-camera-rigs"
     ],
+    "camo_pattern_shader": [
+      "bkmat__camo_pattern_shader"
+    ],
     "cliff_rockface_generator": [
       "marcueberall__blender-cliffgenerator"
+    ],
+    "cloth_sim": [
+      "hartface__clothdrop-reborn"
     ],
     "cracked_earth_shader": [
       "bkmat__cracked_earth_shader"
@@ -139,16 +147,30 @@
     "differential_growth": [
       "inca__blender-differential-growth"
     ],
+    "edge_wear_rust": [
+      "bkmat__edge_wear_rust"
+    ],
     "erosion_sim": [
       "community__a-n-t-landscape",
       "petak5__bp",
       "varkenvarken__erosion"
+    ],
+    "fake_cloth": [
+      "hartface__clothdrop-reborn"
     ],
     "fern_generator": [
       "sagado__procedural-fern"
     ],
     "gas_giant_shader": [
       "bkmat__gas_giant_shader"
+    ],
+    "glass_material": [
+      "bkmat__glass_material"
+    ],
+    "hair_groom_presets": [
+      "aniraiden__hairreconstruction",
+      "dadscastle__grease-pencil-to-curves",
+      "greg-aster__blender-generate-hair-as-mesh-add-on"
     ],
     "heightmap_stack_tools": [
       "nicolaspriniotakis__srtm-terrain-importer",
@@ -160,8 +182,14 @@
     "ivy_generator": [
       "community__ivygen"
     ],
+    "leather_skin_shader": [
+      "bkmat__leather_skin_shader"
+    ],
     "light_matrix_data": [
       "vicky-at-24fps__export-to-nuke-script"
+    ],
+    "marble_stone_shader": [
+      "bkmat__marble_stone_shader"
     ],
     "organic_cell_shader": [
       "bkmat__organic_cell_shader"
@@ -193,6 +221,12 @@
       "community__sapling-tree-gen",
       "jacob-johnston__easy-tree",
       "ls__space-colonization-tree-generator"
+    ],
+    "water_shader": [
+      "bkmat__water_shader"
+    ],
+    "wood_shader": [
+      "bkmat__wood_shader"
     ]
   },
   "probe_recipe_backlog": [

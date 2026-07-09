@@ -80,6 +80,25 @@
    "4.5"
   ]
  },
+ "operator/bkmat__camo_pattern_shader::bkmat__camo_pattern_shader:material": {
+  "cid": "bkmat__camo_pattern_shader",
+  "operator_id": "bkmat__camo_pattern_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "camo_pattern_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__cracked_earth_shader::bkmat__cracked_earth_shader:material": {
   "cid": "bkmat__cracked_earth_shader",
   "operator_id": "bkmat__cracked_earth_shader:material",
@@ -92,6 +111,25 @@
   ],
   "media": [
    "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__edge_wear_rust::bkmat__edge_wear_rust:material": {
+  "cid": "bkmat__edge_wear_rust",
+  "operator_id": "bkmat__edge_wear_rust:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "edge_wear_rust"
+  ],
+  "media": [
+   "?"
   ],
   "quality": "full_generator",
   "license": "royalty_free",
@@ -118,6 +156,25 @@
    "4.5"
   ]
  },
+ "operator/bkmat__glass_material::bkmat__glass_material:material": {
+  "cid": "bkmat__glass_material",
+  "operator_id": "bkmat__glass_material:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "glass_material"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__ice_shader::bkmat__ice_shader:material": {
   "cid": "bkmat__ice_shader",
   "operator_id": "bkmat__ice_shader:material",
@@ -130,6 +187,44 @@
   ],
   "media": [
    "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__leather_skin_shader::bkmat__leather_skin_shader:material": {
+  "cid": "bkmat__leather_skin_shader",
+  "operator_id": "bkmat__leather_skin_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "leather_skin_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__marble_stone_shader::bkmat__marble_stone_shader:material": {
+  "cid": "bkmat__marble_stone_shader",
+  "operator_id": "bkmat__marble_stone_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "marble_stone_shader"
+  ],
+  "media": [
+   "?"
   ],
   "quality": "full_generator",
   "license": "royalty_free",
@@ -168,6 +263,44 @@
   ],
   "media": [
    "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__water_shader::bkmat__water_shader:material": {
+  "cid": "bkmat__water_shader",
+  "operator_id": "bkmat__water_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "water_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__wood_shader::bkmat__wood_shader:material": {
+  "cid": "bkmat__wood_shader",
+  "operator_id": "bkmat__wood_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "wood_shader"
+  ],
+  "media": [
+   "?"
   ],
   "quality": "full_generator",
   "license": "royalty_free",
@@ -389,8 +522,8 @@
    "simulate"
   ],
   "niches": [
-   "cloth_sim",
-   "fake_cloth"
+   "fake_cloth",
+   "cloth_sim"
   ],
   "media": [
    "?"

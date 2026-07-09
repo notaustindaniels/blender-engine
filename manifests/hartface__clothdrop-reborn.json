@@ -52,11 +52,11 @@
         "simulate"
       ],
       "niches": [
-        "cloth_sim",
-        "fake_cloth"
+        "fake_cloth",
+        "cloth_sim"
       ]
     }
   ],
   "enriched_by": "keyword-heuristic",
-  "enrich_note": "heuristic: 'cloth' in name/tagline -> ['cloth_sim', 'fake_cloth'] (Fabric & soft goods)."
+  "enrich_note": "heuristic: 'cloth' in name/tagline -> ['fake_cloth', 'cloth_sim'] (Animation: cloth, rope & soft proxies)."
 }

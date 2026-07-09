@@ -1,0 +1,27 @@
+{
+  "canonical_id": "vault",
+  "artifact": "vault",
+  "verify": {
+    "3.6": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.2": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    },
+    "4.5": {
+      "state": "fail",
+      "operators": [],
+      "render_ok": false
+    }
+  },
+  "operators": [],
+  "prescan": "error",
+  "artifact_type": "other",
+  "verified_at": "2026-07-09T11:56:14+00:00",
+  "prescan_hits": [],
+  "declared_min": null
+}

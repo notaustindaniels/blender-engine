@@ -32,8 +32,17 @@ they lack a clean auto-acquirable archive URL.
 | Standard Male/Female Base Mesh **[FREE]** | tommywan622.gumroad.com | asset (not procedural) — optional Stage-2 scene asset |
 | Flex's / Blenderesse free GN generators | Gumroad free tiers | curtain/stair/rope/power-line/bird — confirm $0, then I probe |
 
+## Reroute probe outcome (native CI) — R6 guardrail bites
+The rerouted free GitHub generators were probed and **several hit NEVER_ALLOW prescan patterns** →
+permanently quarantined (R6, cannot be cleared): `Durman/BuildingNodes` (`eval(`), `mrachinskiy/booltron`
+(`subprocess`), `hsab/GrowthNodes` (`exec(`/`ctypes`/`eval(`/`__import__`). Honest finding: many complex
+free add-ons use exec/network-capable patterns (dynamic node eval, dependency install) that the sandbox
+safety gate holds — so the free-reroute lane yields **fewer PROBEABLE generators than found**. This is
+the guardrail working as designed, not a failure; these tools are `needs_review`/quarantined, not covered.
+
 ## Honest conclusion
 The L5 forum-routed lane is **predominantly paid, non-procedural marketplace assets** (brush/detail/rig
-kits) that fall outside the free-procedural corpus. Its real yield is the **GitHub-mirror reroutes** (5,
-probing now) + a small **$0 checkout batch** (owner-gated). No automated purchase; no scraping; DENY on
-unconfirmable price. This is the documented exhaustion of the L5 lane's automatable portion.
+kits, outside the free-procedural corpus). Its automatable yield: **GitHub-mirror reroutes** (probed —
+several quarantined by NEVER_ALLOW, R6) + a small **$0 checkout batch** (owner-gated). No automated
+purchase; no scraping; DENY on unconfirmable price (R31). This is the documented exhaustion of the L5
+lane's automatable portion — the residual is owner-gated ($0 checkouts) or safety-quarantined.
