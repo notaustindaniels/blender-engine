@@ -76,8 +76,21 @@ QUERIES = _build_queries()
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
 
 
-def gh(url, params=None):
-    r = httpx.get(url, headers=H, params=params or {}, timeout=30, follow_redirects=True)
+def gh(url, params=None, _tries=4):
+    """Resilient GET: retries transient network errors (server disconnects, timeouts) with backoff —
+    a long campaign sweep must not die on one flaky response. Secondary-rate-limit (403/429) backs off."""
+    last = None
+    for i in range(_tries):
+        try:
+            r = httpx.get(url, headers=H, params=params or {}, timeout=30, follow_redirects=True)
+            if r.status_code in (403, 429) and i < _tries - 1:
+                time.sleep(8 * (i + 1)); continue      # secondary rate limit — back off
+            return r
+        except (httpx.RemoteProtocolError, httpx.ConnectError, httpx.ReadTimeout,
+                httpx.ConnectTimeout, httpx.PoolTimeout, httpx.WriteError) as e:
+            last = e; time.sleep(3 * (i + 1))
+    if last:
+        raise last
     return r
 
 
@@ -180,7 +193,11 @@ def main():
         if it.get("archived"):
             grave.append({"url": url, "reason": "archived-repo", "seen_at": now, "lane": "L2"})
             continue
-        info = resolve_addon(owner, repo, it)
+        try:
+            info = resolve_addon(owner, repo, it)
+        except Exception as e:                          # one flaky repo must not kill the sweep (R11)
+            grave.append({"url": url, "reason": f"resolve-error: {type(e).__name__}", "seen_at": now, "lane": "L2"})
+            continue
         if not info:
             grave.append({"url": url, "reason": "no-addon-signature", "seen_at": now, "lane": "L2"})
             continue
