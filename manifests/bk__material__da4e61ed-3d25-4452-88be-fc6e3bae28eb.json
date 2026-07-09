@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__da4e61ed-3d25-4452-88be-fc6e3bae28eb",
+  "name": "Asphalt Pit Lane",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

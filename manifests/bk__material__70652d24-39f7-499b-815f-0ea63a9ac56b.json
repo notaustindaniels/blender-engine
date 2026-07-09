@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__70652d24-39f7-499b-815f-0ea63a9ac56b",
+  "name": "Asphalt Track",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}
