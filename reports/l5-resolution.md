@@ -24,13 +24,18 @@ Additional free generators surfaced during resolution (Flex's Generators: curtai
 Blenderesse: power-line/bird; Buildify) are Gumroad-hosted free tiers — **checkout batch** (below) since
 they lack a clean auto-acquirable archive URL.
 
-## Checkout batch (your hands — R33; confirm $0 at click, capture license)
-| item | source | note |
-|---|---|---|
-| Shot Manager (Pro/Lite **free** tier) | blendermarket.com/products/shot-manager | free tier — confirm at checkout |
-| BlendFog (shader fog/atmosphere) | jesperbylov.gumroad.com/l/blendfog | price search-unconfirmable → confirm at click |
-| Standard Male/Female Base Mesh **[FREE]** | tommywan622.gumroad.com | asset (not procedural) — optional Stage-2 scene asset |
-| Flex's / Blenderesse free GN generators | Gumroad free tiers | curtain/stair/rope/power-line/bird — confirm $0, then I probe |
+## Checkout batch — RESOLVED to batch-1 standard (machine price-confirmed; R31 unconfirmable = DENY)
+| item | source | price (confirmed) | license | niche | disposition |
+|---|---|---|---|---|---|
+| **Buildify 1.0** (Pavel Oliva) | `paveloliva.gumroad.com/l/buildify` | **$0 PWYW** (confirmed, BlenderNation/CGChannel) | free-to-use (verify at DL) | building_generator | ✅ **CHECKOUT — ready to click** |
+| Shot Manager Lite | `github.com/OtherRealms/Shot-Manager-Free` | $0 + GitHub mirror | GPL | shot/render UI — non-niche | → rerouted L2 (not corpus-relevant) |
+| BlendFog | Superhive (Jesper Bylov) | **$18 PAID** (forum title mislabeled "free") | — | — | ❌ EXCLUDED (R23 no purchase) |
+| Flex's rope/crystal/curtain gens | `flexdigitalpottery.gumroad.com` | **UNCONFIRMABLE** (Gumroad JS) | — | — | ⚠️ DENY (R31) |
+| Standard M/F Base Mesh [FREE] | tommywan622.gumroad.com | $0 (static asset) | — | not procedural | not corpus — optional Stage-2 scene asset |
+
+**Result: 1 confirmed-$0 ready-to-click checkout (Buildify).** The L5 forum-routed lane yields almost no
+free procedural-generator checkouts — it is predominantly paid brush/detail/rig assets (excluded) or
+unconfirmable prices (denied). Batch-1 standard met: every row has a confirmed price + license + disposition.
 
 ## Reroute probe outcome (native CI) — R6 guardrail bites
 The rerouted free GitHub generators were probed and **several hit NEVER_ALLOW prescan patterns** →

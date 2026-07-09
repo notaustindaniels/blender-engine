@@ -20,14 +20,26 @@ genuine, tested credential wall. **Pick ONE (either unblocks L6):**
 Until then, L6 coverage stands at the niche-targeted local max (27 passes → 15.9%, 13 categories); the
 600-material/173-node-group long-tail is the CI wave's job (real gate states only under native amd64).
 
-## $0 checkout batches (your hands — R33, Gumroad §14 no-automation)
-- [ ] **L5 pending resolution** · `candidates/L5_pending.jsonl` holds **84** marketplace links (Gumroad/
-  Superhive) from L3/L4 routing. Each needs resolution to the batch-1 standard (GitHub-mirror check →
-  confirmed $0 → captured license) before a checkout batch. **Next agent step (automatable):** run the
-  mirror-check + price-confirm pass, producing a resolution-passed batch (~15–25 rows) for one checkout
-  session. Flagged/unconfirmable prices default to DENY (R31).
-- [ ] **Route B GN-pack batch** (D-007 R42) · optional depth; the free marketplace $0-GN supply is thin
-  (mostly paid/unconfirmable). Re-open only if you want depth beyond the free-API lanes.
+## $0 checkout batch — RESOLVED to batch-1 standard (your hands — R33, Gumroad §14 no-automation)
+The 84 L5-pending links were resolution-passed (`reports/l5-resolution.md`): ~70 paid/non-procedural
+(excluded), free generators rerouted to L2 (probed → several NEVER_ALLOW-quarantined by R6). The
+**confirmed-$0, ready-to-click checkout batch** (price machine-confirmed via search; unconfirmable = DENY
+per R31):
+
+| # | product | URL | price | license | niche | Blender |
+|---|---|---|---|---|---|---|
+| 1 | **Buildify 1.0** (Pavel Oliva) | `paveloliva.gumroad.com/l/buildify` | **$0** (PWYW, confirmed) | free-to-use (verify at download) | `building_generator` | 3.2+ |
+
+**Rerouted to L2 (automatable, no checkout needed):** Shot Manager Lite → `github.com/OtherRealms/Shot-Manager-Free`
+($0, but a shot/render UI tool → non-niche, not corpus-relevant). **DENIED (R31, unconfirmable $0):** Flex's
+generators (rope/crystal/curtain — Gumroad price not machine-confirmable). **EXCLUDED (paid, R23):** BlendFog
+(**$18** Superhive — the forum title mislabeled it "free"); ~70 paid brush/detail/rig kits. **Not corpus:**
+"[FREE] Base Mesh" (static asset, not procedural → optional Stage-2 scene asset).
+
+To click: open the Buildify URL, enter **$0**, download the `.blend`, drop it into `inputs/dropzone/` and I
+probe it next run. (It maps to `building_generator`, already covered by a node-group — so this is depth, not
+new coverage.)
+- [ ] **Route B GN-pack batch** (D-007 R42) · optional depth; free marketplace $0-GN supply is thin.
 
 ## Prescan safety review (R6 — human clears benign-in-context only)
 - [ ] **Wave 1: 16 human-clearable** (`reports/prescan-review-wave1.md`) · benign-in-context patterns
