@@ -1,6 +1,6 @@
 # Per-category coverage + gap summary (D-008 R47) — all 26 categories
 
-**Whole-taxonomy coverage: 30/328 = 9.1%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
+**Whole-taxonomy coverage: 33/328 = 10.1%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
 
 | category | covered | present | % | gaps |
 |---|---|---|---|---|
@@ -10,6 +10,7 @@
 | Fabric & soft goods | 1 | 5 | 20.0% | 4 |
 | Animation: cloth, rope & soft proxies | 1 | 5 | 20.0% | 4 |
 | Animation: camera & cinematic | 1 | 5 | 20.0% | 4 |
+| Materials & texturing | 3 | 22 | 13.6% | 19 |
 | Characters & creatures | 1 | 8 | 12.5% | 7 |
 | Abstract, mograph & design | 1 | 14 | 7.1% | 13 |
 | Nature elements & FX geometry | 1 | 24 | 4.2% | 23 |
@@ -17,7 +18,6 @@
 | Buildings & architecture | 0 | 17 | 0.0% | 17 |
 | Rooms & interiors | 0 | 12 | 0.0% | 12 |
 | Hard surface & props | 0 | 17 | 0.0% | 17 |
-| Materials & texturing | 0 | 22 | 0.0% | 22 |
 | Simulation-adjacent | 0 | 15 | 0.0% | 15 |
 | Emergent formation (agents/particles self-organize into targets) | 0 | 14 | 0.0% | 14 |
 | Diegetic data visualization (charts as in-world objects) | 0 | 16 | 0.0% | 16 |

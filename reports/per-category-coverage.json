@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 30,
- "pct": 9.1,
+ "total_covered": 33,
+ "pct": 10.1,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -1149,13 +1149,13 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 3,
+   "pct": 13.6,
    "niches": [
     {
      "niche": "wood_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1179,7 +1179,7 @@
     {
      "niche": "marble_stone_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1191,7 +1191,7 @@
     {
      "niche": "leather_skin_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
