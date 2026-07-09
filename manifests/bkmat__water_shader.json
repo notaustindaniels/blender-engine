@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bkmat__water_shader",
+  "name": "Procedural Water Surface",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.10392
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "material",
+      "id": "bkmat__water_shader:material",
+      "verbs": [
+        "fill"
+      ],
+      "niches": [
+        "water_shader"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "shader-probe (L6 material, D-006 R37)",
+  "enrich_note": "BlenderKit procedural material shader-probed delta=0.104 (>=0.02 pass) -> covers water_shader."
+}

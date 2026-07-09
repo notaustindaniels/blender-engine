@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 33,
- "pct": 10.1,
+ "total_covered": 36,
+ "pct": 11.0,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -1149,8 +1149,8 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 3,
-   "pct": 13.6,
+   "covered": 6,
+   "pct": 27.3,
    "niches": [
     {
      "niche": "wood_shader",
@@ -1173,7 +1173,7 @@
     {
      "niche": "edge_wear_rust",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1215,7 +1215,7 @@
     {
      "niche": "camo_pattern_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -1263,7 +1263,7 @@
     {
      "niche": "water_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
