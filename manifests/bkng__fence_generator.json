@@ -1,0 +1,27 @@
+{
+  "canonical_id": "bkng__fence_generator",
+  "name": "fence_generator",
+  "artifact_type": "gn_pack",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bkng__fence_generator:ng",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "fence_generator"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 node-group GN-gate (D-008)",
+  "enrich_note": "BlenderKit node-group -> fence_generator."
+}

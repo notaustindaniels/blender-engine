@@ -1,6 +1,6 @@
 # Gap report — Nature elements & FX geometry (D-008 R47)
 
-Coverage: **2/24 = 8.3%** (full_pass + recipe_verified). 22 gaps.
+Coverage: **3/24 = 12.5%** (full_pass + recipe_verified). 21 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Coverage: **2/24 = 8.3%** (full_pass + recipe_verified). 22 gaps.
 | crystal_growth | 1 | GAP | unclassified |
 | geode_generator | 1 | GAP | unclassified |
 | spiderweb_generator | 1 | GAP | unclassified |
-| fence_generator | 1 | GAP | unclassified |
+| fence_generator | 1 | full_pass | unclassified |
 | net_generator | 1 | GAP | unclassified |
 | bubble_foam_packing | 1 | GAP | unclassified |
 | goo_slime_generator | 1 | GAP | unclassified |
@@ -29,4 +29,4 @@ Coverage: **2/24 = 8.3%** (full_pass + recipe_verified). 22 gaps.
 | volumetric_beam_plotting | 2 | GAP | unclassified |
 | ink_bloom_volumetric | 2 | GAP | unclassified |
 
-**Gaps (22):** what the free ecosystem lacks here — `rock_scatter`(unclassified), `pebble_gravel_scatter`(unclassified), `cloud_system`(unclassified), `ocean_sim`(unclassified), `ripple_wake_generator`(unclassified), `shoreline_foam`(unclassified), `water_caustics`(unclassified), `underwater_volumetrics`(unclassified), `stylized_flame_geo`(unclassified), `lightning_generator`(unclassified), `crystal_growth`(unclassified), `geode_generator`(unclassified), `spiderweb_generator`(unclassified), `fence_generator`(unclassified), `net_generator`(unclassified), `bubble_foam_packing`(unclassified), `goo_slime_generator`(unclassified), `storm_sim`(unclassified), `star_field`(unclassified), `fireworks_choreography`(unclassified), `volumetric_beam_plotting`(unclassified), `ink_bloom_volumetric`(unclassified)
+**Gaps (21):** what the free ecosystem lacks here — `rock_scatter`(unclassified), `pebble_gravel_scatter`(unclassified), `cloud_system`(unclassified), `ocean_sim`(unclassified), `ripple_wake_generator`(unclassified), `shoreline_foam`(unclassified), `water_caustics`(unclassified), `underwater_volumetrics`(unclassified), `stylized_flame_geo`(unclassified), `lightning_generator`(unclassified), `crystal_growth`(unclassified), `geode_generator`(unclassified), `spiderweb_generator`(unclassified), `net_generator`(unclassified), `bubble_foam_packing`(unclassified), `goo_slime_generator`(unclassified), `storm_sim`(unclassified), `star_field`(unclassified), `fireworks_choreography`(unclassified), `volumetric_beam_plotting`(unclassified), `ink_bloom_volumetric`(unclassified)

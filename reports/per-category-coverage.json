@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 50,
- "pct": 15.2,
+ "total_covered": 52,
+ "pct": 15.9,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -761,8 +761,8 @@
   },
   "Hard surface & props": {
    "present": 17,
-   "covered": 2,
-   "pct": 11.8,
+   "covered": 3,
+   "pct": 17.6,
    "niches": [
     {
      "niche": "sword_generator",
@@ -779,7 +779,7 @@
     {
      "niche": "wheel_tire_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -907,8 +907,8 @@
   },
   "Nature elements & FX geometry": {
    "present": 24,
-   "covered": 2,
-   "pct": 8.3,
+   "covered": 3,
+   "pct": 12.5,
    "niches": [
     {
      "niche": "rock_scatter",
@@ -997,7 +997,7 @@
     {
      "niche": "fence_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

@@ -1,6 +1,6 @@
 # Per-category coverage + gap summary (D-008 R47) — all 26 categories
 
-**Whole-taxonomy coverage: 50/328 = 15.2%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
+**Whole-taxonomy coverage: 52/328 = 15.9%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
 
 | category | covered | present | % | gaps |
 |---|---|---|---|---|
@@ -11,10 +11,10 @@
 | Terrain & landscape | 9 | 39 | 23.1% | 30 |
 | Animation: cloth, rope & soft proxies | 1 | 5 | 20.0% | 4 |
 | Animation: camera & cinematic | 1 | 5 | 20.0% | 4 |
+| Hard surface & props | 3 | 17 | 17.6% | 14 |
 | Characters & creatures | 1 | 8 | 12.5% | 7 |
-| Hard surface & props | 2 | 17 | 11.8% | 15 |
+| Nature elements & FX geometry | 3 | 24 | 12.5% | 21 |
 | Rooms & interiors | 1 | 12 | 8.3% | 11 |
-| Nature elements & FX geometry | 2 | 24 | 8.3% | 22 |
 | Abstract, mograph & design | 1 | 14 | 7.1% | 13 |
 | Buildings & architecture | 1 | 17 | 5.9% | 16 |
 | Cities & urban | 0 | 18 | 0.0% | 18 |
