@@ -4,15 +4,21 @@ The full-taxonomy harvest runs in native-CI waves (L1 ✓, L2 ✓, L6 in progres
 irreducible human floor (R33) or an owner-gated credential/decision. Automatable work continues without
 these; surfaced per R49 (batched, consolidated). Nothing here blocks the automatable campaign.
 
-## ⚡ ONE ACTION unblocks the full-taxonomy sweep at scale (owner-gated credential, R33)
-- [ ] **Add `BLENDERKIT_API_KEY` as a repo Actions secret**, then dispatch **`l6-wave`**. The full
-  773-candidate L6 sweep (600 materials + 173 node-groups) is **built and ready-to-fire** as a sharded
-  native-CI wave (`.github/workflows/l6-wave.yml` — registered). Exact steps: GitHub → repo **Settings →
-  Secrets and variables → Actions → New repository secret** → name `BLENDERKIT_API_KEY`, value = your
-  BlenderKit key → then **Actions → l6-wave → Run workflow**. This turns the ~30h local grind (background
-  tasks keep getting killed here; foreground does ~2 materials/10min) into a fast parallel wave like
-  L1/L2. I ingest the artifacts, mint cards, rebuild the KB, and re-run the eval on completion. Until
-  then, 7 material niches are covered locally (Materials 7/22) as a representative sample.
+## ⚡ ONE ACTION unblocks L6 at scale — TESTED as a hard permission wall (R2)
+The full 773-candidate L6 sweep MUST run in native CI (`l6-wave.yml`, registered + ready): local
+arm64-emulation gates only **1 pass in 23** (~96% quarantine/timeout — heavy BlenderKit materials crash
+the emulated probe; proven, `manifests/bk__material__*`). I tried to self-serve the CI secret with the
+RW token via GitHub's encrypted-secret API — **HTTP 403 "Resource not accessible by personal access
+token"**: `blender-engine-rw` has `Actions: write` (dispatch) but NOT `Secrets: write`. So it is a
+genuine, tested credential wall. **Pick ONE (either unblocks L6):**
+- [ ] **(a) You add the secret** — GitHub → repo **Settings → Secrets and variables → Actions → New
+  repository secret** → name `BLENDERKIT_API_KEY`, value = your BlenderKit key. Then tell me and I
+  dispatch `l6-wave`, poll, ingest, card, re-eval. *(Recommended — least privilege.)*
+- [ ] **(b) You grant `blender-engine-rw` the `Secrets: write` permission** — then I set the secret
+  from the local key (encrypted, never printed) AND dispatch the wave fully autonomously.
+
+Until then, L6 coverage stands at the niche-targeted local max (27 passes → 15.9%, 13 categories); the
+600-material/173-node-group long-tail is the CI wave's job (real gate states only under native amd64).
 
 ## $0 checkout batches (your hands — R33, Gumroad §14 no-automation)
 - [ ] **L5 pending resolution** · `candidates/L5_pending.jsonl` holds **84** marketplace links (Gumroad/

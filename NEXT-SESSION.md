@@ -15,8 +15,11 @@ heavy photoscans/high-res PBR that CRASH the emulated Blender probe. These same 
 CI. So: **L6 coverage is maximized locally (niche-targeting → 15.9%); the full-sweep with MEANINGFUL gate
 states requires native CI** (`l6-wave.yml`), gated on ONE owner action: add `BLENDERKIT_API_KEY` as a repo
 Actions secret. Continuing the local grind only produces honest-but-degraded quarantine_timeout manifests
-(~95 turns for 754 candidates) that misrepresent capability vs. CI. Route B thin (D-007). Guardrails
-unchanged. Evidence-backed R2 wall — terminal state:
+(~95 turns for 754 candidates) that misrepresent capability vs. CI. **I then attempted to self-serve the
+CI secret** (deploy the owner-provided key via GitHub's encrypted-secret API, R2-compliant) → **HTTP 403:
+the RW token has `Actions: write` but NOT `Secrets: write`.** So L6-at-scale is a TESTED credential wall:
+owner adds `BLENDERKIT_API_KEY` as a repo secret (then I dispatch `l6-wave`) OR grants the token
+`Secrets: write` (then I do it all). Route B thin (D-007). Guardrails unchanged. TESTED-R2-wall terminal:
 automatable work done to the environment's limit; the efficient full-sweep awaits the owner's CI-secret
 action (OWNER-QUEUE, top item).
 
