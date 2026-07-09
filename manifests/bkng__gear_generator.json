@@ -1,0 +1,27 @@
+{
+  "canonical_id": "bkng__gear_generator",
+  "name": "gear_generator",
+  "artifact_type": "gn_pack",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bkng__gear_generator:ng",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "gear_generator"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 node-group GN-gate (D-008)",
+  "enrich_note": "BlenderKit node-group -> gear_generator."
+}

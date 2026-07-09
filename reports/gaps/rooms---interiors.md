@@ -1,6 +1,6 @@
 # Gap report — Rooms & interiors (D-008 R47)
 
-Coverage: **0/12 = 0.0%** (full_pass + recipe_verified). 12 gaps.
+Coverage: **1/12 = 8.3%** (full_pass + recipe_verified). 11 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
@@ -11,10 +11,10 @@ Coverage: **0/12 = 0.0%** (full_pass + recipe_verified). 12 gaps.
 | curtain_blind_generator | 1 | GAP | unclassified |
 | rug_carpet_generator | 1 | GAP | unclassified |
 | chandelier_generator | 1 | GAP | unclassified |
-| cable_wire_generator | 1 | GAP | unclassified |
+| cable_wire_generator | 1 | full_pass | unclassified |
 | interior_lighting_rig | 1 | GAP | unclassified |
 | book_asset_pack | 1 | GAP | unclassified |
 | neon_text | 1 | GAP | unclassified |
 | glassware_assets | 1 | GAP | unclassified |
 
-**Gaps (12):** what the free ecosystem lacks here — `parametric_furniture_asset_pack`(unclassified), `kitchen_bath_generator`(unclassified), `shelf_filler`(unclassified), `clutter_scatter`(unclassified), `curtain_blind_generator`(unclassified), `rug_carpet_generator`(unclassified), `chandelier_generator`(unclassified), `cable_wire_generator`(unclassified), `interior_lighting_rig`(unclassified), `book_asset_pack`(unclassified), `neon_text`(unclassified), `glassware_assets`(unclassified)
+**Gaps (11):** what the free ecosystem lacks here — `parametric_furniture_asset_pack`(unclassified), `kitchen_bath_generator`(unclassified), `shelf_filler`(unclassified), `clutter_scatter`(unclassified), `curtain_blind_generator`(unclassified), `rug_carpet_generator`(unclassified), `chandelier_generator`(unclassified), `interior_lighting_rig`(unclassified), `book_asset_pack`(unclassified), `neon_text`(unclassified), `glassware_assets`(unclassified)

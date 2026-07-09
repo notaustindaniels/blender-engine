@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 46,
- "pct": 14.0,
+ "total_covered": 50,
+ "pct": 15.2,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -518,8 +518,8 @@
   },
   "Buildings & architecture": {
    "present": 17,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 5.9,
    "niches": [
     {
      "niche": "building_generator",
@@ -542,7 +542,7 @@
     {
      "niche": "stair_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -627,8 +627,8 @@
   },
   "Rooms & interiors": {
    "present": 12,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 8.3,
    "niches": [
     {
      "niche": "parametric_furniture_asset_pack",
@@ -675,7 +675,7 @@
     {
      "niche": "cable_wire_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -761,8 +761,8 @@
   },
   "Hard surface & props": {
    "present": 17,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 2,
+   "pct": 11.8,
    "niches": [
     {
      "niche": "sword_generator",
@@ -809,13 +809,13 @@
     {
      "niche": "gear_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
      "niche": "chain_generator",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {

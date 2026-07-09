@@ -1,0 +1,27 @@
+{
+  "canonical_id": "bkng__cable_wire_generator",
+  "name": "cable_wire_generator",
+  "artifact_type": "gn_pack",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bkng__cable_wire_generator:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "cable_wire_generator"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 node-group GN-gate (D-008)",
+  "enrich_note": "BlenderKit node-group passed GN gate -> covers cable_wire_generator."
+}
