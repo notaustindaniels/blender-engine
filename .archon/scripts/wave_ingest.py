@@ -55,7 +55,7 @@ def download_merge(run_id, tok):
     merged = 0
     mdir = ROOT / "manifests"; mdir.mkdir(exist_ok=True)
     for a in arts.get("artifacts", []):
-        if not a["name"].startswith("wave-manifests-shard-"):
+        if not (a["name"].startswith("wave-manifests-shard-") or a["name"].startswith("l6-manifests-shard-")):
             continue
         blob = api(a["archive_download_url"], tok, raw=True)
         z = zipfile.ZipFile(io.BytesIO(blob))
