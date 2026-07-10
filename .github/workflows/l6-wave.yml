@@ -33,7 +33,7 @@ jobs:
           key: blender-tarballs-v1
       - name: Build the probe images (native amd64)
         run: bash sandbox/build_images.sh all
-      - name: Acquire (BlenderKit) + prescan + probe this shard
+      - name: Acquire (BlenderKit) + prescan + gate this shard (proven executor, all its candidates)
         env:
           BLENDERKIT_API_KEY: ${{ secrets.BLENDERKIT_API_KEY }}   # owner-set secret; never printed
         run: |
@@ -41,7 +41,8 @@ jobs:
           if [ -z "$BLENDERKIT_API_KEY" ]; then
             echo "::error::BLENDERKIT_API_KEY secret not set — owner must add it (OWNER-QUEUE)"; exit 1
           fi
-          uv run .archon/scripts/l6_acquire_probe.py --shard ${{ matrix.shard }} --shards 8 --timeout "${{ github.event.inputs.timeout }}"
+          # native amd64 → real gate states (no emulation degradation). --limit 0 = whole shard slice.
+          uv run .archon/scripts/l6_full_sweep.py --shard ${{ matrix.shard }} --shards 8 --limit 0
       - name: Upload shard manifests
         if: always()
         uses: actions/upload-artifact@v4

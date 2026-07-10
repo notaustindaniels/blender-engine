@@ -30,10 +30,15 @@ for c in TAX["categories"]:
 
 
 def key():
-    for line in open(ROOT / ".archon/.env"):
-        if line.startswith("BLENDERKIT_API_KEY="):
-            return line.split("=", 1)[1].strip().strip('"').strip("'")
-    return os.environ.get("BLENDERKIT_API_KEY", "")
+    k = os.environ.get("BLENDERKIT_API_KEY", "")        # CI secret first (no .env in CI)
+    if k:
+        return k
+    envf = ROOT / ".archon/.env"
+    if envf.exists():
+        for line in envf.read_text().splitlines():
+            if line.startswith("BLENDERKIT_API_KEY="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    return ""
 
 
 H = {"Authorization": f"Bearer {key()}"}
@@ -99,12 +104,18 @@ def gate(kind, blend_path, cid):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--limit", type=int, default=6); a = ap.parse_args()
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--limit", type=int, default=6)      # 0 = unlimited (whole shard)
+    ap.add_argument("--shard", type=int, default=0)
+    ap.add_argument("--shards", type=int, default=1)
+    a = ap.parse_args()
     rows = [json.loads(l) for l in open(ROOT / "candidates/L6.jsonl") if l.strip()]
     rows = [r for r in rows if r.get("procedural")]   # materials + node-groups (models are A-lane)
+    rows = [r for i, r in enumerate(rows) if i % a.shards == a.shard]   # R11 order preserved; nothing excluded
+    limit = a.limit if a.limit > 0 else len(rows)
     processed = 0
     for r in rows:
-        if processed >= a.limit:
+        if processed >= limit:
             break
         cid = r["canonical_id"]
         if (ROOT / f"manifests/{cid}.json").exists():
