@@ -125,7 +125,7 @@ def main():
     if sp.exists():
         try:
             sf = json.loads(sp.read_text())
-            items = sf.get("assets") or sf.get("inventory") or (sf if isinstance(sf, list) else [])
+            items = sf if isinstance(sf, list) else (sf.get("assets") or sf.get("inventory") or [])
             for m in items:
                 uid = m.get("sketchfab_uid") or m.get("uid")
                 if not uid:
@@ -133,12 +133,17 @@ def main():
                 cid = f"sketchfab::{uid}"
                 if cid in catalog:
                     continue
+                lic = m.get("usage_license") or m.get("license_label")
+                seg = m.get("segregated")   # NC/ND -> non-commercial, segregated per R26
                 add(cid, name=m.get("name"), creator=m.get("author") or m.get("username"),
-                    marketplace="sketchfab", url=f"https://sketchfab.com/3d-models/{uid}",
-                    price_class="$0", license=m.get("license") or m.get("license_slug"),
-                    status="auto_acquired_verified" if m.get("usable", True) else "excluded",
-                    gate_state="cc_asset", category=m.get("scene_asset_category") or m.get("query"),
-                    verbs=["import"], provisional=True, card=f"Sketchfab CC asset '{m.get('name')}' — {m.get('license')}. Scene asset (import).")
+                    marketplace="sketchfab", url=m.get("viewer_url") or f"https://sketchfab.com/3d-models/{uid}",
+                    price_class="$0", license=lic,
+                    status="excluded" if seg else "auto_acquired_verified",
+                    gate_state="cc_asset_segregated" if seg else "cc_asset",
+                    category=m.get("scene_asset_category") or m.get("query"),
+                    verbs=["import"], provisional=True,
+                    reason="NC/ND — non-commercial, segregated (R26)" if seg else None,
+                    card=f"Sketchfab CC asset '{m.get('name')}' by {m.get('author')} — {lic}. Scene asset (import via A1 Download API).")
         except Exception as e:
             print(f"  sketchfab parse err: {e}", file=sys.stderr)
 
