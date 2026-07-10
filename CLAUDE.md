@@ -102,3 +102,11 @@ rule in this file. Remembering it in context does not count.
   (verb × medium × quality≥tier × license_class × blender_ver). `recipe_unverified` and `graveyard`
   results are returned LABELED and are NEVER resolvable at render time. The KB is a second DERIVED db —
   rebuilt from the same JSON manifests, never hand-edited.
+- **/goal ONLY for zero-owner-gated tasks (D-008 hook-repair-v2, 2026-07-09).** The built-in `/goal`
+  stop-hook re-fires whenever the goal condition is not LITERALLY met — even at a declared, valid
+  awaiting-owner terminal state — and it is compiled into Claude Code (verified: no disk skill/command/
+  plugin/hook/setting to patch). Therefore: use `/goal` ONLY for tasks with ZERO possible owner-gated
+  terminal states (pure automatable work). Any task that can legitimately reach an owner-gated wall
+  (a credential/secret, a $0 checkout, a sign-off, a D-entry) runs on a `NEXT-SESSION.md` resume card,
+  NOT `/goal`. When a `/goal` loops against a declared VALID TERMINAL STATE, the resolution is the owner
+  clearing the goal — never the agent looping, undoing owner-authorized work, or fabricating completion.
