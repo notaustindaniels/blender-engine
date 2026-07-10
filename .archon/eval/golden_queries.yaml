@@ -69,3 +69,26 @@ queries:
     expect: [biome_scatter_system, scatter]
   - q: "a rock or boulder"
     expect: [rock_boulder_generator, rock]
+  # --- L6-grown corpus (D-008): materials, hard-surface, fabric, VFX niches ---
+  - q: "procedural wood grain material"
+    expect: [wood_shader]
+  - q: "scratched metal surface material"
+    expect: [metal_shader]
+  - q: "procedural glass material"
+    expect: [glass_material]
+  - q: "generate mechanical gears"
+    expect: [gear_generator]
+  - q: "a chain of links"
+    expect: [chain_generator]
+  - q: "cables and wires hanging"
+    expect: [cable_wire_generator]
+  - q: "generate a staircase"
+    expect: [stair_generator]
+  - q: "a fence along a boundary"
+    expect: [fence_generator]
+  - q: "car tire and wheel"
+    expect: [wheel_tire_generator]
+  - q: "glitch distortion effect material"
+    expect: [glitch_shader]
+  - q: "knitted wool fabric weave"
+    expect: [knit_weave_generator]

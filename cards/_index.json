@@ -99,6 +99,25 @@
    "4.5"
   ]
  },
+ "operator/bkmat__car_paint_shader::bkmat__car_paint_shader:material": {
+  "cid": "bkmat__car_paint_shader",
+  "operator_id": "bkmat__car_paint_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "car_paint_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__cracked_earth_shader::bkmat__cracked_earth_shader:material": {
   "cid": "bkmat__cracked_earth_shader",
   "operator_id": "bkmat__cracked_earth_shader:material",
@@ -175,6 +194,44 @@
    "4.5"
   ]
  },
+ "operator/bkmat__glitch_shader::bkmat__glitch_shader:material": {
+  "cid": "bkmat__glitch_shader",
+  "operator_id": "bkmat__glitch_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "glitch_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__hologram_shader::bkmat__hologram_shader:material": {
+  "cid": "bkmat__hologram_shader",
+  "operator_id": "bkmat__hologram_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "hologram_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__ice_shader::bkmat__ice_shader:material": {
   "cid": "bkmat__ice_shader",
   "operator_id": "bkmat__ice_shader:material",
@@ -187,6 +244,44 @@
   ],
   "media": [
    "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__imperfection_overlays::bkmat__imperfection_overlays:material": {
+  "cid": "bkmat__imperfection_overlays",
+  "operator_id": "bkmat__imperfection_overlays:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "imperfection_overlays"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__knit_weave_generator::bkmat__knit_weave_generator:material": {
+  "cid": "bkmat__knit_weave_generator",
+  "operator_id": "bkmat__knit_weave_generator:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "knit_weave_generator"
+  ],
+  "media": [
+   "?"
   ],
   "quality": "full_generator",
   "license": "royalty_free",
@@ -232,6 +327,25 @@
    "4.5"
   ]
  },
+ "operator/bkmat__metal_shader::bkmat__metal_shader:material": {
+  "cid": "bkmat__metal_shader",
+  "operator_id": "bkmat__metal_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "metal_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__organic_cell_shader::bkmat__organic_cell_shader:material": {
   "cid": "bkmat__organic_cell_shader",
   "operator_id": "bkmat__organic_cell_shader:material",
@@ -251,6 +365,25 @@
    "4.5"
   ]
  },
+ "operator/bkmat__skybox_generator::bkmat__skybox_generator:material": {
+  "cid": "bkmat__skybox_generator",
+  "operator_id": "bkmat__skybox_generator:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "skybox_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__snow_ice_shader::bkmat__snow_ice_shader:material": {
   "cid": "bkmat__snow_ice_shader",
   "operator_id": "bkmat__snow_ice_shader:material",
@@ -263,6 +396,44 @@
   ],
   "media": [
    "ground"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__tile_grout_shader::bkmat__tile_grout_shader:material": {
+  "cid": "bkmat__tile_grout_shader",
+  "operator_id": "bkmat__tile_grout_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "tile_grout_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkmat__toon_npr_shader::bkmat__toon_npr_shader:material": {
+  "cid": "bkmat__toon_npr_shader",
+  "operator_id": "bkmat__toon_npr_shader:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "toon_npr_shader"
+  ],
+  "media": [
+   "?"
   ],
   "quality": "full_generator",
   "license": "royalty_free",
@@ -298,6 +469,120 @@
   ],
   "niches": [
    "wood_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__cable_wire_generator::bkng__cable_wire_generator:nodegroup": {
+  "cid": "bkng__cable_wire_generator",
+  "operator_id": "bkng__cable_wire_generator:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "cable_wire_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__chain_generator::bkng__chain_generator:nodegroup": {
+  "cid": "bkng__chain_generator",
+  "operator_id": "bkng__chain_generator:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "chain_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__fence_generator::bkng__fence_generator:ng": {
+  "cid": "bkng__fence_generator",
+  "operator_id": "bkng__fence_generator:ng",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "fence_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__gear_generator::bkng__gear_generator:ng": {
+  "cid": "bkng__gear_generator",
+  "operator_id": "bkng__gear_generator:ng",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "gear_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__stair_generator::bkng__stair_generator:ng": {
+  "cid": "bkng__stair_generator",
+  "operator_id": "bkng__stair_generator:ng",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "stair_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": "royalty_free",
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bkng__wheel_tire_generator::bkng__wheel_tire_generator:ng": {
+  "cid": "bkng__wheel_tire_generator",
+  "operator_id": "bkng__wheel_tire_generator:ng",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "wheel_tire_generator"
   ],
   "media": [
    "?"
