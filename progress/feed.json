@@ -513,5 +513,15 @@
     "body": "<p><b>New goal: the most extensive catalog of free procedural Blender tooling. Headline = TOTAL CATALOG ENTRIES.</b> Foundation built from the existing corpus:</p>\n<table><thead><tr><th>metric</th><th>value</th></tr></thead><tbody>\n<tr><td><b>TOTAL CATALOG ENTRIES</b></td><td class=\"ok\"><b>2858</b></td></tr>\n<tr><td>✓ auto_acquired_verified</td><td>2155 (native-CI gated, real states)</td></tr>\n<tr><td>↓ click_to_get</td><td>11 (checkout-gated, resolved)</td></tr>\n<tr><td>✕ excluded</td><td>692 (dead/paid/mislabeled, reason recorded)</td></tr>\n<tr><td>by marketplace</td><td>github 1125 · extensions 905 · blenderkit 800 · forum 17</td></tr>\n</tbody></table>\n<p><b>Deliverable faces:</b> (1) catalog.jsonl master list; (2) <code>reports/catalog/index.html</code> — filterable/sortable, live URLs, verified/click-to-get badges, regenerated on every ingest; (3) CATALOG.md fallback. <b>Sketchfab full CC sweep</b> (247-noun lattice across all procedural categories) running now → adds assets on rebuild. Next: external discovery lattice (Gumroad/Superhive/Fab/ArtStation via ToS-safe search), corpus_kb ingest, saturation tracking. Coverage % demoted to secondary; entries is the number now.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 52,
+    "ts": "2026-07-10T08:19:25-04:00",
+    "title": "🗂️ CATALOG → 7364 entries — Sketchfab full CC sweep (+4460 usable assets) + external discovery lattice",
+    "tag": "milestone",
+    "status": "catalog-7364",
+    "body": "<p><b>TOTAL CATALOG ENTRIES: 7364</b> (from 2858 at launch) — the headline number.</p>\n<table><thead><tr><th>status</th><th>count</th></tr></thead><tbody>\n<tr><td class=\"ok\">✓ auto_acquired_verified</td><td>5970 (2155 native-CI gated + 4460 Sketchfab CC via Download API)</td></tr>\n<tr><td>↓ click_to_get</td><td>57 (Gumroad/Fab/Superhive free items, resolved URLs)</td></tr>\n<tr><td>✕ excluded</td><td>1337 (692 dead + 645 NC/ND-segregated per R26)</td></tr>\n</tbody></table>\n<p><b>By marketplace:</b> sketchfab 4460 · github 1125 · extensions 905 · blenderkit 800 · gumroad 36 · fab 7 · forum 17 · superhive/artstation/blenderartists.</p>\n<p><b>Sketchfab full CC sweep</b> (247-noun procedural lattice via Download API): 5708 CC-downloadable assets (4495 by, 114 CC0, 65 by-sa usable; 800 NC/ND segregated). <b>External discovery lattice</b> (ToS-safe web search, no scraping): 3 rounds found Blenderesse (13 free plugins), katznboyz1, rope/chain/pipe/fence/cable generators, 800-CC0-materials, sci-fi kitbash — all click_to_get with resolved URLs + price class. Next: saturation tracking, corpus_kb ingest of the full catalog, CORPUS.md + eval on the grown library.</p>",
+    "code": "",
+    "media": []
   }
 ]
