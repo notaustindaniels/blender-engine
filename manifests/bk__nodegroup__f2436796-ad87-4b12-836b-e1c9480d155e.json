@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__f2436796-ad87-4b12-836b-e1c9480d155e",
+  "name": "Particle Flow Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

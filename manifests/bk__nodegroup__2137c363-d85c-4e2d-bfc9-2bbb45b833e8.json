@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__2137c363-d85c-4e2d-bfc9-2bbb45b833e8",
+  "name": "Wiggle",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

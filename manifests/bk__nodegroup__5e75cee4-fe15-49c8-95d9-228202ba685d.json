@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__5e75cee4-fe15-49c8-95d9-228202ba685d",
+  "name": "Spiral Burst Trails",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

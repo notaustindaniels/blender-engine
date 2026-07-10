@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__b080076b-b0e4-44cf-8e13-128e1b6dfbf3",
+  "name": "Motion blur",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

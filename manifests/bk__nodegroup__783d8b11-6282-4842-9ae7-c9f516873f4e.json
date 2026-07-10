@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__783d8b11-6282-4842-9ae7-c9f516873f4e",
+  "name": "Voxel Fire Sim",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

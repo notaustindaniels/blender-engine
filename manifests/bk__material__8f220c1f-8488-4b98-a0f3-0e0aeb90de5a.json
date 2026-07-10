@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__8f220c1f-8488-4b98-a0f3-0e0aeb90de5a",
+  "name": "Cardboard 04",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

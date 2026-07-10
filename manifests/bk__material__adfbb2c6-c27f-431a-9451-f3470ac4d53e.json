@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__adfbb2c6-c27f-431a-9451-f3470ac4d53e",
+  "name": "Plain Red Vinyl",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__46e2f3f5-e161-459b-b780-93bc9234044c",
+  "name": "Geometry nodes for procedural Traffic",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

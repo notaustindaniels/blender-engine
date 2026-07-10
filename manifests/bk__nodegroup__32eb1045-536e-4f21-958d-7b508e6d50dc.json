@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__32eb1045-536e-4f21-958d-7b508e6d50dc",
+  "name": "Sine Function Node",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__cedf8682-d924-4064-8232-f6dacfdc14b4",
+  "name": "Granite Tile 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

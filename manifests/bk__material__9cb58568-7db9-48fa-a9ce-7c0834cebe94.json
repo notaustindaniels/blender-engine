@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__9cb58568-7db9-48fa-a9ce-7c0834cebe94",
+  "name": "Concrete Tiles 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

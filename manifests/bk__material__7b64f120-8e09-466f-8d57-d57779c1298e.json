@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__7b64f120-8e09-466f-8d57-d57779c1298e",
+  "name": "Plain Red Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

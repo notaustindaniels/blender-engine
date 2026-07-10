@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__0904f52b-1153-4b0b-ac8a-7cc719e15775",
+  "name": "Yellow Flower Mulch",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

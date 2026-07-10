@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__dc2fb053-2562-480c-912d-ce40328aa6c5",
+  "name": "Image Color Visualizer",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

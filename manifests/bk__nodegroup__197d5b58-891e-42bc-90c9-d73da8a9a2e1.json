@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__197d5b58-891e-42bc-90c9-d73da8a9a2e1",
+  "name": "Anime Tornado",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

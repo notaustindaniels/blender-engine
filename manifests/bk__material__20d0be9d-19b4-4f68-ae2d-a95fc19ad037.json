@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__20d0be9d-19b4-4f68-ae2d-a95fc19ad037",
+  "name": "Famicom Controller P2",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

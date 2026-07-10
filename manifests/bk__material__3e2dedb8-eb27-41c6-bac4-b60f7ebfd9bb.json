@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__3e2dedb8-eb27-41c6-bac4-b60f7ebfd9bb",
+  "name": "Plain Green Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

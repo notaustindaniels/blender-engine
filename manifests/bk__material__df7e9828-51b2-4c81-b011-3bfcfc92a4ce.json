@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__df7e9828-51b2-4c81-b011-3bfcfc92a4ce",
+  "name": "Iridescent Gradient Glass",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.10374
+    }
+  }
+}

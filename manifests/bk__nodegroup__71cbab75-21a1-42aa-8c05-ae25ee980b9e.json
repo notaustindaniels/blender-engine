@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__71cbab75-21a1-42aa-8c05-ae25ee980b9e",
+  "name": "Lines Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

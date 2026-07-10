@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__075b8d4d-fd5a-467e-8213-9c66817d9ec6",
+  "name": "Plain Red Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

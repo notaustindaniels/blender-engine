@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__11e18536-9374-48e4-9a37-356a617cd892",
+  "name": "Rock Face 03",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

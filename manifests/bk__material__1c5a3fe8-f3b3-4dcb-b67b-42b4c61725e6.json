@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1c5a3fe8-f3b3-4dcb-b67b-42b4c61725e6",
+  "name": "blender wallpaper",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.0054
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated partial (no niche name-match)"
+}

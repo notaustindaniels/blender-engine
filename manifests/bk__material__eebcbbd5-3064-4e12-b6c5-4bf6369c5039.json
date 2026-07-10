@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__eebcbbd5-3064-4e12-b6c5-4bf6369c5039",
+  "name": "Plain Natural Sheer",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

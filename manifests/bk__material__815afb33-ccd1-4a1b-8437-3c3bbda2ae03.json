@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__815afb33-ccd1-4a1b-8437-3c3bbda2ae03",
+  "name": "Patterned Plaster Wall",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__902da549-4d9f-4d94-92bd-2060987bee6a",
+  "name": "Line to Object",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

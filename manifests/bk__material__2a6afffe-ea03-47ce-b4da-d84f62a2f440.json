@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2a6afffe-ea03-47ce-b4da-d84f62a2f440",
+  "name": "Concrete Moss",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

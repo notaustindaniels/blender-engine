@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__54ab2d87-8e6e-4c64-bc97-6217b5875efc",
+  "name": "Sphere of Flowing Particles",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

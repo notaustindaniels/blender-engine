@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1ddfda03-742a-4808-875d-cb6c27e19af4",
+  "name": "Plain Pink Sheer",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.05793
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

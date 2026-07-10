@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__6ec79628-68cc-4454-88a1-5efea945a3dd",
+  "name": "Show Dimensions Modifier",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

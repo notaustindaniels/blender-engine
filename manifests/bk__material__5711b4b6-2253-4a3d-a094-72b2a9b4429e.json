@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__5711b4b6-2253-4a3d-a094-72b2a9b4429e",
+  "name": "Precast Stone Paving",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

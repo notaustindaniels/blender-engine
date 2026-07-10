@@ -1,7 +1,7 @@
 {
  "total_niches": 328,
- "total_covered": 52,
- "pct": 15.9,
+ "total_covered": 54,
+ "pct": 16.5,
  "categories": {
   "Terrain & landscape": {
    "present": 39,
@@ -288,7 +288,7 @@
     {
      "niche": "grass_meadow_scatter",
      "wave": 1,
-     "status": "recipe_verified",
+     "status": "full_pass",
      "attainability": "free_tool"
     },
     {
@@ -403,8 +403,8 @@
   },
   "Cities & urban": {
    "present": 18,
-   "covered": 0,
-   "pct": 0.0,
+   "covered": 1,
+   "pct": 5.6,
    "niches": [
     {
      "niche": "city_builder",
@@ -511,7 +511,7 @@
     {
      "niche": "neon_signage",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     }
    ]
@@ -1149,8 +1149,8 @@
   },
   "Materials & texturing": {
    "present": 22,
-   "covered": 14,
-   "pct": 63.6,
+   "covered": 15,
+   "pct": 68.2,
    "niches": [
     {
      "niche": "wood_shader",
@@ -1161,7 +1161,7 @@
     {
      "niche": "brick_shader",
      "wave": 1,
-     "status": "GAP",
+     "status": "full_pass",
      "attainability": "unclassified"
     },
     {
@@ -2142,7 +2142,7 @@
     {
      "niche": "anime_fx",
      "wave": 1,
-     "status": "GAP",
+     "status": "partial",
      "attainability": "unclassified"
     },
     {

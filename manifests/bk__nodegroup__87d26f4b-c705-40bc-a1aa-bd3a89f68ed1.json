@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__87d26f4b-c705-40bc-a1aa-bd3a89f68ed1",
+  "name": "Geometry Picker",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

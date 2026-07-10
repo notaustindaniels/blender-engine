@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__55130856-cfad-4ee5-ab42-25c0946e36e1",
+  "name": "Plain Orange Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

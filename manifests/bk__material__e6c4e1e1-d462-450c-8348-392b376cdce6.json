@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__e6c4e1e1-d462-450c-8348-392b376cdce6",
+  "name": "Stripe Orange Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.0644
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

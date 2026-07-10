@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__4e0f2091-4af1-4bec-add3-1fd481f6ca64",
+  "name": "Advanced Curve Shapes",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

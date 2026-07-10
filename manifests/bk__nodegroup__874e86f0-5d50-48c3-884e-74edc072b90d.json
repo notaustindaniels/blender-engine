@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__874e86f0-5d50-48c3-884e-74edc072b90d",
+  "name": "Foot Step Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

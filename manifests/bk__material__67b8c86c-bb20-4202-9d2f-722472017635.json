@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__67b8c86c-bb20-4202-9d2f-722472017635",
+  "name": "Stripe Pink Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04625
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

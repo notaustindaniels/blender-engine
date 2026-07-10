@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__082a0e65-02e8-4659-9048-d76fe89b2a46",
+  "name": "Glowing Hot Metal",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.11133
+    }
+  }
+}

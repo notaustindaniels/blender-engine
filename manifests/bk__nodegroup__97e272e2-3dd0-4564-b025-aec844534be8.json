@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__97e272e2-3dd0-4564-b025-aec844534be8",
+  "name": "Curve Corner Instancer",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

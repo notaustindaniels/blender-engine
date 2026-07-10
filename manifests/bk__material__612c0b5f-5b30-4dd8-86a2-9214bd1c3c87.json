@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__612c0b5f-5b30-4dd8-86a2-9214bd1c3c87",
+  "name": "Plain Green Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

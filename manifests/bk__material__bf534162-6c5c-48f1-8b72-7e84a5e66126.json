@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__bf534162-6c5c-48f1-8b72-7e84a5e66126",
+  "name": "Rusty Metal Grid",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__9bd40939-14e0-48ba-a234-3cce8cc89468",
+  "name": "Plain White Sheer",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__0c250e66-8cde-49fa-a706-146f4cd76b80",
+  "name": "Plain Pink Dimout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

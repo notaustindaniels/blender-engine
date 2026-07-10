@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__654000df-454f-4eb8-8a28-180c4760d0a0",
+  "name": "Curve to Moving Gears",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

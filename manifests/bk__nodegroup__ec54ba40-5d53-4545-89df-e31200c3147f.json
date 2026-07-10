@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__ec54ba40-5d53-4545-89df-e31200c3147f",
+  "name": "Scatter Texture Map",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

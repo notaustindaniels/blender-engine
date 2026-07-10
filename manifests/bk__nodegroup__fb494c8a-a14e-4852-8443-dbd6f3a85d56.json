@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__fb494c8a-a14e-4852-8443-dbd6f3a85d56",
+  "name": "Advanced Spiral",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

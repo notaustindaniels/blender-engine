@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__3b8756c9-23bd-4a88-aab7-2a9baccce306",
+  "name": "Snow Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

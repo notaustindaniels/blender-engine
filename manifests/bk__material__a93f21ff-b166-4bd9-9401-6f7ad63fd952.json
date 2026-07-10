@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a93f21ff-b166-4bd9-9401-6f7ad63fd952",
+  "name": "Rusty Painted Metal",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

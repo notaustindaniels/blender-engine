@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__37891347-57ee-465b-b1a5-3f75286632e1",
+  "name": "Plain Green Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03705
+    }
+  }
+}

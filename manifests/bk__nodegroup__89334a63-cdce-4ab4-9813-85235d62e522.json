@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__89334a63-cdce-4ab4-9813-85235d62e522",
+  "name": "Easy Scatter",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

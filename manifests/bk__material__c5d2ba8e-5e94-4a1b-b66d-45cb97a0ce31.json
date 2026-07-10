@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__c5d2ba8e-5e94-4a1b-b66d-45cb97a0ce31",
+  "name": "Plain Brown Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03913
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

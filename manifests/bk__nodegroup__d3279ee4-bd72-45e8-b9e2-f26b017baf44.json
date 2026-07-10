@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__d3279ee4-bd72-45e8-b9e2-f26b017baf44",
+  "name": "StonedV2 Mesh To Rock",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

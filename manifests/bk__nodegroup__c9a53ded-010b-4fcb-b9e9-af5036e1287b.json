@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b",
+  "name": "Chainlink Fence Maker",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass -> fence_generator",
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "fence_generator"
+      ],
+      "quality": "full_generator"
+    }
+  ]
+}

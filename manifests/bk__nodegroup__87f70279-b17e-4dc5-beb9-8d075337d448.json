@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__87f70279-b17e-4dc5-beb9-8d075337d448",
+  "name": "RingGenerator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

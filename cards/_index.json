@@ -80,6 +80,428 @@
    "4.5"
   ]
  },
+ "operator/bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7::bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7:material": {
+  "cid": "bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7",
+  "operator_id": "bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7:material",
+  "kind": "material",
+  "verbs": [
+   "fill"
+  ],
+  "niches": [
+   "leather_skin_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0::bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0": {
+  "cid": "bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0",
+  "operator_id": "bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0",
+  "kind": "bpy_op",
+  "verbs": [
+   "illuminate"
+  ],
+  "niches": [
+   "hologram_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__07d13534-689e-438d-9a98-64c79003e0cb::bk__nodegroup__07d13534-689e-438d-9a98-64c79003e0cb:nodegroup": {
+  "cid": "bk__nodegroup__07d13534-689e-438d-9a98-64c79003e0cb",
+  "operator_id": "bk__nodegroup__07d13534-689e-438d-9a98-64c79003e0cb:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "fence_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__084934a4-44da-4edf-a5d7-b5bac8f87a0a::bk__nodegroup__084934a4-44da-4edf-a5d7-b5bac8f87a0a": {
+  "cid": "bk__nodegroup__084934a4-44da-4edf-a5d7-b5bac8f87a0a",
+  "operator_id": "bk__nodegroup__084934a4-44da-4edf-a5d7-b5bac8f87a0a",
+  "kind": "bpy_op",
+  "verbs": [
+   "accumulate",
+   "deplete"
+  ],
+  "niches": [
+   "edge_wear_rust"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3::bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3:nodegroup": {
+  "cid": "bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3",
+  "operator_id": "bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "neon_signage"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb::bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb:nodegroup": {
+  "cid": "bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb",
+  "operator_id": "bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "brick_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d::bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d:nodegroup": {
+  "cid": "bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d",
+  "operator_id": "bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "hologram_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58::bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58:nodegroup": {
+  "cid": "bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58",
+  "operator_id": "bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "gear_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__37da079d-3bac-468d-8ef8-aacc58672931::bk__nodegroup__37da079d-3bac-468d-8ef8-aacc58672931": {
+  "cid": "bk__nodegroup__37da079d-3bac-468d-8ef8-aacc58672931",
+  "operator_id": "bk__nodegroup__37da079d-3bac-468d-8ef8-aacc58672931",
+  "kind": "bpy_op",
+  "verbs": [
+   "accumulate",
+   "deplete"
+  ],
+  "niches": [
+   "edge_wear_rust"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__3a344ab0-59e2-4f4a-8823-bf5d1ef49734::bk__nodegroup__3a344ab0-59e2-4f4a-8823-bf5d1ef49734:nodegroup": {
+  "cid": "bk__nodegroup__3a344ab0-59e2-4f4a-8823-bf5d1ef49734",
+  "operator_id": "bk__nodegroup__3a344ab0-59e2-4f4a-8823-bf5d1ef49734:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "chain_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5::bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5": {
+  "cid": "bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5",
+  "operator_id": "bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5",
+  "kind": "bpy_op",
+  "verbs": [
+   "illuminate",
+   "reveal"
+  ],
+  "niches": [
+   "anime_fx"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__686b8c6b-6e30-4886-9804-166ee52374ae::bk__nodegroup__686b8c6b-6e30-4886-9804-166ee52374ae:nodegroup": {
+  "cid": "bk__nodegroup__686b8c6b-6e30-4886-9804-166ee52374ae",
+  "operator_id": "bk__nodegroup__686b8c6b-6e30-4886-9804-166ee52374ae:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "hologram_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__7a0918ba-facd-487d-986d-d0a52e97db5f::bk__nodegroup__7a0918ba-facd-487d-986d-d0a52e97db5f:nodegroup": {
+  "cid": "bk__nodegroup__7a0918ba-facd-487d-986d-d0a52e97db5f",
+  "operator_id": "bk__nodegroup__7a0918ba-facd-487d-986d-d0a52e97db5f:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "brick_shader"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__7edb1a63-5569-4271-8285-a3641445d812::bk__nodegroup__7edb1a63-5569-4271-8285-a3641445d812:nodegroup": {
+  "cid": "bk__nodegroup__7edb1a63-5569-4271-8285-a3641445d812",
+  "operator_id": "bk__nodegroup__7edb1a63-5569-4271-8285-a3641445d812:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "cable_wire_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__801bf4bc-d522-4efb-bf77-0bacf3f3a5d7::bk__nodegroup__801bf4bc-d522-4efb-bf77-0bacf3f3a5d7:nodegroup": {
+  "cid": "bk__nodegroup__801bf4bc-d522-4efb-bf77-0bacf3f3a5d7",
+  "operator_id": "bk__nodegroup__801bf4bc-d522-4efb-bf77-0bacf3f3a5d7:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "grass_meadow_scatter"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__a1a821c5-fa9f-4fa0-a742-f4c441afc26a::bk__nodegroup__a1a821c5-fa9f-4fa0-a742-f4c441afc26a:nodegroup": {
+  "cid": "bk__nodegroup__a1a821c5-fa9f-4fa0-a742-f4c441afc26a",
+  "operator_id": "bk__nodegroup__a1a821c5-fa9f-4fa0-a742-f4c441afc26a:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "cable_wire_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71::bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71": {
+  "cid": "bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71",
+  "operator_id": "bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71",
+  "kind": "bpy_op",
+  "verbs": [
+   "accumulate",
+   "deplete"
+  ],
+  "niches": [
+   "edge_wear_rust"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "partial",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__c7539174-18d1-407f-8c87-fe9fe6d07468::bk__nodegroup__c7539174-18d1-407f-8c87-fe9fe6d07468:nodegroup": {
+  "cid": "bk__nodegroup__c7539174-18d1-407f-8c87-fe9fe6d07468",
+  "operator_id": "bk__nodegroup__c7539174-18d1-407f-8c87-fe9fe6d07468:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "cable_wire_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b::bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b:nodegroup": {
+  "cid": "bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b",
+  "operator_id": "bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "fence_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__dc784685-323b-4de7-8ed8-957ddc004c1e::bk__nodegroup__dc784685-323b-4de7-8ed8-957ddc004c1e:nodegroup": {
+  "cid": "bk__nodegroup__dc784685-323b-4de7-8ed8-957ddc004c1e",
+  "operator_id": "bk__nodegroup__dc784685-323b-4de7-8ed8-957ddc004c1e:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "fence_generator"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__e09442d3-ccc5-4b1d-b714-fe8e4793d88f::bk__nodegroup__e09442d3-ccc5-4b1d-b714-fe8e4793d88f:nodegroup": {
+  "cid": "bk__nodegroup__e09442d3-ccc5-4b1d-b714-fe8e4793d88f",
+  "operator_id": "bk__nodegroup__e09442d3-ccc5-4b1d-b714-fe8e4793d88f:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "neon_signage"
+  ],
+  "media": [
+   "?"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
+ "operator/bk__nodegroup__f25929f2-1cf1-4074-898e-81e000832674::bk__nodegroup__f25929f2-1cf1-4074-898e-81e000832674:nodegroup": {
+  "cid": "bk__nodegroup__f25929f2-1cf1-4074-898e-81e000832674",
+  "operator_id": "bk__nodegroup__f25929f2-1cf1-4074-898e-81e000832674:nodegroup",
+  "kind": "gn_node_group",
+  "verbs": [
+   "generate"
+  ],
+  "niches": [
+   "grass_meadow_scatter"
+  ],
+  "media": [
+   "organic"
+  ],
+  "quality": "full_generator",
+  "license": null,
+  "versions": [
+   "4.5"
+  ]
+ },
  "operator/bkmat__camo_pattern_shader::bkmat__camo_pattern_shader:material": {
   "cid": "bkmat__camo_pattern_shader",
   "operator_id": "bkmat__camo_pattern_shader:material",

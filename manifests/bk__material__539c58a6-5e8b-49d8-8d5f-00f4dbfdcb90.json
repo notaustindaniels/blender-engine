@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__539c58a6-5e8b-49d8-8d5f-00f4dbfdcb90",
+  "name": "Stripe Blue Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.06709
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

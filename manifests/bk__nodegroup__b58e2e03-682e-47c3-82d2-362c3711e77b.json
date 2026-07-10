@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__b58e2e03-682e-47c3-82d2-362c3711e77b",
+  "name": "Loop Animated FireFlies",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

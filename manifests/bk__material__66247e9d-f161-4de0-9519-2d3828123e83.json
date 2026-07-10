@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__66247e9d-f161-4de0-9519-2d3828123e83",
+  "name": "Metal Plates",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.08546
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__3dae6fb7-1284-4b6c-b4ac-49b2f0e5b26a",
+  "name": "Stylized Pi\u00f1ata 01",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

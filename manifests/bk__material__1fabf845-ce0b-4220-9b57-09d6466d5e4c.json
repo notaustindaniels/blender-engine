@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1fabf845-ce0b-4220-9b57-09d6466d5e4c",
+  "name": "Plastic Grid 01",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__c7715931-7f21-4c8d-9a14-da18a5a4bcbb",
+  "name": "Mesh Thickness",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

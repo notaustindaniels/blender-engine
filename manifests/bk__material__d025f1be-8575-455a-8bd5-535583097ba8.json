@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__d025f1be-8575-455a-8bd5-535583097ba8",
+  "name": "Graphical Orange Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

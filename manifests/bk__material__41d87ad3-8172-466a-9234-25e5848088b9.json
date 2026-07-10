@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__41d87ad3-8172-466a-9234-25e5848088b9",
+  "name": "Stone Wall 04",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

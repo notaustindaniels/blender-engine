@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__b99e0e9e-6e5b-431f-8dc9-e4b97e2e51aa",
+  "name": "Cartoon Liquid",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

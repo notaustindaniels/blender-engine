@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__23e6ab11-1f74-4368-8024-ccdb2858ff79",
+  "name": "Rock Embedded Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

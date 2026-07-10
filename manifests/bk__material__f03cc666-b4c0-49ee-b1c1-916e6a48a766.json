@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__f03cc666-b4c0-49ee-b1c1-916e6a48a766",
+  "name": "Plain Green Dimout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.05088
+    }
+  }
+}

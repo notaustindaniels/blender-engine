@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__f42663b2-46c6-4336-a647-a1f757408885",
+  "name": "Crystals Formation",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

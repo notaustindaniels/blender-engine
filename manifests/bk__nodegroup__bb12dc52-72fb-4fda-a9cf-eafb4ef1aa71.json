@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71",
+  "name": "Edge Wear Mask",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'edge' in name/tagline -> ['edge_wear_rust'] (Materials & texturing).",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71",
+      "verbs": [
+        "accumulate",
+        "deplete"
+      ],
+      "niches": [
+        "edge_wear_rust"
+      ]
+    }
+  ]
+}

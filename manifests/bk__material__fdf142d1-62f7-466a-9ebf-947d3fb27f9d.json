@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__fdf142d1-62f7-466a-9ebf-947d3fb27f9d",
+  "name": "Plain Purple Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04229
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

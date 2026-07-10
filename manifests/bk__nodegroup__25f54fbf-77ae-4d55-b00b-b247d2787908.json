@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__25f54fbf-77ae-4d55-b00b-b247d2787908",
+  "name": "Camera Grid",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

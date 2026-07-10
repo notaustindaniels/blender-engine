@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__9e103013-e831-4542-bd2a-6f87823d647a",
+  "name": "Table - Procedural Furniture",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

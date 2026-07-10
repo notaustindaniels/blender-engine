@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__52f4ab08-02c2-40d8-aa5f-a7eb1aea1250",
+  "name": "Plain Green Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

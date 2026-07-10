@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5",
+  "name": "Impact Frames",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: '' in name/tagline -> ['anime_fx'] (Animation: stylized / NPR).",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5",
+      "verbs": [
+        "illuminate",
+        "reveal"
+      ],
+      "niches": [
+        "anime_fx"
+      ]
+    }
+  ]
+}

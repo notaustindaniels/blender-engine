@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a144ddac-756f-49c2-8c5a-54c5c8956bc8",
+  "name": "Herringbone Pavement 04",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

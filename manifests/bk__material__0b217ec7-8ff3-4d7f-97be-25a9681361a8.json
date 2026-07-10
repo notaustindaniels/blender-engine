@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__0b217ec7-8ff3-4d7f-97be-25a9681361a8",
+  "name": "Natural Wood",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

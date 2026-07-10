@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__0ded5611-664c-4a17-92f1-1f55384ebbcc",
+  "name": "Plain Purple Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

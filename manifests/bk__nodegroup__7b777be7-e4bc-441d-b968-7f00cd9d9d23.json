@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__7b777be7-e4bc-441d-b968-7f00cd9d9d23",
+  "name": "Surface Erosion Modifier",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__3b820818-cffc-432f-b155-9ac232f42a1d",
+  "name": "Ice Surface Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

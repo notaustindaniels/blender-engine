@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__768b7530-07e1-45e7-86aa-e6faa80b0222",
+  "name": "Plain Pink Vinyl",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

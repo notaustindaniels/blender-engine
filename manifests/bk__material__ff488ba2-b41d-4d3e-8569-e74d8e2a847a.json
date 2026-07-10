@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__ff488ba2-b41d-4d3e-8569-e74d8e2a847a",
+  "name": "Painted Worn Brick",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

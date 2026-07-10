@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__941392dd-97be-424d-9b60-d6cbf740f4df",
+  "name": "Distribute N Points",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

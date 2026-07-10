@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__4a033b93-1a25-45ae-853d-5bb1fbc7a9a0",
+  "name": "Plain Grey Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

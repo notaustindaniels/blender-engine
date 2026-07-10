@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__804ca92c-2c8e-42db-b006-d48d837bf16f",
+  "name": "Ribbon Fx",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__fb58dd63-84bb-4702-aa1e-c4cab64068d7",
+  "name": "Procedural Ruler Advanced",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

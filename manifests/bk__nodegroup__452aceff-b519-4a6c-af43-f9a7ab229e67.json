@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__452aceff-b519-4a6c-af43-f9a7ab229e67",
+  "name": "Text scramble effect",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -60,12 +60,20 @@ def download_merge(run_id, tok):
         blob = api(a["archive_download_url"], tok, raw=True)
         z = zipfile.ZipFile(io.BytesIO(blob))
         for name in z.namelist():
-            if name.startswith("manifests/") and name.endswith(".json"):
-                data = z.read(name)
-                (mdir / pathlib.Path(name).name).write_bytes(data)
-                merged += 1
-            elif name.startswith("reports/wave-shard-"):
-                (ROOT / "reports" / pathlib.Path(name).name).write_bytes(z.read(name))
+            if name.startswith("reports/wave-shard-"):
+                (ROOT / "reports" / pathlib.Path(name).name).write_bytes(z.read(name)); continue
+            if not name.endswith(".json"):
+                continue
+            # a manifest may be under manifests/ (multi-path upload) OR at the zip root (single-path
+            # upload flattens the least-common-ancestor). Detect by content: has a canonical_id.
+            data = z.read(name)
+            try:
+                if "canonical_id" not in json.loads(data):
+                    continue
+            except Exception:
+                continue
+            (mdir / pathlib.Path(name).name).write_bytes(data)
+            merged += 1
     return merged, len(arts.get("artifacts", []))
 
 

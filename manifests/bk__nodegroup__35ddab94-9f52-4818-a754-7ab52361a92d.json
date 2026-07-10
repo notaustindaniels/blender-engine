@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d",
+  "name": "Hologram Generator V1",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "hologram_shader"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 name-remap-curated (D-008)",
+  "enrich_note": "L6 native pass; concrete noun 'hologram' -> hologram_shader."
+}

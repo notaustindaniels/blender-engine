@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__13f9981b-6a76-443d-b839-2da87bc555bc",
+  "name": "Plain Purple Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

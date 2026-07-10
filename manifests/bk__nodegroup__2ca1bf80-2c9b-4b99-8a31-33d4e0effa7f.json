@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__2ca1bf80-2c9b-4b99-8a31-33d4e0effa7f",
+  "name": "Mountain Range Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

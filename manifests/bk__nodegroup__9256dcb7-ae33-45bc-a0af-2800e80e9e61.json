@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__9256dcb7-ae33-45bc-a0af-2800e80e9e61",
+  "name": "Cobblestone path generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

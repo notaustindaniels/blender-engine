@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__e91a5566-6b0b-4bef-bcde-8d27727038dc",
+  "name": "NES Controller",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

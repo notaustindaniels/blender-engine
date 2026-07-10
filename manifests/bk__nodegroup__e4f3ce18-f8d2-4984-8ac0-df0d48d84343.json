@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__e4f3ce18-f8d2-4984-8ac0-df0d48d84343",
+  "name": "Character to Unicode 17.0",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated noresult (no niche name-match)"
+}

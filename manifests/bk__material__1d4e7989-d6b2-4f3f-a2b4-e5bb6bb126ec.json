@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1d4e7989-d6b2-4f3f-a2b4-e5bb6bb126ec",
+  "name": "Plain Blue Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03551
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

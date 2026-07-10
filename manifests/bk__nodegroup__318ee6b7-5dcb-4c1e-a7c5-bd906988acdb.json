@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__318ee6b7-5dcb-4c1e-a7c5-bd906988acdb",
+  "name": "Unicodes 17.0 to String",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated noresult (no niche name-match)"
+}

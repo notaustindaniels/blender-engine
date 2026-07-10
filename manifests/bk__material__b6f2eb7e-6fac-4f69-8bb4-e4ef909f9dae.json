@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__b6f2eb7e-6fac-4f69-8bb4-e4ef909f9dae",
+  "name": "Geometric Blue Embroidery",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

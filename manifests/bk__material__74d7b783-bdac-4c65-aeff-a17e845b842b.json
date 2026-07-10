@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__74d7b783-bdac-4c65-aeff-a17e845b842b",
+  "name": "Stone Pavers",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

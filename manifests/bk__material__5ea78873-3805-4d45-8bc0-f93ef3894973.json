@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__5ea78873-3805-4d45-8bc0-f93ef3894973",
+  "name": "Imperata cylindrica Leaf",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

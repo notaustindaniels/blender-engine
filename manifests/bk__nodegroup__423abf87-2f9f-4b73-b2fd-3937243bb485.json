@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__423abf87-2f9f-4b73-b2fd-3937243bb485",
+  "name": "Edge to Cube/obj Wireframe Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

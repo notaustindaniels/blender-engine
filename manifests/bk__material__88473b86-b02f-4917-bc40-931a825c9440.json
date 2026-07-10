@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__88473b86-b02f-4917-bc40-931a825c9440",
+  "name": "Plain Red Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

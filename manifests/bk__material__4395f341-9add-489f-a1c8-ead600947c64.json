@@ -9,7 +9,5 @@
       "render_ok": true,
       "shader_delta": 0.0792
     }
-  },
-  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
-  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+  }
 }

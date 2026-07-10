@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__fec776b2-06f9-498a-9934-57e8787d5600",
+  "name": "Generate Intersecting Paths",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__830985f5-9bac-4cfa-9226-92d5820c6772",
+  "name": "Scale (Ruler)",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

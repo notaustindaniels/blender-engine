@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__53077510-7bc3-44f9-9e59-11a210820887",
+  "name": "DirectX to OpenGL",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__09ed7b64-70ee-47f4-93a3-23890f7c939d",
+  "name": "Procedural Yarn",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

@@ -1,11 +1,11 @@
 # Gap report — Materials & texturing (D-008 R47)
 
-Coverage: **14/22 = 63.6%** (full_pass + recipe_verified). 8 gaps.
+Coverage: **15/22 = 68.2%** (full_pass + recipe_verified). 7 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
 | wood_shader | 1 | full_pass | unclassified |
-| brick_shader | 1 | GAP | unclassified |
+| brick_shader | 1 | full_pass | unclassified |
 | tile_grout_shader | 1 | full_pass | unclassified |
 | edge_wear_rust | 1 | full_pass | unclassified |
 | marble_stone_shader | 1 | full_pass | unclassified |
@@ -27,4 +27,4 @@ Coverage: **14/22 = 63.6%** (full_pass + recipe_verified). 8 gaps.
 | wet_surface_puddles | 2 | GAP | unclassified |
 | fabric_weave_shader | 2 | GAP | unclassified |
 
-**Gaps (8):** what the free ecosystem lacks here — `brick_shader`(unclassified), `pencil_stencil_system`(unclassified), `lava_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)
+**Gaps (7):** what the free ecosystem lacks here — `pencil_stencil_system`(unclassified), `lava_shader`(unclassified), `aurora_sky`(unclassified), `planet_shader`(unclassified), `interior_parallax_shader`(unclassified), `wet_surface_puddles`(unclassified), `fabric_weave_shader`(unclassified)

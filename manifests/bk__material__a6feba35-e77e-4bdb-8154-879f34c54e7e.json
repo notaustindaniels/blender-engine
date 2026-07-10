@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a6feba35-e77e-4bdb-8154-879f34c54e7e",
+  "name": "Asbestos Sheet 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

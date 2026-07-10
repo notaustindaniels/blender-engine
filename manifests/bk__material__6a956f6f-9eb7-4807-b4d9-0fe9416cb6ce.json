@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__6a956f6f-9eb7-4807-b4d9-0fe9416cb6ce",
+  "name": "Blue Metal Plate",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

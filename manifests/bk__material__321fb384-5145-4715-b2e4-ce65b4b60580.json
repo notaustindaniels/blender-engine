@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__321fb384-5145-4715-b2e4-ce65b4b60580",
+  "name": "Space ship cargo rack",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04339
+    }
+  }
+}

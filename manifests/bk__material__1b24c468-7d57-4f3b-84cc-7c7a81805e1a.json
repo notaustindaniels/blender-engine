@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1b24c468-7d57-4f3b-84cc-7c7a81805e1a",
+  "name": "Seaside Rock",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

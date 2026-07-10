@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__bc91b65f-b455-4336-9c66-2afd3872ac52",
+  "name": "Plain Grey Sheer",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.08106
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

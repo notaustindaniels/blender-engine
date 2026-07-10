@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__8ba275e5-4812-42d6-8406-f6c6cbc4fc20",
+  "name": "arc",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__43e35e7c-1673-4a6e-8d18-0719b5433513",
+  "name": "Disintegration Effect Basic",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

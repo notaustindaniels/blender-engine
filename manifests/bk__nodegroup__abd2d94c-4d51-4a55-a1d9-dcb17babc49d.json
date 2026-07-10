@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__abd2d94c-4d51-4a55-a1d9-dcb17babc49d",
+  "name": "Scales Texture",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

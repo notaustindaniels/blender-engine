@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__4556e17e-19b8-4f65-a5a2-5f9e3cce5103",
+  "name": "Electrify Modifier",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

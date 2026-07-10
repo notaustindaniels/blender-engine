@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__8590dff2-29da-4c30-95bc-3bf7351ab771",
+  "name": "Plain Gold Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

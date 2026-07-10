@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__c6637557-3db1-4093-9f13-bc7fe99f33d0",
+  "name": "Graphical Green Embroidery",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04087
+    }
+  }
+}

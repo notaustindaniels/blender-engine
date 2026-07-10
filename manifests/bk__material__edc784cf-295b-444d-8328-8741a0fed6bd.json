@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__edc784cf-295b-444d-8328-8741a0fed6bd",
+  "name": "Long White Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

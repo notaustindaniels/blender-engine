@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__303c12be-0fa6-4d39-b8ec-18bb1ab92fce",
+  "name": "Damaged Concrete Floor 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

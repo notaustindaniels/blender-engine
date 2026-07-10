@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__6818be04-ad92-4635-ab63-7b089a0df824",
+  "name": "Patterned Concrete Wall",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__959f3435-5ae0-4659-90cc-7bfe5e9e595b",
+  "name": "Wireframe Overlay",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.05076
+    }
+  }
+}

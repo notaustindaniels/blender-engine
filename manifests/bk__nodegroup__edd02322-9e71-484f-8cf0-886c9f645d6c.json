@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__edd02322-9e71-484f-8cf0-886c9f645d6c",
+  "name": "Curve Line Drooper",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a4b30339-b397-474b-a471-ad8cb958363a",
+  "name": "Plain Black Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

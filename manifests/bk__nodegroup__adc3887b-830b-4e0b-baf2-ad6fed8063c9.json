@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__adc3887b-830b-4e0b-baf2-ad6fed8063c9",
+  "name": "Shader Switch: Value Selector",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

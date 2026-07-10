@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a953b85a-bce5-483b-a85a-685d238f4ec5",
+  "name": "Sega Genesis",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

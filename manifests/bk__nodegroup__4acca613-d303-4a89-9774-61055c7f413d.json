@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__4acca613-d303-4a89-9774-61055c7f413d",
+  "name": "Sapling Growth Simulation",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__8aa1d520-6736-4d60-aea8-8f22caf1cca8",
+  "name": "Graphical Grey Jacquard",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04894
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__7ce53bbf-f468-4e2d-8e20-f58fb1efa828",
+  "name": "Climbing Wall Base",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

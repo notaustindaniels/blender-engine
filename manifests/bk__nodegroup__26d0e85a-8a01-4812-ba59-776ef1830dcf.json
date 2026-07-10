@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__26d0e85a-8a01-4812-ba59-776ef1830dcf",
+  "name": "STONED - Mesh to Rock Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

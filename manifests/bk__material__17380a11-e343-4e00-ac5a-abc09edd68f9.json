@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__17380a11-e343-4e00-ac5a-abc09edd68f9",
+  "name": "Graphical Gold Embroidery",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__26e7ea3a-fec3-4685-b062-1bc47b92d4cb",
+  "name": "Image Color Palette",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

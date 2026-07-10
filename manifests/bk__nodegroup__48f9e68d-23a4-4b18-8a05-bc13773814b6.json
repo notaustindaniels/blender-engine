@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__48f9e68d-23a4-4b18-8a05-bc13773814b6",
+  "name": "Procedural Explosion Sim",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

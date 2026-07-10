@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__1076364c-7be3-4051-94f9-e24413eadd86",
+  "name": "Plain Green Vinyl",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.0432
+    }
+  }
+}

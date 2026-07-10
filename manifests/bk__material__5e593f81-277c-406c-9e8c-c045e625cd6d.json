@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__5e593f81-277c-406c-9e8c-c045e625cd6d",
+  "name": "Slate Floor 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

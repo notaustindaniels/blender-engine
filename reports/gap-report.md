@@ -1,10 +1,10 @@
 # Per-category coverage + gap summary (D-008 R47) — all 26 categories
 
-**Whole-taxonomy coverage: 52/328 = 15.9%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
+**Whole-taxonomy coverage: 54/328 = 16.5%** (full_pass + recipe_verified). Per-category detail in `reports/gaps/<category>.md`. A gap is an uncovered niche; attainability from the R15 audit.
 
 | category | covered | present | % | gaps |
 |---|---|---|---|---|
-| Materials & texturing | 14 | 22 | 63.6% | 8 |
+| Materials & texturing | 15 | 22 | 68.2% | 7 |
 | Vegetation & organic | 14 | 25 | 56.0% | 11 |
 | Fabric & soft goods | 2 | 5 | 40.0% | 3 |
 | Animation: stylized / NPR | 1 | 4 | 25.0% | 3 |
@@ -17,7 +17,7 @@
 | Rooms & interiors | 1 | 12 | 8.3% | 11 |
 | Abstract, mograph & design | 1 | 14 | 7.1% | 13 |
 | Buildings & architecture | 1 | 17 | 5.9% | 16 |
-| Cities & urban | 0 | 18 | 0.0% | 18 |
+| Cities & urban | 1 | 18 | 5.6% | 17 |
 | Simulation-adjacent | 0 | 15 | 0.0% | 15 |
 | Emergent formation (agents/particles self-organize into targets) | 0 | 14 | 0.0% | 14 |
 | Diegetic data visualization (charts as in-world objects) | 0 | 16 | 0.0% | 16 |

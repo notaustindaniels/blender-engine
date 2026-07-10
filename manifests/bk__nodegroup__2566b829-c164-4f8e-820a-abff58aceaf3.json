@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3",
+  "name": "Neon Sign Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "neon_signage"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 name-remap-curated (D-008)",
+  "enrich_note": "L6 native pass; concrete noun 'neon' -> neon_signage."
+}

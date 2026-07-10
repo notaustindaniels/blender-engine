@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__abc80e67-12ba-4b0f-8b77-e8e10c335ecf",
+  "name": "Magical Projectile",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

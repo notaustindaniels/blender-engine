@@ -94,6 +94,220 @@ Harvested add-ons that survived verification but map to NO taxonomy niche — ca
 - `bhimax__texture-file-path-editor` (Texture File Path Editor) — survived, no niche mapped
 - `bitbyte__mesh-align-plus` (Mesh Align Plus) — survived, no niche mapped
 - `bitsqueezer__ccncanimationobjects` (CCNCAnimationObjects) — survived, no niche mapped
+- `bk__material__082a0e65-02e8-4659-9048-d76fe89b2a46` (Glowing Hot Metal) — survived, no niche mapped
+- `bk__material__0ca06af6-c4e3-4644-81a1-20c0c8056937` (Iridescent Steel) — survived, no niche mapped
+- `bk__material__1076364c-7be3-4051-94f9-e24413eadd86` (Plain Green Vinyl) — survived, no niche mapped
+- `bk__material__10a962d7-32b5-49fe-95d2-e9068911bc0f` (Plain White Blackout) — survived, no niche mapped
+- `bk__material__15c6fe9e-fe83-4943-8b09-edbade81dca1` (Plain Blue Texture) — survived, no niche mapped
+- `bk__material__1b1fc4a5-11c3-4337-b95b-6ac508ccbfac` (Hammered Copper) — survived, no niche mapped
+- `bk__material__1c5a3fe8-f3b3-4dcb-b67b-42b4c61725e6` (blender wallpaper) — survived, no niche mapped
+- `bk__material__1d4e7989-d6b2-4f3f-a2b4-e5bb6bb126ec` (Plain Blue Blackout) — survived, no niche mapped
+- `bk__material__1ddfda03-742a-4808-875d-cb6c27e19af4` (Plain Pink Sheer) — survived, no niche mapped
+- `bk__material__1f7670ee-738c-4390-8eaa-7290f23e77e4` (Plain Gold Velvet) — survived, no niche mapped
+- `bk__material__20999639-50c7-454a-9de6-56d2a539707c` (Plain Blue Blackout) — survived, no niche mapped
+- `bk__material__3088e714-0549-472b-b8e5-5d20a453a723` (Plain Green Sheer) — survived, no niche mapped
+- `bk__material__321fb384-5145-4715-b2e4-ce65b4b60580` (Space ship cargo rack) — survived, no niche mapped
+- `bk__material__3347fdfe-1a2e-4fd5-8a60-d30a18f1b49c` (Plain Duckegg Blackout) — survived, no niche mapped
+- `bk__material__33b24672-a6a1-4171-a5a5-c1bc72da25bb` (Graphical Grey Jacquard) — survived, no niche mapped
+- `bk__material__3507a00b-9d82-46f5-8382-7db7d987a4c8` (Plain Pink Vinyl) — survived, no niche mapped
+- `bk__material__37891347-57ee-465b-b1a5-3f75286632e1` (Plain Green Chenille) — survived, no niche mapped
+- `bk__material__3f7cbbb1-72e6-4bd9-bce0-20b1d7b141e2` (Stripe Natural Velvet) — survived, no niche mapped
+- `bk__material__403dd87f-4d85-4c03-bda2-4dc09a1e138d` (Plain Gold Blackout) — survived, no niche mapped
+- `bk__material__4395f341-9add-489f-a1c8-ead600947c64` (Procedural Animated Air Vent Fan) — survived, no niche mapped
+- `bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7` (Lux Quilted Leather) — survived, no niche mapped
+- `bk__material__52a66f8b-e46a-43b8-af15-a272d681b828` (Plain Natural Sheer) — survived, no niche mapped
+- `bk__material__539c58a6-5e8b-49d8-8d5f-00f4dbfdcb90` (Stripe Blue Velvet) — survived, no niche mapped
+- `bk__material__589960a4-90be-45c3-8a2c-8f250b972910` (Plain Green Texture) — survived, no niche mapped
+- `bk__material__66247e9d-f161-4de0-9519-2d3828123e83` (Metal Plates) — survived, no niche mapped
+- `bk__material__67b8c86c-bb20-4202-9d2f-722472017635` (Stripe Pink Velvet) — survived, no niche mapped
+- `bk__material__6b8f4726-2934-420d-b99c-f65b83322948` (Plain Pink Texture) — survived, no niche mapped
+- `bk__material__723fba90-aaa7-4309-abfe-94bcc2386c90` (Plain Natural Blackout) — survived, no niche mapped
+- `bk__material__7596cd06-2db4-491d-9ef3-80ec0459b04e` (Stripe Grey Velvet) — survived, no niche mapped
+- `bk__material__78618e48-1747-48b5-a430-3888a2d8a661` (Plain Grey Texture) — survived, no niche mapped
+- `bk__material__78cdfab0-a06d-4a06-bff1-56c419d0475b` (Plain Green Texture) — survived, no niche mapped
+- `bk__material__82a82de1-d04f-4408-a65c-40c535c37ad5` (Graphical Green Jacquard) — survived, no niche mapped
+- `bk__material__82aec07a-75d2-4f0f-8204-bd8359471896` (Gel) — survived, no niche mapped
+- `bk__material__8a51ce71-de5a-480c-a5a1-2547824006bd` (Rustic Clay Roof Tiles 4k) — survived, no niche mapped
+- `bk__material__8aa1d520-6736-4d60-aea8-8f22caf1cca8` (Graphical Grey Jacquard) — survived, no niche mapped
+- `bk__material__959f3435-5ae0-4659-90cc-7bfe5e9e595b` (Wireframe Overlay) — survived, no niche mapped
+- `bk__material__9dfdbf6b-176e-4bcd-8946-ae76367c876f` (Plain Grey Texture) — survived, no niche mapped
+- `bk__material__a25e3f20-593b-4fb6-8cd1-1643ee28c448` (Plain Green Texture) — survived, no niche mapped
+- `bk__material__a5afe7a9-7512-4761-a707-924a5940bb23` (Ranunculus tanguticus Leaf) — survived, no niche mapped
+- `bk__material__aad6effe-f48f-447f-8e71-e6bf75769cca` (Graphical White Chenille) — survived, no niche mapped
+- `bk__material__add7255e-c09b-4c15-a7ab-14f2ca2b788d` (Plain Grey Blackout) — survived, no niche mapped
+- `bk__material__b1292e22-c549-4641-bd64-7ae563ce0fb3` (Plain Grey Texture) — survived, no niche mapped
+- `bk__material__b901a1f2-cb19-4666-aba5-eba234b7982c` (Geometric Orange Print) — survived, no niche mapped
+- `bk__material__bc91b65f-b455-4336-9c66-2afd3872ac52` (Plain Grey Sheer) — survived, no niche mapped
+- `bk__material__bd5858c3-1e4f-41cf-a9fe-e3537b289f7a` (Graphical Grey Chenille) — survived, no niche mapped
+- `bk__material__c1029840-395b-4d3d-a20e-2ad9944584dc` (Plain Grey Chenille) — survived, no niche mapped
+- `bk__material__c5d2ba8e-5e94-4a1b-b66d-45cb97a0ce31` (Plain Brown Texture) — survived, no niche mapped
+- `bk__material__c6637557-3db1-4093-9f13-bc7fe99f33d0` (Graphical Green Embroidery) — survived, no niche mapped
+- `bk__material__c796e6a9-c742-4508-9d6e-fc9c1c8d6f9c` (Facade with fake interiors 01) — survived, no niche mapped
+- `bk__material__d46b8efc-ae52-4ddd-8db0-e5efee222c64` (Plain Grey Sheer) — survived, no niche mapped
+- `bk__material__df7e9828-51b2-4c81-b011-3bfcfc92a4ce` (Iridescent Gradient Glass) — survived, no niche mapped
+- `bk__material__e6c4e1e1-d462-450c-8348-392b376cdce6` (Stripe Orange Velvet) — survived, no niche mapped
+- `bk__material__ec006af6-38a1-4b81-8823-c1b794d4887e` (Plain White Dimout) — survived, no niche mapped
+- `bk__material__f03cc666-b4c0-49ee-b1c1-916e6a48a766` (Plain Green Dimout) — survived, no niche mapped
+- `bk__material__fc572e83-be07-43c9-ab51-ceeb8232be07` (Plain Pink Texture) — survived, no niche mapped
+- `bk__material__fdf142d1-62f7-466a-9ebf-947d3fb27f9d` (Plain Purple Texture) — survived, no niche mapped
+- `bk__nodegroup__07aa9f72-5ee1-4835-a1fd-7721fae6322e` (Procedural Rain Drops) — survived, no niche mapped
+- `bk__nodegroup__07cb5166-e186-419d-9c48-1d9b797dabf0` (Telephone Pole) — survived, no niche mapped
+- `bk__nodegroup__09a1d65c-4708-4c81-ab3e-02e8fe4759da` (Shader Switch: Vector Selector) — survived, no niche mapped
+- `bk__nodegroup__09ed7b64-70ee-47f4-93a3-23890f7c939d` (Procedural Yarn) — survived, no niche mapped
+- `bk__nodegroup__0ac641e3-cda7-4215-821d-b32b53169e4b` (Y=x2) — survived, no niche mapped
+- `bk__nodegroup__0efbacfa-1318-4207-bf86-99bf70a14d8d` (LED Sign Generator) — survived, no niche mapped
+- `bk__nodegroup__1094c1cb-995e-4454-826b-e9883c922b65` (Procedural Proximity Lightning) — survived, no niche mapped
+- `bk__nodegroup__14a0e0f7-33dd-4649-8b94-8fdb35eadfaf` (Rounded Cone) — survived, no niche mapped
+- `bk__nodegroup__1684cebf-4ce0-4c0a-b528-d2acef732df9` (Ground Projection Modifier) — survived, no niche mapped
+- `bk__nodegroup__1821e648-8cd4-4eb3-8b2e-9e585c348eff` (Extract Random Points) — survived, no niche mapped
+- `bk__nodegroup__18516c78-247c-47e9-bf14-fa94d0a9b946` (VoxelOcean) — survived, no niche mapped
+- `bk__nodegroup__18c5753f-fb31-4da5-ba96-1377f6f9de82` (Mesh Island Explode Modifier) — survived, no niche mapped
+- `bk__nodegroup__197d5b58-891e-42bc-90c9-d73da8a9a2e1` (Anime Tornado) — survived, no niche mapped
+- `bk__nodegroup__1c425e7e-26be-459f-b059-71a388d9dca1` (Hexagon Grid) — survived, no niche mapped
+- `bk__nodegroup__1eb32971-2b19-4266-a4dc-98130e272ef7` (Inner Natural Stone Growth (Simulation)) — survived, no niche mapped
+- `bk__nodegroup__20245a81-272c-4cc4-9311-77860cb1ffe5` (Deform Along Curve) — survived, no niche mapped
+- `bk__nodegroup__2137c363-d85c-4e2d-bfc9-2bbb45b833e8` (Wiggle) — survived, no niche mapped
+- `bk__nodegroup__230518e2-aa85-4649-b02b-2a69d30ed578` (Particle Burst - Circular) — survived, no niche mapped
+- `bk__nodegroup__23d7522b-7ad0-4d29-927d-005526cd4e5b` (Shader Switch: BSDF Selector) — survived, no niche mapped
+- `bk__nodegroup__2533372a-de89-4105-988d-df0234c4657a` (Island Generator) — survived, no niche mapped
+- `bk__nodegroup__2566b829-c164-4f8e-820a-abff58aceaf3` (Neon Sign Generator) — survived, no niche mapped
+- `bk__nodegroup__25f54fbf-77ae-4d55-b00b-b247d2787908` (Camera Grid) — survived, no niche mapped
+- `bk__nodegroup__26d0e85a-8a01-4812-ba59-776ef1830dcf` (STONED - Mesh to Rock Generator) — survived, no niche mapped
+- `bk__nodegroup__26e7ea3a-fec3-4685-b062-1bc47b92d4cb` (Image Color Palette) — survived, no niche mapped
+- `bk__nodegroup__2820a33b-92a9-465f-8fc6-f48755df561d` (Cobweb Generator) — survived, no niche mapped
+- `bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb` (Curve to Brick Wall Generator) — survived, no niche mapped
+- `bk__nodegroup__2ca1bf80-2c9b-4b99-8a31-33d4e0effa7f` (Mountain Range Generator) — survived, no niche mapped
+- `bk__nodegroup__2f6cf5c9-fe47-4336-8691-368d28bf07da` (3-Modes Array) — survived, no niche mapped
+- `bk__nodegroup__32eb1045-536e-4f21-958d-7b508e6d50dc` (Sine Function Node) — survived, no niche mapped
+- `bk__nodegroup__338a545e-2b2f-4530-8a1f-1192fd9ebc7f` (IES Procedural Beam) — survived, no niche mapped
+- `bk__nodegroup__33f12a66-d191-4de6-b483-2aa4b8889eab` (Three Point Light Setup) — survived, no niche mapped
+- `bk__nodegroup__35ddab94-9f52-4818-a754-7ab52361a92d` (Hologram Generator V1) — survived, no niche mapped
+- `bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58` (Procedural Gear And star) — survived, no niche mapped
+- `bk__nodegroup__3a344ab0-59e2-4f4a-8823-bf5d1ef49734` (Chain Generator) — survived, no niche mapped
+- `bk__nodegroup__3b820818-cffc-432f-b155-9ac232f42a1d` (Ice Surface Generator) — survived, no niche mapped
+- `bk__nodegroup__3b8756c9-23bd-4a88-aab7-2a9baccce306` (Snow Generator) — survived, no niche mapped
+- `bk__nodegroup__3cb21a9e-f1ce-41be-a7e9-4f5aae25792b` (WindMill) — survived, no niche mapped
+- `bk__nodegroup__3e3be5da-db69-45cb-b86b-ae5c853cab12` (Simple Stacking) — survived, no niche mapped
+- `bk__nodegroup__420592f1-192a-451c-b7cb-9b0a2b50be8c` (Bricks Grid) — survived, no niche mapped
+- `bk__nodegroup__423abf87-2f9f-4b73-b2fd-3937243bb485` (Edge to Cube/obj Wireframe Generator) — survived, no niche mapped
+- `bk__nodegroup__432e43a8-8fe9-414f-9afa-1955c84d8eb7` (Procedural Cobweb Generator) — survived, no niche mapped
+- `bk__nodegroup__434b75cd-8900-430f-8c21-dcdc481fb14d` (Atmospheric Lightning (Slowmo)) — survived, no niche mapped
+- `bk__nodegroup__43e35e7c-1673-4a6e-8d18-0719b5433513` (Disintegration Effect Basic) — survived, no niche mapped
+- `bk__nodegroup__452aceff-b519-4a6c-af43-f9a7ab229e67` (Text scramble effect) — survived, no niche mapped
+- `bk__nodegroup__4556e17e-19b8-4f65-a5a2-5f9e3cce5103` (Electrify Modifier) — survived, no niche mapped
+- `bk__nodegroup__46e2f3f5-e161-459b-b780-93bc9234044c` (Geometry nodes for procedural Traffic) — survived, no niche mapped
+- `bk__nodegroup__48f9e68d-23a4-4b18-8a05-bc13773814b6` (Procedural Explosion Sim) — survived, no niche mapped
+- `bk__nodegroup__499da15d-6a2c-4604-98f6-f04e893713ff` (Table) — survived, no niche mapped
+- `bk__nodegroup__4acca613-d303-4a89-9774-61055c7f413d` (Sapling Growth Simulation) — survived, no niche mapped
+- `bk__nodegroup__4d167955-c4d7-45a8-8a6c-853b8f7f74bd` (Shader Switch: Color Selector) — survived, no niche mapped
+- `bk__nodegroup__4e0f2091-4af1-4bec-add3-1fd481f6ca64` (Advanced Curve Shapes) — survived, no niche mapped
+- `bk__nodegroup__5078bda2-9093-46f1-a788-b329568998e3` (Lightning Generator) — survived, no niche mapped
+- `bk__nodegroup__51339446-b5d2-4784-b820-871b270993ff` (Hilbert Curve) — survived, no niche mapped
+- `bk__nodegroup__5223bc44-a976-48f2-b8b6-d9995592fcd4` (Moth Simulator) — survived, no niche mapped
+- `bk__nodegroup__53077510-7bc3-44f9-9e59-11a210820887` (DirectX to OpenGL) — survived, no niche mapped
+- `bk__nodegroup__53840b76-5317-424e-ae85-ebeda9ff71de` (Procedural Damage Generator) — survived, no niche mapped
+- `bk__nodegroup__545f3f1d-9553-46fb-8335-332d45908540` (Instance Nest Pack) — survived, no niche mapped
+- `bk__nodegroup__54ab2d87-8e6e-4c64-bc97-6217b5875efc` (Sphere of Flowing Particles) — survived, no niche mapped
+- `bk__nodegroup__56c87997-676e-49d2-a68e-e5b694a21347` (Organic String Fibers Modifier) — survived, no niche mapped
+- `bk__nodegroup__57ef9130-4e2c-49ba-84fd-89c91bf24a48` (VoxelFire) — survived, no niche mapped
+- `bk__nodegroup__5917e19d-2074-4991-8c36-9ca2c930543b` (Lightning Burst) — survived, no niche mapped
+- `bk__nodegroup__59b2accf-c73d-4867-8030-59f076824d4b` (Stylized Fire Beam) — survived, no niche mapped
+- `bk__nodegroup__5b780830-90e2-4f61-8390-9fe6a3226815` (Loop Noise Texture) — survived, no niche mapped
+- `bk__nodegroup__5c602f7b-a718-491b-81af-9fc3866b0b8d` (Weld Cutter) — survived, no niche mapped
+- `bk__nodegroup__5c6dc8bf-8141-40cf-a944-1dd88db13cc0` (Lightning Arcs Generator) — survived, no niche mapped
+- `bk__nodegroup__5e75cee4-fe15-49c8-95d9-228202ba685d` (Spiral Burst Trails) — survived, no niche mapped
+- `bk__nodegroup__5f1aa445-9f62-42a8-9bd0-16122f306ab6` (Select Named Attribute) — survived, no niche mapped
+- `bk__nodegroup__654000df-454f-4eb8-8a28-180c4760d0a0` (Curve to Moving Gears) — survived, no niche mapped
+- `bk__nodegroup__66f639e4-d580-4fcb-9370-1914a3cae2c9` (Landscape Generator) — survived, no niche mapped
+- `bk__nodegroup__686b8c6b-6e30-4886-9804-166ee52374ae` (Hologram Generator V2) — survived, no niche mapped
+- `bk__nodegroup__68fc1387-0f90-4bdd-a90a-3854713df72f` (Curve To Lightning Generator) — survived, no niche mapped
+- `bk__nodegroup__6a499b2e-7605-4ec2-895d-c9883f9fcb20` (Procedural Product Background) — survived, no niche mapped
+- `bk__nodegroup__6cd7194d-a4e8-404b-8f03-ddf8ccdd2c36` (Simple Room Generator) — survived, no niche mapped
+- `bk__nodegroup__6d08fd55-4682-4f54-8074-11c57ec9ae3e` (Simple Procedural Tire Maker) — survived, no niche mapped
+- `bk__nodegroup__6d41578b-32d4-4a02-b959-f336ec32733c` (Better Remesh) — survived, no niche mapped
+- `bk__nodegroup__6e9981f9-d5e0-4739-9290-31c6c68b09f1` (Set Origin Point) — survived, no niche mapped
+- `bk__nodegroup__6ec79628-68cc-4454-88a1-5efea945a3dd` (Show Dimensions Modifier) — survived, no niche mapped
+- `bk__nodegroup__71cbab75-21a1-42aa-8c05-ae25ee980b9e` (Lines Generator) — survived, no niche mapped
+- `bk__nodegroup__72a4bfc8-a856-4182-bbd6-11f46978b9e4` (Mesh Trails) — survived, no niche mapped
+- `bk__nodegroup__7640c485-b731-4cde-b967-703536414fdb` (Quad Sphere) — survived, no niche mapped
+- `bk__nodegroup__783d8b11-6282-4842-9ae7-c9f516873f4e` (Voxel Fire Sim) — survived, no niche mapped
+- `bk__nodegroup__7a0918ba-facd-487d-986d-d0a52e97db5f` (Brick Wall Generator) — survived, no niche mapped
+- `bk__nodegroup__7b777be7-e4bc-441d-b968-7f00cd9d9d23` (Surface Erosion Modifier) — survived, no niche mapped
+- `bk__nodegroup__7f675418-b1c9-44b6-9380-295a83026dfa` (Quad Disk) — survived, no niche mapped
+- `bk__nodegroup__804ca92c-2c8e-42db-b006-d48d837bf16f` (Ribbon Fx) — survived, no niche mapped
+- `bk__nodegroup__830026e6-e05c-45fd-8a10-5df1a8b72b65` (Procedural Rock Generator) — survived, no niche mapped
+- `bk__nodegroup__830985f5-9bac-4cfa-9226-92d5820c6772` (Scale (Ruler)) — survived, no niche mapped
+- `bk__nodegroup__84c76c18-8fcf-4018-8b9b-d41a8c5ceabb` (Random Ribbon Fx) — survived, no niche mapped
+- `bk__nodegroup__850ab1c5-5ba7-4634-9d82-bf670657bc5a` (Tree Trunk / Lightning Bolt Generator) — survived, no niche mapped
+- `bk__nodegroup__864b02e4-e64b-4505-b094-32d30141beeb` (Disintegration Effect Noise Based) — survived, no niche mapped
+- `bk__nodegroup__867cdeae-b0f3-49b3-8771-43eba5bb8b6e` (Procedural Shelving Generator) — survived, no niche mapped
+- `bk__nodegroup__874e86f0-5d50-48c3-884e-74edc072b90d` (Foot Step Generator) — survived, no niche mapped
+- `bk__nodegroup__87d26f4b-c705-40bc-a1aa-bd3a89f68ed1` (Geometry Picker) — survived, no niche mapped
+- `bk__nodegroup__87f70279-b17e-4dc5-beb9-8d075337d448` (RingGenerator) — survived, no niche mapped
+- `bk__nodegroup__8828fcc5-7757-457b-91f5-18dae32197d3` (Outline Generator) — survived, no niche mapped
+- `bk__nodegroup__89334a63-cdce-4ab4-9813-85235d62e522` (Easy Scatter) — survived, no niche mapped
+- `bk__nodegroup__8aa9e0b7-09f4-49ce-a817-3907aa0daa1d` (Even Curve to Mesh) — survived, no niche mapped
+- `bk__nodegroup__8ba275e5-4812-42d6-8406-f6c6cbc4fc20` (arc) — survived, no niche mapped
+- `bk__nodegroup__8d7ca7cb-cd85-48dd-acd1-43a7a73f7755` (Normal Map Mixer.) — survived, no niche mapped
+- `bk__nodegroup__902da549-4d9f-4d94-92bd-2060987bee6a` (Line to Object) — survived, no niche mapped
+- `bk__nodegroup__9256dcb7-ae33-45bc-a0af-2800e80e9e61` (Cobblestone path generator) — survived, no niche mapped
+- `bk__nodegroup__93ba56b3-c94a-48b1-a2e2-72c7e8487697` (Random Color) — survived, no niche mapped
+- `bk__nodegroup__941392dd-97be-424d-9b60-d6cbf740f4df` (Distribute N Points) — survived, no niche mapped
+- `bk__nodegroup__95adb5eb-9360-4ed9-8d10-1574aab8ea49` (Bevel) — survived, no niche mapped
+- `bk__nodegroup__97e272e2-3dd0-4564-b025-aec844534be8` (Curve Corner Instancer) — survived, no niche mapped
+- `bk__nodegroup__9e103013-e831-4542-bd2a-6f87823d647a` (Table - Procedural Furniture) — survived, no niche mapped
+- `bk__nodegroup__9ed55029-2732-409d-b8f7-fd3f8492ab4a` (Matcap Map) — survived, no niche mapped
+- `bk__nodegroup__9ef915ea-d732-4628-a05f-7b11df03fe4a` (Far-Fader) — survived, no niche mapped
+- `bk__nodegroup__a1a821c5-fa9f-4fa0-a742-f4c441afc26a` (Rope / Cable Generator) — survived, no niche mapped
+- `bk__nodegroup__a3c99f79-ec25-4af5-ad24-d83fced86597` (Plane Corner Instancer) — survived, no niche mapped
+- `bk__nodegroup__a6a911c2-58f2-4274-bd13-20bc737a3d86` (Fir Generator) — survived, no niche mapped
+- `bk__nodegroup__a7155c65-98d6-4d5b-8dd9-fa5cf9525c13` (Bubble Wrap Geometry Nodes Generator) — survived, no niche mapped
+- `bk__nodegroup__ab9bf34b-daa3-4a39-912c-d95ba3605d62` (Procedural Ruler Flexible) — survived, no niche mapped
+- `bk__nodegroup__abc80e67-12ba-4b0f-8b77-e8e10c335ecf` (Magical Projectile) — survived, no niche mapped
+- `bk__nodegroup__abd2d94c-4d51-4a55-a1d9-dcb17babc49d` (Scales Texture) — survived, no niche mapped
+- `bk__nodegroup__adc3887b-830b-4e0b-baf2-ad6fed8063c9` (Shader Switch: Value Selector) — survived, no niche mapped
+- `bk__nodegroup__b080076b-b0e4-44cf-8e13-128e1b6dfbf3` (Motion blur) — survived, no niche mapped
+- `bk__nodegroup__b58e2e03-682e-47c3-82d2-362c3711e77b` (Loop Animated FireFlies) — survived, no niche mapped
+- `bk__nodegroup__b99e0e9e-6e5b-431f-8dc9-e4b97e2e51aa` (Cartoon Liquid) — survived, no niche mapped
+- `bk__nodegroup__bae2cdf1-439d-4570-89dd-c61a2427f529` (Morph Fx - Basic) — survived, no niche mapped
+- `bk__nodegroup__bbb9705e-b044-4bb0-a77a-c29699e56ba0` (B Particle Sim) — survived, no niche mapped
+- `bk__nodegroup__c18d3c88-eda2-47fb-920f-14faa309ff1c` (Laser) — survived, no niche mapped
+- `bk__nodegroup__c1ee7fb3-43eb-43e8-ae85-a8da5c8e35bb` (Procedural Generation of Objects) — survived, no niche mapped
+- `bk__nodegroup__c2118a18-444a-4f16-977e-b90c5f6412ca` (Procedural Donut) — survived, no niche mapped
+- `bk__nodegroup__c3aa3d0b-94b8-4dfc-a18a-a1606e3aafce` (Mandelbulb) — survived, no niche mapped
+- `bk__nodegroup__c4b87272-900b-46da-9e48-62b92d6a605e` (Ballistics Simulation) — survived, no niche mapped
+- `bk__nodegroup__c61c08ac-eb9c-476b-9d8f-342b080f826b` (Looping 4D Noise) — survived, no niche mapped
+- `bk__nodegroup__c7539174-18d1-407f-8c87-fe9fe6d07468` (Curve to Rope Generator) — survived, no niche mapped
+- `bk__nodegroup__c7715931-7f21-4c8d-9a14-da18a5a4bcbb` (Mesh Thickness) — survived, no niche mapped
+- `bk__nodegroup__ca29ce9b-3dc6-49b8-8202-175cbf50201e` (Basic Plant scatter system) — survived, no niche mapped
+- `bk__nodegroup__cabd2bdc-04c6-43b9-b8a9-21bdb5ebf55a` (Mesh Fresnel) — survived, no niche mapped
+- `bk__nodegroup__ccdef387-faa6-4d4a-9faa-778b7fd4c6b4` (Mesh Grid) — survived, no niche mapped
+- `bk__nodegroup__cd1cab85-561a-45d7-94a0-c44dd4933b77` (Cabinet Drawers Generator) — survived, no niche mapped
+- `bk__nodegroup__cdfdbeca-f4ca-4d8f-aac4-251d20d46f91` (Distance btw objects) — survived, no niche mapped
+- `bk__nodegroup__ce814e88-0908-4034-9746-3058b8ba63c5` (Flowing Particles) — survived, no niche mapped
+- `bk__nodegroup__d17bb241-d964-40b8-886d-a65a15c00dfb` (Looop Animated Noise Texture) — survived, no niche mapped
+- `bk__nodegroup__d3279ee4-bd72-45e8-b9e2-f26b017baf44` (StonedV2 Mesh To Rock) — survived, no niche mapped
+- `bk__nodegroup__dc2fb053-2562-480c-912d-ce40328aa6c5` (Image Color Visualizer) — survived, no niche mapped
+- `bk__nodegroup__dfc751b8-6490-459b-9dfe-a918253881d3` (Procedural Layered Text Effect) — survived, no niche mapped
+- `bk__nodegroup__e09442d3-ccc5-4b1d-b714-fe8e4793d88f` (Neon Sign Generator) — survived, no niche mapped
+- `bk__nodegroup__e3728b0d-8a20-4427-b9cf-7302cf81893f` (Procedural Object Welder) — survived, no niche mapped
+- `bk__nodegroup__e629eeb8-910e-4354-81f2-a68c1969fa29` (Procedural Ruler Simple) — survived, no niche mapped
+- `bk__nodegroup__e91e3d62-e86c-40d2-b5ce-48674f9d7d56` (Resizing Bounding Box Modifier) — survived, no niche mapped
+- `bk__nodegroup__e9e77ae4-586d-4f79-9b4a-a2579abfe27c` (Pop Up Animator) — survived, no niche mapped
+- `bk__nodegroup__ea8d9fc3-2c98-472d-bc97-2f7aa3be6763` (Particle Burst) — survived, no niche mapped
+- `bk__nodegroup__ec54ba40-5d53-4545-89df-e31200c3147f` (Scatter Texture Map) — survived, no niche mapped
+- `bk__nodegroup__edd02322-9e71-484f-8cf0-886c9f645d6c` (Curve Line Drooper) — survived, no niche mapped
+- `bk__nodegroup__ee6fa70a-3d31-467b-9a65-8a4df86c638c` (Organic Point Cloud Scatter) — survived, no niche mapped
+- `bk__nodegroup__f09bed04-bb4a-4e5b-9568-98095ee51177` (Lightning Strike with Sparks) — survived, no niche mapped
+- `bk__nodegroup__f1169fa7-7c0d-4e09-b2fa-a200f2474f94` (Pyro_Spread) — survived, no niche mapped
+- `bk__nodegroup__f1e08823-4ffa-469c-bda2-cbbe8f4f486c` (Procedural Sound Wave) — survived, no niche mapped
+- `bk__nodegroup__f2436796-ad87-4b12-836b-e1c9480d155e` (Particle Flow Generator) — survived, no niche mapped
+- `bk__nodegroup__f25ab685-b57e-4a16-bb0d-635aa123c9f6` (Glare, lens flare REALISTIC) — survived, no niche mapped
+- `bk__nodegroup__f42663b2-46c6-4336-a647-a1f757408885` (Crystals Formation) — survived, no niche mapped
+- `bk__nodegroup__f9971d08-4a38-4f8b-8851-379bd8e6722a` (Water Droplets) — survived, no niche mapped
+- `bk__nodegroup__fb494c8a-a14e-4852-8443-dbd6f3a85d56` (Advanced Spiral) — survived, no niche mapped
+- `bk__nodegroup__fb58dd63-84bb-4702-aa1e-c4cab64068d7` (Procedural Ruler Advanced) — survived, no niche mapped
+- `bk__nodegroup__fec776b2-06f9-498a-9934-57e8787d5600` (Generate Intersecting Paths) — survived, no niche mapped
 - `blackears__blenderstairs` (blenderStairs) — survived, no niche mapped
 - `blenderbob__distribute` (Distribute) — survived, no niche mapped
 - `blenderbob__fire-ray` (Fire Ray) — survived, no niche mapped

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__8479ea98-1884-4631-a6a8-c66a5fb554c3",
+  "name": "Stripe Natural Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

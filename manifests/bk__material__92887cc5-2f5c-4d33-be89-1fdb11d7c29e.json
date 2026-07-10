@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__92887cc5-2f5c-4d33-be89-1fdb11d7c29e",
+  "name": "Plain Orange Dimout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

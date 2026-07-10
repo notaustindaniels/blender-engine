@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__11b9b5b4-2a71-4ce4-8e39-e4519da1f4fc",
+  "name": "Plain Pink Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

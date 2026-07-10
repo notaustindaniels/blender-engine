@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__e3728b0d-8a20-4427-b9cf-7302cf81893f",
+  "name": "Procedural Object Welder",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

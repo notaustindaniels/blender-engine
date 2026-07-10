@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__bd99251b-4a68-4bef-a1dc-b3d82ff6a30c",
+  "name": "Mixed Stone Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

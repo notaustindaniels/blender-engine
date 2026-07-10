@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__cdfdbeca-f4ca-4d8f-aac4-251d20d46f91",
+  "name": "Distance btw objects",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

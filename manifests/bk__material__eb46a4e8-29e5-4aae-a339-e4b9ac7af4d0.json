@@ -1,0 +1,27 @@
+{
+  "canonical_id": "bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0",
+  "name": "Hologram Shader (Cycles)",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.09768
+    }
+  },
+  "enriched_by": "keyword-heuristic",
+  "enrich_note": "heuristic: 'shader' in name/tagline -> ['hologram_shader'] (Materials & texturing).",
+  "operators_enriched": [
+    {
+      "kind": "bpy_op",
+      "id": "bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0",
+      "verbs": [
+        "illuminate"
+      ],
+      "niches": [
+        "hologram_shader"
+      ]
+    }
+  ]
+}

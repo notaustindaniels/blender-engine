@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__93df7483-3217-4dc7-a615-c0909d6c25ee",
+  "name": "Strelitzia reginae Leaf",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

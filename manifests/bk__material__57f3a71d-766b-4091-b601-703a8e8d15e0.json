@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__57f3a71d-766b-4091-b601-703a8e8d15e0",
+  "name": "Macro Flour",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

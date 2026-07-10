@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__cb2566a1-96c1-4bc4-8a2c-d3ca234546c3",
+  "name": "Plain Grey Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

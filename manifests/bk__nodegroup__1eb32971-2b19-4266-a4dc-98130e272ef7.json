@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__1eb32971-2b19-4266-a4dc-98130e272ef7",
+  "name": "Inner Natural Stone Growth (Simulation)",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

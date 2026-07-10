@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__456684e1-7726-4516-940c-7caebf8d900f",
+  "name": "Graphical Duckegg Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

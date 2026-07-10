@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2097a1c6-c8d8-4e5c-95cf-6030473391f0",
+  "name": "Grass Lawn",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

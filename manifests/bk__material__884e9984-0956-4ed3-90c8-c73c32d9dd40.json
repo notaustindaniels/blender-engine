@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__884e9984-0956-4ed3-90c8-c73c32d9dd40",
+  "name": "Patterned Slate Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

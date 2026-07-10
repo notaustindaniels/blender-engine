@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__434b75cd-8900-430f-8c21-dcdc481fb14d",
+  "name": "Atmospheric Lightning (Slowmo)",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

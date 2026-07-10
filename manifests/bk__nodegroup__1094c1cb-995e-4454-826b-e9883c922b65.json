@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__1094c1cb-995e-4454-826b-e9883c922b65",
+  "name": "Procedural Proximity Lightning",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

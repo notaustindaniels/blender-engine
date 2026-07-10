@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__3347fdfe-1a2e-4fd5-8a60-d30a18f1b49c",
+  "name": "Plain Duckegg Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04049
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

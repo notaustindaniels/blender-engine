@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__dfc751b8-6490-459b-9dfe-a918253881d3",
+  "name": "Procedural Layered Text Effect",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__a7155c65-98d6-4d5b-8dd9-fa5cf9525c13",
+  "name": "Bubble Wrap Geometry Nodes Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

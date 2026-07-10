@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__32b54c07-648a-428d-a72e-a28c36d76a67",
+  "name": "Concrete Pavers 03",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__f09bed04-bb4a-4e5b-9568-98095ee51177",
+  "name": "Lightning Strike with Sparks",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

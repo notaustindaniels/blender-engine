@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__59b2accf-c73d-4867-8030-59f076824d4b",
+  "name": "Stylized Fire Beam",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

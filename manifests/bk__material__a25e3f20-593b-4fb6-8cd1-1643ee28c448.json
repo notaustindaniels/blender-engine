@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__a25e3f20-593b-4fb6-8cd1-1643ee28c448",
+  "name": "Plain Green Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04941
+    }
+  }
+}

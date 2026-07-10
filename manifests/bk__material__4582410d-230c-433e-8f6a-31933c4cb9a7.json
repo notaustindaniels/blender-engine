@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7",
+  "name": "Lux Quilted Leather",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.07043
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "material",
+      "id": "bk__material__4582410d-230c-433e-8f6a-31933c4cb9a7:material",
+      "verbs": [
+        "fill"
+      ],
+      "niches": [
+        "leather_skin_shader"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 name-remap-curated (D-008)",
+  "enrich_note": "L6 native pass; concrete noun 'leather' -> leather_skin_shader."
+}

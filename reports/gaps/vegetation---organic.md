@@ -10,7 +10,7 @@ Coverage: **14/25 = 56.0%** (full_pass + recipe_verified). 8 gaps.
 | dead_tree_generator | 1 | GAP | free_recipe |
 | root_system_generator | 1 | GAP | free_recipe |
 | bonsai_generator | 1 | GAP | free_recipe |
-| grass_meadow_scatter | 1 | recipe_verified | free_tool |
+| grass_meadow_scatter | 1 | full_pass | free_tool |
 | flower_generator | 1 | recipe_verified | free_tool |
 | succulent_generator | 1 | recipe_verified | free_recipe |
 | fern_generator | 1 | full_pass | free_tool |

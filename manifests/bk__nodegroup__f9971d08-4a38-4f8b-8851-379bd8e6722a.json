@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__f9971d08-4a38-4f8b-8851-379bd8e6722a",
+  "name": "Water Droplets",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

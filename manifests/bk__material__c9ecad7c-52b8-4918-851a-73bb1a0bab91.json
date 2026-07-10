@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__c9ecad7c-52b8-4918-851a-73bb1a0bab91",
+  "name": "Metal Plate 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

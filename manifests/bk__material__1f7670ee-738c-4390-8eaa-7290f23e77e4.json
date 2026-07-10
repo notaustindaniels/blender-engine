@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1f7670ee-738c-4390-8eaa-7290f23e77e4",
+  "name": "Plain Gold Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.02611
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

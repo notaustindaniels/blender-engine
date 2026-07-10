@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__b7a2d6a5-2fa6-45a9-b933-e94cf01e2599",
+  "name": "Graphical Grey Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

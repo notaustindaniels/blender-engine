@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__3088e714-0549-472b-b8e5-5d20a453a723",
+  "name": "Plain Green Sheer",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.07314
+    }
+  }
+}

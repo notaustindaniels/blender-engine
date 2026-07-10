@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__6fa1d99b-0d14-41b1-8bb4-ced5d65f8652",
+  "name": "Plain Purple Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

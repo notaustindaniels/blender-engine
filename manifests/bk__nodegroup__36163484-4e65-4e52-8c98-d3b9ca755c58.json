@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58",
+  "name": "Procedural Gear And star",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bk__nodegroup__36163484-4e65-4e52-8c98-d3b9ca755c58:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "gear_generator"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 name-remap-curated (D-008)",
+  "enrich_note": "L6 native pass; concrete noun 'gear' -> gear_generator."
+}

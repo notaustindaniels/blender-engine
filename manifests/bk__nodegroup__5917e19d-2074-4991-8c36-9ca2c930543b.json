@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__5917e19d-2074-4991-8c36-9ca2c930543b",
+  "name": "Lightning Burst",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__ee6fa70a-3d31-467b-9a65-8a4df86c638c",
+  "name": "Organic Point Cloud Scatter",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

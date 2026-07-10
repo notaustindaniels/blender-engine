@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__6943b5f1-6320-4b2c-92e0-0ec857b07d32",
+  "name": "Anaphalis nepalensis Atlas",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__180d8944-8ce0-44a2-ad8b-70ec8ec451c8",
+  "name": "Moon Dusted 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

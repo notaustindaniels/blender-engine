@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__56c87997-676e-49d2-a68e-e5b694a21347",
+  "name": "Organic String Fibers Modifier",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

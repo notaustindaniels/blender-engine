@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__26096b49-cb8d-4736-b2e1-a9795cce7b3e",
+  "name": "Graphical Brown Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

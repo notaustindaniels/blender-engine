@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__b901a1f2-cb19-4666-aba5-eba234b7982c",
+  "name": "Geometric Orange Print",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04256
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

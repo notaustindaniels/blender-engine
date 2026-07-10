@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__420592f1-192a-451c-b7cb-9b0a2b50be8c",
+  "name": "Bricks Grid",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

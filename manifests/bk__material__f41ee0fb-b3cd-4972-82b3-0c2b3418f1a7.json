@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__f41ee0fb-b3cd-4972-82b3-0c2b3418f1a7",
+  "name": "Graphical Black Jacquard",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

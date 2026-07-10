@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__6b8f4726-2934-420d-b99c-f65b83322948",
+  "name": "Plain Pink Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03902
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

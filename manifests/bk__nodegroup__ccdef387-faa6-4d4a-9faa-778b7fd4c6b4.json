@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__ccdef387-faa6-4d4a-9faa-778b7fd4c6b4",
+  "name": "Mesh Grid",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

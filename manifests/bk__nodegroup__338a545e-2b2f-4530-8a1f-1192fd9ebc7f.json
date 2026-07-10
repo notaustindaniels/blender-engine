@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__338a545e-2b2f-4530-8a1f-1192fd9ebc7f",
+  "name": "IES Procedural Beam",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

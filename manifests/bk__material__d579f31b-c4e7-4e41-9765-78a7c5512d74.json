@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__d579f31b-c4e7-4e41-9765-78a7c5512d74",
+  "name": "Plain Orange Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

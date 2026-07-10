@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__864b02e4-e64b-4505-b094-32d30141beeb",
+  "name": "Disintegration Effect Noise Based",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

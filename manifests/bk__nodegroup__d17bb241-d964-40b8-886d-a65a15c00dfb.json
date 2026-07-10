@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__d17bb241-d964-40b8-886d-a65a15c00dfb",
+  "name": "Looop Animated Noise Texture",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

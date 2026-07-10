@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__72a4bfc8-a856-4182-bbd6-11f46978b9e4",
+  "name": "Mesh Trails",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

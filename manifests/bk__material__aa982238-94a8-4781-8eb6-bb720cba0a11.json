@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__aa982238-94a8-4781-8eb6-bb720cba0a11",
+  "name": "Worn Corrugated Iron",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

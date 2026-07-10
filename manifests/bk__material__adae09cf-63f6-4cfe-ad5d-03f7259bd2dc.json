@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__adae09cf-63f6-4cfe-ad5d-03f7259bd2dc",
+  "name": "Plain Blue Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

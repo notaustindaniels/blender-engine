@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__8828fcc5-7757-457b-91f5-18dae32197d3",
+  "name": "Outline Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

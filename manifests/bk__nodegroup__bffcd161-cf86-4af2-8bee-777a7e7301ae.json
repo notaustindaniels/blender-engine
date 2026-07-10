@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__bffcd161-cf86-4af2-8bee-777a7e7301ae",
+  "name": "StD Puzzle Generator Lite",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated noresult (no niche name-match)"
+}

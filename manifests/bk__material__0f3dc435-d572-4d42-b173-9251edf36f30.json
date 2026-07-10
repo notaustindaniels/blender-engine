@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__0f3dc435-d572-4d42-b173-9251edf36f30",
+  "name": "Peeling Painted Wall",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

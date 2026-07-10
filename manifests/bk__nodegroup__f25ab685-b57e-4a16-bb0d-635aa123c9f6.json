@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__f25ab685-b57e-4a16-bb0d-635aa123c9f6",
+  "name": "Glare, lens flare REALISTIC",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

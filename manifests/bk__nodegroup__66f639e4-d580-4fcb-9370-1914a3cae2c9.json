@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__66f639e4-d580-4fcb-9370-1914a3cae2c9",
+  "name": "Landscape Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

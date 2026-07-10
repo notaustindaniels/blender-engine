@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__85e2083d-8d19-412d-87e2-a757293964d1",
+  "name": "Plain Pink Chenille",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

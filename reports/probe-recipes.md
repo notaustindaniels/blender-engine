@@ -3,6 +3,7 @@
 Niches whose only covering operators reached `partial` (registered + rendered, but the operator could not be auto-driven to a geometry delta headless — typically a dialog/modal generator). Each needs a per-operator probe recipe (params/context to make it emit geometry) to upgrade `partial -> pass`. These COUNT toward coverage but are tracked here so partials never silently masquerade as full passes.
 
 - `alien_biome_generator` (terrain) ← `ra100__planet-gen:planetgen.create_planet`  — recipe TODO
+- `anime_fx` (anim_stylized_npr) ← `bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5:bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5`  — recipe TODO
 - `asteroid_generator` (terrain) ← `donitzo__procedural-asteroid-generator:donitzo__procedural-asteroid-generator`  — recipe TODO
 - `biome_scatter_system` (vegetation) ← `community__scatter-objects:object.scatter`  — recipe TODO
 - `data_driven_accumulation` (anim_growth_reveal_build) ← `aclysma__rafx:aclysma__rafx`  — recipe TODO

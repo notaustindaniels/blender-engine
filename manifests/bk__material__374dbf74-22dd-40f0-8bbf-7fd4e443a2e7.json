@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__374dbf74-22dd-40f0-8bbf-7fd4e443a2e7",
+  "name": "Famicom Controller P1",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__5c4afc5f-3c7d-4b3e-bab5-15004cc1a524",
+  "name": "Graphical Natural Jacquard",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

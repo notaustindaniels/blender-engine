@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__c18d3c88-eda2-47fb-920f-14faa309ff1c",
+  "name": "Laser",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

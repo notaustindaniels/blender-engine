@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__a6a911c2-58f2-4274-bd13-20bc737a3d86",
+  "name": "Fir Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

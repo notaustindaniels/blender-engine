@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__6cd7194d-a4e8-404b-8f03-ddf8ccdd2c36",
+  "name": "Simple Room Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2ce95a7b-fa12-4e6a-831b-349acdc4145f",
+  "name": "Plain Gold Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

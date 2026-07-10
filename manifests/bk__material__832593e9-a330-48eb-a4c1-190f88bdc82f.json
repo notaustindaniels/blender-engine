@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__832593e9-a330-48eb-a4c1-190f88bdc82f",
+  "name": "Rock Tile Floor 02",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

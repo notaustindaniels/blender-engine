@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__307cb25d-3162-4e58-b607-e210e4d45913",
+  "name": "Plain Blue Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

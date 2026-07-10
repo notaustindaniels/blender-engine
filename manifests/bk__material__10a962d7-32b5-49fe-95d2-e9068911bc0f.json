@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__10a962d7-32b5-49fe-95d2-e9068911bc0f",
+  "name": "Plain White Blackout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.01838
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated partial (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__8caf2e8c-eec6-4131-96e6-f051cbea99a3",
+  "name": "Rocky Terrain 03",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

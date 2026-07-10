@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__5078bda2-9093-46f1-a788-b329568998e3",
+  "name": "Lightning Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

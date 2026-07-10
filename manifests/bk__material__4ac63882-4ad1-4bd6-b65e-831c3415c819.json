@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__4ac63882-4ad1-4bd6-b65e-831c3415c819",
+  "name": "Palm Bark",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

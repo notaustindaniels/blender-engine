@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__06842d21-cc79-4734-9f6d-0dd93672f549",
+  "name": "Decrepit Wallpaper",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__24bf1df9-7f2f-41a9-b696-2cf9fbe72d88",
+  "name": "Plain White Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

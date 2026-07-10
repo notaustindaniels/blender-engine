@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__f1e08823-4ffa-469c-bda2-cbbe8f4f486c",
+  "name": "Procedural Sound Wave",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

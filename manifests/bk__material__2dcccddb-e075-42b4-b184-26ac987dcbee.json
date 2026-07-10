@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2dcccddb-e075-42b4-b184-26ac987dcbee",
+  "name": "Brick Wall 13",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

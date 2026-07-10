@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__cb2ba137-0fcb-4c4c-913c-4e22b1735605",
+  "name": "Marble Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

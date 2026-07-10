@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__9e875bf4-74cb-483b-84c8-8b0253ff4912",
+  "name": "Plastered Wall 04",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

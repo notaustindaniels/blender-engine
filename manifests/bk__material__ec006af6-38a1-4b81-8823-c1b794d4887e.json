@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__ec006af6-38a1-4b81-8823-c1b794d4887e",
+  "name": "Plain White Dimout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.01527
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated partial (no niche name-match)"
+}

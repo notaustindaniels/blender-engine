@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__d10dab8b-e6f5-4647-bacf-bca6762e6d77",
+  "name": "Stripe Green Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

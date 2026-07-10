@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__6e9981f9-d5e0-4739-9290-31c6c68b09f1",
+  "name": "Set Origin Point",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

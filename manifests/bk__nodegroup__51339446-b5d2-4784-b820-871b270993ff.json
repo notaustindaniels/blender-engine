@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__51339446-b5d2-4784-b820-871b270993ff",
+  "name": "Hilbert Curve",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

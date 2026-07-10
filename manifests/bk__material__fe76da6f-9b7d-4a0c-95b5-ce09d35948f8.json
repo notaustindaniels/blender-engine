@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__fe76da6f-9b7d-4a0c-95b5-ce09d35948f8",
+  "name": "Plain Pink Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

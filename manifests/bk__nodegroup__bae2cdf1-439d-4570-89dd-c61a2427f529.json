@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__bae2cdf1-439d-4570-89dd-c61a2427f529",
+  "name": "Morph Fx - Basic",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

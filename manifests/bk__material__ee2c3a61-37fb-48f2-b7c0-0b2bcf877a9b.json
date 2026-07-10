@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__ee2c3a61-37fb-48f2-b7c0-0b2bcf877a9b",
+  "name": "Plain Natural Dimout",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

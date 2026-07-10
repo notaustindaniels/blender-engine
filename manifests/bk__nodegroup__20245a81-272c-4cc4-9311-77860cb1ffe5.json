@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__20245a81-272c-4cc4-9311-77860cb1ffe5",
+  "name": "Deform Along Curve",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

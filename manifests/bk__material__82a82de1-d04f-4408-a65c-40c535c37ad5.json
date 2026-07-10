@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__82a82de1-d04f-4408-a65c-40c535c37ad5",
+  "name": "Graphical Green Jacquard",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.02792
+    }
+  }
+}

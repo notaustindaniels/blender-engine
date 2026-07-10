@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__5c6dc8bf-8141-40cf-a944-1dd88db13cc0",
+  "name": "Lightning Arcs Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

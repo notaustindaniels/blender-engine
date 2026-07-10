@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__c61c08ac-eb9c-476b-9d8f-342b080f826b",
+  "name": "Looping 4D Noise",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

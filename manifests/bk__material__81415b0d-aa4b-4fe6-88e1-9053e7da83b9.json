@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__81415b0d-aa4b-4fe6-88e1-9053e7da83b9",
+  "name": "Stripe Pink Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

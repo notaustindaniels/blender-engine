@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__8aa9e0b7-09f4-49ce-a817-3907aa0daa1d",
+  "name": "Even Curve to Mesh",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

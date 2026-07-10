@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__ea8d9fc3-2c98-472d-bc97-2f7aa3be6763",
+  "name": "Particle Burst",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__f67b7a14-f0f2-4bb0-9074-43e599423d86",
+  "name": "Azure Mosaic Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine_timeout",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine_timeout (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__70dcc9bd-1572-469a-b469-b10dc6d8b568",
+  "name": "Plain Blue Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

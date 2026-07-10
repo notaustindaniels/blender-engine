@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__3c21d731-dc8b-4d80-b3eb-417581a0b7f9",
+  "name": "Graphical Grey Embroidery",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

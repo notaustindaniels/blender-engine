@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__3f7cbbb1-72e6-4bd9-bce0-20b1d7b141e2",
+  "name": "Stripe Natural Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03042
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

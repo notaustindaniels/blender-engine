@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__93ba56b3-c94a-48b1-a2e2-72c7e8487697",
+  "name": "Random Color",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "partial",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated partial (no niche name-match)"
+}

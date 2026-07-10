@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__5b780830-90e2-4f61-8390-9fe6a3226815",
+  "name": "Loop Noise Texture",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

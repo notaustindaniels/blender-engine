@@ -1,0 +1,28 @@
+{
+  "canonical_id": "bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb",
+  "name": "Curve to Brick Wall Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "operators_enriched": [
+    {
+      "kind": "gn_node_group",
+      "id": "bk__nodegroup__284f38ee-fcf4-4dce-97b4-64e49f491acb:nodegroup",
+      "verbs": [
+        "generate"
+      ],
+      "niches": [
+        "brick_shader"
+      ],
+      "quality": "full_generator"
+    }
+  ],
+  "enriched_by": "L6 name-remap-curated (D-008)",
+  "enrich_note": "L6 native pass; concrete noun 'brick' -> brick_shader."
+}

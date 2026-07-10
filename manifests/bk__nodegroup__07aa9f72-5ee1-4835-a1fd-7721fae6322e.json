@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__07aa9f72-5ee1-4835-a1fd-7721fae6322e",
+  "name": "Procedural Rain Drops",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

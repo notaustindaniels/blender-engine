@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__1821e648-8cd4-4eb3-8b2e-9e585c348eff",
+  "name": "Extract Random Points",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

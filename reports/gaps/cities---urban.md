@@ -1,6 +1,6 @@
 # Gap report — Cities & urban (D-008 R47)
 
-Coverage: **0/18 = 0.0%** (full_pass + recipe_verified). 18 gaps.
+Coverage: **1/18 = 5.6%** (full_pass + recipe_verified). 17 gaps.
 
 | niche | wave | status | attainability (R15) |
 |---|---|---|---|
@@ -21,6 +21,6 @@ Coverage: **0/18 = 0.0%** (full_pass + recipe_verified). 18 gaps.
 | postapoc_ruin_city | 1 | GAP | unclassified |
 | traffic_sim | 1 | GAP | unclassified |
 | crowd_system | 1 | GAP | unclassified |
-| neon_signage | 1 | GAP | unclassified |
+| neon_signage | 1 | full_pass | unclassified |
 
-**Gaps (18):** what the free ecosystem lacks here — `city_builder`(unclassified), `road_network`(unclassified), `medieval_town_layout`(unclassified), `lot_subdivision`(unclassified), `highway_interchange`(unclassified), `bridge_generator`(unclassified), `tunnel_generator`(unclassified), `rail_track_generator`(unclassified), `street_furniture_scatter`(unclassified), `power_line_generator`(unclassified), `sidewalk_detail`(unclassified), `plaza_park_generator`(unclassified), `slum_shanty_generator`(unclassified), `cyberpunk_stack_generator`(unclassified), `postapoc_ruin_city`(unclassified), `traffic_sim`(unclassified), `crowd_system`(unclassified), `neon_signage`(unclassified)
+**Gaps (17):** what the free ecosystem lacks here — `city_builder`(unclassified), `road_network`(unclassified), `medieval_town_layout`(unclassified), `lot_subdivision`(unclassified), `highway_interchange`(unclassified), `bridge_generator`(unclassified), `tunnel_generator`(unclassified), `rail_track_generator`(unclassified), `street_furniture_scatter`(unclassified), `power_line_generator`(unclassified), `sidewalk_detail`(unclassified), `plaza_park_generator`(unclassified), `slum_shanty_generator`(unclassified), `cyberpunk_stack_generator`(unclassified), `postapoc_ruin_city`(unclassified), `traffic_sim`(unclassified), `crowd_system`(unclassified)

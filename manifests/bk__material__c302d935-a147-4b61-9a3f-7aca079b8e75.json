@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__c302d935-a147-4b61-9a3f-7aca079b8e75",
+  "name": "Rebar Reinforced Concrete",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

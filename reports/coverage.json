@@ -6,9 +6,9 @@
   "gate": {
     "denominator_present_wave1": 59,
     "decision_covered": 27,
-    "full_pass": 12,
+    "full_pass": 13,
     "partial": 4,
-    "recipe_verified": 11,
+    "recipe_verified": 10,
     "recipe_unverified_claims": 5,
     "coverage_pct": 45.8
   },
@@ -24,7 +24,7 @@
     ]
   },
   "tripwire": {
-    "pass_rate_of_all_pct": 53.1,
+    "pass_rate_of_all_pct": 44.8,
     "threshold": 30.0,
     "tripped": false
   },
@@ -38,7 +38,7 @@
     "fern_generator": "full_generator",
     "flower_generator": "asset_fed_minimal",
     "gas_giant_shader": "full_generator",
-    "grass_meadow_scatter": "asset_fed_minimal",
+    "grass_meadow_scatter": "full_generator",
     "ice_shader": "full_generator",
     "kelp_forest_generator": "asset_fed_minimal",
     "moss_lichen_growth": "asset_fed_minimal",
@@ -54,27 +54,28 @@
     "tree_generator": "full_generator"
   },
   "quality_summary": {
-    "asset_fed_minimal": 10,
-    "full_generator": 12,
+    "asset_fed_minimal": 9,
+    "full_generator": 13,
     "composed_procedural": 1
   },
   "verb_medium_grid": {
-    "accumulate|abstract": 1,
+    "accumulate|abstract": 4,
     "accumulate|ground": 1,
     "branch|abstract": 1,
     "branch|organic": 5,
     "deform|abstract": 3,
+    "deplete|abstract": 3,
     "deplete|ground": 3,
-    "fill|abstract": 7,
+    "fill|abstract": 16,
     "fill|air": 1,
     "fill|ground": 3,
     "fill|organic": 1,
-    "generate|abstract": 15,
+    "generate|abstract": 25,
     "generate|air": 1,
     "generate|ground": 7,
-    "generate|organic": 5,
-    "illuminate|abstract": 1,
-    "reveal|abstract": 2,
+    "generate|organic": 7,
+    "illuminate|abstract": 3,
+    "reveal|abstract": 3,
     "reveal|organic": 1,
     "scatter|air": 1,
     "scatter|organic": 1,
@@ -84,15 +85,15 @@
     "trace|organic": 2
   },
   "pass_rate": {
-    "verified_probed": 876,
-    "acquisitions": 1356,
-    "surviving": 720,
-    "pct_of_probed": 82.2,
-    "pct_of_all_acquisitions": 53.1
+    "verified_probed": 1664,
+    "acquisitions": 2144,
+    "surviving": 960,
+    "pct_of_probed": 57.7,
+    "pct_of_all_acquisitions": 44.8
   },
   "wave1_total": {
     "present": 269,
-    "decision_covered": 41,
+    "decision_covered": 57,
     "recipe_unverified_claims": 5
   },
   "wave2_total": {
@@ -104,6 +105,9 @@
     "alien_biome_generator": [
       "ra100__planet-gen"
     ],
+    "anime_fx": [
+      "bk__nodegroup__3ca12e40-319c-4ab8-ae01-4f45e5ae72c5"
+    ],
     "asteroid_generator": [
       "donitzo__procedural-asteroid-generator"
     ],
@@ -113,12 +117,22 @@
     "biome_scatter_system": [
       "community__scatter-objects"
     ],
+    "cable_wire_generator": [
+      "bk__nodegroup__7edb1a63-5569-4271-8285-a3641445d812",
+      "bkng__cable_wire_generator"
+    ],
     "camera_rigs": [
       "michaelschieber__camerafly",
       "waynedixon__add-camera-rigs"
     ],
     "camo_pattern_shader": [
       "bkmat__camo_pattern_shader"
+    ],
+    "car_paint_shader": [
+      "bkmat__car_paint_shader"
+    ],
+    "chain_generator": [
+      "bkng__chain_generator"
     ],
     "cliff_rockface_generator": [
       "marcueberall__blender-cliffgenerator"
@@ -148,6 +162,9 @@
       "inca__blender-differential-growth"
     ],
     "edge_wear_rust": [
+      "bk__nodegroup__084934a4-44da-4edf-a5d7-b5bac8f87a0a",
+      "bk__nodegroup__37da079d-3bac-468d-8ef8-aacc58672931",
+      "bk__nodegroup__bb12dc52-72fb-4fda-a9cf-eafb4ef1aa71",
       "bkmat__edge_wear_rust"
     ],
     "erosion_sim": [
@@ -158,14 +175,30 @@
     "fake_cloth": [
       "hartface__clothdrop-reborn"
     ],
+    "fence_generator": [
+      "bk__nodegroup__07d13534-689e-438d-9a98-64c79003e0cb",
+      "bk__nodegroup__c9a53ded-010b-4fcb-b9e9-af5036e1287b",
+      "bk__nodegroup__dc784685-323b-4de7-8ed8-957ddc004c1e",
+      "bkng__fence_generator"
+    ],
     "fern_generator": [
       "sagado__procedural-fern"
     ],
     "gas_giant_shader": [
       "bkmat__gas_giant_shader"
     ],
+    "gear_generator": [
+      "bkng__gear_generator"
+    ],
     "glass_material": [
       "bkmat__glass_material"
+    ],
+    "glitch_shader": [
+      "bkmat__glitch_shader"
+    ],
+    "grass_meadow_scatter": [
+      "bk__nodegroup__801bf4bc-d522-4efb-bf77-0bacf3f3a5d7",
+      "bk__nodegroup__f25929f2-1cf1-4074-898e-81e000832674"
     ],
     "hair_groom_presets": [
       "aniraiden__hairreconstruction",
@@ -176,11 +209,21 @@
       "nicolaspriniotakis__srtm-terrain-importer",
       "zets__terrain-mixer"
     ],
+    "hologram_shader": [
+      "bk__material__eb46a4e8-29e5-4aae-a339-e4b9ac7af4d0",
+      "bkmat__hologram_shader"
+    ],
     "ice_shader": [
       "bkmat__ice_shader"
     ],
+    "imperfection_overlays": [
+      "bkmat__imperfection_overlays"
+    ],
     "ivy_generator": [
       "community__ivygen"
+    ],
+    "knit_weave_generator": [
+      "bkmat__knit_weave_generator"
     ],
     "leather_skin_shader": [
       "bkmat__leather_skin_shader"
@@ -191,11 +234,17 @@
     "marble_stone_shader": [
       "bkmat__marble_stone_shader"
     ],
+    "metal_shader": [
+      "bkmat__metal_shader"
+    ],
     "organic_cell_shader": [
       "bkmat__organic_cell_shader"
     ],
     "rock_boulder_generator": [
       "tu2463__rock_generator_addon"
+    ],
+    "skybox_generator": [
+      "bkmat__skybox_generator"
     ],
     "smear_frames": [
       "jean-basset__smear"
@@ -209,12 +258,21 @@
     "space_colonization_growth": [
       "ls__space-colonization-tree-generator"
     ],
+    "stair_generator": [
+      "bkng__stair_generator"
+    ],
     "terrain_generator": [
       "beneking102__bene-proggen-maps",
       "community__a-n-t-landscape",
       "lmesaric__bsc-thesis-fer-2020",
       "nicolaspriniotakis__srtm-terrain-importer",
       "zets__terrain-mixer"
+    ],
+    "tile_grout_shader": [
+      "bkmat__tile_grout_shader"
+    ],
+    "toon_npr_shader": [
+      "bkmat__toon_npr_shader"
     ],
     "tree_generator": [
       "brandyn-britton__modular-tree",
@@ -225,12 +283,16 @@
     "water_shader": [
       "bkmat__water_shader"
     ],
+    "wheel_tire_generator": [
+      "bkng__wheel_tire_generator"
+    ],
     "wood_shader": [
       "bkmat__wood_shader"
     ]
   },
   "probe_recipe_backlog": [
     "alien_biome_generator",
+    "anime_fx",
     "asteroid_generator",
     "biome_scatter_system",
     "data_driven_accumulation",

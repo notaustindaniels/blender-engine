@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__2b8309b8-a413-46c2-b23b-8d6fb168b6f0",
+  "name": "Brushed Concrete 03",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

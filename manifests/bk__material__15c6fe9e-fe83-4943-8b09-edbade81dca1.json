@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__15c6fe9e-fe83-4943-8b09-edbade81dca1",
+  "name": "Plain Blue Texture",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.03375
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

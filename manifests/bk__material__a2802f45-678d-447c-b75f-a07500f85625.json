@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__a2802f45-678d-447c-b75f-a07500f85625",
+  "name": "Brick Crosswalk",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

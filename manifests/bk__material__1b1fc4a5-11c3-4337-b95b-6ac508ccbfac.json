@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__1b1fc4a5-11c3-4337-b95b-6ac508ccbfac",
+  "name": "Hammered Copper",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.06544
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__e32b4ea9-0166-407d-b033-7abca0e43501",
+  "name": "Rubberized Track",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

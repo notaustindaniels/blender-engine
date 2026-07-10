@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__2533372a-de89-4105-988d-df0234c4657a",
+  "name": "Island Generator",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

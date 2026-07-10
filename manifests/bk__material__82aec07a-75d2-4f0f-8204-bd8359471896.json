@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__82aec07a-75d2-4f0f-8204-bd8359471896",
+  "name": "Gel",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.10496
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}

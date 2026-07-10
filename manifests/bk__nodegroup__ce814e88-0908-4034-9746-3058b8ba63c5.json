@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__ce814e88-0908-4034-9746-3058b8ba63c5",
+  "name": "Flowing Particles",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

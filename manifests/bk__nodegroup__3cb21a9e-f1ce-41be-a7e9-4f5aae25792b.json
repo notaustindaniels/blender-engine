@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__3cb21a9e-f1ce-41be-a7e9-4f5aae25792b",
+  "name": "WindMill",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

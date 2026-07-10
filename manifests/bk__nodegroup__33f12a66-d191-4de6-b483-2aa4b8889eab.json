@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__nodegroup__33f12a66-d191-4de6-b483-2aa4b8889eab",
+  "name": "Three Point Light Setup",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  }
+}

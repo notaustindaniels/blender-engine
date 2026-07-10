@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__ca4c0caf-fa34-4e91-8596-86aa9ae7dd89",
+  "name": "Stripe Brown Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "quarantine",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": 0.0
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated quarantine (no niche name-match)"
+}

@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__499da15d-6a2c-4604-98f6-f04e893713ff",
+  "name": "Table",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

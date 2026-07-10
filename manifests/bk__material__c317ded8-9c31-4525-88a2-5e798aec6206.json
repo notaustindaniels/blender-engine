@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__c317ded8-9c31-4525-88a2-5e798aec6206",
+  "name": "Anti Skid Tiles",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "noresult",
+      "operators": [],
+      "render_ok": false,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated noresult (no niche name-match)"
+}

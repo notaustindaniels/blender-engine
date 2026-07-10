@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__nodegroup__84c76c18-8fcf-4018-8b9b-d41a8c5ceabb",
+  "name": "Random Ribbon Fx",
+  "artifact_type": "nodegroup",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": null
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: nodegroup gated pass (no niche name-match)"
+}

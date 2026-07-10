@@ -1,0 +1,13 @@
+{
+  "canonical_id": "bk__material__c796e6a9-c742-4508-9d6e-fc9c1c8d6f9c",
+  "name": "Facade with fake interiors 01",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.09626
+    }
+  }
+}

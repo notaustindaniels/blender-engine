@@ -1,0 +1,15 @@
+{
+  "canonical_id": "bk__material__7596cd06-2db4-491d-9ef3-80ec0459b04e",
+  "name": "Stripe Grey Velvet",
+  "artifact_type": "material",
+  "verify": {
+    "4.5": {
+      "state": "pass",
+      "operators": [],
+      "render_ok": true,
+      "shader_delta": 0.04443
+    }
+  },
+  "enriched_by": "L6 full-sweep GN/shader gate (D-008)",
+  "enrich_note": "L6 full-sweep: material gated pass (no niche name-match)"
+}
