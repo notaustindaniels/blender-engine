@@ -79,3 +79,21 @@ assume permission. No guardrail loosening (D-003 R20).
   Gate (materials via the shader-probe, gate-eligible); models = assets → A-lane ledger (never coverage).
   Blocked on `BLENDERKIT_API_KEY` (env-only, R2). If the key/API later proves to forbid bulk access, drop
   with a finding. Per-asset license (cc0/royalty-free) + the Article-5 constraint captured on every item.
+
+## itch.io — new lattice vein (D-009 R58, 2026-07-10) — **JOINS via official RSS (discovery only)**
+- **Finding (ToS read, `itch.io/docs/legal/terms` + `itch.io/docs/api/overview`):** the ToS excerpt read
+  contains **no explicit anti-scraping / robot-exclusion clause** (unlike Gumroad §14). There is **no
+  public catalog/download API** for third-party enumeration — the server-side API manages *your own*
+  account, OAuth acts *on behalf of a user*, and the JS API is an embedded buy-button. **BUT itch.io
+  documents official RSS feeds as its public discovery mechanism:** any browse-page URL + `.xml` yields a
+  feed (new uploads, featured, sales, and tag/category browse pages).
+- **POSTURE → JOIN the standing lattice as an RSS-fed discovery vein.** Consume ONLY the official RSS
+  feeds (a published, machine-readable format explicitly provided for programmatic consumption — this is
+  not "scraping" and needs no robot-exclusion bypass) + search-derived product URLs. **No HTML scraping**
+  of listing pages. **Human checkout only** — itch.io free/PWYW games download after a $0 checkout the
+  owner performs (click_to_get rows; never automated, R33). Capture price_class + license confirm-at-source
+  per item (R26/R31). Compatible with the external-discovery posture → added to the lattice config.
+- **Honesty caveat (same as Superhive):** the ToS excerpt read was **partial** (the full API-terms page
+  was not in the fetched excerpt); posture is set conservatively from the documented RSS mechanism + the
+  absence of an anti-automation clause in what was read. If a fuller read later surfaces an anti-automation
+  clause, drop the vein with a finding (R32a). Same ToS-read-first rule applies to any future vein.

@@ -1,0 +1,64 @@
+# discovery-lattice.yaml — the external-discovery lattice config (D-008 campaign → D-009 R57 standing
+# engine). Drives .archon/scripts/discovery_engine.py (the monthly CI wave). Postures come from
+# policies/marketplace-tos.md — the engine consumes ONLY ToS-compatible machine sources (official APIs,
+# published RSS feeds, public indexes, awesome-list READMEs). It NEVER HTML-scrapes a scrape-forbidden
+# marketplace (Gumroad §14, Superhive) — those veins are reached via search-derived URLs by a human /
+# assisted round, not by this unattended engine. All acquisition stays human-gated (click_to_get; R33).
+
+version: 1
+
+# machine-fetchable sources the unattended engine may hit each run (no scraping of forbidden marketplaces)
+sources:
+  - key: awesome_blender
+    kind: markdown_index          # GitHub raw README; extract generator/GN tool links
+    url: https://raw.githubusercontent.com/agmmnn/awesome-blender/master/README.md
+    marketplace_hint: github
+  - key: blendernation
+    kind: rss                     # published feed; filter titles for free + generator/geometry-nodes
+    url: https://www.blendernation.com/feed/
+    marketplace_hint: blendernation
+  - key: itch_blender_tools       # D-009 R58: itch.io joins via OFFICIAL RSS (browse-url + .xml), no scrape
+    kind: rss
+    url: https://itch.io/tools/tag-blender.xml
+    marketplace_hint: itch
+  - key: itch_blender_gamedev
+    kind: rss
+    url: https://itch.io/game-assets/tag-blender.xml
+    marketplace_hint: itch
+  - key: sketchfab_api            # official CC Download API — handled by a1_sketchfab.py (SKETCHFAB_TOKEN)
+    kind: api_sketchfab
+    marketplace_hint: sketchfab
+  - key: extensions_blender_org   # public official index — detect NEW add-ons since last run
+    kind: index_extensions
+    url: https://extensions.blender.org/api/v1/extensions/
+    marketplace_hint: extensions.blender.org
+
+# ToS posture per marketplace (mirror of policies/marketplace-tos.md — the engine honors these)
+postures:
+  gumroad:     {automation: search_url_only, checkout: human, note: "§14 no-scrape; human/assisted rounds only"}
+  superhive:   {automation: search_url_only, checkout: human, note: "WAF-signalled; search URLs only"}
+  artstation:  {automation: dropped, checkout: human, note: "R32a: site-interface-only, no API"}
+  fab:         {automation: dropped, checkout: human, note: "R32a: no CC-download API; engine-locked"}
+  sketchfab:   {automation: api, checkout: none, note: "official Download API (CC), SKETCHFAB_TOKEN"}
+  blenderkit:  {automation: api, checkout: none, note: "official API, BLENDERKIT_API_KEY; Article-5 constraint"}
+  itch:        {automation: rss_only, checkout: human, note: "D-009 R58: official RSS feeds only, no HTML scrape"}
+  blendernation: {automation: rss, checkout: human, note: "publisher feed; links out to sources"}
+  github:      {automation: api_index, checkout: none, note: "open-source; route to L2 native-CI gate"}
+  extensions.blender.org: {automation: index, checkout: none, note: "official index; route to L1 gate"}
+
+# the category × concrete-noun lattice (for search-derived / assisted rounds; the unattended engine uses
+# it to tag + filter feed items). Expanded on demand; provisional niches auto-added, never verified (R14).
+categories:
+  terrain:    [terrain, landscape, heightmap, mountain, cliff, erosion, dunes, canyon]
+  vegetation: [tree, forest, grass, plant, flower, ivy, moss, fern, bush, hedge, vine, leaf]
+  buildings:  [building, city, skyscraper, house, cottage, castle, room, wall, roof, window, door, stair, floor]
+  hardsurface: [greeble, kitbash, panel, pipe, cable, wire, gear, engine, machine, vent, bolt, rivet]
+  nature:     [rock, boulder, water, ocean, river, waterfall, cloud, fire, smoke, crystal, cave, ice, snow]
+  organic:    [hair, fur, feather, scale, skin, muscle, coral, slime, tentacle]
+  props:      [rope, chain, fence, ladder, barrel, book, crate, lego, fabric, cloth, curtain, knot]
+  vfx:        [motion graphics, mograph, particle, destruction, fracture, abstract, procedural pattern]
+
+saturation:
+  # D-009 R56 / R47: no single-% threshold. The engine reports new-unique per source per run to the feed;
+  # documented exhaustion of systematic sources is the governing criterion, not a <2% number.
+  report_only: true

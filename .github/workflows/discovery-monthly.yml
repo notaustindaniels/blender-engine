@@ -1,0 +1,90 @@
+# discovery-monthly — the STANDING discovery engine (D-009 R57). Monthly, unattended: runs the external
+# lattice (ToS-compatible machine sources only — official APIs / RSS / indexes / awesome-lists; never
+# scrapes a scrape-forbidden marketplace), auto-ingests finds through the FULL pipeline (discovery →
+# catalog → KB → eval), and commits the delta. New finds are click_to_get rows (acquisition stays
+# human-gated, R33). Coverage % is never a headline (R56); the run reports new-unique per source (R47:
+# documented exhaustion, no single-% threshold). Runs alongside quarterly reverify-90d. $0 (public repo).
+name: discovery-monthly
+on:
+  schedule:
+    - cron: "0 5 2 * *"        # 05:00 on the 2nd of every month (offset from reverify-90d's day-1)
+  workflow_dispatch:
+    inputs:
+      with_sketchfab:
+        description: "also run the Sketchfab CC API sweep (slow)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write             # commit the discovered delta + regenerated catalog back to the repo
+
+concurrency:
+  group: discovery-monthly
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: Install + start ollama, pull bge-m3 (local $0 embeddings, matches the local KB)
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve >/tmp/ollama.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf http://localhost:11434/api/tags >/dev/null && break; sleep 1; done
+          ollama pull bge-m3
+      - name: Run the discovery engine (ToS-compatible machine sources)
+        env:
+          SKETCHFAB_TOKEN: ${{ secrets.SKETCHFAB_TOKEN }}
+          BLENDERKIT_API_KEY: ${{ secrets.BLENDERKIT_API_KEY }}
+          DISCOVERY_SKETCHFAB: ${{ (github.event_name == 'schedule' || inputs.with_sketchfab) && '1' || '0' }}
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          STAMP=$(date +%Y-%m)
+          uv run .archon/scripts/discovery_engine.py --stamp "$STAMP" | tee reports/discovery-engine-run.json
+      - name: Full pipeline — catalog -> KB -> eval (R57)
+        env:
+          RAG_DB: corpus_kb.db
+          RAG_EMBED: ollama
+          RAG_EMBED_MODEL: bge-m3
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run .archon/scripts/catalog_build.py | tee reports/catalog-build-run.json
+          uv run .archon/scripts/catalog_page.py
+          # rebuild the KB fresh (kb_build recreates the capability graph; catalog nodes re-added after)
+          uv run .archon/scripts/kb_build.py || echo "kb_build: non-fatal (rebuilt from manifests)"
+          uv run .archon/scripts/catalog_to_kb.py
+          uv run .archon/scripts/embed_discovery.py
+      - name: R55 eval gate (hit@5 >= 0.90) — blocks the commit on regression
+        env:
+          RAG_DB: corpus_kb.db
+          RAG_EMBED: ollama
+          RAG_EMBED_MODEL: bge-m3
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          uv run --with numpy --with pyyaml .archon/eval/eval_golden.py | tee reports/eval-monthly.json
+      - name: Commit the discovered delta (only if the eval passed + something changed)
+        run: |
+          git config user.name "blender-vault-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add reports/discovery/ catalog.jsonl reports/catalog/index.html CATALOG.md reports/*.json
+          if git diff --cached --quiet; then
+            echo "no new discoveries this run — nothing to commit"
+          else
+            NEW=$(python3 -c "import json;print(json.load(open('reports/discovery-engine-run.json'))['new_unique_total'])" 2>/dev/null || echo "?")
+            git commit -m "discovery-monthly: +${NEW} new click_to_get items ($(date +%Y-%m)) [skip ci]"
+            git push
+          fi
+      - name: Upload run reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovery-monthly-${{ github.run_id }}
+          path: |
+            reports/discovery-engine-run.json
+            reports/catalog-build-run.json
+            reports/eval-monthly.json
+          retention-days: 60
