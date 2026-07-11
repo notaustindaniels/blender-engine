@@ -523,5 +523,15 @@
     "body": "<p><b>TOTAL CATALOG ENTRIES: 7364</b> (from 2858 at launch) — the headline number.</p>\n<table><thead><tr><th>status</th><th>count</th></tr></thead><tbody>\n<tr><td class=\"ok\">✓ auto_acquired_verified</td><td>5970 (2155 native-CI gated + 4460 Sketchfab CC via Download API)</td></tr>\n<tr><td>↓ click_to_get</td><td>57 (Gumroad/Fab/Superhive free items, resolved URLs)</td></tr>\n<tr><td>✕ excluded</td><td>1337 (692 dead + 645 NC/ND-segregated per R26)</td></tr>\n</tbody></table>\n<p><b>By marketplace:</b> sketchfab 4460 · github 1125 · extensions 905 · blenderkit 800 · gumroad 36 · fab 7 · forum 17 · superhive/artstation/blenderartists.</p>\n<p><b>Sketchfab full CC sweep</b> (247-noun procedural lattice via Download API): 5708 CC-downloadable assets (4495 by, 114 CC0, 65 by-sa usable; 800 NC/ND segregated). <b>External discovery lattice</b> (ToS-safe web search, no scraping): 3 rounds found Blenderesse (13 free plugins), katznboyz1, rope/chain/pipe/fence/cable generators, 800-CC0-materials, sci-fi kitbash — all click_to_get with resolved URLs + price class. Next: saturation tracking, corpus_kb ingest of the full catalog, CORPUS.md + eval on the grown library.</p>",
     "code": "",
     "media": []
+  },
+  {
+    "seq": 53,
+    "ts": "2026-07-11T11:02:22-04:00",
+    "title": "🗂️ CATALOG DELIVERED → 7,479 entries · KB holds everything · eval 55/55 · snapshot-catalog-v1",
+    "tag": "milestone",
+    "status": "done",
+    "body": "<p><b>The catalog campaign is delivered.</b> Headline = <b>7,479 TOTAL CATALOG ENTRIES</b>: 5,970 verified (2,155 native-CI gated + 4,460 Sketchfab CC assets), 172 click-to-get (external discovery), 1,337 excluded (692 dead + 645 NC/ND-segregated). One database, three faces: (1) <b>corpus_kb.db</b> grown to 10,798 nodes — holds EVERYTHING, discovery+assets findable but labeled non-verified (retrieval-proposes / registry-disposes intact); 172 discovery add-ons embedded so semantic queries surface them. (2) <b>THE LIST</b> — reports/catalog/index.html + CATALOG.md, served at /catalog.html, filterable/sortable with verified / click-to-get / excluded badges. (3) corpus.db authoritative registry. <b>R55 eval 55/55 hit@5 = 1.0</b> on the expanded golden set. Discovery ran 10 rounds → 161 unique free items; reports/discovery-saturation.md records per-marketplace exhaustion (API lanes saturated; external lanes systematic-sources-exhausted with an honest ~7-10% long-tail plateau, documented per R47 — surfaced to owner, vetoable). Snapshot snapshot-catalog-v1 pushed. Buildify $0 checkout still pending in inputs/dropzone → probe on receipt.</p>",
+    "code": null,
+    "media": null
   }
 ]

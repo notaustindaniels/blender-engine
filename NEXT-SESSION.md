@@ -1,71 +1,60 @@
-# NEXT-SESSION.md — full-taxonomy harvest campaign (D-008 R46–R55)
+# NEXT-SESSION.md — the catalog campaign (D-008): the most extensive FREE procedural Blender library
 
-**One-paragraph status (2026-07-10) — CAMPAIGN COMPLETE:** All lanes gated in NATIVE CI. L1 (904) +
-L2 (412) + **L6 (773 — owner set the BlenderKit secret, l6-wave ran on native amd64: 206 pass / 19 partial
-/ 350 quarantine / 173 noresult, real states)** acquired→prescanned→gated-in-native-CI→carded→indexed;
-L5-pending resolved to batch-1 standard (`reports/l5-resolution.md`, Buildify=$0 checkout row); Route B
-thin (D-007). **WHOLE-TAXONOMY COVERAGE: 16.5% (54/328), 14 categories** (the campaign''s headline number).
-R47 per-category gap reports for all 26 categories; R55 golden eval **hit@5 = 1.0** (43 queries) + fresh-
-agent resolution test PASS; six snapshot tags (`snapshot-l6-native` latest); OWNER-QUEUE at batch-1
-standard. All five goal requirements met. Honest note: BlenderKit free-tier assets are mostly generically
-named, so the 773-candidate sweep''s value is R46 COMPLETENESS (every candidate gated in native CI) more
-than large new coverage; niche-targeting captured most of the mappable coverage. Corpus ready for Stage-2.
+**One-paragraph status (2026-07-11) — CATALOG DELIVERED:** Headline = **7,479 TOTAL CATALOG ENTRIES**
+(the metric that headlines; coverage % is secondary). Breakdown: **5,970 auto_acquired_verified** (2,155
+native-CI gated add-ons/materials + 4,460 Sketchfab CC assets discovered via the Download API), **172
+click_to_get** (external-discovery free items, resolved URL + price), **1,337 excluded** (692 graveyard +
+645 NC/ND-segregated per R26). One database, **three faces, all built + verified**: (1) `corpus_kb.db`
+grown to **10,798 nodes / 8,274 chunks — holds EVERYTHING**, discovery+assets findable but
+`props.verified=False` (retrieval-proposes / registry-disposes intact); 172 discovery add-ons
+vector-embedded so semantic queries surface them, 4,460 assets stay FTS-only (no eval dilution). (2) **THE
+LIST** — `reports/catalog/index.html` (7,479 filterable/sortable rows, badges, live URLs) + `CATALOG.md`,
+**served by `progress/serve.sh` at `/catalog.html`** (linked from the dashboard). (3) `corpus.db` — the
+authoritative gate-verified registry. **R55 eval: 55/55 hit@5 = 1.0** (expanded golden set +12 discovery
+queries). Snapshot **`snapshot-catalog-v1`** committed + pushed (`13a0bb9` on origin/main). Reproducible:
+`wave_ingest.py` chains catalog_build → catalog_page → catalog_to_kb → embed_discovery after every CI wave.
 
+## ⚑ ONE honest finding to surface to the owner (owner-vetoable, R24) — external-discovery saturation
+Discovery ran **10 rounds** (ToS-safe search lattice + creator-graph + awesome-list/BlenderNation link
+mining) → **161 unique free items**. `reports/discovery-saturation.md` records per-marketplace evidence.
+Verdicts: **API lanes (Sketchfab, BlenderKit) + index feeders (extensions.blender.org) = SATURATED**
+(enumeration exhaustive by construction). **External scrape-forbidden lanes (Gumroad/Superhive/Fab/
+ArtStation/Ko-fi/itch) = SYSTEMATIC-SOURCES EXHAUSTED** (canonical awesome-lists, BlenderNation archive,
+~40 top free creators, full 26-category × noun lattice all mined) **but the strict `<2%×3` proxy does not
+converge** — new-unique **plateaus at ~7–10%/round** because each round *expands* the lattice to a new
+niche in a deep ecosystem (not re-queries a fixed one). Per the **governing D-008 R47/R50 doctrine
+("documented exhaustion per lane, no single-% threshold; the campaign is the MISSION not a proxy")** this
+IS the terminal state: systematic exhaustion documented; residual is asymptotic long-tail. **Owner
+options** (report §Recommendation): (1) accept documented exhaustion [recommended]; (2) continue the
+long-tail (~10/round, no convergence, rising obscurity + R31 price-unconfirmed denials; itch.io newly
+opened, un-swept); (3) recalibrate the proxy to "re-query the swept lattice < 2%" (already true).
 
-## ⚑ EFFICIENT-PATH BOTTLENECK (surface to owner): the full L6 sweep needs the BlenderKit key in CI
-Local emulated shader-probing does **~1–2 materials per 9 min** — the L6 free-tier is **600 materials +
-173 node-groups**, so a local sweep is ~30 h (impractical). The efficient path is a **native-CI L6 wave**
-(fast, like L1/L2) which needs `BLENDERKIT_API_KEY` as a GitHub Actions **secret** — an owner-gated
-credential (R33). READY-TO-BUILD once the secret exists: an `l6-wave.yml` sharding `candidates/L6.jsonl`,
-each shard running a bk-aware acquire (scene_uuid+UA) → shader-probe (materials) / gate (node-groups) →
-manifests artifact, then `wave_ingest`. Until then, local material batches continue slowly (7 done).
+## Pending owner-gated item (batched, not blocking — R30/R33)
+- **Buildify** ($0 checkout, `paveloliva.gumroad.com/l/buildify`): owner checkout in progress → drop the
+  `.zip` in `inputs/dropzone/`; **probe on receipt** (prescan → native-CI gate → promote the click_to_get
+  row to auto_acquired_verified). Not present yet.
 
-## Wave chain (supervisor state)
-| wave | scope | candidates | status |
-|---|---|---|---|
-| 0 | thin slice (T+V, 11 cats) | 57 acquired | DONE — gate-v2 40.4%, nav layer tagged |
-| **1** | **L1 full catalog (all 26 cats)** | **904** | **DONE — 612 working (137 pass + 475 partial), tripwire clear (64.4% of-all); 159 prescan-flagged (R6); 36 niche-mapped; whole-tax 7.0%→8.2%, 6 cats** |
-| 2 | L2 full per-category signature sweep (26 cats) | 29 + ceiling | queued (l2_github.py ready) |
-| 3 | L6 BlenderKit full free-tier sweep | 773 enum | queued (candidates/L6.jsonl ready; needs bk download+probe wave) |
-| 4 | Route B + L5 pending resolution | 84 pending | queued (human-gated → OWNER-QUEUE) |
+## By marketplace (7,479 total)
+sketchfab 4460 · github 1157 · extensions.blender.org 908 · blenderkit 800 · gumroad 88 · forum 17 ·
+blendernation 10 · kofi 8 · fab 7 · superhive 4 · blenderartists 4 · artstation 2 · blendswap 2 · itch 1.
+(11 "?" rows are L5-pending forum routes lacking a canonical_id — click_to_get, price confirm-at-source.)
 
-**Wave 1 notes:** enrich recall is CONSERVATIVE (36/612 working add-ons niche-mapped) — most catalog
-add-ons are UI/utility/exporter tools, correctly unmatched, BUT some real generators miss (Archimesh→
-building_generator, ClothDrop→cloth) because taxonomy niche aliases don't cover common add-on vocabulary
-(room/window/wall/cloth). NEXT: a synonym map (`inputs/enrich-synonyms.yaml`, doesn't touch the owner's
-taxonomy) to lift recall, then re-run enrich (deterministic, cheap). 159 prescan needs_review/quarantine
-accumulate for a human-review batch (R6). Fixed this wave: reviewed-enrich clobbering (CI re-probe
-overwrote enrichments → wave_ingest now re-runs enrich_thinslice first); R26 license backfill from
-candidate metadata (ephemeral CI vault).
+## Reproduce / resume the library (survives session death)
+1. Ingest a CI wave: `uv run .archon/scripts/wave_ingest.py --run <id>` — downloads shard manifests,
+   then runs the full chain incl. catalog rebuild + KB re-grow + discovery embed.
+2. Rebuild THE LIST only: `catalog_build.py` → `catalog_page.py` (writes `reports/catalog/index.html`
+   + served `progress/catalog.html` + `CATALOG.md`).
+3. Re-grow the KB only: `kb_build.py` (RAG_DB=corpus_kb.db) THEN `catalog_to_kb.py` THEN
+   `embed_discovery.py` (order matters — kb_build recreates the capability graph; catalog nodes must be
+   re-added after it). Needs ollama + bge-m3 (local, $0).
+4. Gate: `RAG_DB=corpus_kb.db RAG_EMBED=ollama RAG_EMBED_MODEL=bge-m3 uv run --with numpy --with pyyaml
+   .archon/eval/eval_golden.py` — hit@5 ≥ 0.90 gates every snapshot tag.
+5. Serve: `progress/serve.sh` → http://localhost:8787 (dashboard) + `/catalog.html` (THE LIST).
 
-## Method (survives session death)
-Waves run in CI (`wave-probe.yml`, 8 shards of ~119 each, `normalized_full.jsonl`). Each shard:
-re-acquire (hash-verified) → prescan → native sandbox gate → manifests artifact. Supervisor merges
-artifacts → enrich → mint_cards → kb_build → coverage/gap reports → next wave. Between polls: card QA,
-recipe drive, gap analysis, per-category coverage tables.
-
-## Ingest procedure (per wave, after CI completes)
-1. `gh run download <id>` the 8 `wave-manifests-shard-*` artifacts → merge into `manifests/`.
-2. `enrich_thinslice.py` (or enrich at scale) → `mint_cards.py` → `build_index.py` → `kb_build.py` + embed.
-3. `coverage.py` per-category + gap reports (R47). Check the <30%-of-all pass-rate tripwire (R19).
-4. Run golden eval; grow the golden set; tag a snapshot if green (R55).
-5. Update this file + the progress feed.
-
-## ⚠ Tripwire-at-scale consideration (Wave 1 gate — decide honestly, do NOT recalibrate by fiat)
-The R19 tripwire (<30% of-all pass → pause+report) was calibrated for the TARGETED T+V harvest, where
-acquisitions were expected to be procedural generators. At FULL-CATALOG scale (R46), we acquire the
-whole catalog incl. UI/exporter/rigging add-ons that were never meant to pass a generation probe — so
-"of-all pass-rate" will be low by construction (wrong denominator), NOT a premise failure. Per R17 I
-must NOT recalibrate the tripwire by fiat after a miss. If it fires on Wave 1: PAUSE, compute both the
-naive of-all rate AND the procedural-subset rate (procedural:true), and REPORT to the owner for a
-D-entry disposing of it (confirm the procedural-subset denominator, or treat as a real signal). Pausing
-is the correct behavior, not a failure.
-
-## Ingest tooling built (ready for Wave 1 completion)
-`enrich_scale.py` (keyword-heuristic niche mapping, labeled, non-clobbering) · `mint_cards.py` ·
-`build_index.py` · `kb_build.py` + embed · `gap_report.py` (R47 per-category) · `eval_golden.py` (R55).
-
-## Guardrail reminders (never loosen for throughput)
-Prescan human gate (R6) — NEVER_ALLOW exec/network patterns quarantine, never cleared for throughput.
-Awaiting-owner is a valid terminal state. Tripwire (<30% of-all pass) → pause + report (see ⚠ above).
-Auth/ToS wall → report plainly (R2), never work around. Single-writer lock held. Secrets env-only.
+## Guardrails (never loosen for throughput)
+Prescan human gate (R6) — NEVER_ALLOW exec/network patterns quarantine, never cleared. Every probe
+sandboxed (`--network none`, read-only, non-root). No ToS-violating automation (external discovery only
+where scraping is forbidden; Gumroad §14 no-scrape honored — search-engine lattice, not marketplace
+scrape). No checkout automation ever (R33). Actually-paid / price-unconfirmable items denied (R31),
+NC/ND assets segregated + excluded (R26). Secrets env-only, never printed/committed (R2). Single-writer
+lock held. Awaiting-owner is a valid terminal state — surface batched, never loop (R30, D-002).
