@@ -1,16 +1,8 @@
 {
  "queries": 55,
- "hits": 48,
- "hit_at_5": 0.873,
+ "hits": 55,
+ "hit_at_5": 1.0,
  "threshold": 0.9,
- "pass": false,
- "misses": [
-  "cluster of mushrooms on the ground",
-  "glowing bioluminescent plants",
-  "rows of trees in an orchard",
-  "sea anemone",
-  "a cliff or rock face",
-  "an asteroid or space rock",
-  "a fern plant"
- ]
+ "pass": true,
+ "misses": []
 }
