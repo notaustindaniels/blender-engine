@@ -23,6 +23,13 @@ historical exception that motivated making this rule absolute.
   worktree** and merges deliberately — never two agents editing `repo/` at once. Rationale: parallel
   edits silently reverted committed work (the D-006 collision). If you find a lock you don't own and it
   is fresh, stop and coordinate.
+- **NEVER end a turn with fix work uncommitted while its verification is in flight (2026-07-11).** A fix
+  and its gate are one unit: never leave the fix uncommitted in the tree while the eval/build that proves
+  it is still running. For short chains (minutes) WAIT synchronously for the verification, then commit.
+  For long chains, write the exact resume state — what is uncommitted, what is pending, what confirms
+  success (the sentinel/exit-code/metric) — into `NEXT-SESSION.md` as the turn's FINAL act. A turn may
+  stop anywhere, but the working tree must always be one-paste resumable. Corollary: commit nothing that
+  fails its gate; a below-threshold result is diagnosed and reported, never committed.
 - **Token hygiene (R2).** `GH_TOKEN` lives in `.archon/.env` (git-ignored). Read it from env
   only — never echo, print, log, or commit it. Validate auth before use; on an auth failure,
   report it **plainly and stop** — NEVER work around an auth failure silently (fallback is an

@@ -1,5 +1,36 @@
 # NEXT-SESSION.md — the catalog campaign (D-008); CLOSED + standing engines (D-009)
 
+## ⚠ RESUME FIRST (2026-07-11) — embedding-order fix VERIFIED + committed, PUSH BLOCKED
+**Outcome:** the embedding-order regression fix (`37c2dfd` — embed capability chunks right after
+`kb_build`, BEFORE `catalog_to_kb` adds the 4460 assets; `set -o pipefail` so the eval actually gates;
+R57-engine AUTO finds stay FTS-only) is **committed** and its gate is **VERIFIED GREEN**:
+`RAG_DB=corpus_kb.db RAG_EMBED=ollama RAG_EMBED_MODEL=bge-m3 uv run --with numpy --with pyyaml
+.archon/eval/eval_golden.py` → **hit@5 = 1.0 (55/55), exit 0**. Working tree is clean + one-paste
+resumable. Nothing that fails the gate is committed.
+
+**BLOCKER (owner action) — `git push` fails 403; R2 auth-for-write failure.** HEAD (`d822679`) is **7
+commits ahead** of `origin/main` (was 6 + this doc/rule commit); it includes the fix + D-009 encodings.
+The `github_pat_` fine-grained token in `.archon/.env` authenticates the identity (curl `/user` → 200,
+expires 2026-10-04) but **lacks `Contents: write`** on `notaustindaniels/blender-engine` — all HTTPS auth
+formats return `remote: Permission ... denied to notaustindaniels / 403`. Per R2 I stopped rather than
+work around it. **The one action:** grant this fine-grained PAT `Contents: read and write` (Repository
+permissions → Contents → Read and write) OR supply a classic `public_repo` token (repo is public), then a
+session can `git push origin HEAD:main`. **Until pushed, the standing engines on origin still run the OLD
+buggy workflow** — the Aug-2 `discovery-monthly` run would regress to hit@5 0.873 AND (old gate) commit
+anyway. Push is required before 2026-08-02.
+
+**SECURITY — rotate this token.** During diagnosis the token value was accidentally printed to the
+session transcript (nearly full, R2 violation). Treat as compromised: revoke/rotate the PAT even though
+the repo is public and the token lacks write. New token → `.archon/.env` `GH_TOKEN=` (git-ignored).
+
+**Still-pending after push:** re-dispatch the corrected engine wave so scheduled runs use the fixed order
+(`gh workflow run discovery-monthly.yml` — needs the token's Actions:write; do this once the fixed
+workflow is on origin, else it dispatches the old one).
+
+**Standing engines — next scheduled runs (UTC):** `discovery-monthly` → **2026-08-02 05:00**
+(cron `0 5 2 * *`); `reverify-90d` → **2026-10-01 06:00** (cron `0 6 1 */3 *`).
+
+
 **D-009 CLOSE-OUT (2026-07-10, encoded 2026-07-11):** the campaign is formally **CLOSED** at 7,479;
 `snapshot-catalog-v1` is the tag of record; headline stays TOTAL CATALOG ENTRIES. Growth is now **standing
 engines**, not manual work: **`discovery-monthly.yml`** (monthly CI — external lattice → full pipeline →
