@@ -30,10 +30,18 @@ historical exception that motivated making this rule absolute.
   success (the sentinel/exit-code/metric) — into `NEXT-SESSION.md` as the turn's FINAL act. A turn may
   stop anywhere, but the working tree must always be one-paste resumable. Corollary: commit nothing that
   fails its gate; a below-threshold result is diagnosed and reported, never committed.
-- **Token hygiene (R2).** `GH_TOKEN` lives in `.archon/.env` (git-ignored). Read it from env
-  only — never echo, print, log, or commit it. Validate auth before use; on an auth failure,
+- **Token hygiene (R2).** Tokens live in `.archon/.env` (git-ignored). Read from env
+  only — never echo, print, log, or commit a value. Validate auth before use; on an auth failure,
   report it **plainly and stop** — NEVER work around an auth failure silently (fallback is an
   owner-supplied classic `public_repo` token).
+- **TOKEN MAP — pick the right credential BEFORE diagnosing a 403 (2026-07-11).** `.archon/.env` holds
+  TWO GitHub tokens by design: **`GH_TOKEN` = READ-ONLY** (search API / reads only) and **`GH_TOKEN_RW`
+  = WRITE** (fine-grained: Contents + Actions + Workflows — the push / `workflow_dispatch` / artifact-fetch
+  credential every write path uses). Never attempt a write (push, dispatch, artifact write) with
+  `GH_TOKEN`. **A 403 on a write means check WHICH token you are holding FIRST — it is credential
+  selection, not a permissions gap — before diagnosing repo/scope permissions.** (This cost a full
+  misdiagnosis cycle on 2026-07-11: a push with read-only `GH_TOKEN` 403'd and was wrongly read as a
+  missing scope.)
 - **The human prescan gate never loosens (R6).** `policies/prescan-allowlist.yaml` may downgrade
   benign-in-context patterns (node `socket`, preset `open`-writes, driver-expression), but the
   exec/network-capable patterns (`subprocess`, `os.system`, `os.popen`, `eval(`, `exec(`,
