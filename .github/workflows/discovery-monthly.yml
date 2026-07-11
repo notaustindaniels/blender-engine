@@ -54,8 +54,12 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           uv run .archon/scripts/catalog_build.py | tee reports/catalog-build-run.json
           uv run .archon/scripts/catalog_page.py
-          # rebuild the KB fresh (kb_build recreates the capability graph; catalog nodes re-added after)
+          # rebuild the KB fresh. ORDER IS LOad-BEARING: kb_build creates the capability graph + chunks but
+          # does NOT embed; embed the capability chunks BEFORE catalog_to_kb adds the 4460 assets, so the
+          # embedder only sees capabilities (assets/auto stay FTS-only). Missing this step drops hit@5 to
+          # 0.873 — the operators go unembedded and get outranked by catalog listings (caught 2026-07).
           uv run .archon/scripts/kb_build.py || echo "kb_build: non-fatal (rebuilt from manifests)"
+          RAG_DB="$PWD/corpus_kb.db" uv run --with numpy --directory tools/hybrid-rag-template embedder.py run --batch 64
           uv run .archon/scripts/catalog_to_kb.py
           uv run .archon/scripts/embed_discovery.py
       - name: R55 eval gate (hit@5 >= 0.90) — blocks the commit on regression
@@ -64,6 +68,7 @@ jobs:
           RAG_EMBED: ollama
           RAG_EMBED_MODEL: bge-m3
         run: |
+          set -o pipefail   # eval_golden.py exits 1 below threshold; without this, tee masks it and the commit proceeds
           export PATH="$HOME/.local/bin:$PATH"
           uv run --with numpy --with pyyaml .archon/eval/eval_golden.py | tee reports/eval-monthly.json
       - name: Commit the discovered delta (only if the eval passed + something changed)

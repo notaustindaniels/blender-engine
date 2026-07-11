@@ -165,6 +165,7 @@ def main():
                 license=d.get("license"), status=d.get("status", "click_to_get"),
                 gate_state=None, category=d.get("category"), verbs=d.get("verbs", []),
                 provisional=d.get("provisional", True), reason=d.get("reason"),
+                discovered_by=d.get("discovered_by"),   # R57-engine tag rides through for embed scoping
                 card=d.get("card", "")[:500])
 
     out = ROOT / "catalog.jsonl"

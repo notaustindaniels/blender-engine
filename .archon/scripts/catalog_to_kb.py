@@ -41,7 +41,8 @@ def main():
         props = {"status": e["status"], "marketplace": market, "url": e.get("url"),
                  "license": e.get("license"), "price_class": e.get("price_class"),
                  "provisional": e.get("provisional"), "gate_state": e.get("gate_state"),
-                 "reason": e.get("reason"), "verified": e["status"] == "auto_acquired_verified" and e.get("gate_state") in ("pass", "partial")}
+                 "reason": e.get("reason"), "discovered_by": e.get("discovered_by"),
+                 "verified": e["status"] == "auto_acquired_verified" and e.get("gate_state") in ("pass", "partial")}
         nid = ragdb.upsert_node(con, key, ntype, (e.get("name") or e["catalog_id"])[:120],
                                 summary=(e.get("card") or "")[:200], props=props)
         # card chunk (FTS-findable; embeddable). Include status so retrieval can surface labeled.

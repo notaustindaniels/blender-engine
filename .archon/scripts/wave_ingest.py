@@ -102,6 +102,12 @@ def main():
     run(["uv", "run", ".archon/scripts/build_index.py", "--db", "corpus.db"])
     kb = run(["uv", "run", ".archon/scripts/kb_build.py"], env=dict(os.environ, RAG_DB="corpus_kb.db"))
     report["kb"] = kb.stdout.strip().splitlines()[-1] if kb.stdout.strip() else kb.stderr[-200:]
+    # kb_build creates capability chunks but does NOT embed. Embed them NOW — before catalog_to_kb adds the
+    # 4460 assets — so the embedder only sees capabilities (assets/auto discovery stay FTS-only). Skipping
+    # this leaves operators unembedded → outranked by catalog listings → hit@5 0.873 (regression caught 2026-07).
+    run(["uv", "run", "--with", "numpy", "--directory", "tools/hybrid-rag-template", "embedder.py", "run",
+         "--batch", "64"], env=dict(os.environ, RAG_DB=str(ROOT / "corpus_kb.db"),
+                                    RAG_EMBED="ollama", RAG_EMBED_MODEL="bge-m3"))
     # THE CATALOG (D-008 catalog campaign): rebuild the master list, render THE LIST, and re-grow the KB
     # to hold EVERYTHING (Sketchfab CC + external discovery), labeled by status. kb_build recreates the
     # capability graph; catalog_to_kb must run AFTER it so the catalog nodes survive (registry-disposes:
