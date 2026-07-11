@@ -1,0 +1,13 @@
+{
+ "stamp": "2026-07",
+ "new_unique_total": 105,
+ "per_source": {
+  "awesome_blender": 29,
+  "blendernation": 2,
+  "itch_blender_tools": 6,
+  "itch_blender_gamedev": 5,
+  "sketchfab_api": 0,
+  "extensions_blender_org": 63
+ },
+ "errors": {}
+}
