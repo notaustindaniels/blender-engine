@@ -92,3 +92,29 @@ queries:
     expect: [glitch_shader]
   - q: "knitted wool fabric weave"
     expect: [knit_weave_generator]
+  # --- catalog campaign (D-008): newly-cataloged external-discovery items (click_to_get, provisional).
+  # Retrieval eval only — proves the grown KB surfaces the discovery cards; NOT a coverage claim (R14). ---
+  - q: "open source procedural spaceship generator addon"
+    expect: [spaceship]
+  - q: "node based parametric modeling tool like houdini"
+    expect: [sverchok, sorcar, parametric]
+  - q: "free addon to scatter buildings and nature with geometry nodes"
+    expect: [bagapie, biome_scatter_system, scatter]
+  - q: "procedural building generator assembled from parts library"
+    expect: [buildify, building_generator]
+  - q: "free geometry nodes node-group toolset pack"
+    expect: [higgsas, manellopgar, geometry_nodes_toolset]
+  - q: "generate pipes with a geometry nodes addon"
+    expect: [geopipes, pipe_generator]
+  - q: "generate hanging cables and wires addon"
+    expect: [geocables, cable_wire_generator]
+  - q: "computational tessellation and reaction diffusion addon"
+    expect: [tissue, tessellation]
+  - q: "large procedural natural world environment generator"
+    expect: [infinigen, environment_generator]
+  - q: "shrubs and hedges drawn from curves"
+    expect: [bushdraw, shrub]
+  - q: "one click procedural rock generator addon"
+    expect: [rock, s4c, rockgenerator]
+  - q: "mograph style motion graphics node system"
+    expect: [motion, mograph, motion_graphics_system]

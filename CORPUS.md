@@ -34,12 +34,29 @@ license_class?, blender_ver?)` · `get_card(id)` · `get_usage(id)` · `find_sub
   `gpl` (code only, not output), `unrecorded` (verify first).
 - **blender_ver**: 3.6, 4.2, 4.5 (a tool is resolvable only for versions it passed).
 
+## THE CATALOG — the whole library, three faces (D-008 catalog campaign)
+Headline metric is **TOTAL CATALOG ENTRIES** (coverage % is secondary). One database, three faces:
+1. **`corpus_kb.db`** (this KB) holds **everything** — verified add-ons, Sketchfab CC assets, and
+   external-discovery items — as hybrid-searchable cards. Discovery/asset nodes are **findable but
+   `props.verified=False`**: retrieval proposes them LABELED; only `query_registry` (corpus.db)
+   resolves the verified ones. Registry still disposes.
+2. **THE LIST** — `reports/catalog/index.html` (+ `CATALOG.md`): the full filterable/sortable page,
+   grouped, live URLs, verified / click-to-get / excluded badges. Regenerated on every ingest; served
+   by `progress/serve.sh`. This is the human browse face.
+3. **`corpus.db`** — the authoritative registry of gate-verified entries only (what `query_registry`
+   returns).
+
+Entry **status**: `auto_acquired_verified` (API/GitHub → acquired, prescanned, native-CI gated, real
+verify states) · `click_to_get` (checkout/free-download-gated: resolved URL + machine-confirmed or
+confirm-at-source price; the owner clicks — never auto-checked-out) · `excluded` (dead / actually-paid /
+NC-ND-segregated, reason recorded). See `reports/discovery-saturation.md` for per-marketplace exhaustion.
+
 ## Coverage at a glance (this snapshot)
-Deep: **Terrain** and **Vegetation/organic** (the campaign's first harvest). Materials/shaders present
-via BlenderKit (procedural, no image-texture packs). The full 328-niche taxonomy across 26 categories
-is the campaign target — most categories are still sparse; `reports/gaps/` names market absences per
-category. Two niches are unbuildable from free tooling (`karst_formation`, `coral_atoll_generator`) —
-Stage-2 from-scratch backlog, never resolvable here.
+Deep: **Terrain** and **Vegetation/organic** (first harvest) + **hard-surface/materials** (L6 BlenderKit).
+The full 328-niche taxonomy across 26 categories is the campaign target — `reports/gaps/` names market
+absences per category. **Provisional** niches (auto-added from discovery) are marked and **never counted
+as verified coverage** (R14). Two niches are unbuildable from free tooling (`karst_formation`,
+`coral_atoll_generator`) — Stage-2 from-scratch backlog, never resolvable here.
 
 ## Rules that never bend
 - The registry (`corpus.db`) is authoritative; the KB (`corpus_kb.db`) only routes. Both are DERIVED —

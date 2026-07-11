@@ -102,6 +102,16 @@ def main():
     run(["uv", "run", ".archon/scripts/build_index.py", "--db", "corpus.db"])
     kb = run(["uv", "run", ".archon/scripts/kb_build.py"], env=dict(os.environ, RAG_DB="corpus_kb.db"))
     report["kb"] = kb.stdout.strip().splitlines()[-1] if kb.stdout.strip() else kb.stderr[-200:]
+    # THE CATALOG (D-008 catalog campaign): rebuild the master list, render THE LIST, and re-grow the KB
+    # to hold EVERYTHING (Sketchfab CC + external discovery), labeled by status. kb_build recreates the
+    # capability graph; catalog_to_kb must run AFTER it so the catalog nodes survive (registry-disposes:
+    # click_to_get/excluded nodes are findable but props.verified=False, never resolvable as verified).
+    cb = run(["uv", "run", ".archon/scripts/catalog_build.py"])
+    report["catalog"] = cb.stdout.strip().splitlines()[0] if cb.stdout.strip() else cb.stderr[-200:]
+    run(["uv", "run", ".archon/scripts/catalog_page.py"])
+    run(["uv", "run", ".archon/scripts/catalog_to_kb.py"], env=dict(os.environ, RAG_DB="corpus_kb.db"))
+    run(["uv", "run", ".archon/scripts/embed_discovery.py"],
+        env=dict(os.environ, RAG_DB="corpus_kb.db", RAG_EMBED="ollama", RAG_EMBED_MODEL="bge-m3"))
     run(["uv", "run", ".archon/scripts/gap_report.py"])
     cov = run(["uv", "run", ".archon/scripts/coverage.py", "--db", "corpus.db"])
     try:

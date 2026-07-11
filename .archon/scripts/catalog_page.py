@@ -89,8 +89,12 @@ const tb=T.tBodies[0];rows.forEach(r=>tb.appendChild(r));}}
 </script></body></html>"""
     outdir = ROOT / "reports/catalog"; outdir.mkdir(parents=True, exist_ok=True)
     (outdir / "index.html").write_text(page)
+    # also emit into the served progress/ dir so progress/serve.sh exposes THE LIST (goal face 2)
+    served = ROOT / "progress" / "catalog.html"
+    if served.parent.exists():
+        served.write_text(page)
     print(json.dumps({"total_entries": total, "html": str(outdir / "index.html"),
-                      "md": str(ROOT / "CATALOG.md"), "by_status": dict(by_status)}))
+                      "served": str(served), "md": str(ROOT / "CATALOG.md"), "by_status": dict(by_status)}))
 
 
 if __name__ == "__main__":
